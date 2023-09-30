@@ -27,6 +27,7 @@ plugins:
       enabled: true
       blog_dir: blog
   - search
+  - callouts
   - roamlinks
   - tags:
       tags_file: index.md
@@ -102,6 +103,7 @@ markdown_extensions:
   - attr_list
   - def_list
   - footnotes
+  - nl2br  # for mkdocs-callouts
   - md_in_html
   - tables
   - toc:
@@ -110,8 +112,8 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   # - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
+  # - pymdownx.mark
+  # - pymdownx.tilde
   - pymdownx.betterem:
       smart_enable: all
   # - pymdownx.critic
