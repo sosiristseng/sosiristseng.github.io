@@ -15,7 +15,7 @@ How to copy files through the secure shell (SSH).
 [^scp]: https://kb.iu.edu/d/agye
 
 ```sh
-scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2
+scp [options] username1@source_host:directory1/filename1 username2@destination_host:directory2/filename2
 ```
 
 ## tar and pipe
@@ -44,4 +44,3 @@ to unmount the directory
 ```sh
 fusermount -u mountpoint
 ```
-
