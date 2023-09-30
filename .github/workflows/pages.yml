@@ -30,11 +30,6 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VER }}
           cache: 'pip'
-      - name: Cache Python environment
-        uses: actions/cache@v3
-        with:
-          path: ${{ env.pythonLocation }}
-          key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt') }}
       - name: Install Python dependencies
         run: pip install -r requirements.txt
       - name: Setup Pages
