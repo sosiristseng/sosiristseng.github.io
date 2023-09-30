@@ -1,5 +1,5 @@
 ---
-title: Wen-Wei Tseng's vault
+title: Home
 ---
 
 My tips, tricks, and thoughts are collected here.
