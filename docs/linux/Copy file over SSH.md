@@ -23,6 +23,7 @@ scp [options] username1@source_host:directory1/filename1 username2@destination_h
 ```sh
 tar cvf - $localdir | ssh someone@somemachine '(cd somewhere && tar xBf -)'
 ```
+
 ## Secure FTP (SFTP)
 
 [Filezilla](https://filezilla-project.org/) could access remote servers via the Secure FTP (SFTP) protocol.
