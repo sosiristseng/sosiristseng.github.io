@@ -1,9 +1,9 @@
 site_name: My MkDocs Template
-site_url: !ENV [SITE_URL, 'https://sosiristseng.github.io/template-mkdocs-material/']
+site_url: !ENV [SITE_URL, 'https://sosiristseng.github.io']
 site_author: Wen-Wei Tseng
 
 # Repository
-repo_url: !ENV [REPO_URL, 'https://github.com/sosiristseng/template-mkdocs-material/']
+repo_url: !ENV [REPO_URL, 'https://github.com/sosiristseng/sosiristseng.github.io']
 repo_name: !ENV [REPO_NAME, 'sosiristseng/template-mkdocs-material']
 edit_uri: 'edit/main/docs/' # Leave blank to disable the edit button,
 
@@ -78,7 +78,7 @@ theme:
     repo: fontawesome/brands/github-alt
 
 exclude_docs: |
-  drafts/            # A "drafts" directory anywhere.
+  drafts/
 
 # Social buttons at bottom
 extra:
@@ -125,7 +125,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shortener: true
       user: 'sosiristseng'
-      repo: 'template-mkdocs-material'
+      repo: 'sosiristseng.github.io'
   # - pymdownx.smartsymbols
   - pymdownx.snippets
   - pymdownx.superfences
