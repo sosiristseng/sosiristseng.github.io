@@ -51,7 +51,7 @@ From [StackOverflow](https://stackoverflow.com/questions/5828324/update-git-subm
 git submodule update --remote --merge
 ```
 
-For automated updates, see [automatic dependency updates](auto-deps-update.md).
+For automated updates, see [[auto-deps-update]].
 
 ## Remove a submodule
 

@@ -5,7 +5,7 @@ tags:
   - command-line
 ---
 
-pipeview ([`pv`](https://linux.die.net/man/1/pv)) shows transfer speed and/or progress through a Unix pipe.
+pipeview ([`pv`](https://www.geeksforgeeks.org/pv-command-in-linux-with-examples/)) shows transfer speed and/or progress through a Unix pipe.
 
 `pv` works like `cat`. For example,
 
