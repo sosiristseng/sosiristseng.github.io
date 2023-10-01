@@ -160,8 +160,8 @@ sed 's/#.*$//' pkgs.txt | xargs sudo apt install -y
 
 ## Other apps if needed
 
-- [[mambaforge]]
-- [[setup-julia]]
+- [[miniforge|Conda]]
+- [[setup-julia|Julia]]
 - [FreeFileSync](https://freefilesync.org/)
 - [Starship](https://starship.rs/)
 - [Hugo](https://github.com/gohugoio/hugo/releases/)
