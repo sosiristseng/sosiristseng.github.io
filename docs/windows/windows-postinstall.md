@@ -34,7 +34,7 @@ choco feature enable -n=useRememberedArgumentsForUpgrades
 
 choco install -y git.install --params "'/NoShellIntegration'"
 
-choco install -y vscode qbittorrent firefox brave telegram bandizip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo directx vcredist-all hugo-extended sudo starship zotero obsidian nerd-fonts-firacode nerd-fonts-hack
+choco install -y vscode qbittorrent firefox brave telegram bandizip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo directx vcredist-all hugo-extended sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop tabby
 ```
 
 See the  [🍫 Chocolatey package list](https://chocolatey.org/packages) for more packages.
