@@ -1,6 +1,5 @@
 ---
 date: 2023-01-31
-tags:
 ---
 
 # Hello world!
