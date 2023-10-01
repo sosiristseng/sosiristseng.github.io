@@ -88,7 +88,7 @@ For the suggested substitudes, see the slides.
 
 ### Use precise words instead of general ones
 
-You could look up [thesaurus](https://www.thesaurus.com/) or press [[Shift]] + [[F7]] in Microsoft Word to find words with similar meanings.
+You could look up [thesaurus](https://www.thesaurus.com/) or press `Shift` + `F7` in Microsoft Word to find words with similar meanings.
 
 See the slides and the book for recommended replacements.
 

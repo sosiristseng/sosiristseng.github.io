@@ -271,7 +271,7 @@ jobs:
         with:
           path: ${{ steps.file.outputs.name }}
           key: ${{steps.cache.outputs.cache-primary-key }}
-      - name: Upload Notebook
+       - name: Upload Notebook
         uses: actions/upload-artifact@v3
         with:
           name: notebooks
@@ -320,15 +320,10 @@ jobs:
       # pass step only when output of previous jupyter-book job is set
       # in case at least one of the execution fails, jupyter-book is skipped
       # and the output will not be set, which will then cause the ci job to fail
-      - run: |
-          passed="${{ needs.jupyter-book.outputs.success }}"
-          if [[ $passed == "true" ]]; then
-            echo "Tests passed"
-            exit 0
-          else
-            echo "Tests failed"
-            exit 1
-          fi
+      - if: ${{ needs.jupyter-book.outputs.success == "true" }}
+        run: echo "Tests passed" && exit 0
+      - if: ${{ needs.jupyter-book.outputs.success != "true" }}
+        run: echo "Tests failed" && exit 1
 
   # Deployment job
   deploy:

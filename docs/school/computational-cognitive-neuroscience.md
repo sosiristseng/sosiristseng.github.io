@@ -386,8 +386,8 @@ with model:
     # Connect the population to itself
     # transform: transformation matrix
     # synapse: time scale of low pass filter
-    nengo.Connection(A, A, transform=[[1]], synapse=tau)
-    nengo.Connection(src, A, transform=[[tau]], synapse=tau)
+    nengo.Connection(A, A, transform=[ [1] ], synapse=tau)
+    nengo.Connection(src, A, transform=[ [tau] ], synapse=tau)
     input_probe = nengo.Probe(src)
     A_probe = nengo.Probe(A, synapse=0.01)
 
