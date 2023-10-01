@@ -439,7 +439,7 @@ with model:
     src = nengo.Node(Piecewise({0: [1, 0], 0.1: [0, 0]}))
     nengo.Connection(src, neurons)
     # Create the feedback connection. Note the transformation matrix
-    nengo.Connection(neurons, neurons, transform=[[1, 1], [-1, 1]], synapse=0.1)
+    nengo.Connection(neurons, neurons, transform=[ [1, 1], [-1, 1] ], synapse=0.1)
 
     input_probe = nengo.Probe(src, 'output')
     neuron_probe = nengo.Probe(neurons, 'decoded_output', synapse=0.1)

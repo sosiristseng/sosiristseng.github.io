@@ -500,16 +500,16 @@ When the load resistance is infinite (open circuit): peak detector
 
 
 When the load resistance is finite:
-The more discharging time scale ($\tau = RC$), the less ripple voltage. ($V_r \approx \frac{V_p}{fCR}$ when $V_r \ll V_p$)
+The more discharging time scale ( $\tau = RC$ ), the less ripple voltage. ( $V_r \approx \frac{V_p}{fCR}$ when $V_r \ll V_p$ )
 
 ### Voltage regulator using Zener diodes
 
 [Zener diode on Wikipedia](https://en.wikipedia.org/wiki/Zener_diode)
 
 * First unplug the Zener diode and solve the voltage across it.
-* Normally operates in **reverse** bias. ($V_{Z}$ = 4-6 V)
+* Normally operates in **reverse** bias. ( $V_{Z}$ = 4-6 V )
   * When applied voltage > $V_{Z}$: Acts as a voltage source of $V_{Z}$. Open circuit otherwise.
-* When in forward bias: similar to regular diodes ($V_{Z}$ = 0.7 V)
+* When in forward bias: similar to regular diodes ( $V_{Z}$ = 0.7 V )
 * When breakdown $V_{Z}$ is independent of loading resistance.
 
 ## BJT

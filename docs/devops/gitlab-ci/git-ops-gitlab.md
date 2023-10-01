@@ -46,7 +46,7 @@ Compared to SSH, using a [personal access token (PAT)](https://docs.gitlab.com/e
 script:
   - bash update.sh
   - |
-    if [[ -n $(git status --porcelain) ]]; then
+    if [ -n $(git status --porcelain) ]; then
         echo "Commiting updates"
         git config --global user.name "${GITLAB_USER_NAME}"
         git config --global user.email "${GITLAB_USER_EMAIL}"
@@ -65,7 +65,7 @@ For a MR pipeline, GitLab provides [git push options](https://docs.gitlab.com/ee
 script:
   - bash update.sh
   - |
-    if [[ -n $(git status --porcelain) ]]; then
+    if [ -n $(git status --porcelain) ]; then
         echo "Commiting updates"
         NEW_BR=auto-update-$(date '+%Y-%m-%d-%H-%M-%S')
         git config --global user.name "${GITLAB_USER_NAME}"
