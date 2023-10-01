@@ -1,18 +1,16 @@
 ---
 title: docker
 tags:
-- docker
-- devops
-- apps
-- linux
-- windows
+  - docker
+  - devops
+  - linux
+  - windows
 ---
 
 - [awesome-docker](https://github.com/veggiemonk/awesome-docker) : A curated list of Docker resources and project.
 - [Docker Hub](https://hub.docker.com/) for docker images.
 
 ## Install docker engine
-
 
 ### Ubuntu
 
@@ -48,7 +46,7 @@ Docker for Windows has WSL2 integration.
 choco install docker-desktop
 ```
 
-## nvidia GPU support
+## NVIDIA GPU support
 
 ### Ubuntu
 
@@ -76,7 +74,8 @@ sudo docker run hello-world
 sudo docker run --gpus all nvidia/cuda:11.0-base nvidia-smi
 ```
 
-## Workaround DockerHub image pull rate limits
+## Tips
+### Workaround DockerHub image pull rate limits
 
 DockerHub has [pull rate limits](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) on the unregisterd as weel as the free plan.
 

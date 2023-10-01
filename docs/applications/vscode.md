@@ -1,8 +1,7 @@
 ---
 title: VSCode
-draft: 
+draft: false
 tags:
-  - apps
   - linux
   - windows
 ---

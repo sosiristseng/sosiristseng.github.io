@@ -1,10 +1,9 @@
 ---
 title: Telegram
 tags:
-- apps
-- web
-- linux
-- windows
+  - web
+  - linux
+  - windows
 ---
 
 ## Install

@@ -1,11 +1,10 @@
 ---
 title: zotero
 tags:
-- apps
-- research
-- document
-- linux
-- windows
+  - research
+  - document
+  - linux
+  - windows
 ---
 
 [Zotero](https://www.zotero.org/) is an open source reference manager.

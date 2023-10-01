@@ -1,9 +1,8 @@
 ---
 title: bashit
 tags:
-- apps
-- linux
-- command-line
+  - linux
+  - command-line
 ---
 
 [Bash-it](https://github.com/Bash-it/bash-it) is the community's collection of useful bash scripts for `bash`, inspired by the [oh-my-zsh](https://ohmyz.sh/) project, providing autocompletion, themes, aliases, custom functions, etc for the bash prompt.

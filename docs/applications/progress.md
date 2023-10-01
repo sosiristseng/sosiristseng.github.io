@@ -1,9 +1,8 @@
 ---
 title: progress
 tags:
-- linux
-- command-line
-- apps
+  - linux
+  - command-line
 ---
 
 [`progress`](https://github.com/Xfennec/progress) measures the speed and progress of ongoing commands.

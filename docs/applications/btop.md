@@ -1,10 +1,9 @@
 ---
 title: btop
 tags:
-- apps
-- linux
-- command-line
-- system-monitor
+  - linux
+  - command-line
+  - system-monitor
 ---
 
 [btop](https://github.com/aristocratos/btop) is a resource monitor wirtten in C++ that shows usage and stats for processor, memory, disks, network and processes. 

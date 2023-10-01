@@ -1,8 +1,7 @@
 ---
-title: pacman package mananger
+title: Pacman package mananger
 draft: false
 tags:
-  - apps
   - linux/arch
 ---
 

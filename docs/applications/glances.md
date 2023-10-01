@@ -1,10 +1,9 @@
 ---
 title: glances
 tags:
-- apps
-- linux
-- command-line
-- system-monitor
+  - linux
+  - command-line
+  - system-monitor
 ---
 [glances](https://github.com/nicolargo/glances) is a cross-platform advance system monitor for usage monitoring for CPU, RAM, Network, GPU, etc.
 

@@ -2,11 +2,10 @@
 title: Mambaforge
 draft: false
 tags:
-- python
-- conda
-- apps
-- linux
-- windows
+  - python
+  - conda
+  - linux
+  - windows
 ---
 
 How to install mambaforge: the community-driven [conda-forge](https://conda-forge.org/docs/user/introduction.html) repo with fast new [mamba](https://github.com/mamba-org/mamba) package manager.

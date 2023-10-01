@@ -1,10 +1,9 @@
 ---
 title: git
 tags:
-- apps
-- linux
-- git
-- windows
+  - linux
+  - git
+  - windows
 ---
 ## Install Git
 
@@ -39,11 +38,11 @@ winget install Git.Git
 
 ## Tips
 
-[[Git Commands]]
+[[git/index]]
 
 ## Github actions
 
-[[Git Operations in GitHub actions]]
+[[git-ops-gha]]
 
 ## GitHub desktop
 

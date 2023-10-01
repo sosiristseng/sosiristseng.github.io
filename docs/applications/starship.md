@@ -1,9 +1,8 @@
 ---
 title: starship
 tags:
-- apps
-- linux
-- command-line
+  - linux
+  - command-line
 ---
 
 [🚀 Starship command prompt](https://starship.rs/) is an enhancement for command prompt in a multitude of shells, powered by Rust. It is available for `bash`, `zsh`, `fish`, `powershell`, etc.

@@ -1,7 +1,6 @@
 ---
 title: zimfw
 tags:
-  - apps
   - linux
   - command-line
 ---

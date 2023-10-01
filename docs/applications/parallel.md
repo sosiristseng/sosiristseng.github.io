@@ -1,9 +1,8 @@
 ---
 title: parallel
 tags:
-- linux
-- command-line
-- apps
+  - linux
+  - command-line
 ---
 
 [GNU parallel](https://www.gnu.org/software/parallel/parallel_tutorial.html) runs commands in parallel. For instance, to find all jupyter notebook files and execute them in parallel, with 2 processes:

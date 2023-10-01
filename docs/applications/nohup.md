@@ -3,7 +3,6 @@ title: nohup
 draft: false
 tags:
   - linux
-  - apps
   - ssh
 ---
 [nohup](https://blog.gtwang.org/linux/linux-nohup-command-tutorial/) runs background process(es) uninterruptedly even the remote SSH session becomes offline.[
@@ -26,9 +25,9 @@ You can also lower the priority for the background process
 nohup nice mycmd &
 ```
 
-### End process
+## End the running process
 
-When you're done, you can kill the process by the proccess ID (PID)
+When you're done, you can kill the process by the proccess ID (PID).
 
 ```sh
 ps -aux | grep mycmd

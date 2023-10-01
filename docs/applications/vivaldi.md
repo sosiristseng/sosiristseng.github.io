@@ -1,10 +1,9 @@
 ---
 title: vivaldi
 tags:
-- apps
-- web
-- linux
-- windows
+  - web
+  - linux
+  - windows
 ---
 
 ## Install

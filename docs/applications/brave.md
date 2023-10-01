@@ -1,10 +1,9 @@
 ---
 title: Brave Browser
 tags:
-- apps
-- web
-- linux
-- windows
+  - web
+  - linux
+  - windows
 ---
 
 Setup [Brave browser](https://brave.com)

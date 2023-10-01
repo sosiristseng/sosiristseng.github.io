@@ -1,9 +1,8 @@
 ---
 title: pipeview
 tags:
-- linux
-- command-line
-- apps
+  - linux
+  - command-line
 ---
 
 pipeview ([`pv`](https://linux.die.net/man/1/pv)) shows transfer speed and/or progress through a Unix pipe.

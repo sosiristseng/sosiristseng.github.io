@@ -2,7 +2,6 @@
 title: Hexo
 draft: false
 tags:
-  - apps
   - web
   - linux
   - windows

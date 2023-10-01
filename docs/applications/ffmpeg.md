@@ -1,10 +1,9 @@
 ---
 title: ffmpeg
 tags:
-- apps
-- multimedia
-- linux
-- windows
+  - multimedia
+  - linux
+  - windows
 ---
 
 [FFMPEG docs](https://ffmpeg.org/ffmpeg-all.html)

@@ -1,10 +1,9 @@
 ---
 title: qbittorrent
 tags:
-- apps
-- web
-- linux
-- windows
+  - web
+  - linux
+  - windows
 ---
 
 [qBittorrent](https://www.qbittorrent.org/) is an open source and cross-platform BitTorrent client.

@@ -1,10 +1,9 @@
 ---
 title: yt-dlp
 tags:
-- apps
-- multimedia
-- linux
-- windows
+  - multimedia
+  - linux
+  - windows
 ---
 
 [yt-dlp](https://github.com/yt-dlp/yt-dlp) is an actively developed fork of the famous Youtube video downloader `youtube-dl`.

@@ -3,7 +3,6 @@ title: Hugo
 draft: false
 tags:
   - web
-  - apps
   - linux
   - windows
   - github

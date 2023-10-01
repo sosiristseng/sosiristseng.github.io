@@ -1,8 +1,9 @@
 ---
 title: pipeview
 tags:
-- document
-- apps
+  - document
+  - linux
+  - windows
 ---
 Convert `pdf` files to `tiff` images with `pdftoppm` or `ghostscript`.
 ## pdftoppm
@@ -53,13 +54,9 @@ sudo apt install ghostscript imagemagick
 sudo pacman -S ghostscript imagemagick
 ```
 
-### Windows
 
-    - [Imagemagick](https://imagemagick.org/script/download.php)
-    - [Gohostscript](https://ghostscript.com/releases/gsdnld.html)
-  
 > [! note ] 
-> For security reasons, PDF read/write operations are disable by default. You need to edit the settings file to enable that.
+> For security reasons, PDF read/write operations are disable by default. You enable this function by editing the settings file
    
 ```xml title="/etc/ImageMagick-7/policy.xml"
 <policy domain="coder" rights="read | write" pattern="PDF" />
@@ -75,3 +72,8 @@ convert -density 300 \
         -trim \
         "image.pdf" "image_%d.tiff"
 ```
+
+### Windows
+
+- [Imagemagick](https://imagemagick.org/script/download.php)
+- [Gohostscript](https://ghostscript.com/releases/gsdnld.html)
