@@ -5,6 +5,7 @@ tags:
   - git
   - devops
 ---
+
 Sources:
 
 - [Git reference](https://git-scm.com/docs)
@@ -35,20 +36,16 @@ If there are submodule(s) in the Git repository, you might want to clone them as
 git clone <url> --recursive
 ```
 
-You might wan to use [[ssh-login-git]].
+See also [[ssh-login-git|SSH login]] to authenticate to Git services (GitHub/GitLab).
+
 ### Make changes and commit
 
 ```sh
 git status      # The current state of the repository.
-
 git add <file>  # Add a new or edited file to the staging area. i.e. telling git to track this file
-
 git add -A      # Track all files at once
-
 git commit -m "Commit message"  # Commit staged (added) file
-
 git commit -am "Commit message" # Commit modified files without having to run git add beforehand
-
 git revert <SHA>                # Make a counter commit to undo the changes. The tracked files will go back to the <SHA> commit.
 ```
 
@@ -56,13 +53,9 @@ git revert <SHA>                # Make a counter commit to undo the changes. The
 
 ```sh
 git fetch # Download objects and refs from another repository without really pull in the changes
-
 git merge # After git fetch, merge the changeds done in the remote to the local repo
-
 git push <remote> <branch-name> # Push commits in to remote
-
 git push --set-upstream <remote> <name-of-your-branch>  # Setup remote url before push
-
 git pull <remote>  # Pull changes from the remote
 ```
 
@@ -72,7 +65,6 @@ To temporarily store untracked files.
 
 ```sh
 git stash -u   # Store current work with untracked files
-
 git stash pop  # Bring stashed work back to the working directory
 ```
 
@@ -80,17 +72,13 @@ git stash pop  # Bring stashed work back to the working directory
 
 ```sh
 git branch <branch_name>    # Create a new branch
-
 git branch -a               # List all branches
-
 git branch -d <branch_name> # Delete a branch
 
 git checkout <branch_name>    # checkout an existing branch
-
 git checkout -b <branch_name> # Create a new branch and checkout it
 
 git switch <branch_name>    # Switch to a specified branch. If the branch name does not exist, create one.
-
 git merge  <branch_name>    # Merge the branch into the current branch
 ```
 
