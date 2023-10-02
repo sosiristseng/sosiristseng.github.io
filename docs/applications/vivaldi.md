@@ -1,5 +1,5 @@
 ---
-title: vivaldi
+title: Vivaldi browser
 tags:
   - web
   - linux

@@ -1,5 +1,5 @@
 ---
-title: ffmpeg
+title: FFmpeg
 tags:
   - multimedia
   - linux

@@ -1,5 +1,5 @@
 ---
-title: qbittorrent
+title: qBittorrent
 tags:
   - web
   - linux
