@@ -8,7 +8,7 @@ tags:
   - windows
 ---
 
-The community-driven [conda-forge](https://conda-forge.org/docs/user/introduction.html) repo with fast new [mamba](https://github.com/mamba-org/mamba) package manager. Now `miniforge` also includes the `mamba` package manager.
+The community-driven [conda-forge](https://conda-forge.org/docs/user/introduction.html) repository with the basic `conda` package manager now includes the fast new [mamba](https://github.com/mamba-org/mamba) package manager.
 
 ## Windows
 
@@ -32,8 +32,10 @@ conda activate base
 # conda package manager setup
 # conda config --set auto_activate_base false
 conda config --set default_threads $(nproc)
-mamba update python conda --yes
-mamba update --all --yes
+conda install -y conda-libmamba-solver
+conda config --set solver libmamba
+conda update -y python conda mamba
+conda update --all --yes
 
 # `bash` and `zsh` integration
 [[ -f ~/.bashrc ]] && conda init bash
