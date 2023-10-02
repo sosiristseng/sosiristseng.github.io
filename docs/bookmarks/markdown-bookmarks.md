@@ -21,9 +21,10 @@ tags:
 ## (Local) Markdown Editors
 
 - [Markdown preview enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/) VS Code plugin.
-- [MarkText](https://github.com/marktext/marktext) : Simple and Elegant Markdown Editor.
-- [Zettlr](https://github.com/Zettlr/Zettlr) : A Markdown Editor and organizer.
+- [MarkText](https://www.marktext.cc/) : Simple and Elegant Markdown Editor.
+- [Zettlr](https://www.zettlr.com/) : A Markdown Editor and organizer.
 - [Obsidian](https://obsidian.md/) : A markdown note writing APP.
+- [memos](https://usememos.com/) : A privacy-first, lightweight note-taking service.
 
 ## Online Markdown Editors
 
@@ -32,6 +33,7 @@ tags:
 - [HackMD](https://hackmd.io/) : Collaborative Markdown Knowledge Base.
 - [Tables Generator](https://www.tablesgenerator.com/) : LaTeX and MD Tables.
 - [Upmath](https://upmath.me/) : Create web articles and blog posts with equations and diagrams.
+
 
 ## Markdown formatters and linters
 
