@@ -61,19 +61,20 @@ theme:
     - content.code.annotate
     - content.code.copy
     - navigation.footer
-    - navigation.indexes # Not compatible with toc.integrate
+    # - navigation.indexes # Not compatible with toc.integrate
     - navigation.instant
+    - navigation.instant.progress
     - navigation.prune
     - navigation.sections
+    # - navigation.expand
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - navigation.expand
-    # - navigation.tabs.sticky
     # - toc.integrate
   icon:
     repo: fontawesome/brands/github-alt
