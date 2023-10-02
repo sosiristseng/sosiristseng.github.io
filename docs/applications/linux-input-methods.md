@@ -3,7 +3,7 @@ title: Linux Input Methods
 tags:
   - linux
 ---
-y
+
 Input methods enable multilingual inputs including CJK (Chinese, Japanese, Korean).
 
 ## Fcitx5
@@ -12,13 +12,13 @@ Input methods enable multilingual inputs including CJK (Chinese, Japanese, Korea
 
 Install:
 
-=== Ubuntu
+=== "Ubuntu"
 
     ```bash
     sudo apt install fcitx5 fcitx5-chewing fcitx5-material-color
     ```
 
-=== Arch
+=== "Arch"
 
     ```bash
     sudo pacman -S fcitx5-im fcitx5-chewing fcitx5-material-color
