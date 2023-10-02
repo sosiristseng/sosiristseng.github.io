@@ -38,6 +38,6 @@ conda update -y python conda mamba
 conda update --all --yes
 
 # `bash` and `zsh` integration
-[[ -f ~/.bashrc ]] && conda init bash
-[[ -f ~/.zshrc ]] && conda init zsh
+[ -f ~/.bashrc ] && conda init bash
+[ -f ~/.zshrc ] && conda init zsh
 ```
