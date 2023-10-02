@@ -26,6 +26,7 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 - [Get CSS waves](https://getwaves.io/)
 - [Neumorphism](https://neumorphism.io/)
 - [Smooth shadows](https://shadows.brumm.af/)
+
 ## Fonts
 
 - [Cascadia code](https://github.com/microsoft/cascadia-code) : a fun, new monospaced font developed for Windows Terminal (and friends).
@@ -39,7 +40,6 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 - [Public Sans](https://github.com/uswds/public-sans) : a strong, neutral, principles-driven, open source typeface for text or display.
 
 ### Alternative fonts to Microsoft ones
-
 
 - Arial (Sans): Arimo and Liberation Sans
 - Times New Roman (Sans Serif): Tinos and Liberation Serif

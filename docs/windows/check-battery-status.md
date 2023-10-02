@@ -10,4 +10,4 @@ To check battery status and health, open Windows Powershell with Administrator r
 powercfg /batteryreport /output "C:\battery-report.html"
 ```
 
-The report is `C:\battery-report.html`
+See `C:\battery-report.html` for the report.

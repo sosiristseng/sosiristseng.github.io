@@ -23,7 +23,7 @@ wsl --set-default-version 2
 wsl --install -d Ubuntu  # You can choose other distributions e.g. Debian
 ```
 
-## Setup
+## WSL2 post-install setup
 
 ### Enable systemd
 
@@ -33,6 +33,7 @@ Edit `/etc/wsl.conf` in the WSL OS.
 [boot]
 systemd=true
 ```
+
 ### Default login user (optional)
 
 Edit `/etc/wsl.conf` in the WSL OS.
@@ -51,17 +52,12 @@ If you want to move the WSL virtual disk file to another disk (in this example, 
 
 ```powershell
 cd D:\
-
 mkdir WSL
-
 cd WSL
-
 mkdir Ubuntu
 
 wsl --export Ubuntu .\Ubuntu\ext4.vhdx --vhd
-
 wsl --unregister Ubuntu
-
 wsl --import-in-place Ubuntu .\Ubuntu\ext4.vhdx
 ```
 
@@ -69,6 +65,7 @@ wsl --import-in-place Ubuntu .\Ubuntu\ext4.vhdx
 [^movedrive]: https://blog.iany.me/2020/06/move-wsl-to-another-drive/
 
 ## Mantenance
+
 ### Update WSL kernel
 
 To (manually) update WSL kernel, run this script in Powershell with administrator privileges:
@@ -77,6 +74,7 @@ To (manually) update WSL kernel, run this script in Powershell with administrato
 wsl --shutdown
 wsl --update
 ```
+
 ### Reclaim virtual disk space
 
 To reclaim disk space from virtual harddisks (VHDs), run this script in Powershell with administrator privileges[^optimize-vhd]:
@@ -96,21 +94,17 @@ For example,
 
 ```sh title=".wslconfig"
 [wsl2]
-
 memory=20GB              # How much memory to assign to the WSL2 VM.
-
 processors=4             # How many processors to assign to the WSL2 VM.
-
 swap=8GB                 # How much swap space to add to the WSL2 VM. 0 for no swap file.
-
 swapfile=C:\\temp\\wsl-swap.vhdx # Sets swapfile path location, default is %USERPROFILE%\AppData\Local\Temp\swap.vhdx. Useful if your C drive has limited disk space.
-
 localhostForwarding=true # Boolean specifying if ports bound to wildcard or localhost in the WSL2 VM should be connectable from the host via localhost:port (default true).
 ```
 
 [^wslconfig]: https://learn.microsoft.com/zh-tw/windows/wsl/wsl-config
 
 ## Caveats about WSL2
+
 ### Poor filesystem performance across OS
 
 Cross-OS file access (E.G., git accessing repositories in  `/mnt/c`) is at least one order of magnitude slower than native one.[^wslio]

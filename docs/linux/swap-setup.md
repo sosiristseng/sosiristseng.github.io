@@ -12,6 +12,7 @@ To reduce swap partition/file writes and keep more data in RAM.
 echo 'vm.swappiness = 10' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p            # you should see 'vm.swappiness = 10'
 ```
+
 ## Use Swap file
 
 Swap file are more flexible in disk space and partition usage than swap partitions. Ubuntu installations use swap files by default so you don't have to manually enable it. If you want to enable swap file, run the following command:

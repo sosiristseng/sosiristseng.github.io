@@ -6,47 +6,44 @@ tags:
   - windows
 ---
 
-[yt-dlp](https://github.com/yt-dlp/yt-dlp) is an actively developed fork of the famous Youtube video downloader `youtube-dl`.
+Install [yt-dlp](https://github.com/yt-dlp/yt-dlp) is an actively developed fork of the famous Youtube video downloader `youtube-dl`.
 
-## Install
+=== Download executable (Linux/MacOS)
 
-### Download executable (Linux/MacOS)
+    ```sh
+    sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+    sudo chmod a+rx /usr/local/bin/yt-dlp
+    ```
 
-```sh
-sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+=== Arch Linux
 
-sudo chmod a+rx /usr/local/bin/yt-dlp
-```
+    ```sh
+    sudo pacman -S yt-dlp
+    ```
 
-### Arch Linux
+=== Windows
 
-```sh
-sudo pacman -S yt-dlp
-```
+    chocolatey
 
-### Windows
+    ```powershell
+    choco install yt-dlp
+    ```
 
-chocolatey
+    winget
 
-```powershell
-choco install yt-dlp
-```
+    ```powershell
+    winget install yt-dlp.yt-dlp
+    ```
 
-winget
+=== conda
 
-```powershell
-winget install yt-dlp.yt-dlp
-```
-
-### conda
-
-```sh
-conda install -c conda-forge yt-dlp
-```
+    ```sh
+    conda install -c conda-forge yt-dlp
+    ```
 
 ## Usage
 
-## Download videos with subtitles
+### Download videos with subtitles
 
 Use the `--write-subs` option.
 
@@ -54,7 +51,7 @@ Use the `--write-subs` option.
 yt-dlp --write-subs <url>
 ```
 
-## Limit resolution to 1080
+### Limit resolution to 1080
 
 Use `-S` to limit the search range to 1080.
 

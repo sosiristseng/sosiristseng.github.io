@@ -5,49 +5,53 @@ tags:
   - linux
   - windows
 ---
+
 [Visual Studio Code](https://code.visualstudio.com) is a lightweight but powerful source code editor which runs on your desktop and is available for Linux, macOS and Windows. See also [awesome VSCode](https://github.com/viatsko/awesome-vscode).
-## Install
 
-### Ubuntu
+Install:
 
-```sh
-curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
+=== Ubuntu
 
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+    ```sh
+    curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
+    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+    sudo apt update && sudo apt install -y code
+    ```
 
-sudo apt update && sudo apt install -y code
-```
+    Or install via snap
 
-### Arch Linux
+    ```sh
+    sudo snap install code --classic
+    ```
 
-Install from the AUR
-```sh
-yay -S visual-studio-code-bin
-```
+=== Arch Linux
 
-The open source version (sourced directly from the GitHub repo) is avaiable in the community repository.
+    Install from the AUR
 
-```sh
-sudo pacman -S code
-```
+    ```sh
+    yay -S visual-studio-code-bin
+    ```
 
-### snap
+    The open source version (sourced directly from the GitHub repo) is avaiable in the community repository.
 
-```sh
-sudo snap install code --classic
-```
+    ```sh
+    sudo pacman -S code
+    ```
 
-### Windows (chocolatey)
+=== Windows
 
-```powershell
-choco install vscode
-```
+    chocolatey:
 
-### Windows (winget)
+    ```powershell
+    choco install vscode
+    ```
 
-```powershell
-winget install vscode
-```
+    winget:
+
+    ```powershell
+    winget install vscode
+    ```
+
 ## Settings
 
 ### Change VS Code UI font
@@ -71,8 +75,10 @@ And reload VS Code.
 [^2]: https://askubuntu.com/questions/1197231/visual-studio-code-ui-is-visually-mismatched-in-ubuntu-19-1
 
 ### Line height
+
 You can increase line height to make you code look better.
 Search for `Line height` in VSCode setting and set it to a higher number. (For example, 1.4)
+
 ## Interesting VS Code extensions
 
 - [Luna paint](https://marketplace.visualstudio.com/items?itemName=Tyriar.luna-paint): A raster image editor extension for VSCode.

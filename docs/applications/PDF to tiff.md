@@ -6,6 +6,7 @@ tags:
   - windows
 ---
 Convert `pdf` files to `tiff` images with `pdftoppm` or `ghostscript`.
+
 ## pdftoppm
 
 [^2]: https://www.linuxuprising.com/2019/03/how-to-convert-pdf-to-image-png-jpeg.html
@@ -14,23 +15,23 @@ Convert `pdf` files to `tiff` images with `pdftoppm` or `ghostscript`.
 
 To install `pdftoppm` (included in `poppler-utils`)[^2][^3][^4]
 
-### Ubuntu
+=== "Ubuntu"
 
-```sh
-sudo apt install poppler-utils
-```
+    ```sh
+    sudo apt install poppler-utils
+    ```
 
-### Arch Linux
+=== "Arch Linux"
 
-```sh
-sudo pacman -S poppler-utils
-```
+    ```sh
+    sudo pacman -S poppler-utils
+    ```
 
-### conda
+=== "conda"
 
-```sh
-conda install -c conda-forge poppler
-```
+    ```sh
+    conda install -c conda-forge poppler
+    ```
 
 Usage: [documentation of `pdftoppm`](https://www.mankier.com/1/pdftoppm)
 
@@ -55,7 +56,7 @@ sudo pacman -S ghostscript imagemagick
 ```
 
 
-> [! note ] 
+> [! note ]
 > For security reasons, PDF read/write operations are disable by default. You enable this function by editing the settings file
    
 ```xml title="/etc/ImageMagick-7/policy.xml"

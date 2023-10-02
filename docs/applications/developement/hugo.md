@@ -9,38 +9,41 @@ tags:
   - devops
 ---
 
-[Hugo](https://gohugo.io/) is the world’s fastest framework for building websites, written in Go. 
+[Hugo](https://gohugo.io/) is the world’s fastest framework for building websites, written in Go.
 
-## Installation
+Install:
 
-### Ubuntu
-Download and install hugo binary from the [release page](https://github.com/gohugoio/hugo/releases/latest). Or use snap:
+=== Ubuntu
 
-```powershell
-sudo snap install hugo
-sudo snap connect hugo:removable-media
-sudo snap connect hugo:ssh-keys
-```
+    Download and install the hugo `deb` file from the [release page](https://github.com/gohugoio/hugo/releases/latest).
 
-### Arch Linux
+    Or use snap:
 
-```bash
-sudo pacman -S hugo
-```
+    ```bash
+    sudo snap install hugo
+    sudo snap connect hugo:removable-media
+    sudo snap connect hugo:ssh-keys
+    ```
 
-### Windows
+=== Arch Linux
 
-Via chocolatey:
+    ```bash
+    sudo pacman -S hugo
+    ```
 
-```powershell
-choco install hugo-extended
-```
+=== Windows
 
-Go compiler is needed for install Hugo modules
+    Via chocolatey:
 
-```powershell
-choco install golang
-```
+    ```powershell
+    choco install hugo-extended
+    ```
+
+    Go compiler is needed for install Hugo modules
+
+    ```powershell
+    choco install golang
+    ```
 
 ## Docker image
 
@@ -49,6 +52,8 @@ choco install golang
 ```dockerfile
 FROM klakegg/hugo
 ```
+
+
 ## Github actions
 
 [Hugo Github action](https://github.com/peaceiris/actions-hugo) by peaceiris.
@@ -100,6 +105,7 @@ A list of **[Hugo themes](https://themes.gohugo.io/)** I found useful
 - [hugo-book](https://github.com/alex-shpak/hugo-book)
 - [hugo-geekdoc](https://github.com/thegeeklab/hugo-geekdoc)
 - [hugo-theme-relearn](https://github.com/McShelby/hugo-theme-relearn)
+
 ### Blogs
 
 - [DoIT](https://github.com/HEIGE-PCloud/DoIt)
@@ -119,6 +125,6 @@ A list of **[Hugo themes](https://themes.gohugo.io/)** I found useful
 
 ## Github template repositories by me
 
-- Hugo Book theme: <https://github.com/sosiristseng/template-hugo-book>
-- Hugo DoIt theme: <https://github.com/sosiristseng/template-hugo-doit>
-- Hugo Relearn theme: <https://github.com/sosiristseng/template-hugo-relearn>
+- Hugo Book theme: https://github.com/sosiristseng/template-hugo-book
+- Hugo DoIt theme: https://github.com/sosiristseng/template-hugo-doit
+- Hugo Relearn theme: https://github.com/sosiristseng/template-hugo-relearn

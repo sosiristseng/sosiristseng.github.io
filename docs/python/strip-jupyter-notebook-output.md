@@ -49,6 +49,7 @@ How this works: [^1]
 ## nbstripout
 
 [nbstripout](https://github.com/kynan/nbstripout) is a python package to automate these works above.
+
 ## nbstripout-fast
 
 [nbstripout-fast](https://github.com/stas00/jupyter-notebook-tools/blob/master/nbstripout/nbstripout-fast) is a simple python script that runs much faster than `nbconvert --clear-output`.
@@ -65,6 +66,7 @@ In your project folder's `.git/config`:
 ```
 
 And in your project folder's `.gitattributes`:
+
 ```gitconfig title=".gitattributes"
 [filter "nbstripout"]
   clean = nbstripout-fast

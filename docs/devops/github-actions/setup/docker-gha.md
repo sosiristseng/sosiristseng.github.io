@@ -6,6 +6,7 @@ tags:
   - devops
 draft: false
 ---
+
 ## Building and publishing docker images
 
 - [Docker documentation: Configure GitHub Actions](https://docs.docker.com/ci-cd/github-actions/)

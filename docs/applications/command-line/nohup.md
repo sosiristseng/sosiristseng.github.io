@@ -5,6 +5,7 @@ tags:
   - linux
   - ssh
 ---
+
 [nohup](https://blog.gtwang.org/linux/linux-nohup-command-tutorial/) runs background process(es) uninterruptedly even the remote SSH session becomes offline.[
 
 ```sh
@@ -33,4 +34,3 @@ When you're done, you can kill the process by the proccess ID (PID).
 ps -aux | grep mycmd
 kill PID
 ```
-

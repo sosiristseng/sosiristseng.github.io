@@ -5,73 +5,75 @@ tags:
   - git
   - windows
 ---
-## Install Git
 
-Install [Git](https://git-scm.com/) version control system.
+About the [Git](https://git-scm.com/) version control system.
 
-### Ubuntu
+Install git
 
-```bash
-sudo add-apt-repository -y ppa:git-core/ppa
-sudo apt update && sudo apt install -y git git-lfs
-```
+=== "Ubuntu"
 
-### Arch Linux
+    ```bash
+    sudo add-apt-repository -y ppa:git-core/ppa
+    sudo apt update && sudo apt install -y git git-lfs
+    ```
 
-```sh
-pacman -S git git-lfs
-```
+=== "Arch Linux"
 
-### Windows
+    ```sh
+    pacman -S git git-lfs
+    ```
 
-chocolatey:
+=== "Windows"
 
-```powershell
-choco install git.install
-```
+    chocolatey:
 
-winget:
+    ```powershell
+    choco install git.install
+    ```
 
-```powershell
-winget install Git.Git
-```
+    winget:
 
-## Tips
+    ```powershell
+    winget install Git.Git
+    ```
 
-[[git/index]]
+## Git tips
 
-## Github actions
+- [[git/index|Git commands]]
+- [[git-ops-gha|Git operations in GitHub actions]]
 
-[[git-ops-gha]]
 
 ## GitHub desktop
 
 [GitHub Desktop](https://desktop.github.com/) is an open source [Electron](https://www.electronjs.org/)-based GitHub app. It is written in [TypeScript](https://www.typescriptlang.org) and
 uses [React](https://reactjs.org/).
 
-### Ubuntu
+Install GitHub desktop
 
-```bash
-wget -qO - https://apt.packages.shiftkey.dev/gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/shiftkey-packages.gpg > /dev/null
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-packages.gpg] https://apt.packages.shiftkey.dev/ubuntu/ any main" > /etc/apt/sources.list.d/shiftkey-packages.list'
+=== "Ubuntu"
 
-sudo apt update && sudo apt install github-desktop
-```
-### Arch Linux
+    ```bash
+    wget -qO - https://apt.packages.shiftkey.dev/gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/shiftkey-packages.gpg > /dev/null
+    sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-packages.gpg] https://apt.packages.shiftkey.dev/ubuntu/ any main" > /etc/apt/sources.list.d/shiftkey-packages.list'
+    sudo apt update && sudo apt install github-desktop
+    ```
 
-```bash
-yay -S github-desktop-bin gnome-keyring
-```
-### Windows
+=== "Arch Linux"
 
-chocolatey:
+    ```bash
+    yay -S github-desktop-bin gnome-keyring
+    ```
 
-```powershell
-choco install github-desktop
-```
+=== "Windows"
 
-winget:
+    chocolatey:
 
-```powershell
-winget install -e --id GitHub.GitHubDesktop
-```
+    ```powershell
+    choco install github-desktop
+    ```
+
+    winget:
+
+    ```powershell
+    winget install -e --id GitHub.GitHubDesktop
+    ```

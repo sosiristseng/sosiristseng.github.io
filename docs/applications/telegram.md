@@ -6,35 +6,34 @@ tags:
   - windows
 ---
 
-## Install
-
 Install the official desktop client for the [Telegram messenger](https://telegram.org).
 
-### snap
+=== "snap"
 
-```sh
-sudo snap install telegram-desktop
-```
+    ```sh
+    sudo snap install telegram-desktop
+    ```
 
-### Arch Linux
+=== "Arch Linux"
 
-```sh
-sudo pacman -S telegram-desktop
-```
+    ```sh
+    sudo pacman -S telegram-desktop
+    ```
 
-### Windows
-chocolatey
+=== "Windows"
 
-```powershell
-choco install telegram
-```
+    chocolatey
 
-winget
+    ```powershell
+    choco install telegram
+    ```
 
-```powershell
-winget install Telegram.TelegramDesktop
-```
+    winget
 
-### Official binaries
+    ```powershell
+    winget install Telegram.TelegramDesktop
+    ```
 
-Download and run the [official binaries](https://telegram.org).
+=== "Official binaries"
+
+    Download and run the [official binaries](https://telegram.org).

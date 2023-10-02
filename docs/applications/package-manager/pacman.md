@@ -71,7 +71,7 @@ yay -S paru-bin # If you don't want to compile the Rust code
 # yay -S paru   # Compile paru from source
 ```
 
-  Afterwards, you can install AUR packages as if installing regular ones
+Afterward, you can install AUR packages as if installing regular ones
 
 ```sh
 paru -S google-chrome
@@ -110,6 +110,7 @@ Explanation:
 - `--combinedupgrade`: resolve dependency and then install both the repo and the AUR packages in one go.
 - `--sudoloop`: Loop sudo calls in the background to prevent sudo from timing out during long builds.
 - `--batchinstall`: Build all AUR packages and install them at once.
+
 ### Compilation options for AUR packages
 
 To customize compilation options, a good starting point is to copy from the system-wide config file:
@@ -119,6 +120,7 @@ cp /etc/makepkg.conf ~/.makepkg.conf
 ```
 
 to you own `~/.makepkg.conf` [makepkg@ArchWiki](https://wiki.archlinux.org/index.php/Makepkg). However, `PKGBUILD` settings in the  packages still have higher priorities and can override your settings.
+
 #### CPU target for building optimized binaries
 
 ```txt title=".makepkg.conf"
@@ -126,11 +128,13 @@ CFLAGS="-march=native -O2 -pipe -fstack-protector-strong -fno-plt"
 CXXFLAGS="${CFLAGS}"
 RUSTFLAGS="-C opt-level=2 -C target-cpu=native"
 ```
+
 #### Parallel compilation
 
 ```txt title=".makepkg.conf"
 MAKEFLAGS="-j$(nproc)"
 ```
+
 #### Compressing packages
 
 ```txt title=".makepkg.conf"

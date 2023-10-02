@@ -7,30 +7,33 @@ tags:
 ---
 
 Setup [Brave browser](https://brave.com)
-### Ubuntu
 
-```sh
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+Install:
 
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list > /dev/null
+=== "Ubuntu"
 
-sudo apt update && sudo apt install -y brave-browser
-```
+    ```sh
+    sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list > /dev/null
+    sudo apt update && sudo apt install -y brave-browser
+    ```
 
-### Arch Linux
+=== "Arch Linux"
 
-```sh
-yay -S brave-bin
-```
+    ```sh
+    yay -S brave-bin
+    ```
 
-### Windows (chocolatey)
+=== Windows
 
-```powershell
-choco install brave
-```
+    chocolatey:
 
-### Windows (winget)
+    ```powershell
+    choco install brave
+    ```
 
-```powershell
-winget install Brave.Brave
-```
+    winget:
+
+    ```powershell
+    winget install Brave.Brave
+    ```

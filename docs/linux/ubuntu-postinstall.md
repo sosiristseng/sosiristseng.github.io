@@ -153,6 +153,7 @@ sed 's/#.*$//' pkgs.txt | xargs sudo apt install -y
 - [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) : an icon taskbar for Gnome Shell.
 - [Arc Menu](https://extensions.gnome.org/extension/3628/arcmenu/) an application menu for GNOME Shell
 - [Material shell](https://extensions.gnome.org/extension/3357/material-shell/) tiling windows.
+
 ### Kubuntu/KDE Neon: System Settings
 
 - Double click to open files instead of single clicks: `Workspace behavior` => `General behavior` => `click behavior`.

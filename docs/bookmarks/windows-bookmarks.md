@@ -1,14 +1,17 @@
 
 [Awesome & curated list of best applications and tools for Windows](https://github.com/Awesome-Windows/Awesome).
+
 ## System tools
-  
+
 - [Dism++](https://github.com/Chuyu-Team/Dism-Multi-language) : Dism Windows image (wim) manipulator and system cleaner.
 - [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) : Classic Shell and stratup menu for Windows 10.
 - [WinSetView](https://lesferch.github.io/WinSetView/) : an easy way to set Windows File Explorer default folder views and disabling annoying groups.
+
 ## Package manager
 
 - [chocolatey](https://chocolatey.org/) : A Windows package manager.
 - [winget](https://github.com/microsoft/winget-cli) : Windows Package Manager CLI (aka winget). See also its [package repo](https://github.com/microsoft/winget-pkgs).
+
 ## File compression and archiving
 
 - [7-Zip](https://www.7-zip.org/) : An open source file compressor/archive manager with a high compression ratio..

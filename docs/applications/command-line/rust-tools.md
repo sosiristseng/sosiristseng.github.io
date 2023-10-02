@@ -8,6 +8,7 @@ tags:
 ---
 
 See also [rewritten in Rust: Modern Alternatives of Command-Line Tools](https://zaiste.net/posts/shell-commands-rust/)
+
 ## bat : alternative to `cat`
 
 [bat](https://github.com/sharkdp/bat) is a `cat` clone with syntax highlighting and Git integration.
@@ -15,6 +16,7 @@ See also [rewritten in Rust: Modern Alternatives of Command-Line Tools](https://
 ```sh
 bat test.md
 ```
+
 ## exa : alternative to `ls`
 
 [exa](https://github.com/ogham/exa) is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.
@@ -22,6 +24,7 @@ bat test.md
 ```sh
 exa --long --header --git
 ```
+
 ## fd : alternative to `find`
 
 [fd](https://github.com/sharkdp/fd) is a simple, fast and user-friendly alternative to `find`.
@@ -29,6 +32,7 @@ exa --long --header --git
 ```sh
 fd query
 ```
+
 ## ripgrep : alternative to `grep`
 
 [ripgrep](https://github.com/BurntSushi/ripgrep) is a line-oriented search tool that recursively searches the current directory for a regex pattern.
@@ -37,32 +41,34 @@ fd query
 
 [bottom](https://github.com/clementtsang/bottom) is a resource monitor written in Rust.
 
-### Install
+Install:
 
-#### Ubuntu
+=== "Ubuntu"
 
-Install the [deb release](https://github.com/ClementTsang/bottom/releases/latest).
-#### Arch Linux
+    Install the [deb release](https://github.com/ClementTsang/bottom/releases/latest).
 
-```sh
-sudo pacman -S bottom
-```
+=== "Arch Linux"
 
-#### snap
-```sh
-sudo snap install bottom
+    ```sh
+    sudo pacman -S bottom
+    ```
 
-# To allow the program to run as intended
-sudo snap connect bottom:mount-observe
-sudo snap connect bottom:hardware-observe
-sudo snap connect bottom:system-observe
-sudo snap connect bottom:process-control
-```
-#### Windows
+=== "snap"
 
-```powershell
-choco install bottom
-```
-### Usage
+    ```sh
+    sudo snap install bottom
 
-Run `btm`.
+    # To allow the program to run as intended
+    sudo snap connect bottom:mount-observe
+    sudo snap connect bottom:hardware-observe
+    sudo snap connect bottom:system-observe
+    sudo snap connect bottom:process-control
+    ```
+
+=== "Windows"
+
+    ```powershell
+    choco install bottom
+    ```
+
+Usage: `btm`.
