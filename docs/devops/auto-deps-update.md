@@ -102,18 +102,8 @@ The settings file `renovate.json` example
 ```json title="renovate.json"
 {
   "extends": [
-    "config:base"
-  ],
-  "packageRules": [
-    {
-        "matchUpdateTypes": [
-            "minor",
-            "patch",
-            "pin",
-            "digest"
-        ],
-        "automerge": true
-    }
+    "config:recommended",
+    ":automergeMajor"
   ],
   "git-submodules": {
       "enabled": true
