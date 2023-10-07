@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "e5b833bbf8374280",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b351431cd597e38",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98600d59c877b20c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ba892d74cb96d3a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "094327c315f14eb2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a69a5ddbd5e6154a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "147678b521de77e0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#apps",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "863f3ada949b6561",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fdedf7c1c1059304",
+    "type": "split",
+    "children": [
+      {
+        "id": "38e50456f714aa1a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1742eb1440a2ce1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "abdc300927943939",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "be8d275aa07227b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "91cd091b9bc854bd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "98600d59c877b20c",
+  "lastOpenFiles": [
+    "windows/WSL2.md",
+    "windows/windows-postinstall.md",
+    "bookmarks/windows-bookmarks.md",
+    "windows/PPT-to-TIFF.md",
+    "windows/GPU-driver-timeout-fix.md",
+    "windows/check-battery-status.md",
+    "school/super-resolution-microscopy.md",
+    "bookmarks/research-bookmarks.md",
+    "school/mechanobiology.md",
+    "school/computational-cognitive-neuroscience.md",
+    "school/Course Notes.md",
+    "school/applied-electricity.md",
+    "school/academic-writing-04.md",
+    "python/change-jupyter-book-build-options-on-the-fly.md",
+    "python/strip-jupyter-notebook-output.md",
+    "bookmarks/coding/python-bookmarks.md",
+    "linux/ubuntu-postinstall.md",
+    "linux/ubuntu-3rd-party.md",
+    "linux/swap-setup.md",
+    "linux/recover-nautilus-places-folders.md",
+    "linux/passing-arguments-txt.md",
+    "linux/linux-local-time.md",
+    "linux/fonts-setup.md",
+    "linux/environment-variables.md",
+    "linux/copy-files-selectively.md",
+    "applications/apt.md",
+    "bookmarks/coding",
+    "devops/gitlab-ci",
+    "devops/github-actions/setup",
+    "devops/github-actions/tips",
+    "bookmarks/web-design",
+    "_templates"
+  ]
+}
