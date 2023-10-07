@@ -5,13 +5,14 @@ tags:
 - research
 ---
 
-- A curated list of [😎 awesome research](https://github.com/emptymalei/awesome-research).
+- https://github.com/emptymalei/awesome-research
 - [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/) : A web based tool to extract data from plots, images, and maps
 
 ## Reference managers
 
 - [SciWheel](https://sciwheel.com/work/): the online reference manager with browser, Google Doc, and MS Word plugins.
 - [Zotero](https://www.zotero.org/): an open-source reference manager.
+
 ## Find Publications
 
 - [Google scholar](https://scholar.google.com.tw/)
@@ -22,6 +23,7 @@ tags:
 - [Sci-Hub](https://sci-hub.se/)
 - [Library Genesis](http://libgen.rs/)
 </details>
+
 ## Data source
 
 ### General datasets
@@ -32,12 +34,14 @@ tags:
 - [Wikidata](https://www.wikidata.org/)
 - [World Bank Open Data](https://data.worldbank.org)
 - [Registry of Research Data Repositories](https://www.re3data.org/)
+
 ### Biology
 
 - [Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)
 - [Phylogeny.fr](http://www.phylogeny.fr/) : Online phylogenic tree analysis
 - [Biomedical statistics](https://wangcc.me/LSHTMlearningnote/)
 - [Introduction to Bioimage Analysis](https://www.ibiology.org/techniques/introduction-to-bioimage-analysis/)
+
 ### Systems biology models
 
 - [BioModels](https://www.ebi.ac.uk/biomodels/), SMBL format and generated code avaiable

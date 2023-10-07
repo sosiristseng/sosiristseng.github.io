@@ -5,50 +5,57 @@ tags:
 - python
 ---
 
-A curated list of [Awesome Python](https://github.com/vinta/awesome-python)
-## Running Python
+[Awesome Python](https://github.com/vinta/awesome-python): a curated list of Python stuff.
+
+## Running Python programs
 
 - [VSCode](https://code.visualstudio.com/) + [Python extension](https://code.visualstudio.com/docs/languages/python)
 - [PyCharm](https://www.jetbrains.com/pycharm/) by Jetbrains
 - [Spyder](https://www.spyder-ide.org/) (included in Anaconda distribution).
 - [Jupyter Lab](https://github.com/jupyterlab/jupyterlab) (included in Anaconda distribution).
-- [JupyterLab desktop](https://github.com/jupyterlab/jupyterlab-desktop): A standalone desktop application for [JupyterLab](https://github.com/jupyterlab/jupyterlab), based on Electron.
+- https://github.com/jupyterlab/jupyterlab-desktop : A standalone desktop application for https://github.com/jupyterlab/jupyterlab , based on Electron.
+
 ### JupyterLab themes
 
-- [Jupyter themes](https://github.com/dunovank/jupyter-themes) : `pip install jupyterthemes`
-- [Jupyterlab onedarkpro](https://github.com/johnnybarrels/jupyterlab_onedarkpro) : `jupyter labextension install jupyterlab_onedarkpro`
+- https://github.com/dunovank/jupyter-themes : `pip install jupyterthemes`
+- https://github.com/johnnybarrels/jupyterlab_onedarkpro : `jupyter labextension install jupyterlab_onedarkpro`
+
 ### Run Python Notebooks online
 
 - [Google Colab](https://colab.research.google.com/) : an online jupyter notebook platform for machine learning.
-- [Binder](https://mybinder.org/) : Turn a Git repo into a collection of interactive notebooks.
+- [Binder](https://mybinder.org/) : make a git repo of notebooks executable.
+
 ## Package Manager for Python
 
 - [Anaconda Python](https://www.anaconda.com/products/individual) : a full set of scientific Python packages with the `conda` package manager.
-  - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) : minimal installation with the `conda` package manager.
-  - [Mamba-forge](https://github.com/conda-forge/miniforge#mambaforge) : A `conda-forge` distribution + fast next-gen [mamba](https://github.com/mamba-org/mamba) package manager
+  - https://github.com/conda-forge/miniforge : minimal installation with the `conda` package manager and the [`conda-forge`](https://conda-forge.org/) community packages.
+  - [conda-forge packages](https://anaconda.org/conda-forge/repo)
 - [pipenv](https://pipenv.pypa.io/en/latest/) : the official dependency management tool for Python packages.
 - [Poetry](https://python-poetry.org/) : Python packaging and dependency management.
-- [pdm](https://github.com/pdm-project/pdm) : A modern Python package manager with [PEP 582](https://www.python.org/dev/peps/pep-0582) support.
+- [pdm](https://pdm.fming.dev/) : A modern Python package manager with [PEP 582](https://www.python.org/dev/peps/pep-0582) support.
 
-## Gradient boosters
-  
+## Machine learning
+
+### Gradient boosters
+
 [Wikipedia: Gradient boosting](https://en.wikipedia.org/wiki/Gradient_boosting)
 
 - [XGBoost](https://xgboost.readthedocs.io/en/latest/)
 - [LightGBM](https://lightgbm.readthedocs.io/en/latest/)
 - [Catboost](https://github.com/catboost/catboost)
 
-## Hyperparameter optimization
+### Hyperparameter optimization
 
 [Wikipedia: Hyperparameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization)
 
 - [hyperopt](https://github.com/hyperopt/hyperopt)
 - [ray-tune](https://docs.ray.io/en/latest/tune/index.html)
 - [optuna](https://optuna.org/)
-## Scientific machine learning
 
-- [deepxde](https://github.com/lululxvi/deepxde) : deep learning and differential equations.
-- [jax](https://github.com/google/jax) : Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more.
+### Scientific machine learning
+
+- https://github.com/lululxvi/deepxde : deep learning and differential equations.
+- https://github.com/google/jax : Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more.
 
 ## Python tutorials
 
@@ -63,6 +70,7 @@ A curated list of [Awesome Python](https://github.com/vinta/awesome-python)
 - [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/)
 - [Cracking Python bootcamp](https://github.com/purcellconsult/Cracking-Python-Bootcamp)
 - [Replacing bash scripts with Python](https://github.com/ninjaaron/replacing-bash-scripting-with-python)
+
 ### Visualization Tutorials
 
 - [Python Graph Gallery](https://python-graph-gallery.com/)
@@ -70,6 +78,7 @@ A curated list of [Awesome Python](https://github.com/vinta/awesome-python)
 - [Seaborn](https://seaborn.pydata.org/) with examples.
 - [Top 50 matplotlib plots](https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-master-plots-python/)
 - [Matplotlib, Seaborn, and Plotly tutorial](https://medium.com/jameslearningnote/資料分析-機器學習-第2-5講-資料視覺化-matplotlib-seaborn-plotly-75cd353d6d3f)
+
 ### Scientific Python Tutorials
 
 - [Python Course | Numerical programming](https://www.python-course.eu/numerical_programming_with_python.php)
@@ -79,6 +88,7 @@ A curated list of [Awesome Python](https://github.com/vinta/awesome-python)
 - [Elegant scipy](https://github.com/elegant-scipy/elegant-scipy)
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
 - [Numpy Tutorial part1](https://www.machinelearningplus.com/python/numpy-tutorial-part1-array-python-examples/). [Part2](https://www.machinelearningplus.com/python/numpy-tutorial-python-part2/)
+
 ### Data Processing and Machine learning
 
 - [Python Pandas Data Frame Basics](https://towardsdatascience.com/python-pandas-data-frame-basics-b5cfbcd8c039)

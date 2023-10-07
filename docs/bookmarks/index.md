@@ -4,9 +4,11 @@ tags:
   - bookmark
 ---
 
+- [Awesome](https://github.com/sindresorhus/awesome) lists of everything.
 - [MikuTools](https://tools.miku.ac/) : a collection of small useful online tools.
 - [免費資源網路社群 (Traditional Chinese)](https://free.com.tw/) : a collection of free tools.
-- [Awesome](https://github.com/sindresorhus/awesome) lists of everything.
+- [snapsave](https://snapsave.io) : Download youtube videos.
+-
 
 ## Office tools
 
@@ -14,6 +16,7 @@ tags:
 - [SlidesGo](https://slidesgo.com/): Free Google Slides and PowerPoint templates.
 - [Word templates](https://www.vertex42.com/WordTemplates/): Microsoft Word templates.
 - [PDF24](https://tools.pdf24.org/en/): 24 free PDF tools.
+- [Microsoft designer](https://designer.microsoft.com/) : AI-generated cover designs.
 
 ## Math tools
 
