@@ -3,7 +3,7 @@ title: Releases in GitHub actions
 draft: 
 tags:
   - github
-  - github
+  - devops
 ---
 
 ## Creating a release
