@@ -30,7 +30,7 @@ draft: true
 > zsh [does not read](https://superuser.com/questions/187639/zsh-not-hitting-profile) `~/.profile` by default. You can add this line to `~/.zprofile` or `~/.zshenv` to let zsh login shells read `~/.profile`
 
 ```zsh
-[[ -r ~/.profile ]] && emulate sh -c 'source ~/.profile'
+test -r "~/.profile" && emulate sh -c 'source ~/.profile'
 ```
 
 ### X windows
