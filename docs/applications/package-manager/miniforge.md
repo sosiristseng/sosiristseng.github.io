@@ -34,10 +34,9 @@ conda activate base
 conda config --set default_threads $(nproc)
 conda install -y conda-libmamba-solver
 conda config --set solver libmamba
-conda update -y python conda mamba
 conda update --all --yes
 
 # `bash` and `zsh` integration
-[ -f ~/.bashrc ] && conda init bash
-[ -f ~/.zshrc ] && conda init zsh
+test -f "~/.bashrc" && conda init bash
+test -f "~/.zshrc" && conda init zsh
 ```
