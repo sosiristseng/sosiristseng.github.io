@@ -18,19 +18,19 @@ draft: true
 ### Bash
 
 - `~/.profile` or `~/.bash_profile` for login bash shells.
-- `~/.bashrc` for every bash (interactive shell) instance.
+- `~/.bashrc` for every interactive bash instance.
 
 ### Zsh
 
 - `~/.zshenv` for environment variables in zsh.
 - `~/.zprofile` for login zsh shells.
-- `~/.zshrc` for every zsh (interactive shell) instance.
+- `~/.zshrc` for every interactive zsh instance.
 
-> [!note]
-> zsh [does not read](https://superuser.com/questions/187639/zsh-not-hitting-profile) `~/.profile` by default. You can add this line to `~/.zprofile` or `~/.zshenv` to let zsh login shells read `~/.profile`
+!!! note
+    zsh [does not read](https://superuser.com/questions/187639/zsh-not-hitting-profile) `~/.profile` by default. You can add this line to `~/.zprofile` or `~/.zshenv` to let zsh login shells read `~/.profile`
 
-```zsh
-test -r "~/.profile" && emulate sh -c 'source ~/.profile'
+```zsh title="~/.zshenv"
+test -r ${HOME}/.profile && emulate sh -c 'source ${HOME}/.profile'
 ```
 
 ### X windows
