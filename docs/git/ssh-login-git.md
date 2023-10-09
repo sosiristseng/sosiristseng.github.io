@@ -32,9 +32,9 @@ chmod 600 ~/.ssh/config
 nano ~/.ssh/config
 ```
 
-Add the following content to set the *private key* as the `IdentityFile`.
+Add the following content to set the *private key* as the IdentityFile.
 
-```sh title=~/.ssh/config
+```txt title="~/.ssh/config"
 Host GitHub
   HostName github.com
   IdentityFile ~/.ssh/id_ed25519
@@ -69,7 +69,7 @@ GitHub:
 ssh -vT git@github.com
 ```
 
-Accept its fingerprint if prompted. And you may see an error code during accessing to GitHub. Do not worry. The reason is that Github does not provide shell SSH access (while GitLab does). You will see something like `login successful` if everything goes well.
+Accept its fingerprint if prompted. You may see an error code while accessing GitHub. Do not worry. The reason is that GitHub does not provide shell SSH access (while GitLab does). You will see something like `login successful` if everything goes well.
 
 GitLab:
 
