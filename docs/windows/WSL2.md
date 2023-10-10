@@ -20,6 +20,7 @@ After reboot, run this command wiht admin privilege to install Ubuntu
 
 ```powershell
 wsl --set-default-version 2
+wsl --update
 wsl --install -d Ubuntu  # You can choose other distributions e.g. Debian
 ```
 
