@@ -17,12 +17,12 @@ wget -nv -O - https://raw.githubusercontent.com/zimfw/install/master/install.zsh
 
 1. In `~/.zimrc`, replace `zmodule asciiship` with
 
-   ```sh title="~/.zimrc"
-   zmodule romkatv/powerlevel10k --use degit
-   ```
+```sh title="~/.zimrc"
+zmodule romkatv/powerlevel10k --use degit
+```
 
 2. Run `zimfw install` in zsh to complete install.
-3. Install [powerline fonts](https://github.com/romkatv/powerlevel10k#manual) or [nerd fonts](https://www.nerdfonts.com/) for CLI icons.
+3. Install [powerline fonts](https://github.com/romkatv/powerlevel10k#manual) or [nerd fonts](https://www.nerdfonts.com/) for icons.
 4. Restart zsh and finish p10k's interactive configuration steps.
 
 ## Setup Node version manager (nvm)
