@@ -6,14 +6,17 @@ tags:
   - windows
 draft: false
 ---
+
 ## Install Julia
 
 Install Julia with the [juliaup](https://github.com/JuliaLang/juliaup) installer.
+
 ### Linux/MacOS
 
 ```sh
-curl -fsSL https://install.julialang.org | sh
+curl -fsSL https://install.julialang.org | sh -s -- -y
 ```
+
 ### Windows
 
 ```powershell
@@ -38,13 +41,12 @@ export JULIA_PROJECT=@.
 
 > [!info]
 > 
-> `IJulia.jl`, the Julia kernel for Jupyter notebooks, sets `JULIA_PROJECT=@.` by default. Thus, Jupyter notenooks load their local Julia environments automatically.
+> `IJulia.jl`, the Julia kernel for Jupyter notebooks, sets `JULIA_PROJECT=@.` by default. Thus, Jupyter notebooks load their local Julia environments automatically.
 
 > [!warning]
 > 
 >  Loading local environments unconditionally is unsafe in untrusted sources, as shown in [Nefarious.jl](https://github.com/StefanKarpinski/Nefarious.jl). That is why Julia doesn't run `julia --project=@.` by default.
    
-
 ### Fully utilize CPU threads
 
 Set environment variable `JULIA_NUM_THREADS=auto` to let Julia use all CPU threads.
@@ -90,7 +92,8 @@ catch e
 end
 ```
 
-Or run the following heredoc (in Linux) to setup the two files at once
+Or run the following heredoc (in Linux) to create the two files at once
+
 ```sh
 mkdir -p ~/.julia/config/ && cat >  ~/.julia/config/startup.jl << END
 try
