@@ -30,7 +30,6 @@ sudo apt-get update && sudo apt full-upgrade -y
 - [[qbittorrent]]
 - [[vivaldi]]
 - [[vscode]]
--
 
 ## Drivers
 
