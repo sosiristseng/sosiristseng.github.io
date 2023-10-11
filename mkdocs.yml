@@ -4,7 +4,7 @@ site_author: Wen-Wei Tseng
 
 # Repository
 repo_url: !ENV [REPO_URL, 'https://github.com/sosiristseng/sosiristseng.github.io']
-repo_name: !ENV [REPO_NAME, 'sosiristseng/template-mkdocs-material']
+repo_name: !ENV [REPO_NAME, 'sosiristseng/sosiristseng.github.io']
 edit_uri: 'edit/main/docs/' # Leave blank to disable the edit button,
 
 copyright: Copyright &copy; 2016 - 2023 Wen-Wei Tseng
@@ -68,7 +68,7 @@ theme:
     - navigation.sections
     # - navigation.expand
     - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
