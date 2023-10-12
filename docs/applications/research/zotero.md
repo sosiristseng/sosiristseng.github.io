@@ -9,7 +9,7 @@ tags:
 
 Install [Zotero](https://www.zotero.org/), an open source reference manager.
 
-=== Ubuntu
+=== "Ubuntu"
 
     [Zotero deb](https://github.com/retorquere/zotero-deb) provides packaged versions of Zotero reference manager and Juris-M for Debian-based systems.
 
@@ -18,7 +18,7 @@ Install [Zotero](https://www.zotero.org/), an open source reference manager.
     sudo apt update && sudo apt install -y zotero
     ```
 
-=== Arch Linux
+=== "Arch Linux"
 
     From the [AUR](https://aur.archlinux.org/packages/zotero-bin/)
 
@@ -26,7 +26,7 @@ Install [Zotero](https://www.zotero.org/), an open source reference manager.
     yay -S zotero-bin
     ```
 
-=== Windows
+=== "Windows"
 
     chocolatey:
 
