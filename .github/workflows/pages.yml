@@ -26,7 +26,7 @@ jobs:
         with:
           environment-file: environment.yml
           init-shell: bash
-          cache-environment-key: micromamba-py311-${{ hashFiles('requirements.txt') }}
+          cache-environment-key: micromamba-${{ hashFiles('requirements.txt') }}
           post-cleanup: all
       - name: Setup Pages
         id: pages
