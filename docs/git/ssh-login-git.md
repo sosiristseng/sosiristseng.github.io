@@ -69,10 +69,12 @@ GitHub:
 ssh -vT git@github.com
 ```
 
-Accept its fingerprint if prompted. You may see an error code while accessing GitHub. Do not worry. The reason is that GitHub does not provide shell SSH access (while GitLab does). You will see something like `login successful` if everything goes well.
+Accept its fingerprint if prompted. If you see "Hi <user>! You've successfully authenticated, but GitHub does not provide shell access)" that means voilà.
 
 GitLab:
 
 ```sh
 ssh -vT git@gitlab.com
 ```
+
+Accept its fingerprint if prompted.
