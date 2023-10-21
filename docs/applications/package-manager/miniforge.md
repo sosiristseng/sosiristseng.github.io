@@ -32,9 +32,9 @@ conda activate base
 # conda package manager setup
 # conda config --set auto_activate_base false
 conda config --set default_threads $(nproc)
-conda install -y conda-libmamba-solver
+mamba update python --yes && mamba update --all --yes
+mamba install -y conda-libmamba-solver
 conda config --set solver libmamba
-conda update --all --yes
 
 # `bash` and `zsh` integration
 test -f "~/.bashrc" && conda init bash
