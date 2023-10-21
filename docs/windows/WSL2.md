@@ -28,7 +28,7 @@ wsl --install -d Ubuntu  # You can choose other distributions e.g. Debian
 
 ### Enable systemd
 
-Edit `/etc/wsl.conf` in the WSL OS.
+Edit `/etc/wsl.conf` in the WSL.
 
 ```txt title="/etc/wsl.conf"
 [boot]
@@ -37,7 +37,7 @@ systemd=true
 
 ### Default login user (optional)
 
-Edit `/etc/wsl.conf` in the WSL OS.
+Edit `/etc/wsl.conf` in the WSL.
 
 ```txt title="/etc/wsl.conf"
 [user]
@@ -67,9 +67,9 @@ wsl --import-in-place Ubuntu .\Ubuntu\ext4.vhdx
 
 ## Mantenance
 
-### Update WSL kernel
+### Update kernel
 
-To (manually) update WSL kernel, run this script in Powershell with administrator privileges:
+To (manually) update the WSL kernel, run the following commands with administrator privileges:
 
 ```powershell
 wsl --shutdown
@@ -78,7 +78,7 @@ wsl --update
 
 ### Reclaim virtual disk space
 
-To reclaim disk space from virtual harddisks (VHDs), run this script in Powershell with administrator privileges[^optimize-vhd]:
+To reclaim disk space from virtual hard disks (VHDs), run the following commands with administrator privileges [^optimize-vhd]:
 
 ```powershell
 wsl --shutdown
@@ -89,7 +89,7 @@ Optimize-VHD -Path <path-to.vhdx> -Mode Full
 
 ## Host settings
 
-Edit `.wslconfig`.[^wslconfig] in your Windows home directory (Enter `%USERPROFILE%` in file explorer's location bar).
+Edit `.wslconfig` [^wslconfig] in your Windows home directory (Enter `%USERPROFILE%` in file explorer's location bar).
 
 For example,
 
@@ -114,4 +114,4 @@ Cross-OS file access (E.G., git accessing repositories in  `/mnt/c`) is at leas
 
 ### 1GB RAM cost for the hypervisor
 
-As [this reddit post](https://www.reddit.com/r/bashonubuntuonwindows/comments/wo6729/the_hidden_costs_of_wsl2_memory_usage/) and the [Hyper-V documentation](https://learn.microsoft.com/en-us/windows-server/administration/performance-tuning/role/hyper-v-server/memory-performance) said, running Windows and WSL side-by-side on a hypervisor takes 1GB of RAM.
+As [this Reddit post](https://www.reddit.com/r/bashonubuntuonwindows/comments/wo6729/the_hidden_costs_of_wsl2_memory_usage/) and the [Hyper-V documentation](https://learn.microsoft.com/en-us/windows-server/administration/performance-tuning/role/hyper-v-server/memory-performance) said, running Windows and WSL side-by-side on a hypervisor takes 1GB of RAM.
