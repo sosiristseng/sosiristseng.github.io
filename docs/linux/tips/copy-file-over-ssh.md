@@ -8,9 +8,9 @@ tags:
 
 How to copy files through the secure shell (SSH).
 
-## scp command
+## Using scp command
 
-`scp` works similar to regular copy (`cp`) command.[^scp]
+`scp` works similar to the regular copy (`cp`) command.[^scp]
 
 [^scp]: https://kb.iu.edu/d/agye
 
@@ -18,10 +18,10 @@ How to copy files through the secure shell (SSH).
 scp [options] username1@source_host:directory1/filename1 username2@destination_host:directory2/filename2
 ```
 
-## tar and pipe
+## Using tar and pipe
 
 ```sh
-tar cvf - $localdir | ssh someone@somemachine '(cd somewhere && tar xBf -)'
+tar cvf - $localdir | ssh someone@somemachine '(cd destdir && tar xBf -)'
 ```
 
 ## Secure FTP (SFTP)
@@ -32,15 +32,15 @@ And newer versions of `scp` also use `sftp` by default.[^scpandsftp]
 
 [^scpandsftp]: https://wiki.archlinux.org/title/SCP_and_SFTP
 
-## Mount as a disk using sshfs
+## Mount remote directory as a disk via sshfs
 
-[sshfs](https://github.com/libfuse/sshfs) could mount remote machine's directory as a local disk.
+https://github.com/libfuse/sshfs mounts a remote machine's directory as a local disk.
 
 ```sh
 sshfs [user@]hostname:[directory] mountpoint
 ```
 
-to unmount the directory
+To unmount the directory after file operations are done:
 
 ```sh
 fusermount -u mountpoint
