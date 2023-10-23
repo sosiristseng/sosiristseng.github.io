@@ -37,3 +37,12 @@ Install:
     ```powershell
     winget install Brave.Brave
     ```
+
+
+## Tips
+
+### Brave starts up slow
+
+Try turning off GPU-accelerated video en/decoding.
+
+Enter `brave://flags/` in the address bar, and then disable `Hardware-accelerated video decode` and `Hardware-accelerated video encode`.
