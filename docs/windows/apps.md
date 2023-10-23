@@ -6,6 +6,19 @@ tags:
 
 https://github.com/Awesome-Windows/Awesome : Curated list of best applications and tools for Windows
 
+## Internet
+
+- [[brave]]
+- [[vivaldi]]
+- [[qbittorrent]]
+- [[telegram]]
+
+## Command line tools
+
+- [[starship]]
+- [Powershell Core](https://github.com/PowerShell/PowerShell)
+- [Windows terminal](https://github.com/microsoft/terminal)
+
 ## File compression
 
 - [7-Zip](https://www.7-zip.org/) : An open source file compressor/archive manager with a high compression ratio..
@@ -19,13 +32,25 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 - [Dism++](https://github.com/Chuyu-Team/Dism-Multi-language) : Dism Windows image (wim) manipulator and system cleaner.
 - [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) : Classic Shell and stratup menu for Windows 10.
 - [WinSetView](https://lesferch.github.io/WinSetView/) : an easy way to set Windows File Explorer default folder views and disabling annoying groups.
+- [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)
 
-## Package manager
+### System information
+
+- [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
+- [GPU-Z](https://www.techpowerup.com/gpuz/)
+- [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)
+
+### Benchmark
+
+- [CrystalDiskMark](https://crystalmark.info/en/software/crystaldiskmark/) for HDDs/SSDs.
+- [Furmark](https://geeks3d.com/furmark/) for GPUs.
+
+### Package manager
 
 - [chocolatey](https://chocolatey.org/) : A Windows package manager.
 - [winget](https://github.com/microsoft/winget-cli) : Windows Package Manager CLI (aka winget). See also its [package repo](https://github.com/microsoft/winget-pkgs).
 
-## USB flash drive
+### USB flash drive
 
 - [Rufus](https://rufus.ie/) : Create bootable USB drives the easy way
 - [Ventoy](https://www.ventoy.net/) : an open source tool to create a bootable USB drive loading ISO files in the partition.
