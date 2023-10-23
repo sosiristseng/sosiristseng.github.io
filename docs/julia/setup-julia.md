@@ -4,7 +4,7 @@ tags:
   - julia
   - linux
   - windows
-draft: false
+
 ---
 
 ## Install Julia
@@ -23,7 +23,7 @@ curl -fsSL https://install.julialang.org | sh -s -- -y
 winget install julia -s msstore
 ```
 
-Alternatively, download and install [Julia official binaries](https://julialang.org/downloads/). 
+Alternatively, download and install [Julia official binaries](https://julialang.org/downloads/).
 
 ```powershell
 winget install JuliaLang.Julia
@@ -40,13 +40,13 @@ export JULIA_PROJECT=@.
 ```
 
 > [!info]
-> 
+>
 > `IJulia.jl`, the Julia kernel for Jupyter notebooks, sets `JULIA_PROJECT=@.` by default. Thus, Jupyter notebooks load their local Julia environments automatically.
 
 > [!warning]
-> 
+>
 >  Loading local environments unconditionally is unsafe in untrusted sources, as shown in [Nefarious.jl](https://github.com/StefanKarpinski/Nefarious.jl). That is why Julia doesn't run `julia --project=@.` by default.
-   
+
 ### Fully utilize CPU threads
 
 Set environment variable `JULIA_NUM_THREADS=auto` to let Julia use all CPU threads.

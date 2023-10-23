@@ -1,6 +1,6 @@
 ---
 title: Passing multiple lines of string
-draft: false
+
 tags:
   - linux
   - command-line

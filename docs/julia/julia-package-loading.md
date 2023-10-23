@@ -1,6 +1,6 @@
 ---
 title: Julia package loading
-draft: false
+
 tags:
   - julia
 ---
@@ -37,7 +37,7 @@ end
 - There may be recursive `include()` calls and `replace module` warnings. [FromFile.jl](https://github.com/Roger-luo/FromFile.jl) can deal with these file inclusion duplications.
 ## Automatic package loading in a project
 
-In this example, the project folder is `JuliaHello`. Note that `main.jl` has access to the `JuliaHello` module automatically.  
+In this example, the project folder is `JuliaHello`. Note that `main.jl` has access to the `JuliaHello` module automatically.
 
 ![image](https://user-images.githubusercontent.com/40054455/134101300-ce73796d-e5b5-4687-a0be-c083f8d146f1.png)
 

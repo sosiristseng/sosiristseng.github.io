@@ -1,6 +1,6 @@
 ---
 title: nohup
-draft: false
+
 tags:
   - linux
   - ssh

@@ -1,6 +1,6 @@
 ---
 title: Git Operations in GitLab CICD
-draft: false
+
 tags:
   - gitlab
   - git

@@ -1,6 +1,6 @@
 ---
 title: Passing arguments from a text file
-draft: false
+
 tags:
   - linux
   - command-line

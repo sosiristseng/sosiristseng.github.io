@@ -1,6 +1,6 @@
 ---
 title: Julia Tips
-draft: false
+
 tags:
   - julia
 ---

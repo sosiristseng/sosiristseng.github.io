@@ -1,6 +1,6 @@
 ---
 title: Plots.jl Tips
-draft: false
+
 tags:
   - julia
   - visualization
@@ -102,7 +102,7 @@ str = L"\textrm{Count}"
 
 - PDF uses vector graphic format and conserves details.
 - Set figure size e.g. `size=(750,750)` to determine the relative fonts sizes.
-- One can convert [[PDF to tiff]] images later using `pdftoppm` or `imagemagick`. 
+- One can convert [[PDF to tiff]] images later using `pdftoppm` or `imagemagick`.
 ## Shared Colorbar
 
 Source: <https://discourse.julialang.org/t/plots-jl-shared-colorbar-with-subplots/47269/4>
@@ -146,4 +146,3 @@ l = @layout [grid(2, 2) a{0.035w}]
 
 p_all = plot(p1, p2, p3, p4, h2, layout=l, link=:all)
 ```
-

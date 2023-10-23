@@ -1,6 +1,6 @@
 ---
 title: Git Operations in GitHub actions
-draft: false
+
 tags:
   - git
   - github

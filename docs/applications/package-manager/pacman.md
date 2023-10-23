@@ -1,6 +1,6 @@
 ---
 title: Pacman package mananger
-draft: false
+
 tags:
   - linux/arch
 ---

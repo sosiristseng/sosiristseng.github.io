@@ -1,6 +1,6 @@
 ---
 title: Cancel old jobs in GitHub actions
-draft: false
+
 tags:
   - github
   - devops

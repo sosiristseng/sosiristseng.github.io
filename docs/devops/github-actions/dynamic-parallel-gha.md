@@ -1,6 +1,6 @@
 ---
 title: Dynamic parallel matrix in GitHub actions
-draft: false
+
 tags:
   - github
   - devops

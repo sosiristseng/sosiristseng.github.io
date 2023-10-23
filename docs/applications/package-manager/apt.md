@@ -1,6 +1,6 @@
 ---
 title: APT package manager
-draft: false
+
 tags:
   - linux/ubuntu
 ---

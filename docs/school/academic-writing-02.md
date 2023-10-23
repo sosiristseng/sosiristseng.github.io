@@ -1,6 +1,6 @@
 ---
 title: Academic Writing week 2
-draft: false
+
 tags:
 - school-notes
 ---

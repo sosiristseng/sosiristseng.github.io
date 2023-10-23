@@ -1,6 +1,6 @@
 ---
 title: Change git histories
-draft: false
+
 tags:
   - git
 ---

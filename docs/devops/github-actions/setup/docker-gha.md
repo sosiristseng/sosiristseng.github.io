@@ -4,7 +4,7 @@ tags:
   - docker
   - github
   - devops
-draft: false
+
 ---
 
 ## Building and publishing docker images

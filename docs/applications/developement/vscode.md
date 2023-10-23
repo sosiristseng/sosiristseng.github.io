@@ -1,6 +1,6 @@
 ---
 title: VSCode
-draft: false
+
 tags:
   - linux
   - windows

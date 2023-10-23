@@ -1,6 +1,6 @@
 ---
 title: Academic Writing Week 1
-draft: false
+
 tags:
 - school-notes
 ---

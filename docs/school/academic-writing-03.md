@@ -1,7 +1,7 @@
 ---
 title: Academic Writing Week 3
-draft: false
-tags: 
+
+tags:
 - school-notes
 ---
 

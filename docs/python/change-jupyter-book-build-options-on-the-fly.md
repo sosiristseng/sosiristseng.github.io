@@ -1,6 +1,6 @@
 ---
 title: Change Jupyter book build options on-the-fly
-draft: false
+
 tags:
   - python
   - github

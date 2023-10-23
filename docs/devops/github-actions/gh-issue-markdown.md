@@ -1,6 +1,6 @@
 ---
 title: Convert GitHub issues to a markdown file
-draft: false
+
 tags:
   - markdown
   - github

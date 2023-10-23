@@ -1,6 +1,6 @@
 ---
 title: Git Commands
-draft: false
+
 tags:
   - git
   - devops

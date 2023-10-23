@@ -1,6 +1,6 @@
 ---
 title: Github Action and Cirrus CI
-draft: false
+
 tags:
   - github
   - devops

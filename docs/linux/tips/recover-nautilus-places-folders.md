@@ -1,6 +1,6 @@
 ---
 title: Recover Nautilus places folders
-draft: false
+
 tags:
   - linux/ubuntu
 ---

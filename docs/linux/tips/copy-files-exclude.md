@@ -1,6 +1,6 @@
 ---
 title: Copy a directory tree with exclusions
-draft: false
+
 tags:
   - linux
 ---

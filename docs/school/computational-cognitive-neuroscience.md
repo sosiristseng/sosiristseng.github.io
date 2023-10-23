@@ -1,6 +1,6 @@
 ---
 title: Computational Cognitive Neuroscience
-draft: false
+
 tags: ["school-notes"]
 ---
 

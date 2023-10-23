@@ -1,6 +1,6 @@
 ---
 title: Automatic Dependency Update
-draft: false
+
 tags:
   - devops
   - github

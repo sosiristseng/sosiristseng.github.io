@@ -1,6 +1,6 @@
 ---
 title: Julia Bookmarks
-draft: false
+
 tags:
   - bookmark
   - julia

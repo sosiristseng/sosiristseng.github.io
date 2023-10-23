@@ -1,6 +1,6 @@
 ---
 title: Linux local time
-draft: false
+
 tags:
   - linux
 ---

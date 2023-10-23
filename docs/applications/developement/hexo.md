@@ -1,6 +1,6 @@
 ---
 title: Hexo
-draft: false
+
 tags:
   - web
   - linux

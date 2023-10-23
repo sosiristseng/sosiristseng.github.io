@@ -1,6 +1,6 @@
 ---
 title: Git submodule
-draft: false
+
 tags:
   - git
   - devops

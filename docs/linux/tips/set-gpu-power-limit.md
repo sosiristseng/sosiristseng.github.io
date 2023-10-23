@@ -1,6 +1,6 @@
 ---
 title: Power limit for nvidia GPUs
-draft: false
+
 tags:
   - linux
   - gpu

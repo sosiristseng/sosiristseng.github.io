@@ -1,6 +1,6 @@
 ---
 title: Copy file over SSH
-draft: false
+
 tags:
   - ssh
   - linux

@@ -1,6 +1,6 @@
 ---
 title: PyPlotjl tips
-draft: false
+
 tags:
   - julia
   - visualization

@@ -1,6 +1,6 @@
 ---
 title: Strip Jupyter Notebook Output
-draft: false
+
 tags:
   - python
   - jupyter-notebook
