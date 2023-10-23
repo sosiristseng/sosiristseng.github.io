@@ -14,7 +14,7 @@ tags:
 
 Install:
 
-=== Ubuntu
+=== "Ubuntu"
 
     Download and install the hugo `deb` file from the [release page](https://github.com/gohugoio/hugo/releases/latest).
 
@@ -26,13 +26,13 @@ Install:
     sudo snap connect hugo:ssh-keys
     ```
 
-=== Arch Linux
+=== "Arch Linux"
 
     ```bash
     sudo pacman -S hugo
     ```
 
-=== Windows
+=== "Windows"
 
     Via chocolatey:
 
@@ -53,7 +53,6 @@ Install:
 ```dockerfile
 FROM klakegg/hugo
 ```
-
 
 ## Github actions
 
@@ -95,6 +94,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 ```
+
 ## Hugo themes
 
 A list of **[Hugo themes](https://themes.gohugo.io/)** I found useful
