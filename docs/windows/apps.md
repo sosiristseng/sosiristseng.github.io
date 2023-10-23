@@ -33,6 +33,7 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 - [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) : Classic Shell and stratup menu for Windows 10.
 - [WinSetView](https://lesferch.github.io/WinSetView/) : an easy way to set Windows File Explorer default folder views and disabling annoying groups.
 - [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)
+- [Display Driver Uninstaller (DDU)](https://www.guru3d.com/download/display-driver-uninstaller-download/) : cleanly uninstall NVIDIA/AMD GPU drivers.
 
 ### System information
 
