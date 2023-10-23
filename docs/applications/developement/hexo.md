@@ -14,6 +14,6 @@ tags:
 
 A list of **[Hexo themes](https://hexo.io/themes/)**
 
-- [Next](https://theme-next.js.org/). [Template made by me](https://github.com/sosiristseng/template-hexo-next)
+- [Next](https://theme-next.js.org/). Template: https://github.com/sosiristseng/template-hexo-next
 - [fluid](https://fluid-dev.github.io/hexo-fluid-docs/)
--  [butterfly](https://butterfly.js.org/)
+- [butterfly](https://butterfly.js.org/)

@@ -6,7 +6,9 @@ tags:
   - windows
 ---
 
-[Visual Studio Code](https://code.visualstudio.com) is a lightweight but powerful source code editor which runs on your desktop and is available for Linux, macOS and Windows. See also [awesome VSCode](https://github.com/viatsko/awesome-vscode).
+[Visual Studio Code](https://code.visualstudio.com) is a lightweight but powerful source code editor which runs on your desktop and is available for Linux, macOS and Windows.
+
+See also https://github.com/viatsko/awesome-vscode
 
 Install:
 

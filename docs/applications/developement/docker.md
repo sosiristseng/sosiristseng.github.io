@@ -7,14 +7,14 @@ tags:
   - windows
 ---
 
-- [awesome-docker](https://github.com/veggiemonk/awesome-docker) : A curated list of Docker resources and project.
+- https://github.com/veggiemonk/awesome-docker : A curated list of Docker resources and project.
 - [Docker Hub](https://hub.docker.com/) for docker images.
 
 ## Install docker engine
 
 === "Ubuntu"
 
-    Please check its [supported versions](https://docs.docker.com/engine/install/ubuntu/) before adding the docker repo.
+    Please check docker's [supported versions](https://docs.docker.com/engine/install/ubuntu/) before adding the docker repo.
 
     ```bash
     sudo apt-get update &&
@@ -114,7 +114,6 @@ and restart the docker daemon
 sudo service docker restart
 ```
 
-
 ## Documentations and Tutorials for Docker
 
 - Dockerfile [best practice](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices)
@@ -122,5 +121,5 @@ sudo service docker restart
 
 ## Docker Utilities
 
-- [hadolint](https://github.com/hadolint/hadolint) : Dockerfile linter that helps you build [best practice][] Docker images, validate inline bash, written in Haskell.
-- Self-hosted [docker-registry-proxy](https://github.com/rpardini/docker-registry-proxy)
+- https://github.com/hadolint/hadolint : Dockerfile linter that helps you build best practice Docker images, validate inline bash, written in Haskell.
+- https://github.com/rpardini/docker-registry-proxy : Self-hosted docker registry proxy
