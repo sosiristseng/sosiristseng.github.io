@@ -10,7 +10,7 @@ tags:
 
 Install:
 
-=== Ubuntu
+=== "Ubuntu"
 
     ```sh
     curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
@@ -24,7 +24,7 @@ Install:
     sudo snap install code --classic
     ```
 
-=== Arch Linux
+=== "Arch Linux"
 
     Install from the AUR
 
@@ -38,7 +38,7 @@ Install:
     sudo pacman -S code
     ```
 
-=== Windows
+=== "Windows"
 
     chocolatey:
 
@@ -52,7 +52,7 @@ Install:
     winget install vscode
     ```
 
-## Settings
+## VSCode Settings
 
 ### Change VS Code UI font
 
