@@ -5,7 +5,7 @@ tags:
   - command-line
 ---
 
-[`zimfw`](https://github.com/zimfw/zimfw) is a blazing fast zsh plugin framework, about 30x faster loading speed than `oh-my-zsh`.
+https://github.com/zimfw/zimfw is a blazing fast zsh plugin framework, about 30x faster loading speed than `oh-my-zsh`.
 
 After `zsh` is installed, run:
 

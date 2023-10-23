@@ -7,7 +7,7 @@ tags:
   - gpu
 ---
 
-[nvtop](https://github.com/Syllo/nvtop) is a GPU process monitor for AMD, Intel and NVIDIA GPUs.
+https://github.com/Syllo/nvtop is a GPU process monitor for AMD, Intel and NVIDIA GPUs.
 
 Install:
 
