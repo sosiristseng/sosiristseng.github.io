@@ -5,6 +5,7 @@ tags:
   - web
   - linux
   - windows
+  - static-site-generator
 ---
 
 [Hexo](https://hexo.io/) is a fast, simple & powerful blog framework powered by Node.js.

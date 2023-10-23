@@ -7,6 +7,7 @@ tags:
   - windows
   - github
   - devops
+  - static-site-generator
 ---
 
 [Hugo](https://gohugo.io/) is the world’s fastest framework for building websites, written in Go.
