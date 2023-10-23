@@ -1,5 +1,5 @@
 ---
-title: PPT to TIFF
+title: Convert PPT to TIFF
 tags:
   - windows
   - powerpoint
