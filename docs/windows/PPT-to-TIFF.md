@@ -18,11 +18,12 @@ The export resolution is 96 dpi by default. You can edit the Windows registry to
 
 Save the following content as `dpi-300.reg`. Then, double click the `dpi-300.reg` to change the default exporting dpi to 300.
 
-```txt
+```txt title="dpi-300.reg"
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Options]
 "ExportBitmapResolution"=dword:0000012C
 ```
 
-> [!note]
-> For older MS office suite, please see the [original article](https://learn.microsoft.com/en-us/office/troubleshoot/powerpoint/change-export-slide-resolution) for the corresponding version number.
+!!! note "For older MS office suite"
+
+    For older MS office suite, please see the [original article](https://learn.microsoft.com/en-us/office/troubleshoot/powerpoint/change-export-slide-resolution) for the corresponding version number.
