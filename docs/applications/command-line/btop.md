@@ -6,7 +6,7 @@ tags:
   - system-monitor
 ---
 
-[btop](https://github.com/aristocratos/btop) is a resource monitor wirtten in C++ that shows usage and stats for processor, memory, disks, network and processes.
+https://github.com/aristocratos/btop is a resource monitor wirtten in C++ that shows usage and stats for processor, memory, disks, network and processes.
 
 Install:
 
