@@ -1,12 +1,10 @@
 ---
 title: Linux local time
-
 tags:
   - linux
 ---
 
-One might want to set cllock to local time zone in Linux (which follows universal time by default) to show correct time when dual booting Linux and Windows systems.[^1]
-
+When dual-booting Linux and Windows, one might want to set the clock to the local time zone in Linux, which follows universal time (UTC) by default.[^1]
 
 ```bash
 timedatectl set-local-rtc 1
