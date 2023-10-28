@@ -102,7 +102,7 @@ str = L"\textrm{Count}"
 
 - PDF uses vector graphic format and conserves details.
 - Set figure size e.g. `size=(750,750)` to determine the relative fonts sizes.
-- One can convert [[PDF to tiff]] images later using `pdftoppm` or `imagemagick`.
+- One can convert [[PDF-to-tiff]] images later using `pdftoppm` or `imagemagick`.
 ## Shared Colorbar
 
 Source: <https://discourse.julialang.org/t/plots-jl-shared-colorbar-with-subplots/47269/4>
