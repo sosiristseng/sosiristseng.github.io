@@ -4,6 +4,7 @@ tags:
   - windows
   - powerpoint
   - research
+  - tiff
 ---
 
 How to export high resolution TIFF images from PowerPoint slides.
