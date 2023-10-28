@@ -1,10 +1,11 @@
 ---
-title: pipeview
+title: Convert PDF to TIFF
 tags:
   - tiff
   - document
   - linux
   - windows
+  - research
 ---
 
 Convert `pdf` files to `tiff` images with `pdftoppm` or `ghostscript`.
