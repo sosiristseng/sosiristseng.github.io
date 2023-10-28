@@ -1,10 +1,12 @@
 ---
 title: pipeview
 tags:
+  - tiff
   - document
   - linux
   - windows
 ---
+
 Convert `pdf` files to `tiff` images with `pdftoppm` or `ghostscript`.
 
 ## pdftoppm
@@ -33,7 +35,7 @@ To install `pdftoppm` (included in `poppler-utils`)[^2][^3][^4]
     conda install -c conda-forge poppler
     ```
 
-Usage: [documentation of `pdftoppm`](https://www.mankier.com/1/pdftoppm)
+Usage: see [documentation of `pdftoppm`](https://www.mankier.com/1/pdftoppm)
 
 For example, to convert the pdf file to a 300-DPI TIFF image with lzw compression.
 
@@ -42,6 +44,8 @@ pdftoppm -tiff -tiffcompression lzw -r 300 in.pdf outname
 ```
 
 ## GhostScript and ImageMagick
+
+### Setup
 
 To install GhostScript and ImageMagick
 
@@ -63,14 +67,17 @@ To install GhostScript and ImageMagick
     choco install -y ghostscript imagemagick
     ```
 
-> [! note ]
-> For security reasons, PDF read/write operations are disable by default. You enable this function by editing the settings file
+!!! note
+
+    For security reasons, PDF read/write operations are disable by default. You enable this function by editing the settings file
    
 ```xml title="/etc/ImageMagick-7/policy.xml"
 <policy domain="coder" rights="read | write" pattern="PDF" />
 ```
 
-How to convert `pdf` to `tiff`:
+### Command example
+
+How to convert a `pdf` file to a `tiff` one:
 
 ```sh
 convert -density 300 \
