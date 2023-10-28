@@ -7,7 +7,7 @@ tags:
 
 [🚀 Starship command prompt](https://starship.rs/) is an enhancement for command prompt in a multitude of shells, powered by Rust. It is available for `bash`, `zsh`, `fish`, `powershell`, etc.
 
-Install:
+To install,
 
 === "Linux/MacOS"
 
@@ -23,7 +23,7 @@ Install:
 
 ## Setup
 
-To load starship prompt in the terminal, add the following line(s) at the end.
+To load starship prompt in the terminal, append the following line(s) to the indicated files.
 
 === "Bash"
 
