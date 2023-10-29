@@ -10,7 +10,7 @@ Updating package dependencies automatically as a part of continuous integration 
 
 ## Dependabot
 
-[Dependabot][] creates a pull request once there is an update for the dependencies. The pull requests are usually tested by continuous integration (CI).
+[Dependabot](https://docs.github.com/en/code-security/dependabot) creates a pull request once there is an update for the dependencies. The pull requests are usually tested by continuous integration (CI).
 
 However, [dependabot does not support automerging on its own](https://github.blog/changelog/2021-02-19-github-actions-workflows-triggered-by-dependabot-prs-will-run-with-read-only-permissions/) due to security concerns. The good news is that we could use [Kodiak](https://kodiakhq.com/) to do the job. See it's [quickstart](https://kodiakhq.com/#quickstart) if you are interested.
 
