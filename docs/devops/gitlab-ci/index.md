@@ -1,5 +1,5 @@
 ---
-title: Gitlab CICD tips
+title: GitLab CICD tips
 draft: 
 tags:
   - gitlab
