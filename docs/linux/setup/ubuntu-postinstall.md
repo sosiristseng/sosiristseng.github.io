@@ -134,14 +134,15 @@ echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select tr
 sed 's/#.*$//' pkgs.txt | xargs sudo apt install -y
 ```
 
-## Other configurations
+## Configurations
 
-- [[swap-setup]] configuration
-- [[linux-input-methods]] setup
-- [[fonts-setup]]
-- Setting [[environment-variables]]
-- [[linux-themes]] setup
+- [[swap-setup|Swap]] configuration
+- [[linux-input-methods|Input methods]] setup
+- [[fonts-setup|Fonts setup]]
+- [[linux/setup/environment-variables|Linux environment variables]]
+- [[linux-themes|Themes]] setup
 - Set [[linux-local-time]] if you are dual booting with Windows.
+- Setting `tmpfs` (RAM disk) for `/tmp` folder: `sudo cp -v /usr/share/systemd/tmp.mount /etc/systemd/system/ && sudo systemctl enable tmp.mount`
 
 ### Ubuntu: Extensions for gnome shell
 
