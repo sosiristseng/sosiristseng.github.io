@@ -2,7 +2,7 @@
 title: Recover Nautilus places folders
 
 tags:
-  - linux/ubuntu
+  - linux
 ---
 
 How to recover Nautilus (File manager in Gnome) places folders.

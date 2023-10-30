@@ -2,7 +2,7 @@
 title: APT package manager
 
 tags:
-  - linux/ubuntu
+  - linux
 ---
 
 APT package manager

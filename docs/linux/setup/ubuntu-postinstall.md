@@ -1,7 +1,7 @@
 ---
 title: Ubuntu postinstall
 tags:
-- linux/ubuntu
+- linux
 - postinstall
 ---
 

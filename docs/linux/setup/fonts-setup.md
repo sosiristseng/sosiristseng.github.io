@@ -1,6 +1,5 @@
 ---
 title: Fonts Setup
-draft:
 tags:
   - linux
   - fonts

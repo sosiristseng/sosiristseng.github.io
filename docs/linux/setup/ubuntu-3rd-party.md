@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 3rd party repositories
 tags:
-- linux/ubuntu
+  - linux
 ---
 
 Adding 3rd party repositories for latest packages not available in xUbuntu's official repositories.
