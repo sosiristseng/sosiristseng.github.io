@@ -37,6 +37,6 @@ mamba install -y conda-libmamba-solver
 conda config --set solver libmamba
 
 # `bash` and `zsh` integration
-test -f "~/.bashrc" && conda init bash
-test -f "~/.zshrc" && conda init zsh
+conda init bash || true
+conda init zsh || true
 ```
