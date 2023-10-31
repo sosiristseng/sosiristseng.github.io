@@ -20,7 +20,7 @@ tags:
 
 + `~/.zshenv` for environment variables in all zsh instances.
 + `~/.zprofile` for every login zsh instance.
-+`~/.zshrc` for every interactive zsh instance.
++ `~/.zshrc` for every interactive zsh instance.
 
 !!! note
     zsh [does not source](https://superuser.com/questions/187639/zsh-not-hitting-profile) `~/.profile` by default. You can add this line to `~/.zprofile` or `~/.zshenv` to let zsh login shells read `~/.profile`
