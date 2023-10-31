@@ -26,16 +26,18 @@ wsl --install -d Ubuntu  # You can choose other distributions e.g. Debian
 
 ## WSL2 post-install setup
 
+They are optional. Apply them if necessary.
+
 ### Enable systemd
 
-Edit `/etc/wsl.conf` in the WSL. Currently, WSL enables systemd by default so you may not need to edit this file.
+Edit `/etc/wsl.conf` in the WSL. Currently, WSL enables systemd by default, so you may not need to edit this file.
 
 ```txt title="/etc/wsl.conf"
 [boot]
 systemd=true
 ```
 
-### Default login user (optional)
+### Default login user
 
 Edit `/etc/wsl.conf` in the WSL.
 
@@ -44,7 +46,7 @@ Edit `/etc/wsl.conf` in the WSL.
 default=username
 ```
 
-### Move virtual disk (optional)
+### Move the virtual disk
 
 If you want to move the WSL virtual disk file to another disk (in this example, `D:\`), run this script in the host[^export-import][^movedrive]:
 
