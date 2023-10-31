@@ -28,7 +28,7 @@ wsl --install -d Ubuntu  # You can choose other distributions e.g. Debian
 
 ### Enable systemd
 
-Edit `/etc/wsl.conf` in the WSL.
+Edit `/etc/wsl.conf` in the WSL. Currently, WSL enables systemd by default so you may not need to edit this file.
 
 ```txt title="/etc/wsl.conf"
 [boot]
