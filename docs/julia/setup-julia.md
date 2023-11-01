@@ -67,7 +67,7 @@ For `PythonCall.jl` [set the following environment variables](https://cjdoris.gi
 
 ```sh
 export JULIA_CONDAPKG_BACKEND="Null"
-export JULIA_PYTHONCALL_EXE="${HOME}/conda/python"
+export JULIA_PYTHONCALL_EXE="${HOME}/conda/bin/python"
 ```
 
 ### Load `Revise.jl` at Julia startup
