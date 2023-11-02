@@ -56,4 +56,4 @@ powercfg -h off
 ## More
 
 + Setup [[WSL2]].
-+ Setup [[environment-variables#Windows]].
++ Setup [[windows/environment-variables]].
