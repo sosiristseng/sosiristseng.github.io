@@ -45,6 +45,17 @@ Setup [Firefox browser](https://www.mozilla.org/firefox)
     winget install -e --id Mozilla.Firefox
     ```
 
-## about:config settings
+## Advanced settings
+
+Enter `about:config` in the location bar
 
 + Set `browser.compactmode.show` to `true`
+
+### Firefox Fullscreen Transition (Fade) & The Warning
+
+From [this post](https://luis.adame.dev/blog/firefox-fullscreen-transition-timeout):
+
++ Set `full-screen-api.transition-duration.enter` to `0 0`
++ Set `full-screen-api.transition-duration.leave` to `0 0`
++ Set `full-screen-api.transition.timeout` to `0`
++ Set `full-screen-api.warning.timeout` to `0`
