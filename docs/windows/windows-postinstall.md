@@ -9,15 +9,9 @@ Things to do after Windows install.
 
 See also [The Ultimate Windows Development Environment Guide](https://unicorn-utterances.com/posts/ultimate-windows-development-environment-guide)
 
-## CTT Windows Utility
+## System setup
 
-The [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) provides APP installs, fixes and tweaks.
-
-```powershell
-irm christitus.com/win | iex
-```
-
-## Chocolatey package manager
+### Chocolatey package manager
 
 Install [Chocolatey 🍫](https://chocolatey.org/), a command-line interface (CLI) package manager for Windows.
 
@@ -37,23 +31,32 @@ choco install -y git.install --params "'/NoShellIntegration'"
 choco install -y vscode qbittorrent firefox brave telegram bandizip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo directx vcredist-all hugo-extended sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop tabby
 ```
 
-See the  [🍫 Chocolatey package list](https://chocolatey.org/packages) for more packages.
-
-### Install winget in Windows LTSC
+How to install winget in Windows 10 LTSC
 
 ```powershell
 choco install -y winget-cli
 ```
 
-## Disable hibernation
+See also the  [🍫 Chocolatey package list](https://chocolatey.org/packages) for more packages.
 
-Disabling hibernation saves a lot of disk space (No more `C:\hiberfile.sys`). Run this in powershell in admin mode:
+### CTT Windows Utility
 
-```pwsh
+The [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) provides APP installs, fixes and tweaks.
+
+```powershell
+irm christitus.com/win | iex
+```
+
+### Disable hibernation
+
+Disabling hibernation saves a lot of disk space (No more `C:\hiberfile.sys`). Run this in powershell with admin rights:
+
+```powershell
 powercfg -h off
 ```
 
-## More
+## Setup developement tools
 
 + Setup [[WSL2]].
 + Setup [[windows/environment-variables]].
++ Setup [Dev Drive](https://devblogs.microsoft.com/visualstudio/devdrive/) for a better disk performance for many small files.
