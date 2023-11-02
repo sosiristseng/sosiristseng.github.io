@@ -35,5 +35,5 @@ Setup [Brave browser](https://brave.com)
     winget:
 
     ```powershell
-    winget install Brave.Brave
+    winget install -e --id Brave.Brave
     ```
