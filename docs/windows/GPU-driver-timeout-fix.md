@@ -9,7 +9,7 @@ Some methods to fix GPU driver timeout/freeze.
 
 ## Upgrade BIOS firmware if you can
 
-Check the porduct support page and upgrde to the latest BIOS version. (My PN53 mini PC was saved by a BIOS upgrade)
+Check the porduct support page and upgrade to the latest BIOS version. (My PN53 mini PC was saved by a BIOS upgrade)
 
 ## Upgrade / Downgrade GPU drivers
 
