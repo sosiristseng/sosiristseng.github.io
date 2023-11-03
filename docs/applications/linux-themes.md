@@ -35,7 +35,7 @@ A clean theme for both KDE and Gnome.
 
 Install:
 
-=== Ubuntu
+=== "Ubuntu"
 
     ```sh
     sudo add-apt-repository -y ppa:papirus/papirus
