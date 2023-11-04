@@ -55,7 +55,7 @@ fig.savefig("fig.tif", dpi=300, format="tiff", pil_kwargs=Dict("compression" => 
 
 ```
 
-## Change default options in Pyplot.jl
+## Change default options in PyPlot.jl
 
 Changing [mplstyle and rcparams](https://matplotlib.org/stable/tutorials/introductory/customizing.html) in `matplotlib`.
 
@@ -83,7 +83,7 @@ rcParams["font.family"] = "sans-serif"
 rcParams["font.size"] = 12
 ```
 
-For `Plots.jl`, there is an internal `pyrcparams` dictionary for `pyplot`(`matplotlib`) backend.
+For `Plots.jl`, there is an internal `pyrcparams` dictionary for the `pyplot`(`matplotlib`) backend.
 
 ```julia
 using Plots

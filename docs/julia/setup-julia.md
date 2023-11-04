@@ -29,7 +29,11 @@ Alternatively, download and install [Julia official binaries](https://julialang.
 winget install JuliaLang.Julia
 ```
 
-## (Optional) Post-install configurations
+### GitHub actions
+
+[[julia-gha|Setup Julia in GitHub actions]]
+
+## Post-install configurations
 
 ### Auto-activate local projects
 
@@ -57,13 +61,13 @@ export JULIA_NUM_THREADS=auto
 
 ### Customize Conda executable location
 
-Point the environment variable `CONDA_JL_HOME` to your Conda path. `Conda.jl` and `PyCall.jl` will take the preinstalled Conda instead of downloading a standalone Conda.
+Point the environment variable `CONDA_JL_HOME` to your Conda path. `Conda.jl` and `PyCall.jl` will take the preinstalled Conda instead of downloading a standalone one. For example,
 
 ```sh title="~/.profile"
 export CONDA_JL_HOME="${HOME}/conda"
 ```
 
-For `PythonCall.jl` [set the following environment variables](https://cjdoris.github.io/PythonCall.jl/stable/pythoncall/#pythoncall-config)
+For `PythonCall.jl`, [set the following environment variables](https://cjdoris.github.io/PythonCall.jl/stable/pythoncall/#pythoncall-config):
 
 ```sh
 export JULIA_CONDAPKG_BACKEND="Null"
@@ -92,7 +96,7 @@ catch e
 end
 ```
 
-Or run the following heredoc (in Linux) to create the two files at once
+Or run the following commands (heredoc in Linux) to create these two files at once
 
 ```sh
 mkdir -p ~/.julia/config/ && cat >  ~/.julia/config/startup.jl << END

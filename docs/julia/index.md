@@ -4,11 +4,14 @@ title: Julia Tips
 tags:
   - julia
 ---
-Tips about Julia the programming language.
 
-## Setup Julia
+Random tips about the Julia programming language.
 
-[[setup-julia|Set up Julia]]
+## Visualization
+
++ [[plotsjl-tips|Plots.jl]] tips
++ [[pyplotjl-tips|PyPlot.jl]] tips
+
 ## How to get 2D indexes from a 1D index when accessing a 2D array?
 
 
