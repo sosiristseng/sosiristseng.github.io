@@ -10,49 +10,49 @@ tags:
 
 See also https://github.com/viatsko/awesome-vscode
 
-Install:
+## Install
 
-=== "Ubuntu"
+### Ubuntu
 
-    ```sh
-    curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
-    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
-    sudo apt update && sudo apt install -y code
-    ```
+```sh
+curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+sudo apt update && sudo apt install -y code
+```
 
-    Or install via snap
+### snap
 
-    ```sh
-    sudo snap install code --classic
-    ```
+```sh
+sudo snap install code --classic
+```
 
-=== "Arch Linux"
+### Arch Linux
 
-    Install from the AUR
+Install from the AUR
 
-    ```sh
-    yay -S visual-studio-code-bin
-    ```
+```sh
+yay -S visual-studio-code-bin
+```
 
-    The open source version (sourced directly from the GitHub repo) is avaiable in the community repository.
+The open source version (sourced directly from the GitHub repo) is avaiable in the community repository.
 
-    ```sh
-    sudo pacman -S code
-    ```
+```sh
+sudo pacman -S code
+```
 
-=== "Windows"
+## Windows
 
-    chocolatey:
+chocolatey:
 
-    ```powershell
-    choco install vscode
-    ```
+```powershell
+choco install vscode
+```
 
-    winget:
+winget:
 
-    ```powershell
-    winget install vscode
-    ```
+```powershell
+winget install vscode
+```
 
 ## VSCode Settings
 
@@ -60,6 +60,8 @@ Install:
 
 1. Install the [Customize UI](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) plugin and restart VS Code.[^1]
 2. In VS Code Settings, set `Customize UI Font:Monospace` and/or `Customize UI Font:Regular` to your liking.
+
+
 [^1]: https://stackoverflow.com/questions/57008558/how-to-change-the-font-of-visual-studio-codes-ui
 
 ### Use a better-looking menu bar
@@ -72,14 +74,15 @@ Add this entry to `settings.json`: [^2]
 }
 ```
 
-And reload VS Code.
+Reload VS Code to apply the changes.
 
 [^2]: https://askubuntu.com/questions/1197231/visual-studio-code-ui-is-visually-mismatched-in-ubuntu-19-1
 
 ### Line height
 
 You can increase line height to make you code look better.
-Search for `Line height` in VSCode setting and set it to a higher number. (For example, 1.4)
+
+Search for `Line height` in VSCode settings and set it to a higher number. (For example, 1.4)
 
 ## Interesting VS Code extensions
 

@@ -30,7 +30,7 @@ exa --long --header --git
 https://github.com/sharkdp/fd is a simple, fast and user-friendly alternative to `find`.
 
 ```sh
-fd query
+fd PATTERN
 ```
 
 ## ripgrep : alternative to `grep`
@@ -41,34 +41,44 @@ https://github.com/BurntSushi/ripgrep is a line-oriented search tool that recurs
 
 https://github.com/clementtsang/bottom is a resource monitor written in Rust.
 
-Install:
+### Install
 
-=== "Ubuntu"
+#### Ubuntu
 
-    Install the [deb release](https://github.com/ClementTsang/bottom/releases/latest).
+Download and install the [deb release](https://github.com/ClementTsang/bottom/releases/latest).
 
-=== "Arch Linux"
+#### Arch Linux
 
-    ```sh
-    sudo pacman -S bottom
-    ```
+```sh
+sudo pacman -S bottom
+```
 
-=== "snap"
+#### snap
 
-    ```sh
-    sudo snap install bottom
+```sh
+sudo snap install bottom
 
-    # To allow the program to run as intended
-    sudo snap connect bottom:mount-observe
-    sudo snap connect bottom:hardware-observe
-    sudo snap connect bottom:system-observe
-    sudo snap connect bottom:process-control
-    ```
+# To allow the program to run as intended
+sudo snap connect bottom:mount-observe
+sudo snap connect bottom:hardware-observe
+sudo snap connect bottom:system-observe
+sudo snap connect bottom:process-control
+```
 
-=== "Windows"
+#### Windows
 
-    ```powershell
-    choco install bottom
-    ```
+Chocolatey:
 
-Usage: `btm`.
+```powershell
+choco install bottom
+```
+
+winget:
+
+```powershell
+winget install bottom
+```
+
+### Usage
+
+`btm`

@@ -8,23 +8,25 @@ tags:
 
 https://github.com/aristocratos/btop is a resource monitor wirtten in C++ that shows usage and stats for processor, memory, disks, network and processes.
 
-Install:
+## Install
 
-=== "Arch Linux"
+### Arch Linux
 
-    ```sh
-    sudo pacman -S btop
-    ```
+```sh
+sudo pacman -S btop
+```
 
-=== "snap"
+### snap
 
-    ```sh
-    sudo snap install btop
-    sudo snap connect btop:removable-media
-    ```
+```sh
+sudo snap install btop
+sudo snap connect btop:removable-media
+```
 
-=== "Official binary"
+### Official binary
 
-    Official binaries can be downloaded [here](https://github.com/aristocratos/btop/releases).
+Official binaries can be downloaded [here](https://github.com/aristocratos/btop/releases).
 
-Usage: `btop`.
+## Usage
+
+`btop`

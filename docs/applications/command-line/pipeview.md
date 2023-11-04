@@ -5,13 +5,16 @@ tags:
   - command-line
 ---
 
-pipeview ([`pv`](https://www.geeksforgeeks.org/pv-command-in-linux-with-examples/)) shows transfer speed and/or progress through a Unix pipe.
+pipeview ([`pv`](https://www.geeksforgeeks.org/pv-command-in-linux-with-examples/)) shows transfer speed and/or transfer progress through a Unix pipe.
 
 `pv` works like `cat`. For example,
 
 ```sh
-cat file > other_file # no output with cat
-pv file > other_file  # With progress
+# no output
+cat file > other_file
+
+# Display progress
+pv file > other_file  
 ```
 
 ```sh

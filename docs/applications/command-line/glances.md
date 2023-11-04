@@ -8,26 +8,36 @@ tags:
 
 https://github.com/nicolargo/glances is a cross-platform advance system monitor for usage monitoring for CPU, RAM, Network, GPU, etc.
 
-Install:
+## Install
 
-=== "Arch Linux"
+Official install script
 
-    ```sh
-    sudo pacman -S glances
-    ```
+```sh
+curl -L https://bit.ly/glances | bash
+```
 
-=== "pip"
+Or
 
-    ```sh
-    pip install glances --upgrade --user
-    # NVIDIA GPU support
-    pip install glances[gpu] --upgrade --user
-    ```
+```sh
+wget -O- https://bit.ly/glances | bash
+```
 
-=== "Official install script"
+### Arch Linux
 
-    ```sh
-    curl -L https://bit.ly/glances | bash
-    ```
+```sh
+sudo pacman -S glances
+```
 
-Usage: call `glances`.
+### Ubuntu: pip
+
+```sh
+sudo apt update && sudo apt install python3-psutil
+
+pip install glances --upgrade --user
+# NVIDIA GPU support
+pip install glances[gpu] --upgrade --user
+```
+
+## Usage
+
+`glances`

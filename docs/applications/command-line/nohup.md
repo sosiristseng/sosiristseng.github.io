@@ -6,7 +6,7 @@ tags:
   - ssh
 ---
 
-[nohup](https://blog.gtwang.org/linux/linux-nohup-command-tutorial/) runs background process(es) uninterruptedly even the remote SSH session goes offline.
+[nohup](https://zh.wikipedia.org/zh-tw/Nohup) runs background process(es) uninterruptedly even the remote SSH session goes offline.
 
 ```sh
 nohup mycmd &

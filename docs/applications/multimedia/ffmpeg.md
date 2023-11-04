@@ -6,33 +6,35 @@ tags:
   - windows
 ---
 
-Install [ffmpeg](https://ffmpeg.org/ffmpeg-all.html):
+[ffmpeg](https://ffmpeg.org/ffmpeg-all.html):
 
-=== ""Ubuntu""
+## Install
 
-    ```sh
-    sudo apt install ffmpeg
-    ```
+### Ubuntu
 
-=== ""Arch Linux""
+```sh
+sudo apt install ffmpeg
+```
 
-    ```sh
-    sudo pacman -S ffmpeg
-    ```
+### Arch Linux
 
-=== ""Windows""
+```sh
+sudo pacman -S ffmpeg
+```
 
-    chocolatey
+### Windows
 
-    ```powershell
-    choco install ffmpeg
-    ```
+chocolatey
 
-    winget
+```powershell
+choco install ffmpeg
+```
 
-    ```powershell
-    winget install Gyan.FFmpeg
-    ```
+winget
+
+```powershell
+winget install Gyan.FFmpeg
+```
 
 ## Usage
 
@@ -54,9 +56,10 @@ ffmpeg -i input-video.avi -vn -acodec copy output-audio.aac
 ```
 
 Options explained:
+
 - `-vn` : no video output.
 - `-an` : no audio output.
-- `-{a,v}codec copy`: just copy, no re-encoding
+- `-{a,v}codec copy`: copy without re-encoding.
 
 ### Cutting videos
 

@@ -11,20 +11,20 @@ tags:
 - https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 - https://github.com/tsujan/Kvantum : SVG-based theme engine
 
-Install:
+### Install
 
-=== "Ubuntu"
+#### Ubuntu
 
-    ```sh
-    sudo add-apt-repository -y ppa:papirus/papirus           # Papirus icon theme
-    sudo apt update && sudo apt install -y papirus-icon-theme qt5-style-kvantum qt5ct
-    ```
+```sh
+sudo add-apt-repository -y ppa:papirus/papirus           # Papirus icon theme
+sudo apt update && sudo apt install -y papirus-icon-theme qt5-style-kvantum qt5ct
+```
 
-=== "Arch Linux"
+#### Arch Linux
 
-    ```sh
-    sudo pacman -S papirus-icon-theme kvantum-qt5
-    ```
+```sh
+sudo pacman -S papirus-icon-theme kvantum-qt5
+```
 
 ## Materia theme
 
@@ -33,20 +33,22 @@ A clean theme for both KDE and Gnome.
 - https://github.com/PapirusDevelopmentTeam/materia-kde
 - https://github.com/nana-4/materia-theme
 
-Install:
+### Install
 
-=== "Ubuntu"
+#### Ubuntu
 
-    ```sh
-    sudo add-apt-repository -y ppa:papirus/papirus
-    sudo apt update && sudo apt install materia-gtk-theme materia-kde
-    ```
+```sh
+sudo add-apt-repository -y ppa:papirus/papirus
+sudo apt update && sudo apt install materia-gtk-theme materia-kde
+```
 
-=== "Arch Linux"
+#### Arch Linux
 
-    ```sh
-    sudo pacman -S materia-gtk-theme materia-kde kvantum-theme-materia
-    ```
+```sh
+sudo pacman -S materia-gtk-theme materia-kde kvantum-theme-materia
+```
+
+### Set fonts
 
 Fonts for materia theme:
 
@@ -57,14 +59,14 @@ Fonts for materia theme:
 
 https://github.com/vinceliuice/Qogir-theme is a flat Design theme for GTK.
 
-Install:
+### Install
 
-=== "Ubuntu"
+#### Ubuntu
 
-    Downlod and run the install script from the [repository](https://github.com/vinceliuice/Qogir-theme).
+Download and run the install script from the [repository](https://github.com/vinceliuice/Qogir-theme).
 
-=== "Arch Linux"
+#### Arch Linux
 
-    ```sh
-    yay -S qogir-gtk-theme-git qogir-icon-theme-git kvantum-qt5 qogir-kde-theme-git
-    ```
+```sh
+yay -S qogir-gtk-theme-git qogir-icon-theme-git kvantum-qt5 qogir-kde-theme-git
+```

@@ -5,6 +5,22 @@ tags:
   - command-line
 ---
 
-https://github.com/Xfennec/progress measures the speed and progress of ongoing commands.
+https://github.com/Xfennec/progress measures the speed and progress of ongoing commands (For instance, file copy command `cp`).
 
-After installation, just [launch](https://github.com/Xfennec/progress#what-can-i-do-with-it) `progress` in the terminal.
+## Install
+
+### Ubuntu
+
+```sh
+sudo apt install progress
+```
+
+### Arch Linux
+
+```sh
+sudo pacman -S progress
+```
+
+## Usage
+
+[rUN `progress`](https://github.com/Xfennec/progress#what-can-i-do-with-it) in the terminal.

@@ -6,36 +6,36 @@ tags:
   - windows
 ---
 
-About the [Git](https://git-scm.com/) version control system.
+The famous [Git](https://git-scm.com/) version control system.
 
-Install git
+## Install
 
-=== "Ubuntu"
+### Ubuntu
 
-    ```bash
-    sudo add-apt-repository -y ppa:git-core/ppa
-    sudo apt update && sudo apt install -y git git-lfs
-    ```
+```bash
+sudo add-apt-repository -y ppa:git-core/ppa
+sudo apt update && sudo apt install -y git git-lfs
+```
 
-=== "Arch Linux"
+### Arch Linux
 
-    ```sh
-    pacman -S git git-lfs
-    ```
+```sh
+sudo pacman -S git git-lfs
+```
 
-=== "Windows"
+### Windows
 
-    chocolatey:
+chocolatey:
 
-    ```powershell
-    choco install git.install
-    ```
+```powershell
+choco install git.install
+```
 
-    winget:
+winget:
 
-    ```powershell
-    winget install Git.Git
-    ```
+```powershell
+winget install Git.Git
+```
 
 ## Git tips
 

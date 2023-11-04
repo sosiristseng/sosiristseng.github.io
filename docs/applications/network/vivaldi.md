@@ -6,32 +6,34 @@ tags:
   - windows
 ---
 
-Install [Vivaldi browser](https://vivaldi.com/download/)
+[Vivaldi browser](https://vivaldi.com/download/)
 
-=== Ubuntu
+## Install
 
-    ```bash
-    curl -fsSL https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/vivaldi-keyring.gpg
-    echo "deb [signed-by=/usr/share/keyrings/vivaldi-keyring.gpg arch=amd64] https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt/sources.list.d/vivaldi.list > /dev/null
-    sudo apt update && sudo apt install -y vivaldi-stable
-    ```
+### Ubuntu
 
-=== Arch Linux
+```bash
+curl -fsSL https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/vivaldi-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/vivaldi-keyring.gpg arch=amd64] https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt/sources.list.d/vivaldi.list > /dev/null
+sudo apt update && sudo apt install -y vivaldi-stable
+```
 
-    ```sh
-    sudo pacman -S vivaldi
-    ```
+### Arch Linux
 
-=== Windows
+```sh
+sudo pacman -S vivaldi
+```
 
-    chocolatey
+### Windows
 
-    ```powershell
-    choco install vivaldi
-    ```
+chocolatey
 
-    winget
+```powershell
+choco install vivaldi
+```
 
-    ```powershell
-    winget install VivaldiTechnologies.Vivaldi
-    ```
+winget
+
+```powershell
+winget install VivaldiTechnologies.Vivaldi
+```

@@ -5,12 +5,12 @@ tags:
   - linux
 ---
 
-APT package manager
+The [APT package manager](https://en.wikipedia.org/wiki/APT_(software)) in Debian, Ubuntu, and friends.
 
 - [Itsfoss: apt vs apt-get](https://itsfoss.com/apt-vs-apt-get-difference/)
 - [Itsfoss: apt commands](https://itsfoss.com/apt-command-guide/)
 
-**`apt` vs `apt-get`**
+## `apt` vs `apt-get`
 
 - `apt` is for interactive use, including commonly-used commands from `apt-get` and `apt-cache`. And it has a nice progress bar.
 - `apt-get` is more inclined for non-interactive (scripting) use due to its stable interface.
@@ -43,7 +43,7 @@ sudo nala upgrade
 
 ## apt-fast: apt in parallel
 
-[apt-fast](https://github.com/ilikenwf/apt-fast) is shellscript wrapper for `apt-get` and `aptitude` that can drastically improve `apt` download times by downloading packages in parallel, with multiple connections per package.
+https://github.com/ilikenwf/apt-fast is shell script wrapper for `apt-get` and `aptitude` that can drastically improve `apt` download times by downloading packages in parallel, with multiple connections per package.
 
 One can use `apt-fast` commands just like `apt` e.g., `sudo apt-fast update`, `sudo apt-fast dist-upgrade`.
 

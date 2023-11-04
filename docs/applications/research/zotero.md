@@ -7,38 +7,40 @@ tags:
   - windows
 ---
 
-Install [Zotero](https://www.zotero.org/), an open source reference manager.
+[Zotero](https://www.zotero.org/) is an open source reference manager.
 
-=== "Ubuntu"
+## Install
 
-    [Zotero deb](https://github.com/retorquere/zotero-deb) provides packaged versions of Zotero reference manager and Juris-M for Debian-based systems.
+### Ubuntu
 
-    ```sh
-    curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
-    sudo apt update && sudo apt install -y zotero
-    ```
+https://github.com/retorquere/zotero-deb provides packaged versions of Zotero reference manager and Juris-M for Debian-based systems.
 
-=== "Arch Linux"
+```sh
+curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
+sudo apt update && sudo apt install -y zotero
+```
 
-    From the [AUR](https://aur.archlinux.org/packages/zotero-bin/)
+### Arch Linux
 
-    ```sh
-    yay -S zotero-bin
-    ```
+From the [AUR](https://aur.archlinux.org/packages/zotero-bin/)
 
-=== "Windows"
+```sh
+yay -S zotero-bin
+```
 
-    chocolatey:
+### Windows
 
-    ```powershell
-    choco install zotero
-    ```
+chocolatey:
 
-    winget:
+```powershell
+choco install zotero
+```
 
-    ```powershell
-    winget install --id=DigitalScholar.Zotero -e
-    ```
+winget:
+
+```powershell
+winget install --id=DigitalScholar.Zotero -e
+```
 
 ## Zotfile attachement manager
 
@@ -52,7 +54,7 @@ Storage space for attachements is [limited to **300MB**](https://www.zotero.org/
     - Set Location of Files to `Custom Location` and point it to your library folder.
     - (Optionally) Set `Source folder` to your download folder.
 
-## Zotero and Obsidan
+## Zotero and Obsidan collaboration
 
 Source: [Mariana Montes' post](https://www.marianamontes.me/post/obsidian-and-zotero/)
 

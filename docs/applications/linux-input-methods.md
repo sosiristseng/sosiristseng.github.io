@@ -10,19 +10,21 @@ Input methods enable multilingual inputs including CJK (Chinese, Japanese, Korea
 
 [Fcitx](https://wiki.archlinux.org/index.php/Fcitx) is a lightweight input method framework aimed at providing environment independent language support for Linux. The development energy is mainly focused on the new [version 5](https://wiki.archlinux.org/index.php/Fcitx5) release.
 
-Install:
+### Install
 
-=== "Ubuntu"
+#### Ubuntu
 
-    ```bash
-    sudo apt install fcitx5 fcitx5-chewing fcitx5-material-color
-    ```
+```bash
+sudo apt install fcitx5 fcitx5-chewing fcitx5-material-color
+```
 
-=== "Arch"
+#### Arch
 
-    ```bash
-    sudo pacman -S fcitx5-im fcitx5-chewing fcitx5-material-color
-    ```
+```bash
+sudo pacman -S fcitx5-im fcitx5-chewing fcitx5-material-color
+```
+
+### Setup
 
 Add the following lines to `~/.xprofile` or `~/.profile` if `fcitx` does not load on startup.
 
@@ -37,19 +39,21 @@ export XMODIFIERS=\@im=fcitx5
 
 [ibus](https://github.com/ibus/ibus) is an input method framework using DBUS. `ibus` integrates better with the GNOME desktop environment.
 
-Install:
+### Install
 
-=== "Ubuntu"
+#### Ubuntu
 
-    ```bash
-    sudo apt install ibus ibus-chewing
-    ```
+```bash
+sudo apt install ibus ibus-chewing
+```
 
-=== "Arch Linux"
+#### Arch Linux
 
-    ```bash
-    sudo pacman -S ibus ibus-chewing
-    ```
+```bash
+sudo pacman -S ibus ibus-chewing
+```
+
+### Setup
 
 Add these lines to `~/.xprofile` or `~/.profile` to  if `ibus` does not load on startup.
 

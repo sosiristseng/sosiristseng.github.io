@@ -5,7 +5,9 @@ tags:
   - command-line
 ---
 
-[Robocopy](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy) is a file-copying command-line tool built in Windows.
+[Robust copy (robocopy)](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy) is a file-copying command-line tool baked in Windows 10+.
+
+## Usage
 
 To see its commands
 

@@ -11,43 +11,45 @@ tags:
 
 [Hugo](https://gohugo.io/) is the world’s fastest framework for building websites, written in Go.
 
-Install:
+## Install
 
-=== "Ubuntu"
+### Ubuntu
 
-    Download and install the hugo `deb` file from the [release page](https://github.com/gohugoio/hugo/releases/latest).
+Download and install the hugo `deb` file from the [release page](https://github.com/gohugoio/hugo/releases/latest).
 
-    Or use snap:
+### snap
 
-    ```bash
-    sudo snap install hugo
-    sudo snap connect hugo:removable-media
-    sudo snap connect hugo:ssh-keys
-    ```
+```bash
+sudo snap install hugo
+sudo snap connect hugo:removable-media
+sudo snap connect hugo:ssh-keys
+```
 
-=== "Arch Linux"
+### Arch Linux
 
-    ```bash
-    sudo pacman -S hugo
-    ```
+```bash
+sudo pacman -S hugo
+```
 
-=== "Windows"
+### Windows
 
-    Via chocolatey:
+Via chocolatey:
 
-    ```powershell
-    choco install hugo-extended
-    ```
+```powershell
+choco install hugo-extended
+```
 
-    Go compiler is needed for install Hugo modules
+Go compiler is needed for install Hugo modules
 
-    ```powershell
-    choco install golang
-    ```
+```powershell
+choco install golang
+```
 
-## [[hugo-gha|Hugo in Github actions]]
+### GitHub actions
 
-## Docker image
+See [[hugo-gha|Hugo in Github actions]]
+
+### Docker image
 
 [klakegg/hugo](https://hub.docker.com/r/klakegg/hugo/)
 

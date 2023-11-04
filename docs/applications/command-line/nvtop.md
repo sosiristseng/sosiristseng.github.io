@@ -9,18 +9,20 @@ tags:
 
 https://github.com/Syllo/nvtop is a GPU process monitor for AMD, Intel and NVIDIA GPUs.
 
-Install:
+## Install
 
-=== "Ubuntu"
+### Ubuntu
 
-    ```sh
-    sudo apt install nvtop
-    ```
+```sh
+sudo apt install nvtop
+```
 
-=== "Arch Linux"
+### Arch Linux
 
-    ```sh
-    sudo pacman -S nvtop
-    ```
+```sh
+sudo pacman -S nvtop
+```
 
-Usage: `nvtop`.
+## Usage
+
+`nvtop`

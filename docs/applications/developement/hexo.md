@@ -8,7 +8,7 @@ tags:
   - static-site-generator
 ---
 
-[Hexo](https://hexo.io/) is a fast, simple & powerful blog framework powered by Node.js.
+[Hexo](https://hexo.io/) is a fast, simple & powerful blog framework powered by `Node.js`.
 
 ## Hexo themes
 
