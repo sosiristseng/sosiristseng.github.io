@@ -23,7 +23,7 @@ Alternatively, you can use GUI tools like Gitkraken.
 
 Add you will see the file `.gitmodules` with information about the submodule. Take this website repo for instance,
 
-```
+``` title=".gitmodules"
 [submodule "themes/DoIt"]
 	path = themes/DoIt
 	url = https://github.com/HEIGE-PCloud/DoIt.git
@@ -45,13 +45,13 @@ git submodule set-branch -b <branchname> <path>
 
 ## Update all Git submodules to the latest commit
 
-From [StackOverflow](https://stackoverflow.com/questions/5828324/update-git-submodule-to-latest-commit-on-origin/5828396#5828396) and [Git docs](https://git-scm.com/docs/git-submodule#Documentation/git-submodule.txt-update--init--remote-N--no-fetch--no-recommend-shallow-f--force--checkout--rebase--merge--referenceltrepositorygt--depthltdepthgt--recursive--jobsltngt--no-single-branch--filterltfilterspecgt--ltpathgt82308203)
+From a [stackOverflow post](https://stackoverflow.com/questions/5828324/update-git-submodule-to-latest-commit-on-origin/5828396#5828396) and [Git docs](https://git-scm.com/docs/git-submodule#Documentation/git-submodule.txt-update--init--remote-N--no-fetch--no-recommend-shallow-f--force--checkout--rebase--merge--referenceltrepositorygt--depthltdepthgt--recursive--jobsltngt--no-single-branch--filterltfilterspecgt--ltpathgt82308203)
 
 ```sh
 git submodule update --remote --merge
 ```
 
-For automated updates, see [[auto-deps-update]].
+For automated updates by bots, see [[auto-deps-update|automatic dependency update]].
 
 ## Remove a submodule
 
