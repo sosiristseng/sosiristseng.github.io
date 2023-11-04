@@ -16,7 +16,7 @@ tags:
 - [Shell check](https://www.shellcheck.net/)
 - [Explain shell](https://explainshell.com/)
 
-### Lean shell scripting
+### Learn shell scripting
 
 - [edX: introduction to Linux](https://www.edx.org/course/introduction-to-linux)
 - [Learn Bash in Y minutes](https://learnxinyminutes.com/docs/bash/)
