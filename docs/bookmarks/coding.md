@@ -4,11 +4,12 @@ draft:
 tags:
   - bookmark
 ---
-
+- [[julia-bookmarks|Julia]] bookmarks.
+- [[python-bookmarks|Python]] bookmarks.
+- [[devops-bookmarks|DevOps]] bookmarks.
 - [Compiler explorer](https://godbolt.org/) : assembly for a C/C++ code snippet.
 - [QuickRef.ME](https://quickref.me/) : cheatsheets and quick references.
 - [Free for dev](https://free-for.dev/) : online tools with free tiers.
-
 ## Command lines and shell scripting
 
 - [Awesome shell](https://github.com/alebcay/awesome-shell)
