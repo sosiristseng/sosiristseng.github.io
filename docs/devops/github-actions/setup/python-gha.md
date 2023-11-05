@@ -7,24 +7,51 @@ tags:
   - devops
 draft:
 ---
-## Setup Python environment in GitHub actions
 
 You can use one of the three below
-### Setup Python action
 
-The https://github.com/actions/setup-python actions installs `python` with a specific version and (optionally) caches Python package dependencies.
++ https://github.com/actions/setup-python
++ https://github.com/conda-incubator/setup-miniconda
++ https://github.com/mamba-org/setup-micromamba
+
+## `setup-python`
+
+The https://github.com/actions/setup-python actions installs `python` with a specific version and could cache download Python packages. (But *not* the whole environment)
 
 ```yaml
 steps:
-- uses: actions/checkout@v2
-- uses: actions/setup-python@v2
+- uses: actions/checkout@v3
+- uses: actions/setup-python@v4
   with:
     python-version: '3.x'
     cache: 'pip'
 - run: pip install -r requirements.txt
 ```
 
-### miniconda
+### Python packages
+
+If you really want to cache the whole Python environment, cache the `pythonLocation` folder.[^1][^2]
+
+```yaml
+- name: Set up Python
+  uses: actions/setup-python@v4
+  with:
+    python-version: ${{ matrix.python-version }}
+- name: Cache pip dependencies
+  uses: actions/cache@v3
+  id: cache
+  with:
+    path: ${{ env.pythonLocation }}
+    key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt') }}
+- name: Install pip dependencies if cache miss
+  if: steps.cache.outputs.cache-hit != 'true'
+  run: pip install -r requirements.txt
+```
+
+[^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170
+[^2]: https://luminousmen.com/post/making-ci-workflow-faster-with-github-actions
+
+## `setup-miniconda`
 
 The https://github.com/conda-incubator/setup-miniconda action sets up a base [`conda`](https://docs.conda.io/projects/conda/en/latest/) environment.
 
@@ -36,11 +63,14 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
-      - uses: actions/checkout@v2
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: actions/checkout@v3
+      - name: Setup Mambaforge
+        uses: conda-incubator/setup-miniconda@v2
         with:
-          miniforge-version: latest
           environment-file: environment.yml
+          miniforge-variant: Mambaforge
+          miniforge-version: latest
+          use-mamba: true
       - run: |
           conda info
           conda list
@@ -49,53 +79,19 @@ jobs:
 
 1. Use the login shell to activate the conda environment correctly.
 
-### micromamba
+## `setup-micromamba`
 
-The https://github.com/mamba-org/setup-micromamba action installs the [micromamba](https://github.com/mamba-org/mamba#micromamba) package manager.
+The https://github.com/mamba-org/setup-micromamba action installs the [micromamba](https://github.com/mamba-org/mamba#micromamba) package manager. It can cache the whole runtime environment.
 
 ```yaml
 - uses: mamba-org/setup-micromamba@v1
   with:
     environment-file: environment.yml
-    init-shell: >-
-      bash
-      powershell
+    init-shell: bash
     cache-environment: true
     post-cleanup: 'all'
+
+- name: Run custom command in micromamba environment
+  run: pothon --version
+  shell: micromamba-shell {0}
 ```
-
-## Cache python dependencies
-
-### Pip downloads
-
-The https://github.com/actions/setup-python action caches pip downloads.
-
-```yaml
-- uses: actions/setup-python@v2
-  with:
-    python-version: '3.x'
-    cache: 'pip'
-```
-
-### Python packages
-
-Cache the `pythonLocation` folder to cache installed Python packages.[^1][^2]
-
-```yaml
-- name: Set up Python
-  uses: actions/setup-python@v4.5.0
-  with:
-    python-version: ${{ matrix.python-version }}
-- name: Cache pip dependencies
-  uses: actions/cache@v3.2.4
-  id: cache
-  with:
-    path: ${{ env.pythonLocation }}
-    key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt') }}
-- name: Install pip dependencies
-  if: steps.cache.outputs.cache-hit != 'true'
-  run: pip install -r requirements.txt
-```
-
-[^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170
-[^2]: https://luminousmen.com/post/making-ci-workflow-faster-with-github-actions
