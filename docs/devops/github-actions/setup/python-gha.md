@@ -28,7 +28,7 @@ steps:
 - run: pip install -r requirements.txt
 ```
 
-### Python packages
+### Cache Python packages
 
 If you really want to cache the whole Python environment, cache the `pythonLocation` folder.[^1][^2]
 
