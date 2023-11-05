@@ -1,5 +1,5 @@
 ---
-title: Hugo in Github actions
+title: Setup Hugo in Github actions
 tags:
   - web
   - github
