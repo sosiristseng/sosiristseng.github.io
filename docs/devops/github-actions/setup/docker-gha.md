@@ -4,7 +4,6 @@ tags:
   - docker
   - github
   - devops
-
 ---
 
 ## Building and publishing docker images
@@ -84,7 +83,7 @@ jobs:
 
 ### Docker run action
 
-The <https://github.com/addnab/docker-run-action> runs a specific step in a docker container.
+The https://github.com/addnab/docker-run-action runs a specific step in a docker container.
 
 ```yaml title=".github/workflows/run-container.yml"
 - uses: docker/build-push-action@v2

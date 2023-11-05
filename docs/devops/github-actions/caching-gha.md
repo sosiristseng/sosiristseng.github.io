@@ -1,13 +1,13 @@
 ---
 title: Caching in GitHub actions
-
 tags:
   - github
   - devops
 ---
+
 ## Caching dependencies
 
-The <https://github.com/actions/cache> action caches dependencies for the execution environment.
+The https://github.com/actions/cache action caches dependencies for the execution environment.
 
 ```yaml
 - name: Cache multiple paths
@@ -16,28 +16,45 @@ The <https://github.com/actions/cache> action caches dependencies for the execut
     path: |
       ~/cache
       !~/cache/exclude
-    key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+    key: ${{ runner.os }}-${{ hashFiles('**/Lockfile') }}
     restore-keys: |
       ${{ runner.os }}-
 ```
 
-- `key` is the identifier for writing into the cache. If `key` stays the same before and after the workflow, the cache will not be updated.
-- `restore-keys` are the identifiers for reading the cache besides `key`. If there is no matching `key` but a part of it (`restore-keys`) matches, the Github action will still read the cache and upadte it after the job is done. (since the `key` is different)
+- The `key` is the identifier for writing into the cache. If the `key` stays the same before and after the workflow, the cache will not be updated.
+- The `restore-keys` are the identifiers for reading the cache besides the `key`. If there is no matching `key` but a part of it (`restore-keys`) matches, the Github action will still read the cache and update it after the job is done. (since the `key` is different)
 
-### Caching in programming languages
+### restore and save actions
 
-Some github actions setting up runtime enviroments already have caching actions built-in; thus explicit cache actions is not required.
+The `cache` actions could be split into `restore` and `save` steps, leading to a fine-grained behavior.
 
-- Python: the <https://github.com/actions/setup-python> action caches pip, poetry, and pipenv packages.
-- Julia: the <https://github.com/julia-actions/cache> action caches Julia artifacts, packages, and registries.
-- NodeJS: the <https://github.com/actions/setup-node> action caches NodeJS package dependancies.
+```yaml
+- name: Restore cached Primes
+      id: cache-primes-restore
+      uses: actions/cache/restore@v3
+      with:
+        path: |
+          path/to/dependencies
+          some/other/dependencies
+        key: ${{ runner.os }}-primes
+#
+# //intermediate workflow steps
+#
+- name: Save Primes
+  id: cache-primes-save
+  uses: actions/cache/save@v3
+  with:
+    path: |
+      path/to/dependencies
+      some/other/dependencies
+```
 
 ## Cleanup caches
 
-Use the `gh` extension to manually clean up caches.
+Caches become invalid after 7 days. If you want to clean the cache before that, for example, in closed PR branch, use the `gh` extension.
 
-```yml
-name: Cleanup caches
+```yaml
+name: Cleanup PR caches
 on:
   pull_request:
     types:

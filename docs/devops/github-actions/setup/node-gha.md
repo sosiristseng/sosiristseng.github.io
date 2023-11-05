@@ -4,7 +4,6 @@ tags:
   - github
   - nodejs
   - devops
-
 ---
 The [setup-node](https://github.com/actions/setup-node) action installs Node.js and (optionally) caches package dependencies. Therefore, the `cache` action is not needed.
 
