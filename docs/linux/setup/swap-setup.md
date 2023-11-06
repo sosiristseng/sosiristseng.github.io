@@ -10,8 +10,9 @@ To reduce swap partition/file writes and keep more data in RAM.
 
 ```sh
 echo 'vm.swappiness = 10' | sudo tee -a /etc/sysctl.conf
-sudo sysctl -p            # you should see 'vm.swappiness = 10'
+sudo sysctl -p            
 ```
+you should see 'vm.swappiness = 10'
 
 ## Use Swap file
 
