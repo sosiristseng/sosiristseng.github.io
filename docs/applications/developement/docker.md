@@ -95,25 +95,9 @@ sudo docker run --gpus all nvidia/cuda:12.0-base nvidia-smi
 
 ## Tips
 
-### Workaround DockerHub image pull rate limits
+### DockerHub image pull rate limits
 
-DockerHub has [pull rate limits](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) on the unregisterd as weel as the free plan.
-
-To workaround these limits, we can use the [Google cloud cache](https://cloud.google.com/container-registry/docs/pulling-cached-images) for docker images.
-
-Add the following to `/etc/docker/daemon.json`
-
-```json title="/etc/docker/daemon.json"
-{
-  "registry-mirrors": ["https://mirror.gcr.io"]
-}
-```
-
-and restart the docker daemon
-
-```sh
-sudo service docker restart
-```
+DockerHub has [pull rate limits](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) on the unregistered as well as the free plan.
 
 ## Documentations and Tutorials for Docker
 
