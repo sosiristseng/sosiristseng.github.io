@@ -7,18 +7,19 @@ tags:
   - tiff
 ---
 
-Some tips about [PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl), the `matplotlib` (Python) visulization library for Julia. See also [docs for matplotlib](https://matplotlib.org/) since `PyPlot.jl` largely follows `matplotlib`'s API.
-## Solving PyPlot.jl installation errors
+Some tips about https://github.com/JuliaPy/PyPlot.jl, the `matplotlib` (Python) visulization library for Julia. See also [docs for matplotlib](https://matplotlib.org/) since `PyPlot.jl` largely follows `matplotlib`'s API.
+
+## How to solve `PyPlot.jl` installation errors
 
 Since `PyPlot.jl` depends on the Python package `matplotlib`, sometimes simply `]add` the package will not work due to some quirks in the installation process.
 
-In a local computer, it is recommended to have a clean [Conda environment inside Julia](https://github.com/JuliaPy/Conda.jl) to minimize installation issues. To enforce a local miniconda environment inside Julia, set the `PYTHON` environment variable to an empty string.
+In a local computer, it is recommended to have a clean [Conda environment inside Julia](https://github.com/JuliaPy/Conda.jl) to minimize issues. To enforce a local miniconda environment inside Julia, set the `PYTHON` environment variable to an empty string.
 
-```julia title=.julia/config/startup.jl
+```julia title="~/.julia/config/startup.jl"
 ENV["PYTHON"]=""
 ```
 
-Rebuild related packages.
+And then rebuild related packages.
 
 ```julia
 import Pkg
@@ -28,8 +29,9 @@ Pkg.build(["PyCall", "Conda", "PyPlot"])
 using PyPlot
 ```
 
-For installing PyPlot.jl in Github actions, see [[julia-gha#Using PyCall.jl]].
-## How to share legends box in double y axis in matplotlib
+For setting up `PyPlot.jl` in GitHub actions, see [[julia-gha#using-pycalljl|Setup Julia in GitHub actions > Using PyCall.jl]].
+
+## How to share the legend box in double y axis
 
 - Capture line plot objects from both axes.
 - Call `legend()` for both(all) line plot objects.
@@ -45,14 +47,21 @@ l2= ax2.plot(x1, exp.(x1))
 ax1.legend([first(l1), first(l2)], ["x", "exp(x)"])
 ```
 
-## How to save as TIFF image in Matplotlib
+## How to save as TIFF image
 
 Exporting `pyplot` figures to TIFF images with a higher dpi and LZW compression.
 
+`PyPlot.jl`
+
 ```julia
+fig.savefig("fig.tif", dpi=300, pil_kwargs=Dict("compression" => "tiff_lzw"))
+```
 
-fig.savefig("fig.tif", dpi=300, format="tiff", pil_kwargs=Dict("compression" => "tiff_lzw"))
+`PythonPlot.jl`
 
+```julia
+using PythonCall
+plt.savefig("fig1.tif", dpi=300, pil_kwargs=pydict(Dict("compression" => "tiff_lzw")))
 ```
 
 ## Change default options in PyPlot.jl
