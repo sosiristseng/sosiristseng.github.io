@@ -97,7 +97,23 @@ sudo docker run --gpus all nvidia/cuda:12.0-base nvidia-smi
 
 ### DockerHub image pull rate limits
 
-DockerHub has [pull rate limits](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) on the unregistered as well as the free plan.
+DockerHub now applies rather harsh [pull rate limits](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) on the unregistered as well as the free plan.
+
+We can use docker proxies to avoid the rate limits.
+
+```json title="/etc/docker/daemon.json"
+"registry-mirrors": [
+        "https://docker.m.daocloud.io",
+        "https://dockerproxy.com"
+]
+```
+
+After you save the content above to `/etc/docker/daemon.json`, run,
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
 
 ## Documentations and Tutorials for Docker
 
