@@ -67,7 +67,7 @@ Point the environment variable `CONDA_JL_HOME` to your Conda path. `Conda.jl` an
 export CONDA_JL_HOME="${HOME}/conda"
 ```
 
-For `PythonCall.jl`, [set the following environment variables](https://cjdoris.github.io/PythonCall.jl/stable/pythoncall/#pythoncall-config):
+For `PythonCall.jl`, [set the following environment variables](https://cjdoris.github.io/PythonCall.jl/stable/pythoncall/):
 
 ```sh
 export JULIA_CONDAPKG_BACKEND="Null"
