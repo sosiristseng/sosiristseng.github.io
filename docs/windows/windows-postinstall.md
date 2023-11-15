@@ -58,5 +58,5 @@ powercfg -h off
 ## Setup developement tools
 
 + Setup [[WSL2]].
-+ Setup [[windows/environment-variables]].
-+ Setup [Dev Drive](https://devblogs.microsoft.com/visualstudio/devdrive/) for a better disk performance for many small files.
++ Setup [[windows/environment-variables|Environment variables]].
++ Checkout [[windows/apps|applications]]

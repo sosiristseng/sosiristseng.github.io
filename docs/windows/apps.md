@@ -24,7 +24,7 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 
 - [7-Zip](https://www.7-zip.org/) : An open source file compressor/archive manager with a high compression ratio..
 - [7-Zip-zstd](https://github.com/mcmilk/7-Zip-zstd) : 7-Zip with additional support for Brotli, Fast-LZMA2, Lizard, LZ4, LZ5 and Zstandard (zstd).
-- [NanaZip](https://github.com/M2Team/NanaZip) : The 7-Zip derivative with Win 11 menu integration.
+- [NanaZip](https://github.com/M2Team/NanaZip) : The 7-Zip derivative with Win 11 menu integration. It also has support for Zstandard format.
 - [Peazip](https://github.com/peazip/PeaZip) : Cross-platform file and archive manager.
 - [Bandizip](https://en.bandisoft.com/bandizip/): Bandizip is a powerful archiver which provides an ultrafast processing speed and convenient features.
 
