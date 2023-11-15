@@ -55,6 +55,12 @@ Disabling hibernation saves a lot of disk space (No more `C:\hiberfile.sys`). Ru
 powercfg -h off
 ```
 
+### Compress OS files for a smaller disk space footprint
+
+```powershell
+Compact.exe /CompactOS:always
+```
+
 ## Setup developement tools
 
 + Setup [[WSL2]].
