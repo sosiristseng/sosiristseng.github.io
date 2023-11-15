@@ -1,6 +1,6 @@
 ---
 title: SSH login to GitHub and GitLab
-draft: 
+draft:
 tags:
   - github
   - gitlab
@@ -69,7 +69,7 @@ GitHub:
 ssh -vT git@github.com
 ```
 
-Accept its fingerprint if prompted. If you see "Hi <user>! You've successfully authenticated, but GitHub does not provide shell access)" that means voilà.
+Accept its fingerprint if prompted. If you see "Hi user! You've successfully authenticated, but GitHub does not provide shell access)" that means login is successful.
 
 GitLab:
 
