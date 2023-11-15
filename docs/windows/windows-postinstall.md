@@ -28,7 +28,7 @@ choco feature enable -n=useRememberedArgumentsForUpgrades
 
 choco install -y git.install --params "'/NoShellIntegration'"
 
-choco install -y vscode qbittorrent firefox brave telegram bandizip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo directx vcredist-all hugo-extended sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop tabby
+choco install -y vscode qbittorrent firefox brave vivaldi telegram bandizip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop tabby winscp
 ```
 
 How to install winget in Windows 10 LTSC
