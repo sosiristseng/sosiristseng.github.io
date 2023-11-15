@@ -5,7 +5,8 @@ tags:
   - git
   - devops
 ---
-Frequently used Git submodule commands.
+
+Frequently used commands for Git submodules.
 
 - [gitaarik's Gist](https://gist.github.com/gitaarik/8735255)
 - [Git docs](https://git-scm.com/docs/gitsubmodules)
@@ -19,9 +20,9 @@ git submodule add <url> <path>
 git submodule update --init --recursive
 ```
 
-Alternatively, you can use GUI tools like Gitkraken.
+Alternatively, you can use GUI tools like or GitHub desktop. They download and initiate submodules automatically.
 
-Add you will see the file `.gitmodules` with information about the submodule. Take this website repo for instance,
+Add you will see the file `.gitmodules` with information about the submodule(s). For instance,
 
 ``` title=".gitmodules"
 [submodule "themes/DoIt"]
