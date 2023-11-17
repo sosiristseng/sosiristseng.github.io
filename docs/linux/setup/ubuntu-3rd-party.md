@@ -56,6 +56,13 @@ sudo apt-get update
 sudo apt-get -y install cuda
 ```
 
+To add the CUDA compiler (`nvcc`) to the system `PATH`:
+
+```sh "title=~/.profile"
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```
+
 ### AMD and Intel open-source GPU driver (Mesa)
 
 Install the latest Mesa open source GPU drivers from the [kisak PPA](https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa)
