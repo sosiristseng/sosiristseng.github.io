@@ -16,6 +16,12 @@ https://github.com/aristocratos/btop is a resource monitor wirtten in C++ that s
 sudo pacman -S btop
 ```
 
+### Ubuntu
+
+```sh
+sudo apt install btop
+```
+
 ### snap
 
 ```sh
