@@ -41,4 +41,4 @@ tags:
 
 ## See also
 
-[[windows/environment-variables|Windows environment variables]]
+Setup [[windows/environment-variables|Windows environment variables]].
