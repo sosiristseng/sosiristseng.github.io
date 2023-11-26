@@ -28,7 +28,6 @@ tags:
 
 ## Online Markdown Editors
 
-- [Dillinger](https://dillinger.io/) : An open-source markdown editor.
 - [Editor.md](https://pandao.github.io/editor.md/en.html)
 - [HackMD](https://hackmd.io/) : Collaborative Markdown Knowledge Base.
 - [Tables Generator](https://www.tablesgenerator.com/) : LaTeX and MD Tables.
