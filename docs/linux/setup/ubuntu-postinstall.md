@@ -80,7 +80,9 @@ sudo apt-get -y install cuda
 
 To add the CUDA compiler (`nvcc`) to the system `PATH`:
 
-```sh "title=~/.profile"
+`~/.profile`
+
+```sh
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 ```
