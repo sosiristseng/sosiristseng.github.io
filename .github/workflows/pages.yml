@@ -20,15 +20,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          # full history
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
+          fetch-depth: 0 # full history
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        id: cp
         with:
           python-version: ${{ env.PY_VER }}
-          cache: 'pip'
-      - run: pip install -r requirements.txt
+      - name: Cache pip
+        uses: actions/cache@v3
+        id: cache-pip
+        with:
+          path: ${{ env.pythonLocation }}
+          key: ${{ runner.os }}-pip-${{ steps.cp.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
+      - name: Install python packages
+        if: ${{ steps.cache-pip.outputs.cache-hit != 'true' }}
+        run: pip install -r requirements.txt
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
