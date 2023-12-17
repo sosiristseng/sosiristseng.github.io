@@ -5,6 +5,7 @@ tags:
   - julia
 ---
 
+- [Wen-Wei's Julia Notebooks](https://github.com/ww-jl)
 - [Gens Julia](https://gensjulia.pages.dev/), my Julia resource list adapted from `Julia.jl`.
 - [Julia Package Setup Tutorial](https://bjack205.github.io/tutorial/2021/07/16/julia_package_setup.html)
 - [Julia packages (JuliaHub)](https://juliahub.com/ui/Packages)
@@ -13,17 +14,6 @@ tags:
 - [Solving PDEs in parallel on GPUs with Julia](https://pde-on-gpu.vaw.ethz.ch/) : a Julia course
 - [Parallel Computing and Scientific Machine Learning (SciML): Methods and Applications](https://book.sciml.ai/)
 - [Modern Julia Workflows](https://modernjuliaworkflows.github.io/)
-
-## Julia examples
-
-The rights belong to the respective authors. I use them to test my publishing pipeline.
-
-- https://github.com/sosiristseng/jl-abm
-- https://github.com/sosiristseng/jl-dataframes
-- https://github.com/sosiristseng/jl-diffeq
-- https://github.com/sosiristseng/jl-pde
-- https://github.com/sosiristseng/jl-ude
-- https://github.com/sosiristseng/jl-visual
 
 ## My Julia stack
 
@@ -38,7 +28,6 @@ The rights belong to the respective authors. I use them to test my publishing pi
 ### Publishing code examples
 
 - https://github.com/fredrikekre/Literate.jl : converting _literated_ `jl` files to Markdown (`md`) or Jupyter notebooks (`ipynb`).
-- https://github.com/JunoLab/Weave.jl : converting between Markdown (`jmd`), Jupyter notebooks (`ipynb`), and Julia script (`.jl`). It also supports HTML/PDF outputs.
 - https://github.com/stevengj/NBInclude.jl : converting Jupyter notebooks (`ipynb`) to _literated_ `jl` files by using `nbexport("myfile.jl", "myfile.ipynb")`.
 
 ### Optimization
@@ -50,6 +39,12 @@ The rights belong to the respective authors. I use them to test my publishing pi
     - `OptimizationOptimJL` for optimization methods from https://github.com/JuliaNLSolvers/Optim.jl
     - `OptimizationMOI` for optimization methods from https://github.com/jump-dev/MathOptInterface.jl
     - etc.
+
+### Curve fitting
+
+- https://github.com/pjabardo/CurveFit.jl
+- https://github.com/JuliaNLSolvers/LsqFit.jl
+- https://github.com/SciML/Optimization.jl
 
 ### Modeling and simulation
 
