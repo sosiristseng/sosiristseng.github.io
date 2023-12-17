@@ -23,9 +23,9 @@ copyright: Copyright &copy; 2016 - 2023 Wen-Wei Tseng
 
 # MkDocs plugins
 plugins:
-  - blog:
-      enabled: true
-      blog_dir: blog
+  # - blog:
+  #     enabled: true
+  #     blog_dir: blog
   - search
   - callouts
   - ezlinks
