@@ -4,7 +4,6 @@ tags:
   - julia
   - linux
   - windows
-
 ---
 
 ## Install Julia

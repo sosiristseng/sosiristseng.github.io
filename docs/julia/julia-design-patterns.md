@@ -1,6 +1,5 @@
 ---
 title: Julia design patterns
-
 tags:
 - julia
 ---

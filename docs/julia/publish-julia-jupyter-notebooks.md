@@ -5,7 +5,6 @@ tags:
   - github
   - docker
   - jupyter-notebook
-draft:
 ---
 This post will demonstrate my [template repository](https://github.com/sosiristseng/template-juliabook)about
 

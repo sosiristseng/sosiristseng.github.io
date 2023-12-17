@@ -1,19 +1,22 @@
 ---
 title: Julia Tips
-
 tags:
   - julia
 ---
 
 Random tips about the Julia programming language.
 
++ [[julia-package-loading|Package Loading]] tips
++ [[julia-design-pattern| Design patterns and anitpatterns]]
+
 ## Visualization
 
 + [[plotsjl-tips|Plots.jl]] tips
 + [[pyplotjl-tips|PyPlot.jl]] tips
 
-## How to get 2D indexes from a 1D index when accessing a 2D array?
+## Arrays
 
+### How to get 2D indexes from a 1D index when accessing a 2D array?
 
 Use `CartesianIndices`. [Source](https://discourse.julialang.org/t/julia-usage-how-to-get-2d-indexes-from-1d-index-when-accessing-a-2d-array/61440)
 

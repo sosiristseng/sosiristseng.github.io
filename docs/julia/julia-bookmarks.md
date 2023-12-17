@@ -1,6 +1,5 @@
 ---
 title: Julia Bookmarks
-
 tags:
   - bookmark
   - julia

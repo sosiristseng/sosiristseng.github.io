@@ -1,6 +1,5 @@
 ---
 title: Julia package loading
-
 tags:
   - julia
 ---

@@ -1,6 +1,5 @@
 ---
 title: Plots.jl Tips
-
 tags:
   - julia
   - visualization
