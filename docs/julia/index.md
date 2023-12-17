@@ -14,6 +14,18 @@ Random tips about the Julia programming language.
 + [[plotsjl-tips|Plots.jl]] tips
 + [[pyplotjl-tips|PyPlot.jl]] tips
 
+### Alternative to DisplayAs
+
+In https://github.com/fredrikekre/Literate.jl, it is recommended to use https://github.com/tkf/DisplayAs.jl for notebook output to save result size. If you don't want to add another dipendency, you can use `display()` instead.
+
+```julia
+using Plots
+PNG(img) = display("image/png", img)
+
+plot(rand(6)) |> PNG
+```
+
+
 ## Arrays
 
 ### How to get 2D indexes from a 1D index when accessing a 2D array?
