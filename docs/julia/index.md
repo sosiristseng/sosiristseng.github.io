@@ -25,6 +25,11 @@ PNG(img) = display("image/png", img)
 plot(rand(6)) |> PNG
 ```
 
+## Modeling and simulation
+
+### Dealing with DomainErrors
+
+`sqrt()` and `log()` will throw `DomainError` exceptions with negative float input, which could be problematic in differential equation solvers. One can use these functions in https://github.com/JuliaMath/NaNMath.jl, which return NaN instead of throwing a `DomainError`. Then the solver will reject the solution and retry with a smaller step.
 
 ## Arrays
 
