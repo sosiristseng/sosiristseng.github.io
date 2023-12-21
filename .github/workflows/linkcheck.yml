@@ -22,6 +22,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  CACHE_NUM: '1'
+  DIR: 'docs'
+
 jobs:
   linkcheck:
     runs-on: ubuntu-latest
@@ -33,14 +37,14 @@ jobs:
         uses: actions/cache/restore@v3
         with:
           path: .lycheecache
-          key: cache-lychee-${{ github.sha }}
-          restore-keys: cache-lychee-
+          key: cache-lychee-${{ env.CACHE_NUM }}-${{ github.sha }}
+          restore-keys: cache-lychee-${{ env.CACHE_NUM }}-
       - name: Lychee Checker
         uses: lycheeverse/lychee-action@v1.8.0
         id: lychee
         with:
           fail: true
-          args: '--accept 200,204,429 --verbose --no-progress --cache --max-cache-age 1d docs/'
+          args: '--accept 200,204,429 --verbose --no-progress --cache --max-cache-age 1d ${{ env.DIR }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Save lychee cache
