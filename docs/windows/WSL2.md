@@ -113,7 +113,3 @@ localhostForwarding=true # Boolean specifying if ports bound to wildcard or loca
 Cross-OS file access (E.G., git accessing repositories in  `/mnt/c`) is at least one order of magnitude slower than native one.[^wslio]
 
 [^wslio]: https://neilbryan.ca/posts/win10-wsl2-performance/
-
-### 1GB RAM cost for the hypervisor
-
-As [this Reddit post](https://www.reddit.com/r/bashonubuntuonwindows/comments/wo6729/the_hidden_costs_of_wsl2_memory_usage/) and the [Hyper-V documentation](https://learn.microsoft.com/en-us/windows-server/administration/performance-tuning/role/hyper-v-server/memory-performance) said, running Windows and WSL side-by-side on a hypervisor takes 1GB of RAM.
