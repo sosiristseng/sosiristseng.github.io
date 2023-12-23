@@ -81,22 +81,24 @@ jobs:
           cat /etc/os-release
 ```
 
-### Docker run action
+### Docker run command
 
-The https://github.com/addnab/docker-run-action runs a specific step in a docker container.
+Use the regular [docker run](https://docs.docker.com/engine/reference/commandline/run/) command. Here we use `>` to fold commands in YAML.
 
-```yaml title=".github/workflows/run-container.yml"
-- uses: docker/build-push-action@v2
-  with:
-    tags: test-image:latest
-    push: false
-- uses: addnab/docker-run-action@v3
-  with:
-    image: test-image:latest
-    options: -w /tmp -v ${{ github.workspace }}:/tmp -e ABC=123
-    run: |
-      echo "Running Script"
-      ./run-script
+```yaml title=".github/workflows/test-container.yml"
+name: container
+on: push
+
+env:
+  IMG: "node:14.15.0-alpine3.12"
+
+jobs:
+  node-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log the node version
+        run: >
+          docker run -rm -v $(pwd):/tmp -w /tmp
+          ${{ env.IMG }}
+          bash -c "node -v; cat /etc/os-release"
 ```
-
-You need to setup proper mount point(s) to receive execution result in later steps.
