@@ -14,7 +14,7 @@ You can use one of the three below
 + https://github.com/conda-incubator/setup-miniconda
 + https://github.com/mamba-org/setup-micromamba
 
-## `setup-python`
+## `setup-python` action
 
 The https://github.com/actions/setup-python actions installs `python` with a specific version and could cache download Python packages. (But *not* the whole environment)
 
@@ -35,6 +35,7 @@ If you really want to cache the whole Python environment, cache the `pythonLocat
 ```yaml
 - name: Set up Python
   uses: actions/setup-python@v4
+  id: cp
   with:
     python-version: ${{ matrix.python-version }}
 - name: Cache pip dependencies
@@ -42,7 +43,7 @@ If you really want to cache the whole Python environment, cache the `pythonLocat
   id: cache
   with:
     path: ${{ env.pythonLocation }}
-    key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt') }}
+    key:  ${{ runner.os }}-pip-${{ steps.cp.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
 - name: Install pip dependencies if cache miss
   if: steps.cache.outputs.cache-hit != 'true'
   run: pip install -r requirements.txt
@@ -51,7 +52,24 @@ If you really want to cache the whole Python environment, cache the `pythonLocat
 [^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170
 [^2]: https://luminousmen.com/post/making-ci-workflow-faster-with-github-actions
 
-## `setup-miniconda`
+## `setup-micromamba`
+
+The https://github.com/mamba-org/setup-micromamba action installs the [micromamba](https://github.com/mamba-org/mamba#micromamba) package manager. It can cache the whole runtime environment.
+
+```yaml
+- uses: mamba-org/setup-micromamba@v1
+  with:
+    environment-file: environment.yml
+    init-shell: bash
+    cache-environment: true
+    post-cleanup: 'all'
+
+- name: Run custom command in micromamba environment
+  run: pothon --version
+  shell: micromamba-shell {0}
+```
+
+## `setup-miniconda` action
 
 The https://github.com/conda-incubator/setup-miniconda action sets up a base [`conda`](https://docs.conda.io/projects/conda/en/latest/) environment.
 
@@ -78,20 +96,3 @@ jobs:
 ```
 
 1. Use the login shell to activate the conda environment correctly.
-
-## `setup-micromamba`
-
-The https://github.com/mamba-org/setup-micromamba action installs the [micromamba](https://github.com/mamba-org/mamba#micromamba) package manager. It can cache the whole runtime environment.
-
-```yaml
-- uses: mamba-org/setup-micromamba@v1
-  with:
-    environment-file: environment.yml
-    init-shell: bash
-    cache-environment: true
-    post-cleanup: 'all'
-
-- name: Run custom command in micromamba environment
-  run: pothon --version
-  shell: micromamba-shell {0}
-```
