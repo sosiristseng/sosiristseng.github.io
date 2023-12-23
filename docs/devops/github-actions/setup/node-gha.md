@@ -6,6 +6,8 @@ tags:
   - devops
 ---
 
+## Setup Node action
+
 The https://github.com/actions/setup-node action installs Node.js and can cache package dependencies. Therefore, the `cache` action is not required.
 
 ```yaml
@@ -18,6 +20,8 @@ steps:
 - run: npm ci
 - run: npm test
 ```
+
+## NPM install action
 
 The https://github.com/bahmutov/npm-install action does package caching and runs `npm ci` without additional settings.
 
