@@ -53,16 +53,15 @@ Use the `--write-subs` option.
 yt-dlp --write-subs <url>
 ```
 
-### Limit resolution to 1080
+### Select resolution and format
 
-Use `-S` to limit the search range to 1080.
+Use `-S` (sort) to download 1080p AV1 videos first.
 
 ```sh
-yt-dlp -S "res:1080" <url>
+yt-dlp -S "res:1080,vcodec:av1" <url>
 ```
 
 ### Download videos from a playlist
-
 
 ```sh
 yt-dlp --yes-playlist --ignore-errors --continue --no-overwrites --output "%(title)s.%(ext)s" <playlist_url>
