@@ -5,7 +5,7 @@ tags:
 - linux
 ---
 
-Setup Windows subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/windows/wsl/)) for Linux developement experience in Windows 10 and 11.
+Setup Windows subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/windows/wsl/)) for Linux development experience in Windows 10 and 11.
 
 ## Instal WSL2
 
@@ -16,35 +16,15 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-After reboot, run this command wiht admin privilege to install Ubuntu
+After reboot, run this command with admin privilege to install Ubuntu
 
 ```powershell
 wsl --set-default-version 2
 wsl --update
-wsl --install -d Ubuntu  # You can choose other distributions e.g. Debian
+wsl --install -d Ubuntu  # You can choose other distributions e.g., Debian
 ```
 
-## WSL2 post-install setup
-
-They are optional. Apply them if necessary.
-
-### Enable systemd
-
-Edit `/etc/wsl.conf` in the WSL. Currently, WSL enables systemd by default, so you may not need to edit this file.
-
-```txt title="/etc/wsl.conf"
-[boot]
-systemd=true
-```
-
-### Default login user
-
-Edit `/etc/wsl.conf` in the WSL.
-
-```txt title="/etc/wsl.conf"
-[user]
-default=username
-```
+## WSL2 post-install (optional) setup
 
 ### Move the virtual disk
 
@@ -67,6 +47,15 @@ wsl --import-in-place Ubuntu .\Ubuntu\ext4.vhdx
 [^export-import]: https://learn.microsoft.com/zh-tw/windows/wsl/basic-commands#import-and-export-a-distribution
 [^movedrive]: https://blog.iany.me/2020/06/move-wsl-to-another-drive/
 
+### Default login user
+
+Edit `/etc/wsl.conf` in the WSL. You may need to set the default user if you have moved the virtual disk file of the WSL distribution.
+
+```txt title="/etc/wsl.conf"
+[user]
+default=username
+```
+
 ## Mantenance
 
 ### Update kernel
@@ -84,7 +73,7 @@ To reclaim disk space from virtual hard disks (VHDs), run the following commands
 
 ```powershell
 wsl --shutdown
-Optimize-VHD -Path <path-to.vhdx> -Mode Full
+Optimize-VHD -Path %path-to.vhdx% -Mode Full
 ```
 
 [^optimize-vhd]: https://blog.miniasp.com/post/2023/05/14/Shrink-your-WSL2-Virtual-Disks-and-Docker-Images-and-Reclaim-Disk-Space
@@ -108,8 +97,8 @@ localhostForwarding=true # Boolean specifying if ports bound to wildcard or loca
 
 ## Caveats about WSL2
 
-### Poor filesystem performance across OS
+### Poor filesystem performance across OSes
 
-Cross-OS file access (E.G., git accessing repositories in  `/mnt/c`) is at least one order of magnitude slower than native one.[^wslio]
+Cross-OS file access (e.g., accessing `/mnt/c` in WSL) is at least one order of magnitude slower than accessing the native (`/home/user/file`) files.[^wslio]
 
 [^wslio]: https://neilbryan.ca/posts/win10-wsl2-performance/
