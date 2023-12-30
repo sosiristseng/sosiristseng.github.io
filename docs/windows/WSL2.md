@@ -21,17 +21,19 @@ After reboot, run this command with admin privilege to install Ubuntu
 ```powershell
 wsl --set-default-version 2
 wsl --update
-wsl --install -d Ubuntu  # You can choose other distributions e.g., Debian
+wsl --unregister Ubuntu  # Remove existing Ubuntu entry
+wsl --install -d Ubuntu  # You can choose other distributions, e.g., Debian
+wsl --manage Ubuntu --set-sparse true
 ```
 
 ## WSL2 post-install (optional) setup
 
 ### Move the virtual disk
 
-If you want to move the WSL virtual disk file to another disk (in this example, `D:\`), run this script in the host[^export-import][^movedrive]:
+If you want to move the WSL virtual disk file to another disk (in this example, `D:\`), run the following commands in Windows[^export-import][^movedrive]:
 
 > [!tip]
-> The following example usse `D:\Ubuntu\ext4.vhdx` as the virtual disk. You can change the distribution name (Ubuntu) and filesystem paths as needed.
+> The following example will move the current WSL virtual disk to `D:\Ubuntu\ext4.vhdx`. You can change the distribution name (Ubuntu) and filesystem paths if necessary.
 
 ```powershell
 cd D:\
@@ -56,6 +58,35 @@ Edit `/etc/wsl.conf` in the WSL. You may need to set the default user if you hav
 default=username
 ```
 
+### Host settings
+
+Edit `.wslconfig` [^wslconfig] in your Windows home directory (Enter `%USERPROFILE%` in file explorer's location bar).
+
+For example,
+
+```txt title=".wslconfig"
+[wsl2]
+memory=20GB              # How much memory to assign to the WSL2 VM.
+processors=4             # How many processors to assign to the WSL2 VM.
+swap=8GB                 # How much swap space to add to the WSL2 VM. 0 for no swap file.
+swapfile=C:\\temp\\wsl-swap.vhdx # Sets swapfile path location, default is %USERPROFILE%\AppData\Local\Temp\swap.vhdx. Useful if your C drive has limited disk space.
+localhostForwarding=true # Boolean specifying if ports bound to wildcard or localhost in the WSL2 VM should be connectable from the host via localhost:port (default true).
+```
+
+[^wslconfig]: https://learn.microsoft.com/zh-tw/windows/wsl/wsl-config
+
+### Auto reclaim RAM and disk space
+
+Edit `.wslconfig` [^wslconfig] in your Windows home directory (Enter `%USERPROFILE%` in file explorer's location bar). [^autoreclaim]
+
+```txt title=".wslconfig"
+[experimental]
+autoMemoryReclaim=dropcache
+sparseVhd-true
+```
+
+[^autoreclaim]: https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/
+
 ## Mantenance
 
 ### Update kernel
@@ -78,22 +109,7 @@ Optimize-VHD -Path %path-to.vhdx% -Mode Full
 
 [^optimize-vhd]: https://blog.miniasp.com/post/2023/05/14/Shrink-your-WSL2-Virtual-Disks-and-Docker-Images-and-Reclaim-Disk-Space
 
-## Host settings
 
-Edit `.wslconfig` [^wslconfig] in your Windows home directory (Enter `%USERPROFILE%` in file explorer's location bar).
-
-For example,
-
-```sh title=".wslconfig"
-[wsl2]
-memory=20GB              # How much memory to assign to the WSL2 VM.
-processors=4             # How many processors to assign to the WSL2 VM.
-swap=8GB                 # How much swap space to add to the WSL2 VM. 0 for no swap file.
-swapfile=C:\\temp\\wsl-swap.vhdx # Sets swapfile path location, default is %USERPROFILE%\AppData\Local\Temp\swap.vhdx. Useful if your C drive has limited disk space.
-localhostForwarding=true # Boolean specifying if ports bound to wildcard or localhost in the WSL2 VM should be connectable from the host via localhost:port (default true).
-```
-
-[^wslconfig]: https://learn.microsoft.com/zh-tw/windows/wsl/wsl-config
 
 ## Caveats about WSL2
 
