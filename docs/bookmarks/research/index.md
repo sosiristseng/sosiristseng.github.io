@@ -17,7 +17,6 @@ tags:
 
 - [Google scholar](https://scholar.google.com.tw/)
 - [PubMed central (PMC)](https://www.ncbi.nlm.nih.gov/pmc/)
-- [Journal citation report (JCR)](http://tul.blog.ntu.edu.tw/archives/26014) tutorial in NTU.
 
 <details> <summary> Copyright alert</summary>
 - [Sci-Hub](https://sci-hub.se/)
