@@ -70,7 +70,6 @@ memory=20GB              # How much memory to assign to the WSL2 VM.
 processors=4             # How many processors to assign to the WSL2 VM.
 swap=8GB                 # How much swap space to add to the WSL2 VM. 0 for no swap file.
 swapfile=C:\\temp\\wsl-swap.vhdx # Sets swapfile path location, default is %USERPROFILE%\AppData\Local\Temp\swap.vhdx. Useful if your C drive has limited disk space.
-localhostForwarding=true # Boolean specifying if ports bound to wildcard or localhost in the WSL2 VM should be connectable from the host via localhost:port (default true).
 ```
 
 [^wslconfig]: https://learn.microsoft.com/zh-tw/windows/wsl/wsl-config
