@@ -23,7 +23,7 @@ tags:
 + `~/.zshrc` for every interactive zsh instance.
 
 >[!note]
-> zsh [does not source](https://superuser.com/questions/187639/zsh-not-hitting-profile) `~/.profile` by default because of the syntax difference. You can add this line to `~/.zprofile` or `~/.zshenv` to make zsh shells read `~/.profile coreectly.
+> zsh [does not source](https://superuser.com/questions/187639/zsh-not-hitting-profile) `~/.profile` by default because of the difference between bash and zsh syntaxes. You can add this line to `~/.zprofile` or `~/.zshenv` to make zsh shells read `~/.profile correctly.
 > ```zsh title="~/.zshenv"
 > test -r ${HOME}/.profile && emulate sh -c 'source ${HOME}/.profile'
 > ```
@@ -32,11 +32,11 @@ tags:
 ## X Window
 
 + `~/.xinitrc` is sourced by `startx`.
-+ `~/.xprofile` is sourced by display managers (e.g. GDM, SDDM)
++ `~/.xprofile` is sourced by display managers (e.g., GDM, SDDM)
 
-## Systemd and WayLand
+## Systemd and Wayland
 
-+ `~/.config/environment.d/*.conf`: sourced by `systemd`. Also they are used in WayLand sessions where `xinitrc` and `xprofile` are not available.
++ `~/.config/environment.d/*.conf`: sourced by `systemd`. Also, they are used in Wayland sessions where `xinitrc` and `xprofile` are not available.
 
 
 ## See also
