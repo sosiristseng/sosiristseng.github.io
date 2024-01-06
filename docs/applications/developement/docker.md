@@ -14,7 +14,7 @@ tags:
 
 ### Ubuntu
 
-Please check [supported versions](https://docs.docker.com/engine/install/ubuntu/) before adding the repository.
+Please check [supported versions](https://docs.docker.com/engine/install/ubuntu/) first before adding the repository.
 
 ```bash
 sudo apt-get update &&
@@ -38,9 +38,9 @@ sudo pacman -S docker
 sudo systemctl enable --now docker.service
 ```
 
-### Windows
+### Windows (Docker desktop)
 
-Docker for Windows has [[WSL2]] integration.
+[Docker desktop](https://www.docker.com/products/docker-desktop/) for Windows has [[WSL2]] integration.
 
 ```powershell
 choco install docker-desktop
@@ -93,11 +93,25 @@ sudo docker run hello-world
 sudo docker run --gpus all nvidia/cuda:12.0-base nvidia-smi
 ```
 
-## Tips
+## Optional setup
 
-### DockerHub image pull rate limits
+- Move the Docker data directory to a bigger partition
+- Set up a pull-through cache (by Google) to avoid hitting the docker image [pull rate limit](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) by Dockerhub
 
-DockerHub now applies rather harsh [pull rate limits](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) on the unregistered as well as the free plan.
+Edit `/etc/docker/daemon.json`, add the following entries
+
+```json title="/etc/docker/daemon.json"
+{
+  "data-root": "/home/docker",
+  "registry-mirrors": ["https://mirror.gcr.io"]
+}
+```
+
+Then run the following command to reload docker daemon settings.
+
+```bash
+sudo service docker restart
+```
 
 ## Documentations and Tutorials for Docker
 
