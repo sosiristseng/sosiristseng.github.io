@@ -2,6 +2,6 @@
 title: Home
 ---
 
-My tips, tricks, and thoughts are collected here.
+The knowledge base of Wen-Wei Tseng.
 
 [TAGS]

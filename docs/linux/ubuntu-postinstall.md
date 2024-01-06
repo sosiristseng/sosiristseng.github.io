@@ -38,22 +38,13 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 
 The setup repos for apllications:
 
-- [[apt#apt-fast apt but faster|apt-fast]]
+- [[apt#apt-fast|apt-fast]]
 - [[brave]]
 - [[docker]]
 - [[git]]
 - [[qbittorrent]]
 - [[vivaldi]]
 - [[vscode]]
-
-### Kubuntu APP and KDE framework updates
-
-[Kubuntu backports](https://launchpad.net/~kubuntu-ppa/+archive/ubuntu/backports): Latest versions of KDE framework and APPs
-
-```bash
-sudo add-apt-repository -y ppa:kubuntu-ppa/backports
-sudo apt-get update && sudo apt full-upgrade -y
-```
 
 ### Xanmod Linux kernel
 
@@ -96,7 +87,6 @@ sudo add-apt-repository -y ppa:kisak/kisak-mesa
 sudo apt update && sudo apt full-upgrade -y
 ```
 
-
 ## (Optional) Wine and 32-bit games support
 
 ```bash
@@ -111,7 +101,7 @@ sudo apt update && sudo apt full-upgrade -y
 
 ## Install apps
 
-### Regular Ubuntu
+### Ubuntu
 
 Save this list as `pkgs.txt`
 
@@ -155,6 +145,13 @@ ttf-mscorefonts-installer
 ```
 
 ### Kubuntu
+
+[Kubuntu backports](https://launchpad.net/~kubuntu-ppa/+archive/ubuntu/backports): Latest versions of KDE framework and APPs
+
+```bash
+sudo add-apt-repository -y ppa:kubuntu-ppa/backports
+sudo apt-get update && sudo apt full-upgrade -y
+```
 
 Save this list as `pkgs.txt`
 
@@ -203,21 +200,15 @@ sed 's/#.*$//' pkgs.txt | xargs sudo apt install -y
 
 ## Configurations
 
-- [[swap-setup|Swap]] configuration
-- [[linux-input-methods|Input methods]] setup
-- [[fonts-setup|Fonts setup]]
-- [[linux/setup/environment-variables|Linux environment variables]]
-- [[linux-themes|Themes]] setup
-- Set [[linux-local-time]] if you are dual booting with Windows.
+See also: [[index|Linux tips]]
+
 - Setting `tmpfs` (RAM disk) for `/tmp` folder: `sudo cp -v /usr/share/systemd/tmp.mount /etc/systemd/system/ && sudo systemctl enable tmp.mount`
 
-### Ubuntu: Extensions for gnome shell
+### Ubuntu: gnome shell extensions
 
 - [User themes](https://extensions.gnome.org/extension/19/user-themes/)
-- [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
-- [Audio Selector](https://extensions.gnome.org/extension/5135/audio-selector/)
 - [Lock Keys](https://extensions.gnome.org/extension/36/lock-keys/)
-- [Applications Menu](https://extensions.gnome.org/extension/6/applications-menu/) for a category-based menu for applications.
+- [Applications Menu](https://extensions.gnome.org/extension/6/applications-menu/) : a category-based menu for applications.
 - [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) : an icon taskbar for Gnome Shell.
 - [Arc Menu](https://extensions.gnome.org/extension/3628/arcmenu/) an application menu for GNOME Shell
 - [Material shell](https://extensions.gnome.org/extension/3357/material-shell/) tiling windows.
@@ -227,16 +218,12 @@ sed 's/#.*$//' pkgs.txt | xargs sudo apt install -y
 - Double click to open files instead of single clicks: `Workspace behavior` => `General behavior` => `click behavior`.
 - Start with an empty session in `Desktop session`.
 
-## Applications
+## Misc.
 
 - [[miniforge|Conda]]
 - [[setup-julia|Julia]]
+- [[linux-themes|Linux themes]]
 - [FreeFileSync](https://freefilesync.org/)
-- [Starship](https://starship.rs/)
 - [Hugo](https://github.com/gohugoio/hugo/releases/)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)
 - [Virtualbox](https://www.virtualbox.org/)
-
-## Themes
-
-Setup [[linux-themes]].

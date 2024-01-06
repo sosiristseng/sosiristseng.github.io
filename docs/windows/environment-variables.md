@@ -20,7 +20,3 @@ $Env:FOO
 + GUI: Windows Settings -> Advanced system settings -> Set **Environment Variables**.
 + Powershell: `[Environment]::SetEnvironmentVariable('KEY', 'VAL', 'Machine')`
 + Cmd: `SETX KEY VAL`
-
-## See also
-
-[[linux/setup/environment-variables|Linux environment variables]]

@@ -8,10 +8,6 @@ tags:
 
 [GitHub actions](https://docs.github.com/en/actions) CI/CD. See also https://github.com/sdras/awesome-actions for a curated topics about GitHub actions.
 
-## Setup environments
-
-[[devops/github-actions/setup/index|Setup environments in GitHub actions]].
-
 ## Build
 
 + [[git-ops-gha|Git operations in GitHub actions]]

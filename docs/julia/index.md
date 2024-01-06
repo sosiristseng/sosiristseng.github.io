@@ -7,7 +7,7 @@ tags:
 Random tips about the Julia programming language.
 
 + [[julia-package-loading|Package Loading]] tips
-+ [[julia-design-pattern| Design patterns and anitpatterns]]
++ [[julia-design-patterns| Design patterns and anitpatterns]]
 
 ## Visualization
 
