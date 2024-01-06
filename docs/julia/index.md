@@ -75,7 +75,7 @@ f([0.0], [1.0], 0.0) # f(u, p, t) returns the value of D(x)
 
 ### How to get 2D indexes from a 1D index when accessing a 2D array?
 
-Use `CartesianIndices`. [Source](https://discourse.julialang.org/t/julia-usage-how-to-get-2d-indexes-from-1d-index-when-accessing-a-2d-array/61440)
+`CartesianIndices(shape_in_tuple)`[^cartesian]
 
 ```julia
 x = rand((7, 10))
@@ -86,3 +86,5 @@ for i in 1:length(x)
     @assert x[i] == x[r, c]
 end
 ```
+
+[^cartesian]: https://discourse.julialang.org/t/julia-usage-how-to-get-2d-indexes-from-1d-index-when-accessing-a-2d-array/61440)
