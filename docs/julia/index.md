@@ -29,7 +29,47 @@ plot(rand(6)) |> PNG
 
 ### Dealing with DomainErrors
 
-`sqrt()` and `log()` will throw `DomainError` exceptions with negative float input, which could be problematic in differential equation solvers. One can use these functions in https://github.com/JuliaMath/NaNMath.jl, which return NaN instead of throwing a `DomainError`. Then the solver will reject the solution and retry with a smaller step.
+`sqrt(x), `log(x)`, and `pow(x)` will throw `DomainError` exceptions with negative `x`, interrupting differential equation solvers. One can use these functions counterparts in https://github.com/JuliaMath/NaNMath.jl, which return `NaN` instead of throwing a `DomainError`. Then the solvers will reject the solution and retry with a smaller time step.
+
+```julia
+sqrt(-1.0) # throws DomainError
+
+import NaNMath as nm
+nm.sqrt(-1.0) # NaN
+```
+
+### Get the ODE Function (vector field) from an ODE system
+
+`f = ODEFunction(sys)`
+
+```julia
+using ModelingToolkit
+using DifferentialEquations
+using Plots
+
+# Independent (time) and dependent (state) variables (x and RHS)
+@variables t x(t) RHS(t)
+
+# Setting parameters in the modeling
+@parameters τ
+
+# Differential operator w.r.t. time
+D = Differential(t)
+
+# Equations in MTK use the tilde character (`~`) as equality.
+# Every MTK system requires a name. The `@named` macro simply ensures that the symbolic name matches the name in the REPL.
+
+@named fol_separate = ODESystem([
+    RHS  ~ (1 - x)/τ,
+    D(x) ~ RHS
+])
+
+sys = structural_simplify(fol_separate)
+
+f = ODEFunction(sys)
+
+f([0.0], [1.0], 0.0) # f(u, p, t) returns the value of D(x)
+```
 
 ## Arrays
 
