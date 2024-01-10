@@ -28,7 +28,6 @@ tags:
 > test -r ${HOME}/.profile && emulate sh -c 'source ${HOME}/.profile'
 > ```
 
-
 ## X Window
 
 + `~/.xinitrc` is sourced by `startx`.
@@ -37,8 +36,3 @@ tags:
 ## Systemd and Wayland
 
 + `~/.config/environment.d/*.conf`: sourced by `systemd`. Also, they are used in Wayland sessions where `xinitrc` and `xprofile` are not available.
-
-
-## See also
-
-Setup [[windows/environment-variables|Windows environment variables]].
