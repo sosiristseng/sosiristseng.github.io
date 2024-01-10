@@ -40,7 +40,7 @@ jobs:
           key: cache-lychee-${{ env.CACHE_NUM }}-${{ github.sha }}
           restore-keys: cache-lychee-${{ env.CACHE_NUM }}-
       - name: Lychee Checker
-        uses: lycheeverse/lychee-action@v1.9.0
+        uses: lycheeverse/lychee-action@v1.9.1
         id: lychee
         with:
           fail: true
