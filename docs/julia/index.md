@@ -16,7 +16,7 @@ Random tips about the Julia programming language.
 
 ### Alternative to DisplayAs
 
-In https://github.com/fredrikekre/Literate.jl, it is recommended to use https://github.com/tkf/DisplayAs.jl for notebook output to save result size. If you don't want to add another dipendency, you can use `display()` instead.
+In https://github.com/fredrikekre/Literate.jl, it is recommended to use https://github.com/tkf/DisplayAs.jl for notebook output to save the result size. If you don't want to add another dependency, you can use `display()` instead.
 
 ```julia
 using Plots
@@ -29,7 +29,7 @@ plot(rand(6)) |> PNG
 
 ### Dealing with DomainErrors
 
-`sqrt(x), `log(x)`, and `pow(x)` will throw `DomainError` exceptions with negative `x`, interrupting differential equation solvers. One can use these functions counterparts in https://github.com/JuliaMath/NaNMath.jl, which return `NaN` instead of throwing a `DomainError`. Then the solvers will reject the solution and retry with a smaller time step.
+`sqrt(x)`, `log(x)`, and `pow(x)` will throw `DomainError` exceptions with negative `x`, interrupting differential equation solvers. One can use these functions' counterparts in https://github.com/JuliaMath/NaNMath.jl, returning `NaN` instead of throwing a `DomainError`. Then, the solvers will reject the solution and retry with a smaller time step.
 
 ```julia
 sqrt(-1.0) # throws DomainError
