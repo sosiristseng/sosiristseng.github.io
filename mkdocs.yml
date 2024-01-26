@@ -61,13 +61,13 @@ theme:
     - content.code.annotate
     - content.code.copy
     - navigation.footer
-    # - navigation.indexes # Not compatible with toc.integrate
+    - navigation.indexes # Not compatible with toc.integrate
     - navigation.instant
     - navigation.instant.progress
     - navigation.prune
-    - navigation.sections
+    # - navigation.sections
     # - navigation.expand
-    - navigation.tabs
+    # - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
