@@ -31,8 +31,9 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 ## System tools
 
 - [Dism++](https://github.com/Chuyu-Team/Dism-Multi-language) : Dism Windows image (wim) manipulator and system cleaner.
-- [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) : Classic Shell and stratup menu for Windows 10.
+- [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) : Classic Shell and stratup menu for Windows 10/11.
 - [WinSetView](https://lesferch.github.io/WinSetView/) : an easy way to set Windows File Explorer default folder views and disabling annoying groups.
+- [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher) : enhance the working environment on Windows 11.
 - [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)
 - [Display Driver Uninstaller (DDU)](https://www.guru3d.com/download/display-driver-uninstaller-download/) : cleanly uninstall NVIDIA/AMD GPU drivers.
 
