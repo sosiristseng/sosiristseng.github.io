@@ -11,36 +11,36 @@ tags:
 
 ## Install
 
-### Ubuntu
+=== "Ubuntu"
 
-https://github.com/retorquere/zotero-deb provides packaged versions of Zotero reference manager and Juris-M for Debian-based systems.
+    https://github.com/retorquere/zotero-deb provides packaged versions of Zotero reference manager and Juris-M for Debian-based systems.
 
-```sh
-curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
-sudo apt update && sudo apt install -y zotero
-```
+    ```sh
+    curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
+    sudo apt update && sudo apt install -y zotero
+    ```
 
-### Arch Linux
+=== "Arch Linux"
 
-From the [AUR](https://aur.archlinux.org/packages/zotero-bin/)
+    From the [AUR](https://aur.archlinux.org/packages/zotero-bin/)
 
-```sh
-yay -S zotero-bin
-```
+    ```sh
+    yay -S zotero-bin
+    ```
 
-### Windows
+=== "Windows"
 
-chocolatey:
+    chocolatey:
 
-```powershell
-choco install zotero
-```
+    ```powershell
+    choco install zotero
+    ```
 
-winget:
+    winget:
 
-```powershell
-winget install --id=DigitalScholar.Zotero -e
-```
+    ```powershell
+    winget install --id=DigitalScholar.Zotero -e
+    ```
 
 ## Zotfile attachement manager
 

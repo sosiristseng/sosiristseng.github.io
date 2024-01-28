@@ -60,6 +60,7 @@ theme:
     - content.action.edit
     - content.code.annotate
     - content.code.copy
+    - content.tabs.link
     - navigation.footer
     - navigation.indexes # Not compatible with toc.integrate
     - navigation.instant

@@ -12,16 +12,9 @@ Input methods enable multilingual inputs including CJK (Chinese, Japanese, Korea
 
 ### Install
 
-#### Ubuntu
-
 ```bash
-sudo apt install fcitx5 fcitx5-chewing fcitx5-material-color
-```
-
-#### Arch
-
-```bash
-sudo pacman -S fcitx5-im fcitx5-chewing fcitx5-material-color
+$(command -v apt) && sudo apt install fcitx5 fcitx5-chewing fcitx5-material-color
+$(command -v pacman) && sudo pacman -S fcitx5-im fcitx5-chewing fcitx5-material-color
 ```
 
 ### Setup
@@ -41,16 +34,9 @@ export XMODIFIERS=\@im=fcitx5
 
 ### Install
 
-#### Ubuntu
-
 ```bash
-sudo apt install ibus ibus-chewing
-```
-
-#### Arch Linux
-
-```bash
-sudo pacman -S ibus ibus-chewing
+$(command -v apt) && sudo apt install ibus ibus-chewing
+$(command -v pacman) && sudo pacman -S ibus ibus-chewing
 ```
 
 ### Setup

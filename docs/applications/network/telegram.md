@@ -10,32 +10,32 @@ tags:
 
 ## Install
 
-### Official binaries
+=== "Executable"
 
-Download and run the [official binaries](https://telegram.org).
+    Download and run the [official binaries](https://telegram.org).
 
-### snap
+=== "snap"
 
-```sh
-sudo snap install telegram-desktop
-```
+    ```sh
+    sudo snap install telegram-desktop
+    ```
 
-### Arch Linux
+=== "Arch Linux"
 
-```sh
-sudo pacman -S telegram-desktop
-```
+    ```sh
+    sudo pacman -S telegram-desktop
+    ```
 
-### Windows
+=== "Windows"
 
-chocolatey
+    chocolatey
 
-```powershell
-choco install telegram
-```
+    ```powershell
+    choco install telegram
+    ```
 
-winget
+    winget
 
-```powershell
-winget install Telegram.TelegramDesktop
-```
+    ```powershell
+    winget install Telegram.TelegramDesktop
+    ```

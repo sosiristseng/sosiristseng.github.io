@@ -8,51 +8,51 @@ tags:
 
 [Visual Studio Code](https://code.visualstudio.com) is a lightweight but powerful source code editor which runs on your desktop and is available for Linux, macOS and Windows.
 
-See also https://github.com/viatsko/awesome-vscode
+See also https://github.com/viatsko/awesome-vscode for a curated list of delightful VS Code packages and resources.
 
 ## Install
 
-### Ubuntu
+=== "Ubuntu"
 
-```sh
-curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
-sudo apt update && sudo apt install -y code
-```
+    ```sh
+    curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
+    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+    sudo apt update && sudo apt install -y code
+    ```
 
-### snap
+=== "snap"
 
-```sh
-sudo snap install code --classic
-```
+    ```sh
+    sudo snap install code --classic
+    ```
 
-### Arch Linux
+=== "Arch Linux"
 
-Install from the AUR
+    Install from the AUR
 
-```sh
-yay -S visual-studio-code-bin
-```
+    ```sh
+    yay -S visual-studio-code-bin
+    ```
 
-The open source version (sourced directly from the GitHub repo) is avaiable in the community repository.
+    The open source version (sourced directly from the GitHub repo) is avaiable in the community repository.
 
-```sh
-sudo pacman -S code
-```
+    ```sh
+    sudo pacman -S code
+    ```
 
-## Windows
+=== "Windows"
 
-chocolatey:
+    chocolatey:
 
-```powershell
-choco install vscode
-```
+    ```powershell
+    choco install vscode
+    ```
 
-winget:
+    winget:
 
-```powershell
-winget install vscode
-```
+    ```powershell
+    winget install vscode
+    ```
 
 ## VSCode Settings
 
@@ -84,7 +84,7 @@ You can increase line height to make you code look better.
 
 Search for `Line height` in VSCode settings and set it to a higher number. (For example, 1.4)
 
-## Interesting VS Code extensions
+## VS Code extensions
 
 - [Luna paint](https://marketplace.visualstudio.com/items?itemName=Tyriar.luna-paint): A raster image editor extension for VSCode.
 - [TeXLab](https://marketplace.visualstudio.com/items?itemName=efoerster.texlab): An implementation of the Language Server Protocol for LaTeX.

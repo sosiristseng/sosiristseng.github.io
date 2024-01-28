@@ -10,31 +10,31 @@ tags:
 
 ## Install
 
-### Ubuntu
+=== "Ubuntu"
 
-```sh
-sudo apt install ffmpeg
-```
+    ```sh
+    sudo apt install ffmpeg
+    ```
 
-### Arch Linux
+=== "Arch Linux"
 
-```sh
-sudo pacman -S ffmpeg
-```
+    ```sh
+    sudo pacman -S ffmpeg
+    ```
 
-### Windows
+=== "Windows"
 
-chocolatey
+    chocolatey
 
-```powershell
-choco install ffmpeg
-```
+    ```powershell
+    choco install ffmpeg
+    ```
 
-winget
+    winget
 
-```powershell
-winget install Gyan.FFmpeg
-```
+    ```powershell
+    winget install Gyan.FFmpeg
+    ```
 
 ## Usage
 

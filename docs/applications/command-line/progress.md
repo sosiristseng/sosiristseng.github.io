@@ -9,16 +9,9 @@ https://github.com/Xfennec/progress measures the speed and progress of ongoing c
 
 ## Install
 
-### Ubuntu
-
 ```sh
-sudo apt install progress
-```
-
-### Arch Linux
-
-```sh
-sudo pacman -S progress
+$(command -v apt) && sudo apt install progress
+$(command -v pacman) && sudo pacman -S progress
 ```
 
 ## Usage

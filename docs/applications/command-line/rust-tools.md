@@ -39,46 +39,4 @@ https://github.com/BurntSushi/ripgrep is a line-oriented search tool that recurs
 
 ## Bottom: system monitor written in Rust
 
-https://github.com/clementtsang/bottom is a resource monitor written in Rust.
-
-### Install
-
-#### Ubuntu
-
-Download and install the [deb release](https://github.com/ClementTsang/bottom/releases/latest).
-
-#### Arch Linux
-
-```sh
-sudo pacman -S bottom
-```
-
-#### snap
-
-```sh
-sudo snap install bottom
-
-# To allow the program to run as intended
-sudo snap connect bottom:mount-observe
-sudo snap connect bottom:hardware-observe
-sudo snap connect bottom:system-observe
-sudo snap connect bottom:process-control
-```
-
-#### Windows
-
-Chocolatey:
-
-```powershell
-choco install bottom
-```
-
-winget:
-
-```powershell
-winget install bottom
-```
-
-### Usage
-
-`btm`
+See [[sysmon#Bottom|Bottom]].

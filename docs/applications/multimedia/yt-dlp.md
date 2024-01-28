@@ -10,38 +10,40 @@ tags:
 
 ## Install
 
-### Download executable (Linux/MacOS)
+=== "Executable"
 
-```sh
-sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-sudo chmod a+rx /usr/local/bin/yt-dlp
-```
+    For Linux/MacOS.
 
-### Arch Linux
+    ```sh
+    sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+    sudo chmod a+rx /usr/local/bin/yt-dlp
+    ```
 
-```sh
-sudo pacman -S yt-dlp
-```
+=== "Arch Linux"
 
-### Windows
+    ```sh
+    sudo pacman -S yt-dlp
+    ```
 
-chocolatey
+=== "Windows"
 
-```powershell
-choco install yt-dlp
-```
+    chocolatey
 
-winget
+    ```powershell
+    choco install yt-dlp
+    ```
 
-```powershell
-winget install yt-dlp.yt-dlp
-```
+    winget
 
-### conda
+    ```powershell
+    winget install yt-dlp.yt-dlp
+    ```
 
-```sh
-conda install -c conda-forge yt-dlp
-```
+=== "conda"
+
+    ```sh
+    conda install -c conda-forge yt-dlp
+    ```
 
 ## Usage
 

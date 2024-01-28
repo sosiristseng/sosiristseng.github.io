@@ -12,77 +12,72 @@ tags:
 
 ## Install docker engine
 
-### Ubuntu
+=== "Ubuntu"
 
-Please check [supported versions](https://docs.docker.com/engine/install/ubuntu/) first before adding the repository.
+    Please check [supported versions](https://docs.docker.com/engine/install/ubuntu/) first before adding the repository.
 
-```bash
-sudo apt-get update &&
-sudo apt-get install -y \
-ca-certificates \
-curl \
-gnupg \
-lsb-release
+    ```bash
+    sudo apt update && sudo apt install -y ca-certificates curl gnupg lsb-release
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
-```
+    sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+    ```
 
-### Arch Linux
+=== ""Arch Linux""
 
-```sh
-sudo pacman -S docker
-sudo systemctl enable --now docker.service
-```
+    ```sh
+    sudo pacman -S docker
+    sudo systemctl enable --now docker.service
+    ```
 
-### Windows (Docker desktop)
+=== "Windows"
 
-[Docker desktop](https://www.docker.com/products/docker-desktop/) for Windows has [[WSL2]] integration.
+    [Docker desktop](https://www.docker.com/products/docker-desktop/) for Windows.
 
-```powershell
-choco install docker-desktop
-```
+    ```powershell
+    choco install docker-desktop
+    ```
 
 ## NVIDIA GPU support
 
-### Ubuntu
+=== "Ubuntu"
 
-Install [the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation)
+    Install [the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation)
 
-```sh
-curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
-curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
-sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
-sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
-sudo apt update && sudo apt install -y nvidia-container-toolkit
-sudo nvidia-ctk runtime configure --runtime=docker
-sudo systemctl restart docker
-```
+    ```sh
+    curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
+    curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
+    sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+    sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+    sudo apt update && sudo apt install -y nvidia-container-toolkit
+    sudo nvidia-ctk runtime configure --runtime=docker
+    sudo systemctl restart docker
+    ```
 
-### Arch Linux
+=== "Arch Linux"
 
-```sh
-yay -S nvidia-container-toolkit
-sudo systemctl restart docker
-```
+    ```sh
+    yay -S nvidia-container-toolkit
+    sudo systemctl restart docker
+    ```
 
-### Windows
+=== "Windows"
 
-Once a [Windows NVIDIA GPU driver](https://www.nvidia.com/Download/index.aspx?lang=en-us) is installed on the system, CUDA becomes available within WSL 2.
+    Once a [Windows NVIDIA GPU driver](https://www.nvidia.com/Download/index.aspx?lang=en-us) is installed on the system, CUDA becomes available within WSL 2.
 
-And install the CUDA toolkit in the WSL (Ubuntu WSL for example)
+    And install the CUDA toolkit in the WSL (Ubuntu WSL for example)
 
-```bash
-# remove the old GPG key
-sudo apt-key del 7fa2af80
-# Insatll Linux CUDA toolkit
-wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
-sudo dpkg -i cuda-keyring_1.1-1_all.deb
-sudo apt update && sudo apt install -y cuda
-```
+    ```bash
+    # remove the old GPG key
+    sudo apt-key del 7fa2af80
+    # Insatll Linux CUDA toolkit
+    wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
+    sudo dpkg -i cuda-keyring_1.1-1_all.deb
+    sudo apt update && sudo apt install -y cuda
+    ```
 
 ## Test docker installation
 
