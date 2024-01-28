@@ -51,10 +51,10 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 ### Package manager
 
 - [chocolatey](https://chocolatey.org/) : A Windows package manager.
-- [winget](https://github.com/microsoft/winget-cli) : Windows Package Manager CLI (aka winget). See also its [package repo](https://github.com/microsoft/winget-pkgs).
+- [winget](https://github.com/microsoft/winget-cli) : Windows Package Manager CLI (aka winget). The [package repo](https://github.com/microsoft/winget-pkgs).
 
 ### USB flash drive
 
-- [Rufus](https://rufus.ie/) : Create bootable USB drives the easy way
-- [Ventoy](https://www.ventoy.net/) : an open source tool to create a bootable USB drive loading ISO files in the partition.
+- [Rufus](https://rufus.ie/) : Create a bootable USB drive.
+- [Ventoy](https://www.ventoy.net/) : Create a bootable USB drive by loading ISO files in the partition.
 - [validrive](https://www.grc.com/validrive.htm) : Validate real/fake USB drives. [A introductary Youtube video](https://www.youtube.com/watch?v=xMgEHy1A9QA)

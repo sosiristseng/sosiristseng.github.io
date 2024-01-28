@@ -40,4 +40,4 @@ pip install glances[gpu] --upgrade --user
 
 ## Usage
 
-`glances`
+Enter `glances` in the terminal.
