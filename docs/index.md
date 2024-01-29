@@ -33,10 +33,15 @@ My knowledge base.
 
 - [[julia-bookmarks|Julia]] bookmarks.
 - [[python-bookmarks|Python]] bookmarks.
-- [[devops-bookmarks|DevOps]] bookmarks.
 - [Compiler explorer](https://godbolt.org/) : assembly for a C/C++ code snippet.
 - [QuickRef.ME](https://quickref.me/) : cheatsheets and quick references.
 - [Free for dev](https://free-for.dev/) : online tools with free tiers.
+
+### DevOps
+
+- [A curated list of awesome softwares for Devops](https://github.com/awesome-soft/awesome-devops)
+- [GitLab CICD documentation](https://docs.gitlab.com/ee/ci/)
+- [Github actions](https://github.com/features/actions)
 
 ### Command lines and shell scripting
 
@@ -44,9 +49,6 @@ My knowledge base.
 - [cheat.sh](https://cheat.sh/) : cheet sheet for linux commands.
 - [Shell check](https://www.shellcheck.net/)
 - [Explain shell](https://explainshell.com/)
-
-#### Learn shell scripting
-
 - [edX: introduction to Linux](https://www.edx.org/course/introduction-to-linux)
 - [Learn Bash in Y minutes](https://learnxinyminutes.com/docs/bash/)
 - [Ryans Tutorial](https://ryanstutorials.net/)
@@ -82,8 +84,7 @@ The following tools make installation USB keys from ISO files.
 - [endeavour OS forum](https://forum.endeavouros.com/)
 - [Ask ubuntu](https://askubuntu.com/)
 - [Ubuntu wiki](https://wiki.ubuntu.com/)
-- [PoP OS docs](https://pop.system76.com/docs/)
-- [PopOS reddit](https://www.reddit.com/r/pop_os/)
+- [PoP OS docs](https://support.system76.com/)
 
 ## Games
 
