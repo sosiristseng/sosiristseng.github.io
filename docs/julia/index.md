@@ -1,95 +1,102 @@
 ---
-title: Julia
+title: Julia Bookmarks
 tags:
+  - bookmark
   - julia
 ---
 
-Random tips about the Julia programming language.
+- [Gens Julia](https://gensjulia.pages.dev/), my Julia resource list adapted from `Julia.jl`.
+- [Julia Package Setup Tutorial](https://bjack205.github.io/tutorial/2021/07/16/julia_package_setup.html)
+- [Julia packages (JuliaHub)](https://juliahub.com/ui/Packages)
+- [Julia discourse forum](https://discourse.julialang.org/)
+- [Julia forem](https://forem.julialang.org/) : [Dev.to](https://dev.to/) interface
+- [Solving PDEs in parallel on GPUs with Julia](https://pde-on-gpu.vaw.ethz.ch/) : a Julia course
+- [Parallel Computing and Scientific Machine Learning (SciML): Methods and Applications](https://book.sciml.ai/)
+- [Modern Julia Workflows](https://modernjuliaworkflows.github.io/)
 
-+ [[julia-package-loading|Package Loading]] tips
-+ [[julia-design-patterns|Design patterns and anitpatterns]]
+## My Julia stack
 
-## Visualization
+### Package development
 
-+ [[plotsjl-tips|Plots.jl]] tips
-+ [[pyplotjl-tips|PyPlot.jl]] tips
+- https://github.com/invenia/PkgTemplates.jl : templates to create new Julia packages.
+- https://github.com/timholy/Revise.jl : reducing the need to restart when you make changes to code.
+- https://github.com/Roger-luo/FromFile.jl : including other files without duplication.
+- https://github.com/JuliaDocs/Documenter.jl : generating package documentation.
+- https://github.com/wookay/Jive.jl : unit testing in parallel.
 
-### Force display format to PNG
+### Publishing code examples
 
-In the VSCode plot panel and https://github.com/fredrikekre/Literate.jl notebooks, PNG images are generally smaller than SVG ones. To force plots to be shown as PNG imagesa, you can use https://github.com/tkf/DisplayAs.jl to show objects in a chosen MIME type.
+- https://github.com/fredrikekre/Literate.jl : converting _literated_ `jl` files to Markdown (`md`) or Jupyter notebooks (`ipynb`).
+- https://github.com/stevengj/NBInclude.jl : converting Jupyter notebooks (`ipynb`) to _literated_ `jl` files by using `nbexport("myfile.jl", "myfile.ipynb")`.
 
-```julia
-import DisplayAs.PNG
-using Plots
-plot(rand(6)) |> PNG
-```
+### Optimization
 
-If you don't want to add another package dependency, you could directly use `display()`.
+- https://github.com/baggepinnen/Hyperopt.jl : Hyperparameter optimization for every cost function with multiprocessing and multithreading support.
+- https://github.com/SciML/Optimization.jl : A unified interface for [various optimizers](https://docs.sciml.ai/Optimization/stable/#Overview-of-the-Optimizers)
+    - `OptimizationBBO` for black-box optimization from https://github.com/robertfeldt/BlackBoxOptim.jl
+    - `OptimizationEvolutionary` for genetic algorithm from https://github.com/wildart/Evolutionary.jl
+    - `OptimizationOptimJL` for optimization methods from https://github.com/JuliaNLSolvers/Optim.jl
+    - `OptimizationMOI` for optimization methods from https://github.com/jump-dev/MathOptInterface.jl
+    - etc.
 
-```julia
-using Plots
-PNG(img) = display("image/png", img)
-plot(rand(6)) |> PNG
-```
+### Curve fitting
 
-## Modeling and simulation
+- https://github.com/pjabardo/CurveFit.jl
+- https://github.com/JuliaNLSolvers/LsqFit.jl
+- https://github.com/SciML/Optimization.jl
 
-### Dealing with DomainErrors
+### Modeling and simulation
 
-`sqrt(x)`, `log(x)`, and `pow(x)` will throw `DomainError` exceptions with negative `x`, interrupting differential equation solvers. One can use these functions' counterparts in https://github.com/JuliaMath/NaNMath.jl, returning `NaN` instead of throwing a `DomainError`. Then, the solvers will reject the solution and retry with a smaller time step.
+- https://github.com/SciML/DifferentialEquations.jl : solving differential eqautions.
+- https://github.com/SciML/ModelingToolkit.jl : a symbolic modeling framework.
+  - https://github.com/JuliaSymbolics/Symbolics.jl : a computer algebra system (CAS) for symbolic calculations.
+- https://github.com/SciML/Catalyst.jl : a domain-specific language (DSL) for shemical reaction networks.
+- https://github.com/JuliaDynamics/Agents.jl : agent-based modeling (ABM).
 
-```julia
-sqrt(-1.0) # throws DomainError
+#### Universal differential equations (UDEs)
 
-import NaNMath as nm
-nm.sqrt(-1.0) # NaN
-```
+- https://github.com/SciML/DiffEqFlux.jl : solving differential equations with neural networks.
+- https://github.com/SciML/NeuralPDE.jl : Physics-Informed Neural Networks (PINNs).
 
-### Get the ODE Function (vector field) from an ODE system
+#### Partial differential equations (PDEs)
 
-`f = ODEFunction(sys)`
+[Examples](https://sosiristseng.github.io/jl-pde/)
 
-```julia
-using ModelingToolkit
-using DifferentialEquations
-using Plots
+- https://github.com/SciML/MethodOfLines.jl : finite difference method (FDM).
+- https://github.com/Ferrite-FEM/Ferrite.jl : finite element method (FEM).
+- https://github.com/gridap/Gridap.jl : grid-based approximation of PDEs with an expressive API.
+- https://github.com/trixi-framework/Trixi.jl : hyperbolic PDE solver.
+- https://github.com/j-fu/VoronoiFVM.jl : finite volume method (FVM).
 
-# Independent (time) and dependent (state) variables (x and RHS)
-@variables t x(t) RHS(t)
+#### Model analysis
 
-# Setting parameters in the modeling
-@parameters τ
+- https://github.com/bifurcationkit/BifurcationKit.jl : bifurcation analysis.
 
-# Differential operator w.r.t. time
-D = Differential(t)
+### Probability and Statistics
 
-# Equations in MTK use the tilde character (`~`) as equality.
-# Every MTK system requires a name. The `@named` macro simply ensures that the symbolic name matches the name in the REPL.
+- https://github.com/JuliaStats/StatsBase.jl : statistics-related functions.
+- https://github.com/JuliaStats/GLM.jl : Generalized linear models (GLMs).
 
-@named fol_separate = ODESystem([
-    RHS  ~ (1 - x)/τ,
-    D(x) ~ RHS
-])
+### Handy tools
 
-sys = structural_simplify(fol_separate)
+- https://github.com/JuliaMath/Interpolations.jl : continuous interpolation of discrete datasets.
+- https://github.com/SciML/DataInterpolations.jl : A library of data interpolation and smoothing functions.
+- https://github.com/korsbo/Latexify.jl : convert julia objects to LaTeX equations.
 
-f = ODEFunction(sys)
+#### Arrays
 
-f([0.0], [1.0], 0.0) # f(u, p, t) returns the value of D(x)
-```
+- https://github.com/JuliaArrays/LazyGrids.jl : multi-dimensional grids.
+- https://github.com/SciML/LabelledArrays.jl : a label for each element in a array.
+- https://github.com/jonniedie/ComponentArrays.jl : arrays with arbitrarily nested named components.
 
-## Arrays
+### Visualization
 
-### How to get 2D indexes from a 1D index when accessing a 2D array?
+- https://github.com/JuliaPlots/Plots.jl : a unified interface for various visualization libraries.
+- https://github.com/JuliaPy/PyPlot.jl : `matplotlib.pyplot` in Julia.
+- https://github.com/stevengj/PythonPlot.jl : `matplotlib.pyplot` in Julia, using https://github.com/cjdoris/PythonCall.jl for python libraries.
+- https://github.com/MakieOrg/Makie.jl : native Julia visualizations with GPU acceleration and an interactive interface.
 
-Use `CartesianIndices((nrow, ncol))`, form this [discourse post](https://discourse.julialang.org/t/julia-usage-how-to-get-2d-indexes-from-1d-index-when-accessing-a-2d-array/61440).
+### Concurrency
 
-```julia
-x = rand((7, 10))
-CI = CartesianIndices((7, 10))
-for i in 1:length(x)
-    r = CI[i][1]
-    c = CI[i][2]
-    @assert x[i] == x[r, c]
-end
-```
+- https://github.com/JuliaFolds/Folds.jl : a unified interface for sequential, threaded, and distributed fold.
+- https://github.com/tkf/ThreadsX.jl : multithreaded base functions.
