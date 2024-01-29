@@ -12,6 +12,7 @@ Also see the blog in his techinical writing editor company: <https://www.editing
 ## Outline
 
 In this four-week workshop, you will learn:
+
 - Top nine errors that TW researchers make and lead to rejection of their papers.
 - Word choice, [thesaurus](https://www.thesaurus.com/)
 - Habits for productive writing : *15 minutes per day*
