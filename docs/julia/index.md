@@ -1,5 +1,5 @@
 ---
-title: Julia Tips
+title: Julia
 tags:
   - julia
 ---
@@ -7,21 +7,28 @@ tags:
 Random tips about the Julia programming language.
 
 + [[julia-package-loading|Package Loading]] tips
-+ [[julia-design-patterns| Design patterns and anitpatterns]]
++ [[julia-design-patterns|Design patterns and anitpatterns]]
 
 ## Visualization
 
 + [[plotsjl-tips|Plots.jl]] tips
 + [[pyplotjl-tips|PyPlot.jl]] tips
 
-### Alternative to DisplayAs
+### Force display format to PNG
 
-In https://github.com/fredrikekre/Literate.jl, it is recommended to use https://github.com/tkf/DisplayAs.jl for notebook output to save the result size. If you don't want to add another dependency, you can use `display()` instead.
+In the VSCode plot panel and https://github.com/fredrikekre/Literate.jl notebooks, PNG images are generally smaller than SVG ones. To force plots to be shown as PNG imagesa, you can use https://github.com/tkf/DisplayAs.jl to show objects in a chosen MIME type.
+
+```julia
+import DisplayAs.PNG
+using Plots
+plot(rand(6)) |> PNG
+```
+
+If you don't want to add another package dependency, you could directly use `display()`.
 
 ```julia
 using Plots
 PNG(img) = display("image/png", img)
-
 plot(rand(6)) |> PNG
 ```
 
@@ -75,7 +82,7 @@ f([0.0], [1.0], 0.0) # f(u, p, t) returns the value of D(x)
 
 ### How to get 2D indexes from a 1D index when accessing a 2D array?
 
-`CartesianIndices(shape_in_tuple)`[^cartesian]
+Use `CartesianIndices((nrow, ncol))`, form this [discourse post](https://discourse.julialang.org/t/julia-usage-how-to-get-2d-indexes-from-1d-index-when-accessing-a-2d-array/61440).
 
 ```julia
 x = rand((7, 10))
@@ -86,5 +93,3 @@ for i in 1:length(x)
     @assert x[i] == x[r, c]
 end
 ```
-
-[^cartesian]: https://discourse.julialang.org/t/julia-usage-how-to-get-2d-indexes-from-1d-index-when-accessing-a-2d-array/61440)
