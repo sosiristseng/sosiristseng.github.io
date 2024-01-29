@@ -16,7 +16,6 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 ## Command line tools
 
 - [[robocopy]]
-- [[starship]]
 - [Powershell Core](https://github.com/PowerShell/PowerShell)
 - [Windows terminal](https://github.com/microsoft/terminal)
 

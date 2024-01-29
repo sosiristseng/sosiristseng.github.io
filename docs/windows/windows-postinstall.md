@@ -65,4 +65,4 @@ Compact.exe /CompactOS:always
 
 + Setup [[WSL2]].
 + Setup [[windows/environment-variables|Environment variables]].
-+ Checkout [[windows/apps|applications]]
++ Windows [[windows-apps|applications]]
