@@ -122,7 +122,7 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 ### Fonts
 
 - [Cascadia code](https://github.com/microsoft/cascadia-code) : a fun, new monospaced font developed for Windows Terminal (and friends).
-- [Font Library](https://fontlibrary.org/)
+- [Font Library](https://fontlibrary.dev/)
 - [Font squirrel](https://www.fontsquirrel.com/) : hand-picked free fonts
 - [Fontshare](https://www.fontshare.com/) from [Indian Type Foundry](https://www.indiantypefoundry.com/).
 - [Gensen font](https://github.com/ButTaiwan/gensen-font) : rounded corner CJK fonts.
