@@ -26,7 +26,7 @@ tags:
     sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
     ```
 
-=== ""Arch Linux""
+=== "Arch Linux"
 
     ```sh
     sudo pacman -S docker
