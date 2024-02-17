@@ -1,6 +1,5 @@
 ---
-title: Dynamic parallel matrix in GitHub actions
-
+title: Dynamic parallel matrix
 tags:
   - github
   - devops

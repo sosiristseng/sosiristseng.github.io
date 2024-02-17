@@ -16,7 +16,7 @@ The official https://github.com/actions/checkout action clones the repository to
 In most cases, this is what you need:
 
 ```yaml
-- uses: actions/checkout@v3
+- uses: actions/checkout@v4
 ```
 
 The checkout action also supports pushing a commit to the same repo.
@@ -30,7 +30,7 @@ jobs:
   git-push:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: |
           date > generated.txt
           git config user.name github-actions
@@ -47,7 +47,7 @@ However, no further workflows will be triggered with the [`GITHUB_TOKEN`](https:
 You will need either a [Personal access token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) with `repo` scope access as an [action secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
 
 ```yaml
-- uses: actions/checkout@v3
+- uses: actions/checkout@v4
   with:
 	toekn: ${{ secrets.PAT }}
 ```
@@ -55,7 +55,7 @@ You will need either a [Personal access token (PAT)](https://docs.github.com/en/
 Or a pair of SSH keys; the public key is the [deploy key](https://docs.github.com/en/developers/overview/managing-deploy-keys) with write access, while the private key is an action secret variable `SSH_PRIVATE_KEY`.
 
 ```yaml
-- uses: actions/checkout@v3
+- uses: actions/checkout@v4
   with:
 	ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
 ```
@@ -74,7 +74,7 @@ The https://github.com/peter-evans/create-pull-request action will commit all fi
 
 ```yaml
 - name: Create Pull Request
-  uses: peter-evans/create-pull-request@v3
+  uses: peter-evans/create-pull-request@v6
   with:
   # token: ${{ secrets.PAT }} # A PAT is required for triggering pull request workflows
     token: ${{ secrets.GITHUB_TOEKN }}  # This will not trigger further workflows
@@ -85,27 +85,3 @@ The https://github.com/peter-evans/create-pull-request action will commit all fi
 + [Kodiak Bot](https://kodiakhq.com/) : automatic merge PRs based on the issue label. (by default `automerge`). See also [[auto-deps-update]].
 + Run `gh pr merge --merge --auto $PR_NUMBER` in the workflow.
 + https://github.com/peter-evans/enable-pull-request-automerge : A GitHub action to enable auto-merge on a pull request.
-
-## Synchronize Git repo
-
-The https://github.com/wei/git-sync action synchonizes one repository to another.
-
-```yaml title=".github/workflows/git-sync.yml"
-on: push
-jobs:
-  git-sync:
-    runs-on: ubuntu-latest
-    steps:
-      - name: git-sync
-        uses: wei/git-sync@v3
-        with:
-          source_repo: "source_org/repository" # Default to GitHub
-          source_branch: "main"
-          destination_repo: "git@gitlab.com:username/repository.git" # Use SSH URL for other Git providers
-          destination_branch: "main"
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} # optional
-          source_ssh_private_key: ${{ secrets.SOURCE_SSH_PRIVATE_KEY }} # optional, will override `SSH_PRIVATE_KEY`
-          destination_ssh_private_key: ${{ secrets.DESTINATION_SSH_PRIVATE_KEY }} # optional, will override `SSH_PRIVATE_KEY`
-```
-
-You need a pair of SSH keys. The public key is the [deploy key](https://docs.github.com/en/developers/overview/managing-deploy-keys) with write access, while the private key is a secret variable `SSH_PRIVATE_KEY`.

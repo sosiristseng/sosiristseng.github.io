@@ -1,5 +1,5 @@
 ---
-title: Setup docker in GitHub actions
+title: Setup docker
 tags:
   - docker
   - github

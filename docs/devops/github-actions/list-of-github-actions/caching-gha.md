@@ -11,7 +11,7 @@ The https://github.com/actions/cache action caches dependencies for the executio
 
 ```yaml
 - name: Cache multiple paths
-  uses: actions/cache@v3
+  uses: actions/cache@v4
   with:
     path: |
       ~/cache
@@ -31,7 +31,7 @@ The `cache` actions could be split into `restore` and `save` steps, leading to a
 ```yaml
 - name: Restore cached Primes
       id: cache-primes-restore
-      uses: actions/cache/restore@v3
+      uses: actions/cache/restore@v4
       with:
         path: |
           path/to/dependencies
@@ -42,16 +42,24 @@ The `cache` actions could be split into `restore` and `save` steps, leading to a
 #
 - name: Save Primes
   id: cache-primes-save
-  uses: actions/cache/save@v3
+  uses: actions/cache/save@v4
   with:
     path: |
       path/to/dependencies
       some/other/dependencies
 ```
 
+## Caching for a specific programming language
+
+Some GitHub actions for setting up runtime for programming languages can cache packages dependency.
+
+- NodeJS: https://github.com/actions/setup-node
+- Python: https://github.com/actions/setup-python (pip) and https://github.com/mamba-org/setup-micromamba (conda/mamba)
+- Julia: https://github.com/julia-actions/cache
+
 ## Cleanup caches
 
-Caches become invalid after 7 days. If you want to clean the cache before that, for example, in closed PR branch, use the `gh` extension.
+Caches will be cleaned up after 7 days. If you want to clean the cache before that, use the GitHub CLI (`gh`) acrions extension.
 
 ```yaml
 name: Cleanup PR caches

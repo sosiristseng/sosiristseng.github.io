@@ -41,35 +41,6 @@ jobs:
         files: lcov.info
 ```
 
-### Using jill.sh to install Julia
-
-Somehow using the official [setup-julia](https://github.com/julia-actions/setup-julia) action leads to precompile cache invalidation, which requires time-consuming precompilation every time we load the Julia dependencies even all precompilation stuff is cached.
-Using `jill.sh` to install Julia somehow avoids precompile cache invalidation in GitHub actions. (As shown in [this repository](https://github.com/sosiristseng/julia-precompile-test)) Note that `jill.sh` only supports Linux (e.g., Ubuntu) runners.
-
-```yaml
-name: CI
-
-on: [push, pull_request]
-
-jobs:
-  test:
-	runs-on: ubuntu-latest
-	steps:
-  - uses: actions/checkout@v3
-  - name: Read Julia version
-    uses: SebRollen/toml-action@v1.0.2
-    id: read_toml
-    with:
-      file: 'Manifest.toml'
-      field: 'julia_version'
-  - name: Install Julia using jill.sh
-    run: |
-      wget -O /tmp/jill.sh https://raw.githubusercontent.com/abelsiqueira/jill/main/jill.sh
-      bash /tmp/jill.sh --version ${{ steps.read_toml.outputs.value }} -y
-      echo "$HOME/.local/bin" >> $GITHUB_PATH
-  # Do the rest ...
-```
-
 ## Using the Julia shell
 
 Using Julia shell to run Julia scripts is much cleaner than `julia -e 'code'`.[^juliashell]

@@ -1,11 +1,10 @@
 ---
-title: Setup Python in GitHub actions
+title: Setup Python
 tags:
   - github
   - conda
   - python
   - devops
-draft:
 ---
 
 You can use one of the three below
@@ -14,21 +13,21 @@ You can use one of the three below
 + https://github.com/conda-incubator/setup-miniconda
 + https://github.com/mamba-org/setup-micromamba
 
-## `setup-python` action
+## Pip packages
 
 The https://github.com/actions/setup-python actions installs `python` with a specific version and could cache download Python packages. (But *not* the whole environment)
 
 ```yaml
 steps:
-- uses: actions/checkout@v3
-- uses: actions/setup-python@v4
+- uses: actions/checkout@v4
+- uses: actions/setup-python@v5
   with:
     python-version: '3.x'
     cache: 'pip'
 - run: pip install -r requirements.txt
 ```
 
-### Cache Python packages
+### Cache Python environment
 
 If you really want to cache the whole Python environment, cache the `pythonLocation` folder.[^1][^2]
 
@@ -45,16 +44,18 @@ If you really want to cache the whole Python environment, cache the `pythonLocat
     path: ${{ env.pythonLocation }}
     key:  ${{ runner.os }}-pip-${{ steps.cp.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
 - name: Install pip dependencies if cache miss
-  if: steps.cache.outputs.cache-hit != 'true'
+  if: ${{ steps.cache.outputs.cache-hit != 'true' }}
   run: pip install -r requirements.txt
 ```
 
 [^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170
 [^2]: https://luminousmen.com/post/making-ci-workflow-faster-with-github-actions
 
-## `setup-micromamba`
+## Conda packages
 
-The https://github.com/mamba-org/setup-micromamba action installs the [micromamba](https://github.com/mamba-org/mamba#micromamba) package manager. It can cache the whole runtime environment.
+### Micromamba
+
+The https://github.com/mamba-org/setup-micromamba action installs the [micromamba](https://github.com/mamba-org/mamba#micromamba) package manager and conda package dependencies. It can also cache the whole runtime environment.
 
 ```yaml
 - uses: mamba-org/setup-micromamba@v1
@@ -65,11 +66,11 @@ The https://github.com/mamba-org/setup-micromamba action installs the [micromamb
     post-cleanup: 'all'
 
 - name: Run custom command in micromamba environment
-  run: pothon --version
   shell: micromamba-shell {0}
+  run: python --version
 ```
 
-## `setup-miniconda` action
+### Miniconda action
 
 The https://github.com/conda-incubator/setup-miniconda action sets up a base [`conda`](https://docs.conda.io/projects/conda/en/latest/) environment.
 
@@ -85,14 +86,12 @@ jobs:
       - name: Setup Mambaforge
         uses: conda-incubator/setup-miniconda@v2
         with:
+          auto-update-conda: true
           environment-file: environment.yml
-          miniforge-variant: Mambaforge
-          miniforge-version: latest
-          use-mamba: true
+          conda-solver: libmamba
       - run: |
           conda info
           conda list
-      - run: mamba install jupyterlab
 ```
 
 1. Use the login shell to activate the conda environment correctly.
