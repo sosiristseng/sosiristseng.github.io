@@ -60,8 +60,6 @@ tags:
 
 #### Partial differential equations (PDEs)
 
-[Examples](https://sosiristseng.github.io/jl-pde/)
-
 - https://github.com/SciML/MethodOfLines.jl : finite difference method (FDM).
 - https://github.com/Ferrite-FEM/Ferrite.jl : finite element method (FEM).
 - https://github.com/gridap/Gridap.jl : grid-based approximation of PDEs with an expressive API.
