@@ -106,7 +106,21 @@ wsl --shutdown
 Optimize-VHD -Path %path-to.vhdx% -Mode Full
 ```
 
+Alternatively (if `Optimize-VHD` is not found) [^vhd-diskpart]
+
+```powershell
+wsl --shutdown
+diskpart
+# open window Diskpart
+select vdisk file="E:\ubuntu\ext4.vhdx"
+attach vdisk readonly
+compact vdisk
+detach vdisk
+exit
+```
+
 [^optimize-vhd]: https://blog.miniasp.com/post/2023/05/14/Shrink-your-WSL2-Virtual-Disks-and-Docker-Images-and-Reclaim-Disk-Space
+[^vhd-diskpart]: https://answers.microsoft.com/en-us/windows/forum/all/optimize-vhd-not-found-in-windows-10-home/a727b760-0f82-4d0f-8480-d49eeaeb11a2
 
 
 
