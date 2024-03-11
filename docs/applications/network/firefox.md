@@ -27,8 +27,15 @@ Setup [Firefox browser](https://www.mozilla.org/firefox)
     # Next, add the Mozilla APT repository to your sources list:
     echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main" | sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
 
+    # Configure APT to prioritize packages from the Mozilla repository
+    echo '
+    Package: *
+    Pin: origin packages.mozilla.org
+    Pin-Priority: 1000
+    ' | sudo tee /etc/apt/preferences.d/mozilla
+
     # Update your package list and install the Firefox Nightly .deb package:
-    sudo apt-get update && sudo apt-get install -y firefox-nightly
+    sudo apt update && sudo apt install -y firefox
     ```
 
 === "Windows"
