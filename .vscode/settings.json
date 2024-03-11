@@ -8,5 +8,30 @@
     "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
     "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
     "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+  ],
+  "cSpell.words": [
+    "Automerge",
+    "autoremove",
+    "backports",
+    "Bioimage",
+    "bootable",
+    "CUDA",
+    "debconf",
+    "dpkg",
+    "Gitbook",
+    "keyrings",
+    "Kubuntu",
+    "LTSC",
+    "matplotlib",
+    "NCBI",
+    "orcid",
+    "Pandoc",
+    "qbittorrent",
+    "SMBL",
+    "Stellaris",
+    "Ventoy",
+    "winget",
+    "xapian",
+    "Zotero"
   ]
 }

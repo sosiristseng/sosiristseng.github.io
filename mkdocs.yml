@@ -23,14 +23,11 @@ copyright: Copyright &copy; 2016 - 2023 Wen-Wei Tseng
 
 # MkDocs plugins
 plugins:
-  # - blog:
-  #     enabled: true
-  #     blog_dir: blog
   - search
-  - callouts
-  - ezlinks
+  - blog:
+      blog_dir: blog
   - tags:
-      tags_file: zz-tags.md
+      tags_file: index.md
       enabled: !ENV [CI, false]
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
@@ -64,11 +61,13 @@ theme:
     - navigation.footer
     - navigation.indexes # Not compatible with toc.integrate
     - navigation.instant
+    # - navigation.instant.prefetch # Insiders only
     - navigation.instant.progress
     - navigation.prune
     # - navigation.sections
     # - navigation.expand
-    # - navigation.tabs
+    # - navigation.path # Insiders only
+    - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
@@ -105,7 +104,6 @@ markdown_extensions:
   - attr_list
   - def_list
   - footnotes
-  - nl2br  # for mkdocs-callouts
   - md_in_html
   - tables
   - toc:
