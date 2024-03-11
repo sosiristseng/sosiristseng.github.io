@@ -23,7 +23,6 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  CACHE_NUM: '1'
   DIR: 'docs'
 
 jobs:
@@ -38,8 +37,8 @@ jobs:
         with:
           save-always: 'true'
           path: .lycheecache
-          key: cache-lychee-${{ env.CACHE_NUM }}-${{ github.sha }}
-          restore-keys: cache-lychee-${{ env.CACHE_NUM }}-
+          key: cache-lychee-${{ hashFiles('.lycheecache') }}-${{ github.sha }}
+          restore-keys: cache-lychee-${{ hashFiles('.lycheecache') }}-
       - name: Lychee Checker
         uses: lycheeverse/lychee-action@v1.9.3
         id: lychee
