@@ -44,9 +44,11 @@ export JULIA_PROJECT=@.
 
 
 !!! info
+
     `IJulia.jl`, the Julia kernel for Jupyter notebooks, sets `JULIA_PROJECT=@.` by default. Thus, Jupyter notebooks load their local Julia environments automatically.
 
 !!! warning
+
     Loading local environments unconditionally is unsafe in untrusted sources, as shown in [Nefarious.jl](https://github.com/StefanKarpinski/Nefarious.jl). That is why Julia doesn't run `julia --project=@.` by default.
 
 ### Fully utilize CPU threads

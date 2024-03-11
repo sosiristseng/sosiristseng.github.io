@@ -22,6 +22,7 @@ In most cases, this is what you need:
 The checkout action also supports pushing a commit to the same repo.
 
 !!! warning
+
     This may *not* work on protected branches that need status checks.
 
 ```yaml

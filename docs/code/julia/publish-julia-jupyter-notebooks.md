@@ -102,7 +102,8 @@ RUN julia --project="" --color=yes -e 'import Pkg; Pkg.add("IJulia")' && \
 ```
 
 !!! tip "Manifest and gitignore"
-  Be sure to remove `Manifest.toml` from `.gitignore`. Thus `Manifest.toml` will be tracked by git and it creates a reproducible runtime.
+
+    Be sure to remove `Manifest.toml` from `.gitignore`. Thus `Manifest.toml` will be tracked by git and it creates a reproducible runtime.
 
 ### (Optional) Build sysimage to decrease package load time
 

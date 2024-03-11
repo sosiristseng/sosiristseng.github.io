@@ -12,6 +12,7 @@ Things to do after installing
 - [WSL2](https://docs.microsoft.com/zh-tw/windows/wsl/install)
 
 !!! warning
+
     The default locale in Ubuntu for traditional Chinese (Taiwan) is `lzh_TW` rather than `zh_TW`, which might cause issues. You can change it to `zh_TW` by editing the file `/etc/locale.gen`. Comment out the `lzh_TW` line and uncomment the `zh_TW` line. And then run:
     ```bash
     sudo locale-gen
