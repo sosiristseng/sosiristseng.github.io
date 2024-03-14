@@ -30,9 +30,9 @@ mkdir WSL
 cd WSL
 mkdir Ubuntu
 
-wsl --export Ubuntu .\Ubuntu\ext4.vhdx --vhd
+wsl --export Ubuntu .\Ubuntu\ext4.tar
 wsl --unregister Ubuntu
-wsl --import-in-place Ubuntu .\Ubuntu\ext4.vhdx
+wsl --import-in-place Ubuntu .\Ubuntu\ext4.tar
 ```
 
 [^export-import]: https://learn.microsoft.com/zh-tw/windows/wsl/basic-commands#import-and-export-a-distribution
