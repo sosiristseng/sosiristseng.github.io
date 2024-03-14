@@ -5,25 +5,14 @@ tags:
 - linux
 ---
 
-Setup Windows subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/windows/wsl/)) for Linux development experience in Windows 10 and 11.
+Set up Windows subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/windows/wsl/)) for Linux development experience in Windows 10 and 11.
 
 ## Instal WSL2
 
 Open powershell with administrator privilege, [run the following command](https://devblogs.microsoft.com/commandline/install-wsl-with-a-single-command-now-available-in-windows-10-version-2004-and-higher/) in the host.
 
 ```powershell
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-```
-
-After reboot, run this command with admin privilege to install Ubuntu
-
-```powershell
-wsl --set-default-version 2
-wsl --update
-wsl --unregister Ubuntu  # Remove existing Ubuntu entry
-wsl --install -d Ubuntu  # You can choose other distributions, e.g., Debian
-wsl --manage Ubuntu --set-sparse true
+wsl --install
 ```
 
 ## WSL2 post-install (optional) setup
@@ -32,8 +21,8 @@ wsl --manage Ubuntu --set-sparse true
 
 If you want to move the WSL virtual disk file to another disk (in this example, `D:\`), run the following commands in Windows[^export-import][^movedrive]:
 
-> [!tip]
-> The following example will move the current WSL virtual disk to `D:\Ubuntu\ext4.vhdx`. You can change the distribution name (Ubuntu) and filesystem paths if necessary.
+!!! tip
+    The following example will move the current WSL virtual disk to `D:\Ubuntu\ext4.vhdx`. You can change the distribution name (Ubuntu) and filesystem paths if necessary.
 
 ```powershell
 cd D:\
