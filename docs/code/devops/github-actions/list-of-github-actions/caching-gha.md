@@ -22,9 +22,9 @@ The https://github.com/actions/cache action caches dependencies for the executio
 ```
 
 - The `key` is the identifier for writing into the cache. If the `key` stays the same before and after the workflow, the cache will not be updated.
-- The `restore-keys` are the identifiers for reading the cache besides the `key`. If there is no matching `key` but a part of it (`restore-keys`) matches, the Github action will still read the cache and update it after the job is done. (since the `key` is different)
+- The `restore-keys` are the identifiers for reading the cache besides the `key.` If there is no matching `key` but a part of it (`restore-keys`) matches, the GitHub action will still read the cache and update it after the job. (since the `key` is different)
 
-### restore and save actions
+### Restore and save actions
 
 The `cache` actions could be split into `restore` and `save` steps, leading to a fine-grained behavior.
 
@@ -51,7 +51,7 @@ The `cache` actions could be split into `restore` and `save` steps, leading to a
 
 ## Caching for a specific programming language
 
-Some GitHub actions for setting up runtime for programming languages can cache packages dependency.
+Some GitHub actions for setting up runtime for programming languages can cache package dependency.
 
 - NodeJS: https://github.com/actions/setup-node
 - Python: https://github.com/actions/setup-python (pip) and https://github.com/mamba-org/setup-micromamba (conda/mamba)
@@ -59,10 +59,10 @@ Some GitHub actions for setting up runtime for programming languages can cache p
 
 ## Cleanup caches
 
-Caches will be cleaned up after 7 days. If you want to clean the cache before that, use the GitHub CLI (`gh`) acrions extension.
+GitHub action caches will be automatically cleared after 7 days. To manually clean the cache before that, use the GitHub CLI (`gh`) actions extension.
 
 ```yaml
-name: Cleanup PR caches
+name: Cleanup caches
 on:
   pull_request:
     types:
@@ -76,7 +76,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cleanup
         run: |
           gh extension install actions/gh-actions-cache
