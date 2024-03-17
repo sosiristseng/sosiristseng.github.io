@@ -61,12 +61,11 @@ See also https://github.com/viatsko/awesome-vscode for a curated list of delight
 1. Install the [Customize UI](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) plugin and restart VS Code.[^1]
 2. In VS Code Settings, set `Customize UI Font:Monospace` and/or `Customize UI Font:Regular` to your liking.
 
-
 [^1]: https://stackoverflow.com/questions/57008558/how-to-change-the-font-of-visual-studio-codes-ui
 
-### Use a better-looking menu bar
+### Better-looking menu bar
 
-Add this entry to `settings.json`: [^2]
+Add this entry to `settings.json` ([Ask Ubuntu thread](https://askubuntu.com/questions/1197231/visual-studio-code-ui-is-visually-mismatched-in-ubuntu-19-1))
 
 ```json title=settings.json
 {
@@ -75,8 +74,6 @@ Add this entry to `settings.json`: [^2]
 ```
 
 Reload VS Code to apply the changes.
-
-[^2]: https://askubuntu.com/questions/1197231/visual-studio-code-ui-is-visually-mismatched-in-ubuntu-19-1
 
 ### Line height
 
