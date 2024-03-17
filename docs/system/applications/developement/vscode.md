@@ -34,7 +34,7 @@ See also https://github.com/viatsko/awesome-vscode for a curated list of delight
     yay -S visual-studio-code-bin
     ```
 
-    The open source version (sourced directly from the GitHub repo) is avaiable in the community repository.
+    The open source version (sourced directly from the GitHub repo) is available in the community repository.
 
     ```sh
     sudo pacman -S code
