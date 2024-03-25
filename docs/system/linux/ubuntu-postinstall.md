@@ -201,7 +201,21 @@ sed 's/#.*$//' pkgs.txt | xargs sudo apt install -y
 
 ## Configurations
 
-- Setting `tmpfs` (RAM disk) for `/tmp` folder: `sudo cp -v /usr/share/systemd/tmp.mount /etc/systemd/system/ && sudo systemctl enable tmp.mount`
+### Temporary files in RAM disk
+
+Setting `tmpfs` (RAM disk) for `/tmp` folder:
+
+```bash
+sudo cp -v /usr/share/systemd/tmp.mount /etc/systemd/system/
+sudo systemctl enable tmp.mount
+```
+
+### Automatic updates
+
+```bash
+sudo apt install unattended-upgrades
+sudo dpkg-reconfigure -plow unattended-upgrades
+```
 
 ### Ubuntu: gnome shell extensions
 
