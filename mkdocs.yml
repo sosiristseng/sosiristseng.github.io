@@ -99,6 +99,7 @@ extra:
 # https://python-markdown.github.io/extensions/
 # https://facelessuser.github.io/pymdown-extensions/
 markdown_extensions:
+  - nl2br  # for mkdocs-callouts
   - abbr
   - admonition
   - attr_list
