@@ -10,12 +10,11 @@ tags:
 You can use one of the three below
 
 + https://github.com/actions/setup-python
-+ https://github.com/conda-incubator/setup-miniconda
 + https://github.com/mamba-org/setup-micromamba
 
 ## Pip packages
 
-The https://github.com/actions/setup-python actions installs `python` with a specific version and could cache download Python packages. (But *not* the whole environment)
+The https://github.com/actions/setup-python actions installs `python` with a specific version and could cache downloaded Python packages. (But *not* the installed environment)
 
 ```yaml
 steps:
@@ -29,27 +28,31 @@ steps:
 
 ### Cache Python environment
 
-If you really want to cache the whole Python environment, cache the `pythonLocation` folder.[^1][^2]
+If you want to cache the whole Python environment, cache the virtual environment folder.[^1][^2]
 
 ```yaml
-- name: Set up Python
-  uses: actions/setup-python@v4
-  id: cp
+- name: Setup Python
+  uses: actions/setup-python@v5
+  id: setup-python
   with:
-    python-version: ${{ matrix.python-version }}
-- name: Cache pip dependencies
-  uses: actions/cache@v3
-  id: cache
+    python-version: '3.x'
+- name: Cache virtualenv
+  uses: actions/cache@v4
+  id: cache-venv
   with:
-    path: ${{ env.pythonLocation }}
-    key:  ${{ runner.os }}-pip-${{ steps.cp.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
-- name: Install pip dependencies if cache miss
-  if: ${{ steps.cache.outputs.cache-hit != 'true' }}
-  run: pip install -r requirements.txt
+    key: ${{ runner.os }}-venv-${{ steps.setup-python.outputs.python-version}}-${{ hashFiles('requirements.txt') }}
+    path: .venv
+- name: Install Python dependencies
+  run: |
+    python -m venv .venv
+    source .venv/bin/activate
+    python -m pip install -r requirements.txt
+    echo "$VIRTUAL_ENV/bin" >> $GITHUB_PATH
+    echo "VIRTUAL_ENV=$VIRTUAL_ENV" >> $GITHUB_ENV
 ```
 
 [^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170
-[^2]: https://luminousmen.com/post/making-ci-workflow-faster-with-github-actions
+[^2]: https://adamj.eu/tech/2023/11/02/github-actions-faster-python-virtual-environments/
 
 ## Conda packages
 
@@ -69,29 +72,3 @@ The https://github.com/mamba-org/setup-micromamba action installs the [micromamb
   shell: micromamba-shell {0}
   run: python --version
 ```
-
-### Miniconda action
-
-The https://github.com/conda-incubator/setup-miniconda action sets up a base [`conda`](https://docs.conda.io/projects/conda/en/latest/) environment.
-
-```yaml
-jobs:
-  mambaforge-example:
-    runs-on: "ubuntu-latest"
-    defaults: # (1)!
-      run:
-        shell: bash -l {0}
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup Mambaforge
-        uses: conda-incubator/setup-miniconda@v2
-        with:
-          auto-update-conda: true
-          environment-file: environment.yml
-          conda-solver: libmamba
-      - run: |
-          conda info
-          conda list
-```
-
-1. Use the login shell to activate the conda environment correctly.
