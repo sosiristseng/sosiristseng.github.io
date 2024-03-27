@@ -26,6 +26,7 @@
     "LTSC",
     "matplotlib",
     "NCBI",
+    "nohup",
     "orcid",
     "pacman",
     "Pandoc",
@@ -36,11 +37,15 @@
     "sosiristseng",
     "Stackoverflow",
     "Stellaris",
+    "tldr",
     "tomllib",
     "twemoji",
     "Ventoy",
     "winget",
     "xapian",
+    "zimfw",
+    "zimrc",
+    "zmodule",
     "Zotero"
   ]
 }

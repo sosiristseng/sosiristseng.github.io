@@ -28,7 +28,7 @@ nohup nice mycmd &
 
 ## End the running process
 
-When you're done, you can kill the process by the proccess ID (PID).
+When you're done, you can kill the process by the process ID (PID).
 
 ```sh
 ps -aux | grep mycmd
