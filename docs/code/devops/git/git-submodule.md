@@ -13,7 +13,7 @@ Frequently used commands for Git submodules.
 
 ## Add a submodule
 
-TO add the reference to another git project as a submoule:
+TO add the reference to another git project as a submodule:
 
 ```sh
 git submodule add <url> <path>

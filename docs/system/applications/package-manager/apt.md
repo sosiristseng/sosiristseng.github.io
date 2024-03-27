@@ -29,7 +29,7 @@ To install `nala`:
 sudo apt install nala
 ```
 
-To find fasterst mirrors:
+To find fastest mirrors:
 
 ```sh
 sudo nala fetch

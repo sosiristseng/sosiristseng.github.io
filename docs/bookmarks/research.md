@@ -5,7 +5,6 @@ tags:
 - school
 ---
 
-
 - https://github.com/emptymalei/awesome-research
 - [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/) : A web based tool to extract data from plots, images, and maps
 

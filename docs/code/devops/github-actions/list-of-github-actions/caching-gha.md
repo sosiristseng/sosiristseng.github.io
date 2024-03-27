@@ -57,34 +57,29 @@ Some GitHub actions for setting up runtime for programming languages can cache p
 - Python: https://github.com/actions/setup-python (pip) and https://github.com/mamba-org/setup-micromamba (conda/mamba)
 - Julia: https://github.com/julia-actions/cache
 
-## Cleanup caches
+## Cleanup PR caches
 
-GitHub action caches will be automatically cleared after 7 days. To manually clean the cache before that, use the GitHub CLI (`gh`) actions extension.
+Clean up PR caches after it closes to save space.
 
 ```yaml
-name: Cleanup caches
+name: Cleanup PR caches
 on:
-  pull_request:
-    types:
-      - closed
-  workflow_dispatch:
+  pull_request:
+    types:
+      - closed
 
 jobs:
   cleanup:
     permissions:
-      actions: write
+      actions: write
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        uses: actions/checkout@v4
       - name: Cleanup
         run: |
           gh extension install actions/gh-actions-cache
-          REPO=${{ github.repository }}
-          BRANCH=${{ github.ref }}
 
           echo "Fetching list of cache key"
-          cacheKeysForPR=$(gh actions-cache list -R $REPO -B $BRANCH | cut -f 1 )
+          cacheKeysForPR=$(gh actions-cache list -R $REPO -B $BRANCH -L 100 | cut -f 1 )
 
           ## Setting this to not fail the workflow while deleting cache keys.
           set +e
@@ -96,4 +91,6 @@ jobs:
           echo "Done"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          BRANCH: refs/pull/${{ github.event.pull_request.number }}/merge
 ```

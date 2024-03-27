@@ -5,6 +5,7 @@ tags:
 ---
 
 When your Julia codebase grows larger, you might want to organize it into modules and packages.
+
 ## Include other files as submodules
 
 You could include jl files as submodules like this
@@ -32,8 +33,9 @@ end
 - Best when the submodules are used exclusively for this project and will not be shared with others.
 - Usually you want to include all dependent submodules in the top-most file, [like a table of contents](https://discourse.julialang.org/t/ann-patmodules-jl-a-better-module-system-for-julia/52226/40).
 - The `include` and `using` lines need to be re-execute when the code in the submodule changes. (if `Revise.includet("foo.jl")` is not used)
-- Use [relative module path](https://stackoverflow.com/questions/54410557/submodule-intra-dependencies-in-julia) when `Bar` dependes on `Foo`.
+- Use [relative module path](https://stackoverflow.com/questions/54410557/submodule-intra-dependencies-in-julia) when `Bar` depends on `Foo`.
 - There may be recursive `include()` calls and `replace module` warnings. [FromFile.jl](https://github.com/Roger-luo/FromFile.jl) can deal with these file inclusion duplications.
+
 ## Automatic package loading in a project
 
 In this example, the project folder is `JuliaHello`. Note that `main.jl` has access to the `JuliaHello` module automatically.
@@ -51,7 +53,8 @@ end # module
 using JuliaHello
 JuliaHello.greet()
 ```
-## "Developinging" a temporary package
+
+## "Developing" a temporary package
 
 Us the Julia Pkg command `dev --local pkg...`
 
@@ -103,6 +106,7 @@ Pkg.develop(PackageSpec(path="Mod2.jl"))
 - Best when `Mod1` and `Mod2` are modified frequently and shared.
 - Loaded code is determined by local files instead of package versions.
 - The updates are loaded when `using` is invoked, along with precompilation. [Revise.jl](https://timholy.github.io/Revise.jl/stable/) tracks and updates modified files and you don't have to restart the Julia process upon module code changes.
+
 ## Make a hosted package
 
 Make a Git repo for your custom package and publish it to Git service providers, e.g. GitHub / Gitlab. And then you can `]add https://github.com/username/Mod1.jl.git`
@@ -110,6 +114,7 @@ Make a Git repo for your custom package and publish it to Git service providers,
 [PkgTemplates.jl](https://github.com/invenia/PkgTemplates.jl) or [PkgSkeleton.jl](https://github.com/tpapp/PkgSkeleton.jl) is recommended to generate package with unit tests and CI/CD settings.
 
 Nonetheless, it's just one step away from proper [registeration](https://github.com/JuliaRegistries/Registrator.jl) to the general Julia registry to be used by more people.
+
 ### Unit testing
 
 You can have [local dependencies](https://julialang.github.io/Pkg.jl/v1/creating-packages/#Test-specific-dependencies-in-Julia-1.2-and-above) for running tests in `test/Project.toml` without the need of `extra` and `targets` sections in the main project's `Project.toml`.
@@ -119,6 +124,7 @@ Though the build-in [unit-test framework](https://docs.julialang.org/en/v1/stdli
 - Discover unit testing `jl` files automatically.
 - Skip or select which test(s) to run.
 - Multiprocessing for faster runs.
+
 ### Documentation
 
 Use [Documenter.jl](https://juliadocs.github.io/Documenter.jl/stable/) to generate the documentation for Julia packages.
@@ -129,6 +135,7 @@ You need [an SSH deploy key](https://juliadocs.github.io/Documenter.jl/stable/li
 using DocumenterTools
 DocumenterTools.genkeys(user="you", repo="YourPackage.jl")
 ```
+
 ### Continuous integration / delivery (CI/CD)
 
 `PkgTemplates.jl` should set up the appropriate code structure for you. I would recommend to use GitHub to host Julia packages because
@@ -136,6 +143,7 @@ DocumenterTools.genkeys(user="you", repo="YourPackage.jl")
 - Running GH actions is unlimited for public repositories, with multiple operating systems running concurrently (matrix build).
 - Julia github actions are convenient to use.
 - Automation bots integrate better with GitHub. e.g. TagBot, Registerbot, and Compat Helper.
+
 ## Reference
 
 - [Julia workflow tips](https://docs.julialang.org/en/v1/manual/workflow-tips/)

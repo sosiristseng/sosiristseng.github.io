@@ -40,6 +40,6 @@ tags:
 
 ## Checking URL links
 
-- [linkchecker-markdown](https://github.com/scivision/linkchecker-markdown): a blazing-fast markdown link checker in *Python*.
-- [markdown-link-check](https://github.com/tcort/markdown-link-check) : a Node.js application to check Markdown links. [GitHub action](https://github.com/marketplace/actions/markdown-link-check).
-- [lychee](https://github.com/lycheeverse/lychee) : a fast link checker written in Rust. [GitHub action](https://github.com/lycheeverse/lychee-action)
+- https://github.com/scivision/linkchecker-markdown : a blazing-fast markdown link checker in *Python*.
+- https://github.com/tcort/markdown-link-check : a Node.js application to check Markdown links. GitHub actions: https://github.com/marketplace/actions/markdown-link-check.
+- https://github.com/lycheeverse/lychee : a fast link checker written in Rust. GitHub action: https://github.com/lycheeverse/lychee-action.

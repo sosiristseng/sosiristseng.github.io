@@ -10,7 +10,7 @@ tags:
 ## Running Python programs
 
 - [VSCode](https://code.visualstudio.com/) + [Python extension](https://code.visualstudio.com/docs/languages/python)
-- [PyCharm](https://www.jetbrains.com/pycharm/) by Jetbrains
+- [PyCharm](https://www.jetbrains.com/pycharm/) by Jetbrains.
 - [Spyder](https://www.spyder-ide.org/) (included in Anaconda distribution).
 - [Jupyter Lab](https://github.com/jupyterlab/jupyterlab) (included in Anaconda distribution).
 - https://github.com/jupyterlab/jupyterlab-desktop : A standalone desktop application for https://github.com/jupyterlab/jupyterlab , based on Electron.

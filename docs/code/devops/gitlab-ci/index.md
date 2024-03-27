@@ -167,7 +167,7 @@ You also need additional steps to setup a SSH client in the pipeline.
 
 ```yaml
 before_script:
-   # apt-get applies to Debain-based images. Change the package manager if needed.
+   # apt-get applies to Debian-based images. Change the package manager if needed.
   - 'which ssh-agent || ( apt-get update -qy && apt-get install openssh-client -qqy )'
   - 'which git || ( apt-get update -qy && apt-get install git -qqy )'
   - eval `ssh-agent -s`
@@ -191,7 +191,7 @@ script:
   - bash update.sh
   - |
     if [ -n $(git status --porcelain) ]; then
-        echo "Commiting updates"
+        echo "Committing updates"
         git config --global user.name "${GITLAB_USER_NAME}"
         git config --global user.email "${GITLAB_USER_EMAIL}"
         git add .
@@ -210,7 +210,7 @@ script:
   - bash update.sh
   - |
     if [ -n $(git status --porcelain) ]; then
-        echo "Commiting updates"
+        echo "Committing updates"
         NEW_BR=auto-update-$(date '+%Y-%m-%d-%H-%M-%S')
         git config --global user.name "${GITLAB_USER_NAME}"
         git config --global user.email "${GITLAB_USER_EMAIL}"

@@ -150,7 +150,7 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 ### Misc
 
 - [Bookdown](https://bookdown.org) : Write HTML, PDF, ePub, and Kindle books with R Markdown. Written in `R`.
-- [Jekyll](https://jekyllrb.com) : The default SSG for GitHub pages. Wriiten in `Ruby`.
+- [Jekyll](https://jekyllrb.com) : The default SSG for GitHub pages. Written in `Ruby`.
 	- [Just the docs template](https://just-the-docs.github.io/just-the-docs-template/)
 	- [chirpy template](https://github.com/sosiristseng/template-jekyll-chirpy)
 - [Publii](https://github.com/GetPublii/Publii) : A content management system (CMS) for creating static websites fast and hassle-free, even for beginners.

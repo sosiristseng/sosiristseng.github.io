@@ -42,10 +42,10 @@ To install `pdftoppm` (included in `poppler-utils`)[^2][^3][^4]
 
 See [documentation of `pdftoppm`](https://www.mankier.com/1/pdftoppm)
 
-For example, to convert the pdf file to a 300-DPI TIFF image with lzw compression.
+For example, to convert the pdf file to a 300-DPI TIFF image with LZW compression.
 
 ```sh
-pdftoppm -tiff -tiffcompression lzw -r 300 in.pdf outname
+pdftoppm -tiff -tiffcompression lzw -r 300 in.pdf out.tif
 ```
 
 ## GhostScript and ImageMagick

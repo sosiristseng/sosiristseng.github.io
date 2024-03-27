@@ -5,7 +5,7 @@ tags:
   - visualization
 ---
 
-Some tips about [Plots.jl](https://docs.juliaplots.org/stable/), the de-facto standard visulization library in Julia.
+Some tips about [Plots.jl](https://docs.juliaplots.org/stable/), the de-facto standard visualization library in Julia.
 
 ## You don't have to precalculate
 
@@ -68,6 +68,7 @@ plot!(randn(50), sp=4)
 ```
 
 See [layouts](http://docs.juliaplots.org/latest/layouts/#layouts) for more options.
+
 ## List supported styles
 
 ```julia
@@ -77,6 +78,7 @@ See [layouts](http://docs.juliaplots.org/latest/layouts/#layouts) for more optio
 ```
 
 See [plot attributes](http://docs.juliaplots.org/latest/attributes/).
+
 ## Render Images
 
 ```julia

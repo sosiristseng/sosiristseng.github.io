@@ -12,7 +12,7 @@ Setup [Firefox browser](https://www.mozilla.org/firefox)
 
 === "Ubuntu"
 
-    Install Firefox nightly from Mozilla's deb repo
+    Install Firefox from Mozilla's deb repo
 
     ```bash
     # Create a directory to store APT repository keys if it doesn't exist:
@@ -60,7 +60,7 @@ Enter `about:config` in the location bar.
 
 + Set `browser.compactmode.show` to `true`
 
-### Firefox Fullscreen Transition tweaks
+### Full screen transition tweaks
 
 [Source](https://luis.adame.dev/blog/firefox-fullscreen-transition-timeout):
 

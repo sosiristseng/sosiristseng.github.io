@@ -26,7 +26,7 @@ tags:
 
 ### Publishing code examples
 
-- https://github.com/fredrikekre/Literate.jl : converting _literated_ `jl` files to Markdown (`md`) or Jupyter notebooks (`ipynb`).
+- https://github.com/fredrikekre/Literate.jl : converting _literated _`jl` files to Markdown (`md`) or Jupyter notebooks (`ipynb`).
 - https://github.com/stevengj/NBInclude.jl : converting Jupyter notebooks (`ipynb`) to _literated_ `jl` files by using `nbexport("myfile.jl", "myfile.ipynb")`.
 
 ### Optimization
@@ -47,10 +47,9 @@ tags:
 
 ### Modeling and simulation
 
-- https://github.com/SciML/DifferentialEquations.jl : solving differential eqautions.
-- https://github.com/SciML/ModelingToolkit.jl : a symbolic modeling framework.
-  - https://github.com/JuliaSymbolics/Symbolics.jl : a computer algebra system (CAS) for symbolic calculations.
-- https://github.com/SciML/Catalyst.jl : a domain-specific language (DSL) for shemical reaction networks.
+- https://github.com/SciML/DifferentialEquations.jl : solving differential equations.
+- https://github.com/SciML/ModelingToolkit.jl : a symbolic-numeric modeling framework based on https://github.com/JuliaSymbolics/Symbolics.jl, a computer algebra system (CAS) for symbolic calculations.
+- https://github.com/SciML/Catalyst.jl : a domain-specific language (DSL) for chemical reaction networks based on https://github.com/SciML/ModelingToolkit.jl.
 - https://github.com/JuliaDynamics/Agents.jl : agent-based modeling (ABM).
 
 #### Universal differential equations (UDEs)

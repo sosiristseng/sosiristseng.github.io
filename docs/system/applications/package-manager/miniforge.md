@@ -25,7 +25,7 @@ The community-driven [conda-forge](https://conda-forge.org/docs/user/introductio
     CONDA_SH="${CONDA_PATH}/etc/profile.d/conda.sh"
     CONDA_URL="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh"
 
-    # Download and install miniconda/mambaforge
+    # Download and install
     wget -O /tmp/conda.sh "${CONDA_URL}"
     bash /tmp/conda.sh -bup "${CONDA_PATH}"
     source "${CONDA_SH}"

@@ -9,7 +9,7 @@ How to exclude some files/folders while copying a folder tree.
 
 ## Tar
 
-To start with, `tar` and pipes can be used to copy directoy trees[^1]
+To start with, `tar` and pipes can be used to copy directly trees[^1]
 
 ```sh
 tar cf - $src | tar xvf - -C $dst

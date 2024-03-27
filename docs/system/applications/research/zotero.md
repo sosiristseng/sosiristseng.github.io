@@ -42,9 +42,9 @@ tags:
     winget install --id=DigitalScholar.Zotero -e
     ```
 
-## Zotfile attachement manager
+## Zotfile attachment manager
 
-Storage space for attachements is [limited to **300MB**](https://www.zotero.org/storage) in the free plan of Zotero. The https://github.com/jlegewie/zotfile attachment manager work around this by storing attachments to a custom folder. (e.g. Dropbox / OneDrive / Google drive folders)
+Storage space for attachments is [limited to **300MB**](https://www.zotero.org/storage) in the free plan of Zotero. The https://github.com/jlegewie/zotfile attachment manager work around this by storing attachments to a custom folder. (e.g. Dropbox / OneDrive / Google drive folders)
 
 - Download the `.xpi` file from ZotFile and install it via the Zotero extension interface. Restart Zotero.
 - In the zotero main program preference
@@ -54,7 +54,7 @@ Storage space for attachements is [limited to **300MB**](https://www.zotero.org/
     - Set Location of Files to `Custom Location` and point it to your library folder.
     - (Optionally) Set `Source folder` to your download folder.
 
-## Zotero and Obsidan collaboration
+## Zotero and Obsidian collaboration
 
 Source: [Mariana Montes' post](https://www.marianamontes.me/post/obsidian-and-zotero/)
 
@@ -70,8 +70,8 @@ Source: [Mariana Montes' post](https://www.marianamontes.me/post/obsidian-and-zo
 ### In the Obsidian APP
 
 Assuming [Obsidian](https://obsidian.md/) has been installed.
-- Install [obsidian-citation-plugin](https://github.com/hans/obsidian-citation-plugin) via the Obsidan settings => Community plugins => Browse for `Citations`.
-- In the Obsidan settings => Community plugins => Citations, choose the exported BibLaTeX library file as the citation database path
+- Install [obsidian-citation-plugin](https://github.com/hans/obsidian-citation-plugin) via the Obsidian settings => Community plugins => Browse for `Citations`.
+- In the Obsidian settings => Community plugins => Citations, choose the exported BibLaTeX library file as the citation database path
 
 ![image](https://user-images.githubusercontent.com/40054455/205593774-40946d57-53ce-410e-b3f1-45843698dd6c.png)
 

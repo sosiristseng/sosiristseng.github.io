@@ -22,7 +22,7 @@ tags:
 - [Overleaf](https://overleaf.com) : An online LaTeX project and document manager.
 - [LaTeX workshop for VS code](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 - [TexLab for VS Code](https://marketplace.visualstudio.com/items?itemName=efoerster.texlab) : rich editing support for the LaTeX typesetting system powered by the TexLab language server
-- [Lyx](https://www.lyx.org/) : A What You See Is What You Mean (WYSIWYM) document processor.
+- [Lyx](https://www.lyx.org/) : A What You See Is What You Mean document processor.
 - [TEXMAKER](https://www.xm1math.net/texmaker/) : A free cross-platform LaTeX editor.
 - [SwiftLaTeX](https://github.com/SwiftLaTeX/SwiftLaTeX) : SwiftLaTeX is a WYSIWYG Browser-based LaTeX Editor, based on the [Tectonic][] engine.
 - [TexWorks](https://www.tug.org/texworks/) : Lowering the entry barrier to the TeX world.

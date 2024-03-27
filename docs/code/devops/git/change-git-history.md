@@ -4,6 +4,7 @@ title: Change git histories
 tags:
   - git
 ---
+
 ## Git reset
 
 - Mixed reset (default): discard untracked files, but the changed files are preserved but not marked for commit.
@@ -41,7 +42,7 @@ git filter-repo --replace-text passwords.txt
 Erase all history in the Git repo to start over with all the current files. This also clears big file records in the Git database.
 
 ```sh
-git checkout --orphan newBranch  # Creata an orphan branch to hold the files
+git checkout --orphan newBranch  # Create an orphan branch to hold the files
 git add -A  && git commit        # Add all files and commit them
 git branch -D main               # Deletes the main branch
 git branch -m main               # Rename the current orphan branch to main

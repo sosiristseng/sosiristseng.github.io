@@ -6,7 +6,7 @@ tags:
   - tiff
 ---
 
-Some tips about https://github.com/JuliaPy/PyPlot.jl, the `matplotlib` (Python) visulization library for Julia. See also [docs for matplotlib](https://matplotlib.org/) since `PyPlot.jl` largely follows `matplotlib`'s API.
+Some tips about https://github.com/JuliaPy/PyPlot.jl, the `matplotlib` (Python) visualization library for Julia. See also [docs for matplotlib](https://matplotlib.org/) since `PyPlot.jl` largely follows `matplotlib`'s API.
 
 ## How to solve `PyPlot.jl` installation errors
 

@@ -1,5 +1,5 @@
 ---
-title: Fonts setup in Linux
+title: Install fonts in Linux
 tags:
   - linux
 ---

@@ -14,7 +14,7 @@ on:
   check_suite:
     type: ['completed']
 
-name: Continue after Cirrus CI Complets Successfully
+name: Continue after Cirrus CI Completes Successfully
 jobs:
   continue:
     name: After Cirrus CI

@@ -30,7 +30,7 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 ## System tools
 
 - [Dism++](https://github.com/Chuyu-Team/Dism-Multi-language) : Dism Windows image (wim) manipulator and system cleaner.
-- [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) : Classic Shell and stratup menu for Windows 10/11.
+- [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) : Classic Shell and startup menu for Windows 10/11.
 - [WinSetView](https://lesferch.github.io/WinSetView/) : an easy way to set Windows File Explorer default folder views and disabling annoying groups.
 - [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher) : enhance the working environment on Windows 11.
 - [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)
@@ -56,4 +56,4 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 
 - [Rufus](https://rufus.ie/) : Create a bootable USB drive.
 - [Ventoy](https://www.ventoy.net/) : Create a bootable USB drive by loading ISO files in the partition.
-- [validrive](https://www.grc.com/validrive.htm) : Validate real/fake USB drives. [A introductary Youtube video](https://www.youtube.com/watch?v=xMgEHy1A9QA)
+- [validrive](https://www.grc.com/validrive.htm) : Validate real/fake USB drives. [Youtube video](https://www.youtube.com/watch?v=xMgEHy1A9QA)

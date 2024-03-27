@@ -2,7 +2,7 @@
 title: Sequence field in MS Word
 tags:
   - windows
-  - owrd
+  - word
   - research
 ---
 

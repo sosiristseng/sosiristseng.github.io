@@ -46,7 +46,7 @@ And you need additional steps in the Github settings to make Kodiak Bot work
 
 ## Renovate
 
-[Renovate bot](https://docs.renovatebot.com/) can manage both dependecy update checking and automated pull request merging.
+[Renovate bot](https://docs.renovatebot.com/) can manage both dependency update checking and automated pull request merging.
 
 It supports a variety of platforms
 

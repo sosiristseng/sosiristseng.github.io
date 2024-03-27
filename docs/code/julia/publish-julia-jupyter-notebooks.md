@@ -11,6 +11,7 @@ This post will demonstrate my [template repository](https://github.com/sosirists
 - How to use Docker to build a Julian Jupyter notebooks runtime environment.
 - How to use GitHub actions to execute notebooks in the docker container in parallel.
 - How to use `jupyter-book` to publish notebooks automatically when changes are pushed to GitHub.
+
 ## Docker image as the runtime environment
 
 Create a `Dockerfile` for the runtime environment. The whole content is:

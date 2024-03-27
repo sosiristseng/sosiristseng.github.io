@@ -14,7 +14,7 @@ Publish your website to [GitHub pages](https://pages.github.com/) with GitHub ac
 + https://github.com/actions/upload-pages-artifact
 + https://github.com/actions/deploy-pages
 
-The benefit of using the official worflow is that you do not need an orphan branch to hold the webpages.
+The benefit of using the official workflow is that you do not need an orphan branch to hold the webpages.
 
 ```yaml title=".github/workflows/pages.yml"
 jobs:
@@ -61,7 +61,7 @@ permissions:
 Use https://github.com/peaceiris/actions-gh-pages
 
 ```yaml
-# After the webstie was built
+# After the website was built
 - name: Deploy
   uses: peaceiris/actions-gh-pages@v3
   with:
@@ -74,7 +74,7 @@ Use https://github.com/peaceiris/actions-gh-pages
 Or https://github.com/JamesIves/github-pages-deploy-action
 
 ```yaml
-# After the webstie was built
+# After the website was built
 - name: Deploy 🚀
   uses: JamesIves/github-pages-deploy-action@v4
   with:

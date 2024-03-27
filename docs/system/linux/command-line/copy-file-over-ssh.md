@@ -39,11 +39,11 @@ rsync -avh /source/folder/ username@nasip:dest/folder/
 https://github.com/libfuse/sshfs mounts a remote machine's directory as a local disk.
 
 ```sh
-sshfs [user@]hostname:[directory] mountpoint
+sshfs [user@]hostname:[directory] mount-point
 ```
 
 To unmount the directory after file operations are done:
 
 ```sh
-fusermount -u mountpoint
+fusermount -u mount-point
 ```
