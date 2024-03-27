@@ -56,8 +56,6 @@ If you want to cache the whole Python environment, cache the virtual environment
 
 ## Conda packages
 
-### Micromamba
-
 The https://github.com/mamba-org/setup-micromamba action installs the [micromamba](https://github.com/mamba-org/mamba#micromamba) package manager and conda package dependencies. It can also cache the whole runtime environment.
 
 ```yaml
