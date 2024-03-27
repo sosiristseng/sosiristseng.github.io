@@ -25,14 +25,14 @@ jobs:
           fetch-depth: 0 # full history
       - name: Setup Python
         uses: actions/setup-python@v5
-        id: setup_python
+        id: setup-python
         with:
           python-version: '3.x'
       - name: Cache virtualenv
         uses: actions/cache@v4
         id: cache-venv
         with:
-          key: ${{ runner.os }}-venv-${{ steps.setup_python.outputs.python-version}}-${{ hashFiles('requirements.txt') }}
+          key: ${{ runner.os }}-venv-${{ steps.setup-python.outputs.python-version}}-${{ hashFiles('requirements.txt') }}
           path: .venv
       - name: Install Python dependencies
         run: |
