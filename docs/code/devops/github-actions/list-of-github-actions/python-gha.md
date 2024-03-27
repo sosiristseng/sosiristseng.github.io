@@ -40,15 +40,18 @@ If you want to cache the whole Python environment, cache the virtual environment
   uses: actions/cache@v4
   id: cache-venv
   with:
-    key: ${{ runner.os }}-venv-${{ steps.setup-python.outputs.python-version}}-${{ hashFiles('requirements.txt') }}
+    key: ${{ runner.os }}-venv-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
     path: .venv
 - name: Install Python dependencies
+  if: ${{ steps.cache-venv.outputs.cache-hit != 'true' }}
   run: |
     python -m venv .venv
     source .venv/bin/activate
     python -m pip install -r requirements.txt
-    echo "$VIRTUAL_ENV/bin" >> $GITHUB_PATH
-    echo "VIRTUAL_ENV=$VIRTUAL_ENV" >> $GITHUB_ENV
+- name: Add venv to PATH
+  run: |
+    echo ".venv/bin" >> $GITHUB_PATH
+    echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
 ```
 
 [^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170
