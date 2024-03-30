@@ -83,6 +83,6 @@ The https://github.com/peter-evans/create-pull-request action will commit all fi
 
 ## Merge pull requests
 
-+ [Kodiak Bot](https://kodiakhq.com/) : automatic merge PRs based on the issue label. (by default `automerge`). See also [auto-deps-update](../../auto-deps-update.md).
++ [Kodiak Bot](https://kodiakhq.com/) : automatic merge PRs based on the issue label. (by default `automerge`). See also [auto-deps-update](../auto-deps-update.md).
 + Run `gh pr merge --merge --auto $PR_NUMBER` in the workflow.
 + https://github.com/peter-evans/enable-pull-request-automerge : A GitHub action to enable auto-merge on a pull request.

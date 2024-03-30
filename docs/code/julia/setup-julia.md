@@ -28,10 +28,6 @@ Alternatively, download and install [Julia official binaries](https://julialang.
 winget install JuliaLang.Julia
 ```
 
-### GitHub actions
-
-[Setup Julia in GitHub actions](../devops/github-actions/list-of-github-actions/julia-gha.md)
-
 ## Post-install configurations
 
 ### Auto-activate local projects
