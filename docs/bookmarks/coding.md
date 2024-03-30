@@ -12,12 +12,6 @@ tags:
 - [QuickRef.ME](https://quickref.me/): cheat sheets and quick references.
 - [Free for dev](https://free-for.dev/): online tools with free tiers.
 
-## DevOps
-
-- [A curated list of awesome softwares for Devops](https://github.com/awesome-soft/awesome-devops)
-- [GitLab CI/CD documentation](https://docs.gitlab.com/ee/ci/)
-- [Github actions](https://github.com/features/actions)
-
 ## Command lines and shell scripting
 
 - [Awesome shell](https://github.com/alebcay/awesome-shell)
