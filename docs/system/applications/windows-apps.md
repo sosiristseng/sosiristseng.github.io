@@ -2,6 +2,7 @@
 title: Windows applications
 tags:
   - windows
+  - bookmarks
 ---
 
 https://github.com/Awesome-Windows/Awesome : Curated list of best applications and tools for Windows
