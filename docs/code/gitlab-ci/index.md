@@ -34,7 +34,7 @@ test:
       # Second cartesian set of parameters
 ```
 
-This will creat 4 jobs with a combination of a custom message and a specific Python image.
+This will create 4 jobs with a combination of a custom message and a specific Python image.
 
 **See also** [the blog post by Michael Friedrich](https://dnsmichi.at/2021/09/23/efficient-pipelines-gitlab-ci-cd-parallel-matrix-builds-reference/) for more parallel matrix build with GitLab CI/CD.
 
@@ -42,7 +42,7 @@ This will creat 4 jobs with a combination of a custom message and a specific Pyt
 
 [GitLab CI/CD `rules` reference](https://docs.gitlab.com/ee/ci/yaml/#rules)
 
-> [!note]
+> [!NOTE]
 > Rules cannot be used together with only/except. Otherwise, GitLab will return a `key may not be used with rules` error.
 
 ### only run if this is a scheduled pipeline
@@ -94,7 +94,7 @@ Use `tags` to tun jobs in a specific runner e.g., your self-hosted GitLab runner
 ```yaml title=".gitlab-ci.yml"
 run-custom:
   tags:
-    - myworkstation
+    - myWS
   script:
     - echo "Running in my workstation."
 ```
@@ -156,8 +156,8 @@ Conda will create the runtime environment according to `environment.yml`. The en
 
 ### Using SSH keys
 
-> [!warning]
-> Currently the private key cannot be masked out of the box and one has to use base64 encoding/decoding.
+> [!WARNING]
+> Currently the private key cannot be masked and base64 encoding/decoding is needed.
 
 You can use a pair of SSH keys to access a git repository
 - The private key would be a [CI/CD project variable](https://docs.gitlab.com/ee/ci/variables/#add-a-cicd-variable-to-a-project)
@@ -240,7 +240,7 @@ Assuming you have two identical repositories on GitLab and GitHub each (you can 
 1. In the GitLab repo, go to `Settings`/`Repository`/`Mirroring repositories` and set `Git repository URL` as `ssh://git@github.com/<namespace>/<repo>.git`. e.g. `ssh://git@github.com/sosiristseng/docker-python-julia.git`
 ![](https://user-images.githubusercontent.com/40054455/153238097-4266f124-b5ef-4fda-82ea-060d79f1ba09.png)
 
-> [!warning]
+> [!WARNING]
 > The GitHub button gives `git@github.com:<namespace>/<repo>.git` as the repo URL, one should change it to `ssh://git@github.com/<namespace>/<repo>.git` for GitLab to access the repository.
 
 2. Set `Mirror direction` to push.
