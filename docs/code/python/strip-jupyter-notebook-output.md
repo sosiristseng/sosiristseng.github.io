@@ -10,7 +10,7 @@ tags:
 
 Jupyter notebooks without multimedia outputs are more friendly to source control since git is not good at comparing binary data (e.g., plots, pictures, videos) in jupyter notebooks. And they tend to bloat the size of git repositories.
 
-## Using nbconvert
+## nbconvert
 
 You can use `nbconvert` to remove the output cells of Jupyter notebooks.
 
@@ -48,7 +48,7 @@ How this works: [^1]
 
 ## nbstripout
 
-[nbstripout](https://github.com/kynan/nbstripout) is a python package to automate these works above.
+https://github.com/kynan/nbstripout is a python package to automate these works above.
 
 ## nbstripout-fast
 
