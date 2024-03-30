@@ -1,12 +1,12 @@
 ---
 title: Passing multiple lines of string
-
 tags:
   - linux
   - command-line
 ---
 
 Use [heredoc](https://en.wikipedia.org/wiki/Here_document) to pass the string as-is between two delimiters (e.g. `EOF`)
+
 ```sh
 cat << "EOF" >> ~/.xprofile
 # ~/.xprofile

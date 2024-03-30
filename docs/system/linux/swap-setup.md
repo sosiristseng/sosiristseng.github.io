@@ -26,7 +26,7 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
 
-Afterwards add the following line to `/etc/fstab`.
+Then add the following line to `/etc/fstab`.
 
 ```txt title="/etc/fstab"
 /swapfile none swap defaults 0 0

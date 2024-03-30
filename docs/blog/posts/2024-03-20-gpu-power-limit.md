@@ -1,6 +1,6 @@
 ---
 title: Power limit for nvidia GPUs
-
+date: 2024-03-20
 tags:
   - linux
   - gpu

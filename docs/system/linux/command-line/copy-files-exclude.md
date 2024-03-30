@@ -1,6 +1,5 @@
 ---
 title: Copy a directory tree with exclusions
-
 tags:
   - linux
 ---
@@ -42,7 +41,7 @@ Use `--exclude` flag in `rsync` to exclude certain folder(s). [^4]
 rsync -av --progress sourcefolder /destinationfolder --exclude thefoldertoexclude --exclude anotherfoldertoexclude
 ```
 
-> [!warning]
+> [!WARNING]
 > The excluded directory paths are relative to the *sourcefolder*.
 
 [^4]: https://stackoverflow.com/questions/4585929/how-to-use-cp-command-to-exclude-a-specific-directory

@@ -48,7 +48,7 @@ How this works: [^1]
 
 ## nbstripout
 
-https://github.com/kynan/nbstripout is a python package to automate these works above.
+https://github.com/kynan/nbstripout is a python package to automatically setting up nbconvert and git filter.
 
 ## nbstripout-fast
 
