@@ -1,5 +1,6 @@
 ---
 title: Convert PPT to TIFF
+date: 2024-03-27
 tags:
   - windows
   - powerpoint
@@ -25,6 +26,5 @@ Windows Registry Editor Version 5.00
 "ExportBitmapResolution"=dword:0000012C
 ```
 
-!!! note "For older MS office suite"
-
-    For older MS office suite, please see the [original article](https://learn.microsoft.com/en-us/office/troubleshoot/powerpoint/change-export-slide-resolution) for the corresponding version number.
+> [!NOTE]
+>  For older MS office suite, please see the [original article](https://learn.microsoft.com/en-us/office/troubleshoot/powerpoint/change-export-slide-resolution) for the corresponding version number.
