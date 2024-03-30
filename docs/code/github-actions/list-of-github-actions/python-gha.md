@@ -7,8 +7,6 @@ tags:
   - devops
 ---
 
-You can use one of the three below
-
 + https://github.com/actions/setup-python
 + https://github.com/mamba-org/setup-micromamba
 
