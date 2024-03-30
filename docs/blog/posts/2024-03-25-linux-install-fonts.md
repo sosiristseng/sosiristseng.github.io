@@ -1,5 +1,6 @@
 ---
 title: Install fonts in Linux
+date: 2024-03-25
 tags:
   - linux
 ---

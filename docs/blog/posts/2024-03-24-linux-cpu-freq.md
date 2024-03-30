@@ -1,5 +1,6 @@
 ---
 title: Set CPU frequency
+date: 2024-03-24
 tags:
   - linux
 ---
@@ -22,7 +23,7 @@ echo 4400000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
 
 ## cpufrequtils
 
-You can also install the tool `cpufrequtils`
+Install `cpufrequtils`
 
 ```bash
 sudo apt install cpufrequtils

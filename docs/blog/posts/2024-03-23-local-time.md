@@ -1,5 +1,6 @@
 ---
 title: Use local time in Linux
+date: 2024-03-23
 tags:
   - linux
 ---
