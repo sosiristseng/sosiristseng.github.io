@@ -28,7 +28,28 @@ steps:
 
 ### Cache Python environment
 
-If you want to cache the whole Python environment, cache the virtual environment folder.[^1][^2]
+You can cache the whole Python environment so `pip install` can be skipped for the same packages.[^1]
+
+```yaml
+- name: Setup Python
+  uses: actions/setup-python@v5
+  id: setup-python
+  with:
+    python-version: '3.x'
+- name: Cache python
+  uses: actions/cache@v4
+  id: cache-py
+  with:
+    key: ${{ runner.os }}-py-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
+    path: ${{ env.pythonLocation }}
+- name: Install Python dependencies
+  if: ${{ steps.cache-py.outputs.cache-hit != 'true' }}
+  run: pip install -r requirements.txt
+```
+
+### Cache venv environment
+
+If you want to cache the whole Python environment, cache the virtual environment folder.[^2]
 
 ```yaml
 - name: Setup Python
