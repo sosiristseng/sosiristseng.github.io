@@ -65,7 +65,7 @@ theme:
     # - navigation.instant.prefetch # Insiders only
     - navigation.instant.progress
     - navigation.prune
-    # - navigation.sections
+    - navigation.sections
     # - navigation.expand
     # - navigation.path # Insiders only
     - navigation.tabs
