@@ -38,14 +38,12 @@ Set environment variable `JULIA_PROJECT=@.` to let Julia automatically load the 
 export JULIA_PROJECT=@.
 ```
 
+> [!INFO]
+> `IJulia.jl`, the Julia kernel for Jupyter notebooks, sets `JULIA_PROJECT=@.` by default. Thus, Jupyter notebooks load their local Julia environments automatically.
 
-!!! info
-
-    `IJulia.jl`, the Julia kernel for Jupyter notebooks, sets `JULIA_PROJECT=@.` by default. Thus, Jupyter notebooks load their local Julia environments automatically.
-
-!!! warning
-
-    Loading local environments unconditionally is unsafe in untrusted sources, as shown in [Nefarious.jl](https://github.com/StefanKarpinski/Nefarious.jl). That is why Julia doesn't run `julia --project=@.` by default.
+> [!WARNING]
+> Loading local environments unconditionally is unsafe for untrusted sources, as shown in [Nefarious.jl](https://github.com/StefanKarpinski/Nefarious.jl).
+> That is why Julia does not run `julia --project=@.` by default.
 
 ### Fully utilize CPU threads
 
@@ -55,7 +53,7 @@ Set environment variable `JULIA_NUM_THREADS=auto` to let Julia use all CPU threa
 export JULIA_NUM_THREADS=auto
 ```
 
-### Customize Conda executable location
+### Customize Python and Conda location
 
 Point the environment variable `CONDA_JL_HOME` to your Conda path. `Conda.jl` and `PyCall.jl` will take the preinstalled Conda instead of downloading a standalone one. For example,
 
@@ -70,15 +68,18 @@ export JULIA_CONDAPKG_BACKEND="Null"
 export JULIA_PYTHONCALL_EXE="${HOME}/conda/bin/python"
 ```
 
-### Load `Revise.jl` at Julia startup
+### Load packages at Julia REPL startup
 
-Add the following lines to `~/.julia/config/startup.jl` after `Revise.jl` is installed
+Add the following lines to `~/.julia/config/startup.jl` after `Revise.jl` and `OhMyREPL.jl` are installed
 
 ```julia title="~/.julia/config/startup.jl"
-try
-    using Revise
-catch e
-    @warn "Error initializing Revise" exception=(e, catch_backtrace())
+atreplinit() do repl
+    try
+        @eval using OhMyREPL
+        @eval using Revise
+    catch e
+        @warn "Error initializing" exception=(e, catch_backtrace())
+    end
 end
 ```
 
@@ -96,10 +97,13 @@ Or run the following commands (heredoc in Linux) to create these two files at on
 
 ```sh
 mkdir -p ~/.julia/config/ && cat >  ~/.julia/config/startup.jl << END
-try
-    using Revise
-catch e
-    @warn "Error initializing Revise" exception=(e, catch_backtrace())
+atreplinit() do repl
+    try
+        @eval using OhMyREPL
+        @eval using Revise
+    catch e
+        @warn "Error initializing" exception=(e, catch_backtrace())
+    end
 end
 END
 
