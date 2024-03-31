@@ -27,6 +27,7 @@ plugins:
   - callouts
   - blog:
       blog_dir: blog
+      blog_toc: true
   - tags:
       tags_file: index.md
       enabled: !ENV [CI, false]
