@@ -47,7 +47,7 @@ tags:
 
 ## GitHub actions
 
-[Hugo in Github actions](../../../code/github-actions/list-of-github-actions/hugo-gha.md)
+[Hugo in Github actions](../../../code/github-actions/hugo-gha.md)
 
 ## Docker image
 

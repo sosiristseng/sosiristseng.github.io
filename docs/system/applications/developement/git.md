@@ -9,7 +9,7 @@ tags:
 The famous [Git](https://git-scm.com/) version control system.
 
 - [Git commands](../../../code/git/index.md)
-- [Git operations in GitHub actions](../../../code/github-actions/list-of-github-actions/git-ops-gha.md)
+- [Git operations in GitHub actions](../../../code/github-actions/git-ops-gha.md)
 
 ## Install
 

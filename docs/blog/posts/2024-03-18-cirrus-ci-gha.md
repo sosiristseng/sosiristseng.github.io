@@ -1,6 +1,6 @@
 ---
 title: Github Action and Cirrus CI
-
+date: 2024-03-18
 tags:
   - github
   - devops
