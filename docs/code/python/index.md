@@ -59,7 +59,7 @@ tags:
 
 ## Python tutorials
 
-- [Learn Python in Y minutes](https://learnxinyminutes.com/docs/python3/)
+- [Learn Python in Y minutes](https://learnxinyminutes.com/docs/python/)
 - [Python cheatsheet](https://github.com/gto76/python-cheatsheet)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/2e/)
 - [Python Course Europe](https://www.python-course.eu/)
