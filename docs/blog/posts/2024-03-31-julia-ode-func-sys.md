@@ -1,5 +1,6 @@
 ---
 title: Get the ODE Function from an ODE system
+date: 2024-03-31
 tags:
   - julia
 ---

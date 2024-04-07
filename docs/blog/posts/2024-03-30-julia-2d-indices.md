@@ -1,5 +1,6 @@
 ---
 title: Get 2D indices from a linear index
+date: 2024-03-30
 tags:
   - julia
 ---

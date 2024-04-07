@@ -1,5 +1,6 @@
 ---
 title: Force display format to PNG
+date: 2024-04-01
 tags:
   - julia
   - visualization
