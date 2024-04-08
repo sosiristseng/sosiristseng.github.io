@@ -56,7 +56,7 @@ effect random_owned_ship = { ship_event = { id = distar.245 } }
 
 Add relics
 ```
-add_relics all
+add_relic all
 ```
 
 Remove a relic, an example
