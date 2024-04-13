@@ -1,7 +1,8 @@
 ---
 title: Computational Cognitive Neuroscience
 
-tags: ["school-notes"]
+tags:
+- school-notes
 ---
 
 Course Notes of Computational Cognitive Neuroscience by Prof. 鄭士康.
@@ -18,7 +19,7 @@ Course Notes of Computational Cognitive Neuroscience by Prof. 鄭士康.
 * Handouts (G suite): https://drive.google.com/drive/u/1/folders/1GOcrwV9lR5Xk4bqPCXhxLc600DXRYl4K
 
 ## Central Questions
-* Could machineㄋ perceive and think like humans?
+* Could machine perceive and think like humans?
 * Turing test
 * Stimuli -> acquire -> store -> transform (process, emotion) -> recall -> response (actions)
 
@@ -33,17 +34,17 @@ Course Notes of Computational Cognitive Neuroscience by Prof. 鄭士康.
 
 * Reductionism
 * Search space of parameters
-* General probelm solver
+* General problem solver
 * Expert systems (symbol and rule-based)
-  * Symbol processing ≢intellegence (Chinese room argument)
+  * Symbol processing ≢ intelligence (Chinese room argument)
   * Does the machine really know semantics from the symbols and rules?
-* Mimicking biological neuronetworks (H&H neuron model) -> spiking neuron network & Hebbian learning
-* Perceptron : Limitations by Minsky (unable to solve XOR probelm) -> 1st winter of AI
+* Mimicking biological neural networks (H&H neuron model) -> spiking neuron network & Hebbian learning
+* Perceptron : Limitations by Minsky (unable to solve XOR problem) -> 1st winter of AI
 * Multilayer and backpropagation: connectionism
-  * Parallel distributed processing (1986): actually neuronetworks (a *taboo* by then)
-* Convolutional neuronal networks (CNNs)
+  * Parallel distributed processing (1986): actually neural networks (a *taboo* by then)
+* Convolution neuronal networks (CNNs)
   * Computer vision
-  * Simlimar to image processing in the visual cortex
+  * Similar to image processing in the visual cortex
   * Decomposition of features: stripes, angles, colors, etc.
   * Does intelligence *emerge* from complex networks?
 * Dynamicism
@@ -51,7 +52,7 @@ Course Notes of Computational Cognitive Neuroscience by Prof. 鄭士康.
   * Feedback system
   * Systems of non-linear DEs
 * Cybernetics: control system for ML (system identification)
-* Bayeian approach : pure statistics regradless of underlying mechanism
+* Bayesian approach : pure statistics regardless of underlying mechanism
 
 ### Biological plausibility
 * Low = little similarity to biological counterpart
@@ -62,11 +63,11 @@ Course Notes of Computational Cognitive Neuroscience by Prof. 鄭士康.
 ### Levels (scales) of nervous system
 * Focused on mesoscopic scale (neurons and synapses) in this course
 
-## Builidng a brain with math models
+## Building a brain with math models
 
 Why?
 
-> Feymann: What I canot create, I do not understand.
+> Feymann: What I cannot create, I do not understand.
 >
 > 1. Understanding brain functions -> health (AD, PD, HD)
 > 2. AI modeling and applications
@@ -101,24 +102,24 @@ www.g2conline.org
 * LEBRA: single equation for a neuron, no spatial components
 * Compartment model of dendrite, soma, and axon.
   * Delay effect (+)
-  * Discretization of the partial differential eqiuation (PDE) model
-  * Could **Delayed Differential Eqautions (DDEs)** used in this context?
+  * Discretization of the partial differential equation (PDE) model
+  * Could **Delayed Differential Equations (DDEs)** used in this context?
 * Data (from fMIR, DTI, ...) rich and theory poor
-* Large-scale models (connectome)
+* Large-scale models (connectomes)
 * Neuromorphic hardware
 
-### NEF (Neural Engineering Network) & SPA (Sementic Pointer Architecture)
+### NEF (Neural Engineering Network) & SPA (Semantic Pointer Architecture)
 
-#### Sementic Pointer
+#### Semantic Pointer
 
-* Sementics important for both symbolic and NN models
+* Semantics important for both symbolic and NN models
 * Example : autoencoder
-  * Dimemsion reduction layer by layer (raw data -> symbols)
+  * Dimension reduction layer by layer (raw data -> symbols)
   * Similar to visual cortex and associative areas
   * Reverse the network to adjust the weights
   * Loss = predicted - input
 
-* **Spaun model**: Autoencoders to preocess multiple sensory inputs as well as motor functions and decision making (transformation, working memory, reward, selection).
+* **Spaun model**: Autoencoders to process multiple sensory inputs as well as motor functions and decision making (transformation, working memory, reward, selection).
 
 * Ewert's Question: How is neural activity coordinated, learned and controlled?
   * Capturing semantics
@@ -126,7 +127,7 @@ www.g2conline.org
   * Controlling information flow?
   * Memory, learning?
 
-#### Embodieed semantics
+#### Embodied semantics
 
 * Neural *firing patterns*
 * High dimensional vector symbolic architectures
@@ -157,7 +158,7 @@ www.g2conline.org
   \rho(t) = \Sigma_{n=1}^N\delta(t - t_i)
   $$
 
-* Indivisual spikes -> Firing rates (in Hz) with a windows (moving average)
+* Individual spikes -> Firing rates (in Hz) with a windows (moving average)
 
 * Similar to pulse density modulation (PDM)
 
@@ -184,7 +185,7 @@ $$
 ### Encoding / decoding
 
 * encoding: stimuli $x(t)$ -> spikes $\delta (t-t_i)$
-* decoding: spikes $\delta (t-t_i)$ -> intepretation of stimuli $\hat x(t)$
+* decoding: spikes $\delta (t-t_i)$ -> interpretation of stimuli $\hat x(t)$
 
 
 ## Neural Physiology
@@ -205,13 +206,13 @@ $$
 * Voltage-gated Na channel: both positive and negative feedback (fast)
 * Voltage-gated K channel: negative feedback (slow)
 * Leaky chloride channel: helping maintaining resting potential (constant)
-* Refractory period (5 ms): avaialble Na fraction is too low for AP
+* Refractory period (5 ms): available Na fraction is too low for AP
 * Nodes of Ranvier and myelin sheath: accelerates AP conduction
 
 ### Neurotransmitters
 
 * Signaling molecules in the synaptic cleft
-* AP -> Ca influx -> vesicle release -> receptor bindin -> graded potentials (EPSP/IPSP) -> recycle / degradation of neurotransmitters
+* AP -> Ca influx -> vesicle release -> receptor binding -> graded potentials (EPSP/IPSP) -> recycle / degradation of neurotransmitters
 
 ## Neural models
 
@@ -273,7 +274,7 @@ e.g. Butterfly effect (chaos system): small deviation of initial conditions > hu
 #### Phase plane analysis
 
 * Stability: Eigenvalues of rhs Jacobian matrix in the steady-state
-* External current (Ie) = 0: single stable steady-state (interscetion of V and w nullclines)
+* External current (Ie) = 0: single stable steady-state (intersection of V and w nullclines)
 * Increasing Ie: shifting V null cline => unstable steady-state (limit cycle)
 * Bifurcation: V vs Ie
 
@@ -308,7 +309,7 @@ e.g. Butterfly effect (chaos system): small deviation of initial conditions > hu
 
 ## Synapse model
 * Synapse = RC low pass filters with time scale = $\tau$
-* $\tau$ is dependent on types of neurotransmittera and receptors
+* $\tau$ is dependent on types of neurotransmitter and receptors
 
 ## Intro to brain
 
@@ -317,16 +318,16 @@ e.g. Butterfly effect (chaos system): small deviation of initial conditions > hu
 * Simple linear algebra (vector and matrix operations)
 * Graph theory: connections
 
-### Reverse enginering the brain
+### Reverse engineering the brain
 
-* engineeringchallenges.org
-* Complexity, scale, connection, plasticiy, low-power
+* `engineeringchallenges.org`
+* Complexity, scale, connection, plasticity, low-power
 * Design: brain scheme; designer: natural selection
 
 ### Why a brain
 
 * To survive and thrive.
-* Brainless (single-celled organisms): simple preceptions and reactions. Some endogenous activity
+* Brainless (single-celled organisms): simple perceptions and reactions. Some endogenous activity
 * Simple brain (C. elegans): aversive response and body movement
   * Connectome routing study (as in EDA) showed 90% of the neurons are in the optimal positions
 * General scheme: sensory -> CNS -> motor (with endogenous states (thoughts) in the CNS)
@@ -340,7 +341,7 @@ e.g. Butterfly effect (chaos system): small deviation of initial conditions > hu
 
 ### Evolution of the brain in Cordates
 
-* Dorsal neural tube -> differentialtion respecting sensory,motor, and inter connections
+* Dorsal neural tube -> differentiation respecting sensory, motor, and inter connections
 
 ### Central pattern generator
 
@@ -354,7 +355,7 @@ e.g. Butterfly effect (chaos system): small deviation of initial conditions > hu
 * Network: model itself
 * Node: input signal
 * Ensemble: neuronss
-* Coonnection: synapses
+* Connection: synapses
 * Probe: output
 * Simulator: simulator (literally)
 
@@ -465,8 +466,8 @@ plt.show()
 
 ## Connectivity analysis
 * Structural: anatomical structures e.g. water diffusion via DTI
-* Functional: statisitc, dynamic weights
-* Effective: causal interactions (presynaptic spikes -> postsynamptic firing)
+* Functional: statistic, dynamic weights
+* Effective: causal interactions (presynaptic spikes -> postsynaptic firing)
 * ref. 因果革命
 
 ### Microscale vs Macroscale
@@ -495,7 +496,7 @@ Same edge probability
 
 #### Modular
 * hierarchial clusters
-* Built by attraction and repulson between nodes
+* Built by attraction and repulsion between nodes
 * In some biological neural networks
 
 #### Small world
@@ -508,7 +509,7 @@ Same edge probability
 * By Eliasmith
 * Intended for constant structures without synaptic plasticity
   * Compared to SNNs (with learning = synaptic plasticity)
-* Nerual compiler (high level function <=> low level spikes)
+* Neural compiler (high level function <=> low level spikes)
 
 ### Central problems
 * Stimuli detection (sensors)
@@ -516,7 +517,7 @@ Same edge probability
   * As spikes (pulse density modulation = PDM)
 * Recall / transform (CNS)
 
-### Heterogeneity in realistic neurla networks
+### Heterogeneity in realistic neural networks
 * Different set of parameters for each neuron in response to stimuli
 * Represented as *tuning curves*
 
@@ -531,22 +532,22 @@ Same edge probability
 * Action potential: digital, non-linear encoding (axon hillock)
 * Graded potential: analog, linear decoding (dendrite)
 * Compared to ANNs:
-  * dendrite = wieghted sum from other neurons
+  * dendrite = weighted sum from other neurons
   * axon hillock: non-linear activation function (real number output)
 * Examples: Physical values: heat, light, velocity, position
   * mimicking sensory neurons = transducer producing pulse signals
 
 #### Transformation of encoding information by neuron clusters
 
-#### Neual dynamics for an ensemble of neurons
-HH mdoel, LIF, control theory
+#### Neural dynamics for an ensemble of neurons
+HH model, LIF, control theory
 
 #### PS
 * Neurons are noisy
 * In the NEF: the basic unit is an ensemble of neurons
 * Post synaptic current: approximated by one time constant
 
-## Neuro representation
+## Neural representation
 
 ### Encoding / decoding
 * Ensemble = Digital-analog converter like digital audio processing
@@ -559,28 +560,28 @@ HH mdoel, LIF, control theory
   * $J_{th}$ (threshold current)
   * $\tau_{ref}$ (refractory period → maximal spiking rate)
 
-### Populational encoding
+### Population encoding
 A group of neurons determine the value by their spikes collectively.
 Contrary to *sparse coding*.
 
 #### Some linear algebra
-* Any vector couldbe decomposed as an unique linear cmobination of basis vectors
-* The most convienent ones are orthogonal bases e.g. sin / cos in Fourier series
-* The stimuli through the ensemble could be estimated from the linear combination of wieghts of neurons with different tuning curves
-* Simpleset : two neuron model (on and off)
+* Any vector could be decomposed as an unique linear combination of basis vectors
+* The most convenient ones are orthogonal bases e.g. sin / cos in Fourier series
+* The stimuli through the ensemble could be estimated from the linear combination of weights of neurons with different tuning curves
+* Simplest : two neuron model (on and off)
 * Adding more and more neurons differing in tuning curves (more bases) = more accurate representation
 
 #### Optimal ensemble linear encoder
 * Calculated by solving a linear system
 * Nengo derives the best set of weights for an ensemble of neurons automatically
-* Adding Gaussian noise in fact enhanced the robustness of the matrix of tuning cuves
+* Adding Gaussian noise in fact enhanced the robustness of the matrix of tuning curves
 
 ### Example: horizontal eye position in NEF
 * System description
   * Max firing rate = 300 Hz
   * On-off neurons
   * Goal: linear tuning curve
-* How neurons work in abducens motor neuron: an integrator
+* How neurons work in abducent motor neuron: an integrator
 * Populations, noise, and constraints
 * Solution errors associated to the number of neurons
   * Noise error
@@ -619,10 +620,10 @@ Contrary to *sparse coding*.
 ### Addition
 * c = a + b
 * nengo: `Connection(A, C); Connection(B, C)`
-* Adding two vectors: just change `dimesion`
+* Adding two vectors: just change `dimension`
 
 ### Nonlinear transformation
-* nengo: define a vector transformation functon  `f` => `Connection(A, B, function=f)`
+* nengo: define a vector transformation function  `f` => `Connection(A, B, function=f)`
 
 ### Negative weight
 * An ensemble of inhibitory neurons
@@ -670,7 +671,7 @@ Environment (stimulation) (analog signal) -> sensory transduction (feature extra
 * The experience in the association cortex (not necessary the same as the outside world)
 * Book: making uo the mind
 
-### Psychophysica
+### Psychophysical
 e.g. Psychoacoustics: used in MP3 compression
 * Threshold in quiet / noisy environment
 * Equal-loudness contour in different frequencies
@@ -700,7 +701,7 @@ Optic nerve -> LGN (thalamus) -> V1 -> V2 / V4 -> dorsal (metric) or ventral (id
 * PIT: More complex features e.g. fusiform face area for fast facial recognition
 * AIT: Classification of objects regardless of size, color, viewing angle...
   * Hyperdimensional vector (EECS) = semantic pointer (NEF)
-  * Neural emsemble of 20000 in monkeys
+  * Neural ensemble of 20000 in monkeys
 * Thus the functions of the temporal lobe = categorizing the world:
   * Primary and associative auditory
   * Labeling visual objects
@@ -714,7 +715,7 @@ Optic nerve -> LGN (thalamus) -> V1 -> V2 / V4 -> dorsal (metric) or ventral (id
 * Motion detection and information for further actions
 
 ### Ambiguous figures / optical illusions
-Forms 2 attractors (intepretations)
+Forms 2 attractors (interpretations)
 
 e.g Necker cube
 
@@ -724,12 +725,12 @@ e.g Necker cube
 
 ### Object perception
 * In biology: robust recognition despite color, viewing angle differences (object consistency)
-* View-dependent frame of reference vs. View-invariant (grammer pattern) frame of reference
+* View-dependent frame of reference vs. View-invariant (grammar pattern) frame of reference
 
 ## Autoencoders
 
 ### Ewert's central problems
-* Preception: encoding stimuli from analog to digital spikes
+* Perception: encoding stimuli from analog to digital spikes
 * Central processing: transformation and recall of information, action selection
 * Action execution: decoding digital spikes to response
 
@@ -746,7 +747,7 @@ e.g Necker cube
 * Cross validation to reduce overfitting and increase testing accuracy
   * K-fold cross validation
 * SVM: once worked better than ANNs
-  * Converting low dim but complex border to higer dim. simpler (even linear) border by trasnformation of data points
+  * Converting low dim but complex border to higher dim. simpler (even linear) border by transformation of data points
 
 ### Classical cognitive systems (expert system)
 * Symbols and syntax processing (LISP)
@@ -762,7 +763,7 @@ e.g Necker cube
 * Equals to hyperdimensional vector in the mathematical sense
 * Presented by an ensemble of neurons in biology
 * The semantic space (hyperdimensional space) holds information features
-  * Needs enough dimesions for the overwhelming number of concepts in the world
+  * Needs enough dimensions for the overwhelming number of concepts in the world
 * Pointers = symbols = general concepts
   * Indirect addressing of complex information
   * Shallow and deep manipulation (dual coding theory)
@@ -781,14 +782,14 @@ Circular convolution for syntax processing
   * Problem of variable: blue fly (n.) vs. blue fly(v.): binding restrictions
   * Binding in working memory vs long-term memory
 
-One could coombine multiple sources of input (word, visual, smell, auditory)
+One could combine multiple sources of input (word, visual, smell, auditory)
 
 ## Action control
 
 Behavioral pattern / coordination
 
 ### Affordance competition hypothesis
-* Affordance part: continously updating the status
+* Affordance part: continuously updating the status
 * Competition part: select best action by utility (spiking activity)
 In biology:
 * Premotor / supplementary motor cortex
@@ -805,7 +806,7 @@ In biology:
   * Error-driven (similar to back propagation): supervised learning
 * Hippocampus: self-organizing (Hebbian, STDP): unsupervised learning
 
-### Neural optimal control hierachy (NOCH)
+### Neural optimal control hierarchy (NOCH)
 Computational model by students of Eliasmith, including:
 * Cortex (premotor)
 * cerebellum
@@ -843,7 +844,7 @@ The less utility difference, the longer the latency.
 * Parametric study on computational models
 
 ### Tower of Hanoi task
-* Perceptural strategy from symbolic calculation is not biologically plausible in Eliasmith paper (not learning the rule).
+* Perceptual strategy from symbolic calculation is not biologically plausible in Eliasmith paper (not learning the rule).
 * 150k neurons
 
 ### ACT-R architecture
@@ -854,7 +855,7 @@ Comparative to fMRI BOLD signal.
 
 ## Learning and memory
 
-Ref: Neuroeconomics, declision making and the brain.
+Ref: Neuroeconomics, decision making and the brain.
 
 Learning: stimulus altered behavior. Not hardwired.
 
@@ -873,7 +874,7 @@ Memory: storage of learned information.
   * Events (episodic): 5W1H, past experience
   * Facts (semantic): grammar, common sense (context-free)
 * Non-declarative memory
-  * Procedual: basal ganglia
+  * Procedural: basal ganglia
   * Perceptual priming: short path for recall for previous stimuli
   * Conditioning: cerebellum
   * Non-associative: reflex
@@ -901,10 +902,10 @@ Dentate gyrus -> CA3 -> CA1
 
 #### Inside LTP / LTD
 Neurotransmitters
-* Glutamate (AMPAR, NMDAR) : excitary
+* Glutamate (AMPAR, NMDAR) : excitatory
 * GABA: inhibitory
 
-Second messengers (mid-term effcts)
+Second messengers (mid-term effects)
 
 ### Learning rules
 #### Hebbian
@@ -939,8 +940,8 @@ E.g. operant conditioning (Skinner)
 * Expected value $E[ x ]$
 * Expected utility $U(E[ x ]) \approx log(E[ x ])$
 * Basic axiomatic form (Pareto)
-* Weak axioms of revealed perference (WARP)
-* Generated axioms of revealed perference (GARP)
+* Weak axioms of revealed preference (WARP)
+* Generated axioms of revealed preference (GARP)
 
 #### Value function V(s) and prediction error
 
@@ -958,7 +959,7 @@ Dopamine reward pathway for movement and motivation.
 Increased dopamine secretion for a sudden reward. The same as Error: $\delta_k = r_k - V_k(s_k)$
 
 #### Decision making
-* Problem: no immediate ffeedback (reward) => need to think about the future and maximize aggregate reward
+* Problem: no immediate feedback (reward) => need to think about the future and maximize aggregate reward
 * Bellman equation: reduction of recursive reward with temporal difference ($V_k(S_{t+1})- V_k(S_t)$)
 
   $V(S_t) = r(S_t) + E[V(S_{t+1})|S_t]$
@@ -974,13 +975,14 @@ Increased dopamine secretion for a sudden reward. The same as Error: $\delta_k =
   $\delta_t = r_t \gamma_{max}Q_{t+1}(S_t, a_t) - Q_{t}(S_t, a_t)$
 
 ## SPAUN model
+
 SPAUN = Semantic pointer architecture unified network, all things put together
 
 * Single perceptual system (eye)
 * Single motor system (arm)
 * Background knowledge (SPA)
 * Abilities
-  * Smiliar to human in working mem limitations (3-7)
+  * Similar to human in working mem limitations (3-7)
   * Behavior flexibility
   * Adaptation to reward
   * Confusion to invalid input

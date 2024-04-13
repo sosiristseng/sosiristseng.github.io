@@ -1,12 +1,12 @@
 ---
 title: Academic Writing Week 4
-
-tags: ["school-notes"]
+tags:
+- school-notes
 ---
 
 Academic writing workshop lectured by Steven Wallace.
 
-Also see the blog in his techinical writing editor company: <https://www.editing.tw/blog>
+Also see the blog in his technical writing editor company: <https://www.editing.tw/blog>
 
 <!--more-->
 
@@ -30,8 +30,8 @@ Show them you are interested in their studies. Exchanging email addresses is eve
 ### Abstract
 - Match the keyword for survive the screening and for search engines
 - Word limit for abstract is around 300 words (2 sentences for each section)
-- Do not use Abbrs. uncommon acronyms, symbols difficult to explain
-- Cite one new research for novelty, one important person in your field, and one conference reviewer (e.g. techincal editor) for connection.
+- Do not use abbreviations. uncommon acronyms, symbols difficult to explain
+- Cite one new research for novelty, one important person in your field, and one conference reviewer (e.g. technical editor) for connection.
 
 ## How to write a paper
 
@@ -48,7 +48,7 @@ Methods and results -> (target a journal) -> Intro and discussion -> title
   - Motivation
   - Literature review for terms and definitions
   - Knowledge gap
-  - Research qustions (Research aim)
+  - Research questions (Research aim)
 - Only cite for
   - Context (motivation)
   - Keywords (lit. review)
@@ -69,9 +69,7 @@ Methods and results -> (target a journal) -> Intro and discussion -> title
 - Present perfect: for multiple previous studies (e.g. knowledge gaps)
 - Past: for a single previous study and your methods / results
 
-
-
-### Meterials and methods
+### Materials and methods
 
 - Past tense, except for populations and facts
 - Cite for methodology only
@@ -86,7 +84,7 @@ Methods and results -> (target a journal) -> Intro and discussion -> title
 
 ### Results
 
-Figures and table are here to save your text, not to replicatd them.
+Figures and table are here to save your text, not to replicate them.
 - Use present tense in the descriptions
 - legends should be standalone
 - Put related data into subplots
@@ -98,7 +96,7 @@ What does your results mean?
 
 - Note and difference of strong vs weak verbs: e.g. found (strong facts) vs. suggested (weak implications)
 - Do reverse lit. review to state the connection of prev. work and yours
-- Future works to encourage other to join force and you can get cited. Also get relevent to the reality.
+- Future works to encourage other to join force and you can get cited. Also get relevant to the reality.
 
 ### Acknowledgements
 - Ones who helped you and cheered you up

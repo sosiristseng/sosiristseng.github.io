@@ -36,12 +36,12 @@ Course notes of Applied electricity by Lecturer 林冠中.
 ### Current
 
 * Flow of *positive* charge versus time: $i(t) = \frac{dq}{dt}$
-* 1 Ampere = 1 Columb per second
+* 1 Ampere = 1 Coulomb per second
 
 ### Voltage
 
-* Change in energy (in Joules) from moving 1 Columb of charge
-* 1 Volt = 1 Joule change per Columb: $V = \frac{Q}{C}$
+* Change in energy (in Joules) from moving 1 Coulomb of charge
+* 1 Volt = 1 Joule change per Coulomb: $V = \frac{Q}{C}$
 * Change in electrical potential ($φA - φB$)
 * Ground: V = 0 (manually set)
 * $V_{ab} = V_{a} - V_{b}$
@@ -172,7 +172,7 @@ When $R_{Load} = R_{TH}$, the power is maximum $P = V_{TH}^2 / (4R_{TH}) $
 
 ### Complex algebra
 
-* Euler's formula: $e^{j\theta} = cos(\theta) + jsin(\theta)$
+* Euler's formula: $e^{j\theta} = cos(\theta) + sin(\theta)$
 * Frequency term ($e^{j\omega t}$) is usually omitted in favor of angle notation.
 * Multiplication: angle addition; division: angle subtraction for waveforms of the same freq.
 
@@ -211,7 +211,7 @@ When $R_{Load} = R_{TH}$, the power is maximum $P = V_{TH}^2 / (4R_{TH}) $
 
 * Current is continuous, while voltage is not.
 * For uncharged inductor, initial current is zero (open circuit); then approaches terminal current upon charging. The steady-state is short circuit.
-* Discharging: positive current and negative voltage (Lentz law).
+* Discharging: positive current and negative voltage (Lenz's law).
 * Time scale $\tau_{L} = L/R$
   * Charging transient: $v_{L} = Ee^{-t/\tau_{L}}$, $i_{L} = (E - v_{L}) / R$
   * Discharging transient: $v_{L} = -I_0Re^{-t/\tau_{L}}$, $i_{L} = I_0e^{-t/\tau_{L}}$
@@ -286,7 +286,7 @@ $S = P_{app} cos(\theta_v - \theta_i) + jP_{app} * sin(\theta_v - \theta_i)$
 * Two current sources: self inductance plus mutual inductance
   * $v_1 = L_1\frac{di_1}{dt} + L_{12}\frac{di_2}{dt}$
   * $v_2 = L_{21}\frac{di_1}{dt} + L_{2}\frac{di_2}{dt}$
-  * Beware the dot (current direction of the input and output): turn them into statndard circuit
+  * Beware the dot (current direction of the input and output): turn them into standard circuit
   * The linear model states $L_{21} = L_{12} = M$
 * Mutual inductance in series inductors: $L_{eq} = L_1 + L_2 \pm 2M$
 * Mutual inductance in parallel inductors: $L_{eq} = \frac{L_1L_2 - M^2}{L_1 + L_2 \mp 2M}$
@@ -386,7 +386,7 @@ $H(s) = K_0 \frac{(s-z_1)(s-z_2)...}{(s-p_1)(s-p_2)...}$
 - Infinite [open-loop gain](https://en.wikipedia.org/wiki/Open-loop_gain) G = $v_{out} / v_{in}$
 - Infinite [input impedance](https://en.wikipedia.org/wiki/Input_impedance) $R_{in}$, thus zero input current
 - Zero [input offset voltage](https://en.wikipedia.org/wiki/Input_offset_voltage)
-- Infinite output voltage range, not clipped by supllied voltage
+- Infinite output voltage range, not clipped by supplied voltage
 - Infinite [bandwidth](https://en.wikipedia.org/wiki/Bandwidth_(signal_processing)) with zero [phase shift](https://en.wikipedia.org/wiki/Phase_shift) and infinite [slew rate](https://en.wikipedia.org/wiki/Slew_rate)
 - Zero $R_{out}$, [output impedance](https://en.wikipedia.org/wiki/Output_impedance)
 - Zero [noise](https://en.wikipedia.org/wiki/Electronic_noise)
@@ -426,7 +426,7 @@ $L =  C_4 R_1 R_3 R_5 / R_2$
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Band_gap_comparison.svg/2000px-Band_gap_comparison.svg.png)
 
-* Band gap energydifference $E_{g}$ = $E_{c}$ - $E_{v}$
+* Band gap energy difference $E_{g}$ = $E_{c}$ - $E_{v}$
   * Insulators: > 5 eV
   * Semiconductors: smaller gap, a small amount of electrons escape from valence band to the conduction band
   * Conductors (metal, graphite): overlap (no gap)
@@ -437,7 +437,7 @@ $L =  C_4 R_1 R_3 R_5 / R_2$
 
 ### Carriers
 
-* Electrons (e-) in the conduction band as weel as the vacancies in the valence band (holes, h+)
+* Electrons (e-) in the conduction band as well as the vacancies in the valence band (holes, h+)
 * For intrinsic semiconductors, [motility](https://en.wikipedia.org/wiki/Electron_mobility) factor $\mu$: GaN (GaAs) >Ge > Si, parallel with conductivity
 * Enriched by doping (increase both $\mu$ and conductivity): making [extrinsic semiconductors](https://en.wikipedia.org/wiki/Extrinsic_semiconductor)
   * Doping group V elements (*donor* impurities): electrons are major carriers (**N-type**)
@@ -474,7 +474,7 @@ Assuming there are internal resistance ($R_D$), threshold voltage ($V_D$).
 * For $V \le V_D$, open circuit.
 * For $V \geq V_D$, equivalent to a reverse voltage source of $V_D$.
 
-1. Ideal diodes: $R_D = 0$, $V_D = 0$. Foward bias: short circuit. Reverse bias: open circuit.
+1. Ideal diodes: $R_D = 0$, $V_D = 0$. Forward bias: short circuit. Reverse bias: open circuit.
 2. With barrier voltage (Si = 0.6~0.7 V; Ge = 0.2~0.3V): $R_D = 0$, $V_D \neq 0$.
 3. Practical diodes: $R_D \neq 0$, $V_D \neq 0$
 
@@ -556,5 +556,5 @@ One could use the fact that $I_B$ is very small ($\mu A$) compared to other curr
 
 Voltage control devices.
 
-* Gate voltage $V_{GS}$ is greatethan threshold ($V_t$): low resistance, (ideally) short circuit.
+* Gate voltage $V_{GS}$ is greater than threshold ($V_t$): low resistance, (ideally) short circuit.
 * Otherwise, high resistance, (ideally) open circuit.

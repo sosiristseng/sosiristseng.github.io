@@ -21,10 +21,11 @@ Course notes of Super-resolution microscopy.
 ## Photonics
 
 ### Ray optics
-When lenght scale of the instrument i smuch larger than that of light wavelength.
+When length scale of the instrument is much larger than that of light wavelength.
 Neither wave properties (diffraction, interference) nor photon ones.
-Optical pathlength = line integral from one point to another, with respect to refraction index (n)
+Optical path length = line integral from one point to another, with respect to refraction index (n)
 $$\int_A^B n(r)ds$$
+
 #### Fermat's principle
 Light tries to tale minimal travel time
 Snell's law:
@@ -36,16 +37,16 @@ Wavefront and wavelets: explains refraction, diffraction and interference
 ### Total internal reflection
 Dense material to loose material.
 With little energy loss (<0.1%) as evanescent wave, penetration depth about 100-200 nm.
-When incidence angle $\theta >$ the critial angle $\theta_c = sin^{-1}(\frac{n_2}{n_1})$
-Used in fiber optics and qsuperresolution microscope.
+When incidence angle $\theta >$ the critical angle $\theta_c = sin^{-1}(\frac{n_2}{n_1})$
+Used in fiber optics and superresolution microscope.
 
-### Nagative-index metamaterials
+### Negative-index metamaterials
 $$
 n = \left( \frac{\epsilon\mu}{\epsilon_0\mu_0}  \right)^{1/2} \in \mathbb{C}
 $$
 
 Superlensing breaking through the diffraction limit.
-n is requency-dependent
+n is frequency-dependent
 
 ### Spherical mirrors
 * Approximation of the 'perfect' parabolic mirror at small angles
@@ -94,7 +95,7 @@ Components as 2 by 2 matrix.
 
 
 ### Wave equation
-2nd derivative of space proprotional to that of time
+2nd derivative of space proportional to that of time
   u: space; t: time; v: phase velocity; k: wave number; $\omega$: angular frequency; n: refractive index
 
 $$
@@ -126,7 +127,7 @@ U (r) = a(r)exp(i\phi(r)) \cr
 \end{aligned}
 $$
 
-### Wavefonts
+### Waterfronts
 * surfaces of constant phase (等相位面)
 
 * Plane waves in media with refractive index n
@@ -149,7 +150,7 @@ r &= \sqrt{x^2 + y^2 + z^2}
 $$
 
 
-**Fresnal Approximation**: Paraaxial ($z^2 >> (x^2 + y^2)$): Spherical -> paraboloidal -> planar wave
+**Fresnel Approximation**: Paraaxial ($z^2 >> (x^2 + y^2)$): Spherical -> paraboloidal -> planar wave
 
 $$
 \begin{aligned}
@@ -220,7 +221,7 @@ $$
   * Not focused on a single point like in ray optics
 
 ### Higher order modes (TEM (l,m))
-* Laguerre-Gaussion beams -> important in superresolution.
+* Laguerre-Gaussian beams -> important in superresolution.
 
 ## Fourier Optics
 
@@ -239,7 +240,7 @@ $$U(x,y,z) = A \cdot exp(-j(k_xx+k_yy+k_zz))$$
 Where
 * wave vector $\textbf{k} = (k_x, k_y, k_z)$
 * wave length $\lambda$
-* wavenumber $k = \sqrt{k_x^2 + k_y^2 + k_z^2} = \frac{2\pi}{\lambda}$
+* wave number $k = \sqrt{k_x^2 + k_y^2 + k_z^2} = \frac{2\pi}{\lambda}$
 
 For paraxial waves
 
@@ -264,10 +265,10 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 #### Circular aperture
 * Bessel function, Airy pattern
 * $\theta = 1.22\frac{\lambda}{D}$: angle of the Airy disk
-  * Focused optical beam throught an aperture: $\theta = 1.22\frac{f\lambda}{D}$:
+  * Focused optical beam through an aperture: $\theta = 1.22\frac{f\lambda}{D}$:
 #### 4-F imaging system
-* Original image -> lens (FT) -> (spatial freqs.) -> lens(iFT) -> perfect image (in theory)
-* Filtering of higher spatial freqs: less detailed image, less noise
+* Original image -> lens (FT) -> (spatial frequencies) -> lens(iFT) -> perfect image (in theory)
+* Filtering of higher spatial frequencies: less detailed image, less noise
 * Spatial filtering: *cleaning* laser beams
 
 ### Transfer function of free space
@@ -285,13 +286,13 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 ### Fiber optics
 * Low-loss
 * Light could *bend* inside it
-* Single-mode fiber (small core): Gaussain wave only
+* Single-mode fiber (small core): Gaussian wave only
 * Multimode fiber (larger core): higher order light source
 * Relation to numerical aperture (NA)
   * Acceptance angle of the fiber: $\theta_a = sin^{-1}(NA)$
   * Larger NA: more higher order information, more noise
   * Smaller NA: $V = 2\pi\frac{a}{\lambda_0}NA < 2.405$. Gaussian wave only
-* Polariztion-maintaining fibers
+* Polarization-maintaining fibers
 
 ## Quantum optics
 * Quantum electrodynamics (QED)
@@ -299,31 +300,29 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
   * Typical light source: more than trillion photons per second
   * $E (eV) = \frac{1.24}{\lambda_0(\mu m)}$
 * Momentum carried by a photon: $p = hk$
-* Probability of photon position or the squared magnitude of the SWE (indivisual behavior) is directly proportional to light intensity (group behavior)
+* Probability of photon position or the squared magnitude of the SWE (individual behavior) is directly proportional to light intensity (group behavior)
   * At smaller n : the interference pattern looks random (randomness of photon flow)
   * At larger n: the interference pattern is more similar to what we see in the macroscale
-* Poisson distribution (discrete ranomness with rate = photon flux)
+* Poisson distribution (discrete randomness with rate = photon flux)
   * mean = variance
   * SNR = mean^2 / variance = mean
-### Schroedinger wave equation (SWE)
-* Similar to solve for eigenvalues => discrete solutions => quantitized energy levels
+### Schrodinger wave equation (SWE)
+* Similar to solve for eigenvalues => discrete solutions => quantized energy levels
 * Particle in a well / atoms with a single electron => standing wave (discrete solutions)
 * Multi-electron: no analytical solutions
-
-
 
 ## Photons and matter
 * Photon absorption and release: jumping in energy levels
 * Rotational : microwave to far-infrared
 * Vibrational : IR e.g. CO2 laser
 * Electronic : visible to UV
-* Photon absorption: elcetron jump up in energy level
-* Photon emmision: Spontaneous vs stimulated (laser)
+* Photon absorption: electron jump up in energy level
+* Photon emission: Spontaneous vs stimulated (laser)
 
 ## Occupation of energy levels
 * Boltzmann distribution
-* Pumping enegy: population inversion
-  * Laser stimulated emmision
+* Pumping energy: population inversion
+  * Laser stimulated emission
 
 ## Luminescence
 - Cathodo- (CRT)
@@ -344,11 +343,11 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 ## Light scattering
 * Photoluminescence: real excited states (resonant)
 * Scattering: virtual excited states (non-resonant)
-  * Rayleigh: same energy (elastic)
+  * Rayleigh scattering: same energy (elastic)
     * Particle size much smaller than the photon wavelength
     * Reason behind blue sky
-    * vs Mie scatttering particle size comparable to photon wavelength
-  * Raman
+    * vs Mie scattering particle size comparable to photon wavelength
+  * Raman scattering
     * Stokes: Loss energy
     * Ani-Stokes: Gain energy
     * Molecular signature
@@ -359,10 +358,10 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 
 ## Eyes
 * 380 nm ~ 710 nm
-* theshold of vision: 10 photons (a cluster of rod cells)
+* threshold of vision: 10 photons (a cluster of rod cells)
 * Logarithmic perception: Weber-Fechner Law (like hearing)
 * Single lens: spherical and chromatic aberration inevitable
-* Astigmatism: directional abberation
+* Astigmatism: directional aberration
 * Pupil (Aperture)
   * Small pupil: less spherical and chromatic aberration (paraxial), less brightness and more diffraction
   * Large pupil: more brightness, more spherical and chromatic aberration
@@ -370,8 +369,8 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 * Viewing angle: the *perceived* size
 
 ## Length scale of microscopes
-* Resiolution limit of regular light microscope: 200nm
-* Clear organnels structure: 30nm
+* Resolution limit of regular light microscope: 200nm
+* Clear organelles structure: 30nm
 
 ## Geometrical optics of a thin lens
 * Lens equation: $\frac{1}{f} = \frac{1}{a} + \frac{1}{b}$
@@ -379,7 +378,7 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 * Virtual image: divergent rays forming a real image on the retina due to the lens
 * Compound microscope: M = $M_{obj}$ * $M_{eye}$
 *
-### Infinity-corrected mircoscope
+### Infinity-corrected microscope
 * Object on the focal plane of the objective lens
 * Parallel rays from the objective is converged by the tube lens
 * Magnification: reference tube length (160-200mm) divided by the focal length of the objective
@@ -388,9 +387,9 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 
 ## Microscope anatomy and design
 
-* The most important: resolving power (distinguish between two points) = numericalaperture (NA)
+* The most important: resolving power (distinguish between two points) = numerical aperture (NA)
 * 2nd: Contrast : object v.s. background (noise) signal strength
-* 3rd: Magnificaition: $M_{obj}$ * $M_{eye}$
+* 3rd: Magnification: $M_{obj}$ * $M_{eye}$
 
 ### Anatomy
 
@@ -416,19 +415,19 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 ## Optical aberrations
 ### Spherical aberrations
 * Paraxial and peripheral rays have different focal planes
-* Assymetry in unfocused images
+* Asymmetry in unfocused images
 * Corrected by
   * 2 plano-convex lenses facing each other
   * meniscus lenses
   * lenses with different radii
   * doubling with another lens with opposing degree of spherical aberration
 ### Chromatic aberrations
-* Different refractive index for different wavelengthes
+* Different refractive index for different wavelengths
 * Corrected by
   * Doubling with a lens with a different material and shape
   * Achromat: corrected for 2 wavelengths
-  * Apochromat: corrected for at least 3 wavelengths
-  * Flunar (semi-apochromat)
+  * Apochromatic: corrected for at least 3 wavelengths
+  * Flunar (semi-apochromatic)
 ### Astigmatism
 * Different directional plane, different foci
 * Not in perfect alignment (off-axis) / curvature of field
@@ -439,7 +438,7 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 * Off-axis aberration (misalignment)
 ### Field Curvature
 * Thin flat object -> image with edges curving towards lens
-* Cause: difference of lengthes of light paths
+* Cause: difference of lengths of light paths
 * Esp. in high NA
 * Planar view objectives correct this
 ### Distortion
@@ -462,7 +461,7 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
   * Active control
 
 ### Ergonomics
-* Protect scietists' eyes, neck, and shoulder
+* Protect scientists' eyes, neck, and shoulder
 
 ## Objective
 * The most important part in a microscope
@@ -470,14 +469,14 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 ### Objective class
 * More corrections, more expensive
 * Achromat: 1
-* Semi-apochromat: 2-3
-* Apochromat: 5-10 cost
+* Semi-apochromatic: 2-3
+* Apochromatic: 5-10 cost
 
 ### Labels on the objective
 * numerical aperture (NA): resolving power (collected photons)
 * magnification (e.g. 10x): field of view
-* colorcorrection: Achromat / Semi-apochromat (Neofluar / fluotar) / Apochromat
-* gimmersion: air / water / oil
+* color correction: Achromat / Semi-apochromat (Neofluar / fluotar) / Apochromat
+* immersion: air / water / oil
 * free working distance
 * cover slip thickness (usually 170 μm)
 
@@ -509,9 +508,9 @@ Axial spatial resolution (z): usually worse (~700 nm)
 
 ### Illumination (lamp)
 * Tungsten: 300-1500nm (reddish), dimmer
-* Tungsten-halogen lamp: stable spctrum and bright
+* Tungsten-halogen lamp: stable spectrum and bright
 * Mercury lamp: 5 spectral peaks, 200hrs
-* Meta-halide lamp: same spectral properties as the mercury lamp, latts 2000 hrs
+* Meta-halide lamp: same spectral properties as the mercury lamp, lasts 2000 hrs
 * Xenon lamp: more constant illumination across wavelengths, 1000 hrs
 * LED: small, stable, efficient, intense, multiple colors, quick to switch, long-lasting (10000 hrs)
 
@@ -528,21 +527,21 @@ Axial spatial resolution (z): usually worse (~700 nm)
 ### Contrast
 * Signal strength of object vs background
 * Human eye limit: 2% (dynamic range = 50x, 5-6 bits)
-* Improved by staining (including fluorescence) and lighting techiniques
+* Improved by staining (including fluorescence) and lighting techniques
 #### Interactions with the specimen
 * Absorption / transmission / reflection: produce contrast (amplitude objects)
-* scattering (irregular) / diffraction : edge constrast enhancement
+* scattering (irregular) / diffraction : edge contrast enhancement
 * Refraction: difference in refractive index (n)
 * Polarization: DIC (differential interference contrast) with two coherent beam and Wollaston prisms
 * Phase change: phase contrast (shifting phases)/ phase interference
 * Fluorescence: achieves superresolution
   * Absorption and release of photons (time scale of 1fs to 1ns)
-  * Great resolution, constrast, sensitivity and specificity
+  * Great resolution, contrast, sensitivity and specificity
   * Live cell imaging
   * Various labels (with different wavelength)
 #### Bright vs Dark field
 * Bright field : darker specimen than the background, lower contrast
-* Dark field (by oblique illumination): birghter specimen than the background, higher contrast
+* Dark field (by oblique illumination): brighter specimen than the background, higher contrast
   * transmitted light fall outside the objective, scattered light only
 
 ## Fluorescence microscopy
@@ -552,7 +551,7 @@ Axial spatial resolution (z): usually worse (~700 nm)
 * specific: labeling agent dependent
 * multiple labeling at once with different wavelength
 * versatile
-* Live imaging: cell metabolsim, protein kinetics
+* Live imaging: cell metabolism, protein kinetics
 * Molecular interaction: FRET
 * Relatively cheap and safe
 
@@ -561,23 +560,23 @@ Axial spatial resolution (z): usually worse (~700 nm)
 * Fluorescence: electrons falling back to the ground state
 * Some relaxation by vibrational energy levels (Strokes shift), or non-photogenic energy shifts
   * Absorb / emit a range of wavelengths with abs. peak
-  * emittedwavelength is usually longer than absorbed
+  * emitted wavelength is usually longer than absorbed
 * Time scale: 1fs to 1ns
 * Phosphorescence: singlet -> triplet -> singlet electron (spin-forbidden), much longer time scale (in seconds)
 
 ### Fluorophore
 * Conjugated pi bonds providing the electronic energy levels from UV to IR
-* Fluorescence lifetime:depdens on the type of fluorophores. e.g. FLIM
+* Fluorescence lifetime:depend on the type of fluorophores. e.g. FLIM
 * Photobleaching: irreversibly destroyed after 10000 - 100000 absorption/emission cycles
-  * FRAP: measuinge diffusion rate
+  * FRAP: measuring diffusion rate
 * Quenching / blinking
-  * Reversible supression of emission
+  * Reversible suppression of emission
   * PALM / STORM (single molecule microscopy)
-* Emission tail: increased crostalk to others
-* Efficiency (Birghtness):  $\Phi\epsilon_{max}$
+* Emission tail: increased crosstalk to others
+* Efficiency (Brightness):  $\Phi\epsilon_{max}$
   * Quantum yield (Φ)
-  * Molarextinction coef. ($\epsilon_{max}$)
-  * The best one: quantum dots (alos the most versatile)
+  * Molar extinction coef. ($\epsilon_{max}$)
+  * The best one: quantum dots (also the most versatile)
 
 ### Fluorescence microscope
 * epi illumination is more suitable for biology
@@ -585,19 +584,19 @@ Axial spatial resolution (z): usually worse (~700 nm)
   * Increased contrast (reduced background)
 * transmitted light are outside field of view (only see fluorescence photons)
 * Filter sets: one for excitation + one for emission + one dichromic mirror
-  * May need to design excitation / emssion bands for multiple fluorophores
+  * May need to design excitation / emission bands for multiple fluorophores
 
 ### Fluorophores
 * Smaller = better spatial resolution
 * May disrupt normal cellular function
-* Lables: organic dye (1 nm), protein (3 nm), quantum dots (10 nm), gold particles (100 nm)
+* Labels: organic dye (1 nm), protein (3 nm), quantum dots (10 nm), gold particles (100 nm)
 * Specificity molecules: Antibody (15 nm), Fab, Streptavidin, Nanobody (3 nm)
   * May have secondary ones (making the entire dot even bigger)
 * Absorption / emission wavelengths
 * Stokes shift
 * Molar extinction coefficient / quantum yield = brightness
 * Toxicity
-* Satuartion
+* Saturation
 * Environment (pH)
 
 ### Fluorescent protein: e.g. GFP
@@ -673,7 +672,7 @@ Axial spatial resolution (z): usually worse (~700 nm)
 ## Colocalization
  * spatial overlap between two (or more) different fluorescent labels
  * Pearson correlation coefficient
- * Spatial colocalization doe snot mean interaction (just the same pixel: co-occurence)
+ * Spatial colocalization doe snot mean interaction (just the same pixel: co-occurrence)
  * Software analysis: [ImageJ](https://imagej.net/Colocalization_Analysis)
  * Mander's Colocalization coefficients
  * Noise leads to underestimation of colocalization
@@ -688,7 +687,7 @@ Axial spatial resolution (z): usually worse (~700 nm)
 * Abide to physical laws
 * Abbe limit: 0.5 * wavelength / numerical aperture, from Fourier optics
 * Electron microscope (EM): 2nm. But cells need to be fixed and processed
-* Flurorescent microscopy: 200 nm. Multiple labeling methods. Multiple strategies to enhance the resolution.
+* Fluorescent microscopy: 200 nm. Multiple labeling methods. Multiple strategies to enhance the resolution.
 
 ## Super-resolution light microscopy (SRLM) (precisely nanoscopy)
 * Cost, specimen prep, and operational complexity are in the middle between confocal and EM.
@@ -700,25 +699,25 @@ Axial spatial resolution (z): usually worse (~700 nm)
 
 ### 4-pi microscopy
 * Two opposing objectives improves z resolution
-* Techical difficulties
+* Technical difficulties
 
 ### PALM, STED, STROM
 * Using non-linear properties of the fluorophores (turing they on / off)
 
 ### Stimulated emission depletion microscopy (STED)
 * Donut-shaped induced depletion laser (high power)
-  * At the tail of emmision spetrum to avoid cross-talk
+  * At the tail of emission spectrum to avoid cross-talk
   * Donut-shape via a vortex phase plate
   * Diffraction-limited. But combining another diffraction-limited excitation laser to achieve super-resolution
 * Higher labels and samples preparation requirements, and optical alignment (vibration sensitive)
 * Depletion efficiency: $p_{STED} = exp(-\frac{I_{STED}}{I_{sat}})$
 * Resolution by the factor of $\sqrt{1 + \frac{I_{STED}}{I_{sat}}}$
   * More $I_{STED}$, more resolution, but more power (photobleaching)
-* Implementation: Pulsed, continous wave, gated
+* Implementation: Pulsed, continuous wave, gated
   * Pulsed: synchronization challenges
-  * continous wave (CW): high background noises
+  * continuous wave (CW): high background noises
   * Gated: lower background noises than CW, easier than pulsed, mainstream
-* Protected STED: less photobleaching using photoswitable dyes
+* Protected STED: less photobleaching using photoswitchable dyes
   * Long-time observation
 * STED with 4-pi: improved axial(z) resolution by another phase plate
 #### Fluorescence probes
@@ -726,7 +725,7 @@ Axial spatial resolution (z): usually worse (~700 nm)
 * Two color: Long Stoke shift + normal Stoke shift dyes
 
 ## Localization microscopy
-* Tracking the particles central positions from reversing the point spread function (e.g. fittin gthe Gaussian distribution). Only possible with sparse points, thus stochastic.
+* Tracking the particles central positions from reversing the point spread function (e.g. fitting the Gaussian distribution). Only possible with sparse points, thus stochastic.
 * Reconstruct the whole image from a series of sparse excited dyes.
 * Switching-based separation is the mainstream of sparse activation
 
@@ -739,7 +738,7 @@ Axial spatial resolution (z): usually worse (~700 nm)
 * Selected dye (esp. Alexa 647) and imaging buffers.
 * Cameras instead of PMTs to see the whole field.
 * Gaussian distributions fitting the intensity of dots to calculate the centroid point.
-* Labels could have an impact on the measured length (e.g. primaryand secondary antibodies)
+* Labels could have an impact on the measured length (e.g. primary and secondary antibodies)
 * Localization precision: more photons, less uncertainty (more precision, up to 5-20 nm), more frames (time) required
   * Precision estimation is a statistical issue.
   * FWHM = 2.35 uncertainty ($\sigma_{loc}$)
@@ -754,8 +753,8 @@ Axial spatial resolution (z): usually worse (~700 nm)
 * Threshold for signal detection and rejection criteria
   * Too strict: wasted the real signal
   * Too loose: more noise
-  * Too many phtons at one time indicate multiple molecules = false positive, poorly localized
-* Structual averaging: reducing noise by a series of images (time info. -> spatial info.)
+  * Too many photons at one time indicate multiple molecules = false positive, poorly localized
+* Structural averaging: reducing noise by a series of images (time info. -> spatial info.)
 * Pair correlation analysis and molecular cluster analysis (not randomly distributed particles)
 * Single molecule tracking
 * 3D localization by encoding z information into the optic system
@@ -767,7 +766,7 @@ Axial spatial resolution (z): usually worse (~700 nm)
 * SIM for short
 * Grating pattern for structured illumination (stripes) encoding high frequency information
 * Indicated by Fourier optics (extension of optical transfer function (OTF))
-* Multiple images by superimposing illimunation stripes in different angles
+* Multiple images by superimposing illumination stripes in different angles
 * Increasing resolving power by 2x
 * Even more resolution improvement by non-linear optics (saturation SIM)
 

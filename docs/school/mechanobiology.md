@@ -1,6 +1,7 @@
 ---
 title: "Intro to mechanobiology"
-tags: ["school-notes"]
+tags:
+- "school-notes"
 ---
 
 Course Notes of Introduction to mechanobiology.
@@ -32,23 +33,23 @@ Course Notes of Introduction to mechanobiology.
 * shape of liver cells (polygons) vs muscle cells (elongated cylinders)
 * Tissues / cells could sense physical cues
   * tension, compression, fluid flow (hydrodynamic pressure, shear stress etc.), osmotic pressure, ion current
-    * Laminar flow (low Reynaud's number) vs terbulent flow => different endothelial response inside blood vessels
+    * Laminar flow (low Reynaud's number) vs turbulent flow => different endothelial response inside blood vessels
   * Sensed by mechanosensor complexes attached to both cytoskeletons inside cell and ECM outside, affecting gene expression, electrophysiology, etc.
-  * Heterogenous structure and stifness inside cartilage (from synovial surface to bone surface)
+  * Heterogenous structure and stiffness inside cartilage (from synovial surface to bone surface)
 
-## Clinical relevence of machanobiology
+## Clinical relevance of mechanobiology
 
 * deafness: cochlear hair cells
 * arteriosclerosis: endothelial and smooth muscle cells
-* muscular dystropy and cardiomyopathy: myocytes and *fibroblasts*
-  * Congenital muscular dystropy due to mutations in dystrophin (part of anchor for cytoskeleton)
+* muscular dystrophy and cardiomyopathy: myocytes and *fibroblasts*
+  * Congenital muscular dystrophy due to mutations in dystrophin (part of anchor for cytoskeleton)
   * Sarcopenia in the elderly
   * Aspect ratio deviation in dilated / hypertrophic cardiomyopathy
   * Weight training : NADPH oxidase produces ROS in response to tension => muscle growth (young people) or death (old people)
 * Cartilage: chondrocytes
   * Spatial difference in cell alignment, ECM composition (stiffer towards the bone surface)
   * Running -> compression -> stimulates ECM and cell growth
-* Axial myopia and glucoma: optical neurons, fibroblasts
+* Axial myopia and glaucoma: optical neurons, fibroblasts
 * Polycystic kidney disease (PCKD): epithelial cells of renal tubules
 * Cancer: cancer cells and cancer-associated fibroblast (CAF)
 * Adhesion to blood vessel walls: WBC (neutrophils, monocytes, macrophages)
@@ -57,20 +58,20 @@ Course Notes of Introduction to mechanobiology.
 
 Cell structures, cell cycle and replication, central dogma and information flow, signal transduction and homeostasis.
 
-* DNA stuctures: H-bond => thermodynamically stable in antiparallel double helix, good for information storage
-* RNA structure: more reactive (2' hydroxyl group), not as stable as DNA, good for reaction catalysis (e.g. ribozymes) and carrying transient informations (e.g. messenger RNA)
+* DNA structures: H-bond => thermodynamically stable in antiparallel double helix, good for information storage
+* RNA structure: more reactive (2' hydroxyl group), not as stable as DNA, good for reaction catalysis (e.g. ribozymes) and carrying transient information (e.g. messenger RNA)
 
-## Information flow in machanobiology
+## Information flow in mechanobiology
 
 **Outside-in** vs **inside-out**
 
 * Outside-in: force transduction (directly or via ECM) - transducer (complex) - signal transduction cascade (amplifiers, filters, logical gates) - gene expression involving cell cycle, metabolism, and survival
-* Inside-out: Cells actively tug the external environmentby motor proteins and cyctoskeletons - determination of external physical cues (e.g. stifness) - cell growth and differentiation
+* Inside-out: Cells actively tug the external environment by motor proteins and cytoskeletons - determination of external physical cues (e.g. stiffness) - cell growth and differentiation
 
 ### Lipid rafts in the plasma membrane
 
 * Rich in cholesterol (less fluidity) and glycolipids
-* Rich in cytoskeleton anchor complexes and mechanoreceptors
+* Rich in cytoskeleton anchor complexes and mechanoreceptor
 
 ### Cytoskeletons
 
@@ -80,7 +81,7 @@ Cell structures, cell cycle and replication, central dogma and information flow,
 
 ### Cell-cell junctions
 
-* Tight junctions: preventing leakge from apical side to basal side
+* Tight junctions: preventing leakage from apical side to basal side
 * Gap junctions (channeling two adjacent cells)
 * Desmosomes: cadherins (requires divalent cations), connected to keratin filaments (structure support)
   They know their spatial arrangement (basal vs apical)
@@ -90,23 +91,23 @@ Cell structures, cell cycle and replication, central dogma and information flow,
 * Reference book: mechanobiology of cell-cell and cell-matrix interactions
 * Basal lamina (ECM) - integrins (transmembrane part) - anchor complex - actin
 * ECM:
-  * glycosaminoglycans (GAG): extrememly hydrophilic, providing compressive strength
+  * glycosaminoglycans (GAG): extremely hydrophilic, providing compressive strength
   * fibrous proteins (e.g. collagen): tensile strength
-* Example of neonatal rat cardiomyocyte growth and developement
+* Example of neonatal rat cardiomyocyte growth and development
   * Soft surface (100~300 Pa): round and undifferentiated
-  * Native environment in the heart (10 kPa): cylindral with the best aspect ratio (7:1) with sarcomere
+  * Native environment in the heart (10 kPa): cylindrical with the best aspect ratio (7:1) with sarcomeres.
   * Stiff surfaces (glass): flat and polygonal
 
 ### Crosstalk of cell-cell junctions and cell-matrix junctions
 
 * Cadherin and integrin pathways
-* Cellular movement, differentialtion, and growth
+* Cellular movement, differentiation, and growth
 
-## Crtilage tissue structure and homostasis
+## Cartilage tissue structure and homeostasis
 
 * chondrocyte and ECM interactions
 * influenced by physical forces (pressure, shear stress)
-* Spatial heterogeniety of ECM compostion (stiffness) and cell arrangement (clustering and orientation)
+* Spatial heterogeneity of ECM composition (stiffness) and cell arrangement (clustering and orientation)
 
 # Mechanotransduction
 
@@ -135,12 +136,12 @@ external stimulation -> outside-in -> processing -> inside-out -> cellular respo
 * Ion-channel-coupled:
   * NMDA receptor: opens Ca channel when binds to glutamate
   * MET channel in cochlear hair cells: opens K channel when stretched
-* G-protein-coupled: a lot of grug targets
+* G-protein-coupled: a lot of targets
 * Enzyme-linked: e.g. EGFRs, JAK-STAT
 
 ### Relays and amplifiers:
 
-* second messengers (Ca, IP3, DAG, cAMP, ...), kinases cascades
+* second messengers (Ca, IP3, DAG, cAMP, ...), kinase cascades
 * A complex network of signal transduction pathways => bioinformatics
 
 ### Molecular switches
@@ -156,7 +157,7 @@ external stimulation -> outside-in -> processing -> inside-out -> cellular respo
 
 * Ligand binds to receptor, then the LR-complex binds to G protein
 
-* G protein replace GTP for GDP and dissciate from LR-complex
+* G protein replace GTP for GDP and dissociate from LR-complex
 
 * alpha subunit of G-protein dissociates from beta-gamma subunits
 
@@ -164,34 +165,34 @@ external stimulation -> outside-in -> processing -> inside-out -> cellular respo
 
 * In Gq protein, the beta-gamma subunits activates PCL-beta, cleaving a special phospholipid (PIP2) to IP3 and DAG, which in turn activate Ca release from ER and activate PKC for the cascade.
 
-### Machanoreceptors and transduction
+### Mechanoreceptor and transduction
 
 * Stretch-activated ion channels
 * Integrins
 * E-cadherins e.g. fluid shear stress -> TF (β-catenin) to nucleus
-* Phisical forces affects gene transcriptions (exp: movement of transcription factors after physical stress)
+* Physical forces affects gene transcriptions (exp: movement of transcription factors after physical stress)
 * Stretching peptides -> exposure of folded AA residues -> signals (does not require a living cell)
 * Compression of chondrocytes: heterogenous, anisotropic strains and (probably) stress
-* Machano-sensing by adhesion site recruitment and stretching cytoskeletons -> substrate component and stiffness.
+* Mechanosensing by adhesion site recruitment and stretching cytoskeletons -> substrate component and stiffness.
 * Chromatin deformation by force changes their relative positions and could alter gene expressions.
   * Force could change gene expression directly!
-  * Osmotic loading of chondrocytes: changes in osmolarity => altered chrmatin structure
+  * Osmotic loading of chondrocytes: changes in osmolarity => altered chromatin structure
 
 # Solid Mechanics Primer
 
-A crawing cell uses pseudood and forward attachment point to move forward.
+A crawling cell uses pseudopod and forward attachment point to move forward.
 
 ## Rigid body approach
 
-* Sum of moment = 0, Sum of external force = 0 (Neuton 1st law)
-* Or applying Neuton 2nd law
+* Sum of moment = 0, Sum of external force = 0 (Newton 1st law)
+* Or applying Newton 2nd law
 * Free body diagram (reaction force: force exerted to the cell)
 * But cells are deformable: GG
 
 ## Deformable cell
 
-* Displacement field ($\Delta x$  indside the cell) is not uniform
-* Displacement is related to mechanical peroperties (stiffness)
+* Displacement field ($\Delta x$  inside the cell) is not uniform
+* Displacement is related to mechanical properties (stiffness)
 * Resolution down to molecular level is too much. Treat the cell as a continuum of infinitesimal elements (~100nm)
 
 ### Stress
@@ -208,7 +209,7 @@ A crawing cell uses pseudood and forward attachment point to move forward.
 ## Strain
 
 * Displacement rescaled (normalized) by the original length
-* Averaged deformation (dimless)
+* Averaged deformation (dimension-less)
 * Axial strain: $\epsilon = \frac{\Delta L}{L}$, engineering strain, assuming $\Delta L \ll L$
 * Shear strain: $\gamma = \frac{\delta}{L} = tan\theta \approx \theta$
 * Transverse strain: Poisson's ratio $\nu = -\epsilon_t / \epsilon_a > 0$
@@ -220,7 +221,7 @@ A crawing cell uses pseudood and forward attachment point to move forward.
 ## Stress and strain fields
 
 * Average force (stress) adn average displacement (strain) in the cell
-* Force and torque equlibrium (assuming littel acceleration and rotation)
+* Force and torque equilibrium (assuming little acceleration and rotation)
 * For linearly elastic materials: 6 independent components
 * Experimental results: displacement field -> What we want: stress fields
 * Applying stress-strain relationships (Young's modulus, Poisson ratio, ...)
@@ -233,7 +234,7 @@ A crawing cell uses pseudood and forward attachment point to move forward.
 * $\sigma_{jj} = \lim_{A \rightarrow0}\frac{S_{jj}}{A}$, $\tau_{ij} = \lim_{A \rightarrow0}\frac{S_{ij}}{A}$
 
 * Equilibrium of stress
-  * Take 1st Taylor expansion of surface forces related to certian directions
+  * Take 1st Taylor expansion of surface forces related to certain directions
   * Sign convention: negative sides take negative values
   * Tensor representation: $\sigma_{ij, j} = 0$ (Balance of volume forces)
   * $\sigma_{ij} = \sigma_{ij}$ due to moment balance
@@ -245,9 +246,9 @@ A crawing cell uses pseudood and forward attachment point to move forward.
 * Shear strain $\theta \approx tan \theta = \frac{du}{dj}$
   * $\gamma = tan \theta \approx \theta$
   * continuous shear strain $\epsilon_{ij} = \gamma_{ij} / 2$
-  * Symmetry: $\epsilon_{ij} = \epsilon_{ji}$, 6 indep. strains
+  * Symmetry: $\epsilon_{ij} = \epsilon_{ji}$, 6 independent strains
 
-## Consitutive equations
+## Constitutive equations
 
 6 stress and 6 strains = 36 parameters
 
@@ -271,7 +272,7 @@ In either direction, the response is the same.
 ## Traction vector
 
 * Forces along the plane with xyz components
-* Force equlibrium: Traction forces = stresses * areas
+* Force equilibrium: Traction forces = stresses * areas
 * Could be represented in matrix form
 * Use: displacement (beads) -> strain -> stress -> traction force
   * With Green function (complicated)
@@ -307,7 +308,7 @@ Find eigenvalues and eigenvectors of $e = 0.5(FF^T-I)$
   * The latter ($\frac{du}{dy}$) is called shear strain rate and velocity gradient
 
 ### Stress balance inside a fluid
-* Internal friction (viscosty) and external force (stress)
+* Internal friction (viscosity) and external force (stress)
 * Shear strain $\gamma = \frac{\Delta x}{dy}$
 * Shear strain rate (velocity gradient) $\frac{du}{dy} = \frac{d}{dt}(\frac{\Delta x}{dy})$
 
@@ -371,16 +372,16 @@ Nelson biological physics ch5
 ### Difference between solid and fluid mechanics
 * Solid: inertia and acceleration, time-dependent, no convection (-), constant density
 * Fluid: Convection (+), may have variable density
-  * Labellar flow: no inertia or time dependent terms involved
+  * Lamellar flow: no inertia or time dependent terms involved
 
 ### Force balance inside a fluid element
-* Pressure (nomal stress)
+* Pressure (normal stress)
 * Friction, viscous force
 
 ### General assumptions
 * Steady flow: force balanced
-* Newtonian fluid: viscosity deos not depnedent on shear rate
-* Imcompressible: constant density
+* Newtonian fluid: viscosity does not dependent on shear rate
+* Incompressible: constant density
 
 ### Acceleration of the fluid
 $$dv(x, t) = v(x + dx, t + dt) - v(x, t)= \frac{\partial v}{\partial x}dx + \frac{\partial v}{\partial t}dt$$
@@ -430,20 +431,20 @@ $$\rho (\frac{\partial v}{\partial t} + (v \cdot \nabla) v) = \rho Y - \nabla p 
 * $\eta \nabla^2 v$: viscous term
 
 ### Microscopic model of fluid friction
-Velocity gradient across adjecent layers plus particle diffusion => momentum exchange and frictional drag
+Velocity gradient across adjacent layers plus particle diffusion => momentum exchange and frictional drag
 
 ### Particle drift and friction law (in small Re)
 $F = \zeta v$, $\zeta$: drag coefficient
 * Stokes law (for spherical objects): $\zeta = 6 \pi \eta R$
 * Electrophoresis: $F = q\epsilon = \zeta v$
-* Sedimentation of colliod particles: $f_s = -m_{net}g = \zeta v$
+* Sedimentation of colloid particles: $f_s = -m_{net}g = \zeta v$
 
 ### Reynolds number (Re)
 * Dimensionless property
 * Fluid runs around a particle
   * acceleration = $\frac{v^2}{R}$
   * viscous force = $\eta\frac{v}{R^2}$
-* Substitude into Navier-Stoke equation: $\frac{\rho v R}{\eta} = \frac{R^2}{\eta v}f_{ext} + 1$
+* Substitute into Navier-Stoke equation: $\frac{\rho v R}{\eta} = \frac{R^2}{\eta v}f_{ext} + 1$
 
 #### Large Re
 * Dominated by inertia
@@ -468,19 +469,19 @@ $F = \zeta v$, $\zeta$: drag coefficient
 ## Response of osteocyte to fluid flow
 
 * Bone structure
-  * Cortial bone
+  * Cortical bone
   * Trabecular bone (spongy)
   * Bone marrow
   * Osteons: Concentric circles
   * Osteocytes: with channels connecting each other and the blood vessels
-  * Osteoclast: A special microphage removing old bones
+  * Osteoclast: A special macrophage removing old bones
   * Osteoblast: will become osteocytes once the surrounding mineralized
 
 * Fluid mechanics in the bone
   * Tension, compression
   * Difference in hydrostatic pressure
   * Fluid flow and shear stress on the osteocytes
-  * Peizoelectric collagen I ?
+  * Piezoelectric collagen I ?
   * Stimulates osteocytes to produce more osteopontin
 
 * How to separate flow shear stress and convection of nutrients
@@ -500,20 +501,20 @@ Where
 * $\eta \nabla^2 v$: viscous term
 
 ## Microscopic model of fluid friction
-Velocity gradient across adjecent layers plus particle diffusion => momentum exchange and frictional drag
+Velocity gradient across adjacent layers plus particle diffusion => momentum exchange and frictional drag
 
 ## Particle drift and friction law (in small Re)
 $F = \zeta v$, $\zeta$: drag coefficient
 * Stokes law for spherical objects: $\zeta = 6 \pi \eta R$
 * Electrophoresis: $F = q\epsilon = \zeta v$
-* Sedimentation of colliod particles: $f_s = -m_{net}g = \zeta v$
+* Sedimentation of colloid particles: $f_s = -m_{net}g = \zeta v$
 
 ## Reynolds number (Re)
 * Dimensionless property
 * Fluid runs around a particle
   * acceleration = $\frac{v^2}{R}$
   * viscous force = $\eta\frac{v}{R^2}$
-* Substitude into Navier-Stoke equation: $\frac{\rho v R}{\eta} = \frac{R^2}{\eta v}f_{ext} + 1$
+* Substitute into Navier-Stoke equation: $\frac{\rho v R}{\eta} = \frac{R^2}{\eta v}f_{ext} + 1$
 
 ### Large Re
 * Dominated by inertia
@@ -538,21 +539,20 @@ $F = \zeta v$, $\zeta$: drag coefficient
 ## Response of osteocyte to fluid flow
 
 * Bone structure
-  * Cortial bone
+  * Cordial bone
   * Trabecular bone (spongy)
   * Bone marrow
   * Osteons: Concentric circles
   * Osteocytes: with channels connecting each other and the blood vessels
-  * Osteoclast: A special microphage removing old bones
+  * Osteoclast: A special macrophage removing old bones
   * Osteoblast: will become osteocytes once the surrounding mineralized
 
 * Fluid mechanics in the bone
   * Tension, compression
   * Difference in hydrostatic pressure
   * Fluid flow and shear stress on the osteocytes
-  * Peizoelectric collagen I ?
+  * Piezoelectric collagen I ?
   * Stimulates osteocytes to produce more osteopontin
 
 * How to separate flow shear stress and convection of nutrients
   * Increase the flow shear stress by adding the viscosity (add dextran)
-
