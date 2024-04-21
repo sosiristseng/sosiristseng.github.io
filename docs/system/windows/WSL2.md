@@ -58,7 +58,7 @@ For example,
 memory=20GB              # How much memory to assign to the WSL2 VM.
 processors=4             # How many processors to assign to the WSL2 VM.
 swap=8GB                 # How much swap space to add to the WSL2 VM. 0 for no swap file.
-swapfile=C:\\temp\\wsl-swap.vhdx # Sets swapfile path location, default is %USERPROFILE%\AppData\Local\Temp\swap.vhdx. Useful if your C drive has limited disk space.
+swapfile=C:\\temp\\wsl-swap.vhdx # Sets swap file path location, default is %USERPROFILE%\AppData\Local\Temp\swap.vhdx. Useful if your C drive has limited disk space.
 ```
 
 [^wslconfig]: https://learn.microsoft.com/zh-tw/windows/wsl/wsl-config
@@ -75,7 +75,7 @@ sparseVhd-true
 
 [^autoreclaim]: https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/
 
-## Mantenance
+## Maintenance
 
 ### Update kernel
 
@@ -95,7 +95,7 @@ wsl --shutdown
 Optimize-VHD -Path %path-to.vhdx% -Mode Full
 ```
 
-Alternatively (if `Optimize-VHD` is not found) [^vhd-diskpart]
+Alternatively, use `diskpart` (if `Optimize-VHD` is not found) [^vhd-diskpart]
 
 ```powershell
 wsl --shutdown
@@ -108,10 +108,10 @@ detach vdisk
 exit
 ```
 
+Alternatively, export the VHD as a tar file and reimport it again.
+
 [^optimize-vhd]: https://blog.miniasp.com/post/2023/05/14/Shrink-your-WSL2-Virtual-Disks-and-Docker-Images-and-Reclaim-Disk-Space
 [^vhd-diskpart]: https://answers.microsoft.com/en-us/windows/forum/all/optimize-vhd-not-found-in-windows-10-home/a727b760-0f82-4d0f-8480-d49eeaeb11a2
-
-
 
 ## Caveats about WSL2
 
