@@ -25,6 +25,7 @@ copyright: Copyright &copy; 2016 - 2023 Wen-Wei Tseng
 plugins:
   - search
   - callouts
+  - ezlinks
   - blog:
       blog_dir: blog
       blog_toc: true
