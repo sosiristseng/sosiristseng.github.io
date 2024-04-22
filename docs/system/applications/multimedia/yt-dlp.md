@@ -78,10 +78,10 @@ yt-dlp --yes-playlist --ignore-errors --continue --no-overwrites --output "%(tit
 
 ### Download Watch Later videos and mark them as viewed
 
-Use the `--mark-watched` option. You also need to login with `--usernasme <username> --password <password>`.
+Use the `--mark-watched` option. You also need to login with `--username <username> --password <password>`.
 
 ```sh
-yt-dlp --usernasme <username> --password <password> --mark-watched 'https://www.youtube.com/playlist?list=WL'
+yt-dlp --username <username> --password <password> --mark-watched 'https://www.youtube.com/playlist?list=WL'
 ```
 
 ### Download audio only, as opus format, from a playlist

@@ -73,7 +73,7 @@ tags:
     ```bash
     # remove the old GPG key
     sudo apt-key del 7fa2af80
-    # Insatll Linux CUDA toolkit
+    # Install Linux CUDA toolkit
     wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
     sudo dpkg -i cuda-keyring_1.1-1_all.deb
     sudo apt update && sudo apt install -y cuda
