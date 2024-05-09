@@ -9,6 +9,22 @@ tags:
 + [Stellaris ID](https://stellaris.paradoxwikis.com/ID)
 + [Stellaris cheats](https://stellarischeats.com/)
 
+## Civics
+
+```
+effect force_add_civic = <civic_id>
+```
+
+[Wiki](https://stellaris.paradoxwikis.com/ID#Civics). Also listed in `common\governments\civics` folder.
+
+## Traits
+
+```
+add_trait_species <species ID> <trait ID>
+```
+
+[Wiki](https://stellaris.paradoxwikis.com/ID#Species_traits). Also listed in `common\traits` folder.
+
 ## Leaders
 
 The Beholder
