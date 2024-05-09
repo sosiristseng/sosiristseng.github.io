@@ -14,25 +14,42 @@ sudo sysctl -p            
 ```
 you should see 'vm.swappiness = 10'
 
-## Use Swap file
+## Use Swap file (in btrfs)
 
-Swap file are more flexible in disk space and partition usage than swap partitions. Ubuntu installations use swap files by default so you don't have to manually enable it. If you want to enable swap file, run the following command:
+Swap file are more flexible in disk space and partition usage than swap partitions.
+
+Source: [btrfs docs](https://btrfs.readthedocs.io/en/latest/Swapfile.html) and [Arch Linux wiki](https://wiki.archlinux.org/title/btrfs#Swap_file).
+
+Because btrfs has copy-on-write (COW) by default, the swapfile should be COW-disabled.
 
 ```sh
-# Make a 512 MB swapfile.
-sudo dd if=/dev/zero of=/swapfile bs=1M count=512
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
+cd /  # Or other dir for the swapfile
+sudo mkdir -p /swap
+sudo btrfs subvolume create /swap # Create a btrfs subvolume for the swap file
+sudo btrfs filesystem mkswapfile --size 4G /swap/swapfile
+sudo swapon /swap/swapfile
 ```
 
-### Swap files in btrfs
+Or the following commands if `btrfs filesystem mkswapfile` command is not available.
 
+```sh
+cd /swap
+sudo truncate -s 0 /swap/swapfile
+sudo chattr +C /swap/swapfile
+sudo fallocate -l 4G /swap/swapfile
+sudo chmod 0600 /swap/swapfile
+sudo mkswap /swap/swapfile
+sudo swapon /swap/swapfile
+```
 
-### Apply the swap file on next boot
-
-Add the following line to `/etc/fstab`.
+Add the following line to `/etc/fstab` to mount the swap file on next boot.
 
 ```txt title="/etc/fstab"
-/swapfile none swap defaults 0 0
+/swap/swapfile none swap defaults 0 0
+```
+
+And one can see current activated swap by running
+
+```sh
+cat /proc/swaps
 ```

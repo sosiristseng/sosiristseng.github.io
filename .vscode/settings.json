@@ -27,6 +27,7 @@
     "bootable",
     "bootcamp",
     "btop",
+    "btrfs",
     "Cadherin",
     "cadherins",
     "callouts",
@@ -213,6 +214,10 @@
     "Zstandard"
   ],
   "cSpell.ignoreWords": [
+    "chattr",
+    "fallocate",
+    "mkswapfile",
+    "subvolume",
     "swapfile",
     "swapon"
   ]
