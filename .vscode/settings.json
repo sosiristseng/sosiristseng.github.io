@@ -198,6 +198,7 @@
     "vectorize",
     "Ventoy",
     "venv",
+    "vhdx",
     "virtualenv",
     "Viscoelasticity",
     "voxels",
@@ -215,10 +216,14 @@
   ],
   "cSpell.ignoreWords": [
     "chattr",
+    "diskpart",
     "fallocate",
     "mkswapfile",
+    "movedrive",
     "subvolume",
     "swapfile",
-    "swapon"
+    "swapon",
+    "vdisk",
+    "wslconfig"
   ]
 }

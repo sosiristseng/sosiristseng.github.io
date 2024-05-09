@@ -117,6 +117,6 @@ Alternatively, export the VHD as a tar file and reimport it again.
 
 ### Poor filesystem performance across OSes
 
-Cross-OS file access (e.g., accessing `/mnt/c` in WSL) is at least one order of magnitude slower than accessing the native (`/home/user/file`) files.[^wslio]
+Cross-OS file access (e.g., accessing `/mnt/c` in WSL) is at least one order of magnitude (10x) slower than accessing natively (`/home/user/`).[^wslio]
 
 [^wslio]: https://neilbryan.ca/posts/win10-wsl2-performance/

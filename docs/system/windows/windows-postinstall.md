@@ -9,9 +9,7 @@ Things to do after Windows install.
 
 See also [The Ultimate Windows Development Environment Guide](https://unicorn-utterances.com/posts/ultimate-windows-development-environment-guide)
 
-## System setup
-
-### Chocolatey package manager
+## Chocolatey package manager
 
 Install [Chocolatey 🍫](https://chocolatey.org/), a command-line interface (CLI) package manager for Windows.
 
@@ -28,18 +26,12 @@ choco feature enable -n=useRememberedArgumentsForUpgrades
 
 choco install -y git.install --params "'/NoShellIntegration'"
 
-choco install -y vscode qbittorrent firefox brave vivaldi telegram bandizip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop tabby winscp
-```
-
-How to install winget in Windows 10 LTSC
-
-```powershell
-choco install -y winget-cli
+choco install -y winget-cli vscode qbittorrent firefox brave vivaldi telegram bandizip nanazip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop tabby winscp
 ```
 
 See also the  [🍫 Chocolatey package list](https://chocolatey.org/packages) for more packages.
 
-### CTT Windows Utility
+## CTT Windows Utility
 
 The [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) provides APP installs, fixes and tweaks.
 
@@ -47,7 +39,7 @@ The [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winut
 irm christitus.com/win | iex
 ```
 
-### Disable hibernation
+## Disable hibernation
 
 Disabling hibernation saves a lot of disk space (No more `C:\hiberfile.sys`). Run this in powershell with admin rights:
 
@@ -55,8 +47,16 @@ Disabling hibernation saves a lot of disk space (No more `C:\hiberfile.sys`). Ru
 powercfg -h off
 ```
 
-### Compress OS files for a smaller disk space footprint
+## (Optional) Compress OS files for a smaller disk space footprint
 
 ```powershell
 Compact.exe /CompactOS:always
 ```
+
+## Install nvidia GPU driver
+
+You can use [nvcleaninstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) to install Nvidia driver without bloat.
+
+## Others
+
++ Setup [[WSL2]]
