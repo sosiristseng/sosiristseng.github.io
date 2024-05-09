@@ -103,7 +103,7 @@ str = L"\textrm{Count}"
 
 - PDF uses vector graphic format and conserves details.
 - Set figure size e.g. `size=(750,750)` to determine the relative fonts sizes.
-- One can convert [PDF to tiff](../../system/applications/research/PDF-to-tiff.md) images later using `pdftoppm` or `imagemagick`.
+- One can convert [PDF to tiff](../../applications/research/PDF-to-tiff.md) images later using `pdftoppm` or `imagemagick`.
 
 ## Shared Color bar
 

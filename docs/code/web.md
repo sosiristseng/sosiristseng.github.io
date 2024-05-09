@@ -115,9 +115,9 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 
 [Awesome static site generators](https://github.com/myles/awesome-static-generators)
 
-### [Hexo](../system/applications/developement/hexo.md)
+### [Hexo](../applications/developement/hexo.md)
 
-### [Hugo](../system/applications/developement/hugo.md)
+### [Hugo](../applications/developement/hugo.md)
 
 ### Docsify
 

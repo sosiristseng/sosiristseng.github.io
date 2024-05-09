@@ -39,13 +39,13 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 
 The setup repos for applications:
 
-- [brave](../applications/network/brave.md)
-- [docker](../applications/developement/docker.md)
-- [firefox](../applications/network/firefox.md)
-- [git](../applications/developement/git.md)
-- [qbittorrent](../applications/network/qbittorrent.md)
-- [vivaldi](../applications/network/vivaldi.md)
-- [vscode](../applications/developement/vscode.md)
+- [brave](../../applications/network/brave.md)
+- [docker](../../applications/developement/docker.md)
+- [firefox](../../applications/network/firefox.md)
+- [git](../../applications/developement/git.md)
+- [qbittorrent](../../applications/network/qbittorrent.md)
+- [vivaldi](../../applications/network/vivaldi.md)
+- [vscode](../../applications/developement/vscode.md)
 
 ### Xanmod Linux kernel
 
@@ -241,9 +241,9 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ## Misc.
 
-- [Conda](../applications/package-manager/miniforge.md)
-- [Julia](../../code/julia/setup-julia.md)
-- [Linux themes](../applications/linux-themes.md)
+- [Conda](../../applications/package-manager/miniforge.md)
+- [Julia](../julia/setup-julia.md)
+- [Linux themes](../../applications/linux-themes.md)
 - [FreeFileSync](https://freefilesync.org/)
 - [Hugo](https://github.com/gohugoio/hugo/releases/)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)
