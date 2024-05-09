@@ -1,6 +1,5 @@
 ---
 title: Change git histories
-
 tags:
   - git
 ---
