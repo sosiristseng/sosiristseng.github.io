@@ -210,6 +210,12 @@ sudo cp -v /usr/share/systemd/tmp.mount /etc/systemd/system/
 sudo systemctl enable tmp.mount
 ```
 
+### Disable Extended Security Maintenance (ESM)
+
+```bash
+sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/20apt-esm-hook.conf.disabled
+```
+
 ### Automatic updates
 
 ```bash
