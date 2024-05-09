@@ -3,6 +3,7 @@ title: Copy file over SSH
 tags:
   - ssh
   - linux
+  - command-line
 ---
 
 How to copy files through the secure shell (SSH).

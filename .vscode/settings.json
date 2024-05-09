@@ -180,6 +180,7 @@
     "subnetwork",
     "Superlensing",
     "superresolution",
+    "Swapiness",
     "Thevenin",
     "Thévenin's",
     "tldr",
@@ -202,6 +203,7 @@
     "wavenumber",
     "winget",
     "worldness",
+    "Xanmod",
     "xapian",
     "Zener",
     "zimfw",
@@ -209,5 +211,9 @@
     "zmodule",
     "Zotero",
     "Zstandard"
+  ],
+  "cSpell.ignoreWords": [
+    "swapfile",
+    "swapon"
   ]
 }

@@ -6,7 +6,7 @@ tags:
 
 ## Reduce Swapiness
 
-To reduce swap partition/file writes and keep more data in RAM.
+A low swapiness reduces swap usage and keep more data in RAM.
 
 ```sh
 echo 'vm.swappiness = 10' | sudo tee -a /etc/sysctl.conf
@@ -26,7 +26,12 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
 
-Then add the following line to `/etc/fstab`.
+### Swap files in btrfs
+
+
+### Apply the swap file on next boot
+
+Add the following line to `/etc/fstab`.
 
 ```txt title="/etc/fstab"
 /swapfile none swap defaults 0 0

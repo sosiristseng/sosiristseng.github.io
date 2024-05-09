@@ -63,6 +63,8 @@ sudo apt update && sudo apt install -y linux-xanmod
 
 Install nvidia CUDA runtime and compatible [GPU driver](https://developer.nvidia.com/cuda-downloads).
 
+For Ubuntu 22.04:
+
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
 sudo dpkg -i cuda-keyring_1.0-1_all.deb
