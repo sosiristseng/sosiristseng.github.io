@@ -1,36 +1,45 @@
 ---
-title: Set CPU frequency
+title: Linux CPU frequency
 date: 2024-03-24
 tags:
   - linux
+  - cpu
 ---
 
-## Changing the settings directly
+## See current CPU frequency
 
-From the [Stackoverflow post](https://askubuntu.com/questions/1415288/how-to-install-cpupower-on-ubuntu-20-04-with-kernel-5-17)
+To display frequencies of all CPU cores every second:
+
+```sh
+watch -n1 lscpu --all --extended
+```
+
+## Change CPU frequency directly
+
+Source: [Stackoverflow](https://askubuntu.com/questions/1415288/how-to-install-cpupower-on-ubuntu-20-04-with-kernel-5-17)
 
 Query CPU options
 
-```bash
+```sh
 grep . /sys/devices/system/cpu/cpu0/cpufreq/*
 ```
 
 Set the maximum CPU frequency
 
-```bash
+```sh
 echo 4400000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
 ```
 
-## cpufrequtils
+##  Change CPU frequency using cpufrequtils
 
 Install `cpufrequtils`
 
-```bash
+```sh
 sudo apt install cpufrequtils
 ```
 
 Set the maximum CPU frequency
 
-```bash
+```sh
 sudo cpufreq-set -u 4Ghz
 ```
