@@ -48,7 +48,7 @@ And you need additional steps in the Github settings to make Kodiak Bot work
 
 [Renovate bot](https://docs.renovatebot.com/) can manage both dependency update checking and automated pull request merging.
 
-It supports a variety of platforms
+Renovate supports a variety of platforms
 
 - GitHub (.com and Enterprise)
 - GitLab (.com and CE/EE)
@@ -103,7 +103,6 @@ The settings file `renovate.json` example
 {
   "extends": [
     "config:recommended",
-    ":automergeMajor"
   ],
   "git-submodules": {
       "enabled": true
