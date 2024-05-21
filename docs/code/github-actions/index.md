@@ -10,6 +10,7 @@ tags:
 
 ## Git repository
 
++ [Git operations](git-ops-gha.md)
 + Clone: https://github.com/actions/checkout
 + Push changes:
   + https://github.com/EndBug/add-and-commit
@@ -18,15 +19,20 @@ tags:
 + Pull request: https://github.com/peter-evans/create-pull-request
 + Automerge: https://github.com/peter-evans/enable-pull-request-automerge
 
-## Runtime environment
+## Setup runtime environment
 
-+ [Docker](./docker-gha.md)
++ [Docker](runtime/docker-gha.md)
 + Pandoc: https://github.com/r-lib/actions/tree/v2-branch/setup-pandoc
-+ LaTeX: https://github.com/r-lib/actions/tree/v2/setup-tinytex
-+ LaTeX (tectonic): https://github.com/WtfJoke/setup-tectonic
-+ Julia: https://github.com/julia-actions/setup-julia
-+ NodeJS: https://github.com/actions/setup-node
-+ Python: https://github.com/actions/setup-python / https://github.com/mamba-org/setup-micromamba
++ LaTeX: tinytex https://github.com/r-lib/actions/tree/v2/setup-tinytex and tectonic https://github.com/WtfJoke/setup-tectonic
++ [Julia](runtime/julia-gha.md)
++ [NodeJS](runtime/node-gha.md)
++ [Python](runtime/python-gha.md)
++ [Hugo](runtime/hugo-gha.md)
+
+## Intermediate data
+
++ [Artifacts](artifacts-gha.md) from upstream job(s) to downstream job(s)
++ [Caching](caching-gha.md) for consecutive workflow runs
 
 ## Release
 
@@ -35,6 +41,10 @@ tags:
 + https://github.com/robinraju/release-downloader : Github action to download release assets from private or public repositories.
 + https://github.com/actions/delete-package-versions : This action deletes versions of a package from [GitHub Packages](https://github.com/features/packages). This action will only delete a maximum of 100 versions in one run.
 
-## Misc
+## Repository and workflow automation
 
 + https://github.com/actions/stale : Marks issues and pull requests that have not had recent interaction as stale and might close them after a while.
++ [Automated dependency update](auto-deps-update.md)
++ [Status check for a multi-stage workflow](status-check-job.md)
++ [Dynamic parallel matrix](dynamic-parallel-gha.md)
++ [Working with Cirrus CI](cirrus-ci-gha.md)
