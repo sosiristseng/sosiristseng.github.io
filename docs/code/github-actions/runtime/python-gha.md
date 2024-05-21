@@ -47,7 +47,7 @@ You can cache the whole Python environment so `pip install` can be skipped for t
 
 ### Cache venv environment
 
-If you want to cache the whole Python environment, cache the virtual environment folder.[^2]
+The following workflow caches the virtual environment folder[^2], which is faster than caching the whole Python environment.
 
 ```yaml
 - name: Setup Python
@@ -62,15 +62,14 @@ If you want to cache the whole Python environment, cache the virtual environment
     key: ${{ runner.os }}-venv-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
     path: .venv
 - name: Install Python dependencies
-  if: ${{ steps.cache-venv.outputs.cache-hit != 'true' }}
   run: |
     python -m venv .venv
     source .venv/bin/activate
     python -m pip install -r requirements.txt
-- name: Add venv to PATH
-  run: |
     echo ".venv/bin" >> $GITHUB_PATH
     echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+    echo "PYTHON=${VIRTUAL_ENV}/bin/python" >> $GITHUB_ENV
+    echo "JULIA_PYTHONCALL_EXE=${VIRTUAL_ENV}/bin/python">> $GITHUB_ENV
 ```
 
 [^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170

@@ -215,6 +215,7 @@
     "Zstandard"
   ],
   "cSpell.ignoreWords": [
+    "PYTHONCALL",
     "chattr",
     "diskpart",
     "fallocate",
