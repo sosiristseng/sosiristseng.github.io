@@ -39,6 +39,13 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
+      - name: Caching Hugo Modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/hugo_cache
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3

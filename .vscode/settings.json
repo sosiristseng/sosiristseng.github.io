@@ -220,6 +220,7 @@
     "fallocate",
     "mkswapfile",
     "movedrive",
+    "peaceiris",
     "subvolume",
     "swapfile",
     "swapon",
