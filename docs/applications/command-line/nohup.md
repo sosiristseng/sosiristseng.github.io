@@ -12,6 +12,12 @@ tags:
 nohup mycmd &
 ```
 
+You can also lower the priority for the background process
+
+```sh
+nohup nice mycmd &
+```
+
 ## Output
 
 The output will be in `nohup.out` by default. If you want to customize the output location, just redirect it:
@@ -20,10 +26,10 @@ The output will be in `nohup.out` by default. If you want to customize the outpu
 nohup mycmd &> log.txt &
 ```
 
-You can also lower the priority for the background process
+To monitor `nohup.out`
 
 ```sh
-nohup nice mycmd &
+tail -f nohup.out
 ```
 
 ## End the running process
