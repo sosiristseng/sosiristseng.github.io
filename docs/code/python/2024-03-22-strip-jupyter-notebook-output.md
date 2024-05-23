@@ -1,6 +1,6 @@
 ---
 title: Strip Jupyter Notebook Output
-
+date: 2024-03-22
 tags:
   - python
   - jupyter-notebook

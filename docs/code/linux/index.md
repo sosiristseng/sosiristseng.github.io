@@ -5,7 +5,9 @@ tags:
 - linux
 ---
 
-- [Awesome Linux softwares ](https://github.com/luong-komorebi/Awesome-Linux-Software)
+Stuff related to GNU/Linux.
+
+- [Awesome Linux software](https://github.com/luong-komorebi/Awesome-Linux-Software)
 
 ## Install Linux
 
@@ -27,7 +29,6 @@ The following tools make installation USB keys from ISO files.
 
 - [Unix stack exchange](https://unix.stackexchange.com/)
 - [Arch Wiki](https://wiki.archlinux.org/)
-- [endeavour OS forum](https://forum.endeavouros.com/)
 - [Ask ubuntu](https://askubuntu.com/)
 - [Ubuntu wiki](https://wiki.ubuntu.com/)
 - [PoP OS docs](https://support.system76.com/)
