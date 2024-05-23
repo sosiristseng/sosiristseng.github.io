@@ -9,6 +9,24 @@ Things to do after Windows install.
 
 See also [The Ultimate Windows Development Environment Guide](https://unicorn-utterances.com/posts/ultimate-windows-development-environment-guide)
 
+## CTT Windows Utility
+
+The [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) provides APP installs, fixes and tweaks.
+
+```powershell
+irm christitus.com/win | iex
+```
+
+## Enable MS store and winget in Windows 10 LTSC 2021
+
+Run the following command and ignore the error. MS store will be installed.
+
+```powershell
+wsreset -i
+```
+
+Click [Microsoft.DesktopAppInstaller](https://apps.microsoft.com/detail/9nblggh4nns1?rtc=1&hl=zh-tw&gl=TW#activetab=pivot:overviewtab) to install winget.
+
 ## Chocolatey package manager
 
 Install [Chocolatey 🍫](https://chocolatey.org/), a command-line interface (CLI) package manager for Windows.
@@ -26,18 +44,10 @@ choco feature enable -n=useRememberedArgumentsForUpgrades
 
 choco install -y git.install --params "'/NoShellIntegration'"
 
-choco install -y winget-cli vscode qbittorrent firefox brave vivaldi telegram bandizip nanazip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop tabby winscp
+choco install -y vscode qbittorrent firefox brave vivaldi telegram bandizip nanazip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop winscp
 ```
 
 See also the  [🍫 Chocolatey package list](https://chocolatey.org/packages) for more packages.
-
-## CTT Windows Utility
-
-The [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) provides APP installs, fixes and tweaks.
-
-```powershell
-irm christitus.com/win | iex
-```
 
 ## Disable hibernation
 
@@ -57,6 +67,7 @@ Compact.exe /CompactOS:always
 
 You can use [nvcleaninstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) to install Nvidia driver without bloat.
 
-## Others
+## Afterward
 
-+ Setup [[WSL2]]
++ Setup [[docs/code/windows/WSL2]]
++ Setup [[docs/code/windows/environment-variables]]
