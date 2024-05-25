@@ -35,8 +35,6 @@ The community-driven [conda-forge](https://conda-forge.org/docs/user/introductio
     # conda config --set auto_activate_base false
     conda config --set default_threads $(nproc)
     mamba update python --yes && mamba update --all --yes
-    mamba install -y conda-libmamba-solver
-    conda config --set solver libmamba
 
     # `bash` and `zsh` integration
     conda init bash || true
