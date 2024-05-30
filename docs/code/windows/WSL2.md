@@ -15,24 +15,31 @@ Open powershell with administrator privilege, [run the following command](https:
 wsl --install
 ```
 
+or install the components [manually](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
+
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+After reboot,
+
+```powershell
+wsl --update
+wsl --set-default-version 2
+wsl --install -d Ubuntu  # Or another distro
+```
+
 ## WSL2 post-install (optional) setup
 
-### Move the virtual disk
+### Backup/move the virtual disk
 
 If you want to move the WSL virtual disk file to another disk (in this example, `D:\`), run the following commands in Windows[^export-import][^movedrive]:
 
-!!! tip
-    The following example will move the current WSL virtual disk to `D:\Ubuntu\ext4.vhdx`. You can change the distribution name (Ubuntu) and filesystem paths if necessary.
-
 ```powershell
-cd D:\
-mkdir WSL
-cd WSL
-mkdir Ubuntu
-
 wsl --export Ubuntu .\Ubuntu\ext4.tar
 wsl --unregister Ubuntu
-wsl --import Ubuntu .\Ubuntu\ .\Ubuntu\ext4.tar
+wsl --import Ubuntu D:\Ubuntu\ .\Ubuntu\ext4.tar
 ```
 
 [^export-import]: https://learn.microsoft.com/zh-tw/windows/wsl/basic-commands#import-and-export-a-distribution
@@ -88,6 +95,7 @@ wsl --update
 
 ### Reclaim virtual disk space
 
+#### Optimize-VHD
 To reclaim disk space from virtual hard disks (VHDs), run the following commands with administrator privileges [^optimize-vhd]:
 
 ```powershell
@@ -95,6 +103,7 @@ wsl --shutdown
 Optimize-VHD -Path %path-to.vhdx% -Mode Full
 ```
 
+#### diskpart
 Alternatively, use `diskpart` (if `Optimize-VHD` is not found) [^vhd-diskpart]
 
 ```powershell
@@ -107,6 +116,8 @@ compact vdisk
 detach vdisk
 exit
 ```
+
+#### Export and re-import
 
 Alternatively, export the VHD as a tar file and reimport it again.
 
