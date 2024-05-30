@@ -75,7 +75,6 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 - [DreamsTime](https://www.dreamstime.com/)
 - [Foodiesfeed](http://foodiesfeed.com/): Food pictures
 - [Freebie supply](https://freebiesupply.com/)
-- [Free digital photos](http://www.freedigitalphotos.net/)
 - [Free images](https://www.freeimages.com/)
 - [Free media goo](https://www.freemediagoo.com/): includes texture photos (e.g. rust, concrete)
 - [Free Range Stock](https://freerangestock.com/)
