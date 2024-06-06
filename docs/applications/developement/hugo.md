@@ -11,13 +11,15 @@ tags:
 
 [Hugo](https://gohugo.io/) is the world’s fastest framework for building websites, written in Go.
 
-## Install
+## Install Hugo locally
 
 === "Ubuntu"
 
     Download and install the hugo `deb` file from the [release page](https://github.com/gohugoio/hugo/releases/latest).
 
 === "snap"
+
+    Hugo installed by snap can only access files under the user's home directory.
 
     ```bash
     sudo snap install hugo
@@ -39,17 +41,17 @@ tags:
     choco install hugo-extended
     ```
 
-    Go compiler is needed for install Hugo modules
+    Go compiler is needed for Hugo modules
 
     ```powershell
     choco install golang
     ```
 
-## GitHub actions
+## Hugo in GitHub actions
 
 [Hugo in Github actions](../../code/github-actions/runtime/hugo-gha.md)
 
-## Docker image
+## Hugo in docker
 
 [klakegg/hugo](https://hub.docker.com/r/klakegg/hugo/)
 
@@ -86,3 +88,21 @@ A list of **[Hugo themes](https://themes.gohugo.io/)** I found useful
 
 - [Hugo modules](https://hugomods.com/): Various modules for Hugo
 - [hugo-notice](https://github.com/martignoni/hugo-notice) : A Hugo theme component to display nice notices.
+
+## Hugo tips
+
+### Parse relative links
+
+[Forum link](https://discourse.gohugo.io/t/relative-markdown-links-markdown-render-hooks/22674)
+
+You can use this form normally in Hugo
+
+```markdown
+[My Article](../my-article/index.md)
+```
+
+by adding the following lines to `project/layouts/_default/_markup/render-link.html`
+
+```html
+<a href="{{ (.Page.GetPage .Destination).RelPermalink | safeURL }}">{{ .Text | safeHTML }}</a>
+```
