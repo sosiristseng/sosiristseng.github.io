@@ -24,22 +24,24 @@ jobs:
         with:
           fetch-depth: 0 # full history
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d # v5
         id: setup-python
         with:
           python-version: '3.x'
-      - name: Cache python
-        uses: actions/cache@v4
+      - name: Cache python venv
+        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4
         if: ${{ contains(runner.name, 'GitHub Actions') }}
-        id: cache-py
+        id: cache-venv
         with:
-          key: ${{ runner.os }}-pip-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
-          path: |
-            ${{ env.pythonLocation }}/lib
-            ${{ env.pythonLocation }}/bin
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
+          path: .venv
       - name: Install Python dependencies
-        if: ${{ !contains(runner.name, 'GitHub Actions') || steps.cache-py.outputs.cache-hit != 'true' }}
-        run: pip install -r requirements.txt
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          python -m pip install -r requirements.txt
+          echo "${VIRTUAL_ENV}/bin" >> $GITHUB_PATH
+          echo "VIRTUAL_ENV=${VIRTUAL_ENV}" >> $GITHUB_ENV
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
