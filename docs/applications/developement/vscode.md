@@ -67,13 +67,13 @@ See also https://github.com/viatsko/awesome-vscode for a curated list of delight
 
 Add this entry to `settings.json` ([Ask Ubuntu thread](https://askubuntu.com/questions/1197231/visual-studio-code-ui-is-visually-mismatched-in-ubuntu-19-1))
 
-```json title=settings.json
+```json
 {
   "window.titleBarStyle": "custom",
 }
 ```
 
-Reload VS Code to apply the changes.
+Reload VSCode to apply the changes.
 
 ### Line height
 
@@ -81,7 +81,7 @@ You can increase line height to make you code look better.
 
 Search for `Line height` in VSCode settings and set it to a higher number. (For example, 1.4)
 
-## VS Code extensions
+## VSCode extensions
 
 - [Luna paint](https://marketplace.visualstudio.com/items?itemName=Tyriar.luna-paint): A raster image editor extension for VSCode.
 - [TeXLab](https://marketplace.visualstudio.com/items?itemName=efoerster.texlab): An implementation of the Language Server Protocol for LaTeX.
