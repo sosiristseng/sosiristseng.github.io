@@ -7,7 +7,7 @@ repo_url: !ENV [REPO_URL, 'https://github.com/sosiristseng/sosiristseng.github.i
 repo_name: !ENV [REPO_NAME, 'sosiristseng/sosiristseng.github.io']
 edit_uri: 'edit/main/docs/' # Leave blank to disable the edit button,
 
-copyright: Copyright &copy; 2016 - 2023 Wen-Wei Tseng
+copyright: Copyright &copy; 2016 - 2024 Wen-Wei Tseng
 
 # Nav bar
 # Uncomment to customize nav bar
@@ -70,7 +70,7 @@ theme:
     - navigation.sections
     # - navigation.expand
     # - navigation.path # Insiders only
-    - navigation.tabs
+    # - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
