@@ -40,3 +40,7 @@ https://github.com/BurntSushi/ripgrep is a line-oriented search tool that recurs
 ## Bottom: system monitor written in Rust
 
 [Bottom](sysmon.md#bottom)
+
+## zoxide
+
+https://github.com/ajeetdsouza/zoxide is a smarter `cd` command that supports all major shells.
