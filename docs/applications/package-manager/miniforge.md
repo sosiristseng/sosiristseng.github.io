@@ -1,6 +1,5 @@
 ---
 title: Miniforge
-
 tags:
   - python
   - conda

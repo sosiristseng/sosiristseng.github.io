@@ -27,12 +27,6 @@ tags:
     sudo snap connect hugo:ssh-keys
     ```
 
-=== "Arch Linux"
-
-    ```bash
-    sudo pacman -S hugo
-    ```
-
 === "Windows"
 
     Via chocolatey:

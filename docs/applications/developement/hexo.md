@@ -1,6 +1,5 @@
 ---
 title: Hexo
-
 tags:
   - web
   - linux

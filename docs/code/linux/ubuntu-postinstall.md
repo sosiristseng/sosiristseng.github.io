@@ -243,7 +243,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 - [Conda](../../applications/package-manager/miniforge.md)
 - [Julia](../julia/setup-julia.md)
-- [Linux themes](../../applications/linux-themes.md)
+- [Linux themes](./linux-themes.md)
 - [FreeFileSync](https://freefilesync.org/)
 - [Hugo](https://github.com/gohugoio/hugo/releases/)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)

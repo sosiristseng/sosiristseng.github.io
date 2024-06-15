@@ -37,7 +37,7 @@ fd PATTERN
 
 https://github.com/BurntSushi/ripgrep is a line-oriented search tool that recursively searches the current directory for a regex pattern.
 
-## Bottom: system monitor written in Rust
+## bottom: system monitor written in Rust
 
 [Bottom](sysmon.md#bottom)
 

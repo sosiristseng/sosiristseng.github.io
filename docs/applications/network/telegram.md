@@ -20,12 +20,6 @@ tags:
     sudo snap install telegram-desktop
     ```
 
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S telegram-desktop
-    ```
-
 === "Windows"
 
     chocolatey

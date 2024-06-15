@@ -6,7 +6,7 @@ tags:
   - command-line
 ---
 
-Besides using [man](https://linux.die.net/man/) to find usage for commands, one can use the following tools.
+Alternatives to the [man](https://linux.die.net/man/) command:
 
 ## cheat.sh
 
@@ -15,27 +15,7 @@ Besides using [man](https://linux.die.net/man/) to find usage for commands, one 
 For example,
 
 ```sh
-curl cht.sh/tar~list
-```
-
-returns
-
-```sh
-# cheat:tar
-# To list the content of an .tgz or .tar.gz archive:
-tar -tzvf /path/to/foo.tgz
-tar -tzvf /path/to/foo.tar.gz
-
-# To list the content of an .tar.bz2 archive:
-tar -tjvf /path/to/foo.tar.bz2
-
-# cheat:tarsnap
-# List the archives
-tarsnap --list-archives
-
-# tldr:tart
-# List VMs:
-tart list
+curl cht.sh/tar
 ```
 
 ## tldr

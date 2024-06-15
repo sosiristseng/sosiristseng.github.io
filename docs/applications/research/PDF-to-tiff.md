@@ -2,6 +2,7 @@
 title: Convert PDF to TIFF
 tags:
   - tiff
+  - pdf
   - document
   - linux
   - windows
@@ -24,12 +25,6 @@ To install `pdftoppm` (included in `poppler-utils`)[^2][^3][^4]
 
     ```sh
     sudo apt install poppler-utils
-    ```
-
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S poppler-utils
     ```
 
 === "conda"
@@ -60,19 +55,13 @@ To install GhostScript and ImageMagick
     sudo apt install ghostscript imagemagick
     ```
 
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S ghostscript imagemagick
-    ```
-
 === "Windows"
 
     ```powershell
     choco install -y ghostscript imagemagick
     ```
 
-> [!note]
+> [!NOTE]
 > For security reasons, PDF read/write operations are disable by default. You enable this function by editing the settings file `/etc/ImageMagick-7/policy.xml`
 > ```xml title="/etc/ImageMagick-7/policy.xml"
 > <policy domain="coder" rights="read | write" pattern="PDF" />

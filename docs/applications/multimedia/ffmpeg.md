@@ -16,12 +16,6 @@ tags:
     sudo apt install ffmpeg
     ```
 
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S ffmpeg
-    ```
-
 === "Windows"
 
     chocolatey

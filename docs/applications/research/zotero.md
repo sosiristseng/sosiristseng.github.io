@@ -20,14 +20,6 @@ tags:
     sudo apt update && sudo apt install -y zotero
     ```
 
-=== "Arch Linux"
-
-    From the [AUR](https://aur.archlinux.org/packages/zotero-bin/)
-
-    ```sh
-    yay -S zotero-bin
-    ```
-
 === "Windows"
 
     chocolatey:

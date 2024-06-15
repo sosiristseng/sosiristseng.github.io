@@ -11,12 +11,6 @@ https://github.com/aristocratos/btop is a resource monitor written in C++ that s
 
 ### Install
 
-=== "Arch Linux"
-
-```sh
-sudo pacman -S btop
-```
-
 === "Ubuntu"
 
 ```sh
@@ -52,12 +46,6 @@ https://github.com/nicolargo/glances is a cross-platform advance system monitor 
     wget -O- https://bit.ly/glances | bash
     ```
 
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S glances
-    ```
-
 === "Ubuntu"
 
     ```sh
@@ -80,10 +68,18 @@ https://github.com/Syllo/nvtop is a GPU process monitor for AMD, Intel and NVIDI
     sudo apt install nvtop
     ```
 
-=== "Arch Linux"
+=== "snap"
 
     ```sh
-    sudo pacman -S nvtop
+    sudo snap install nvtop
+    # Add the capability to kill processes inside nvtop
+    sudo snap connect nvtop:process-control
+    # Add the capability to inspect GPU information (fan, PCIe, power, etc)
+    sudo snap connect nvtop:hardware-observe
+    # AMDGPU process list support (read /proc/<pid>)
+    sudo snap connect nvtop:system-observe
+    # Temporary workaround to get per-process GPU usage (read /proc/<pid>/fdinfo)
+    sudo snap connect nvtop:kubernetes-support
     ```
 
 ## Bottom
@@ -95,12 +91,6 @@ https://github.com/clementtsang/bottom is a resource monitor written in Rust. Th
 === "Ubuntu"
 
     Download and install the [deb release](https://github.com/ClementTsang/bottom/releases/latest).
-
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S bottom
-    ```
 
 === "snap"
 

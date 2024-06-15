@@ -10,19 +10,13 @@ tags:
 
 ## Install
 
-=== "Executable"
+=== "Binary Executable"
 
-    For Linux/MacOS.
+    Download the binary executable for Linux/MacOS.
 
     ```sh
     sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
     sudo chmod a+rx /usr/local/bin/yt-dlp
-    ```
-
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S yt-dlp
     ```
 
 === "Windows"

@@ -10,10 +10,9 @@ https://github.com/Xfennec/progress measures the speed and progress of ongoing c
 ## Install
 
 ```sh
-$(command -v apt) && sudo apt install progress
-$(command -v pacman) && sudo pacman -S progress
+sudo apt install progress
 ```
 
 ## Usage
 
-[rUN `progress`](https://github.com/Xfennec/progress#what-can-i-do-with-it) in the terminal.
+[Run `progress`](https://github.com/Xfennec/progress#what-can-i-do-with-it) in the terminal.

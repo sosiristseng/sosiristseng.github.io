@@ -1,12 +1,11 @@
 ---
 title: nohup
-
 tags:
   - linux
   - ssh
 ---
 
-[nohup](https://zh.wikipedia.org/zh-tw/Nohup) runs background process(es) uninterruptedly even the remote SSH session goes offline.
+[nohup](https://cht.sh/nohup) runs background process(es) uninterruptedly even the remote SSH session goes offline.
 
 ```sh
 nohup mycmd &
@@ -26,7 +25,7 @@ The output will be in `nohup.out` by default. If you want to customize the outpu
 nohup mycmd &> log.txt &
 ```
 
-To monitor `nohup.out`
+To monitor what is inside `nohup.out`
 
 ```sh
 tail -f nohup.out

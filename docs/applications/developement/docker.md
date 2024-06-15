@@ -26,13 +26,6 @@ tags:
     sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
     ```
 
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S docker
-    sudo systemctl enable --now docker.service
-    ```
-
 === "Windows"
 
     [Docker desktop](https://www.docker.com/products/docker-desktop/) for Windows.
@@ -43,9 +36,9 @@ tags:
 
 ## NVIDIA GPU support
 
-=== "Ubuntu"
+Install [the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation)
 
-    Install [the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation)
+=== "Ubuntu"
 
     ```sh
     curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
@@ -54,13 +47,6 @@ tags:
     sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
     sudo apt update && sudo apt install -y nvidia-container-toolkit
     sudo nvidia-ctk runtime configure --runtime=docker
-    sudo systemctl restart docker
-    ```
-
-=== "Arch Linux"
-
-    ```sh
-    yay -S nvidia-container-toolkit
     sudo systemctl restart docker
     ```
 
@@ -90,8 +76,8 @@ sudo docker run --gpus all nvidia/cuda:12.0-base nvidia-smi
 
 ## Optional setup
 
-- Move the Docker data directory to a bigger partition
-- Set up a pull-through cache (by Google) to avoid hitting the docker image [pull rate limit](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) by Dockerhub
+- `data-root`: Put the Docker data directory to another partition. (`/home/docker` in this example)
+- `registry-mirrors`: Set up a pull-through cache to work around the DockerHub's [pull rate limit](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/).
 
 Edit `/etc/docker/daemon.json`, add the following entries
 

@@ -9,14 +9,14 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 
 ## Internet
 
-- [brave](./network/brave.md)
-- [vivaldi](./network/vivaldi.md)
-- [qbittorrent](./network/qbittorrent.md)
-- [telegram](./network/telegram.md)
+- [brave](../../applications/network/brave.md)
+- [vivaldi](../../applications/network/vivaldi.md)
+- [qbittorrent](../../applications/network/qbittorrent.md)
+- [telegram](../../applications/network/telegram.md)
 
 ## Command line tools
 
-- [robocopy](./command-line/robocopy.md)
+- [robocopy](../../applications/command-line/robocopy.md)
 - [Powershell Core](https://github.com/PowerShell/PowerShell)
 - [Windows terminal](https://github.com/microsoft/terminal)
 

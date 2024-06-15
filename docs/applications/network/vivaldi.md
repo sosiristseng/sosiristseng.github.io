@@ -18,12 +18,6 @@ tags:
     sudo apt update && sudo apt install -y vivaldi-stable
     ```
 
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S vivaldi
-    ```
-
 === "Windows"
 
     chocolatey

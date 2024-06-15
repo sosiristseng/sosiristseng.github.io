@@ -18,12 +18,6 @@ Setup [Brave browser](https://brave.com)
     sudo apt update && sudo apt install -y brave-browser
     ```
 
-=== "Arch Linux"
-
-    ```sh
-    yay -S brave-bin
-    ```
-
 === "Windows"
 
     chocolatey:

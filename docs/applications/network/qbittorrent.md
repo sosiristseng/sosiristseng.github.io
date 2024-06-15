@@ -17,12 +17,6 @@ tags:
     sudo apt update && sudo apt install -y qbittorrent
     ```
 
-=== "Arch Linux"
-
-    ```sh
-    sudo pacman -S qbittorrent
-    ```
-
 === "Windows"
 
     chocolatey:
