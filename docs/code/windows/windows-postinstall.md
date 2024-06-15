@@ -44,7 +44,7 @@ choco feature enable -n=useRememberedArgumentsForUpgrades
 
 choco install -y git.install --params "'/NoShellIntegration'"
 
-choco install -y vscode qbittorrent firefox brave vivaldi telegram bandizip nanazip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop winscp
+choco install -y vscode qbittorrent firefox brave vivaldi telegram bandizip nanazip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop
 ```
 
 See also the  [🍫 Chocolatey package list](https://chocolatey.org/packages) for more packages.
@@ -69,5 +69,5 @@ You can use [nvcleaninstall](https://www.techpowerup.com/download/techpowerup-nv
 
 ## Afterward
 
-+ Setup [[docs/code/windows/WSL2]]
-+ Setup [[docs/code/windows/environment-variables]]
++ Setup [WSL](WSL2.md)
++ Setup [Environment variables](environment-variables.md)
