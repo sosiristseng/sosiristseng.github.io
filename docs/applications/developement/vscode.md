@@ -66,18 +66,34 @@ You can increase line height to make you code look better.
 
 Search for `Line height` in VSCode settings and set it to a higher number. (For example, 1.4)
 
+### Markdown settings
+
+[Markdown in VSCode](https://code.visualstudio.com/docs/languages/markdown)
+
++ Link validation: set `"markdown.validate.enabled": true`.
++ Automatic link updates: set `"markdown.updateLinksOnFileMove.enabled": prompt`
+
 ## VSCode extensions
 
 - [Luna paint](https://marketplace.visualstudio.com/items?itemName=Tyriar.luna-paint): A raster image editor extension for VSCode.
 - [TeXLab](https://marketplace.visualstudio.com/items?itemName=efoerster.texlab): An implementation of the Language Server Protocol for LaTeX.
-- [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
-- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack): Develop in WSL, remote SSH, etc.
 
-### Version control
+### Themes
+
+[VSCode themes](https://vscodethemes.com/)
+
+- [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+### Version control and continuous integration (CI)
 
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph): View a Git Graph of your repository, and perform Git actions from the graph.
+- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github): Pull Request and Issue Provider for GitHub.
+- [GitHub actions](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions)
 
 ### Formatting
 
