@@ -2,21 +2,21 @@
 title: Windows applications
 tags:
   - windows
-  - bookmarks
+  - bookmark
 ---
 
 https://github.com/Awesome-Windows/Awesome : Curated list of best applications and tools for Windows
 
 ## Internet
 
-- [brave](../../applications/network/brave.md)
-- [vivaldi](../../applications/network/vivaldi.md)
-- [qbittorrent](../../applications/network/qbittorrent.md)
-- [telegram](../../applications/network/telegram.md)
+- [brave](../applications/network/brave.md)
+- [vivaldi](../applications/network/vivaldi.md)
+- [qbittorrent](../applications/network/qbittorrent.md)
+- [telegram](../applications/network/telegram.md)
 
 ## Command line tools
 
-- [robocopy](../../applications/command-line/robocopy.md)
+- [robocopy](../applications/command-line/robocopy.md)
 - [Powershell Core](https://github.com/PowerShell/PowerShell)
 - [Windows terminal](https://github.com/microsoft/terminal)
 
