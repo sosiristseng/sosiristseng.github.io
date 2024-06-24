@@ -12,7 +12,7 @@ Set up Windows subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/wi
 Open powershell with administrator privilege, [run the following command](https://devblogs.microsoft.com/commandline/install-wsl-with-a-single-command-now-available-in-windows-10-version-2004-and-higher/) in the host.
 
 ```powershell
-wsl --install
+wsl --install --no-distribution
 ```
 
 or install the components [manually](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
