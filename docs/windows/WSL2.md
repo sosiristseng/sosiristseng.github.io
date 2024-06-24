@@ -18,6 +18,7 @@ wsl --install --no-distribution
 or install the components [manually](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
 
 ```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
