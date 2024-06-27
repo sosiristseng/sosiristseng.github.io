@@ -7,8 +7,6 @@ tags:
   - devops
 ---
 
-Setup Python environment in GitHub actions.
-
 + https://github.com/actions/setup-python
 + https://github.com/mamba-org/setup-micromamba
 
@@ -47,7 +45,7 @@ You can cache the whole Python environment so `pip install` can be skipped for t
   run: pip install -r requirements.txt
 ```
 
-### Cache virtual environment
+### Cache venv environment
 
 The following workflow caches the virtual environment folder[^2], which is faster than caching the whole Python environment.
 
@@ -67,15 +65,11 @@ The following workflow caches the virtual environment folder[^2], which is faste
   run: |
     python -m venv .venv
     source .venv/bin/activate
+    python -m pip install -r requirements.txt
     echo ".venv/bin" >> $GITHUB_PATH
     echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
     echo "PYTHON=${VIRTUAL_ENV}/bin/python" >> $GITHUB_ENV
     echo "JULIA_PYTHONCALL_EXE=${VIRTUAL_ENV}/bin/python">> $GITHUB_ENV
-- name: Install Python dependencies
-  if: ${{ !contains(runner.name, 'GitHub Actions') || steps.cache-venv.outputs.cache-hit != 'true'}}
-  run: |
-    source .venv/bin/activate
-    python -m pip install -r requirements.txt
 ```
 
 [^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170
