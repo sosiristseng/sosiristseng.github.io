@@ -39,13 +39,13 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 
 The setup repos for applications:
 
-- [brave](../applications/network/brave.md)
-- [docker](../applications/developement/docker.md)
-- [firefox](../applications/network/firefox.md)
-- [git](../applications/developement/git.md)
-- [qbittorrent](../applications/network/qbittorrent.md)
-- [vivaldi](../applications/network/vivaldi.md)
-- [vscode](../applications/developement/vscode.md)
+- [brave](apps/network/brave.md)
+- [docker](apps/developement/docker.md)
+- [firefox](apps/network/firefox.md)
+- [git](apps/developement/git.md)
+- [qbittorrent](apps/network/qbittorrent.md)
+- [vivaldi](apps/network/vivaldi.md)
+- [vscode](apps/developement/vscode.md)
 
 ### Xanmod Linux kernel
 
@@ -241,10 +241,10 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ## Misc.
 
-- [Conda](../applications/package-manager/miniforge.md)
-- [Julia](../code/julia/setup-julia.md)
-- [Linux themes](./linux-themes.md)
+- [Conda](./apps/package-manager/miniforge.md)
+- [[setup-julia]]
+- [Linux themes](./apps/linux-themes.md)
 - [FreeFileSync](https://freefilesync.org/)
-- [Hugo](https://github.com/gohugoio/hugo/releases/)
+- [Hugo](./apps/developement/hugo.md)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)
 - [Virtualbox](https://www.virtualbox.org/)
