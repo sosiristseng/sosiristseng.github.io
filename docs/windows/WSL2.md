@@ -22,12 +22,12 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-After reboot,
+After reboot, install the Linux distribution
 
 ```powershell
 wsl --update
 wsl --set-default-version 2
-wsl --install -d Ubuntu  # Or another distro
+wsl --install -d Ubuntu  # Or another Linux distribution
 ```
 
 ## WSL2 post-install (optional) setup
@@ -77,7 +77,7 @@ Edit `.wslconfig` [^wslconfig] in your Windows home directory (Enter `%USERPROFI
 ```txt title=".wslconfig"
 [experimental]
 autoMemoryReclaim=dropcache
-sparseVhd-true
+sparseVhd=true
 ```
 
 [^autoreclaim]: https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/
