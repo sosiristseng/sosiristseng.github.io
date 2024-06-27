@@ -4,23 +4,13 @@ tags:
   - linux
 ---
 
-## Reduce Swapiness
-
-A low swapiness reduces swap usage and keep more data in RAM.
-
-```sh
-echo 'vm.swappiness = 10' | sudo tee -a /etc/sysctl.conf
-sudo sysctl -p            
-```
-you should see 'vm.swappiness = 10'
-
 ## Use Swap file (in btrfs)
 
 Swap file are more flexible in disk space and partition usage than swap partitions.
 
 Source: [btrfs docs](https://btrfs.readthedocs.io/en/latest/Swapfile.html) and [Arch Linux wiki](https://wiki.archlinux.org/title/btrfs#Swap_file).
 
-Because btrfs has copy-on-write (COW) by default, the swapfile should be COW-disabled.
+The swapfile should not use COW.
 
 ```sh
 cd /  # Or other dir for the swapfile
@@ -53,3 +43,15 @@ And one can see current activated swap by running
 ```sh
 cat /proc/swaps
 ```
+
+## Use ZRAM
+
+[ZRAM](https://wiki.archlinux.org/title/Zram) is a RAM disk with on-the-fly disk compression, reducing physical disk use under high memory usage.
+
+Install ZRAM in Ubuntu:
+
+```bash
+sudo apt install zram-config
+```
+
+edit `/usr/bin/init-zram-swapping` to change ZRAM options.
