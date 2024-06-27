@@ -19,17 +19,3 @@ tags:
     ```sh
     sudo snap install telegram-desktop
     ```
-
-=== "Windows"
-
-    chocolatey
-
-    ```powershell
-    choco install telegram
-    ```
-
-    winget
-
-    ```powershell
-    winget install Telegram.TelegramDesktop
-    ```

@@ -3,7 +3,6 @@ title: Hugo
 tags:
   - web
   - linux
-  - windows
   - github
   - devops
   - static-site-generator
@@ -11,35 +10,11 @@ tags:
 
 [Hugo](https://gohugo.io/) is the world’s fastest framework for building websites, written in Go.
 
-## Install Hugo locally
+## Install Hugo
 
 === "Ubuntu"
 
     Download and install the hugo `deb` file from the [release page](https://github.com/gohugoio/hugo/releases/latest).
-
-=== "snap"
-
-    Hugo installed by snap can only access files under the user's home directory.
-
-    ```bash
-    sudo snap install hugo
-    sudo snap connect hugo:removable-media
-    sudo snap connect hugo:ssh-keys
-    ```
-
-=== "Windows"
-
-    Via chocolatey:
-
-    ```powershell
-    choco install hugo-extended
-    ```
-
-    Go compiler is needed for Hugo modules
-
-    ```powershell
-    choco install golang
-    ```
 
 ## Hugo in GitHub actions
 

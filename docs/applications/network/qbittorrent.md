@@ -8,25 +8,9 @@ tags:
 
 [qBittorrent](https://www.qbittorrent.org/) is an open source and cross-platform BitTorrent client.
 
-## Install
+## Install (Ubuntu)
 
-=== "Ubuntu"
-
-    ```bash
-    sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
-    sudo apt update && sudo apt install -y qbittorrent
-    ```
-
-=== "Windows"
-
-    chocolatey:
-
-    ```powershell
-    choco install qbittorrent
-    ```
-
-    winget:
-
-    ```powershell
-    winget install qBittorrent.qBittorrent
-    ```
+```bash
+sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
+sudo apt update && sudo apt install -y qbittorrent
+```

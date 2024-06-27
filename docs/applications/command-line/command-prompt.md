@@ -48,12 +48,6 @@ To load starship prompt in the terminal, append the following line(s) to the ind
     eval "$(starship init zsh)"
     ```
 
-=== "Powershell"
-
-    ```powershell title="Documents\PowerShell\profile.ps1"
-    Invoke-Expression (&starship init powershell)
-    ```
-
 ## zimfw
 
 https://github.com/zimfw/zimfw is a blazing fast zsh plugin framework, about 30x faster loading speed than `oh-my-zsh`.

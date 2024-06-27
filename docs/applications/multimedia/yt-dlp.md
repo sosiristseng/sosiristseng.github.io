@@ -3,7 +3,6 @@ title: yt-dlp
 tags:
   - multimedia
   - linux
-  - windows
 ---
 
 [yt-dlp](https://github.com/yt-dlp/yt-dlp) is an actively developed fork of the famous Youtube video downloader `youtube-dl`.
@@ -17,20 +16,6 @@ tags:
     ```sh
     sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
     sudo chmod a+rx /usr/local/bin/yt-dlp
-    ```
-
-=== "Windows"
-
-    chocolatey
-
-    ```powershell
-    choco install yt-dlp
-    ```
-
-    winget
-
-    ```powershell
-    winget install yt-dlp.yt-dlp
     ```
 
 === "conda"

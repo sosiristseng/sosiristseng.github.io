@@ -3,32 +3,15 @@ title: FFmpeg
 tags:
   - multimedia
   - linux
-  - windows
 ---
 
 [ffmpeg](https://ffmpeg.org/ffmpeg-all.html):
 
-## Install
+## Install (Ubuntu)
 
-=== "Ubuntu"
-
-    ```sh
-    sudo apt install ffmpeg
-    ```
-
-=== "Windows"
-
-    chocolatey
-
-    ```powershell
-    choco install ffmpeg
-    ```
-
-    winget
-
-    ```powershell
-    winget install Gyan.FFmpeg
-    ```
+```sh
+sudo apt install ffmpeg
+```
 
 ## Usage
 

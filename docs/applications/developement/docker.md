@@ -50,7 +50,7 @@ Install [the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-
     sudo systemctl restart docker
     ```
 
-=== "Windows"
+=== "Windows (WSL)"
 
     Once a [Windows NVIDIA GPU driver](https://www.nvidia.com/Download/index.aspx?lang=en-us) is installed on the system, CUDA becomes available within WSL 2.
 

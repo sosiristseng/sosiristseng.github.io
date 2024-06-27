@@ -103,17 +103,3 @@ https://github.com/clementtsang/bottom is a resource monitor written in Rust. Th
     sudo snap connect bottom:system-observe
     sudo snap connect bottom:process-control
     ```
-
-=== "Windows"
-
-    Chocolatey:
-
-    ```powershell
-    choco install bottom
-    ```
-
-    winget:
-
-    ```powershell
-    winget install bottom
-    ```

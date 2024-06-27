@@ -76,8 +76,8 @@ Edit `.wslconfig` [^wslconfig] in your Windows home directory (Enter `%USERPROFI
 
 ```txt title=".wslconfig"
 [experimental]
-autoMemoryReclaim=dropcache
-sparseVhd=true
+autoMemoryReclaim=dropcache  # Reclaim RAM usage
+sparseVhd=true               # Reclaim virtual disk (vhd) usage
 ```
 
 [^autoreclaim]: https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/
@@ -96,6 +96,10 @@ wsl --update
 ### Reclaim virtual disk space
 
 #### Optimize-VHD
+
+> [!NOTE]
+> `Optimize-VHD` is not available in Windows Home edition.
+
 To reclaim disk space from virtual hard disks (VHDs), run the following commands with administrator privileges [^optimize-vhd]:
 
 ```powershell
@@ -104,7 +108,8 @@ Optimize-VHD -Path %path-to.vhdx% -Mode Full
 ```
 
 #### diskpart
-Alternatively, use `diskpart` (if `Optimize-VHD` is not found) [^vhd-diskpart]
+
+Alternatively, use `diskpart` (if `Optimize-VHD` is not available) [^vhd-diskpart]
 
 ```powershell
 wsl --shutdown
@@ -125,6 +130,10 @@ Alternatively, export the VHD as a tar file and reimport it again.
 [^vhd-diskpart]: https://answers.microsoft.com/en-us/windows/forum/all/optimize-vhd-not-found-in-windows-10-home/a727b760-0f82-4d0f-8480-d49eeaeb11a2
 
 ## Caveats about WSL2
+
+### Memory cost of running Hyper-V
+
+Hyper-V may reserve 1 GB of RAM. [Web archive](https://web.archive.org/web/20230228052007/https://www.reddit.com/r/bashonubuntuonwindows/comments/wo6729/the_hidden_costs_of_wsl2_memory_usage/)
 
 ### Poor filesystem performance across OSes
 

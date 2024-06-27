@@ -17,7 +17,7 @@ Convert `pdf` files to `tiff` images with `pdftoppm` or `ghostscript`.
 [^3]: https://jdhao.github.io/2019/11/14/convert_pdf_to_images_pdftoppm/
 [^4]: https://officeguide.cc/linux-pdftoppm-convert-pdf-to-jpg-png-tiff-image-tutorial-examples/
 
-### Install
+### Install pdftoppm
 
 To install `pdftoppm` (included in `poppler-utils`)[^2][^3][^4]
 
@@ -28,6 +28,8 @@ To install `pdftoppm` (included in `poppler-utils`)[^2][^3][^4]
     ```
 
 === "conda"
+
+    Available in both Windows and Linux.
 
     ```sh
     conda install -c conda-forge poppler

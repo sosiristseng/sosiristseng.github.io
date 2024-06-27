@@ -2,7 +2,6 @@
 title: VSCode
 tags:
   - linux
-  - windows
 ---
 
 [Visual Studio Code](https://code.visualstudio.com) is a lightweight but powerful source code editor which runs on your desktop and is available for Linux, macOS and Windows.
@@ -23,20 +22,6 @@ See also https://github.com/viatsko/awesome-vscode for a curated list of delight
 
     ```sh
     sudo snap install code --classic
-    ```
-
-=== "Windows"
-
-    chocolatey:
-
-    ```powershell
-    choco install vscode
-    ```
-
-    winget:
-
-    ```powershell
-    winget install vscode
     ```
 
 ## VSCode Settings
