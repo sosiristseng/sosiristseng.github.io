@@ -88,7 +88,6 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 - [New old stock](https://nos.twnsnd.co/): old photos
 - [Pexels](https://www.pexels.com/)
 - [Pic jumbo](https://picjumbo.com/)
-- [Pickup image](https://pickupimage.com/)
 - [Pixabay](https://pixabay.com/)
 - [Public Domain Pictures](https://www.publicdomainpictures.net/en/)
 - [Stock Vault](https://www.stockvault.net/)
