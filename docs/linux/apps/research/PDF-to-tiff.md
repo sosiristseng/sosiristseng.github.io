@@ -64,7 +64,7 @@ To install GhostScript and ImageMagick
     ```
 
 > [!NOTE]
-> For security reasons, PDF read/write operations are disable by default. You enable this function by editing the settings file `/etc/ImageMagick-7/policy.xml`
+> For security reasons, PDF read and write operations are disable by default. Enable PDF read and write by editing `/etc/ImageMagick-7/policy.xml`
 > ```xml title="/etc/ImageMagick-7/policy.xml"
 > <policy domain="coder" rights="read | write" pattern="PDF" />
 > ```
@@ -74,10 +74,10 @@ To install GhostScript and ImageMagick
 How to convert a `pdf` file to a `tiff` file:
 
 ```sh
-convert -density 300 \
+magick "image.pdf" -density 300 \
         -compress lzw \
         -background white \
         -alpha remove \
         -trim \
-        "image.pdf" "image_%d.tiff"
+        "image_%d.tiff"
 ```
