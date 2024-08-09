@@ -27,7 +27,7 @@ You can replace  `archive.ubuntu.com` with a closer mirror, e.g., `tw.archive.
 sudo apt clean && sudo apt update && sudo apt full-upgrade -y
 ```
 
-## Setup 3rd party repos
+## Setup 3rd party apps
 
 Adding 3rd party repositories for latest packages not available in xUbuntu's official repositories.
 
@@ -37,15 +37,47 @@ First, install required package
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-The setup repos for applications:
-
-- [brave](apps/brave.md)
 - [docker](apps/docker.md)
 - [firefox](apps/firefox.md)
-- [git](apps/git.md)
-- [qbittorrent](apps/qbittorrent.md)
-- [vivaldi](apps/vivaldi.md)
 - [vscode](apps/vscode.md)
+
+### Brave browser
+
+Setup [Brave browser](https://brave.com)
+
+```sh
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list > /dev/null
+sudo apt update && sudo apt install -y brave-browser
+```
+
+### Git
+
+```bash
+sudo add-apt-repository -y ppa:git-core/ppa
+sudo apt update && sudo apt install -y git git-lfs
+```
+
+### qBittorrent
+
+```bash
+sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
+sudo apt update && sudo apt install -y qbittorrent
+```
+
+### Telegram messenger
+
+Download and run the [official binaries](https://telegram.org).
+
+### Vivaldi browser
+
+[Vivaldi browser](https://vivaldi.com/download/)
+
+```bash
+curl -fsSL https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/vivaldi-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/vivaldi-keyring.gpg arch=amd64] https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt/sources.list.d/vivaldi.list > /dev/null
+sudo apt update && sudo apt install -y vivaldi-stable
+```
 
 ### Xanmod Linux kernel
 
@@ -79,6 +111,17 @@ To add the CUDA compiler (`nvcc`) to the system `PATH`:
 ```sh
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```
+
+For WSL2, install Window NVIDIA GPU driver first; then install the CUDA toolkit in the WSL
+
+```bash
+# remove the old GPG key
+sudo apt-key del 7fa2af80
+# Install Linux CUDA toolkit
+wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo apt update && sudo apt install -y cuda
 ```
 
 ### AMD and Intel open-source GPU driver (Mesa)
