@@ -10,10 +10,10 @@ https://github.com/Awesome-Windows/Awesome : Curated list of best applications a
 
 ## Internet
 
-- [brave](../applications/network/brave.md)
-- [vivaldi](../applications/network/vivaldi.md)
-- [qbittorrent](../applications/network/qbittorrent.md)
-- [telegram](../applications/network/telegram.md)
+- [brave](./applications/network/brave.md)
+- [vivaldi](./applications/network/vivaldi.md)
+- [qbittorrent](./applications/network/qbittorrent.md)
+- [telegram](./applications/network/telegram.md)
 
 ## Command line tools
 
