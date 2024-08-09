@@ -95,22 +95,22 @@ sudo apt update && sudo apt install -y linux-xanmod
 
 Install nvidia CUDA runtime and compatible [GPU driver](https://developer.nvidia.com/cuda-downloads).
 
-For Ubuntu 22.04:
+For Ubuntu 24.04:
 
 ```bash
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
-sudo dpkg -i cuda-keyring_1.0-1_all.deb
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-ubuntu2404.pin
+sudo mv cuda-ubuntu2404.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda-repo-ubuntu2404-12-6-local_12.6.0-560.28.03-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu2404-12-6-local_12.6.0-560.28.03-1_amd64.deb
+sudo cp /var/cuda-repo-ubuntu2404-12-6-local/cuda-*-keyring.gpg /usr/share/keyrings/
 sudo apt-get update
-sudo apt-get -y install cuda-toolkit
+sudo apt-get -y install cuda
 ```
 
-To add the CUDA compiler (`nvcc`) to the system `PATH`:
+Add the CUDA compiler (`nvcc`) to the system `PATH`:
 
-`~/.profile`
-
-```sh
-export PATH=/usr/local/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```sh title="~/.profile"
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 ```
 
 For WSL2, install Window NVIDIA GPU driver first; then install the CUDA toolkit in the WSL
@@ -124,7 +124,7 @@ sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt update && sudo apt install -y cuda
 ```
 
-### AMD and Intel open-source GPU driver (Mesa)
+### AMD and Intel open-source GPU library (Mesa)
 
 Install the latest Mesa open source GPU drivers from the [kisak PPA](https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa)
 
@@ -133,11 +133,21 @@ sudo add-apt-repository -y ppa:kisak/kisak-mesa
 sudo apt update && sudo apt full-upgrade -y
 ```
 
-## (Optional) Wine and 32-bit games support
+### (Optional) Wine and 32-bit games support
 
 ```bash
 sudo dpkg --add-architecture i386
 ```
+
+```bash
+sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+```
+
+```bash
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
+```
+
 
 ## Update your system
 

@@ -4,40 +4,28 @@ tags:
   - docker
   - devops
   - linux
-  - windows
 ---
 
-- https://github.com/veggiemonk/awesome-docker : A curated list of Docker resources and project.
+- [awesome-docker](https://github.com/veggiemonk/awesome-docker) : A curated list of Docker resources and project.
 - [Docker Hub](https://hub.docker.com/) for docker images.
 
 ## Install docker engine
 
-=== "Ubuntu"
+Please check [supported versions](https://docs.docker.com/engine/install/ubuntu/) first before adding the repository.
 
-    Please check [supported versions](https://docs.docker.com/engine/install/ubuntu/) first before adding the repository.
+```bash
+sudo apt update && sudo apt install -y ca-certificates curl gnupg lsb-release
 
-    ```bash
-    sudo apt update && sudo apt install -y ca-certificates curl gnupg lsb-release
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-    sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
-    ```
-
-=== "Windows"
-
-    [Docker desktop](https://www.docker.com/products/docker-desktop/) for Windows.
-
-    ```powershell
-    choco install docker-desktop
-    ```
+sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
 
 ## NVIDIA GPU support
 
 Install [the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation)
-
 
 ```sh
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
@@ -81,7 +69,7 @@ sudo service docker restart
 ## Documentations and Tutorials for Docker
 
 - Dockerfile [best practice](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices)
-- [Production-ready Docker packaging for Python developers](https://pythonspeed.com/docker/) by Turner-Trauring.
+- [Production-ready Docker packaging for Python developers](https://pythonspeed.com/docker/).
 
 ## Docker Utilities
 
