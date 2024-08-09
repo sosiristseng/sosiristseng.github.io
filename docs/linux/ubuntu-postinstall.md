@@ -39,13 +39,13 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 
 The setup repos for applications:
 
-- [brave](apps/network/brave.md)
-- [docker](apps/developement/docker.md)
-- [firefox](apps/network/firefox.md)
-- [git](apps/developement/git.md)
-- [qbittorrent](apps/network/qbittorrent.md)
-- [vivaldi](apps/network/vivaldi.md)
-- [vscode](apps/developement/vscode.md)
+- [brave](apps/brave.md)
+- [docker](apps/docker.md)
+- [firefox](apps/firefox.md)
+- [git](apps/git.md)
+- [qbittorrent](apps/qbittorrent.md)
+- [vivaldi](apps/vivaldi.md)
+- [vscode](apps/vscode.md)
 
 ### Xanmod Linux kernel
 
@@ -241,10 +241,10 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ## Misc.
 
-- [Conda](./apps/package-manager/miniforge.md)
+- [Conda](./apps/miniforge.md)
 - [[setup-julia]]
 - [Linux themes](./apps/linux-themes.md)
 - [FreeFileSync](https://freefilesync.org/)
-- [Hugo](./apps/developement/hugo.md)
+- [Hugo](./apps/hugo.md)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)
 - [Virtualbox](https://www.virtualbox.org/)
