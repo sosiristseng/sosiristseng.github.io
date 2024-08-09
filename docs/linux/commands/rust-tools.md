@@ -39,7 +39,7 @@ https://github.com/BurntSushi/ripgrep is a line-oriented search tool that recurs
 
 ## bottom: system monitor written in Rust
 
-[Bottom](sysmon.md#bottom)
+[Bottom](../apps/command-line/sysmon.md#bottom)
 
 ## zoxide
 

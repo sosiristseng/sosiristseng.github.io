@@ -9,8 +9,8 @@ The famous [Git](https://git-scm.com/) version control system.
 
 See also:
 
-- [Git commands](../../code/git/index.md)
-- [Git operations in GitHub actions](../../code/github-actions/git-ops-gha.md)
+- [Git commands](../code/git/index.md)
+- [Git operations in GitHub actions](../code/github-actions/git-ops-gha.md)
 
 ## Install (Ubuntu)
 

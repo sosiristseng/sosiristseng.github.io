@@ -5,7 +5,7 @@ tags:
   - ssh
 ---
 
-[nohup](https://cht.sh/nohup) runs background process(es) uninterruptedly even the remote SSH session goes offline.
+[nohup](https://cht.sh/nohup) runs background processes uninterruptedly even the remote SSH session goes offline.
 
 ```sh
 nohup mycmd &

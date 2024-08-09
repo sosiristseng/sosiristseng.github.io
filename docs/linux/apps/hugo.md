@@ -18,7 +18,7 @@ tags:
 
 ## Hugo in GitHub actions
 
-[Hugo in GitHub actions](../../code/github-actions/runtime/hugo-gha.md)
+[Hugo in GitHub actions](../code/github-actions/runtime/hugo-gha.md)
 
 ## Hugo in docker
 

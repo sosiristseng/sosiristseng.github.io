@@ -1,5 +1,5 @@
 ---
-title: Passing multiple lines of string
+title: "heredoc: Passing multiple lines of string"
 tags:
   - linux
   - command-line
@@ -17,7 +17,7 @@ ibus-daemon -drx
 EOF
 ```
 
-  Will append the following lines in ~/.xprofile:
+Will append the following lines in ~/.xprofile:
 
 ```sh title=".xprofile"
 export GTK_IM_MODULE=ibus
