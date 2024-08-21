@@ -45,29 +45,21 @@ For example, to convert the pdf file to a 300-DPI TIFF image with LZW compressio
 pdftoppm -tiff -tiffcompression lzw -r 300 in.pdf out.tif
 ```
 
-## GhostScript and ImageMagick
+## ImageMagick
 
 ### Install
-
-To install GhostScript and ImageMagick
 
 === "Ubuntu"
 
     ```sh
-    sudo apt install ghostscript imagemagick
+    sudo apt install imagemagick
     ```
 
 === "Windows"
 
     ```powershell
-    choco install -y ghostscript imagemagick
+    choco install -y imagemagick
     ```
-
-> [!NOTE]
-> For security reasons, PDF read and write operations are disable by default. Enable PDF read and write by editing `/etc/ImageMagick-7/policy.xml`
-> ```xml title="/etc/ImageMagick-7/policy.xml"
-> <policy domain="coder" rights="read | write" pattern="PDF" />
-> ```
 
 ### Usage
 
