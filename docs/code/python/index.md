@@ -7,32 +7,33 @@ tags:
 
 [Awesome Python](https://github.com/vinta/awesome-python): a curated list of Python stuff.
 
-## Running Python programs
+## Python IDEs
 
-- [VSCode](https://code.visualstudio.com/) + [Python extension](https://code.visualstudio.com/docs/languages/python)
+- [VSCode](https://code.visualstudio.com/) + [Python extension](https://code.visualstudio.com/docs/languages/python).
 - [PyCharm](https://www.jetbrains.com/pycharm/) by Jetbrains.
-- [Spyder](https://www.spyder-ide.org/) (included in Anaconda distribution).
-- [Jupyter Lab](https://github.com/jupyterlab/jupyterlab) (included in Anaconda distribution).
-- https://github.com/jupyterlab/jupyterlab-desktop : A standalone desktop application for https://github.com/jupyterlab/jupyterlab , based on Electron.
+- [Spyder](https://www.spyder-ide.org/): a free and open source scientific environment for Python.
+- [Jupyter Lab](https://github.com/jupyterlab/jupyterlab): a highly extensible, feature-rich notebook authoring application and editing environment.
 
 ### JupyterLab themes
 
 - https://github.com/dunovank/jupyter-themes : `pip install jupyterthemes`
 - https://github.com/johnnybarrels/jupyterlab_onedarkpro : `jupyter labextension install jupyterlab_onedarkpro`
 
-### Run Python Notebooks online
+## Run Python Notebooks online
 
-- [Google Colab](https://colab.research.google.com/) : an online jupyter notebook platform for machine learning.
-- [Binder](https://mybinder.org/) : make a git repo of notebooks executable.
+- [Google Colab](https://colab.research.google.com/): an online jupyter notebook platform for machine learning.
+- [Binder](https://mybinder.org/): make online (e.g., GitHub repo) notebooks executable.
 
 ## Package Manager for Python
 
-- [Anaconda Python](https://www.anaconda.com/products/individual) : a full set of scientific Python packages with the `conda` package manager.
-  - https://github.com/conda-forge/miniforge : minimal installation with the `conda` package manager and the [`conda-forge`](https://conda-forge.org/) community packages.
-  - [conda-forge packages](https://anaconda.org/conda-forge/repo)
-- [pipenv](https://pipenv.pypa.io/en/latest/) : the official dependency management tool for Python packages.
-- [Poetry](https://python-poetry.org/) : Python packaging and dependency management.
-- [pdm](https://pdm.fming.dev/) : A modern Python package manager with [PEP 582](https://www.python.org/dev/peps/pep-0582) support.
+- [Anaconda Python](https://www.anaconda.com/products/individual): a full set of scientific Python packages with the `conda` package manager.
+  - https://github.com/conda-forge/miniforge : minimal installation with `conda` and `mamba` package managers and the [`conda-forge`](https://conda-forge.org/) [community packages](https://anaconda.org/conda-forge/repo).
+  - [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html): `micromamba` is a tiny version of the `mamba` package manager.
+  - https://github.com/prefix-dev/pixi: `pixi` is a cross-platform, multi-language package manager similar to `conda`, but is blazing fast and written in Rust.
+- [pipenv](https://pipenv.pypa.io/en/latest/): the official dependency management tool for Python packages.
+- [Poetry](https://python-poetry.org/): Python packaging and dependency management.
+- [pdm](https://pdm.fming.dev/): A modern Python package manager with [PEP 582](https://www.python.org/dev/peps/pep-0582) support.
+- [uv](https://docs.astral.sh/uv/): `uv` is a drop-in replacement for `pip`, an extremely fast Python package and project manager written in Rust.
 
 ## Machine learning
 
