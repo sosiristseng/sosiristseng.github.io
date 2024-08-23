@@ -294,7 +294,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ## Misc.
 
-- [Conda](./apps/miniforge.md)
+- [Conda](../code/python/miniforge.md)
 - [[setup-julia]]
 - [Linux themes](./apps/linux-themes.md)
 - [FreeFileSync](https://freefilesync.org/)

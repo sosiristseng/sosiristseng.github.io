@@ -1,5 +1,5 @@
 ---
-title: Miniforge
+title: Setup miniforge
 tags:
   - python
   - conda
@@ -7,11 +7,13 @@ tags:
   - windows
 ---
 
-The community-driven [conda-forge](https://conda-forge.org/docs/user/introduction.html) repository with the basic `conda` package manager now includes the fast new [mamba](https://github.com/mamba-org/mamba) package manager.
+The community-driven [conda-forge](https://conda-forge.org/docs/user/introduction.html) repository with the basic `conda` package manage as well as the fast new [mamba](https://github.com/mamba-org/mamba) package manager.
+
+## Install (Windows)
+
+Download and run the installer in https://github.com/conda-forge/miniforge
 
 ## Install (Linux)
-
-Download and install the Miniforge installer in Linux.
 
 ```bash
 CONDA_PATH="${HOME}/conda"
@@ -25,7 +27,7 @@ source "${CONDA_SH}"
 conda activate base
 
 # conda package manager setup
-# conda config --set auto_activate_base false
+conda config --set auto_activate_base false
 conda config --set default_threads $(nproc)
 mamba update python --yes && mamba update --all --yes
 

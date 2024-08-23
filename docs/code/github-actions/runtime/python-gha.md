@@ -24,27 +24,6 @@ steps:
 - run: pip install -r requirements.txt
 ```
 
-### Cache Python environment
-
-You can cache the whole Python environment so `pip install` can be skipped for the same packages.[^1]
-
-```yaml
-- name: Setup Python
-  uses: actions/setup-python@v5
-  id: setup-python
-  with:
-    python-version: '3.x'
-- name: Cache python
-  uses: actions/cache@v4
-  id: cache-py
-  with:
-    key: ${{ runner.os }}-py-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
-    path: ${{ env.pythonLocation }}
-- name: Install Python dependencies
-  if: ${{ steps.cache-py.outputs.cache-hit != 'true' }}
-  run: pip install -r requirements.txt
-```
-
 ### Cache venv environment
 
 The following workflow caches the virtual environment folder[^2], which is faster than caching the whole Python environment.
@@ -75,9 +54,33 @@ The following workflow caches the virtual environment folder[^2], which is faste
 [^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170
 [^2]: https://adamj.eu/tech/2023/11/02/github-actions-faster-python-virtual-environments/
 
+### Use `uv`
+
+[uv](https://docs.astral.sh/uv/) is a drop-in replacement for `pip`, an extremely fast Python package and project manager written in Rust.
+
+The GitHub actions [workflow](https://docs.astral.sh/uv/guides/integration/github/):
+
+```yaml
+name: UV example
+
+jobs:
+  python-linux:
+    env:
+      UV_SYSTEM_PYTHON: 1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+      - name: Set up uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Install requirements
+        run: uv pip install -r requirements.txt
+```
+
 ## Conda packages
 
-The https://github.com/mamba-org/setup-micromamba action installs the [micromamba](https://github.com/mamba-org/mamba#micromamba) package manager and conda package dependencies. It can also cache the whole runtime environment.
+The https://github.com/mamba-org/setup-micromamba action installs the [micromamba](https://github.com/mamba-org/mamba#micromamba) package manager and conda package dependencies. It also caches the Python runtime environment.
 
 ```yaml
 - uses: mamba-org/setup-micromamba@v1

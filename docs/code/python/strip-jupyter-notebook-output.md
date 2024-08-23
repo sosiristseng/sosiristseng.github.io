@@ -15,9 +15,7 @@ Jupyter notebooks without multimedia outputs are more friendly to source control
 You can use `nbconvert` to remove the output cells of Jupyter notebooks.
 
 ```bash
-
 jupyter nbconvert --clear-output --inplace my_notebook.ipynb
-
 ```
 
 ### Git automation
@@ -37,7 +35,7 @@ And in your project folder's `.gitattributes`:
 *.ipynb filter=strip-notebook-output
 ```
 
-How this works: [^1]
+How this works:[^1]
 
 - The `attribute` tells git to run the filter's clean action on each notebook file before adding it to the index (staging).
 - The filter is our friend `nbconvert`, set up to read from stdin, write to stdout, strip the output, and only speak when it has something important to say.
