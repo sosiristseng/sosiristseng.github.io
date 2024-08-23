@@ -69,7 +69,10 @@ Sources:
 1. [mplstyle and rcparams](https://matplotlib.org/stable/tutorials/introductory/customizing.html) for matplotlib
 2. [PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl) readme
 3. [mplstyle and rcparams](https://matplotlib.org/stable/tutorials/introductory/customizing.html) in `matplotlib` docs.
+
 ### Python
+
+`matplotlib`
 
 ```python
 import matplotlib as mpl
@@ -79,7 +82,7 @@ mpl.rcParams["font.size"] = 12
 ```
 ### Julia
 
-If using `PyPlot.jl`
+`PyPlot.jl`
 
 ```julia
 import PyPlot as plt
@@ -97,4 +100,11 @@ Plots.pyplot()
 Plots.pyrcparams["font.size"] = 12
 Plots.pyrcparams["font.sans-serif"] = "Arial"
 Plots.pyrcparams["font.family"] = "sans-serif"
+```
+
+`PythonPlot.jl`
+
+```julia
+import PythonPlot as plt
+plt.matplotlib.rcParams["font.size"] = 14
 ```
