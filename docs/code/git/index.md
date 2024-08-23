@@ -36,7 +36,7 @@ If there are submodule(s) in the Git repository, you might want to clone them as
 git clone <url> --recursive
 ```
 
-See also: [SSH login](ssh-login-git.md) to Git services like GitHub and GitLab.
+See also: [SSH login](git-ssh-login.md) to Git services like GitHub and GitLab.
 
 ### Make changes and commit
 

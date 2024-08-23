@@ -16,7 +16,7 @@ Frequently used commands for Git submodules.
 TO add the reference to another git project as a submodule:
 
 ```sh
-git submodule add <url> <path>
+git submodule add $url $path
 git submodule update --init --recursive
 ```
 
@@ -32,16 +32,16 @@ Add you will see the file `.gitmodules` with information about the submodule(s).
 
 ## Track a specific branch in the submodule
 
-With `-b <branchname>` option
+With `-b $branch` option
 
 ```sh
-git submodule add -b <branchname> <url> <path>
+git submodule add -b $branch $url $path
 ```
 
-Or `set-branch -b <branchname>` if you already have added a submodule
+Or `set-branch -b  $branch` if you already have added a submodule
 
 ```sh
-git submodule set-branch -b <branchname> <path>
+git submodule set-branch -b  $branch $path
 ```
 
 ## Update all Git submodules to the latest commit
@@ -60,9 +60,9 @@ From [Git docs](https://git-scm.com/docs/gitsubmodules)
 
 ```sh
 # Remove submodule from config
-git submodule deinit <path>
+git submodule deinit $path
 # Delete submodule tracking data
 git rm <submodule path> && git commit
 # Complete removal
-rm -rf $GIT_DIR/modules/<name>/
+rm -rf $GIT_DIR/modules/$name/
 ```
