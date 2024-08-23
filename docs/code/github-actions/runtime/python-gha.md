@@ -51,7 +51,6 @@ The following workflow caches the virtual environment folder[^2], which is faste
     echo "JULIA_PYTHONCALL_EXE=${VIRTUAL_ENV}/bin/python">> $GITHUB_ENV
 ```
 
-[^1]: https://github.com/actions/setup-python/issues/330#issuecomment-1416883170
 [^2]: https://adamj.eu/tech/2023/11/02/github-actions-faster-python-virtual-environments/
 
 ### Use `uv`
