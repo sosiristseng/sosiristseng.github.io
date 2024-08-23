@@ -53,9 +53,9 @@ The `cache` actions could be split into `restore` and `save` steps, leading to a
 
 Some GitHub actions for setting up runtime for programming languages can cache package dependency.
 
-- NodeJS: https://github.com/actions/setup-node
-- Python: https://github.com/actions/setup-python (pip) and https://github.com/mamba-org/setup-micromamba (conda/mamba)
-- Julia: https://github.com/julia-actions/cache
++ NodeJS: https://github.com/actions/setup-node
++ Python: https://github.com/actions/setup-python (pip) and https://github.com/mamba-org/setup-micromamba (conda/mamba)
++ Julia: https://github.com/julia-actions/cache
 
 ## Cleanup PR caches
 
