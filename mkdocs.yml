@@ -24,8 +24,6 @@ copyright: Copyright &copy; 2016 - 2024 Wen-Wei Tseng
 # MkDocs plugins
 plugins:
   - search
-  - callouts
-  - ezlinks
   - blog:
       blog_dir: blog
       blog_toc: true
@@ -35,6 +33,8 @@ plugins:
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
       enable_creation_date: !ENV [CI, false]
+  - callouts
+  - ezlinks
 
 # Theme configuration
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
