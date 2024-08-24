@@ -1,8 +1,11 @@
 ---
 title: Swap Setup
+date: 2024-04-22
 tags:
   - linux
 ---
+
+<!-- more -->
 
 ## Use Swap file (in btrfs)
 

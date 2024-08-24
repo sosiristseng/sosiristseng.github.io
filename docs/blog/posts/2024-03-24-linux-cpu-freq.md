@@ -6,6 +6,8 @@ tags:
   - cpu
 ---
 
+<!-- more -->
+
 ## See current CPU frequency
 
 To display frequencies of all CPU cores every second:

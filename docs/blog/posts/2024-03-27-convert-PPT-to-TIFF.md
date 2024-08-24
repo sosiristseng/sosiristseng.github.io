@@ -1,5 +1,5 @@
 ---
-title: Convert PPT to TIFF
+title: Convert powerpoint slides to TIFF images
 date: 2024-03-27
 tags:
   - windows
@@ -9,6 +9,8 @@ tags:
 ---
 
 How to export high resolution TIFF images from PowerPoint slides.
+
+<!-- more -->
 
 ## Advanced save options
 

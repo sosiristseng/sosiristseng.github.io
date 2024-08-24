@@ -8,6 +8,8 @@ tags:
 
 Reload nvidia GPU driver to fix "NVML: Driver/library version mismatch" error without rebooting. [Source](https://forums.developer.nvidia.com/t/how-to-fix-nvml-driver-library-version-mismatch-without-rebooting/269998)
 
+<!-- more -->
+
 ```bash
 sudo apt purge $DRIVER_TO_DELETE
 sudo apt reinstall $DRIVER_OF_CHOICE

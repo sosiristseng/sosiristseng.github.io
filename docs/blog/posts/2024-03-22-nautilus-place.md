@@ -7,6 +7,8 @@ tags:
 
 How to recover Nautilus (File manager in Gnome) places folders.
 
+<!-- more -->
+
 ![](https://user-images.githubusercontent.com/40054455/163508819-5e853b38-4131-44f1-b1ff-5f116d850e17.png)
 
 Check `~/.config/user-dirs.dirs` and make sure the following entries exist and properly setup

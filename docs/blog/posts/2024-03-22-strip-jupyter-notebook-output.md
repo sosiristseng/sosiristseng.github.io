@@ -10,6 +10,8 @@ tags:
 
 Jupyter notebooks without multimedia outputs are more friendly to source control since git is not good at comparing binary data (e.g., plots, pictures, videos) in jupyter notebooks. And they tend to bloat the size of git repositories.
 
+<!-- more -->
+
 ## nbconvert
 
 You can use `nbconvert` to remove the output cells of Jupyter notebooks.

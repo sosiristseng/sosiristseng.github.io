@@ -1,11 +1,15 @@
 ---
 title: Dynamic parallel matrix
+date: 2024-04-24
 tags:
   - github
-  - devops
+categories:
+  - DevOps
 ---
 
 [Job matrix](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs) creates multiple job runs that are based on the combinations of the variables. Sometimes we want a dynamic number of matrix jobs, which requires a JSON array as an output. Here we use `json` and `glob` modules in Python to generate that JSON list.[^list-in-dir][^ls-json]
+
+<!-- more -->
 
 [^list-in-dir]: https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
 [^ls-json]: https://stackoverflow.com/questions/10234327/convert-bash-ls-output-to-json-array

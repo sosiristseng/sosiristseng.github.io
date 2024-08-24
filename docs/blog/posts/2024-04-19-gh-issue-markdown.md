@@ -1,11 +1,14 @@
 ---
 title: Convert GitHub issues to a markdown file
+date: 2024-04-19
 tags:
   - markdown
   - github
 ---
 
 The Python package https://github.com/mattduck/gh2md exports Github repository issues and pull requests to a single, readable markdown file.
+
+<!-- more -->
 
 ```yaml title=".github/workflows/issues2md.yml"
 name: Issues2Markdown

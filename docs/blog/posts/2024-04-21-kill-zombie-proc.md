@@ -9,6 +9,8 @@ tags:
 
 Find zombie process(es)
 
+<!-- more -->
+
 ```bash
 ps axo stat,ppid,pid,comm | grep -w defunct
 ```

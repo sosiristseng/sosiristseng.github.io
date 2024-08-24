@@ -21,13 +21,13 @@ tags:
 
 ## Setup runtime environment
 
-+ [Docker](runtime/docker-gha.md)
++ [Docker](docker-gha.md)
 + Pandoc: https://github.com/r-lib/actions/tree/v2-branch/setup-pandoc
 + LaTeX: tinytex https://github.com/r-lib/actions/tree/v2/setup-tinytex and tectonic https://github.com/WtfJoke/setup-tectonic
-+ [Julia](runtime/julia-gha.md)
-+ [NodeJS](runtime/node-gha.md)
-+ [Python](runtime/python-gha.md)
-+ [Hugo](runtime/hugo-gha.md)
++ [Julia](julia-gha.md)
++ [NodeJS](node-gha.md)
++ [Python](python-gha.md)
++ [Hugo](hugo-gha.md)
 
 ## Intermediate data
 
@@ -44,7 +44,7 @@ tags:
 ## Repository and workflow automation
 
 + https://github.com/actions/stale : Marks issues and pull requests that have not had recent interaction as stale and might close them after a while.
-+ [Automated dependency update](auto-deps-update.md)
-+ [Status check for a multi-stage workflow](status-check-job.md)
-+ [Dynamic parallel matrix](dynamic-parallel-gha.md)
-+ [Working with Cirrus CI](cirrus-ci-gha.md)
++ [[auto-deps-update|Automated dependency update]]
++ [[2024-04-25-status-check-job|Status check for a multi-stage workflow]]
++ [[2024-04-24-dynamic-parallel-gha|Dynamic parallel matrix]]
++ [[2024-03-18-cirrus-ci-gha|Working with Cirrus CI]]

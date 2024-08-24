@@ -3,11 +3,14 @@ title: Github Action and Cirrus CI
 date: 2024-03-18
 tags:
   - github
-  - devops
   - cirrus-ci
+categories:
+  - DevOps
 ---
 
 Run Github actions after successful [Cirrus CI](https://cirrus-ci.org/) runs using the [`check_suite`](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#check_suite) trigger.
+
+<!-- more -->
 
 ```yaml title=".github/workflows/cirrus.yml"
 on:
