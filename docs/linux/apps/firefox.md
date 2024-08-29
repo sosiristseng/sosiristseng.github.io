@@ -52,9 +52,3 @@ Enter `about:config` in the location bar.
 + Set `full-screen-api.transition-duration.leave` to `0 0`
 + Set `full-screen-api.transition.timeout` to `0`
 + Set `full-screen-api.warning.timeout` to `0`
-
-### Workaround youtube buffering lags
-
-Disable VP9 video
-
-+ Set `media.mediasource.vp9.enabled` to `false`
