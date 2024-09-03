@@ -23,8 +23,30 @@ Things to do after installing
 
 You can replace  `archive.ubuntu.com` with a closer mirror, e.g., `tw.archive.ubuntu.com` or `free.nchc.org.tw` in `/etc/apt/sources.list`. After you are done, run:
 
-```bash
+```sh
 sudo apt clean && sudo apt update && sudo apt full-upgrade -y
+```
+
+## (Optional) Remove snap
+
+List snap packages
+
+```sh
+snap list
+```
+
+Uninstall each Snap package
+
+```sh
+sudo snap remove $PKG
+```
+
+Stop the snapd service and uninstall it
+
+```sh
+sudo systemctl stop snapd
+sudo apt remove --autoremove --purge snapd
+sudo apt-mark hold snapd
 ```
 
 ## Setup 3rd party apps
