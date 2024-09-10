@@ -25,6 +25,7 @@ tags:
 >[!NOTE]
 > zsh [does not source](https://superuser.com/questions/187639/zsh-not-hitting-profile) `~/.profile` by default because of the difference between bash and zsh syntaxes. You can add this line to `~/.zprofile` or `~/.zshenv` to make zsh shells read `~/.profile correctly.
 > ```zsh title="~/.zshenv"
+> skip_global_compinit=1
 > test -r ${HOME}/.profile && emulate sh -c 'source ${HOME}/.profile'
 > ```
 
