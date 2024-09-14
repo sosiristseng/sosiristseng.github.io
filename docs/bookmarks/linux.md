@@ -1,5 +1,5 @@
 ---
-title: Linux Bookmarks
+title: Linux
 tags:
 - bookmark
 - linux

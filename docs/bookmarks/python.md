@@ -1,5 +1,5 @@
 ---
-title: Python Bookmarks
+title: Python
 tags:
 - bookmark
 - python

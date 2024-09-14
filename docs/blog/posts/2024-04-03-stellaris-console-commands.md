@@ -6,8 +6,9 @@ tags:
 ---
 
 + [Stellaris console commands](https://stellaris.paradoxwikis.com/Console_commands)
-+ [Stellaris ID](https://stellaris.paradoxwikis.com/ID)
-+ [Stellaris cheats](https://stellarischeats.com/)
++ [Stellaris IDs](https://stellaris.paradoxwikis.com/ID)
++ [Stellaris cheats](https://stellarischeats.com)
++ [Stellaris mods](https://stellaris.smods.ru)
 
 <!-- more -->
 
