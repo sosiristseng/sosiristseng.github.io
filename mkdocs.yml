@@ -62,7 +62,7 @@ theme:
     - content.code.copy
     - content.tabs.link
     - navigation.footer
-    - navigation.indexes # Not compatible with toc.integrate
+    # - navigation.indexes # Not compatible with toc.integrate
     - navigation.instant
     # - navigation.instant.prefetch # Insiders only
     - navigation.instant.progress
