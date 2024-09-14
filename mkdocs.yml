@@ -27,6 +27,7 @@ plugins:
   - blog:
       blog_dir: blog
       blog_toc: true
+      archive_date_format: yyyy-MM
   - tags:
       tags_file: index.md
       enabled: !ENV [CI, false]
