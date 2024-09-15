@@ -71,6 +71,16 @@ Caretaker AX7-b	(need to select a science vessel)
 effect random_owned_ship = { ship_event = { id = distar.245 } }
 ```
 
+Tuborek (need to select a science vessel)
+```
+effect random_owned_ship = { ship_event = { id = galactic_features.3035 } }
+```
+
+Nameless Apostate
+```
+event crisis.21125
+```
+
 ## Relics
 
 Add relics
