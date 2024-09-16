@@ -1,5 +1,5 @@
 ---
-title: Manual
+title: CLI Manual
 date: 2023-08-27
 tags:
   - linux

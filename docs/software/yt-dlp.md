@@ -9,20 +9,26 @@ tags:
 
 ## Install
 
-=== "Binary Executable"
+### Binary Executable
 
-    Download the binary executable for Linux/MacOS.
+Download the binary executable for Linux/MacOS.
 
-    ```sh
-    sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-    sudo chmod a+rx /usr/local/bin/yt-dlp
-    ```
+```sh
+sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp
+```
 
-=== "conda"
+### conda
 
-    ```sh
-    conda install -c conda-forge yt-dlp
-    ```
+```sh
+conda install -c conda-forge yt-dlp
+```
+
+### Windows
+
+```powershell
+choco install yt-dlp
+```
 
 ## Usage
 

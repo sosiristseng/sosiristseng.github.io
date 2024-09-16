@@ -3,6 +3,7 @@ title: System monitor
 tags:
   - linux
   - command-line
+  - system-monitor
 ---
 
 ## btop

@@ -59,9 +59,9 @@ First, install required package
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-- [docker](apps/docker.md)
-- [firefox](apps/firefox.md)
-- [vscode](apps/vscode.md)
+- [docker](../software/docker.md)
+- [firefox](../software/firefox.md)
+- [vscode](../software/vscode.md)
 
 ### Brave browser
 
@@ -318,8 +318,8 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 - [Conda](../code/python/miniforge.md)
 - [[setup-julia]]
-- [Linux themes](./apps/linux-themes.md)
+- [Linux themes](../linux/apps/linux-themes.md)
 - [FreeFileSync](https://freefilesync.org/)
-- [Hugo](./apps/hugo.md)
+- [Hugo](../software/hugo.md)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)
 - [Virtualbox](https://www.virtualbox.org/)

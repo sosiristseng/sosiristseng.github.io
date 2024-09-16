@@ -1,9 +1,8 @@
 ---
-title: docker
+title: Docker
 tags:
   - docker
   - devops
-  - linux
 ---
 
 - [awesome-docker](https://github.com/veggiemonk/awesome-docker) : A curated list of Docker resources and project.
@@ -46,24 +45,42 @@ sudo docker run hello-world
 sudo docker run --gpus all nvidia/cuda:12.0-base nvidia-smi
 ```
 
-## Optional setup
+## (Optional) add to docker group
+
+So you don't have to use `sudo` on docker commands.
+
+```sh
+sudo usermod -aG docker $USER
+```
+
+And then log out and log back in.
+
+## (Optional) settings for Docker
 
 - `data-root`: Put the Docker data directory to another partition. (`/home/docker` in this example)
-- `registry-mirrors`: Set up a pull-through cache to work around the DockerHub's [pull rate limit](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/).
+- `registry-mirrors`: Set up [Google's pull-through cache](https://cloud.google.com/artifact-registry/docs/pull-cached-dockerhub-images) to work around the DockerHub's [pull rate limit](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/).
+- `storage-driver`: Set up [BTRFS storage driver](https://docs.docker.com/engine/storage/drivers/btrfs-driver/) if the Docker data directory is in a BTRFS partition.
 
 Edit `/etc/docker/daemon.json`, add the following entries
 
 ```json title="/etc/docker/daemon.json"
 {
   "data-root": "/home/docker",
-  "registry-mirrors": ["https://mirror.gcr.io"]
+  "registry-mirrors": ["https://mirror.gcr.io"],
+  "storage-driver": "btrfs"
 }
 ```
 
-Then run the following command to reload docker daemon settings.
+Then run the following command to apply new docker daemon settings.
 
 ```bash
 sudo service docker restart
+```
+
+You can see the new settings:
+
+```sh
+sudo docker info
 ```
 
 ## Documentations and Tutorials for Docker

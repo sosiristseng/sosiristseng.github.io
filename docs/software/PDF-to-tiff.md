@@ -21,19 +21,19 @@ Convert `pdf` files to `tiff` images with `pdftoppm` or `ghostscript`.
 
 To install `pdftoppm` (included in `poppler-utils`)[^2][^3][^4]
 
-=== "Ubuntu"
+**Ubuntu**
 
-    ```sh
-    sudo apt install poppler-utils
-    ```
+```sh
+sudo apt install poppler-utils
+```
 
-=== "conda"
+**conda**
 
-    Available in both Windows and Linux.
+Available in both Windows and Linux.
 
-    ```sh
-    conda install -c conda-forge poppler
-    ```
+```sh
+conda install -c conda-forge poppler
+```
 
 ### Usage
 
@@ -49,17 +49,17 @@ pdftoppm -tiff -tiffcompression lzw -r 300 in.pdf out.tif
 
 ### Install
 
-=== "Ubuntu"
+**Ubuntu**
 
-    ```sh
-    sudo apt install imagemagick
-    ```
+```sh
+sudo apt install imagemagick
+```
 
-=== "Windows"
+**Windows**
 
-    ```powershell
-    choco install -y imagemagick
-    ```
+```powershell
+choco install -y imagemagick
+```
 
 ### Usage
 

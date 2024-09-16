@@ -1,7 +1,6 @@
 ---
 title: Command Prompt
 tags:
-  - linux
   - command-line
 ---
 
@@ -20,33 +19,33 @@ bash ~/.bash_it/install.sh
 
 ### Install
 
-=== "Linux/MacOS"
+**Linux/MacOS**
 
-    ```sh
-    curl -sS https://starship.rs/install.sh | sh
-    ```
+```sh
+curl -sS https://starship.rs/install.sh | sh
+```
 
-=== "Windows"
+**Windows**
 
-    ```powershell
-    choco install starship
-    ```
+```powershell
+choco install starship
+```
 
 ### Setup
 
 To load starship prompt in the terminal, append the following line(s) to the indicated files.
 
-=== "Bash"
+**Bash**
 
-    ```sh title="~/.bashrc"
-    eval "$(starship init bash)"
-    ```
+```sh title="~/.bashrc"
+eval "$(starship init bash)"
+```
 
-=== "Zsh"
+**Zsh**
 
-    ```sh title="~/.zshrc"
-    eval "$(starship init zsh)"
-    ```
+```sh title="~/.zshrc"
+eval "$(starship init zsh)"
+```
 
 ## zimfw
 

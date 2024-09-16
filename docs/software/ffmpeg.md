@@ -5,12 +5,20 @@ tags:
   - linux
 ---
 
-[ffmpeg](https://ffmpeg.org/ffmpeg-all.html):
+Setup [ffmpeg](https://ffmpeg.org)
 
-## Install (Ubuntu)
+## Install
+
+### Ubuntu
 
 ```sh
 sudo apt install ffmpeg
+```
+
+### Windows
+
+```powershell
+choco install ffmpeg
 ```
 
 ## Usage

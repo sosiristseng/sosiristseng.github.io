@@ -1,6 +1,5 @@
 ---
 title: APT package manager
-
 tags:
   - linux
 ---

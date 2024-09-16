@@ -1,6 +1,5 @@
 ---
 title: "yq: Change YAML files on-the-fly"
-date: 2024-03-29
 tags:
 - python
 - devops

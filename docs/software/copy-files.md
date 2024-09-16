@@ -4,6 +4,7 @@ tags:
   - ssh
   - linux
   - command-line
+  - windows
 ---
 
 How to copy files with style.
@@ -104,3 +105,7 @@ To unmount the directory after file operations are done:
 ```sh
 fusermount -u mount-point
 ```
+
+## Windows CLI tools for copying
+
+- [[robocopy]]

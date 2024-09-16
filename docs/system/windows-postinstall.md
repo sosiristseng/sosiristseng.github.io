@@ -69,6 +69,6 @@ You can use [nvcleaninstall](https://www.techpowerup.com/download/techpowerup-nv
 
 ## Afterward
 
-+ Setup [WSL](WSL2.md)
-+ Setup [Environment variables](environment-variables.md)
-+ Checkout [Windows apps](index.md)
++ Setup [WSL](./WSL2.md)
++ Setup [Environment variables](./windows-environment-variables.md)
++ Checkout [Windows apps](../windows/index.md)

@@ -1,5 +1,5 @@
 ---
-title: pipeview
+title: pipeview (pv)
 tags:
   - linux
   - command-line

@@ -36,6 +36,20 @@ Pin-Priority: 1000
 sudo apt update && sudo apt install -y firefox
 ```
 
+## Install (Windows)
+
+chocolatey:
+
+```powershell
+choco install firefox
+```
+
+winget:
+
+```powershell
+winget install -e --id Mozilla.Firefox
+```
+
 ## Advanced settings
 
 Enter `about:config` in the location bar.
