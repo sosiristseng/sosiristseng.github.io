@@ -41,7 +41,6 @@ Install packages
 
 ```powershell
 choco feature enable -n=useRememberedArgumentsForUpgrades
-
 choco install -y git.install --params "'/NoShellIntegration'"
 
 choco install -y vscode qbittorrent firefox brave vivaldi telegram bandizip nanazip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop
@@ -69,6 +68,5 @@ You can use [nvcleaninstall](https://www.techpowerup.com/download/techpowerup-nv
 
 ## Afterward
 
-+ Setup [WSL](./WSL2.md)
-+ Setup [Environment variables](./windows-environment-variables.md)
-+ Checkout [Windows apps](../windows/index.md)
++ Setup [[WSL2]]
++ Setup [Environment variables](windows-environment-variables.md)
