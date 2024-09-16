@@ -149,10 +149,7 @@ Because GitLab only caches files inside the project folder (`CI_PROJECT_DIR`)
 
 Conda will create the runtime environment according to `environment.yml`. The environment folder will be created (if not present) or cached. The option `--prune` means conda will remove unnecessary packages for subsequent caching.
 
-## Git Operations in GitLab CICD
-
-- [GitLab forum post about SSH access](https://forum.gitlab.com/t/is-it-possible-to-commit-artifacts-into-the-git/22218/7)
-- [thacoon's blog about PAT access](https://thacoon.com/posts/gitlab-ci-auto-dependency-update/)
+## Git Operations in GitLab CI/CD
 
 ### Using SSH keys
 
