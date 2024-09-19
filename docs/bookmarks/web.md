@@ -50,7 +50,6 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 
 ## Icons
 
-- [Fork awesome](https://forkaweso.me/Fork-Awesome/)
 - [Freebie supply](https://freebiesupply.com/)
 - [Friconix](https://friconix.com/) icon with extensive parameters. Also see its [CSS color table](https://lucidar.me/en/web-dev/css-color-list/)
 - [Handcrafted icons](https://www.zwicon.com/)
