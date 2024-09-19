@@ -62,7 +62,7 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 - [Octicons](https://primer.style/octicons/) by GitHub
 - [PNG repo](https://www.pngrepo.com/) and the sister project [SVG repo](https://www.svgrepo.com/)
 - [Simple icons](https://simpleicons.org/)
-- [Tabler Icons](https://github.com/tabler/tabler-icons)
+- [Tabler Icons](https://tabler.io/icons)
 - [Vector Icons](https://iconscout.com/unicons)
 - [Vivid.js](https://webkul.github.io/vivid/)
 - [SuperTinyIcons](https://github.com/edent/SuperTinyIcons) : miniscule SVG versions of your favorite website and app logos
