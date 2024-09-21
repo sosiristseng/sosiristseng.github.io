@@ -54,7 +54,7 @@ According to [📖 Github docs](https://docs.github.com/en/github/authenticating
 
 ## Add the SSH key to your GitLab account
 
-Add the SSH key [here](https://gitlab.com/-/profile/keys)
+Add the SSH key [here](https://gitlab.com/-/user_settings/ssh_keys)
 
 - Paste the content of the *public key*, `~/.ssh/id_ed25519.pub` to the key field.
 - Add a descriptive label for the new key in the "Title" field.
