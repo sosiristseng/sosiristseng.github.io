@@ -1,5 +1,5 @@
 ---
-title: "yq: Change YAML files on-the-fly"
+title: yq
 tags:
 - python
 - devops

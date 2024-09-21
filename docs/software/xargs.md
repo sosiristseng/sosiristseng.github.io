@@ -1,5 +1,5 @@
 ---
-title: "xargs: Passing arguments from a text file"
+title: xargs
 tags:
   - linux
   - command-line

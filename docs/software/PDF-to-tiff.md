@@ -1,5 +1,5 @@
 ---
-title: Convert PDF to TIFF
+title: PDF to TIFF
 tags:
   - tiff
   - pdf

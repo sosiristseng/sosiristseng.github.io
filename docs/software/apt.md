@@ -1,5 +1,5 @@
 ---
-title: APT package manager
+title: apt
 tags:
   - linux
 ---

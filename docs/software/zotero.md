@@ -1,5 +1,5 @@
 ---
-title: Zotero
+title: zotero
 tags:
   - research
   - document
