@@ -59,4 +59,3 @@ tags:
 - [ChEMBL](https://www.ebi.ac.uk/chembl/)
 - [PharmGKB](https://www.pharmgkb.org/)
 - [PubChem](https://pubchem.ncbi.nlm.nih.gov/) by NCBI.
-- [OSDD - open source drug discovery](http://www.osdd.net/).
