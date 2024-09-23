@@ -155,7 +155,7 @@ sudo add-apt-repository -y ppa:kisak/kisak-mesa
 sudo apt update && sudo apt full-upgrade -y
 ```
 
-### (Optional) Wine and 32-bit games support
+### Wine and 32-bit games support
 
 ```bash
 sudo dpkg --add-architecture i386
@@ -170,59 +170,7 @@ sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-bui
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
 ```
 
-
-## Update your system
-
-```bash
-sudo apt update && sudo apt full-upgrade -y
-```
-
-## Install apps
-
-### Ubuntu
-
-Save this list as `pkgs.txt`
-
-```txt title="pkgs.txt"
-# Development
-git
-git-lfs
-
-# Network
-cifs-utils
-deluge
-ssh
-
-# System
-nala
-gnome-shell-extension-manager
-parallel
-baobab
-synaptic
-apt-xapian-index
-zsh
-ppa-purge
-libfuse2
-
-# Locale
-ibus
-ibus-chewing
-
-# Media
-ffmpeg
-vlc
-mcomix
-viewnior
-
-# Fonts
-fonts-noto
-fonts-wqy-microhei
-fonts-wqy-zenhei
-fonts-open-sans
-ttf-mscorefonts-installer
-```
-
-### Kubuntu
+### Kubuntu backports
 
 [Kubuntu backports](https://launchpad.net/~kubuntu-ppa/+archive/ubuntu/backports): Latest versions of KDE framework and APPs
 
@@ -231,52 +179,31 @@ sudo add-apt-repository -y ppa:kubuntu-ppa/backports
 sudo apt-get update && sudo apt full-upgrade -y
 ```
 
-Save this list as `pkgs.txt`
 
-```txt title="pkgs.txt"
-# Development
-git
-git-lfs
+## Update your system and install packages
 
-# Network
-cifs-utils
-qbittorrent
-ssh
-
-# System
-parallel
-zsh
-kio-extras
-gnome-keyring
-kubuntu-restricted-extras
-ppa-purge
-
-# Locale
-ibus
-ibus-chewing
-
-# Media
-ffmpeg
-smplayer
-
-# Fonts
-fonts-noto
-fonts-wqy-microhei
-fonts-wqy-zenhei
-fonts-open-sans
+```sh
+sudo apt update && sudo apt full-upgrade -y
 ```
 
-### Install packages
+Ubuntu:
 
-Run the following scripts to install packages
+```sh
+sudo apt install -y git git-lfs cifs-utils ssh nala gnome-shell-extension-manager parallel baobab ncdu synaptic apt-xapian-index ppa-purge ubuntu-restricted-extras ffmpeg vlc mcomix viewnior fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer
+```
 
-```bash
-sudo -v
-echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-sed 's/#.*$//' pkgs.txt | xargs sudo apt install -y
+Kubuntu:
+
+```sh
+sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gnome-keyring muon ppa-purge kubuntu-restricted-extras ffmpeg vlc fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer
 ```
 
 ## Configurations
+
+### Terminal
+
+- [Nerd fonts](https://www.nerdfonts.com/)
+- https://github.com/denysdovhan/one-gnome-terminal : One Dark color theme for gnome-terminal
 
 ### Temporary files in RAM disk
 
@@ -301,6 +228,8 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 ```
 
 ### Ubuntu: gnome shell extensions
+
+YOu can also search and install extensions via `gnome-shell-extension-manager`
 
 - [User themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [Lock Keys](https://extensions.gnome.org/extension/36/lock-keys/)
