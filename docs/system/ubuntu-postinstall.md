@@ -227,7 +227,7 @@ sudo apt install unattended-upgrades
 sudo dpkg-reconfigure -plow unattended-upgrades
 ```
 
-### Ubuntu: gnome shell extensions
+### Gnome shell extensions
 
 YOu can also search and install extensions via `gnome-shell-extension-manager`
 
@@ -238,16 +238,16 @@ YOu can also search and install extensions via `gnome-shell-extension-manager`
 - [Arc Menu](https://extensions.gnome.org/extension/3628/arcmenu/) an application menu for GNOME Shell
 - [Material shell](https://extensions.gnome.org/extension/3357/material-shell/) tiling windows.
 
-### Kubuntu/KDE Neon: System Settings
+### Kubuntu System Settings
 
 - Double click to open files instead of single clicks: `Workspace behavior` => `General behavior` => `click behavior`.
 - Start with an empty session in `Desktop session`.
 
 ## Misc.
 
-- [Conda](../code/python/miniforge.md)
+- [Conda](../software/miniforge.md)
 - [[setup-julia]]
-- [Linux themes](../linux/apps/linux-themes.md)
+- [Linux themes](../software/linux-themes.md)
 - [FreeFileSync](https://freefilesync.org/)
 - [Hugo](../software/hugo.md)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)
