@@ -1,10 +1,10 @@
 ---
 title: yq
 tags:
-- python
-- devops
-- github
-- yaml
+  - python
+  - devops
+  - github
+  - yaml
 ---
 
 Editing YAML files on-the-fly using the [`yq` tool](https://github.com/mikefarah/yq).
