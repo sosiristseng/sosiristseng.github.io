@@ -56,7 +56,11 @@ Enter `about:config` in the location bar.
 
 ### Compact mode
 
-+ Set `browser.compactmode.show` to `true`
+Set the following option to `true`
+
+```
+browser.compactmode.show
+```
 
 ### Full screen transition tweaks
 
@@ -66,3 +70,11 @@ Enter `about:config` in the location bar.
 + Set `full-screen-api.transition-duration.leave` to `0 0`
 + Set `full-screen-api.transition.timeout` to `0`
 + Set `full-screen-api.warning.timeout` to `0`
+
+### Force hardware acceleration
+
+Set the following option to `true`
+
+```
+media.hardware-video-decoding.force-enabled
+```
