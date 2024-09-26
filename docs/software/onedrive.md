@@ -4,7 +4,7 @@ tags:
   - linux
 ---
 
-The linux OneDrive client https://github.com/abraunegg/onedriveseamlessly supports OneDrive Personal, OneDrive for Business, OneDrive for Office365, and SharePoint Libraries. **See also** the GUI for the OneDrive client: https://github.com/bpozdena/OneDriveGUI.
+The linux OneDrive client https://github.com/abraunegg/onedrive seamlessly supports OneDrive Personal, OneDrive for Business, OneDrive for Office365, and SharePoint Libraries. **See also** the GUI for the OneDrive client: https://github.com/bpozdena/OneDriveGUI.
 
 ## Setup
 
