@@ -11,17 +11,17 @@ Things to do after installing
 - [Kubuntu](https://kubuntu.org/)
 - [WSL2](https://docs.microsoft.com/zh-tw/windows/wsl/install)
 
-> [!WARNING]
+> [!INFO]
 >
->  The default locale in Ubuntu for traditional Chinese (Taiwan) is `lzh_TW` rather than `zh_TW`, which might cause issues. You can change it to `zh_TW` by editing the file `/etc/locale.gen`. Comment out the `lzh_TW` line and uncomment the `zh_TW` line. And then run:
+>  Uncomment the `zh_TW` line in `/etc/locale.gen`. And then run:
 > ```bash
 > sudo locale-gen
 > ```
-> Finally, install the Traditional Chinese locale in `Language Support` and then set locale to `Taiwan` to solve this problem.
+> Finally, install the Traditional Chinese locale in `Language Support` and then set locale to `Taiwan`.
 
 ## Make software repo point to NCHC for faster network speed
 
-You can replace  `archive.ubuntu.com` with a closer mirror, e.g., `tw.archive.ubuntu.com` or `free.nchc.org.tw` in `/etc/apt/sources.list`. After you are done, run:
+You can replace  `archive.ubuntu.com` with a closer mirror, e.g., `tw.archive.ubuntu.com` or `free.nchc.org.tw` in `/etc/apt/sources.list.d/ubuntu.sources`. After you are done, run:
 
 ```sh
 sudo apt clean && sudo apt update && sudo apt full-upgrade -y
@@ -113,7 +113,7 @@ sudo apt update && sudo apt install -y linux-xanmod
 
 ### Nvidia GPU computing (CUDA)
 
-> The following section works for Ubuntu 22.04 LTS.
+> The following section works for Ubuntu 24.04 LTS.
 
 Install nvidia CUDA runtime and compatible [GPU driver](https://developer.nvidia.com/cuda-downloads).
 
@@ -179,7 +179,6 @@ sudo add-apt-repository -y ppa:kubuntu-ppa/backports
 sudo apt-get update && sudo apt full-upgrade -y
 ```
 
-
 ## Update your system and install packages
 
 ```sh
@@ -189,13 +188,13 @@ sudo apt update && sudo apt full-upgrade -y
 Ubuntu:
 
 ```sh
-sudo apt install -y git git-lfs cifs-utils ssh nala gnome-shell-extension-manager parallel baobab ncdu synaptic apt-xapian-index ppa-purge ubuntu-restricted-extras ffmpeg vlc mcomix viewnior fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer
+sudo apt install -y git git-lfs cifs-utils ssh nala gnome-shell-extension-manager parallel baobab ncdu synaptic apt-xapian-index ppa-purge ubuntu-restricted-extras ffmpeg vlc mcomix fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer zsh btrfs-compsize
 ```
 
 Kubuntu:
 
 ```sh
-sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gnome-keyring muon ppa-purge kubuntu-restricted-extras ffmpeg vlc fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer
+sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gnome-keyring ppa-purge kubuntu-restricted-extras ffmpeg vlc fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer zsh btrfs-compsize synaptic apt-xapian-index
 ```
 
 ## Configurations
