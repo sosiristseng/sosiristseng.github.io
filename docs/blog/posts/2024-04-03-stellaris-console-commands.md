@@ -40,6 +40,12 @@ Astrocreator Azaryn
 event paragon.228
 ```
 
+List good planets for her to terraform
+
+```
+effect ordered_planet_within_border = { limit = { planet_size > 25 is_planet_class = pc_barren NOT = { has_modifier = "terraforming_candidate" } } position = 0 order_by = trigger:planet_size inverse = no set_variable = { which = Size_Of_Planet value = trigger:planet_size } custom_tooltip = "[This.GetName] is an Azaryn candidate, in system [This.System.GetName]" }
+```
+
 Keides, Scion of Vagros
 ```
 event paragon.3115
