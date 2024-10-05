@@ -94,9 +94,14 @@ Add relics
 add_relic all
 ```
 
-Remove a relic, an example
+Remove a relic
 ```
 effect remove_relic = r_severed_head
+```
+
+Remove relic activation countdown
+```
+effect remove_modifier = relic_activation_cooldown
 ```
 
 ## Buildings
