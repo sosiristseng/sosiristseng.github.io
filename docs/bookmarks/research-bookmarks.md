@@ -1,5 +1,5 @@
 ---
-title: Research Bookmarks
+title: Research
 tags:
 - bookmark
 - school

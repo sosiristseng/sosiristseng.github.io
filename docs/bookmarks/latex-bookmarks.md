@@ -1,5 +1,5 @@
 ---
-title: LaTeX Bookmarks
+title: LaTeX
 tags:
 - bookmark
 - latex

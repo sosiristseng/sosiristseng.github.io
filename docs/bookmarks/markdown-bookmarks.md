@@ -1,5 +1,5 @@
 ---
-title: Markdown Bookmarks
+title: Markdown
 tags:
 - bookmark
 - markdown
