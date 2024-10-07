@@ -20,7 +20,7 @@ tags:
 
 <details> <summary> Copyright alert</summary>
 - [Sci-Hub](https://sci-hub.se/)
-- [Library Genesis](http://libgen.rs/)
+- [Library Genesis](https://libgen.is/)
 </details>
 
 ## Data source
