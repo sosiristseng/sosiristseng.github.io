@@ -3,6 +3,9 @@ title: Get the ODE Function from an ODE system
 date: 2024-03-31
 tags:
   - julia
+  - ode
+categories:
+  - code
 ---
 
 `f = ODEFunction(sys)` could be useful in plotting vector fields.

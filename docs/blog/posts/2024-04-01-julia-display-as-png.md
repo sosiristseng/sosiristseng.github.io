@@ -4,6 +4,8 @@ date: 2024-04-01
 tags:
   - julia
   - visualization
+categories:
+  - code
 ---
 
 In the VSCode plot panel and https://github.com/fredrikekre/Literate.jl notebooks, PNG images are generally smaller than SVG ones. To force plots to be shown as PNG images, you can use https://github.com/tkf/DisplayAs.jl to show objects in a chosen MIME type.

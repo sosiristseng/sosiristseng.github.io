@@ -1,8 +1,11 @@
 ---
 title: Plots.jl Tips
+date: 2024-03-29
 tags:
   - julia
   - visualization
+categories:
+  - code
 ---
 
 Some tips about [Plots.jl](https://docs.juliaplots.org/stable/), the de-facto standard visualization library in Julia.
@@ -107,10 +110,7 @@ str = L"\textrm{Count}"
 
 ## Shared Color bar
 
-Source: <https://discourse.julialang.org/t/plots-jl-shared-colorbar-with-subplots/47269/4>
-
-The trick is to
-
+[Source](https://discourse.julialang.org/t/plots-jl-shared-colorbar-with-subplots/47269/4). The trick is to
 - make an blank scatter plot for the colorbar.
 - use a dedicated space in the layout for the colorbar.
 

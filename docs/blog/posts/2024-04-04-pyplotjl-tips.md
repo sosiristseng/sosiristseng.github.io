@@ -1,9 +1,12 @@
 ---
-title: PyPlotjl tips
+title: PyPlot.jl tips
+date: 2024-04-04
 tags:
   - julia
   - visualization
   - tiff
+categories:
+  - code
 ---
 
 Some tips about https://github.com/JuliaPy/PyPlot.jl, the `matplotlib` (Python) visualization library for Julia. See also [docs for matplotlib](https://matplotlib.org/) since `PyPlot.jl` largely follows `matplotlib`'s API.

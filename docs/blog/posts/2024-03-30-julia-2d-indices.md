@@ -3,6 +3,8 @@ title: Get 2D indices from a linear index
 date: 2024-03-30
 tags:
   - julia
+categories:
+  - code
 ---
 
 Use `CartesianIndices((nrow, ncol))`, from this [discourse post](https://discourse.julialang.org/t/julia-usage-how-to-get-2d-indexes-from-1d-index-when-accessing-a-2d-array/61440).
