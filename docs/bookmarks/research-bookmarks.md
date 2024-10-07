@@ -18,11 +18,6 @@ tags:
 - [Google scholar](https://scholar.google.com.tw/)
 - [PubMed central (PMC)](https://www.ncbi.nlm.nih.gov/pmc/)
 
-<details> <summary> Copyright alert</summary>
-- [Sci-Hub](https://sci-hub.se/)
-- [Library Genesis](https://libgen.is/)
-</details>
-
 ## Data source
 
 ### General datasets
