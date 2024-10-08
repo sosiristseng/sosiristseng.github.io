@@ -4,6 +4,8 @@ date: 2024-04-25
 tags:
   - github
   - devops
+categories:
+  - DevOps
 ---
 
 If you run a multi-stage workflow with [status checks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks) in [branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule), you might found that **skipped jobs are treated as "passed"**. That is, if you have a workflow with a chain of dependent jobs A -> B -> C. When B fails and C is skipped, it still counts as passed when checking job C.[^1] Thus, auto-merging may merge broken code.

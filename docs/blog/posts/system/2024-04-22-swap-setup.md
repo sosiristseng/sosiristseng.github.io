@@ -3,11 +3,13 @@ title: Swap Setup
 date: 2024-04-22
 tags:
   - linux
+categories:
+  - system
 ---
 
 <!-- more -->
 
-## Use Swap file (in btrfs)
+## Use a swap file in btrfs
 
 Swap file are more flexible in disk space and partition usage than swap partitions.
 

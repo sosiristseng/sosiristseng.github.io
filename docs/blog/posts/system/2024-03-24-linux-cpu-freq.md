@@ -4,9 +4,9 @@ date: 2024-03-24
 tags:
   - linux
   - cpu
+categories:
+  - system
 ---
-
-<!-- more -->
 
 ## See current CPU frequency
 
@@ -15,6 +15,8 @@ To display frequencies of all CPU cores every second:
 ```sh
 watch -n1 lscpu --all --extended
 ```
+
+<!-- more -->
 
 ## Change CPU frequency directly
 

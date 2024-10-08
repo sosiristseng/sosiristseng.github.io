@@ -4,6 +4,8 @@ date: 2024-03-20
 tags:
   - linux
   - gpu
+categories:
+  - system
 ---
 
 You can make GPUs consume less (or more) power by setting the power limit.

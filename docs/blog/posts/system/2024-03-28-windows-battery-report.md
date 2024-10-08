@@ -2,7 +2,9 @@
 title: Check battery status
 date: 2024-03-28
 tags:
-- windows
+  - windows
+categories:
+  - system
 ---
 
 Open Windows Powershell with Administrator rights and [run](https://www.pcmag.com/how-to/how-to-check-your-laptops-battery-health-in-windows-10):

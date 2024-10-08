@@ -5,7 +5,8 @@ tags:
   - python
   - jupyter-notebook
   - git
-  - devops
+categories:
+  - DevOps
 ---
 
 Jupyter notebooks without multimedia outputs are more friendly to source control since git is not good at comparing binary data (e.g., plots, pictures, videos) in jupyter notebooks. And they tend to bloat the size of git repositories.

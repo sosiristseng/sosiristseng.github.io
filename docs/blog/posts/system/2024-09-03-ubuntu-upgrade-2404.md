@@ -3,6 +3,8 @@ title: Upgrading from ubuntu 22.04 to 24.04
 date: 2024-09-03
 tags:
   - linux
+categories:
+  - system
 ---
 
 ## Before upgrade
