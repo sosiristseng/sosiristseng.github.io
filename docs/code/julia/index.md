@@ -44,8 +44,9 @@
 ### Curve fitting and parameter estimation
 
 - https://github.com/JuliaNLSolvers/LsqFit.jl
-- https://github.com/SciML/DiffEqParamEstim.jl : small parameter estimation problems
-- https://github.com/SciML/SciMLSensitivity.jl : big parameter estimation problems
+- https://github.com/SciML/DiffEqParamEstim.jl : small parameter estimation problems.
+- https://github.com/sebapersson/PEtab.jl : create parameter estimation problems for ODE models. Might replace `DiffEqParamEstim.jl`.
+- https://github.com/SciML/SciMLSensitivity.jl : big parameter estimation problems.
 
 ## Modeling and simulation
 
