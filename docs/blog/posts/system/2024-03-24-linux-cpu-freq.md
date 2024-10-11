@@ -34,7 +34,7 @@ Set the maximum CPU frequency
 echo 4400000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
 ```
 
-##  Change CPU frequency using cpufrequtils
+## Change CPU frequency using cpufrequtils
 
 Install `cpufrequtils`
 
@@ -46,4 +46,24 @@ Set the maximum CPU frequency
 
 ```sh
 sudo cpufreq-set -u 4Ghz
+```
+
+## Change performance governor
+
+Edit the file `/etc/default/cpufrequtils`
+
+```txt title="/etc/default/cpufrequtils"
+GOVERNOR="performance"
+```
+
+Restart the service
+
+```sh
+sudo systemctl restart cpufrequtils
+```
+
+Check the frequency status of each core
+
+```sh
+cpufreq-info
 ```
