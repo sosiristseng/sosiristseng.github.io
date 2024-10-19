@@ -4,12 +4,13 @@ tags:
   - linux
 ---
 
-The [APT package manager](https://en.wikipedia.org/wiki/APT_(software)) in Debian, Ubuntu, and friends.
+The [APT package manager](https://en.wikipedia.org/wiki/APT_(software)) in Debian, Ubuntu, and derived distributions.
 
-- [Itsfoss: apt vs apt-get](https://itsfoss.com/apt-vs-apt-get-difference/)
 - [Itsfoss: apt commands](https://itsfoss.com/apt-command-guide/)
 
 ## `apt` vs `apt-get`
+
+[Itsfoss: apt vs apt-get](https://itsfoss.com/apt-vs-apt-get-difference/)
 
 - `apt` is for interactive use, including commonly-used commands from `apt-get` and `apt-cache`. And it has a nice progress bar.
 - `apt-get` is more inclined for non-interactive (scripting) use due to its stable interface.
@@ -64,7 +65,7 @@ sudo apt update && sudo apt install apt-fast -y
 sudo apt install synaptic apt-xapian-index
 ```
 
-The additional package `apt-xapian-index` offers a quick search box in `synaptic`.
+The additional package `apt-xapian-index` gives a quick search box in `synaptic`.
 
 ## Add signing keys
 
