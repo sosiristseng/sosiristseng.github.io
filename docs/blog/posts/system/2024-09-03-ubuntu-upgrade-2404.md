@@ -25,7 +25,7 @@ sudo do-release-upgrade
 `systemd-resolved` might not be installed after upgrade, to solve the issue:
 
 ```bash
-sudo apt install systemd-resolved
+sudo apt update && sudo apt install systemd-resolved
 ```
 
 You might need to add an DNS server temporarily to have internet access

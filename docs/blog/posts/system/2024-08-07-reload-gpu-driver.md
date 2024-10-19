@@ -4,6 +4,7 @@ date: 2024-08-07
 tags:
   - linux
   - gpu
+  - driver
 categories:
   - system
 ---
