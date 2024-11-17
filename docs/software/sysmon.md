@@ -1,5 +1,5 @@
 ---
-title: System monitor
+title: system monitor
 tags:
   - linux
   - command-line

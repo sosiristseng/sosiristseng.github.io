@@ -1,5 +1,5 @@
 ---
-title: Firefox Browser
+title: firefox
 tags:
   - web
   - linux

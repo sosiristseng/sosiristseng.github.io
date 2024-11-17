@@ -1,5 +1,5 @@
 ---
-title: Hexo
+title: hexo
 tags:
   - web
   - linux

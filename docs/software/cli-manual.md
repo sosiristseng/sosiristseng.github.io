@@ -1,5 +1,5 @@
 ---
-title: CLI Manual
+title: manuals in CLI
 tags:
   - linux
   - command-line

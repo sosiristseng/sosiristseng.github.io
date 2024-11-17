@@ -1,5 +1,5 @@
 ---
-title: Command Prompt
+title: command prompt
 tags:
   - command-line
 ---

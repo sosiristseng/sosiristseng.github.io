@@ -1,5 +1,5 @@
 ---
-title: Setup miniforge
+title: miniforge
 tags:
   - python
   - conda

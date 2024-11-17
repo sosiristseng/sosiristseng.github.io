@@ -1,5 +1,5 @@
 ---
-title: Copy files
+title: copy files
 tags:
   - ssh
   - linux

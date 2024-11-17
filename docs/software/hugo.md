@@ -1,5 +1,5 @@
 ---
-title: Hugo
+title: hugo
 tags:
   - web
   - linux

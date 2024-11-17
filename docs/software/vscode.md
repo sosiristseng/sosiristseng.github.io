@@ -1,5 +1,5 @@
 ---
-title: VSCode
+title: Visual Studio Code
 tags:
   - linux
 ---

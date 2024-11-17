@@ -1,5 +1,5 @@
 ---
-title: Pacman package manager
+title: pacman package manager
 tags:
   - linux
 ---
