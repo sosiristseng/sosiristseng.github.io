@@ -5,7 +5,7 @@ tags:
   - linux
 ---
 
-[yt-dlp](https://github.com/yt-dlp/yt-dlp) is an actively developed fork of the famous Youtube video downloader `youtube-dl`.
+https://github.com/yt-dlp/yt-dlp is an actively developed fork of the famous Youtube video downloader `youtube-dl`.
 
 ## Install
 
@@ -43,10 +43,10 @@ yt-dlp --write-subs <url>
 
 ### Select resolution and format
 
-Use `-S` (sort) to download 1080p AV1 videos first.
+Use `-S` (sort) to download 1080p H264 videos first.
 
 ```sh
-yt-dlp -S "res:1080,vcodec:av1" <url>
+yt-dlp -S "res:1080,vcodec:h264" <url>
 ```
 
 ### Download videos from a playlist
