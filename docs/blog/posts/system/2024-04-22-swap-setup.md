@@ -9,13 +9,13 @@ categories:
 
 <!-- more -->
 
-## Use a swap file in btrfs
+## Use a swap file (in btrfs)
 
-Swap file are more flexible in disk space and partition usage than swap partitions.
+Swap files are more flexible than swap partitions in terms of disk space and partition usage.
 
 Source: [btrfs docs](https://btrfs.readthedocs.io/en/latest/Swapfile.html) and [Arch Linux wiki](https://wiki.archlinux.org/title/btrfs#Swap_file).
 
-The swapfile should not use COW.
+The following commands create a swapfile in the btrfs filesystem, which does not (and should not) use COW.
 
 ```sh
 cd /  # Or other dir for the swapfile
@@ -25,7 +25,7 @@ sudo btrfs filesystem mkswapfile --size 4G /swap/swapfile
 sudo swapon /swap/swapfile
 ```
 
-Or the following commands if `btrfs filesystem mkswapfile` command is not available.
+If `btrfs filesystem mkswapfile` command is not available, use the following command
 
 ```sh
 cd /swap
@@ -51,12 +51,17 @@ cat /proc/swaps
 
 ## Use ZRAM
 
-[ZRAM](https://wiki.archlinux.org/title/Zram) is a RAM disk with on-the-fly disk compression, reducing physical disk use under high memory usage.
+[ZRAM](https://wiki.archlinux.org/title/Zram) is a compressed RAM disk, reducing physical disk swap use under high memory usage.
 
-Install ZRAM in Ubuntu:
+Install ZRAM in Ubuntu: [Source](https://kienngd.github.io/how-to-use-zram-on-ubuntu-2404/)
 
 ```bash
-sudo apt install zram-config
+sudo apt update && sudo apt install zram-tools
 ```
 
-edit `/usr/bin/init-zram-swapping` to change ZRAM options.
+edit `/etc/default/zramswap` to change ZRAM options.
+
+```txt title="/etc/default/zramswap"
+ALGO=zstd
+PERCENTAGE=50
+```
