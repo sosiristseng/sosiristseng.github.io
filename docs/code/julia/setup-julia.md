@@ -73,6 +73,7 @@ export JULIA_PYTHONCALL_EXE="${HOME}/conda/bin/python"
 Add the following lines to `~/.julia/config/startup.jl` after `Revise.jl` and `OhMyREPL.jl` are installed
 
 ```julia title="~/.julia/config/startup.jl"
+using Pkg: Pkg
 atreplinit() do repl
     try
         @eval using OhMyREPL
