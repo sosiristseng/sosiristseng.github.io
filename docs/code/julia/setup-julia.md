@@ -98,6 +98,7 @@ Or run the following commands (heredoc in Linux) to create these two files at on
 
 ```sh
 mkdir -p ~/.julia/config/ && cat >  ~/.julia/config/startup.jl << END
+using Pkg: Pkg
 atreplinit() do repl
     try
         @eval using OhMyREPL
