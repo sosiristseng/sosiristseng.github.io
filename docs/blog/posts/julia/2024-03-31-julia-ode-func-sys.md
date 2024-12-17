@@ -13,10 +13,10 @@ categories:
 ```julia
 using ModelingToolkit
 using DifferentialEquations
-using Plots
 
 # Independent (time) and dependent (state) variables (x and RHS)
-@variables t x(t) RHS(t)
+@independent_variables t
+@variables x(t) RHS(t)
 
 # Setting parameters in the modeling
 @parameters τ
@@ -27,14 +27,13 @@ D = Differential(t)
 # Equations in MTK use the tilde character (`~`) as equality.
 # Every MTK system requires a name. The `@named` macro simply ensures that the symbolic name matches the name in the REPL.
 
-@named fol_separate = ODESystem([
+@mtkbuild sys = ODESystem([
     RHS  ~ (1 - x)/τ,
     D(x) ~ RHS
 ])
 
-sys = structural_simplify(fol_separate)
+tend = 2.0
+prob = ODEProblem(sys, [x=>0.0], tend, [τ=>1.0])
 
-f = ODEFunction(sys)
-
-f([0.0], [1.0], 0.0) # f(u, p, t) returns the value of D(x)
+prob.f([0.0], prob.p, 0.0) # f(u, p, t) returns the value of D(x)
 ```
