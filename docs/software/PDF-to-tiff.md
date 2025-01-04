@@ -37,7 +37,7 @@ conda install -c conda-forge poppler
 
 ### Usage
 
-See [documentation of `pdftoppm`](https://www.mankier.com/1/pdftoppm)
+See [documentation](https://www.mankier.com/1/pdftoppm) of `pdftoppm`.
 
 For example, to convert the pdf file to a 300-DPI TIFF image with LZW compression.
 
