@@ -1,5 +1,5 @@
 ---
-title: GitLab CICD tips
+title: GitLab
 date: 2024-04-25
 tags:
   - gitlab
