@@ -6,6 +6,9 @@ tags:
   - gitlab
   - ssh
   - git
+date: 2024-03-23
+categories:
+  - DevOps
 ---
 ## Generate a pair of SSH keys
 

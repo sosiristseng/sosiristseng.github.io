@@ -3,6 +3,9 @@ title: Git Commands
 tags:
   - git
   - devops
+date: 2024-03-25
+categories:
+  - DevOps
 ---
 
 Sources:
@@ -35,7 +38,7 @@ If there are submodule(s) in the Git repository, you might want to clone them as
 git clone <url> --recursive
 ```
 
-See also: [SSH login](git-ssh-login.md) to Git services like GitHub and GitLab.
+See also: [SSH login](2024-03-23-git-ssh-login.md) to Git services like GitHub and GitLab.
 
 ### Make changes and commit
 

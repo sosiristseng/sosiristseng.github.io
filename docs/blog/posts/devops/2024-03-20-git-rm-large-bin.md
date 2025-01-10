@@ -1,7 +1,10 @@
 ---
-title: Removing large binary blobs
+title: Removing large binary blobs in the git tree
 tags:
   - git
+date: 2024-03-20
+categories:
+  - DevOps
 ---
 
 [Git filter-repo](https://github.com/newren/git-filter-repo) is a `filter-branch` replacement for rewriting history written in a single-file python script.

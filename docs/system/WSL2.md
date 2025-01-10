@@ -56,14 +56,13 @@ default=username
 
 ### Host settings
 
-Edit `.wslconfig` [^wslconfig] in your Windows home directory (Enter `%USERPROFILE%` in file explorer's location bar).
+Edit `.wslconfig` [^wslconfig] in your Windows home directory (`%USERPROFILE%`).
 
 For example,
 
 ```txt title=".wslconfig"
 [wsl2]
 memory=20GB              # How much memory to assign to the WSL2 VM.
-processors=4             # How many processors to assign to the WSL2 VM.
 swap=8GB                 # How much swap space to add to the WSL2 VM. 0 for no swap file.
 swapfile=C:\\temp\\wsl-swap.vhdx # Sets swap file path location, default is %USERPROFILE%\AppData\Local\Temp\swap.vhdx. Useful if your C drive has limited disk space.
 ```
@@ -72,11 +71,11 @@ swapfile=C:\\temp\\wsl-swap.vhdx # Sets swap file path location, default is %USE
 
 ### Auto reclaim RAM and disk space
 
-Edit `.wslconfig` [^wslconfig] in your Windows home directory (Enter `%USERPROFILE%` in file explorer's location bar). [^autoreclaim]
+Edit `.wslconfig` [^wslconfig] in your Windows home directory (`%USERPROFILE%`). [^autoreclaim]
 
 ```txt title=".wslconfig"
 [experimental]
-autoMemoryReclaim=dropcache  # Reclaim RAM usage
+autoMemoryReclaim=gradual    # Reclaim RAM usage
 sparseVhd=true               # Reclaim virtual disk (vhd) usage
 ```
 
@@ -107,21 +106,6 @@ wsl --shutdown
 Optimize-VHD -Path %path-to.vhdx% -Mode Full
 ```
 
-#### diskpart
-
-Alternatively, use `diskpart` (if `Optimize-VHD` is not available) [^vhd-diskpart]
-
-```powershell
-wsl --shutdown
-diskpart
-# open window Diskpart
-select vdisk file="E:\ubuntu\ext4.vhdx"
-attach vdisk readonly
-compact vdisk
-detach vdisk
-exit
-```
-
 #### Export and re-import
 
 Alternatively, export the VHD as a tar file and reimport it again.
@@ -130,10 +114,6 @@ Alternatively, export the VHD as a tar file and reimport it again.
 [^vhd-diskpart]: https://answers.microsoft.com/en-us/windows/forum/all/optimize-vhd-not-found-in-windows-10-home/a727b760-0f82-4d0f-8480-d49eeaeb11a2
 
 ## Caveats about WSL2
-
-### Memory cost of running Hyper-V
-
-Hyper-V may reserve 1 GB of RAM. [Web archive](https://web.archive.org/web/20230228052007/https://www.reddit.com/r/bashonubuntuonwindows/comments/wo6729/the_hidden_costs_of_wsl2_memory_usage/)
 
 ### Poor filesystem performance across OSes
 

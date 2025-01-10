@@ -1,7 +1,10 @@
 ---
 title: Git reset
+date: 2024-03-19
 tags:
   - git
+categories:
+  - DevOps
 ---
 
 - Mixed reset (default): discard untracked files, but the changed files are preserved but not marked for commit.

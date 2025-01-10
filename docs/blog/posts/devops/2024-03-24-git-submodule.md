@@ -1,9 +1,11 @@
 ---
 title: Git submodule
-
 tags:
   - git
   - devops
+date: 2024-03-24
+categories:
+  - DevOps
 ---
 
 Frequently used commands for Git submodules.
@@ -52,7 +54,7 @@ From a [stackOverflow post](https://stackoverflow.com/questions/5828324/update-g
 git submodule update --remote --merge
 ```
 
-For automated updates by bots, see [automatic dependency update](../github-actions/auto-deps-update.md).
+For automated updates by bots, see [automatic dependency update](../../../software/github-actions/auto-deps-update.md).
 
 ## Remove a submodule
 

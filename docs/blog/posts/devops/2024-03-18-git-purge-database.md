@@ -1,7 +1,10 @@
 ---
 title: Purge Git database entirely
+date: 2024-03-18
 tags:
   - git
+categories:
+  - DevOps
 ---
 
 Erase all history in the Git repo to start over with all the current files. This also clears big file records in the Git database.

@@ -2,7 +2,9 @@
 title: "Git: Changed File Names With Certain Extension"
 date: 2024-03-17
 tags:
-- git
+  - git
+categories:
+  - DevOps
 ---
 
 For example, how to find changed PHP files between latest and the commit before it: [^SO]

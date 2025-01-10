@@ -12,8 +12,8 @@ Things to do after installing
 - [WSL2](https://docs.microsoft.com/zh-tw/windows/wsl/install)
 
 > [!INFO]
->
->  Uncomment the `zh_TW` line in `/etc/locale.gen`. And then run:
+> How to fix locale:
+> Uncomment the `zh_TW` line in `/etc/locale.gen`. And then run:
 > ```bash
 > sudo locale-gen
 > ```
@@ -59,9 +59,9 @@ First, install required package
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-- [docker](../software/docker.md)
-- [firefox](../software/firefox.md)
-- [vscode](../software/vscode.md)
+- [[docker]]
+- [[firefox]]
+- [[vscode]]
 
 ### Brave browser
 
@@ -90,16 +90,6 @@ sudo apt update && sudo apt install -y qbittorrent
 ### Telegram messenger
 
 Download and run the [official binaries](https://telegram.org).
-
-### Vivaldi browser
-
-[Vivaldi browser](https://vivaldi.com/download/)
-
-```bash
-curl -fsSL https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/vivaldi-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/vivaldi-keyring.gpg arch=amd64] https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt/sources.list.d/vivaldi.list > /dev/null
-sudo apt update && sudo apt install -y vivaldi-stable
-```
 
 ### Xanmod Linux kernel
 
@@ -168,6 +158,7 @@ sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-bui
 
 ```bash
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
+sudo apt update && sudo apt install wine
 ```
 
 ### Kubuntu backports
