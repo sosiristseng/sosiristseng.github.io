@@ -3,6 +3,9 @@ title: Ubuntu postinstall
 tags:
 - linux
 - postinstall
+date: 2024-03-26
+categories:
+  - system
 ---
 
 Things to do after installing
@@ -235,10 +238,10 @@ YOu can also search and install extensions via `gnome-shell-extension-manager`
 
 ## Misc.
 
-- [Conda](../software/miniforge.md)
+- [Conda](../../../software/miniforge.md)
 - [[setup-julia]]
-- [Linux themes](../software/linux-themes.md)
+- [Linux themes](../../../software/linux-themes.md)
 - [FreeFileSync](https://freefilesync.org/)
-- [Hugo](../software/hugo.md)
+- [Hugo](../../../software/hugo.md)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)
 - [Virtualbox](https://www.virtualbox.org/)

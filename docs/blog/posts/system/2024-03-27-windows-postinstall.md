@@ -3,6 +3,9 @@ title: Windows Postinstall
 tags:
 - windows
 - postinstall
+date: 2024-03-27
+categories:
+  - system
 ---
 
 Things to do after Windows install.
@@ -44,7 +47,7 @@ choco feature enable -n=useRememberedArgumentsForUpgrades
 choco install -y git.install --params "'/NoShellIntegration'"
 
 choco install -y vscode qbittorrent firefox brave telegram bandizip nanazip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all sudo starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop
-choco uninstall -n --skipautouninstaller vscode qbittorrent telegram github-desktop brave 
+choco uninstall -n --skipautouninstaller vscode qbittorrent telegram github-desktop brave
 ```
 
 See also the  [🍫 Chocolatey package list](https://chocolatey.org/packages) for more packages.
@@ -69,5 +72,5 @@ You can use [nvcleaninstall](https://www.techpowerup.com/download/techpowerup-nv
 
 ## Afterward
 
-+ Setup [[WSL2]]
-+ Setup [Environment variables](windows-environment-variables.md)
++ Setup [[2024-03-29-WSL2]]
++ Setup [Environment variables](../../../system/windows-environment-variables.md)
