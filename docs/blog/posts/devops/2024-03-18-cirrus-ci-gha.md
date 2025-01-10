@@ -8,9 +8,11 @@ categories:
   - DevOps
 ---
 
-Run Github actions after successful [Cirrus CI](https://cirrus-ci.org/) runs using the [`check_suite`](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#check_suite) trigger.
+Run Github actions after successful [Cirrus CI](https://cirrus-ci.org/) runs with the [check_suite](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#check_suite) trigger.
 
 <!-- more -->
+
+The workflow file:
 
 ```yaml title=".github/workflows/cirrus.yml"
 on:
