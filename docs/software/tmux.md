@@ -30,3 +30,11 @@ set -g default-terminal "screen-256color"
 ```
 
 See also [Oh my tmux](https://github.com/gpakosz/.tmux), a versatile tmux configuration tool.
+
+## SSH + tmux
+
+To connect a remote tmux session via SSH,
+
+```bash
+ssh -t user@host tmux new -A -s ssh_tmux
+```
