@@ -16,12 +16,14 @@ sudo at "now +5 minutes"  # Run the following commands in 5 minutes
 In the `at` interface
 
 ```bash
+pkill -u UID
 usermod -m -d /new/home/path # Change user home dir (-d) and move (-m) the content into the new folder
 ```
 
 `Ctrl+D` to exit the `at` interface. Logout, wait 10 minutes, and login.
 
-## See
+## See also
 
 - [at](https://linux.die.net/man/1/at)
 - [usermod](https://linux.die.net/man/8/usermod)
+- [pkill](https://linux.die.net/man/1/pkill)
