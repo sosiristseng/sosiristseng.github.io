@@ -4,7 +4,8 @@ title: Bookmarks
 
 ## Coding
 
-- [[2025-02-19-julia-bookmarks | Julia Bookmarks]]
+- [[julia-bookmarks|Julia bookmarks]]
+- [[python-bookmarks|Python bookmarks]]
 - [Compiler explorer](https://godbolt.org/): assembly for a C/C++ code snippet.
 - [Free for dev](https://free-for.dev/): online tools with free tiers.
 - [Quick C++ benchmarks](https://quick-bench.com/)
@@ -28,7 +29,7 @@ title: Bookmarks
 
 ## Document processing
 
-- [[2024-02-18-latex-bookmarks | Latex bookmarks]]
+- [[latex-bookmarks|Latex bookmarks]]
 - [My Graph Paper](https://www.mygraphpaper.com/): Templates for graph papers and notebooks.
 - [SlidesGo](https://slidesgo.com/): Free Google Slides and PowerPoint templates.
 - [Word templates](https://www.vertex42.com/WordTemplates/): Microsoft Word templates.

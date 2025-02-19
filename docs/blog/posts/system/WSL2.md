@@ -112,7 +112,6 @@ Optimize-VHD -Path %path-to.vhdx% -Mode Full
 Alternatively, export the VHD as a tar file and reimport it again.
 
 [^optimize-vhd]: https://blog.miniasp.com/post/2023/05/14/Shrink-your-WSL2-Virtual-Disks-and-Docker-Images-and-Reclaim-Disk-Space
-[^vhd-diskpart]: https://answers.microsoft.com/en-us/windows/forum/all/optimize-vhd-not-found-in-windows-10-home/a727b760-0f82-4d0f-8480-d49eeaeb11a2
 
 ## Caveats about WSL2
 

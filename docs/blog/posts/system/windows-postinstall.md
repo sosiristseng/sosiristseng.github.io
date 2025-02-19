@@ -71,4 +71,4 @@ You can use [nvcleaninstall](https://www.techpowerup.com/download/techpowerup-nv
 ## Afterward
 
 + Setup [[WSL2]]
-+ Setup [Environment variables](../../../system/windows-environment-variables.md)
++ Setup [[environment-variables]]
