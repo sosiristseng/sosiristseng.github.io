@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Bookmarks
 ---
 
 My knowledge base.
