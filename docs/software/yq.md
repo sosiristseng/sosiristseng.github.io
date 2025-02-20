@@ -2,12 +2,10 @@
 title: yq
 tags:
   - python
-  - devops
-  - github
   - yaml
 ---
 
-Editing YAML files on-the-fly using the [`yq` tool](https://github.com/mikefarah/yq).
+Editing YAML files on-the-fly with https://github.com/mikefarah/yq.
 
 For example, to disable jupyter book cell execution in GitHub actions, one can edit `docs/_config.yml` and set `execute_notebooks` to `off`.
 
