@@ -1,9 +1,11 @@
 ---
-title: Swap Setup
+title: Swap setup
 date: 2024-04-22
 tags:
   - linux
 ---
+
+Setup swap files in RAM and btrfs filesystems.
 
 <!-- more -->
 
@@ -13,13 +15,11 @@ Swap files are more flexible than swap partitions in terms of disk space and par
 
 Source: [btrfs docs](https://btrfs.readthedocs.io/en/latest/Swapfile.html) and [Arch Linux wiki](https://wiki.archlinux.org/title/btrfs#Swap_file).
 
-The following commands create a swapfile in the btrfs filesystem, which does not (and should not) use COW.
+The following commands create a swap file in the btrfs filesystem, which does not (and should not) use copy-on-write (COW).
 
 ```sh
-cd /  # Or other dir for the swapfile
-sudo mkdir -p /swap
-sudo btrfs subvolume create /swap # Create a btrfs subvolume for the swap file
-sudo btrfs filesystem mkswapfile --size 4G /swap/swapfile
+sudo btrfs subvolume create /swap # Create a btrfs subvolume for the swap file's directory
+sudo btrfs filesystem mkswapfile --size 4G --uuid clear /swap/swapfile # Create a 4 GB swap file
 sudo swapon /swap/swapfile
 ```
 
@@ -41,7 +41,7 @@ Add the following line to `/etc/fstab` to mount the swap file on next boot.
 /swap/swapfile none swap defaults 0 0
 ```
 
-And one can see current activated swap by running
+See the current activated swap file(s):
 
 ```sh
 cat /proc/swaps
@@ -49,17 +49,30 @@ cat /proc/swaps
 
 ## Use ZRAM
 
-[ZRAM](https://wiki.archlinux.org/title/Zram) is a compressed RAM disk, reducing physical disk swap use under high memory usage.
+[ZRAM](https://wiki.archlinux.org/title/Zram) is a compressed RAM disk, which can be used as a swap device to reduce physical disk swap use under high memory pressure.
 
 Install ZRAM in Ubuntu: [Source](https://kienngd.github.io/how-to-use-zram-on-ubuntu-2404/)
 
-```bash
+```sh
 sudo apt update && sudo apt install zram-tools
 ```
 
-edit `/etc/default/zramswap` to change ZRAM options.
+edit `/etc/default/zramswap` to change the options.
 
 ```txt title="/etc/default/zramswap"
+ENABLED=true
 ALGO=zstd
 PERCENTAGE=50
+```
+
+enable
+
+```sh
+sudo systemctl enable --now zramswap
+```
+
+check ZRAM status
+
+```sh
+sudo zramctl
 ```

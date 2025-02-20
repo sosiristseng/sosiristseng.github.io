@@ -12,14 +12,6 @@ Things to do after installing
 - [Kubuntu](https://kubuntu.org/)
 - [WSL2](https://docs.microsoft.com/zh-tw/windows/wsl/install)
 
-> [!INFO]
-> How to fix locale:
-> Uncomment the `zh_TW` line in `/etc/locale.gen`. And then run:
-> ```bash
-> sudo locale-gen
-> ```
-> Finally, install the Traditional Chinese locale in `Language Support` and then set locale to `Taiwan`.
-
 ## Make software repo point to NCHC for faster network speed
 
 You can replace  `archive.ubuntu.com` with a closer mirror, e.g., `tw.archive.ubuntu.com` or `free.nchc.org.tw` in `/etc/apt/sources.list.d/ubuntu.sources`. After you are done, run:
@@ -28,31 +20,7 @@ You can replace  `archive.ubuntu.com` with a closer mirror, e.g., `tw.archive.
 sudo apt clean && sudo apt update && sudo apt full-upgrade -y
 ```
 
-## (Optional) Remove snap
-
-List snap packages
-
-```sh
-snap list
-```
-
-Uninstall each Snap package
-
-```sh
-sudo snap remove $PKG
-```
-
-Stop the snapd service and uninstall it
-
-```sh
-sudo systemctl stop snapd
-sudo apt remove --autoremove --purge snapd
-sudo apt-mark hold snapd
-```
-
-## Setup 3rd party apps
-
-Adding 3rd party repositories for latest packages not available in xUbuntu's official repositories.
+## Install 3rd party apps
 
 First, install required package
 
@@ -63,6 +31,7 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 - [[docker]]
 - [[firefox]]
 - [[vscode]]
+- [[cuda]]
 
 ### Brave browser
 
@@ -102,41 +71,6 @@ echo 'deb [signed-by=/usr/share/keyrings/xanmod-keyring.gpg] http://deb.xanmod.o
 sudo apt update && sudo apt install -y linux-xanmod
 ```
 
-### Nvidia GPU computing (CUDA)
-
-> The following section works for Ubuntu 24.04 LTS.
-
-Install nvidia CUDA runtime and compatible [GPU driver](https://developer.nvidia.com/cuda-downloads).
-
-For Ubuntu 24.04:
-
-```bash
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-ubuntu2404.pin
-sudo mv cuda-ubuntu2404.pin /etc/apt/preferences.d/cuda-repository-pin-600
-wget https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda-repo-ubuntu2404-12-6-local_12.6.0-560.28.03-1_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu2404-12-6-local_12.6.0-560.28.03-1_amd64.deb
-sudo cp /var/cuda-repo-ubuntu2404-12-6-local/cuda-*-keyring.gpg /usr/share/keyrings/
-sudo apt-get update
-sudo apt-get -y install cuda
-```
-
-Add the CUDA compiler (`nvcc`) to the system `PATH`:
-
-```sh title="~/.profile"
-export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
-```
-
-For WSL2, install Window NVIDIA GPU driver first; then install the CUDA toolkit in the WSL
-
-```bash
-# remove the old GPG key
-sudo apt-key del 7fa2af80
-# Install Linux CUDA toolkit
-wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
-sudo dpkg -i cuda-keyring_1.1-1_all.deb
-sudo apt update && sudo apt install -y cuda
-```
-
 ### AMD and Intel open-source GPU library (Mesa)
 
 Install the latest Mesa open source GPU drivers from the [kisak PPA](https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa)
@@ -171,6 +105,16 @@ sudo add-apt-repository -y ppa:kubuntu-ppa/backports
 sudo apt-get update && sudo apt full-upgrade -y
 ```
 
+### Latest kernel
+
+Install Hardware Enablement (HWE) kernels: https://ubuntu.com/kernel/lifecycle
+
+```sh
+sudo apt install --install-recommends linux-generic-hwe-$VERSION
+```
+
+Where `$VERSION` is the Ubuntu version.
+
 ## Update your system and install packages
 
 ```sh
@@ -189,7 +133,42 @@ Kubuntu:
 sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gnome-keyring ppa-purge kubuntu-restricted-extras ffmpeg vlc fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer zsh btrfs-compsize synaptic apt-xapian-index
 ```
 
-## Configurations
+## System tweaks
+
+- [[linux-input-methods]]
+- [[linux-themes]]
+
+### Fix locales
+
+Uncomment the `zh_TW` line in `/etc/locale.gen`. Then run:
+
+```sh
+sudo locale-gen
+```
+
+Finally, install the Traditional Chinese locale in `Language Support` and then set locale to `Taiwan`.
+
+### (Optional) Remove snap
+
+List snap packages
+
+```sh
+snap list
+```
+
+Uninstall each Snap package
+
+```sh
+sudo snap remove --purge $PKG
+```
+
+Stop the snapd service and uninstall it
+
+```sh
+sudo systemctl stop snapd
+sudo apt remove --autoremove --purge snapd
+sudo apt-mark hold snapd
+```
 
 ### Terminal
 
@@ -209,6 +188,12 @@ sudo systemctl enable tmp.mount
 
 ```bash
 sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/20apt-esm-hook.conf.disabled
+```
+
+### Disable cloud-init
+
+```sh
+sudo touch /etc/cloud/cloud-init.disabled
 ```
 
 ### Automatic updates
@@ -234,12 +219,34 @@ YOu can also search and install extensions via `gnome-shell-extension-manager`
 - Double click to open files instead of single clicks: `Workspace behavior` => `General behavior` => `click behavior`.
 - Start with an empty session in `Desktop session`.
 
+### Making system more responsive
+
+[Fine-tuning the kernel](https://discourse.ubuntu.com/t/fine-tuning-the-ubuntu-24-04-kernel-for-low-latency-throughput-and-power-efficiency/44834)
+
+Replace the line in `/etc/default/grub`
+
+Gaming:
+
+```txt title="/etc/default/grub"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash preempt=full"
+```
+
+Virtualization:
+
+```txt title="/etc/default/grub"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash preempt=full Nohz_full=all"
+```
+
+Then run:
+
+```sh
+sudo update-grub
+```
+
 ## Misc.
 
-- [Conda](../../../software/miniforge.md)
-- [[julia]]
-- [Linux themes](./linux-themes.md)
+- [[miniforge|Miniforge]]
+- [[julia|Julia]]
 - [FreeFileSync](https://freefilesync.org/)
-- [Hugo](../../../software/hugo.md)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)
 - [Virtualbox](https://www.virtualbox.org/)

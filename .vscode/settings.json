@@ -12,7 +12,10 @@
     "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping"
   ],
   "cSpell.words": [
+    "btrfs",
+    "CUDA",
     "inplace",
+    "Kubuntu",
     "mechanobiology",
     "nbconvert",
     "nbstripout",
