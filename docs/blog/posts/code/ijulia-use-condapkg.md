@@ -1,5 +1,5 @@
 ---
-title: IJulia use Python package provided by CondaPkg
+title: Make IJulia use Python package provided by CondaPkg.jl
 date: 2024-10-07
 tags:
   - julia
