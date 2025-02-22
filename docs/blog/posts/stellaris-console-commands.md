@@ -87,6 +87,36 @@ Nameless Apostate
 event crisis.21125
 ```
 
+Oracle
+```
+event ancrel.4036
+```
+
+Zadigal
+```
+astral_planes.3100
+```
+
+Mercedes Romero
+```
+astral_planes.6105
+```
+
+Ceriz t'Xal
+```
+grand_archive.1070
+```
+
+Ruuk Qabruuk
+```
+grand_archive.1080
+```
+
+Captain Ness
+```
+grand_archive.8570
+```
+
 ## Relics
 
 Add relics
