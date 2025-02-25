@@ -79,7 +79,7 @@ effect random_owned_ship = { ship_event = { id = distar.245 } }
 
 Tuborek (need to select a science vessel)
 ```
-effect random_owned_ship = { ship_event = { id = galactic_features.3035 } }
+effect random_owned_ship = { ship_event = { id = galactic_features.303 } }
 ```
 
 Nameless Apostate
@@ -94,27 +94,27 @@ event ancrel.4036
 
 Zadigal
 ```
-astral_planes.3100
+event astral_planes.3100
 ```
 
 Mercedes Romero
 ```
-astral_planes.6105
+event astral_planes.6105
 ```
 
 Ceriz t'Xal
 ```
-grand_archive.1070
+event grand_archive.1070
 ```
 
 Ruuk Qabruuk
 ```
-grand_archive.1080
+event grand_archive.1080
 ```
 
 Captain Ness
 ```
-grand_archive.8570
+event grand_archive.8570
 ```
 
 ## Relics
