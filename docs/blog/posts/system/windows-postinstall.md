@@ -58,16 +58,6 @@ Disabling hibernation saves a lot of disk space (No more `C:\hiberfile.sys`). Ru
 powercfg -h off
 ```
 
-## (Optional) Compress OS files for a smaller disk space footprint
-
-```powershell
-Compact.exe /CompactOS:always
-```
-
-## Install nvidia GPU driver
-
-You can use [nvcleaninstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) to install Nvidia driver without bloat.
-
 ## Afterward
 
 + Setup [[WSL2]]
