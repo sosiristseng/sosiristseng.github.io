@@ -66,7 +66,6 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 - [Fancy border radius](https://9elements.github.io/fancy-border-radius/)
 - [Get CSS waves](https://getwaves.io/)
 - [Neumorphism](https://neumorphism.io/)
-- [Smooth shadows](https://shadows.brumm.af/)
 
 ### Fonts
 
@@ -94,7 +93,6 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 - [Friconix](https://friconix.com/) icon with extensive parameters. Also see its [CSS color table](https://lucidar.me/en/web-dev/css-color-list/)
 - [Handcrafted icons](https://www.zwicon.com/)
 - [Icofont](https://icofont.com/)
-- [Icon duck](https://iconduck.com) : 116,704 free open source icons & illustrations
 - [Iconify](https://iconify.design/)
 - [IconPark](https://iconpark.bytedance.com/official) by ByteDance
 - [Icons8](https://icons8.com/)
