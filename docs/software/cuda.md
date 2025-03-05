@@ -6,22 +6,19 @@ tags:
 - gpu
 ---
 
-Install nvidia CUDA runtime and compatible [GPU driver](https://developer.nvidia.com/cuda-downloads).
-
-## From ubuntu repository
-
-## From NVIDIA (newer driver and CUDA runtime)
+Install nvidia CUDA runtime and compatible GPU driver from NVIDIA: https://developer.nvidia.com/cuda-toolkit
 
 For Ubuntu 24.04:
 
+```bash
+# Clean previous installations
+sudo apt autoremove 'cuda*' 'nvidia*' --purge
+```
+
 ```sh
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-ubuntu2404.pin
-sudo mv cuda-ubuntu2404.pin /etc/apt/preferences.d/cuda-repository-pin-600
-wget https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda-repo-ubuntu2404-12-6-local_12.6.0-560.28.03-1_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu2404-12-6-local_12.6.0-560.28.03-1_amd64.deb
-sudo cp /var/cuda-repo-ubuntu2404-12-6-local/cuda-*-keyring.gpg /usr/share/keyrings/
-sudo apt-get update
-sudo apt-get -y install cuda
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo apt update && sudo apt install cuda-toolkit-12-8 cuda-drivers
 ```
 
 Add the CUDA compiler (`nvcc`) to the system `PATH`:
