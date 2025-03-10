@@ -12,58 +12,18 @@ tags:
 
 ## Pip packages
 
-The https://github.com/actions/setup-python actions installs `python` with a specific version and could cache downloaded Python packages. (But *not* the installed environment)
+The https://github.com/actions/setup-python actions installs `python` with a specific version and could cache downloaded Python packages. (But *not* the installed environment).
 
-```yaml
-steps:
-- uses: actions/checkout@v4
-- uses: actions/setup-python@v5
-  with:
-    python-version: '3.x'
-    cache: 'pip'
-- run: pip install -r requirements.txt
-```
-
-### Cache virtual environment
-
-The following workflow caches the virtual environment folder[^2], which is faster than caching the whole Python environment.
-
-```yaml
-- name: Setup Python
-  uses: actions/setup-python@v5
-  id: setup-python
-  with:
-    python-version: '3.x'
-- name: Cache virtualenv
-  uses: actions/cache@v4
-  id: cache-venv
-  with:
-    key: ${{ runner.os }}-venv-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
-    path: .venv
-- name: Install Python dependencies
-  run: |
-    python -m venv .venv
-    source .venv/bin/activate
-    python -m pip install -r requirements.txt
-    echo ".venv/bin" >> $GITHUB_PATH
-    echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
-    echo "PYTHON=${VIRTUAL_ENV}/bin/python" >> $GITHUB_ENV
-    echo "JULIA_PYTHONCALL_EXE=${VIRTUAL_ENV}/bin/python">> $GITHUB_ENV
-```
-
-[^2]: https://adamj.eu/tech/2023/11/02/github-actions-faster-python-virtual-environments/
-
-### Use `uv`
-
-[uv](https://docs.astral.sh/uv/) is a drop-in replacement for `pip`, an extremely fast Python package and project manager written in Rust.
-
-The GitHub actions [workflow](https://docs.astral.sh/uv/guides/integration/github/):
+[uv](https://docs.astral.sh/uv/) is a drop-in replacement for `pip`, an extremely fast Python package and project manager written in Rust. `uv` caches the environment by default.
 
 ```yaml
 name: UV example
 
+env:
+  UV_SYSTEM_PYTHON: 1
+
 jobs:
-  python-linux:
+  python:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -71,10 +31,13 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Set up uv
-        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+          check-latest: true
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
       - name: Install requirements
-        run: uv pip install --system -r requirements.txt
+        run: uv pip install -r requirements.txt
 ```
 
 ## Conda packages
