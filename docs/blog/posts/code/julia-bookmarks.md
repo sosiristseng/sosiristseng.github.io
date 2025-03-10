@@ -14,15 +14,6 @@ tags:
 - [Parallel Computing and Scientific Machine Learning (SciML): Methods and Applications](https://book.sciml.ai/)
 - [Modern Julia Workflows](https://modernjuliaworkflows.github.io/)
 
-## My Julia repos
-
-- [Agent-based modeling](https://sosiristseng.github.io/jl-abm/)
-- [DataFrames tutorials](https://sosiristseng.github.io/jl-dataframes/)
-- [Plotting tutorials](https://sosiristseng.github.io/jl-visual/)
-- [Differential equations](https://sosiristseng.github.io/jl-diffeq/)
-  - [Partial differential equations (PDEs)](https://sosiristseng.github.io/jl-pde/)
-  - [Universal differential equations (UDEs)](https://sosiristseng.github.io/jl-ude/)
-
 ## Package development
 
 - https://github.com/invenia/PkgTemplates.jl : templates to create new Julia packages.
