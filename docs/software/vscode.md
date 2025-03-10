@@ -86,6 +86,7 @@ Search for `Line height` in VSCode settings and set it to a higher number. (For 
 [VSCode themes](https://vscodethemes.com/)
 
 - [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
+- [One Dark Pro Theme](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 ### Version control and continuous integration (CI)
@@ -107,5 +108,5 @@ Search for `Line height` in VSCode settings and set it to a higher number. (For 
 - [MPEG4 preview](https://marketplace.visualstudio.com/items?itemName=analytic-signal.preview-mp4): Simple preview for MPEG-4 (`.mp4`) video files in VSCode.
 - [GitHub Markdown Preview](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview): GitHub-flavored Markdown for VSCode.
 - [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf): PDF (`.pdf`) documents.
-- [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
+- [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv): CSV (`.csv`) files.
 - [TIFF Preview](https://marketplace.visualstudio.com/items?itemName=analytic-signal.preview-tiff): TIFF (`.tif`) images.
