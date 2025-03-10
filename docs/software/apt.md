@@ -6,14 +6,14 @@ tags:
 
 The [APT package manager](https://en.wikipedia.org/wiki/APT_(software)) in Debian, Ubuntu, and derived distributions.
 
-- [Itsfoss: apt commands](https://itsfoss.com/apt-command-guide/)
+- [It's foss: apt commands](https://itsfoss.com/apt-command-guide/)
 
 ## `apt` vs `apt-get`
 
-[Itsfoss: apt vs apt-get](https://itsfoss.com/apt-vs-apt-get-difference/)
+[It's foss: apt vs apt-get](https://itsfoss.com/apt-vs-apt-get-difference/)
 
 - `apt` is for interactive use, including commonly-used commands from `apt-get` and `apt-cache`. And it has a nice progress bar.
-- `apt-get` is more inclined for non-interactive (scripting) use due to its stable interface.
+- `apt-get` is more inclined for non-interactive use in scripts because of its stable interface.
 
 ## nala: a prettier and faster frontend
 
@@ -35,7 +35,7 @@ To find fastest mirrors:
 sudo nala fetch
 ```
 
-To upgrade the system:
+To update the system:
 
 ```sh
 sudo nala upgrade
