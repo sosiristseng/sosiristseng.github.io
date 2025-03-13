@@ -8,6 +8,8 @@ tags:
 
 [Awesome Python](https://github.com/vinta/awesome-python): a curated list of Python stuff.
 
+<!-- more -->
+
 ## Python IDEs
 
 - [VSCode](https://code.visualstudio.com/) + [Python extension](https://code.visualstudio.com/docs/languages/python).

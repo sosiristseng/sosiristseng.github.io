@@ -6,11 +6,11 @@ tags:
 date: 2024-03-25
 ---
 
-Sources:
-
 - [Git reference](https://git-scm.com/docs)
 - [Git cheat sheet (pdf)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
 - [When you screw up git](https://ohshitgit.com/)
+
+<!-- more -->
 
 ## Ordinary workflows
 

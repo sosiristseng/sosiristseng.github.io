@@ -13,6 +13,8 @@ To wipe large binary files entirely:
 git filter-repo --strip-blobs-bigger-than 100M
 ```
 
+<!-- more -->
+
 Bonus: Remove sensitive content
 
 ```sh

@@ -8,6 +8,8 @@ tags:
 
 Set the `JUPYTER` environment variable to `CondaPkg.jl`-provided `jupyter` and `IJulia.jl` will take it to start the kernel. [^1]
 
+<!-- more -->
+
 ```julia
 using CondaPkg
 CondaPkg.add("jupyter")

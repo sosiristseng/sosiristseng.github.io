@@ -7,7 +7,9 @@ tags:
 
 Academic writing workshop lectured by Steven Wallace.
 
-Also see the blog in his techinical writing editor company: <https://www.editing.tw/blog>
+Also see the blog in his technical writing editor company: <https://www.editing.tw/blog>
+
+<!-- more -->
 
 ## Outline
 

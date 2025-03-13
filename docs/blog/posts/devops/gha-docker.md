@@ -11,6 +11,7 @@ tags:
 - [Docker documentation: Configure GitHub Actions](https://docs.docker.com/ci-cd/github-actions/)
 - [How to publish a docker image into the Github package registry](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images)
 
+<!-- more -->
 
 ```yaml title=".github/workflows/docker.yml"
 name: Create and publish a Docker image

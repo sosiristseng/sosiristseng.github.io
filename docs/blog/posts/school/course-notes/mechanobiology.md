@@ -7,6 +7,8 @@ tags:
 
 Course Notes of Introduction to mechanobiology.
 
+<!-- more -->
+
 ## Course information
 
 * Time: Mon. 2, 3, 4 (9:10 ~ 12:10)

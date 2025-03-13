@@ -11,6 +11,8 @@ For example, how to find changed PHP files between latest and the commit before 
 git diff --name-only HEAD~1 HEAD '**/*.php'
 ```
 
+<!-- more -->
+
 If the shell does not support the glob pattern, use `grep`
 
 ```bash

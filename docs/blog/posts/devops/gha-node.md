@@ -8,6 +8,8 @@ tags:
 
 The https://github.com/actions/setup-node action installs Node.js and caches package dependencies.
 
+<!-- more -->
+
 ```yaml
 steps:
 - uses: actions/checkout@v4

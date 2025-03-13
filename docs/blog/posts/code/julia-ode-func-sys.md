@@ -8,6 +8,8 @@ tags:
 
 `f = ODEFunction(sys)` could be useful in plotting vector fields.
 
+<!-- more -->
+
 ```julia
 using ModelingToolkit
 using DifferentialEquations

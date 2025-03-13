@@ -9,6 +9,8 @@ tags:
 
 The https://github.com/actions/cache action caches dependencies for the execution environment.
 
+<!-- more -->
+
 ```yaml
 - name: Cache multiple paths
   uses: actions/cache@v4

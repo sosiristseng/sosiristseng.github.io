@@ -8,6 +8,8 @@ tags:
 
 - A curated list of [😎 awesome Markdown](https://github.com/mundimark/awesome-markdown)
 
+<!-- more -->
+
 ## Markdown flavors
 
 - [Commonmark](https://commonmark.org/help/)

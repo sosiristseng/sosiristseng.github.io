@@ -9,6 +9,8 @@ tags:
 - https://github.com/emptymalei/awesome-research
 - [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/) : A web based tool to extract data from plots, images, and maps
 
+<!-- more -->
+
 ## Reference managers
 
 - [SciWheel](https://sciwheel.com/work/): the online reference manager with browser, Google Doc, and MS Word plugins.

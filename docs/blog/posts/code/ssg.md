@@ -10,6 +10,8 @@ tags:
 + [[hugo]] : the world’s fastest framework for building websites, written in Go.
 + [[hexo]] : a fast, simple & powerful blog framework powered by `Node.js`.
 
+<!-- more -->
+
 ## Docsify
 
 [Docsify](https://docsify.js.org/) renders Markdown files to HTML on-the-fly. Technically docsify is a single page application (SPA) rather than a static site generator (SSG).

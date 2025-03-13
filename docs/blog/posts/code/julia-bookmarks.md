@@ -14,6 +14,8 @@ tags:
 - [Parallel Computing and Scientific Machine Learning (SciML): Methods and Applications](https://book.sciml.ai/)
 - [Modern Julia Workflows](https://modernjuliaworkflows.github.io/)
 
+<!-- more -->
+
 ## Package development
 
 - https://github.com/invenia/PkgTemplates.jl : templates to create new Julia packages.

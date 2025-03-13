@@ -5,7 +5,9 @@ tags:
   - github
 ---
 
-Updating package dependencies automatically as a part of continuous integration (CI)
+Updating package dependencies automatically as a part of continuous integration (CI).
+
+<!-- more -->
 
 ## Dependabot
 

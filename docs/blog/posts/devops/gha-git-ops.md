@@ -8,6 +8,8 @@ tags:
 
 Git commands, such as checkout, add, create a branch, make a pull request in Github actions.
 
+<!-- more -->
+
 ## Checkout (Clone a repository)
 
 The official https://github.com/actions/checkout action clones the repository to `$GITHUB_WORKSPACE`. By default it uses built-in `GITHUB_TOKEN` for authentication.

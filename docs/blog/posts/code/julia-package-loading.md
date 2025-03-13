@@ -7,6 +7,8 @@ tags:
 
 When your Julia codebase grows larger, you might want to organize it into modules and packages.
 
+<!-- more -->
+
 ## Include other files as submodules
 
 You could include jl files as submodules like this

@@ -7,6 +7,8 @@ tags:
 
 Use `CartesianIndices((nrow, ncol))` [^1].
 
+<!-- more -->
+
 ```julia
 x = rand((7, 10))
 CI = CartesianIndices((7, 10))

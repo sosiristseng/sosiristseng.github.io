@@ -7,6 +7,8 @@ tags:
 
 Some notes of Tom kwong's book [Hands on Design patterns in Julia](https://www.packtpub.com/product/hands-on-design-patterns-and-best-practices-with-julia/9781838648817).
 
+<!-- more -->
+
 ## Separated Project environments
 
 It is recommended to maintain a minimal root environment (with a few necessary packages like `Revise.jl`) and [customize the local Julia project environment](https://opensourc.es/blog/all-about-pkg/#environments) by the following steps:

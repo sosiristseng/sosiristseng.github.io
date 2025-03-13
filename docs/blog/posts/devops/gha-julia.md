@@ -15,6 +15,8 @@ tags:
 - https://github.com/julia-actions/julia-docdeploy deploys documentation.
 - https://github.com/julia-actions/julia-processcoverage generates test coverage data.
 
+<!-- more -->
+
 Example workflow:
 
 ```yaml

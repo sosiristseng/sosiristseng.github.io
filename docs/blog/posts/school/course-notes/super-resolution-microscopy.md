@@ -7,6 +7,8 @@ tags:
 
 Course notes of Super-resolution microscopy.
 
+<!-- more -->
+
 ## Course information
 * Lecturer: Tony Yang
 * Time: 789 (W)

@@ -8,6 +8,8 @@ tags:
 
 Some tips about [Plots.jl](https://docs.juliaplots.org/stable/), the de-facto standard visualization library in Julia.
 
+<!-- more -->
+
 ## You don't have to precalculate
 
 `Plots.jl` supports tracing functions.

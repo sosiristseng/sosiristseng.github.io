@@ -7,6 +7,8 @@ tags:
 
 Course Notes of Computational Cognitive Neuroscience by Prof. 鄭士康.
 
+<!-- more -->
+
 ## Course Information
 
 * Lecturer: 鄭士康

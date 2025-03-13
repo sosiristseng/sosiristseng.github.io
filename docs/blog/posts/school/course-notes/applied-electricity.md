@@ -7,6 +7,8 @@ tags:
 
 Course notes of Applied electricity by Lecturer 林冠中.
 
+<!-- more -->
+
 ## Course information
 
 * Lecturer: 林冠中 (calculus365(at)yahoo.com.tw)

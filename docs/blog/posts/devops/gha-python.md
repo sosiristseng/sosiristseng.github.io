@@ -10,6 +10,8 @@ tags:
 + https://github.com/actions/setup-python
 + https://github.com/mamba-org/setup-micromamba
 
+<!-- more -->
+
 ## Pip packages
 
 The https://github.com/actions/setup-python actions installs `python` with a specific version and could cache downloaded Python packages. (But *not* the installed environment).

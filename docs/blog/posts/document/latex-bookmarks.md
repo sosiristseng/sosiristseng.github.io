@@ -11,6 +11,8 @@ tags:
 - [LaTeX templates](http://www.latextemplates.com/)
 - [Scientific paper tips and tricks](https://github.com/Wookai/paper-tips-and-tricks) : how to write scientific papers in LaTeX, with figures generated in Python or Matlab.
 
+<!-- more -->
+
 ## LaTeX Distributions
 
 - [TexLive](https://tug.org/texlive/) : de-facto standard TeX distribution.

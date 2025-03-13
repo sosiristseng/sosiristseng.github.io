@@ -7,6 +7,8 @@ tags:
 
 Publish your website to [GitHub pages](https://pages.github.com/) with GitHub actions (CI/CD).
 
+<!-- more -->
+
 ## Official workflow
 
 [Official GitHub actions](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/)
