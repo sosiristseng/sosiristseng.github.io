@@ -10,32 +10,32 @@ See also https://github.com/viatsko/awesome-vscode for a curated list of delight
 
 ## Install
 
-### Ubuntu (deb)
+=== "Ubuntu (deb)"
 
-```sh
-curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
-sudo apt update && sudo apt install -y code
-```
+    ```sh
+    curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
+    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+    sudo apt update && sudo apt install -y code
+    ```
 
-### snap
+=== "snap"
 
-```sh
-sudo snap install code --classic
-```
+    ```sh
+    sudo snap install code --classic
+    ```
 
-### Windows
+=== "Windows"
 
-chocolatey:
+    chocolatey:
 
-```powershell
-choco install vscode
-```
+    ```powershell
+    choco install vscode
+    ```
 
-winget:
+    winget:
 
-```powershell
-winget install vscode
+    ```powershell
+    winget install Microsoft.VisualStudioCode
 ```
 
 ## VSCode Settings

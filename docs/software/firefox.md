@@ -8,51 +8,55 @@ tags:
 
 Setup [Firefox browser](https://www.mozilla.org/firefox)
 
-## Install (Ubuntu)
+## Install
 
-Install Firefox from Mozilla's repo
+=== "Ubuntu (deb)"
 
-```bash
-# Create a directory to store APT repository keys if it doesn't exist:
-sudo install -d -m 0755 /etc/apt/keyrings
+    Install Firefox from Mozilla's repo
 
-# Import the Mozilla APT repository signing key:
-wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
+    ```bash
+    # Create a directory to store APT repository keys if it doesn't exist:
+    sudo install -d -m 0755 /etc/apt/keyrings
 
-# The fingerprint should be 35BAA0B33E9EB396F59CA838C0BA5CE6DC6315A3
-gpg -n -q --import --import-options import-show /etc/apt/keyrings/packages.mozilla.org.asc | awk '/pub/{getline; gsub(/^ +| +$/,""); print "\n"$0"\n"}'
+    # Import the Mozilla APT repository signing key:
+    wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
 
-# Next, add the Mozilla APT repository to your sources list:
-echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main" | sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
+    # The fingerprint should be 35BAA0B33E9EB396F59CA838C0BA5CE6DC6315A3
+    gpg -n -q --import --import-options import-show /etc/apt/keyrings/packages.mozilla.org.asc | awk '/pub/{getline; gsub(/^ +| +$/,""); print "\n"$0"\n"}'
 
-# Configure APT to prioritize packages from the Mozilla repository
-echo '
-Package: *
-Pin: origin packages.mozilla.org
-Pin-Priority: 1000
-' | sudo tee /etc/apt/preferences.d/mozilla
+    # Next, add the Mozilla APT repository to your sources list:
+    echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main" | sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
 
-# Update your package list and install the Firefox Nightly .deb package:
-sudo apt update && sudo apt install -y firefox
-```
+    # Configure APT to prioritize packages from the Mozilla repository
+    echo '
+    Package: *
+    Pin: origin packages.mozilla.org
+    Pin-Priority: 1000
+    ' | sudo tee /etc/apt/preferences.d/mozilla
 
-## Install (Windows)
+    # Update your package list and install the Firefox Nightly .deb package:
+    sudo apt update && sudo apt install -y firefox
+    ```
 
-chocolatey:
+=== "Windows"
 
-```powershell
-choco install firefox
-```
+    chocolatey:
 
-winget:
+    ```powershell
+    choco install firefox
+    ```
 
-```powershell
-winget install -e --id Mozilla.Firefox
-```
+    winget:
+
+    ```powershell
+    winget install Mozilla.Firefox
+    ```
 
 ## Advanced settings
 
 Enter `about:config` in the location bar.
+
+See also https://github.com/yokoffing/Betterfox, the Firefox `user.js` for speed, privacy, and security.
 
 ### Compact mode
 

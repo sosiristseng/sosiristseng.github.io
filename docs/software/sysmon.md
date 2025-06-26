@@ -51,9 +51,8 @@ https://github.com/nicolargo/glances is a cross-platform advance system monitor 
 
     ```sh
     sudo apt update && sudo apt install python3-psutil
-
     pip install glances --upgrade --user
-    # NVIDIA GPU support
+    # For NVIDIA GPU support
     pip install glances[gpu] --upgrade --user
     ```
 
@@ -104,3 +103,32 @@ https://github.com/clementtsang/bottom is a resource monitor written in Rust. Th
     sudo snap connect bottom:system-observe
     sudo snap connect bottom:process-control
     ```
+
+## Disk info
+
+### udisks
+
+[udisks](https://wiki.archlinux.org/title/Udisks) provides a daemon udisksd, that implements D-Bus interfaces used to query and manipulate storage devices, and a command-line tool [udisksctl](https://manpages.ubuntu.com/manpages/noble/man1/udisksctl.1.html), used to query and use the daemon.
+
+To see your drive model:
+
+```bash
+udisksctl status
+```
+
+### nvme-cli
+
+https://github.com/linux-nvme/nvme-cli is a NVMe management command line interface.
+
+Install
+
+```sh
+sudo apt install nvme-cli
+```
+
+See drive health
+
+```sh
+# X is the drive number
+sudo nvme smart-log /dev/nvmeX -H
+```

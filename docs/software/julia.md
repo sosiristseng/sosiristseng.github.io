@@ -11,23 +11,20 @@ tags:
 
 Install Julia with the [juliaup](https://github.com/JuliaLang/juliaup) installer.
 
-### Linux/MacOS
+=== "Linux/MacOS"
 
-```sh
-curl -fsSL https://install.julialang.org | sh -s -- -y
-```
+    ```sh
+    curl -fsSL https://install.julialang.org | sh -s -- -y
+    ```
 
-### Windows
+=== "Windows"
 
-```powershell
-winget install julia -s msstore
-```
+    ```powershell
+    winget install julia -s msstore
+    ```
 
-Alternatively, download and install [Julia official binaries](https://julialang.org/downloads/).
+    Alternatively, download and install [Julia official binaries](https://julialang.org/downloads/).
 
-```powershell
-winget install JuliaLang.Julia
-```
 
 ## Post-install configurations
 

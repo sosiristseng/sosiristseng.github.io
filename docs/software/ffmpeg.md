@@ -9,17 +9,23 @@ Setup [ffmpeg](https://ffmpeg.org)
 
 ## Install
 
-### Ubuntu
+=== Ubuntu
 
-```sh
-sudo apt install ffmpeg
-```
+    ```sh
+    sudo apt install ffmpeg
+    ```
 
-### Windows
+=== Windows
 
-```powershell
-choco install ffmpeg
-```
+    ```powershell
+    choco install ffmpeg
+    ```
+
+    Or
+
+    ```powershell
+    winget install Gyan.FFmpeg
+    ```
 
 ## Usage
 

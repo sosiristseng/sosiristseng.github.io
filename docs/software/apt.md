@@ -61,11 +61,11 @@ sudo apt update && sudo apt install apt-fast -y
 
 ## Synaptic : the GUI package manager for APT
 
+The additional package `apt-xapian-index` gives a search box in `synaptic`.
+
 ```sh
 sudo apt install synaptic apt-xapian-index
 ```
-
-The additional package `apt-xapian-index` gives a quick search box in `synaptic`.
 
 ## Add signing keys
 

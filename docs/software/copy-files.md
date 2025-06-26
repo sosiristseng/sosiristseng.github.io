@@ -23,6 +23,23 @@ tar cf - $src | tar xvf - -C $dst
 rsync -avh --info=progress2 sourcefolder /destinationfolder --exclude thefoldertoexclude --exclude anotherfoldertoexclude
 ```
 
+## Use robocopy
+
+[Robust copy (robocopy)](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy) is a file-copying command-line tool baked in Windows 10+.
+
+To see its commands
+
+```powershell
+robocopy /?
+```
+
+For instance, to mirror (`/MIR`) two folders with multithreading (`/MT`)
+
+```powershell
+robocopy SOURCE DESTINATION /MIR /MT
+```
+
+
 ## Copy a directory tree with exclusions
 
 How to exclude some files/folders while copying a folder tree.

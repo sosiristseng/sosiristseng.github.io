@@ -12,14 +12,14 @@ tags:
 
 ## Install
 
-### Windows
+=== "Windows"
 
 ```powershell
 choco feature enable -n=useRememberedArgumentsForUpgrades
 choco install -y git.install --params "'/NoShellIntegration'"
 ```
 
-### Ubuntu
+=== "Ubuntu"
 
 ```bash
 sudo add-apt-repository -y ppa:git-core/ppa
@@ -28,9 +28,7 @@ sudo apt update && sudo apt install -y git git-lfs
 
 ## Settings
 
-### LF line endings
-
-Let Windows use `LF` end of line:
+### Let Windows use `LF` end of line:
 
 ```bash
 # Default is true on Windows machines
@@ -48,5 +46,3 @@ Apply the changes
 ```bash
 git add --renormalize .
 ```
-
-###
