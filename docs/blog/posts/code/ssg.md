@@ -36,7 +36,7 @@ tags:
 ## Julia-based
 
 - https://github.com/tlienart/Franklin.jl : Static site generation with live Julia code evaluation. [Examples](https://github.com/tlienart/Franklin.jl#docs).
-- https://tlienart.github.io/PkgPage.jl/ : Creating (package) front-pages, powered by `Franklin.jl`.
+- https://github.com/JuliaDocs/PkgPage.jl : Creating (package) front-pages, powered by `Franklin.jl`.
 - https://github.com/Azzaare/StaticWebPages.jl : Create academics and personal CV web-pages.
 - https://github.com/rikhuijzer/PlutoStaticHTML.jl : Convert Pluto notebooks to pure HTML files.
 

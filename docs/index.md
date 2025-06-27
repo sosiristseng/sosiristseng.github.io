@@ -136,7 +136,7 @@ Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/cs
 ### Illustrations
 
 - [Absurd illustrations](https://absurd.design/): Free surreal illustrations.
-- [DrawKit](https://www.drawkit.io/): Beautiful, free illustrations. Updated weekly.
+- [DrawKit](https://www.drawkit.com/): Beautiful, free illustrations. Updated weekly.
 - [Freebie supply](https://freebiesupply.com/): The freshest design resources for Adobe XD, Figma, Sketch, Photoshop and Adobe Illustrator.
 - [Gratisography](https://gratisography.com/): High Resolution Free Stock Pictures.
 - [Humaaans](https://www.humaaans.com/): SVG human figures with customization options

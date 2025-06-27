@@ -18,7 +18,7 @@ tags:
 
 ## Find Publications
 
-- [Google scholar](https://scholar.google.com.tw/)
+- [Google scholar](https://scholar.google.com/)
 - [PubMed central (PMC)](https://www.ncbi.nlm.nih.gov/pmc/)
 
 ## Data source
