@@ -10,6 +10,16 @@ Things to do after Windows install.
 
 See also [The Ultimate Windows Development Environment Guide](https://unicorn-utterances.com/posts/ultimate-windows-development-environment-guide)
 
+## Enable MS store and winget in Windows LTSC
+
+Run the following command in admin rights and ignore the error. MS store will be installed after a few minutes.
+
+```powershell
+wsreset -i
+```
+
+Click [Microsoft.DesktopAppInstaller](https://apps.microsoft.com/detail/9nblggh4nns1?rtc=1&hl=zh-tw&gl=TW#activetab=pivot:overviewtab) to install winget.
+
 ## CTT Windows Utility
 
 The [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) provides APP installs, fixes and tweaks.
@@ -18,17 +28,36 @@ The [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winut
 irm christitus.com/win | iex
 ```
 
-## Enable MS store and winget in Windows 10 LTSC 2021
-
-Run the following command and ignore the error. MS store will be installed.
+## winget apps
 
 ```powershell
-wsreset -i
+winget install Romanitho.Winget-AutoUpdate
+winget install Git.Git
+winget install Microsoft.WindowsTerminal
+winget install Microsoft.PowerShell
+winget install Microsoft.VisualStudioCode
+winget install qBittorrent.qBittorrent
+winget install Mozilla.Firefox
+winget install Brave.Brave
+winget install Telegram.TelegramDesktop
+winget install Bandisoft.Bandizip
+winget install M2Team.NanaZip
+winget install Bandisoft.Honeyview
+winget install Daum.PotPlayer
+winget install Nevcairiel.LAVFilters
+winget install yt-dlp.yt-dlp
+winget install Gyan.FFmpeg
+winget install CrystalDewWorld.CrystalDiskInfo
+winget install CrystalDewWorld.CrystalDiskMark
+winget install Microsoft.DirectX
+winget install Starship.Starship
+winget install Obsidian.Obsidian
+winget install GitHub.GitHubDesktop
 ```
 
-Click [Microsoft.DesktopAppInstaller](https://apps.microsoft.com/detail/9nblggh4nns1?rtc=1&hl=zh-tw&gl=TW#activetab=pivot:overviewtab) to install winget.
-
 ## Chocolatey package manager
+
+**If winget does not work.**
 
 Install [Chocolatey 🍫](https://chocolatey.org/), a command-line interface (CLI) package manager for Windows.
 
