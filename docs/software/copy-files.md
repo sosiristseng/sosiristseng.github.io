@@ -122,7 +122,3 @@ To unmount the directory after file operations are done:
 ```sh
 fusermount -u mount-point
 ```
-
-## Windows CLI tools for copying
-
-- [[robocopy]]
