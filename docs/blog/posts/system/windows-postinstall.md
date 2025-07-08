@@ -53,6 +53,8 @@ winget install Microsoft.DirectX
 winget install Starship.Starship
 winget install Obsidian.Obsidian
 winget install GitHub.GitHubDesktop
+winget install TechPowerUp.GPU-Z
+winget install CPUID.CPU-Z
 ```
 
 ## Chocolatey package manager
