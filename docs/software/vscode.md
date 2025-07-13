@@ -40,6 +40,15 @@ See also https://github.com/viatsko/awesome-vscode for a curated list of delight
 
 ## VSCode Settings
 
+### Disable GPU acceleration
+
+If you have visual glitchs you can [disable GPU acceleration](https://gist.github.com/andriyudatama/fe5d00deb36feeea30ef35a5ea0f7eff).
+
+1. Open command pallete (Ctrl + Shift + P)
+2. Enter "Preferences: Configure Runtime Arguments"
+3. Add config: "disable-hardware-acceleration": true
+4. Restart VS Code
+
 ### Change VS Code UI font
 
 1. Install the [Customize UI](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) plugin and restart VS Code.[^1]
