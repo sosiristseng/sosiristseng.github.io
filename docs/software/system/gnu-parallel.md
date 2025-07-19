@@ -1,5 +1,5 @@
 ---
-title: parallel
+title: GNU parallel
 tags:
   - linux
   - command-line

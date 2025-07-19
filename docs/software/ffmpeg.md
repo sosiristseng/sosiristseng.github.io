@@ -5,7 +5,7 @@ tags:
   - linux
 ---
 
-Setup [ffmpeg](https://ffmpeg.org)
+Setup [ffmpeg](https://ffmpeg.org). See also [Arch Wiki: ffmpeg](https://wiki.archlinux.org/title/FFmpeg)
 
 ## Install
 

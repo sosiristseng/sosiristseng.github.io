@@ -5,6 +5,8 @@ tags:
   - command-line
 ---
 
+[Arch General Commands Manual: xargs](https://man.archlinux.org/man/xargs.1.en)
+
 Using `sed` and `xargs` to pass a list of arguments to a command from a text file.
 
 For example, to install two lists of packages in Ubuntu:

@@ -37,10 +37,10 @@ fd PATTERN
 
 https://github.com/BurntSushi/ripgrep is a line-oriented search tool that recursively searches the current directory for a regex pattern.
 
-## bottom: system monitor written in Rust
+## bottom : alternative to `htop`
 
-[Bottom](../linux/apps/command-line/sysmon.md#bottom)
+https://github.com/ClementTsang/bottom is a cross-platform graphical process/system monitor written in rust.
 
-## zoxide
+## zoxide: : alternative to `cd`
 
 https://github.com/ajeetdsouza/zoxide is a smarter `cd` command that supports all major shells.

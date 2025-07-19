@@ -1,5 +1,5 @@
 ---
-title: Windows-specific software
+title: Windows software
 tags:
   - bookmark
 ---

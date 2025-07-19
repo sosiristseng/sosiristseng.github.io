@@ -58,7 +58,7 @@ https://github.com/nicolargo/glances is a cross-platform advance system monitor 
 
 ## nvtop
 
-https://github.com/Syllo/nvtop is a GPU process monitor for AMD, Intel and NVIDIA GPUs.
+https://github.com/Syllo/nvtop is a GPU process monitor for AMD, Intel and NVIDIA GPUs. The command is `nvtop`.
 
 ### Install
 
@@ -103,6 +103,24 @@ https://github.com/clementtsang/bottom is a resource monitor written in Rust. Th
     sudo snap connect bottom:system-observe
     sudo snap connect bottom:process-control
     ```
+
+## Mission center
+
+[Mission center](https://gitlab.com/mission-center-devs/mission-center) is a Windows-like monitoring tool for your CPU, Memory, Disk, Network and GPU usage.
+
+### Install
+
+- [AppImage (x86_64)](https://gitlab.com/mission-center-devs/mission-center/-/jobs/10144675634/artifacts/raw/MissionCenter_v1.0.2-x86_64.AppImage)
+- [Flatpak](https://flathub.org/apps/io.missioncenter.MissionCenter)
+- [snap](https://snapcraft.io/mission-center)
+
+## NeoHtop
+
+https://github.com/Abdenasser/neohtop is a MacOS-like monitoring toolfor your system.
+
+### Install
+
+- [Download from the project page](https://abdenasser.github.io/neohtop/)
 
 ## Disk info
 
