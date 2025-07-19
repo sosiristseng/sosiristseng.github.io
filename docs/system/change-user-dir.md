@@ -1,5 +1,5 @@
 ---
-title: Change user directory
+title: Change Linux user directory
 date: 2025-01-10
 tags:
   - linux
