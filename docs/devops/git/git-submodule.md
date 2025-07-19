@@ -51,7 +51,7 @@ From a [stackOverflow post](https://stackoverflow.com/questions/5828324/update-g
 git submodule update --remote --merge
 ```
 
-For automated updates by bots, see [automatic dependency update](./gha-auto-deps-update.md).
+For automated updates by bots, see [automatic dependency update](../gha-auto-deps-update.md).
 
 ## Remove a submodule
 
