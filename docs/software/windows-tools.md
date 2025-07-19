@@ -6,7 +6,7 @@ tags:
 
 ## Command-line tools
 
-- [robocopy](robocopy.md)
+- [robocopy](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy)
 - [PowerShell Core](https://github.com/PowerShell/PowerShell) can be installed via [MS store](https://apps.microsoft.com/detail/9mz1snwt0n5d).
 - [Windows terminal](https://github.com/microsoft/terminal) can be installed via [MS store](https://apps.microsoft.com/detail/9n0dx20hk701).
 - [starship](https://starship.rs/) : a cross-shell prompt.
