@@ -29,7 +29,8 @@ In the Julia world, generic functions called [functions](https://docs.julialang.
 
 - Abstract types cannot have fields. They are only meant to be inherited with their functional interfaces. Concrete types (structs with fields), on the other hand, cannot not be inherited.
 - Use parameteric [type (structs)](https://docs.julialang.org/en/v1/manual/types/#Parametric-Types) and [methods](https://docs.julialang.org/en/v1/manual/methods/#Parametric-Methods) rather than directly type-annotate the fields / arguments.
-- Traits are functions that return True/False/Error based on the input type. See [holy traits](https://www.juliabloggers.com/the-emergent-features-of-julialang-part-ii-traits/) for more details.
+- Traits are functions that return True/False/Error based on the input type.
+
 ## Delegation pattern
 
 This is a form of polymorphism via composition[^1]. Use a new wrapper type to established packages to reuse their code at the cose of an additional layer of indirection.
@@ -38,13 +39,13 @@ This is a form of polymorphism via composition[^1]. Use a new wrapper type to es
 
 ## Holy traits
 
-[Holy traits](https://www.juliabloggers.com/the-emergent-features-of-julialang-part-ii-traits/) are named after Tim Holy.
+[Holy traits](https://invenia.github.io/blog/2019/11/06/julialang-features-part-2/) are named after Tim Holy.
 
 - Traits are empty structs.
 - Data types are assigned catagorically to traits' interfaces, implementing different behavior for different kind of data type.
 - Traits heirarchy could be separated from the type heirarchy they modeled.
 
-[SimpleTraits.jl](https://github.com/mauro3/SimpleTraits.jl) automates some of the boilerplate for you.
+https://github.com/mauro3/SimpleTraits.jl automates some of the boilerplate for you.
 
 ## Global constant
 

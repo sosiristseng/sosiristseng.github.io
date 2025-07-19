@@ -47,8 +47,6 @@ title: Bookmarks
 
 ### Hosting Web sites
 
-[Jace.pro's post](https://jace.pro/post/2020-12-17-cloudflare-pages-netlify-zeit-github-pages-and-gitlab-pages-where-to-host/) comparing various hosting options.
-
 - [Cloudflare pages](https://pages.cloudflare.com)
 - [GitHub pages](https://docs.github.com/en/pages)
 - [GitLab pages](https://docs.gitlab.com/ee/user/project/pages/)
