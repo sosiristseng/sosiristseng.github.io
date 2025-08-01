@@ -200,7 +200,7 @@ script:
     fi
 ```
 
-For a MR pipeline, GitLab provides [git push options](https://docs.gitlab.com/ee/user/project/push_options.html) for merge request settings.
+For a MR pipeline, GitLab provides `git push` options for merge request settings.
 
 ```yaml
 script:
