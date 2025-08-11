@@ -22,7 +22,7 @@ jobs:
       UV_SYSTEM_PYTHON: 1
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0 # full history
       - name: Setup Python
