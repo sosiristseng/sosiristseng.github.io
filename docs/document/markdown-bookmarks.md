@@ -23,7 +23,7 @@ tags:
 ## (Local) Markdown Editors
 
 - [Markdown preview enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/) VS Code plugin.
-- [MarkText](https://www.marktext.cc/) : Simple and Elegant Markdown Editor.
+- https://github.com/marktext/marktext : Simple and Elegant Markdown Editor.
 - [Zettlr](https://www.zettlr.com/) : A Markdown Editor and organizer.
 - [Obsidian](https://obsidian.md/) : A markdown note writing APP.
 - [memos](https://usememos.com/) : A privacy-first, lightweight note-taking service.
