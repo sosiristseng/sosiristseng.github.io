@@ -17,7 +17,6 @@ tags:
 - [GitHub markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [GitLab markdown](https://docs.gitlab.com/ee/user/markdown.html)
 - [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
-- [HackMD markdown](https://hackmd.io/@eMP9zQQ0Qt6I8Uqp2Vqy6w/SyiOheL5N/%2FBVqowKshRH246Q7UDyodFA?type=book)
 - [MyST (Markedly Structured Text)](https://jupyterbook.org/content/myst.html) : extended markdown syntax for [jupyter book](https://jupyterbook.org/)
 
 ## (Local) Markdown Editors
