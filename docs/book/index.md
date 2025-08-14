@@ -6,7 +6,7 @@ tags:
 
 ## Coding
 
-- [[book/julia|Julia bookmarks]]
+- [[julia|Julia bookmarks]]
 - [[python|Python bookmarks]]
 - [Compiler explorer](https://godbolt.org/): assembly for a C/C++ code snippet.
 - [Free for dev](https://free-for.dev/): online tools with free tiers.
@@ -28,15 +28,6 @@ tags:
 - [MikuTools](https://tools.miku.ac/): a collection of small useful online tools.
 - [免費資源網路社群 (Traditional Chinese)](https://free.com.tw/): a collection of free tools.
 - [snapsave](https://snapsave.io): Download youtube videos.
-
-## Document processing
-
-- [[latex-bookmarks|Latex bookmarks]]
-- [My Graph Paper](https://www.mygraphpaper.com/): Templates for graph papers and notebooks.
-- [SlidesGo](https://slidesgo.com/): Free Google Slides and PowerPoint templates.
-- [Word templates](https://www.vertex42.com/WordTemplates/): Microsoft Word templates.
-- [PDF24](https://tools.pdf24.org/en/): 24 free PDF tools.
-- [Microsoft designer](https://designer.microsoft.com/): AI-generated cover designs.
 
 ## Math tools
 
