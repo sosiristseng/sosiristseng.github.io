@@ -1,9 +1,11 @@
 ---
-title: Julia Bookmarks
+title: Julia
 date: 2025-02-19
 tags:
-  - bookmark
-  - julia
+- bookmark
+- julia
+categories:
+- Code
 ---
 
 - [Gens Julia](https://gensjulia.pages.dev/), my Julia resource list adapted from `Julia.jl`.

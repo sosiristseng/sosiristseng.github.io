@@ -1,9 +1,11 @@
 ---
-title: Python Bookmarks
+title: Python
 date: 2025-02-19
 tags:
 - bookmark
 - python
+categories:
+  - Code
 ---
 
 [Awesome Python](https://github.com/vinta/awesome-python): a curated list of Python stuff.
