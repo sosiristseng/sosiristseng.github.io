@@ -239,8 +239,6 @@ sudo update-grub
 
 ## Misc.
 
-- [[miniforge|Miniforge]]
-- [[julia|Julia]]
 - [FreeFileSync](https://freefilesync.org/)
 - [Pandoc](https://github.com/jgm/pandoc/releases/)
 - [Virtualbox](https://www.virtualbox.org/)

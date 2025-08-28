@@ -33,12 +33,12 @@ categories:
 
 - [Anaconda Python](https://www.anaconda.com/products/individual): a full set of scientific Python packages with the `conda` package manager.
   - https://github.com/conda-forge/miniforge : minimal installation with `conda` and `mamba` package managers and the [`conda-forge`](https://conda-forge.org/) [community packages](https://anaconda.org/conda-forge/repo).
-  - [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html): `micromamba` is a tiny version of the `mamba` package manager.
-  - https://github.com/prefix-dev/pixi: `pixi` is a cross-platform, multi-language package manager similar to `conda`, but is blazing fast and written in Rust.
+- [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html): `micromamba` is a standalone version of the `mamba` package manager.
 - [pipenv](https://pipenv.pypa.io/en/latest/): the official dependency management tool for Python packages.
 - [Poetry](https://python-poetry.org/): Python packaging and dependency management.
 - [pdm](https://pdm.fming.dev/): A modern Python package manager with [PEP 582](https://www.python.org/dev/peps/pep-0582) support.
 - [uv](https://docs.astral.sh/uv/): `uv` is a drop-in replacement for `pip`, an extremely fast Python package and project manager written in Rust.
+- [pixi](https://pixi.sh/latest/): `pixi` takes care of both conda `environment.yml` and pip `requirements.txt` files.
 
 ## Machine learning
 
