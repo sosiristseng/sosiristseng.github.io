@@ -12,11 +12,11 @@ date: 2024-03-25
 
 <!-- more -->
 
-## Ordinary workflows
+## Glossary
 
 `HEAD`: the current state of the repo.
 
-### Download a repository
+## Download a repository
 
 [Clone](https://git-scm.com/docs/git-clone) a git repo from a remote repository:
 
@@ -38,7 +38,7 @@ git clone <url> --recursive
 
 See also: [SSH login](git-ssh-login.md) to Git services like GitHub and GitLab.
 
-### Make changes and commit
+## Make changes and commit
 
 ```sh
 git status      # The current state of the repository.
@@ -49,7 +49,7 @@ git commit -am "Commit message" # Commit modified files without having to run gi
 git revert <SHA>                # Make a counter commit to undo the changes. The tracked files will go back to the <SHA> commit.
 ```
 
-### Synchronize with remote: Push and pull
+## Synchronize with remote
 
 ```sh
 git fetch # Download objects and refs from another repository without really pull in the changes
@@ -59,7 +59,7 @@ git push --set-upstream <remote> <name-of-your-branch>  # Setup remote url befor
 git pull <remote>  # Pull changes from the remote
 ```
 
-### Stash
+## Git Stash
 
 To temporarily store untracked files.
 
