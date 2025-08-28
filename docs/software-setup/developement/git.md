@@ -6,9 +6,7 @@ tags:
   - windows
 ---
 
-- [Git reference](https://git-scm.com/docs)
-- [Git cheat sheet (pdf)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
-- [When you screw up git](https://ohshitgit.com/)
+[[tips/posts/devops/git/git-commands|Git commands]]
 
 ## Install
 

@@ -25,13 +25,16 @@
     "Kubuntu",
     "mechanobiology",
     "nala",
-    "nbconvert",
-    "nbstripout",
     "Skrand",
     "Stellaris",
-    "textconv",
     "Tuborek",
     "Vagros",
     "Zadigal"
+  ],
+  "cSpell.ignoreWords": [
+    "branchname",
+    "textconv",
+    "nbconvert",
+    "nbstripout",
   ]
 }

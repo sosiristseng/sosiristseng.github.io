@@ -89,3 +89,7 @@ Orphan branches are unrelated to others in history. For example, `gh-pages` bran
 ```sh
 git branch --orphan <branchname>  # Create a orphan branch
 ```
+
+## Git submodules
+
+[[tips/posts/devops/git/git-submodule]]
