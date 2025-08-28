@@ -28,7 +28,7 @@ plugins:
   - ezlinks
   - meta
   - blog:
-      blog_dir: blog
+      blog_dir: tips
       blog_toc: true
       archive_date_format: yyyy-MM
   - tags:
