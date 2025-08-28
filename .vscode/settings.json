@@ -32,9 +32,10 @@
     "Zadigal"
   ],
   "cSpell.ignoreWords": [
+    "autopurge",
     "branchname",
-    "textconv",
     "nbconvert",
     "nbstripout",
+    "textconv"
   ]
 }

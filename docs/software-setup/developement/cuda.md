@@ -11,7 +11,7 @@ tags:
 Clean previous installations
 
 ```bash
-sudo apt autoremove 'cuda*' 'nvidia*' --purge
+sudo apt autopurge 'cuda*' 'nvidia*'
 ```
 
 Install nvidia CUDA runtime and compatible GPU driver from NVIDIA: https://developer.nvidia.com/cuda-toolkit
