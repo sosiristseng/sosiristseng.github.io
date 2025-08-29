@@ -7,6 +7,8 @@ tags:
   - windows
 ---
 
+[[developement/python#micromamba]]
+
 ## Install Julia
 
 Install Julia with the [juliaup](https://github.com/JuliaLang/juliaup) installer.
@@ -51,33 +53,35 @@ Set environment variable `JULIA_NUM_THREADS=auto` to let Julia use all CPU threa
 export JULIA_NUM_THREADS=auto
 ```
 
-### Customize Python and Conda location
+### Run Python packages
 
-Point the environment variable `CONDA_JL_HOME` to your Conda path. `Conda.jl` and `PyCall.jl` will take the preinstalled Conda instead of downloading a standalone one. For example,
+To run Python packages in Julia (like `matplotlib` for `PythonPlot.jl` and `jupyter` for `IJulia.jl`)
+
+1. Install [[developement/python#micromamba|micromamba]], the minimal Python package manager.
+2. Create a conda environment, for example, `micromamba create -n juliapy matplotlib`.
+3. Set up the following environment variables
 
 ```sh title="~/.profile"
-export CONDA_JL_HOME="${HOME}/conda"
+export CONDA_JL_HOME="${HOME}/micromamba/envs/juliapy"
+export JULIA_CONDAPKG_ENV=$CONDA_JL_HOME
+export JULIA_CONDAPKG_BACKEND="Current"
 ```
 
-For `PythonCall.jl`, [set the following environment variables](https://cjdoris.github.io/PythonCall.jl/stable/pythoncall/):
-
-```sh
-export JULIA_CONDAPKG_BACKEND="Null"
-export JULIA_PYTHONCALL_EXE="${HOME}/conda/bin/python"
-```
-
-### Load packages at Julia REPL startup
+### Load packages at REPL startup
 
 Add the following lines to `~/.julia/config/startup.jl` after `Revise.jl` and `OhMyREPL.jl` are installed
 
 ```julia title="~/.julia/config/startup.jl"
 using Pkg: Pkg
-atreplinit() do repl
-    try
-        @eval using OhMyREPL
-        @eval using Revise
+if isinteractive()
+    using OhMyREPL
+    @info "Using OhMyREPL"
+    using Revise
+    @info "Using Revise"
     catch e
         @warn "Error initializing" exception=(e, catch_backtrace())
+        @info "Try to install OhMyREPL and Revise"
+        Pkg.add(["OhMyREPL", "Revise"])
     end
 end
 ```
@@ -97,12 +101,15 @@ Or run the following commands (heredoc in Linux) to create these two files at on
 ```sh
 mkdir -p ~/.julia/config/ && cat >  ~/.julia/config/startup.jl << END
 using Pkg: Pkg
-atreplinit() do repl
-    try
-        @eval using OhMyREPL
-        @eval using Revise
+if isinteractive()
+    using OhMyREPL
+    @info "Using OhMyREPL"
+    using Revise
+    @info "Using Revise"
     catch e
         @warn "Error initializing" exception=(e, catch_backtrace())
+        @info "Try to install OhMyREPL and Revise"
+        Pkg.add(["OhMyREPL", "Revise"])
     end
 end
 END
