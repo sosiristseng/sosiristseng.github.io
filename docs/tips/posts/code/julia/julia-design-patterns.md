@@ -5,7 +5,7 @@ tags:
 - julia
 ---
 
-Some notes of Tom kwong's book [Hands on Design patterns in Julia](https://www.packtpub.com/product/hands-on-design-patterns-and-best-practices-with-julia/9781838648817).
+Some notes of Tom Kwong's book [Hands on Design patterns in Julia](https://www.packtpub.com/product/hands-on-design-patterns-and-best-practices-with-julia/9781838648817).
 
 <!-- more -->
 
@@ -28,7 +28,7 @@ Julia also encourages making your own packages, even temporarily, to utilize uni
 In the Julia world, generic functions called [functions](https://docs.julialang.org/en/v1/manual/functions/), while those with type annotations / parameterizations are called [methods](https://docs.julialang.org/en/v1/manual/methods/). My impressions so far was that, Julia is a _functional interface-first_ programming language, by the power of [multiple dispatch paradigm](https://opensourc.es/blog/basics-multiple-dispatch/), to make Julia a much more flexible (in programming) and composable between packages: e.g. [DiffEq + Flux + GPU kernel](https://github.com/SciML/DiffEqFlux.jl)), and mathematically natural. However, it requires a vastly different mindset for users coming from the object-oriented worlds like Python / Java.
 
 - Abstract types cannot have fields. They are only meant to be inherited with their functional interfaces. Concrete types (structs with fields), on the other hand, cannot not be inherited.
-- Use parameteric [type (structs)](https://docs.julialang.org/en/v1/manual/types/#Parametric-Types) and [methods](https://docs.julialang.org/en/v1/manual/methods/#Parametric-Methods) rather than directly type-annotate the fields / arguments.
+- Use parametric [type (structs)](https://docs.julialang.org/en/v1/manual/types/#Parametric-Types) and [methods](https://docs.julialang.org/en/v1/manual/methods/#Parametric-Methods) rather than directly type-annotate the fields / arguments.
 - Traits are functions that return True/False/Error based on the input type.
 
 ## Delegation pattern
@@ -42,8 +42,8 @@ This is a form of polymorphism via composition[^1]. Use a new wrapper type to es
 [Holy traits](https://invenia.github.io/blog/2019/11/06/julialang-features-part-2/) are named after Tim Holy.
 
 - Traits are empty structs.
-- Data types are assigned catagorically to traits' interfaces, implementing different behavior for different kind of data type.
-- Traits heirarchy could be separated from the type heirarchy they modeled.
+- Data types are assigned categorically to traits' interfaces, implementing different behavior for different kind of data type.
+- Traits hierarchy could be separated from the type hierarchy they modeled.
 
 https://github.com/mauro3/SimpleTraits.jl automates some of the boilerplate for you.
 

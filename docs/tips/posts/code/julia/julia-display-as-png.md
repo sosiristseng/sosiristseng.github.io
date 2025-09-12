@@ -16,7 +16,7 @@ using Plots
 plot(rand(6)) |> PNG
 ```
 
-If you don't want to install another package, you could directly use `display()`.
+If you don't want to install another package, you could just use `display()`.
 
 ```julia
 using Plots
