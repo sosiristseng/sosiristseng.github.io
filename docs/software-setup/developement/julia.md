@@ -7,8 +7,6 @@ tags:
   - windows
 ---
 
-[[developement/python#micromamba]]
-
 ## Install Julia
 
 Install Julia with the [juliaup](https://github.com/JuliaLang/juliaup) installer.
