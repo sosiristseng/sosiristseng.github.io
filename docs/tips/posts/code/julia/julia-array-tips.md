@@ -1,9 +1,19 @@
 ---
-title: Convert linear index to 2D indices
-date: 2024-03-30
+title: Julia array tips
+date: 2025-09-12
 tags:
   - julia
 ---
+
+## Convert vector of vector to matrix
+
+Use the [stack](https://docs.julialang.org/en/v1/base/arrays/#Base.stack) function.
+
+```julia
+stack([[1,0,1],[0,0,1]], dims=1) == [ 1 0 1 ; 0 0 1 ]
+```
+
+## Convert linear index to 2D indices
 
 Use `CartesianIndices((nrow, ncol))` [^1].
 
