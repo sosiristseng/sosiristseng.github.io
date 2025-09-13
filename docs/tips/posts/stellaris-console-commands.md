@@ -134,19 +134,21 @@ Remove relic activation countdown
 effect remove_modifier = relic_activation_cooldown
 ```
 
-## Buildings
+## Misc
 
-Contained Ecosphere (resource)
-```
-event paragon.241
-```
+The doorway event (on a colony)
 
-Class-4 Singularity	(energy)
 ```
-event ancrel.10009
+colony.3005
 ```
 
-Dimensional Fabricator (minerals)
+Unlocks a council slot
 ```
-event ancrel.10006
+effect unlock_council_slots = 1
+```
+
+Adds a deposit
+
+```
+effect add_deposit = d_valley_of_zanaam
 ```
