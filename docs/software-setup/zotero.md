@@ -34,17 +34,11 @@ tags:
     winget install DigitalScholar.Zotero
     ```
 
-## Zotfile attachment manager
+## More storage space
 
-Storage space for attachments is [limited to **300MB**](https://www.zotero.org/storage) in the free plan of Zotero. The https://github.com/jlegewie/zotfile attachment manager work around this by storing attachments to a custom folder. (e.g. Dropbox / OneDrive / Google drive folders)
+Storage space for attachments is [limited to **300MB**](https://www.zotero.org/storage) in the free plan of Zotero. You can use [koofr](https://koofr.eu/) WebDAV with a 10GB free storage space to sync Zotero attachments.
 
-- Download the `.xpi` file from ZotFile and install it via the Zotero extension interface. Restart Zotero.
-- In the zotero main program preference
-    - Sync -> settings -> untick `Sync attachments in my library`
-    - Advanced -> Set `Linked attachment base directory` to your library folder.
-- In the ZotFile settings
-    - Set Location of Files to `Custom Location` and point it to your library folder.
-    - (Optionally) Set `Source folder` to your download folder.
+See [Koofr with Zotero via WebDAV](https://koofr.eu/blog/posts/koofr-with-zotero-via-webdav) for details.
 
 ## Zotero and Obsidian collaboration
 
