@@ -30,3 +30,5 @@ To connect a remote tmux session via SSH,
 ```bash
 ssh -t user@host tmux new -A -s ssh_tmux
 ```
+
+Or you can log in and then run `tmux`.

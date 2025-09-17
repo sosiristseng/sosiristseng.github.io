@@ -2,6 +2,7 @@
 title: Windows software
 tags:
   - bookmark
+  - windows
 ---
 
 ## Command-line tools
