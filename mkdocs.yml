@@ -41,7 +41,7 @@ plugins:
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 theme:
   name: material
-  custom_dir: overrides
+  # custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
