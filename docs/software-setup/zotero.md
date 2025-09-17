@@ -36,7 +36,7 @@ tags:
 
 ## More storage space
 
-Storage space for attachments is [limited to **300MB**](https://www.zotero.org/storage) in the free plan of Zotero. You can use [koofr](https://koofr.eu/) WebDAV with a 10GB free storage space to sync Zotero attachments.
+Storage space for attachments is [limited to **300MB**](https://www.zotero.org/storage) in the free plan of Zotero. You can use [koofr](https://koofr.eu/) free (10GB) online storage space with WebDAV to sync Zotero attachments.
 
 See [Koofr with Zotero via WebDAV](https://koofr.eu/blog/posts/koofr-with-zotero-via-webdav) for details.
 
