@@ -20,8 +20,13 @@ tar cf - $src | tar xvf - -C $dst
 ## Use rsync
 
 ```sh
-rsync -avh --info=progress2 sourcefolder /destinationfolder --exclude thefoldertoexclude --exclude anotherfoldertoexclude
+rsync -avh --info=progress2 sourcefolder/ destinationfolder/ --exclude thefoldertoexclude --exclude anotherfoldertoexclude
 ```
+
+> [!NOTE]
+> Without a trailing slash on the source (`sourcefolder`), `rsync` copies the entire source directory, including its name, into the destination. The result is `destinationfolder/sourcefolder`.
+>
+> With a trailing slash on the source (`sourcefolder/`), `rsync` copies the innards (content of the `sourcefolder`), into the destination. The result is `destinationfolder/README.txt` if there is `sourcefolder/README.txt`.
 
 ## Use robocopy
 
