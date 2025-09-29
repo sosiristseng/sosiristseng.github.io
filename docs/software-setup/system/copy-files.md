@@ -20,7 +20,7 @@ tar cf - $src | tar xvf - -C $dst
 ## Use rsync
 
 ```sh
-rsync -avh --info=progress2 sourcefolder/ destinationfolder/ --exclude thefoldertoexclude --exclude anotherfoldertoexclude
+rsync -avh --info=progress2 sourcefolder/ destinationfolder/
 ```
 
 > [!NOTE]
