@@ -5,10 +5,10 @@ tags:
   - games
 ---
 
-+ [Stellaris console commands](https://stellaris.paradoxwikis.com/Console_commands)
-+ [Stellaris IDs](https://stellaris.paradoxwikis.com/ID)
-+ [Stellaris cheats](https://stellarischeats.com)
-+ [Stellaris mods](https://stellaris.smods.ru)
+- [Stellaris console commands](https://stellaris.paradoxwikis.com/Console_commands)
+- [Stellaris IDs](https://stellaris.paradoxwikis.com/ID)
+- [Stellaris cheats](https://stellarischeats.com)
+- [Stellaris mods](https://stellaris.smods.ru)
 
 <!-- more -->
 
@@ -40,8 +40,7 @@ Astrocreator Azaryn
 event paragon.228
 ```
 
-List good planets for her to terraform
-
+Find a good planet for her to terraform
 ```
 effect ordered_planet_within_border = { limit = { planet_size > 25 is_planet_class = pc_barren NOT = { has_modifier = "terraforming_candidate" } } position = 0 order_by = trigger:planet_size inverse = no set_variable = { which = Size_Of_Planet value = trigger:planet_size } custom_tooltip = "[This.GetName] is an Azaryn candidate, in system [This.System.GetName]" }
 ```
@@ -115,6 +114,46 @@ event grand_archive.1080
 Captain Ness
 ```
 event grand_archive.8570
+```
+
+Scru
+```
+event extreme_frontiers.352
+```
+
+S.I.D.N.I.
+```
+event extreme_frontiers.1322
+```
+
+Ganthuata
+```
+event shroud.12010
+```
+
+Koborok'Ra
+```
+event shroud.12020
+```
+
+Morr
+```
+event shroud.12030
+```
+
+Kronen the Afflicted
+```
+event shroud.12040
+```
+
+Zulyn the Listener
+```
+event shroud.12050
+```
+
+Ouw'ron
+```
+event shroud.12060
 ```
 
 ## Relics
