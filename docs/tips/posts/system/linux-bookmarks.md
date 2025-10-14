@@ -35,10 +35,4 @@ The following tools make installation USB keys from ISO files.
 
 ## Command lines and shell scripting
 
-- [Awesome shell](https://github.com/alebcay/awesome-shell)
-- [cheat.sh](https://cheat.sh/) : cheat sheet for linux commands.
-- [Shell check](https://www.shellcheck.net/)
-- [Explain shell](https://explainshell.com/)
-- [edX: introduction to Linux](https://www.edx.org/course/introduction-to-linux)
-- [Learn Bash in Y minutes](https://learnxinyminutes.com/docs/bash/)
-- [Ryan's Tutorial](https://ryanstutorials.net/)
+See [[code/index#Shell programming|Shell programming]].
