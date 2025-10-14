@@ -111,7 +111,6 @@ A list of **[Hugo themes](https://themes.gohugo.io/)** I found useful
 
 ### Documentation
 
-- https://github.com/vantagedesign/ace-documentation
 - https://github.com/gethyas/doks
 - https://github.com/alex-shpak/hugo-book. Template: https://github.com/sosiristseng/template-hugo-book
 - https://github.com/thegeeklab/hugo-geekdoc

@@ -13,7 +13,7 @@ tags:
 
 ## CSS generators
 
-Generate CSS styles for your websites. [@hashnode](https://denic.hashnode.dev/css-generators)
+Generate CSS styles for your websites.
 
 - [CSS Accordion Slider Generator](https://accordionslider.com/)
 - [CSS clip-path maker](https://bennettfeely.com/clippy/)
