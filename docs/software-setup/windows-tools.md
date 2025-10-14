@@ -33,6 +33,13 @@ tags:
 - [qBittorrent](https://www.qbittorrent.org)
 - [Telegram messenger](https://telegram.org)
 
+### Remote desktop
+
+- [Teamviewer](https://www.teamviewer.com/)
+- [AnyDesk](https://anydesk.com/)
+- [Helpdesk](https://www.helpdesk.com/)
+- [Rustdesk](https://rustdesk.com/)
+
 ## System tools
 
 - [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)
