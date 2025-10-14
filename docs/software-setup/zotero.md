@@ -11,6 +11,8 @@ tags:
 
 ## Install
 
+Download and install [Zotero](https://www.zotero.org/) from the official website or
+
 === "Ubuntu"
 
     https://github.com/retorquere/zotero-deb provides packaged versions of Zotero reference manager and Juris-M for Debian-based systems.
@@ -34,31 +36,112 @@ tags:
     winget install DigitalScholar.Zotero
     ```
 
-## More storage space
+## Attachment files management
 
-Storage space for attachments is [limited to **300MB**](https://www.zotero.org/storage) in the free plan of Zotero. You can use [koofr](https://koofr.eu/) free (10GB) online storage space with WebDAV to sync Zotero attachments.
+In the Zotero free plan, the storage space for attachments is [limited to **300MB**](https://www.zotero.org/storage).
 
-See [Koofr with Zotero via WebDAV](https://koofr.eu/blog/posts/koofr-with-zotero-via-webdav) for details.
+### Use WebDAV
+
+Free online storage spaces supporting the WebDAV protocol.
+
+- [koofr](https://koofr.eu/) (Slovenia(EU)-based): 10GB free. See [Koofr with Zotero via WebDAV](https://koofr.eu/blog/posts/koofr-with-zotero-via-webdav) for details.
+- [Infinicloud](https://infini-cloud.net/en/index.html) (Japan-based): 20 GB free. See [connecting Zotero and infinicloud](https://infini-cloud.net/en/clients_zotero.html)
+
+In Zotero settings
+- Sync => File Syncing, enable sync attachment files in My Library and choose WebDAV. Follow the instructions from the service provider to setup and login their service.
+
+### Move attachments by ZotMoov plugin
+
+You can setup a folder synchronized with online services (OneDrive, Google Drive, DropBox, and Koofr, etc) and use ZotMoov to automatically move Zotero attachments into that folder.
+
+Assuming that folder is `D:\obsidian\pdf` (Yes, I put it inside my obsidian vault)
+
+In Zotero settings
+- Sync => File Syncing, disable sync attachment files in My Library.
+- Advanced => Files and Folders => Linked attachment base directory => Choose `D:\obsidian\pdf`.
+- Zotmoov => Directory to Move/Copy files to => Choose `D:\obsidian\pdf`.
+
+
+## Zotero plugins
+
+https://www.zotero.org/support/plugins
+
+- [Better BibTex](https://retorque.re/zotero-better-bibtex/) : auto generates stable citation keys without clashes.
+- [Better Notes](https://github.com/windingwind/zotero-better-notes): note taking, annotating, exporting, and synchronization. (Optional, as I use Obsidian to take notes)
+- [ZotMoov](https://github.com/wileyyugioh/zotmoov): a _simple_ plugin for managing attachments in Zotero 7. It provides workaround for space limitations (300MB) of online attachment.
+
 
 ## Zotero and Obsidian collaboration
 
 Source: [Mariana Montes' post](https://www.marianamontes.me/post/obsidian-and-zotero/)
 
-### In the Zotero APP
+### Zotero side
 
-- Install [Better BibTex add-on](https://github.com/retorquere/zotero-better-bibtex/releases/).\
+- Install [Better BibTex](https://github.com/retorquere/zotero-better-bibtex/releases/) plugin.
 - Define a citation key template in Zotero Preferences => Better BibTeX
 
-![image](https://user-images.githubusercontent.com/40054455/205590043-63c0a5bb-d0f5-45db-b1fc-953e599bb971.png)
+![](https://github.com/user-attachments/assets/1ef648ac-599f-4f67-b1af-42c41244b57d)
 
-- Export your reference by right-clicking Your library => Export library => Choose `Better BibLaTeX` as the format and tick `Keep updated`. Save the library file.
+### Obsidian side
 
-### In the Obsidian APP
+- Install [Obsidian](https://obsidian.md/)
+- Install [Zotero integration](https://github.com/mgmeyers/obsidian-zotero-integration) plugin
+- Setup a Obsidian template for literature notes. I save the following text to `_templates/Zotero integration template.md`.
 
-Assuming [Obsidian](https://obsidian.md/) has been installed.
-- Install [obsidian-citation-plugin](https://github.com/hans/obsidian-citation-plugin) via the Obsidian settings => Community plugins => Browse for `Citations`.
-- In the Obsidian settings => Community plugins => Citations, choose the exported BibLaTeX library file as the citation database path
+```markdown title="Zotero integration template.md"
+---
+year: '{{date | format("YYYY")}}'
+tags:
+citekey: "{{citekey}}"
+authors: "{{authors}}"
+DOI: "{{DOI}}"
+url: "{{url}}"
+Zotero link: "{{desktopURI}}"
+Journal: "{{journalAbbreviation}}"
+Created: 2025-08-10, 15:34:47
+Modified: 2025-10-04, 20:48:00
+---
 
-![image](https://user-images.githubusercontent.com/40054455/205593774-40946d57-53ce-410e-b3f1-45843698dd6c.png)
+# {{title | escape}}
 
-- You can now use `Ctrl + Shift + O` to create a literature note and `Ctrl + Shift + E` to insert a link to a literature note.
+> [!Abstract]-
+> {% if abstractNote %}
+> {{abstractNote}}
+> {% endif %}
+
+> [!Cite]-
+> {{bibliography}}
+
+> [!note] PDF link
+> {{pdfZoteroLink}}
+
+## Persistent Notes
+
+{% persist "notes" %}{% if isFirstImport %}
+`Write your note here.`
+{% endif %}{% endpersist %}
+
+## In-text annotations
+
+{% for annotation in annotations -%}
+{%- if annotation.annotatedText -%}
+{{annotation.annotatedText | safe}}
+{%- endif -%}
+{% if annotation.comment %}
+{{annotation.comment | safe}}
+{% endif %}
+
+>  [Page {{annotation.pageLabel}}](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.pageLabel}}&annotation={{annotation.id}})
+
+{% if annotation.imageRelativePath %}
+![[{{annotation.imageRelativePath}}]]{% endif %}
+{% endfor -%}
+
+```
+
+- In the obsidian settings => Zotero integration, setup import formats as follows
+
+![](https://github.com/user-attachments/assets/deaaf325-3333-443e-9c01-6bc4aa924269)
+
+
+And you can use `Ctrl+P` commands => Zotero integration: Literature note to import paper information into obsidian vault.
