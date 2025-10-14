@@ -14,12 +14,13 @@ tags:
 ## Reference managers
 
 - [SciWheel](https://sciwheel.com/work/): the online reference manager with browser, Google Doc, and MS Word plugins.
-- [Zotero](https://www.zotero.org/): an open-source reference manager.
+- [Zotero](https://www.zotero.org/): an open-source reference manager. See also [[zotero]] setup.
 
 ## Find Publications
 
 - [Google scholar](https://scholar.google.com/)
 - [PubMed central (PMC)](https://www.ncbi.nlm.nih.gov/pmc/)
+- [Semantic scholar](https://www.semanticscholar.org/)
 
 ## Data source
 
