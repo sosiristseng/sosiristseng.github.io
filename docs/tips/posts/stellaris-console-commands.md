@@ -178,7 +178,7 @@ effect remove_modifier = relic_activation_cooldown
 The doorway event (on a colony)
 
 ```
-colony.3005
+event colony.3005
 ```
 
 Unlocks a council slot
@@ -190,4 +190,9 @@ Adds a deposit
 
 ```
 effect add_deposit = d_valley_of_zanaam
+```
+
+Spawns a heliocentric solar system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = init_sol_geocentric hyperlane = yes } }
 ```
