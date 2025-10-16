@@ -194,47 +194,102 @@ effect add_deposit = d_valley_of_zanaam
 
 ## Spawning systems
 
-Spawns a heliocentric solar system
-```
-effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = init_sol_geocentric hyperlane = yes } }
-```
-
-Spawns Zanaam system
-```
-effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = special_init_06 hyperlane = yes } }
-```
-
-Spawns Seddom system
-```
-effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = breachsealer_system hyperlane = yes } }
-```
-
-Spawns Parvus system
-```
-effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = parvus_system hyperlane = yes } }
-```
-
-Spawns Polaris system
-```
-effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = polaris_civilization hyperlane = yes } }
-```
-
-Spawns Shallarian system
-```
-effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = planet_with_too_many_moons_system hyperlane = yes } }
-```
-
-Spawns a Mega Shipyard system
+Mega Shipyard system
 ```
 effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = mega_shipyard_init_01 hyperlane = yes } }
 ```
 
-Spawns The Sanctuary system
+Ruined Dyson Sphere
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = dyson_sphere_init_01 hyperlane = yes } }
+```
+
+Ruined Science Nexus
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = science_nexus_init_01 hyperlane = yes } }
+```
+
+Ruined Ring World
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = ring_world_init_01 hyperlane = yes } }
+```
+
+Heliocentric solar system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = init_sol_geocentric hyperlane = yes } }
+```
+
+Zanaam system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = special_init_06 hyperlane = yes } }
+```
+
+Seddom system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = breachsealer_system hyperlane = yes } }
+```
+
+Parvus system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = parvus_system hyperlane = yes } }
+```
+
+Polaris system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = polaris_civilization hyperlane = yes } }
+```
+
+Shallarian system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = planet_with_too_many_moons_system hyperlane = yes } }
+```
+
+Sanctuary system
 ```
 effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = sanctuary_system hyperlane = yes } }
 ```
 
-Spawns Shattered Ring system
+Shattered Ring system
 ```
 effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = pre_ftl_shattered_ring hyperlane = yes } }
+```
+
+Larionessi Refuge
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = unique_system_initializer_02 hyperlane = yes } }
+```
+
+Zevox
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = unique_system_initializer_03 hyperlane = yes } }
+```
+
+Fehnrax's Stand
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = unique_system_initializer_04 hyperlane = yes } }
+```
+
+Zhanrox's Rest
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = unique_system_initializer_05 hyperlane = yes } }
+```
+
+Afari
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = unique_system_initializer_06 hyperlane = yes } }
+```
+
+Tragula's Cross
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = unique_system_initializer_07 hyperlane = yes } }
+```
+
+Trin's Promise
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = unique_system_initializer_08 hyperlane = yes } }
+```
+
+Loh
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = unique_system_initializer_09 hyperlane = yes } }
 ```
