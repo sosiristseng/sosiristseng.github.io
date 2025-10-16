@@ -192,7 +192,49 @@ Adds a deposit
 effect add_deposit = d_valley_of_zanaam
 ```
 
+## Spawning systems
+
 Spawns a heliocentric solar system
 ```
 effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = init_sol_geocentric hyperlane = yes } }
+```
+
+Spawns Zanaam system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = special_init_06 hyperlane = yes } }
+```
+
+Spawns Seddom system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = breachsealer_system hyperlane = yes } }
+```
+
+Spawns Parvus system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = parvus_system hyperlane = yes } }
+```
+
+Spawns Polaris system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = polaris_civilization hyperlane = yes } }
+```
+
+Spawns Shallarian system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = planet_with_too_many_moons_system hyperlane = yes } }
+```
+
+Spawns a Mega Shipyard system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = mega_shipyard_init_01 hyperlane = yes } }
+```
+
+Spawns The Sanctuary system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = sanctuary_system hyperlane = yes } }
+```
+
+Spawns Shattered Ring system
+```
+effect solar_system = { spawn_system = { min_distance = 10 max_distance = 30 initializer = pre_ftl_shattered_ring hyperlane = yes } }
 ```
