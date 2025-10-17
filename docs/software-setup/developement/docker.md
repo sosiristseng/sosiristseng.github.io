@@ -24,7 +24,8 @@ sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io doc
 
 ## NVIDIA GPU support
 
-Install [the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation)
+1. Setup [[cuda]].
+2. Install [the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation)
 
 ```sh
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
@@ -38,16 +39,19 @@ sudo systemctl restart docker
 
 ## Test docker installation
 
+Testing docker
 ```sh
 sudo docker run hello-world
+```
 
-# nvidia GPU support
+Testing nvidia GPU support
+```sh
 sudo docker run --gpus all nvidia/cuda:12.0-base nvidia-smi
 ```
 
 ## (Optional) add to docker group
 
-So you don't have to use `sudo` on docker commands.
+So you don't have to type `sudo` on docker commands.
 
 ```sh
 sudo usermod -aG docker $USER
