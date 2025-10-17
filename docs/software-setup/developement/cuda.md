@@ -89,6 +89,17 @@ And enable `nvidia-tdp.timer`.
 sudo systemctl enable nvidia-tdp.timer
 ```
 
+### Preserve video memory after suspend
+
+Fixes GUI corruptions after suspend and resume.
+
+And the following file
+
+```txt title="/etc/modprobe.d/nvidia.conf"
+NVreg_PreserveVideoMemoryAllocations=1
+NVreg_TemporaryFilePath=/var/tmp
+```
+
 ## Monitor GPU activities
 
 - `btop`
