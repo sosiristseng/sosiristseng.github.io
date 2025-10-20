@@ -45,32 +45,6 @@ How this works:[^1]
 
 [^1]: <https://stackoverflow.com/questions/28908319/how-to-clear-jupyter-notebooks-output-in-all-cells-from-the-linux-terminal>
 
-## nbstripout
+### nbstripout
 
-https://github.com/kynan/nbstripout is a python package to automatically setting up nbconvert and git filter.
-
-## nbstripout-fast
-
-[nbstripout-fast](https://github.com/stas00/jupyter-notebook-tools/blob/master/nbstripout/nbstripout-fast) is a simple python script that runs much faster than `nbconvert --clear-output`.
-
-In your project folder's `.git/config`:
-
-```gitconfig title=".git/config"
-[filter "nbstripout"]
-  clean = nbstripout-fast
-    # smudge = cat
-    # required = true
-[diff "ipynb"]
-    textconv = nbstripout-fast -t
-```
-
-And in your project folder's `.gitattributes`:
-
-```gitconfig title=".gitattributes"
-[filter "nbstripout"]
-  clean = nbstripout-fast
-    # smudge = cat
-    # required = true
-[diff "ipynb"]
-    textconv = nbstripout-fast -t
-```
+https://github.com/kynan/nbstripout can automatically setting up `nbconvert` and `git` filter.

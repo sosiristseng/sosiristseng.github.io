@@ -61,7 +61,7 @@ To limit power draw to 300W, the setting will reset after reboot.
 sudo nvidia-smi -pl 300
 ```
 
-To make power draw settings permanent after reboot, make a systemd service.
+To apply power draw settings at boot, make a systemd service.
 
 ```txt title="/etc/systemd/system/nvidia-tdp.timer"
 [Unit]
@@ -93,7 +93,7 @@ sudo systemctl enable nvidia-tdp.timer
 
 Fixes GUI corruptions after suspend and resume.
 
-And the following file
+And the following file to preserve video memory after suspend.
 
 ```txt title="/etc/modprobe.d/nvidia.conf"
 NVreg_PreserveVideoMemoryAllocations=1

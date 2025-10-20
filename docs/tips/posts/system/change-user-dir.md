@@ -1,11 +1,13 @@
 ---
-title: Change Linux user directory
+title: Move Linux user directory
 date: 2025-01-10
 tags:
   - linux
 ---
 
-Use `sudo` and `at` to schedule the `usermod` command, which changes the user's home dir.
+Use `sudo` and `at` to schedule the `usermod` command, which moves the user's home dir.
+
+<!-- more -->
 
 ```bash
 sudo at "now +5 minutes"  # Run the following commands in 5 minutes
