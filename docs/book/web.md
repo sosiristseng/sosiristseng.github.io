@@ -68,7 +68,6 @@ Generate CSS styles for your websites.
 - [Can we image](https://canweimage.com/) search engine.
 - [CC search](https://search.creativecommons.org/): Search for content to reuse
 - [DreamsTime](https://www.dreamstime.com/)
-- [Foodiesfeed](http://foodiesfeed.com/): Food pictures
 - [Freebie supply](https://freebiesupply.com/)
 - [Free images](https://www.freeimages.com/)
 - [Free media goo](https://www.freemediagoo.com/): includes texture photos (e.g. rust, concrete)
