@@ -9,13 +9,13 @@ Setup [ffmpeg](https://ffmpeg.org). See also [Arch Wiki: ffmpeg](https://wiki.ar
 
 ## Install
 
-=== Ubuntu
+=== "Ubuntu"
 
     ```sh
     sudo apt install ffmpeg
     ```
 
-=== Windows
+=== "Windows"
 
     ```powershell
     choco install ffmpeg
