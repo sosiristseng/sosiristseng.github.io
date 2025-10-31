@@ -15,7 +15,9 @@ See also
 
 See also: [[windows-tools]]
 
-### Windows LTSC only: Enable MS store and winget
+### Enable MS store and winget
+
+> For Windows LTSC versions
 
 Run the following command with admin rights and ignore the error. MS store will be installed after a few minutes.
 
@@ -72,7 +74,7 @@ Install packages
 choco feature enable -n=useRememberedArgumentsForUpgrades
 choco install -y git.install --params "'/NoShellIntegration'"
 
-choco install -y vscode qbittorrent firefox brave telegram bandizip nanazip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop
+choco install -y vscode qbittorrent firefox brave telegram bandizip nanazip honeyview potplayer lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop zotero handbrake cpu-z gpu-z
 choco uninstall -n --skipautouninstaller vscode qbittorrent telegram github-desktop brave firefox
 ```
 
@@ -115,3 +117,56 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
 "OverlayMinFPS"=dword:00000000
 ```
+
+### Windows LTSC fixes
+
+Run the following command with admin rights to restore MS store.
+
+```powershell
+wsreset -i
+```
+
+Apply the following registry to fix OneDrive in the Explorer. [^fix-onedrive]
+
+```txt title="fix-onedrive.reg"
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{A52BBA46-E9E1-435f-B3D9-28DAA648C0F6}]
+"Attributes"=dword:00000001
+"Category"=dword:00000004
+"DefinitionFlags"=dword:00000040
+"Icon"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,\
+  00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,69,00,\
+  6d,00,61,00,67,00,65,00,72,00,65,00,73,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,\
+  00,31,00,30,00,34,00,30,00,00,00
+"LocalizedName"=hex(2):40,00,25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,\
+  6f,00,6f,00,74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,\
+  00,5c,00,53,00,65,00,74,00,74,00,69,00,6e,00,67,00,53,00,79,00,6e,00,63,00,\
+  43,00,6f,00,72,00,65,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,31,00,30,00,32,\
+  00,34,00,00,00
+"LocalRedirectOnly"=dword:00000001
+"Name"="OneDrive"
+"ParentFolder"="{5E6C858F-0E22-4760-9AFE-EA3317B67173}"
+"ParsingName"="shell:::{018D5C66-4533-4307-9B53-224DE2ED1FE6}"
+"RelativePath"="OneDrive"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{A52BBA46-E9E1-435f-B3D9-28DAA648C0F6}]
+"Attributes"=dword:00000001
+"Category"=dword:00000004
+"DefinitionFlags"=dword:00000040
+"Icon"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,\
+  00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,69,00,\
+  00,31,00,30,00,34,00,30,00,00,00
+"LocalizedName"=hex(2):40,00,25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,\
+  6f,00,6f,00,74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,\
+  00,5c,00,53,00,65,00,74,00,74,00,69,00,6e,00,67,00,53,00,79,00,6e,00,63,00,\
+  43,00,6f,00,72,00,65,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,31,00,30,00,32,\
+  00,34,00,00,00
+"LocalRedirectOnly"=dword:00000001
+"Name"="OneDrive"
+"ParentFolder"="{5E6C858F-0E22-4760-9AFE-EA3317B67173}"
+"ParsingName"="shell:::{018D5C66-4533-4307-9B53-224DE2ED1FE6}"
+"RelativePath"="OneDrive"
+```
+
+[^fix-onedrive]: https://ibug.io/blog/2025/04/windows-10-ltsc-onedrive-explorer-sidebar-fix/
