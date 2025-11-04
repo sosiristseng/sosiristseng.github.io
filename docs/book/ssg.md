@@ -29,7 +29,7 @@ tags:
 
 ## Python-based
 
-- [Jupyter book](https://jupyterbook.org/intro.html) : Building beautiful, publication-quality books and documents from jupyter notebooks.
+- [Jupyter book](https://jupyterbook.org/) : Building beautiful, publication-quality books and documents from jupyter notebooks.
 - [MkDocs](https://www.mkdocs.org) : MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. The most famous theme is the MkDocs [Material theme](https://squidfunk.github.io/mkdocs-material/). [Template made by me](https://github.com/sosiristseng/template-mkdocs-material).
 - [Nikola](https://getnikola.com/) : Static Site Generator written in Python.
 
