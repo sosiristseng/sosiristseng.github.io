@@ -10,14 +10,15 @@ Use `sudo` and `at` to schedule the `usermod` command, which moves the user's ho
 <!-- more -->
 
 ```bash
+sudo apt install at
 sudo at "now +5 minutes"  # Run the following commands in 5 minutes
 ```
 
 In the `at` interface
 
 ```bash
-pkill -u UID            # kill user processes
-usermod -m -d /new/home # Change user home dir (-d) and move (-m) the content into the new folder
+pkill -u $USER                # kill user processes
+usermod -m -d /new/home $USER # Change user home dir (-d) and move (-m) the content into the new folder
 ```
 
 `Ctrl+D` to exit the `at` interface. Logout, wait 10 minutes, and login.

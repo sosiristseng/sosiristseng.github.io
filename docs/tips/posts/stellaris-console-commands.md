@@ -192,6 +192,21 @@ Adds a deposit
 effect add_deposit = d_valley_of_zanaam
 ```
 
+Reset shroud delve cooldown
+```
+skip_delve_cooldown
+```
+
+Replace a major Shroud patron with Whisperers in the Void	
+```
+event shroud.4045	
+```
+
+Can choose a major Shroud patron to gain Attunement with	
+```
+event shroud.5310
+```
+
 ## Spawning systems
 
 Mega Shipyard system
