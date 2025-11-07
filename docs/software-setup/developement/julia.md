@@ -45,7 +45,7 @@ export JULIA_PROJECT=@.
 
 ### Fully utilize CPU threads
 
-Set environment variable `JULIA_NUM_THREADS=auto` to let Julia use all CPU threads.
+Set environment variable `JULIA_NUM_THREADS=auto` to let Julia utilize all CPU threads.
 
 ```sh title="~/.profile"
 export JULIA_NUM_THREADS=auto
@@ -53,16 +53,16 @@ export JULIA_NUM_THREADS=auto
 
 ### Run Python packages
 
-To run Python packages in Julia (like `matplotlib` for `PythonPlot.jl` and `jupyter` for `IJulia.jl`)
+To run Python packages in Julia (such as `matplotlib` for `PythonPlot.jl` and `jupyter` for `IJulia.jl`)
 
 1. Install [[developement/python#micromamba|micromamba]], the minimal Python package manager.
-2. Create a conda environment, for example, `micromamba create -n juliapy matplotlib`.
-3. Set up the following environment variables
+2. Create a conda environment, for example, `micromamba create -n juliapy jupyter matplotlib`.
+3. Set up the following environment variables (`PythonCall.jl` [documentation](https://juliapy.github.io/PythonCall.jl/stable/pythoncall/#pythoncall-config))
 
 ```sh title="~/.profile"
 export CONDA_JL_HOME="${HOME}/micromamba/envs/juliapy"
-export JULIA_CONDAPKG_ENV=$CONDA_JL_HOME
-export JULIA_CONDAPKG_BACKEND="Current"
+export JULIA_PYTHONCALL_EXE="${CONDA_JL_HOME}/bin/python"
+export JULIA_CONDAPKG_BACKEND="Null"
 ```
 
 ### Load packages at REPL startup
@@ -73,9 +73,7 @@ Add the following lines to `~/.julia/config/startup.jl` after `Revise.jl` and `O
 using Pkg: Pkg
 if isinteractive()
     using OhMyREPL
-    @info "Using OhMyREPL"
     using Revise
-    @info "Using Revise"
     catch e
         @warn "Error initializing" exception=(e, catch_backtrace())
         @info "Try to install OhMyREPL and Revise"
@@ -101,9 +99,7 @@ mkdir -p ~/.julia/config/ && cat >  ~/.julia/config/startup.jl << END
 using Pkg: Pkg
 if isinteractive()
     using OhMyREPL
-    @info "Using OhMyREPL"
     using Revise
-    @info "Using Revise"
     catch e
         @warn "Error initializing" exception=(e, catch_backtrace())
         @info "Try to install OhMyREPL and Revise"
