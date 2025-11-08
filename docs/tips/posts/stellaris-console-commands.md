@@ -192,17 +192,23 @@ Adds a deposit
 effect add_deposit = d_valley_of_zanaam
 ```
 
+Astrocreator Terraforming (select a planet)
+```
+event paragon.252
+```
+
+
 Reset shroud delve cooldown
 ```
 skip_delve_cooldown
 ```
 
-Replace a major Shroud patron with Whisperers in the Void	
+Replace a major Shroud patron with Whisperers in the Void
 ```
-event shroud.4045	
+event shroud.4045
 ```
 
-Can choose a major Shroud patron to gain Attunement with	
+Can choose a major Shroud patron to gain Attunement with
 ```
 event shroud.5310
 ```
