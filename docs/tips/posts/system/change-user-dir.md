@@ -5,26 +5,13 @@ tags:
   - linux
 ---
 
-Use `sudo` and `at` to schedule the `usermod` command, which moves the user's home dir.
+Use the [`usermod` command](https://linux.die.net/man/8/usermod) to move one user's home dir.
 
 <!-- more -->
 
-```bash
-sudo apt install at
-sudo at "now +5 minutes"  # Run the following commands in 5 minutes
-```
-
-In the `at` interface
+Login as another user with `sudo` rights.
 
 ```bash
-pkill -u $USER                # kill user processes
-usermod -m -d /new/home $USER # Change user home dir (-d) and move (-m) the content into the new folder
+sudo pkill -u $USER                # kill user processes
+sudo usermod -m -d /new/home $USER # Change user home dir (-d) and move (-m) the content into the new folder
 ```
-
-`Ctrl+D` to exit the `at` interface. Logout, wait 10 minutes, and login.
-
-## See also
-
-- [at](https://linux.die.net/man/1/at)
-- [usermod](https://linux.die.net/man/8/usermod)
-- [pkill](https://linux.die.net/man/1/pkill)
