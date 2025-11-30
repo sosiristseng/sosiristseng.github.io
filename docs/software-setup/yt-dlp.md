@@ -17,24 +17,15 @@ https://github.com/yt-dlp/yt-dlp is an actively developed fork of the famous You
     mkdir -p ~/.local/bin
     curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ~/.local/bin/yt-dlp
     chmod a+rx ~/.local/bin/yt-dlp
+    source .profile
     ```
 
-=== "conda"
-
-    ```sh
-    conda install -c conda-forge yt-dlp
-    ```
+    Install Deno JS runtime (https://github.com/yt-dlp/yt-dlp/wiki/EJS)
 
 === "Windows"
 
     ```powershell
-    choco install yt-dlp
-    ```
-
-    Or
-
-    ```powershell
-    winget install yt-dlp.yt-dlp
+    choco install yt-dlp deno
     ```
 
 ## Usage
