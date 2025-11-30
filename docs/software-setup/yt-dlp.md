@@ -44,7 +44,7 @@ https://github.com/yt-dlp/yt-dlp is an actively developed fork of the famous You
 Use the `--write-subs` option.
 
 ```sh
-yt-dlp --write-subs <url>
+yt-dlp --write-subs $URL
 ```
 
 ### Select resolution and format
@@ -52,21 +52,21 @@ yt-dlp --write-subs <url>
 Use `-S` (sort) to download 1080p H264 videos first.
 
 ```sh
-yt-dlp -S "res:1080,vcodec:h264" <url>
+yt-dlp -S "res:1080,vcodec:h264" $URL
 ```
 
 ### Download videos from a playlist
 
 ```sh
-yt-dlp --yes-playlist --ignore-errors --continue --no-overwrites --output "%(title)s.%(ext)s" <playlist_url>
+yt-dlp --yes-playlist --ignore-errors --continue --no-overwrites --output "%(playlist_index)s-%(title)s.%(ext)s" $URL
 ```
 
 - `--yes-playlist` : Download multiple videos if the URL is a playlist.
 - `--ignore-errors` : Ignore errors (like geo-restriction of a video or deleted video in a playlist) and continue with rest of the playlist.
 - `--continue` : Resume if any of the video is partially downloaded in the local file system.
 - `--no-overwrites` : If a file is already downloaded in local file system, then skip the download.
-- `--output "%(title)s.%(ext)s` : Specify the download directory with filename and extension extracted from the video.
-- `"${VID_URL}"` : URL of the video or playlist.
+- `--output "%(playlist_index)s-%(title)s.%(ext)s"` : Add ordinal numbers to the videos in the playlist.
+- `"$URL"` : URL of the video or playlist.
 
 ### Download Watch Later videos and mark them as viewed
 
@@ -81,10 +81,10 @@ yt-dlp --username <username> --password <password> --mark-watched 'https://www.y
 Use `--extract-audio --audio-format opus --format 'bestaudio'` to extract only the audio information and store as `opus` file.
 
 ```sh
-yt-dlp --yes-playlist --ignore-errors --continue --no-overwrites --extract-audio --audio-format opus --format 'bestaudio' --output "%(title)s.%(ext)s" "${URL}"
+yt-dlp --yes-playlist --ignore-errors --continue --no-overwrites --extract-audio --audio-format opus --format 'bestaudio' --output "%(title)s.%(ext)s" "$URL"
 ```
 
-### Download videos from a list of videos
+### Download videos from a list file
 
 Use `--batch-file batchlist.txt` to capture the list of URLs in a separate lines in a text file and download them in batch.
 
