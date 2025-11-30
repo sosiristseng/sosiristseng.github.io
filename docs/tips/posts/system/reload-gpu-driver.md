@@ -10,6 +10,8 @@ Reload nvidia GPU driver to fix "NVML: Driver/library version mismatch" error wi
 
 <!-- more -->
 
+The following command will switch the system into text (CLI) mode, reload the graphical driver, and then switch back to GUI mode.
+
 ```bash
 sudo apt purge $DRIVER_TO_DELETE
 sudo apt reinstall $DRIVER_OF_CHOICE
