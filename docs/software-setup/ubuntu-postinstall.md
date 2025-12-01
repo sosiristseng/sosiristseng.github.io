@@ -14,7 +14,7 @@ Things to do after installing
 
 ## Make software repo point to NCHC for faster network speed
 
-You can replace  `archive.ubuntu.com` with a closer mirror, e.g., `tw.archive.ubuntu.com` or `free.nchc.org.tw` in `/etc/apt/sources.list.d/ubuntu.sources`. After you are done, run:
+You can replace `archive.ubuntu.com` with a closer mirror, e.g., `tw.archive.ubuntu.com` or `free.nchc.org.tw` in `/etc/apt/sources.list.d/ubuntu.sources`. After you are done, run:
 
 ```sh
 sudo apt clean && sudo apt update && sudo apt full-upgrade -y
