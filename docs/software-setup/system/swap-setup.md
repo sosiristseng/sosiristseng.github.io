@@ -5,11 +5,11 @@ tags:
   - linux
 ---
 
-Setup swap files in RAM and btrfs filesystems.
+Setup swap spaces.
 
 <!-- more -->
 
-## Use a swap file (in btrfs)
+## Use a swap file in btrfs
 
 Swap files are more flexible than swap partitions in terms of disk space and partition usage.
 
@@ -75,4 +75,20 @@ check ZRAM status
 
 ```sh
 sudo zramctl
+```
+
+## Use zswap
+
+[Archwiki: zswap](https://wiki.archlinux.org/title/Zswap)
+
+Zswap is enabled by setting kernel parameters in `/etc/default/grub`
+
+```txt title"/etc/default/grub"
+GRUB_CMDLINE_LINUX_DEFAULT="... zswap.enabled=1 zswap.compressor=zstd zswap.zpool=zsmalloc"
+```
+
+Run the following to apply changes
+
+```sh
+sudo update-grub
 ```
