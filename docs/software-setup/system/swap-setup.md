@@ -92,3 +92,9 @@ Run the following to apply changes
 ```sh
 sudo update-grub
 ```
+
+See the statistics of zswap
+
+```sh
+grep -r . /sys/kernel/debug/zswap/
+```
