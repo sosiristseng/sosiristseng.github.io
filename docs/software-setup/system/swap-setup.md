@@ -83,7 +83,7 @@ sudo zramctl
 
 Zswap is enabled by setting kernel parameters in `/etc/default/grub`
 
-```txt title"/etc/default/grub"
+```txt title="/etc/default/grub"
 GRUB_CMDLINE_LINUX_DEFAULT="... zswap.enabled=1 zswap.compressor=zstd zswap.zpool=zsmalloc"
 ```
 
