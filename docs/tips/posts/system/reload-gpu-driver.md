@@ -19,7 +19,7 @@ sudo apt reinstall $DRIVER_OF_CHOICE
 sudo systemctl isolate multi-user.target
 
 lsmod | grep nvidia # - to identify the modules needing to be reloaded.
-sudo moprobe --remove $ALL_MODULES_IDENTIFIED_ABOVE
+sudo modprobe --remove $ALL_MODULES_IDENTIFIED_ABOVE
 sudo insmod $ALL_MODULES_IDENTIFIED_ABOVE
 
 sudo systemctl isolate graphical.target
