@@ -20,7 +20,7 @@ sudo systemctl isolate multi-user.target
 
 lsmod | grep nvidia # - to identify the modules needing to be reloaded.
 sudo modprobe --remove $ALL_MODULES_IDENTIFIED_ABOVE
-sudo insmod $ALL_MODULES_IDENTIFIED_ABOVE
+sudo modprobe $ALL_MODULES_IDENTIFIED_ABOVE
 
 sudo systemctl isolate graphical.target
 ```
