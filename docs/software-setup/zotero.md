@@ -48,6 +48,7 @@ Free online storage spaces supporting the WebDAV protocol.
 - [Infinicloud](https://infini-cloud.net/en/index.html) (Japan-based): 20 GB free. See [connecting Zotero and infinicloud](https://infini-cloud.net/en/clients_zotero.html)
 
 In Zotero settings
+
 - Sync => File Syncing, enable sync attachment files in My Library and choose WebDAV. Follow the instructions from the service provider to setup and login their service.
 
 ### Move attachments by ZotMoov plugin
@@ -57,6 +58,7 @@ You can setup a folder synchronized with online services (OneDrive, Google Drive
 Assuming that folder is `D:\obsidian\pdf` (Yes, I put it inside my obsidian vault)
 
 In Zotero settings
+
 - Sync => File Syncing, disable sync attachment files in My Library.
 - Advanced => Files and Folders => Linked attachment base directory => Choose `D:\obsidian\pdf`.
 - Zotmoov => Directory to Move/Copy files to => Choose `D:\obsidian\pdf`.
@@ -142,6 +144,5 @@ Modified: 2025-10-04, 20:48:00
 - In the obsidian settings => Zotero integration, setup import formats as follows
 
 ![](https://github.com/user-attachments/assets/deaaf325-3333-443e-9c01-6bc4aa924269)
-
 
 And you can use `Ctrl+P` commands => Zotero integration: Literature note to import paper information into obsidian vault.
