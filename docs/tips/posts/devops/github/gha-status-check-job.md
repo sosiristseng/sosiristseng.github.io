@@ -6,13 +6,11 @@ tags:
   - devops
 ---
 
-If you run a multi-stage workflow with [status checks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks) in [branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule), you might found that **skipped jobs are treated as "passed"**. That is, if you have a workflow with a chain of dependent jobs A -> B -> C. When B fails and C is skipped, it still counts as passed when checking job C.[^1] Thus, auto-merging may merge broken code.
+If you run a multi-stage workflow with [status checks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks) in [branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule), you might found that **skipped jobs are treated as "passed"**. That is, if you have a workflow with a chain of dependent jobs A -> B -> C. When B fails and C is skipped, it still counts as passed when checking job C. Thus, auto-merging may merge broken code.
 
 <!-- more -->
 
 We could instead list all A, B, and C jobs as required jobs, but this is tedious and could not be done in [dynamic matrix](gha-dynamic-parallel-gha.md). But there is a workaround. We could add an additional job that is always executed and bails out when the required job is not successful. The branch protection rules can depend on this job to determine whether this workflow is successful or not.
-
-[^1]: https://brunoscheufler.com/blog/2022-04-09-the-required-github-status-check-that-wasnt
 
 ```yaml
 jobs:
@@ -31,7 +29,6 @@ jobs:
     steps:
     # Run steps...
   # CI conclusion for GitHub status check
-  # Adapted from https://brunoscheufler.com/blog/2022-04-09-the-required-github-status-check-that-wasnt
   CI:
     needs: stage3
     if: always()

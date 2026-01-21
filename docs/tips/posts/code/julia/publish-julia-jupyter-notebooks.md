@@ -316,7 +316,6 @@ jobs:
         run: echo "success=true" >> $GITHUB_OUTPUT
 
   # CI conclusion for GitHub status check
-  # https://brunoscheufler.com/blog/2022-04-09-the-required-github-status-check-that-wasnt
   CI:
     needs: jupyter-book
     if: always()

@@ -70,7 +70,7 @@ Neural network x differential equations
 - https://github.com/Ferrite-FEM/Ferrite.jl : finite element method (FEM).
 - https://github.com/gridap/Gridap.jl : grid-based approximation of PDEs with an expressive API.
 - https://github.com/trixi-framework/Trixi.jl : hyperbolic PDE solver.
-- https://github.com/j-fu/VoronoiFVM.jl : finite volume method (FVM).
+- https://github.com/WIAS-PDELib/VoronoiFVM.jl : finite volume method (FVM).
 
 ### Model analysis
 
