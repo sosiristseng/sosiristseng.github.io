@@ -1,5 +1,5 @@
 ---
-title: Bookmarks
+title: General bookmarks
 tags:
 - bookmark
 ---
