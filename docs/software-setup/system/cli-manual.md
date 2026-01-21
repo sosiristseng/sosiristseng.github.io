@@ -19,7 +19,7 @@ curl cht.sh/tar
 
 ## tldr
 
-https://github.com/tldr-pages/tldr are collaborative cheat sheets for console commands, a complement to `man` pages. They are also available as [a PDF document](https://tldr.sh/assets/tldr-book.pdf)
+[tldr](https://tldr.sh/) are collaborative cheat sheets for console commands, a complement to `man` pages.
 
 ### Install
 
