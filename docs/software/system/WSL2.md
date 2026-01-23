@@ -16,13 +16,6 @@ Open powershell with administrator privilege, [run the following command](https:
 wsl --install --no-distribution
 ```
 
-or install the components [manually](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
-
-```powershell
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-```
-
 After reboot, install the Linux distribution
 
 ```powershell
@@ -35,7 +28,7 @@ wsl --install -d Ubuntu  # Or another Linux distribution
 
 ### Backup/move the virtual disk
 
-If you want to move the WSL virtual disk file to another disk (in this example, `D:\`), run the following commands in Windows[^export-import][^movedrive]:
+If you want to move the WSL virtual disk file to another disk (in this example, `D:\`), run the following commands in Windows[^export-import][^move]:
 
 ```powershell
 wsl --export Ubuntu .\Ubuntu\ext4.tar
@@ -44,7 +37,7 @@ wsl --import Ubuntu D:\Ubuntu\ .\Ubuntu\ext4.tar
 ```
 
 [^export-import]: https://learn.microsoft.com/zh-tw/windows/wsl/basic-commands#import-and-export-a-distribution
-[^movedrive]: https://blog.iany.me/2020/06/move-wsl-to-another-drive/
+[^move]: https://blog.iany.me/2020/06/move-wsl-to-another-drive/
 
 ### Default login user
 
@@ -76,7 +69,7 @@ Edit `.wslconfig` [^wslconfig] in your Windows home directory (`%USERPROFILE%`).
 
 ```txt title=".wslconfig"
 [experimental]
-autoMemoryReclaim=gradual    # Reclaim RAM usage
+autoMemoryReclaim=dropCache  # Reclaim RAM usage
 sparseVhd=true               # Reclaim virtual disk (vhd) usage
 ```
 
@@ -104,7 +97,7 @@ To reclaim disk space from virtual hard disks (VHDs), run the following commands
 
 ```powershell
 wsl --shutdown
-Optimize-VHD -Path %path-to.vhdx% -Mode Full
+Optimize-VHD -Path <path-to.vhdx> -Mode Full
 ```
 
 #### Export and re-import
@@ -117,6 +110,6 @@ Alternatively, export the VHD as a tar file and reimport it again.
 
 ### Poor filesystem performance across OSes
 
-Cross-OS file access (e.g., accessing `/mnt/c` in WSL) is at least one order of magnitude (10x) slower than accessing natively (`/home/user/`).[^wslio]
+Cross-OS file access (e.g., accessing `/mnt/c` in WSL) is more than one order of magnitude (10x) slower than accessing natively (e.g., `/home/user/`). [^wslio]
 
 [^wslio]: https://neilbryan.ca/posts/win10-wsl2-performance/
