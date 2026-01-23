@@ -25,36 +25,15 @@ Run the following command with admin rights and ignore the error. MS store will 
 wsreset -i
 ```
 
-Go to [Microsoft.DesktopAppInstaller](https://apps.microsoft.com/detail/9nblggh4nns1?rtc=1&hl=zh-tw&gl=TW#activetab=pivot:overviewtab) to install winget.
+### Install via MS store
 
-### Install via winget
+Packages in MS store: https://apps.microsoft.com/search
 
-```powershell
-winget install Romanitho.Winget-AutoUpdate
-winget install Git.Git
-winget install Microsoft.WindowsTerminal
-winget install Microsoft.PowerShell
-winget install Microsoft.VisualStudioCode
-winget install qBittorrent.qBittorrent
-winget install Mozilla.Firefox
-winget install Brave.Brave
-winget install Telegram.TelegramDesktop
-winget install Bandisoft.Bandizip
-winget install M2Team.NanaZip
-winget install Bandisoft.Honeyview
-winget install Daum.PotPlayer
-winget install Nevcairiel.LAVFilters
-winget install yt-dlp.yt-dlp
-winget install Gyan.FFmpeg
-winget install CrystalDewWorld.CrystalDiskInfo
-winget install CrystalDewWorld.CrystalDiskMark
-winget install Microsoft.DirectX
-winget install Starship.Starship
-winget install Obsidian.Obsidian
-winget install GitHub.GitHubDesktop
-winget install TechPowerUp.GPU-Z
-winget install CPUID.CPU-Z
-```
+- [AV1 video extension](https://apps.microsoft.com/detail/9mvzqvxjbq9v)
+- [VP9 video extension](https://apps.microsoft.com/detail/9n4d0msmp0pt)
+- [Windows terminal](https://apps.microsoft.com/detail/9n0dx20hk701)
+- [Powershell](https://apps.microsoft.com/detail/9mz1snwt0n5d)
+- [winget](https://apps.microsoft.com/detail/9nblggh4nns1)
 
 ### Install via Chocolatey package manager
 
