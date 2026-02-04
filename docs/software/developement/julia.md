@@ -1,5 +1,5 @@
 ---
-title: Setup Julia
+title: Julia setup
 date: 2025-02-19
 tags:
   - julia
