@@ -33,6 +33,7 @@ plugins:
       archive_date_format: yyyy-MM
   - tags:
       enabled: !ENV [CI, false]
+      tags_hierarchy: true
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
       enable_creation_date: !ENV [CI, false]
@@ -52,8 +53,8 @@ theme:
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: red
+      accent: red
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -61,17 +62,18 @@ theme:
     - content.action.edit
     - content.code.annotate
     - content.code.copy
+    - content.footnote.tooltips
     - content.tabs.link
     - content.tooltips
+    # - navigation.expand
     - navigation.footer
     # - navigation.indexes # Not compatible with toc.integrate
     - navigation.instant
-    # - navigation.instant.prefetch # Insiders only
+    - navigation.instant.prefetch # Insiders only
     - navigation.instant.progress
+    - navigation.path
     - navigation.prune
     - navigation.sections
-    # - navigation.expand
-    # - navigation.path # Insiders only
     # - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
