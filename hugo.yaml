@@ -1,0 +1,93 @@
+# Hugo configuration file
+title: My Blog
+theme: hextra
+
+enableGitInfo: true
+enableRobotsTXT: true
+# enableEmoji: false
+hasCJKLanguage: true
+enableInlineShortcodes: true
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ["$$", "$$"]]
+          inline: [['\(', '\)']]
+        enable: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Docs
+      pageRef: /docs
+      weight: 1
+    - name: Blog
+      pageRef: /blog
+      weight: 2
+      params:
+        type: link
+        icon: rss
+    - name: Bookmarks
+      url: /bookmarks
+      weight: 3
+    - identifier: archives
+      name: Archives
+      pageRef: /archives
+      weight: 4
+    - name: Search
+      weight: 5
+      params:
+        type: search
+    - name: GitHub
+      weight: 6
+      url: "https://github.com/sosiristseng.github.io/"
+      params:
+        icon: github
+
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+  footer:
+    enable: true
+    displayCopyright: false
+    displayPoweredBy: true
+    width: normal
+  editURL:
+    enable: true
+    base: "https://github.com/sosiristseng/template-hugo-book/edit/main/content"
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+  # Display the last modification date
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: wide
+    contextMenu:
+      enable: true
+  blog:
+    list:
+      displayTags: true
+  toc:
+    displayTags: true
+  archives:
+    # Source section used for the archives page.
+    section: blog
+    # Date format for archive list items.
+    dateFormat: "Jan 02"
+
+outputs:
+  page: [html, markdown]
+  section: [html, rss, markdown]

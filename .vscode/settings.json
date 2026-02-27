@@ -1,46 +1,18 @@
 {
-  "yaml.schemas": {
-    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
-  },
-  "yaml.customTags": [
-    "!ENV scalar",
-    "!ENV sequence",
-    "!relative scalar",
-    "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
-    "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
-    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
-    "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping"
-  ],
-  "cSpell.words": [
-    "Astrocreator",
-    "autoremove",
-    "Azaryn",
-    "bootable",
-    "btrfs",
-    "choco",
-    "CUDA",
-    "Dism",
-    "dpkg",
-    "foss",
-    "inplace",
-    "Keides",
-    "Kubuntu",
-    "mechanobiology",
-    "nala",
-    "onedrive",
-    "Skrand",
-    "Stellaris",
-    "Tuborek",
-    "Vagros",
-    "Zadigal"
-  ],
-  "cSpell.ignoreWords": [
-    "autopurge",
-    "branchname",
-    "micromamba",
-    "miniforge",
-    "nbconvert",
-    "nbstripout",
-    "textconv"
-  ]
+    "cSpell.words": [
+        "bootable",
+        "chondrocytes",
+        "cytoskeleton",
+        "cytoskeletons",
+        "Desmosomes",
+        "dystrophin",
+        "glycolipids",
+        "mechanobiology",
+        "mechanosensor",
+        "Mechanotherapeutics",
+        "Microtubule",
+        "Polycystic",
+        "Sarcopenia",
+        "tubulin"
+    ]
 }
