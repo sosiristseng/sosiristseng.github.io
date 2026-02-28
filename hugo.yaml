@@ -35,9 +35,6 @@ menu:
       params:
         type: link
         icon: rss
-    - name: Bookmarks
-      url: /bookmarks
-      weight: 3
     - identifier: archives
       name: Archives
       pageRef: /archives
