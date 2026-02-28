@@ -30,11 +30,11 @@ First, install required package
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-- [docker](/docs/software/docker)
-- [firefox](/docs/software/firefox)
-- [vscode](/docs/software/vscode)
-- [cuda](/docs/software/cuda)
-- [git](/docs/software/git)
+- [docker]({{% ref "/docs/software/docker.md" %}})
+- [firefox]({{% ref "/docs/software/firefox.md" %}})
+- [vscode]({{% ref "/docs/software/vscode.md" %}})
+- [cuda]({{% ref "/docs/software/cuda.md" %}})
+- [git]({{% ref "/docs/software/git.md" %}})
 
 ### Brave browser
 
@@ -131,8 +131,8 @@ sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gno
 
 ## System tweaks
 
-- [[linux-input-methods]]
-- [[linux-themes]]
+- [Input methods]({{% ref "/docs/software/linux-input-methods.md" %}})
+- [Themes]({{% ref "/docs/software/linux-themes.md" %}})
 
 ### Fix locales
 
@@ -173,7 +173,7 @@ sudo apt-mark hold snapd
 
 ### Temporary files in RAM disk
 
-Setting `tmpfs` (RAM disk) for `/tmp` folder:
+Setting `tmpfs` (RAM disk) for the `/tmp` folder:
 
 ```bash
 sudo cp -v /usr/share/systemd/tmp.mount /etc/systemd/system/
@@ -223,13 +223,13 @@ Replace the line in `/etc/default/grub`
 
 Gaming:
 
-```txt title="/etc/default/grub"
+```txt {filename="/etc/default/grub"}
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash preempt=full"
 ```
 
 Virtualization:
 
-```txt title="/etc/default/grub"
+```txt {filename="/etc/default/grub"}
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash preempt=full Nohz_full=all"
 ```
 
