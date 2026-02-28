@@ -1,0 +1,24 @@
+---
+title: Force display format to PNG
+date: 2026-02-28
+tags:
+- julia
+---
+
+In the VSCode plot panel and [Literate.jl](https://github.com/fredrikekre/Literate.jl) notebooks, PNG images are generally smaller than SVG ones. To force plots to be shown as PNG images, you can use [DisplayAs.jl](https://github.com/tkf/DisplayAs.jl) to show objects in a chosen MIME type.
+
+<!--more-->
+
+```julia
+import DisplayAs.PNG
+using Plots
+plot(rand(6)) |> PNG
+```
+
+If you don't want to install another package, you could just use `display()`.
+
+```julia
+using Plots
+PNG(img) = display("image/png", img)
+plot(rand(6)) |> PNG
+```

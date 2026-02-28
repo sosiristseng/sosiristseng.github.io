@@ -1,5 +1,5 @@
 ---
-title: Julia packages
+title: Julia packages list
 tags:
 - julia
 ---

@@ -25,7 +25,7 @@ Julia also encourages making your own packages, even temporarily, to utilize uni
 
 ## Functional interfaces and multiple dispatch
 
-In the Julia world, generic functions called [functions](https://docs.julialang.org/en/v1/manual/functions/), while those with type annotations / parameterizations are called [methods](https://docs.julialang.org/en/v1/manual/methods/). My impressions so far was that, Julia is a _functional interface-first_ programming language, by the power of [multiple dispatch paradigm](https://opensourc.es/blog/basics-multiple-dispatch/), to make Julia a much more flexible (in programming) and composable between packages: e.g. [DiffEq + Flux + GPU kernel](https://github.com/SciML/DiffEqFlux.jl)), and mathematically natural. However, it requires a vastly different mindset for users coming from the object-oriented worlds like Python / Java.
+In the Julia world, generic functions called [functions](https://docs.julialang.org/en/v1/manual/functions/), while those with type annotations / parameterizations are called [methods](https://docs.julialang.org/en/v1/manual/methods/). My impressions so far was that, Julia is a _functional interface-first_ programming language, by the power of [multiple dispatch paradigm](https://opensourc.es/blog/basics-multiple-dispatch/), to make Julia a much more flexible (in programming) and composable between packages: e.g. [DiffEq + Flux + GPU kernel](https://github.com/SciML/DiffEqFlux.jl), and mathematically natural. However, it requires a vastly different mindset for users coming from the object-oriented worlds like Python / Java.
 
 - Abstract types cannot have fields. They are only meant to be inherited with their functional interfaces. Concrete types (structs with fields), on the other hand, cannot not be inherited.
 - Use parametric [type (structs)](https://docs.julialang.org/en/v1/manual/types/#Parametric-Types) and [methods](https://docs.julialang.org/en/v1/manual/methods/#Parametric-Methods) rather than directly type-annotate the fields / arguments.
@@ -33,7 +33,7 @@ In the Julia world, generic functions called [functions](https://docs.julialang.
 
 ## Delegation pattern
 
-This is a form of polymorphism via composition[^1]. Use a new wrapper type to established packages to reuse their code at the cose of an additional layer of indirection.
+This is a form of polymorphism via composition[^1]. Use a new wrapper type to established packages to reuse their code at the cost of an additional layer of indirection.
 
 [^1]: https://stackoverflow.com/questions/54789937/what-is-delegation-in-julia
 
@@ -45,15 +45,15 @@ This is a form of polymorphism via composition[^1]. Use a new wrapper type to es
 - Data types are assigned categorically to traits' interfaces, implementing different behavior for different kind of data type.
 - Traits hierarchy could be separated from the type hierarchy they modeled.
 
-https://github.com/mauro3/SimpleTraits.jl automates some of the boilerplate for you.
+[SimpleTraits.jl](https://github.com/mauro3/SimpleTraits.jl) automates some of the boilerplate for you.
 
-## Global constant
+## Global constants
 
 Global (module-level) variables are discouraged for performance reasons, but global constants are welcomed in Julia since the compiler can optimize global constants.
 
 ## Struct of arrays (SoA)
 
-Struct of arrays (SoA) are superior to array of structs (AoS) in terms of performance in SIMD and GPU.
+Struct of arrays (SoA) is faster than to array of structs (AoS) because of being cache-friendly.
 
 [StructArrays](https://github.com/JuliaArrays/StructArrays.jl) handles the mapping of AoS (on the interface) to SoA (in the memory).
 
@@ -61,7 +61,7 @@ Struct of arrays (SoA) are superior to array of structs (AoS) in terms of perfor
 
 Memoization saves duplicated work in repetitive or recursive calls.
 
-You can implement memoization by yourself using function wrapper, local cache, and closure. But [Memoize.jl](https://github.com/JuliaCollections/Memoize.jl) would do the hard work for you.
+[Memoize.jl](https://github.com/JuliaCollections/Memoize.jl) can do function wrapper, local cache, and closures for you.
 
 ## Barrier functions for type stability
 
