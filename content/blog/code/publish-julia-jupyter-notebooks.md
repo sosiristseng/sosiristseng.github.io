@@ -391,7 +391,7 @@ Finally, we deploy the rendered files to GitHub pages if the content was pushed 
 
 ### The `CI` stage for status check
 
-GitHub status check treats skipped workflows as passed. Thus, even if any of the notebooks went wrong, the `jupyter-book` step will be skipped and the overall status check will still be green, which is not ideal for continuouse integration. This [blog post by Bruno Scheufler](https://brunoscheufler.com/blog/2022-04-09-the-required-github-status-check-that-wasnt) provides a workaround for this issue by adding a additional stage to determine the execution status.
+GitHub status check treats skipped workflows as passed. Thus, even if any of the notebooks went wrong, the `jupyter-book` step will be skipped and the overall status check will still be green, which is not ideal for continuous integration. This workflow provides a workaround for this issue by adding a additional stage to determine the execution status.
 
 ## Other workflows
 
