@@ -1,16 +1,16 @@
 ---
-title: onedrive in Linux
+title: onedrive for Linux
 tags:
   - linux
 ---
 
-The linux OneDrive client https://github.com/abraunegg/onedrive seamlessly supports OneDrive Personal, OneDrive for Business, OneDrive for Office365, and SharePoint Libraries. **See also** the GUI for the OneDrive client: https://github.com/bpozdena/OneDriveGUI.
+The linux OneDrive client https://github.com/abraunegg/onedrive seamlessly supports OneDrive Personal, OneDrive for Business, OneDrive for Office365, and SharePoint Libraries.
+
+**See also** the GUI for the OneDrive client: https://github.com/bpozdena/OneDriveGUI.
 
 <!--more-->
 
-## Setup
-
-### Install (Ubuntu)
+## Install (Ubuntu)
 
 Follow the [instructions](https://github.com/abraunegg/onedrive/blob/master/docs/ubuntu-package-install.md):
 
@@ -20,7 +20,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/obs-o
 sudo apt update && sudo apt install --no-install-recommends --no-install-suggests onedrive
 ```
 
-### Authorize the Application
+## Authorize the Application
 
 [Run](https://github.com/abraunegg/onedrive/blob/master/docs/usage.md#authorise-the-application-with-your-microsoft-onedrive-account) `onedrive` and visit the listed links.
 
@@ -28,13 +28,13 @@ sudo apt update && sudo apt install --no-install-recommends --no-install-suggest
 onedrive
 ```
 
-### Show config
+## Show config
 
 ```sh
 onedrive --display-config
 ```
 
-### Check if onedrive runs
+## Check if `onedrive` runs
 
 ```sh
 onedrive --sync --dry-run
@@ -48,7 +48,7 @@ If everything is OK, then download the OneDrive files
 onedrive --sync --verbose
 ```
 
-### Set maximal number of watched files
+## Set maximal number of watched files
 
 The `onedrive` client will watch a lot of files for synchronization and they may exceed the system limit (e.g., 65536). You can check the limits via:
 
@@ -70,7 +70,7 @@ You can increase the value by editing `/etc/sysctl.conf`
 fs.inotify.max_user_watches=1048576
 ```
 
-### Run onedrive client as a service
+## Run the `onedrive` as a service
 
 ```sh
 systemctl --user enable onedrive
