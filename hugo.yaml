@@ -45,7 +45,7 @@ menu:
         type: search
     - name: GitHub
       weight: 6
-      url: "https://github.com/sosiristseng.github.io/"
+      url: "https://github.com/sosiristseng/sosiristseng.github.io/"
       params:
         icon: github
 
