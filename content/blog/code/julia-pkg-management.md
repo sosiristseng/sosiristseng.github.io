@@ -16,60 +16,12 @@ using Pkg
 Pkg.status(; outdated=true)
 ```
 
-## Include other files as submodules
-
-You could include julia files as submodules like this
-
-```julia {filename="main.jl"}
-## main.jl
-include("foo.jl")
-using .Foo
-
-include("bar.jl")
-using .Bar
-```
-
-```julia {filename="foo.jl"}
-## foo.jl
-module Foo
-# content of Foo module
-end
-```
-
-```julia {filename="bar.jl"}
-## bar.jl
-module Bar
-# content of Bar module
-end
-```
-
-- Best when the submodules are used exclusively for this project and will not be shared with others.
-- Usually you want to include all dependent submodules in the top-most file, [like a table of contents](https://discourse.julialang.org/t/ann-patmodules-jl-a-better-module-system-for-julia/52226/40).
-- The `include` and `using` lines need to be re-execute when the code in the submodule changes. (if `Revise.includet("foo.jl")` is not used)
-- Use [relative module path](https://stackoverflow.com/questions/54410557/submodule-intra-dependencies-in-julia) when `Bar` depends on `Foo`.
-
-### FromFile.jl
-
-[FromFile.jl](https://github.com/Roger-luo/FromFile.jl) provides a macro `@from` to replace `include()`. Using `@from` to access a file multiple times (for example calling `@from` "file.jl" import foo in multiple files) will access the same objects each time; i.e. without the duplication issues that `include("file.jl")` would introduce.
-
-```julia {filename="file1.jl"}
-# file1.jl
-import FromFile: @from
-@from "file2.jl" import foo
-
-bar() = foo()
-```
-```julia {filename="file2.jl"}
-#file2.jl
-foo() = println("hi")
-```
-
 ## Make a Julia package
 
 To create a minimal package:
 
 ```
-pkg> generate HelloWorld
+pkg> generate JuliaHello
 ```
 
 But it's recommended to use [PkgTemplates.jl](https://github.com/JuliaCI/PkgTemplates.jl) for the CI, unit tests, documentation, etc.

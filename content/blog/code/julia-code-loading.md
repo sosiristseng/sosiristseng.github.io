@@ -11,9 +11,63 @@ See also [Julia package management](julia-pkg-management.md)
 
 <!--more-->
 
-## Package loading
+## Include other files as submodules
 
-`main.jl` has access to the `JuliaHello` module because Julia sees `src/JuliaHello.jl` as an entry point for the `JuliaHello` package / module.
+You could include julia files as submodules like this
+
+```julia {filename="main.jl"}
+## main.jl
+include("foo.jl")
+using .Foo
+
+include("bar.jl")
+using .Bar
+```
+
+```julia {filename="foo.jl"}
+## foo.jl
+module Foo
+# content of Foo module
+end
+```
+
+```julia {filename="bar.jl"}
+## bar.jl
+module Bar
+# content of Bar module
+end
+```
+
+- Best when the submodules are used exclusively for this project and will not be shared with others.
+- Usually you want to include all dependent submodules in the top-most file, [like a table of contents](https://discourse.julialang.org/t/ann-patmodules-jl-a-better-module-system-for-julia/52226/40).
+- The `include` and `using` lines need to be re-execute when the code in the submodule changes. (if `Revise.includet("foo.jl")` is not used)
+- Use [relative module path](https://stackoverflow.com/questions/54410557/submodule-intra-dependencies-in-julia) when `Bar` depends on `Foo`.
+
+### FromFile.jl
+
+[FromFile.jl](https://github.com/Roger-luo/FromFile.jl) provides a macro `@from` to replace `include()`. Using `@from` to access a file multiple times (for example calling `@from` "file.jl" import foo in multiple files) will access the same objects each time; i.e. without the duplication issues that `include("file.jl")` would introduce.
+
+```julia {filename="file1.jl"}
+# file1.jl
+import FromFile: @from
+@from "file2.jl" import foo
+
+bar() = foo()
+```
+```julia {filename="file2.jl"}
+#file2.jl
+foo() = println("hi")
+```
+
+## Code loading in a Package
+
+To create a minimal package in the REPL (package mode)
+
+```
+pkg> generate JuliaHello
+```
+
+In this example, `main.jl` has access to the `JuliaHello` module, because Julia sees `src/JuliaHello.jl` as an entry point for the `JuliaHello` package / module.
 
 ```julia {filename="src/JuliaHello.jl"}
 ## src/JuliaHello.jl
