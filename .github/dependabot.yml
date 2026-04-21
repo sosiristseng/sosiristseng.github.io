@@ -3,12 +3,15 @@ updates:
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     labels:
       - "automerge"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-    labels:
-      - "automerge"
+    groups:
+      gha-dependencies:
+        applies-to: "version-updates"
+        patterns:
+          - "*"
