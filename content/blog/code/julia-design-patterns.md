@@ -5,7 +5,7 @@ tags:
 - julia
 ---
 
-Some notes of Tom Kwong's book [Hands on Design patterns in Julia](https://www.packtpub.com/product/hands-on-design-patterns-and-best-practices-with-julia/9781838648817).
+Some notes of Tom Kwong's book Hands on Design patterns in Julia.
 
 <!--more-->
 
@@ -108,4 +108,4 @@ end
 
 - [Julia docs](https://docs.julialang.org/en/v1/)
 - [opensourc.es](https://opensourc.es/)
-- [Hands on Design patterns in Julia](https://www.packtpub.com/product/hands-on-design-patterns-and-best-practices-with-julia/9781838648817)
+- Hands on Design patterns in Julia
