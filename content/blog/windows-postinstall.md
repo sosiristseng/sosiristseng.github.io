@@ -92,15 +92,23 @@ Windows Registry Editor Version 5.00
 "OverlayMinFPS"=dword:00000000
 ```
 
-### Windows LTSC fixes
+### Fix 'ms-gamingoverlay' link Pop-Up
 
-Run the following command with admin rights to restore MS store.
+Save the text below to "fix-gamingoverlay.reg" and double click to apply the registry.
 
-```powershell
-wsreset -i
+```txt {filename="fix-gamingoverlay.reg"}
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR]
+"AudioCaptureEnabled"=dword:00000000
+"AppCaptureEnabled"=dword:00000000
 ```
 
-Apply the following registry to fix OneDrive in the Explorer. [^fix-onedrive]
+### Fix OneDrive link not working in the Explorer sidebar
+
+You can try to unlink your OneDrive account and relink it back, or:
+
+apply the following registry to fix OneDrive in the Explorer. [^fix-onedrive] You might need to change the `RelativePath` entry.
 
 ```txt {filename="fix-onedrive.reg"}
 Windows Registry Editor Version 5.00
