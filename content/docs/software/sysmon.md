@@ -12,15 +12,15 @@ tags:
 
 [btop](https://github.com/aristocratos/btop) is a resource monitor written in C++ that shows usage and stats for processor, memory, disks, network and processes.
 
-### Install
+To install:
 
-#### APT
+**APT**
 
 ```sh
 sudo apt install btop
 ```
 
-#### snap
+**snap**
 
 ```sh
 sudo snap install btop
@@ -33,39 +33,25 @@ Official binaries can be downloaded [here](https://github.com/aristocratos/btop/
 
 [glances](https://github.com/nicolargo/glances) is a cross-platform advance system monitor for usage monitoring for CPU, RAM, Network, GPU, etc.
 
-### Install
-
-#### Install script
+The simplest way to run `glances` is to use `uv`:
 
 ```sh
-curl -L https://bit.ly/glances | bash
-```
-
-Or
-
-```sh
-wget -O- https://bit.ly/glances | bash
-```
-
-#### snap
-
-```sh
-sudo snap install glances
+uvx glances
 ```
 
 ## nvtop
 
 [nvtop](https://github.com/Syllo/nvtop) is a GPU process monitor for AMD, Intel and NVIDIA GPUs. The command is `nvtop`.
 
-### Install
+To install:
 
-#### APT
+**APT**
 
 ```sh
 sudo apt install nvtop
 ```
 
-#### snap
+**snap**
 
 ```sh
 sudo snap install nvtop
@@ -83,13 +69,13 @@ sudo snap connect nvtop:kubernetes-support
 
 [bottom](https://github.com/clementtsang/bottom) is a resource monitor written in Rust. The command is `btm`.
 
-### Install
+To install:
 
-#### DEB
+**DEB**
 
 Download and install the [deb release](https://github.com/ClementTsang/bottom/releases/latest).
 
-#### snap
+**snap**
 
 ```sh
 sudo snap install bottom
@@ -105,7 +91,7 @@ sudo snap connect bottom:process-control
 
 [Mission center](https://gitlab.com/mission-center-devs/mission-center) is a Windows-like monitoring tool for your CPU, Memory, Disk, Network and GPU usage.
 
-### Install
+To install:
 
 - [AppImage (x86_64)](https://gitlab.com/mission-center-devs/mission-center/-/jobs/10144675634/artifacts/raw/MissionCenter_v1.0.2-x86_64.AppImage)
 - [Flatpak](https://flathub.org/apps/io.missioncenter.MissionCenter)
@@ -115,9 +101,27 @@ sudo snap connect bottom:process-control
 
 [neohtop](https://github.com/Abdenasser/neohtop) is a MacOS-like monitoring tool for your system.
 
-### Install
+To install:
 
 - [Download from the project page](https://abdenasser.github.io/neohtop/)
+
+## pstop
+
+[pstop](https://github.com/psmux/pstop) is a HTOP-like TUI system monitor for Windows.
+
+To install:
+
+**winget**
+
+```sh
+winget install marlocarlo.pstop
+```
+
+**Chocolatey**
+
+```sh
+choco install pstop
+```
 
 ## Disk info
 
