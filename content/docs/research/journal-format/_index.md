@@ -1,6 +1,5 @@
 ---
 title: Journal format
-type: docs
 ---
 
 ## iscience format

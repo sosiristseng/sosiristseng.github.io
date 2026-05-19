@@ -1,7 +1,5 @@
 ---
-title: pacman package manager
-tags:
-  - linux
+title: pacman
 ---
 
 Managing `pacman` packages in Arch Linux and derivatives (Manjaro, endeavourOS).

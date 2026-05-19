@@ -1,7 +1,5 @@
 ---
 title: ffmpeg
-tags:
-  - multimedia
 ---
 
 Setup [ffmpeg](https://ffmpeg.org). See also [Arch Wiki: ffmpeg](https://wiki.archlinux.org/title/FFmpeg)

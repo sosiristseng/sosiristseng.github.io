@@ -30,11 +30,11 @@ First, install required package
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-- [docker]({{% ref "/docs/software/docker.md" %}})
-- [firefox]({{% ref "/docs/software/firefox.md" %}})
-- [vscode]({{% ref "/docs/software/vscode.md" %}})
-- [cuda]({{% ref "/docs/software/cuda.md" %}})
-- [git]({{% ref "/docs/software/git.md" %}})
+- [docker](../dev/docker.md)
+- [firefox](../web/firefox.md)
+- [vscode](../dev/vscode.md)
+- [cuda](../dev/cuda.md)
+- [git](../dev/git.md)
 
 ### Brave browser
 
@@ -131,8 +131,10 @@ sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gno
 
 ## System tweaks
 
-- [Input methods]({{% ref "/docs/software/linux-input-methods.md" %}})
-- [Themes]({{% ref "/docs/software/linux-themes.md" %}})
+- Input methods
+  - [fcitx](fcitx5.md)
+  - [ibus](ibus.md)
+- [Themes](linux-themes.md)
 
 ### Fix locales
 

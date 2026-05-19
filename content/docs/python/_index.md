@@ -2,13 +2,11 @@
 title: Python
 tags:
   - python
-  - linux
-  - windows
 ---
 
-Setup Python package managers.
+## Setup Python
 
-<!--more-->
+Setup Python package managers.
 
 ## miniforge
 

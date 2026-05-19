@@ -1,7 +1,7 @@
 ---
 title: yt-dlp
 tags:
-  - multimedia
+  - cli
 ---
 
 [yt-dlp](https://github.com/yt-dlp/yt-dlp) is an actively developed fork of the famous Youtube video downloader `youtube-dl`.

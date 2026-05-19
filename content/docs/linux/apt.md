@@ -1,7 +1,5 @@
 ---
 title: apt
-tags:
-  - linux
 ---
 
 The [APT package manager](https://en.wikipedia.org/wiki/APT_(software)) in Debian, Ubuntu, and derived distributions.

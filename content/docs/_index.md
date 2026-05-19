@@ -1,17 +1,7 @@
 ---
-title: Documentation
+title: Codex
+cascade:
+  type: docs
 ---
 
-This is a demo of the theme's documentation layout.
-
-## Hello, World!
-
-```go {filename="main.go"}
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+This is the knowledge base for every item I collected.
