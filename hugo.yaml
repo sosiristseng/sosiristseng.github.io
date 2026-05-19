@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Blog
+title: My knowledge base
 theme: hextra
 
 enableGitInfo: true
@@ -26,7 +26,7 @@ markup:
 
 menu:
   main:
-    - name: Docs
+    - name: Codex
       pageRef: /docs
       weight: 1
     - name: Blog
@@ -51,6 +51,7 @@ menu:
 
 
 params:
+  externalLinkDecoration: true
   navbar:
     displayTitle: true
     displayLogo: false
@@ -68,7 +69,8 @@ params:
     displayToggle: true
   # Display the last modification date
   displayUpdatedDate: true
-  dateFormat: "January 2, 2006"
+  dateFormat: "2006-01-01"
+  displayUpdatedAuthor: false
   page:
     # full (100%), wide (90rem), normal (1280px)
     width: wide
@@ -84,7 +86,15 @@ params:
     section: blog
     # Date format for archive list items.
     dateFormat: "Jan 02"
+  math:
+    engine: mathjax
 
 outputs:
+  home: [html, llms]
   page: [html, markdown]
   section: [html, rss, markdown]
+
+security:
+  http:
+    urls:
+      - "^https://cdn\\.jsdelivr\\.net/.*" # Example: Whitelisting jsDelivr
