@@ -6,7 +6,7 @@ tags:
 - postinstall
 ---
 
-Setup DGX spark.See also [ubuntu postinstall](../../docs/linux/ubuntu-postinstall.md).
+Setup DGX spark.See also [ubuntu postinstall](./ubuntu-postinstall.md).
 
 <!--more-->
 

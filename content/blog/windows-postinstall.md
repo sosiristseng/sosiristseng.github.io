@@ -57,7 +57,7 @@ See also the  [🍫 Chocolatey package list](https://chocolatey.org/packages) f
 ## Tweaks
 
 - [[WSL2|Set up WSL2]]
-- [[environment-variables| Set environment variables]]
+- [[linux/environment-variables| Set environment variables]]
 - [[developement/julia|Setup Julia]]
 
 ### CTT Windows Utility

@@ -15,6 +15,7 @@ Topics specific to the [Julia](https://docs.julialang.org/en/v1/) programming la
 - [Parallel Computing and Scientific Machine Learning (SciML): Methods and Applications](https://book.sciml.ai/)
 - [Modern Julia Workflows](https://modernjuliaworkflows.github.io/)
 
+
 ## Install Julia
 
 Install Julia with the [juliaup](https://github.com/JuliaLang/juliaup) installer.
