@@ -1,5 +1,5 @@
 ---
-title: onedrive for Linux
+title: OneDrive for Linux
 tags:
   - linux
 ---

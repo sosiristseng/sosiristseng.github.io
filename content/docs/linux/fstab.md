@@ -1,9 +1,11 @@
 ---
-title: Mount NAS drive in Linux at boot
+title: fstab
 date: 2024-04-23
 tags:
   - linux
 ---
+
+## Mount NAS drive in Linux at boot
 
 Add the following entry to `/etc/fstab` to automatically mount NAS drives at boot
 

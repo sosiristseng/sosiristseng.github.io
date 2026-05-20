@@ -1,5 +1,5 @@
 ---
-title: "Read TOML file in Python"
+title: TOML file in Python
 date: 2024-03-21
 tags:
   - python
@@ -19,6 +19,6 @@ import tomllib; from pathlib import Path; print(tomllib.loads(Path("Manifest.tom
 
 And it's easy to run in a bash shell or CI script.
 
-```bash
+```sh
 python -c 'import tomllib; from pathlib import Path; print(tomllib.loads(Path("Manifest.toml").read_text())["julia_version"])'
 ```

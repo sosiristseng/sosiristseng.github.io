@@ -10,6 +10,8 @@ Use [heredoc](https://en.wikipedia.org/wiki/Here_document) to pass the string as
 
 <!--more-->
 
+For example, to add a block of text into `~/.xprofile`,
+
 ```sh
 cat << "EOF" >> ~/.xprofile
 # ~/.xprofile

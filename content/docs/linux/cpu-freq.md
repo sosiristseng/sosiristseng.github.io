@@ -1,5 +1,5 @@
 ---
-title: Linux CPU frequency
+title: CPU frequency in Linux
 date: 2024-03-24
 tags:
   - linux
@@ -32,7 +32,7 @@ Set the maximum CPU frequency
 echo 4400000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
 ```
 
-## Change CPU frequency using cpufrequtils
+## Change the CPU frequency using cpufrequtils
 
 Install `cpufrequtils`
 
@@ -46,7 +46,7 @@ Set the maximum CPU frequency
 sudo cpufreq-set -u 4Ghz
 ```
 
-## Change performance governor
+## Change the performance governor
 
 Edit the file `/etc/default/cpufrequtils`
 

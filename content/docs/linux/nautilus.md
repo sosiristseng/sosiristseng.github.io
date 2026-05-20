@@ -1,11 +1,11 @@
 ---
-title: Recover Nautilus places folders
+title: Nautilus places
 date: 2024-03-22
 tags:
   - linux
 ---
 
-How to recover Nautilus (File manager in Gnome) places folders.
+How to recover Nautilus (File manager in Gnome) places folders with XDG environment variables.
 
 <!--more-->
 

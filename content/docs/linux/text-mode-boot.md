@@ -7,12 +7,12 @@ tags:
 
 <!--more-->
 
+To enter text mode at boot without loading the GUI,[^1]
+
 ```sh
 sudo systemctl set-default multi-user.target
 sudo reboot
 ```
-
-Source: https://www.baeldung.com/linux/boot-linux-command-line-mode
 
 To switch back to GUI mode at boot:
 
@@ -21,7 +21,7 @@ sudo systemctl set-default graphical.target
 sudo reboot
 ```
 
-What are the "targets"?
+What are the "run level targets"?
 
 Source: https://unix.stackexchange.com/questions/404667/systemd-service-what-is-multi-user-target
 
@@ -34,3 +34,5 @@ Run Lvl Target Units                        Description
 5       runlevel5.target, graphical.target  Set up a gfx multi-user shell
 6       runlevel6.target, reboot.target     Shut down and reboot the system
 ```
+
+[^1]: https://www.baeldung.com/linux/boot-linux-command-line-mode

@@ -1,5 +1,5 @@
 ---
-title: Check battery status
+title: Check battery status in Windows
 date: 2024-03-28
 tags:
   - windows
@@ -13,4 +13,4 @@ Open Windows Powershell with Administrator rights and [run](https://www.pcmag.co
 powercfg /batteryreport /output "C:\battery-report.html"
 ```
 
-See the report at `C:\battery-report.html`.
+Check the report at `C:\battery-report.html`.

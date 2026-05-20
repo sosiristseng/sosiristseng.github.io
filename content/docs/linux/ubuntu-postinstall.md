@@ -134,7 +134,7 @@ sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gno
 - Input methods
   - [fcitx](fcitx5.md)
   - [ibus](ibus.md)
-- [Themes](linux-themes.md)
+- [Themes](themes-linux.md)
 
 ### Fix locales
 

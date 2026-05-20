@@ -1,5 +1,5 @@
 ---
-title: Linux Themes
+title: Themes
 tags:
   - linux
 ---

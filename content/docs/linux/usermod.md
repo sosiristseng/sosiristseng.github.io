@@ -1,5 +1,5 @@
 ---
-title: Move Linux user directory
+title: usermod to move user directory
 date: 2025-01-10
 tags:
   - linux

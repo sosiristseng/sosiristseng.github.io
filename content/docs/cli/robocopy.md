@@ -9,7 +9,7 @@ How to copy files with [robocopy](https://learn.microsoft.com/en-us/windows-serv
 
 <!--more-->
 
-To see its commands
+List its commands
 
 ```powershell
 robocopy /?

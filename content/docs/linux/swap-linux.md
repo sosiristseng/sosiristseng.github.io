@@ -5,7 +5,7 @@ tags:
   - linux
 ---
 
-Setup swap spaces.
+Setup swap spaces in Linux.
 
 <!--more-->
 
@@ -47,6 +47,28 @@ See the current activated swap file(s):
 cat /proc/swaps
 ```
 
+## Use zswap
+
+[Archwiki: zswap](https://wiki.archlinux.org/title/Zswap)
+
+Zswap is enabled by setting kernel parameters in `/etc/default/grub`
+
+```txt {filename="/etc/default/grub"}
+GRUB_CMDLINE_LINUX_DEFAULT="... zswap.enabled=1 zswap.compressor=zstd zswap.zpool=zsmalloc"
+```
+
+Run the following to apply changes
+
+```sh
+sudo update-grub
+```
+
+See the statistics of zswap
+
+```sh
+grep -r . /sys/kernel/debug/zswap/
+```
+
 ## Use ZRAM
 
 [ZRAM](https://wiki.archlinux.org/title/Zram) is a compressed RAM disk, which can be used as a swap device to reduce physical disk swap use under high memory pressure.
@@ -75,26 +97,4 @@ check ZRAM status
 
 ```sh
 sudo zramctl
-```
-
-## Use zswap
-
-[Archwiki: zswap](https://wiki.archlinux.org/title/Zswap)
-
-Zswap is enabled by setting kernel parameters in `/etc/default/grub`
-
-```txt {filename="/etc/default/grub"}
-GRUB_CMDLINE_LINUX_DEFAULT="... zswap.enabled=1 zswap.compressor=zstd zswap.zpool=zsmalloc"
-```
-
-Run the following to apply changes
-
-```sh
-sudo update-grub
-```
-
-See the statistics of zswap
-
-```sh
-grep -r . /sys/kernel/debug/zswap/
 ```
