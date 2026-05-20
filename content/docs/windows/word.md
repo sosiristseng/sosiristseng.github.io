@@ -3,6 +3,7 @@ title: Microsoft Word
 tags:
   - windows
   - document
+  - research
 ---
 
 <!--more-->

@@ -1,5 +1,5 @@
 ---
-title: Convert powerpoint slides to TIFF images
+title: Powerpoint
 date: 2024-03-27
 tags:
   - windows
@@ -12,11 +12,13 @@ How to export high resolution TIFF images from PowerPoint slides.
 
 <!--more-->
 
-## Advanced save options
+## Convert powerpoint slides to TIFF images
+
+### Advanced save options
 
 File -> Save a copy -> More options -> Save as type: TIFF -> Tools -> compress pictures -> choose the DPI you want -> save.
 
-## Change default export settings
+### Change default export settings
 
 The export resolution is 96 dpi by default. You can edit the Windows registry to change it.
 
