@@ -2,8 +2,6 @@
 title: Git
 tags:
   - git
-  - linux
-  - windows
   - development
 ---
 

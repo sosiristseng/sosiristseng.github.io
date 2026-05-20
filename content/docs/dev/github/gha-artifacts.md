@@ -1,5 +1,5 @@
 ---
-title: Artifacts in GitHub actions
+title: Artifacts
 date: 2025-02-19
 tags:
   - git

@@ -34,7 +34,7 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 - [firefox](../web/firefox.md)
 - [vscode](../dev/vscode.md)
 - [cuda](../dev/cuda.md)
-- [git](../dev/git.md)
+- [git](../dev/git/_index.md)
 
 ### Brave browser
 
