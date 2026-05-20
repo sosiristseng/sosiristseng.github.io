@@ -12,25 +12,24 @@ Set up Windows subsystem for Linux 2 ([WSL2](https://docs.microsoft.com/en-us/wi
 
 ## Instal WSL2
 
-Open powershell with administrator privilege, [run the following command](https://devblogs.microsoft.com/commandline/install-wsl-with-a-single-command-now-available-in-windows-10-version-2004-and-higher/) in the host.
+Open powershell with administrator privilege, [run the following command](https://devblogs.microsoft.com/commandline/install-wsl-with-a-single-command-now-available-in-windows-10-version-2004-and-higher/) in the host. This will install Ubuntu by default. Reboot after completion.
 
 ```powershell
-wsl --install --no-distribution
-```
-
-After reboot, install the Linux distribution
-
-```powershell
-wsl --update
-wsl --set-default-version 2
-wsl --install -d Ubuntu  # Or another Linux distribution
+wsl --install
 ```
 
 ## WSL2 post-install (optional) setup
 
-### Backup/move the virtual disk
+### Backup the virtual disk
 
-If you want to move the WSL virtual disk file to another disk (in this example, `D:\`), run the following commands in Windows[^export-import][^move]:
+To pack the virtual disk of the WSL system.
+
+```powershell
+wsl --export Ubuntu .\Ubuntu\ext4.tar
+```
+
+To move the WSL virtual disk file to another disk (in this example, `D:\`), run the following commands in Windows [^export-import] [^move]:
+
 
 ```powershell
 wsl --export Ubuntu .\Ubuntu\ext4.tar
@@ -41,7 +40,7 @@ wsl --import Ubuntu D:\Ubuntu\ .\Ubuntu\ext4.tar
 [^export-import]: https://learn.microsoft.com/zh-tw/windows/wsl/basic-commands#import-and-export-a-distribution
 [^move]: https://blog.iany.me/2020/06/move-wsl-to-another-drive/
 
-### Default login user
+### Set default login user
 
 Edit `/etc/wsl.conf` in the WSL. You may need to set the default user if you have moved the virtual disk file of the WSL distribution.
 
@@ -50,7 +49,7 @@ Edit `/etc/wsl.conf` in the WSL. You may need to set the default user if you hav
 default=username
 ```
 
-### Host settings
+### Host settings for WSL
 
 Edit `.wslconfig` [^wslconfig] in your Windows home directory (`%USERPROFILE%`).
 
@@ -93,7 +92,7 @@ wsl --update
 #### Optimize-VHD
 
 > [!NOTE]
-> `Optimize-VHD` is not available in Windows Home edition.
+> `Optimize-VHD` command is not available in Windows Home edition.
 
 To reclaim disk space from virtual hard disks (VHDs), run the following commands with administrator privileges [^optimize-vhd]:
 
