@@ -55,14 +55,13 @@ In Zotero settings
 
 You can setup a folder synchronized with online services (OneDrive, Google Drive, DropBox, and Koofr, etc) and use ZotMoov to automatically move Zotero attachments into that folder.
 
-Assuming that folder is `D:\obsidian\pdf` (Yes, I put it inside my obsidian vault)
+Assuming that folder is `D:\pdf`
 
 In Zotero settings
 
 - Sync => File Syncing, disable sync attachment files in My Library.
-- Advanced => Files and Folders => Linked attachment base directory => Choose `D:\obsidian\pdf`.
-- Zotmoov => Directory to Move/Copy files to => Choose `D:\obsidian\pdf`.
-
+- Advanced => Files and Folders => Linked attachment base directory => Choose `D:\pdf`.
+- Zotmoov => Directory to Move/Copy files to => Choose `D:\pdf`.
 
 ## Zotero plugins
 
@@ -72,6 +71,11 @@ https://www.zotero.org/support/plugins
 - [Better Notes](https://github.com/windingwind/zotero-better-notes): note taking, annotating, exporting, and synchronization. (Optional, as I use Obsidian to take notes)
 - [ZotMoov](https://github.com/wileyyugioh/zotmoov): a _simple_ plugin for managing attachments in Zotero 7. It provides workaround for space limitations (300MB) of online attachment.
 
+## Tweaks
+
+### Disable automatic tag generation
+
+Zotero settings -> General -> Misc -> Uncheck "Automatically tag items with keywords and subject headings" .
 
 ## Zotero and Obsidian collaboration
 
