@@ -6,7 +6,6 @@ tags:
   - research
 ---
 
-<!--more-->
 
 ## Use cross-ref
 
