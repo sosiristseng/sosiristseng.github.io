@@ -4,8 +4,6 @@ tags:
   - windows
 ---
 
-
-
 ## Fix OneDrive link not working in the Explorer sidebar
 
 You can try to unlink your OneDrive account and relink it back, or:
