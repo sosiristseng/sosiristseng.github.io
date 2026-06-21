@@ -1,5 +1,7 @@
 ---
 title: handbrake
+tags:
+  - multimedia
 ---
 
 [HandBrake](https://github.com/HandBrake/HandBrake) is an open-source, GPL-licensed, multi-platform video transcoder.

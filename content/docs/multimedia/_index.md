@@ -1,11 +1,5 @@
 ---
 title: Multimedia tools
-cascade:
-  tags:
-    - multimedia
+tags:
+  - multimedia
 ---
-
-- [Handbrake]()
-- [Staxrip]()
-- [ffmpeg]()
-- [yt-dlp]()
