@@ -36,13 +36,11 @@ See also the  [🍫 Chocolatey package list](https://chocolatey.org/packages) f
 
 ## Other packages
 
-- [PotPlayer](https://potplayer.tv/)
+- [PotPlayer](https://potplayer.tv/) can be installed via winget: `winget install -e --id Daum.PotPlayer`
 - [PowerShell Core](https://github.com/PowerShell/PowerShell) can be installed [via MS store](https://apps.microsoft.com/detail/9mz1snwt0n5d).
 - [Windows terminal](https://github.com/microsoft/terminal) can be installed [via MS store](https://apps.microsoft.com/detail/9n0dx20hk701).
 
 ## Tweaks
-
-- [Fix OneDrive issues](onedrive-win.md)
 
 ### Enable MS store in LTSC
 
