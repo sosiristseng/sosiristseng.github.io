@@ -1,11 +1,11 @@
 ---
-title: usermod to move user directory
+title: Move user directory
 date: 2025-01-10
 tags:
   - linux
 ---
 
-Use the [`usermod` command](https://linux.die.net/man/8/usermod) to move one user's home dir.
+Use the [`usermod` command](https://linux.die.net/man/8/usermod) to move the home directory for a user.
 
 <!--more-->
 
