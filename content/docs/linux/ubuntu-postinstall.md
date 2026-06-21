@@ -30,10 +30,10 @@ First, install required package
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-- [docker](../dev/docker.md)
+- [docker](./docker.md)
 - [firefox](../web/firefox.md)
 - [vscode](../dev/vscode.md)
-- [cuda](../dev/cuda.md)
+- [cuda](./cuda.md)
 - [git](../dev/git/_index.md)
 
 ### Brave browser
