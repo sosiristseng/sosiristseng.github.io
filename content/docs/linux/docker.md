@@ -3,6 +3,7 @@ title: docker
 tags:
   - docker
   - devops
+  - linux
 ---
 
 <!--more-->
