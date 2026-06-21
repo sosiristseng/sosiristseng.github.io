@@ -79,6 +79,7 @@ Search for `Line height` in VSCode settings and set it to a higher number. (For 
 [Markdown in VSCode](https://code.visualstudio.com/docs/languages/markdown)
 
 Link validation + Automatic link updates
+
 ```json
 {
   "markdown.validate.enabled": true,
