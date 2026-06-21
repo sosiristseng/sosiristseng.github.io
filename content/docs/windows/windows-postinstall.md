@@ -29,7 +29,7 @@ choco feature enable -n=useRememberedArgumentsForUpgrades
 choco install -y git.install --params "'/NoShellIntegration'"
 
 choco install -y vscode qbittorrent firefox brave telegram bandizip nanazip honeyview lavfilters yt-dlp ffmpeg crystaldiskinfo crystaldiskmark directx vcredist-all starship obsidian nerd-fonts-firacode nerd-fonts-hack github-desktop zotero handbrake cpu-z gpu-z vlc
-choco uninstall -n --skipautouninstaller vscode qbittorrent telegram github-desktop brave firefox
+choco uninstall -n --skipautouninstaller vscode qbittorrent telegram github-desktop brave firefox zotero
 ```
 
 See also the  [🍫 Chocolatey package list](https://chocolatey.org/packages) for more packages.
