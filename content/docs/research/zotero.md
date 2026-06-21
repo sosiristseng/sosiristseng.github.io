@@ -36,7 +36,15 @@ winget:
 winget install DigitalScholar.Zotero
 ```
 
-## Attachment files management
+## Zotero plugins
+
+https://www.zotero.org/support/plugins
+
+- [Better BibTex](https://retorque.re/zotero-better-bibtex/) : auto generates stable citation keys without clashes.
+- [Better Notes](https://github.com/windingwind/zotero-better-notes): note taking, annotating, exporting, and synchronization. (Optional, as I use Obsidian to take notes)
+- [ZotMoov](https://github.com/wileyyugioh/zotmoov): a simple plugin for managing attachments in Zotero 7. It provides workaround for space limitations (300MB) of online attachment.
+
+## Syncing attachments
 
 In the Zotero free plan, the storage space for attachments is [limited to **300MB**](https://www.zotero.org/storage).
 
@@ -47,35 +55,35 @@ Free online storage spaces supporting the WebDAV protocol.
 - [koofr](https://koofr.eu/) (Slovenia(EU)-based): 10GB free. See [Koofr with Zotero via WebDAV](https://koofr.eu/blog/posts/koofr-with-zotero-via-webdav) for details.
 - [Infinicloud](https://infini-cloud.net/en/index.html) (Japan-based): 20 GB free. See [connecting Zotero and infinicloud](https://infini-cloud.net/en/clients_zotero.html)
 
-In Zotero settings
+In Zotero settings: `Sync` => `File Syncing`, enable sync attachment files in My Library and choose WebDAV. Follow the instructions from the service provider to setup and login their service. For the Koofr example,
 
-- Sync => File Syncing, enable sync attachment files in My Library and choose WebDAV. Follow the instructions from the service provider to setup and login their service.
+![Zotero WebDav Koofr](https://github.com/user-attachments/assets/317dc7a0-d588-4ed2-bbd8-eb05feb7913f)
 
-### Move attachments by ZotMoov plugin
+### Use ZotMoov
 
 You can setup a folder synchronized with online services (OneDrive, Google Drive, DropBox, and Koofr, etc) and use ZotMoov to automatically move Zotero attachments into that folder.
 
-Assuming that folder is `D:\pdf`
+Assuming that synchronized folder is `D:\pdf`
 
 In Zotero settings
 
-- Sync => File Syncing, disable sync attachment files in My Library.
-- Advanced => Files and Folders => Linked attachment base directory => Choose `D:\pdf`.
-- Zotmoov => Directory to Move/Copy files to => Choose `D:\pdf`.
-
-## Zotero plugins
-
-https://www.zotero.org/support/plugins
-
-- [Better BibTex](https://retorque.re/zotero-better-bibtex/) : auto generates stable citation keys without clashes.
-- [Better Notes](https://github.com/windingwind/zotero-better-notes): note taking, annotating, exporting, and synchronization. (Optional, as I use Obsidian to take notes)
-- [ZotMoov](https://github.com/wileyyugioh/zotmoov): a _simple_ plugin for managing attachments in Zotero 7. It provides workaround for space limitations (300MB) of online attachment.
+- `Sync` => File Syncing, disable sync attachment files in My Library.
+- `Advanced` => Files and Folders => Linked attachment base directory => Choose `D:\pdf`.
+- `Zotmoov` => Directory to Move/Copy files to => Choose `D:\pdf`.
 
 ## Tweaks
 
 ### Disable automatic tag generation
 
 Zotero settings -> General -> Misc -> Uncheck "Automatically tag items with keywords and subject headings" .
+
+### Citation key customization
+
+You can customize the citation key creation by editing `Better BibTeX` -> `Citation keys`. For instance,
+
+```
+auth.lower + year
+```
 
 ## Zotero and Obsidian collaboration
 

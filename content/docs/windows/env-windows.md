@@ -1,5 +1,5 @@
 ---
-title: Environment variables (Windows)
+title: Environment variables on Windows
 date: 2024-03-21
 tags:
   - windows
@@ -9,7 +9,7 @@ tags:
 
 ## Session (temporary) variables
 
- Variables created by `set` are bound to the current session and not persistent.
+Variables created by `set` are bound to the current session and not persistent.
 
 ```powershell
 $Env:FOO = "example"
