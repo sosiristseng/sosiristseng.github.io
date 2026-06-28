@@ -50,7 +50,7 @@ title: Research
 
 ### Systems biology models
 
-- [BioModels](https://www.ebi.ac.uk/biomodels/), SMBL format and generated code available.
+- [BioModels](https://biomodels.org/), SMBL format and generated code available.
 - [Virtual Metabolic Human](https://www.vmh.life)
 - [Virtual Cell](https://vcell.org)
 - [MetaNetX](https://www.metanetx.org/)
