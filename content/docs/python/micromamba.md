@@ -17,7 +17,7 @@ Invoke-Expression ((Invoke-WebRequest -Uri https://micro.mamba.pm/install.ps1 -U
 Linux:
 
 ```sh
-"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+"${SHELL}" <(curl -L micro.mamba.pm)
 ```
 
 ## Update micromamba
