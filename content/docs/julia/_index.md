@@ -68,7 +68,7 @@ To run Python packages in Julia (such as `matplotlib` for `PythonPlot.jl` and `j
 2. Create a conda environment, for example, `micromamba create -n juliapy jupyter matplotlib`.
 3. Set up the following environment variables
   - `PythonCall.jl` [documentation](https://juliapy.github.io/PythonCall.jl/stable/pythoncall/#pythoncall-config)
-  - `Conda.jl` [documentation](https://github.com/JuliaPy/Conda.jl#using-a-pre-existing-conda-installation)
+  - `CondaPkg.jl` [documentation](https://github.com/JuliaPy/CondaPkg.jl#preferences)
 
 ```sh {filename="~/.profile"}
 export CONDA_JL_HOME="${HOME}/micromamba/envs/juliapy"
