@@ -56,29 +56,5 @@ winget install Mozilla.Firefox
 
 Enter `about:config` in the location bar.
 
-See also [Betterfox](https://github.com/yokoffing/Betterfox), the Firefox `user.js` for speed, privacy, and security.
-
-### Compact mode
-
-Set the following option to `true`
-
-```
-browser.compactmode.show
-```
-
-### Full screen transition tweaks
-
-[Source](https://luis.adame.dev/blog/firefox-fullscreen-transition-timeout):
-
-+ Set `full-screen-api.transition-duration.enter` to `0 0`
-+ Set `full-screen-api.transition-duration.leave` to `0 0`
-+ Set `full-screen-api.transition.timeout` to `0`
-+ Set `full-screen-api.warning.timeout` to `0`
-
-### Force hardware acceleration
-
-Set the following option to `true`
-
-```
-media.hardware-video-decoding.force-enabled
-```
+- My custom `user.js` file is on [my dotfiles repo](https://github.com/sosiristseng/dotfiles/blob/main/firefox/user.js).
+- [Betterfox](https://github.com/yokoffing/Betterfox), the Firefox `user.js` for speed, privacy, and security.
