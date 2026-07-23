@@ -1,8 +1,10 @@
 ---
-title: Julia packages list
+title: Julia stack
 tags:
 - julia
 ---
+
+List of my pick of Julia packages.
 
 <!--more-->
 
