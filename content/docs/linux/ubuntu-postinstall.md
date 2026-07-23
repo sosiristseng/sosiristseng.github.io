@@ -30,10 +30,10 @@ First, install required package
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-- [docker](./docker.md)
+- [docker](docker.md)
 - [firefox](../web/firefox.md)
 - [vscode](../dev/vscode.md)
-- [cuda](./cuda.md)
+- [cuda](cuda.md)
 - [git](../dev/git/_index.md)
 
 ### Brave browser
@@ -117,10 +117,16 @@ Where `$VERSION` is the Ubuntu version.
 sudo apt update && sudo apt full-upgrade -y
 ```
 
+Ubuntu server:
+
+```sh
+sudo apt install -y git git-lfs cifs-utils ssh parallel ncdu ppa-purge zsh
+```
+
 Ubuntu:
 
 ```sh
-sudo apt install -y git git-lfs cifs-utils ssh nala gnome-shell-extension-manager parallel baobab ncdu synaptic apt-xapian-index ppa-purge ubuntu-restricted-extras ffmpeg vlc mcomix fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer zsh btrfs-compsize
+sudo apt install -y git git-lfs cifs-utils ssh gnome-shell-extension-manager parallel baobab ncdu synaptic apt-xapian-index ppa-purge ubuntu-restricted-extras ffmpeg vlc mcomix fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer zsh
 ```
 
 Kubuntu:
