@@ -63,28 +63,3 @@ For example, the two steps do the same:
 ```
 
 [^juliashell]: https://discourse.julialang.org/t/tip-use-julia-as-custom-shell-in-github-actions/53377
-
-## Using PyCall.jl
-
-In GNU/Linux systems like Ubuntu, `PyCall.jl` may not be able to install python packages for `PyCall.jl` because it will first try to use the system Python (`/usr/bin/python`) and `pip`. It would fail due to lack of superuser privileges.
-
-To solve this, you can set the `PYTHON` environment variable to where the Python executable is.[^pycalljldocs]
-
-- Either using a blank (`PYTHON:''`) variable will force Julia to install a local miniconda distribution.
-- Or using the Python executable from the [`setup-python` action](https://github.com/marketplace/actions/setup-python).
-
-[^pycalljldocs]: [PyCall.jl documentation](https://github.com/JuliaPy/PyCall.jl#specifying-the-python-version)
-
-```yaml
-- uses: actions/setup-python@v4
-  id: py
-  with:
-    python-version: '3.x'
-- uses: julia-actions/setup-julia@v1
-  with:
-    version: 1
-- uses: julia-actions/julia-buildpkg@v1
-  env:
-    # PYTHON: ''      # Use python from Conda.jl
-    PYTHON: ${{ steps.py.outputs.python-path }}  # Use python from setup-python
-```
