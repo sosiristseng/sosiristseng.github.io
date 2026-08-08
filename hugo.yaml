@@ -49,7 +49,6 @@ menu:
       params:
         icon: github
 
-
 params:
   externalLinkDecoration: true
   navbar:
@@ -87,7 +86,7 @@ params:
     # Date format for archive list items.
     dateFormat: "Jan 02"
   math:
-    engine: mathjax
+    engine: katex
 
 outputs:
   home: [html, llms]
