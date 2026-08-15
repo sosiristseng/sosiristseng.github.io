@@ -19,10 +19,15 @@ markup:
           block: [['\[', '\]'], ["$$", "$$"]]
           inline: [['\(', '\)']]
         enable: true
-
+    renderHooks:
+      image:
+        useEmbedded: fallback
+      link:
+        useEmbedded: fallback
   # enable hextra syntax highlight
   highlight:
     noClasses: false
+
 
 menu:
   main:
