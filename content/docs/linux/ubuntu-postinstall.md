@@ -30,7 +30,7 @@ First, install required package
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-- [docker](docker.md)
+- [docker](./docker.md)
 - [firefox](../web/firefox.md)
 - [vscode](../dev/vscode.md)
 - [cuda](cuda.md)
