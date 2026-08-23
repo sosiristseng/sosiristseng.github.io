@@ -92,6 +92,12 @@ params:
     dateFormat: "Jan 02"
   math:
     engine: katex
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
 
 outputs:
   home: [html, llms]
