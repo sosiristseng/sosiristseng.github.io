@@ -13,7 +13,7 @@ tags:
 
 Download and install [Zotero](https://www.zotero.org/) from the official website or
 
-### Ubuntu
+**Ubuntu**
 
 [zotero-deb](https://github.com/retorquere/zotero-deb) provides packaged versions of Zotero reference manager and Juris-M for Debian-based systems.
 
@@ -22,7 +22,7 @@ curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.
 sudo apt update && sudo apt install -y zotero
 ```
 
-### Windows
+**Windows**
 
 chocolatey:
 

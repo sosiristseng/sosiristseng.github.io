@@ -4,4 +4,4 @@ cascade:
   type: docs
 ---
 
-This is the knowledge base for items collected by me.
+Information I collected, sorted by name.

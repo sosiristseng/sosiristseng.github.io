@@ -1,9 +1,10 @@
 ---
 title: Research
+tags:
+- bookmarks
 ---
 
-- School notes
-- Tools for academic research
+> Tools for academic research
 
 - [awesome-research](https://github.com/emptymalei/awesome-research)
 - [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/) : A web based tool to extract data from plots, images, and maps
@@ -22,7 +23,7 @@ title: Research
 ## Reference managers
 
 - [SciWheel](https://sciwheel.com/work/): the online reference manager with browser, Google Doc, and MS Word plugins.
-- [Zotero](https://www.zotero.org/): an open-source reference manager.
+- [Zotero](https://www.zotero.org/): an open-source reference manager. See [Zotero](zotero.md)
 
 ## Find Publications
 

@@ -1,8 +1,8 @@
 ---
-title: Web
+title: Web hosting
+tags:
+  - bookmarks
 ---
-
-## Hosting Web sites
 
 - [Cloudflare pages](https://pages.cloudflare.com)
 - [GitHub pages](https://docs.github.com/en/pages)

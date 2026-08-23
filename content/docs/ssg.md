@@ -2,6 +2,7 @@
 title: Static site generators
 tags:
   - web
+  - bookmarks
 ---
 
 - [Awesome static site generators](https://github.com/myles/awesome-static-generators)
@@ -66,11 +67,11 @@ A list of **[Hexo themes](https://hexo.io/themes/)**
 
 ### Setup Hugo
 
-#### Ubuntu
+**Ubuntu**
 
 Download and install the hugo `deb` file from the [release page](https://github.com/gohugoio/hugo/releases/latest).
 
-#### Windows
+**Windows**
 
 chocolatey:
 
@@ -84,9 +85,9 @@ Go compiler is needed for Hugo modules
 choco install golang
 ```
 
-#### GitHub actions
+**GitHub actions**
 
-Use https://github.com/peaceiris/actions-hugo
+Using https://github.com/peaceiris/actions-hugo
 
 ```yaml
 name: Deploy Hugo site to Pages
@@ -151,14 +152,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-```
-
-#### Docker
-
-[klakegg/hugo](https://hub.docker.com/r/klakegg/hugo/) docker image.
-
-```dockerfile
-FROM klakegg/hugo
 ```
 
 ### Hugo themes

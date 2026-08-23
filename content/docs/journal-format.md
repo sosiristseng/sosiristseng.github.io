@@ -1,5 +1,7 @@
 ---
 title: Journal format
+tags:
+- research
 ---
 
 ## iscience format

@@ -6,7 +6,6 @@ tags:
   - research
 ---
 
-
 ## Use cross-ref
 
 Use a [cross ref](https://support.microsoft.com/en-au/office/create-a-cross-reference-300b208c-e45a-487a-880b-a02767d9774b) to number and link your figures, tables, and equations.

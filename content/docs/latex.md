@@ -4,6 +4,7 @@ toc: true
 type: docs
 tags:
 - latex
+- bookmarks
 ---
 
 - [😎 Awesome LaTeX](https://github.com/egeerardyn/awesome-LaTeX)

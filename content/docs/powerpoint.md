@@ -8,10 +8,6 @@ tags:
   - tiff
 ---
 
-How to export high resolution TIFF images from PowerPoint slides.
-
-<!--more-->
-
 ## Convert powerpoint slides to TIFF images
 
 ### Advanced save options

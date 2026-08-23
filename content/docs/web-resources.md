@@ -1,7 +1,8 @@
 ---
-title: Resources
+title: Web resources
 tags:
   - web
+  - bookmarks
 ---
 
 ## CSS

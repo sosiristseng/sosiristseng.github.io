@@ -4,6 +4,7 @@ toc: true
 type: docs
 tags:
 - markdown
+- bookmarks
 ---
 
 - [awesome-markdown](https://github.com/mundimark/awesome-markdown)

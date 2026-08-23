@@ -8,9 +8,9 @@ Setup [Firefox browser](https://www.mozilla.org/firefox)
 
 <!--more-->
 
-## Install
+## Install firefox
 
-### Ubuntu (deb)
+**Ubuntu (deb)**
 
 Install Firefox from Mozilla's repo
 
@@ -38,7 +38,7 @@ Pin-Priority: 1000
 sudo apt update && sudo apt install -y firefox firefox-l10n-zh-tw
 ```
 
-### Windows
+**Windows**
 
 chocolatey:
 

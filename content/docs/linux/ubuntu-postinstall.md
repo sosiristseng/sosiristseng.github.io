@@ -31,7 +31,7 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 ```
 
 - [docker](docker.md)
-- [firefox](../web/firefox.md)
+- [firefox](../firefox.md)
 - [vscode](../dev/vscode.md)
 - [cuda](cuda.md)
 - [git](../dev/git/)
