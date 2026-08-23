@@ -21,9 +21,9 @@ markup:
         enable: true
     renderHooks:
       image:
-        useEmbedded: fallback
+        useEmbedded: always
       link:
-        useEmbedded: fallback
+        useEmbedded: always
   # enable hextra syntax highlight
   highlight:
     noClasses: false
