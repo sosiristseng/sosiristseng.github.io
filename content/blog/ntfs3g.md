@@ -1,5 +1,5 @@
 ---
-title: ntfs-3g
+title: NTFS in Linux
 date: 2024-09-03
 tags:
   - linux

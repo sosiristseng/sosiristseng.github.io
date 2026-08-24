@@ -1,7 +1,9 @@
 ---
-title: vscode
+title: VS Code
 tags:
   - development
+  - linux
+  - windows
 ---
 
 [Visual Studio Code](https://code.visualstudio.com) is a lightweight but powerful source code editor which runs on your desktop and is available for Linux, macOS and Windows.
@@ -10,7 +12,7 @@ tags:
 
 ## Install
 
-### Ubuntu (deb)
+**Ubuntu (deb)**
 
 ```sh
 curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/packages.microsoft.gpg
@@ -18,13 +20,13 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] http
 sudo apt update && sudo apt install -y code
 ```
 
-### Ubuntu (snap)
+**Ubuntu (snap)**
 
 ```sh
 sudo snap install code --classic
 ```
 
-### Windows
+**Windows**
 
 chocolatey:
 

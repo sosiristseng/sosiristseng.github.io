@@ -1,5 +1,8 @@
 ---
 title: pacman
+tags:
+  - command-line
+  - linux
 ---
 
 Managing `pacman` packages in Arch Linux and derivatives (Manjaro, endeavourOS).

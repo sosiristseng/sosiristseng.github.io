@@ -1,8 +1,8 @@
 ---
 title: CUDA
 tags:
-- linux
-- gpu
+  - linux
+  - gpu
 ---
 
 Setup CUDA for NVIDIA GPUs.

@@ -9,7 +9,7 @@ Editing YAML files on-the-fly with [yq](https://github.com/mikefarah/yq).
 
 <!--more-->
 
-## Usage in GitHub actions
+## Using yq in GitHub actions
 
 For example, to disable jupyter book cell execution in GitHub actions, one can edit `docs/_config.yml` and set `execute_notebooks` to `off`.
 

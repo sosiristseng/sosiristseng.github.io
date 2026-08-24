@@ -1,5 +1,5 @@
 ---
-title: coreutils
+title: Rust utilities
 tags:
   - command-line
   - linux
@@ -93,7 +93,7 @@ See the [user guide](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md)
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 ```
 
-**Usage**--++-
+**Usage**
 
 ```sh
 z

@@ -2,6 +2,7 @@
 title: Ibus
 tags:
   - input-method
+  - linux
 ---
 
 [ibus](https://github.com/ibus/ibus) is an input method framework using DBUS. `ibus` integrates better with the GNOME desktop environment.

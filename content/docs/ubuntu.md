@@ -1,14 +1,13 @@
 ---
-title: Ubuntu postinstall
-date: 2024-03-26
+title: Ubuntu
 tags:
 - linux
 - postinstall
 ---
 
-Things to do after installing
+Things to do after installing Ubuntu
 
-- [Ubuntu](https://ubuntu.com/download)
+- [Ubuntu](https://ubuntu.com/download) desktop and server
 - [Kubuntu](https://kubuntu.org/)
 - [WSL2](https://docs.microsoft.com/zh-tw/windows/wsl/install)
 
@@ -31,10 +30,10 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 ```
 
 - [docker](docker.md)
-- [firefox](../firefox.md)
-- [vscode](../dev/vscode.md)
+- [firefox](firefox.md)
+- [vscode](vscode.md)
 - [cuda](cuda.md)
-- [git](../dev/git/)
+- [git](./dev/git/_index.md)
 
 ### Brave browser
 
@@ -138,9 +137,9 @@ sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gno
 ## System tweaks
 
 - Input methods
-  - [fcitx](fcitx5.md)
-  - [ibus](ibus.md)
-- [Themes](themes-linux.md)
+  - [fcitx](linux/fcitx5.md)
+  - [ibus](linux/ibus.md)
+- [Themes](linux/themes-linux.md)
 
 ### Fix locales
 

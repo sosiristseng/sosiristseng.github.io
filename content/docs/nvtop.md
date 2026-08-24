@@ -28,3 +28,9 @@ sudo snap connect nvtop:system-observe
 # Temporary workaround to get per-process GPU usage (read /proc/<pid>/fdinfo)
 sudo snap connect nvtop:kubernetes-support
 ```
+
+**Usage**
+
+```sh
+nvtop
+```

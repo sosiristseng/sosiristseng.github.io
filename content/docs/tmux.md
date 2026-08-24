@@ -14,7 +14,7 @@ tags:
 
 ## Setup
 
-The configuration file is `~/.tmux.conf`
+The configuration file is `~/.tmux.conf`:
 
 ```txt {filename="~/.tmux.conf"}
 # Enable mouse scroll
@@ -33,4 +33,4 @@ To connect a remote tmux session via SSH,
 ssh -t user@host tmux new -A -s ssh_tmux
 ```
 
-Or you can log in and then run `tmux`.
+Or log in and then run `tmux`.

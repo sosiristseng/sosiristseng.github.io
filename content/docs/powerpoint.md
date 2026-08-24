@@ -1,6 +1,5 @@
 ---
 title: Powerpoint
-date: 2024-03-27
 tags:
   - windows
   - powerpoint

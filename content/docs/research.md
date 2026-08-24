@@ -1,7 +1,7 @@
 ---
 title: Research
 tags:
-- bookmarks
+  - bookmarks
 ---
 
 > Tools for academic research

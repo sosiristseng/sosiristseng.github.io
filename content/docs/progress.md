@@ -18,3 +18,15 @@ sudo apt install progress
 ## Usage
 
 [Run `progress`](https://github.com/Xfennec/progress#what-can-i-do-with-it) in the terminal.
+
+Watch all processes:
+
+```sh
+watch progress -q
+```
+
+Launch and monitor any heavy command
+
+```sh
+cp bigfile newfile & progress -mp $!
+```

@@ -9,7 +9,9 @@ tags:
 
 ## Install
 
-### Binary Executable
+Install Deno JS runtime (https://github.com/yt-dlp/yt-dlp/wiki/EJS) first.
+
+**Binary Executable**
 
 Download the binary executable for Linux/MacOS.
 
@@ -20,9 +22,7 @@ chmod a+rx ~/.local/bin/yt-dlp
 source .profile
 ```
 
-Install Deno JS runtime (https://github.com/yt-dlp/yt-dlp/wiki/EJS)
-
-### Windows
+**Windows**
 
 ```powershell
 choco install yt-dlp deno

@@ -28,7 +28,6 @@ choco uninstall -n --skipautouninstaller vscode qbittorrent telegram github-desk
 
 See also the  [🍫 Chocolatey package list](https://chocolatey.org/packages) for more packages.
 
-
 ## Install software via winget and MS store
 
 In Windows LTSC, run the following command with admin rights and ignore the error. MS store will be installed after a few minutes.

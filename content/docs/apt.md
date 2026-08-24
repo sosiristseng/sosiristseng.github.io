@@ -1,16 +1,19 @@
 ---
-title: apt
+title: APT package manager
+tags:
+  - command-line
+  - linux
 ---
 
 The [APT package manager](https://en.wikipedia.org/wiki/APT_(software)) in Debian, Ubuntu, and derived distributions.
 
-- [It's foss: apt commands](https://itsfoss.com/apt-command-guide/)
+- [It's FOSS: apt commands](https://itsfoss.com/apt-command-guide/)
 
 <!--more-->
 
 ## `apt` vs `apt-get`
 
-[It's foss: apt vs apt-get](https://itsfoss.com/apt-vs-apt-get-difference/)
+[It's FOSS: apt vs apt-get](https://itsfoss.com/apt-vs-apt-get-difference/)
 
 - `apt` is for interactive use, including commonly-used commands from `apt-get` and `apt-cache`. And it has a nice progress bar.
 - `apt-get` is more inclined for non-interactive use in scripts because of its stable interface.

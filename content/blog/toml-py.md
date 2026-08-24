@@ -1,9 +1,8 @@
 ---
-title: TOML file in Python
+title: Parse TOML files in Python
 date: 2024-03-21
 tags:
   - python
-  - julia
   - toml
 ---
 

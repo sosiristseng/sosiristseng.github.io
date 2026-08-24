@@ -1,11 +1,11 @@
 ---
-title: man
+title: man page
 tags:
   - linux
   - command-line
 ---
 
-`man` is the command for manual pages. See the usage a command by running `man <cmd>` in the terminal.
+`man` (manual) is the command for manual pages. See the usage a command by running `man <cmd>` in the terminal.
 
 There are also cheat sheets with a brief example for a command.
 

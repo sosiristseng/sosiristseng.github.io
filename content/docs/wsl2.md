@@ -1,6 +1,5 @@
 ---
-title: Windows subsystem for Linux 2 (WSL2)
-date: 2024-03-29
+title: WSL2
 tags:
 - windows
 - linux
