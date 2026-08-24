@@ -2,6 +2,7 @@
 title: Python
 tags:
   - python
+  - bookmarks
 ---
 
 - [Awesome Python](https://github.com/vinta/awesome-python): a curated list of Python stuff.
