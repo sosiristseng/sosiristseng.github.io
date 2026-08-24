@@ -1,6 +1,5 @@
 ---
 title: Environment variables
-date: 2024-03-21
 tags:
   - windows
   - linux

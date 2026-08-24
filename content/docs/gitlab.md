@@ -1,5 +1,5 @@
 ---
-title: GitLab
+title: GitLab CI/CD
 tags:
   - gitlab
   - devops
@@ -261,3 +261,28 @@ In the Github mirror repository, go to `Settings`/`Deploy keys` and add deploy k
 Paste the SSH public key copied from the GitLab source. Give it a title, allow write access, click `add key` to finish this step, and viola.
 
 ![](https://user-images.githubusercontent.com/40054455/153240939-2ac0e15b-52e7-48ed-9b11-90e4f4fa18c5.png)
+
+## Renovate bot
+
+According to the [renovate GitLab runner documentation](https://gitlab.com/renovate-bot/renovate-runner/),
+
+1. Create a repository for the Renovate runner.
+2. Add a GitLab [personal access token (PAT)](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#creating-a-personal-access-token) with `read_user`, `api` and `write_repository` scopes as the `RENOVATE_TOKEN` CI/CD variable,
+3. Add a [GitHub PAT](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) as `GITHUB_COM_TOKEN`. This token allows renovate bot to read information of updated dependencies unhindered.
+4. Create `.gitlab-ci.yml` to run the pipelines
+    ```yaml {filename=".gitlab-ci.yml"}
+    include:
+     - project: 'renovate-bot/renovate-runner'
+       file: '/templates/renovate-dind.gitlab-ci.yml'
+    ```
+5. Select what repositories renovate bot could touch by setting up the CI/CD variable `RENOVATE_EXTRA_FLAGS` : `--autodiscover=true --autodiscover-filter=group1/*` or configure them in the `config.js` file.
+    ```js {filename="config.js"}
+    module.exports = {
+        repositories: [
+            "group1/repo1",
+            "group2/repo2",
+        ],
+    };
+    ```
+    As a plus, it's easier to set up more renovate runner options in the `config.js` file.
+6. Setup a [schedule](https://docs.gitlab.com/ee/ci/pipelines/schedules.html) for the pipeline.
