@@ -18,11 +18,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v7
         with:
-          submodules: recursive # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          # submodules: true
+          fetch-depth: 0 # Fetch all history
+      - name: Shallow clone submodules
+        run: git submodule update --init --recursive --depth=1
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
