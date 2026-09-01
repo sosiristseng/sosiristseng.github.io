@@ -63,7 +63,7 @@ tags:
 
 ### Pharmacology database
 
-- [Drugbank](https://www.drugbank.ca/releases/latest)
+- [Drugbank](https://go.drugbank.com/)
 - [ChEMBL](https://www.ebi.ac.uk/chembl/)
 - [PharmGKB](https://www.pharmgkb.org/)
 - [PubChem](https://pubchem.ncbi.nlm.nih.gov/) by NCBI.

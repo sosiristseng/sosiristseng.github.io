@@ -427,8 +427,6 @@ $L =  C_4 R_1 R_3 R_5 / R_2$
 
 ### Why semi-conductivity
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Band_gap_comparison.svg/2000px-Band_gap_comparison.svg.png)
-
 * Band gap energy difference $E_{g}$ = $E_{c}$ - $E_{v}$
   * Insulators: > 5 eV
   * Semiconductors: smaller gap, a small amount of electrons escape from valence band to the conduction band
@@ -490,9 +488,6 @@ Transform diodes into equivalent components.
 ### Rectifiers
 
 Only half wave rectification was covered.
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Halfwave.rectifier.en.svg/600px-Halfwave.rectifier.en.svg.png)
-
 
 ### Limiters (cutters)
 
