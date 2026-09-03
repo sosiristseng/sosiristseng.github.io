@@ -9,8 +9,8 @@ Batch compress files with the following tools
 
 - find : https://linux.die.net/man/1/find
 - GNU parallel: https://zenodo.org/records/1146014 (PDF) and https://www.gnu.org/software/parallel/parallel_tutorial.html (HTML)
-- 7z
-- xz
+- 7z : https://linux.die.net/man/1/7z
+- xz : https://linux.die.net/man/1/xz
 
 <!--more-->
 
