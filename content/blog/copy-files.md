@@ -1,14 +1,19 @@
 ---
-title: Copy files in Linux
+title: Copy files in CLI
 tags:
   - ssh
   - linux
   - command-line
+  - windows
 ---
 
-How to copy files with Linux command-line tools.
+How to copy files with command-line tools.
 
 <!--more-->
+
+## Windows robocopy
+
+See [robocopy](../docs/robocopy.md)
 
 ## tar
 
