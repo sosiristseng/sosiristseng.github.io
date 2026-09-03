@@ -42,12 +42,14 @@ sudo systemctl restart docker
 
 ## Test docker installation
 
-Testing docker
+Test docker
+
 ```sh
 sudo docker run hello-world
 ```
 
-Testing nvidia GPU support
+Test nvidia GPU support
+
 ```sh
 sudo docker run --gpus all nvidia/cuda:12.0-base nvidia-smi
 ```
