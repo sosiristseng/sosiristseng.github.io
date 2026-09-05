@@ -6,11 +6,12 @@ tags:
   - ssh
 ---
 
-[Arch Wiki: tmux](https://wiki.archlinux.org/title/Tmux)
+- [Arch Wiki: tmux](https://wiki.archlinux.org/title/Tmux)
+- [Linux Handbook: tmux](https://linuxhandbook.com/courses/tmux/why-tmux/)
 
 <!--more-->
 
-[tmux](https://github.com/tmux/tmux)is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached. For example, it enables programs run uninterrupted via ssh since ssh connects the screen while the program run in the background.
+[tmux](https://github.com/tmux/tmux) is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached. For example, it enables programs run uninterrupted via ssh since ssh connects the screen while the program run in the background.
 
 ## Setup
 
