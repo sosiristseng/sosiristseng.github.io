@@ -8,17 +8,19 @@ tags:
 
 Large language models (LLMs), APIs, agents, and harnesses.
 
-## Models
+## Models and recipes
 
 - [Hugging face](https://huggingface.co/)
 - [Unsloth](https://unsloth.ai/docs)
+- [Club 3090](https://github.com/noonghunna/club-3090) : recipes for 3090/4090/5090 owners.
 
 ### Qwen3.8-27B
 
-- [Unsloth: Qwen3.8-27B](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
-- [GSQ-RCO: Qwen3.8-27B](https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF)
-- [MiaAI-Lab: Qwen3.8-27B](https://github.com/MiaAI-Lab/Qwen3.8-27B-SGLang-DGX-Spark) on one DGX Spark.
-- [MiaAI-Lab: Qwen3.8-27B](https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw) for one 24GB GPU or one DGX Spark.
+- [Unsloth](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
+- [GSQ-RCO](https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF) : small quants
+- [Dirk](https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF) : concise reasoning with an updated chat template
+- [MiaAI-Lab](https://github.com/MiaAI-Lab/Qwen3.8-27B-SGLang-DGX-Spark) on one DGX Spark.
+- [MiaAI-Lab](https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw) for one 24GB GPU or one DGX Spark.
 
 ### Qwen3.8-Flash-Next
 
@@ -53,7 +55,7 @@ Large language models (LLMs), APIs, agents, and harnesses.
 - [Unsloth desktop](https://unsloth.ai/docs/desktop)
 - [Lemonade](https://lemonade-server.ai/) for AMD GPUs.
 - [Lucebox](https://github.com/Luce-Org/lucebox)
-- [Club 3090](https://github.com/noonghunna/club-3090) : recipes for 3090/4090/5090 owners.
+- [ninfer](https://github.com/Neroued/ninfer) : C++/CUDA inference engine for explicitly registered Qwen checkpoints on a single NVIDIA GeForce RTX 5090.
 
 ### llama.cpp
 
