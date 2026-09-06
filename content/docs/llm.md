@@ -84,7 +84,8 @@ Large language models (LLMs), APIs, agents, and harnesses.
 
 ## Agents and harnesses
 
+- [Codewhale](https://github.com/Hmbown/Codewhale)
 - [Deepseek harness](https://www.deepseek.com/harness/en/)
+- [OpenCode](https://opencode.ai/)
 - [pi coding agent](https://pi.dev/)
 - [Qwen code](https://qwen.ai/qwencode)
-- [Codewhale](https://github.com/Hmbown/Codewhale)
