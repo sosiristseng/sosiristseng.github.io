@@ -26,11 +26,7 @@ Large language models (LLMs), APIs, agents, and harnesses.
 
 - [Unsloth: Qwen3.8-Flash-Next](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF)
 - [qwen38-flash-next-spark](https://github.com/0xBakeer/qwen38-flash-next-spark) on one DGX Spark.
-
-### Deepseek v4 flash
-
-- [MiaAI Lab: DS4f](https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-One-DGX-Spark) on one DGX Spark.
-- [Entrpi: DS4f on spark](https://github.com/Entrpi/ds4-on-spark) on one DGX Spark.
+- [MiaAI-Lab](https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark) on one DGX Spark.
 
 ### Gemma4
 
