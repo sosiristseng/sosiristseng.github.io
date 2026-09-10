@@ -5,6 +5,7 @@ type: docs
 tags:
 - markdown
 - bookmarks
+- document
 ---
 
 - [awesome-markdown](https://github.com/mundimark/awesome-markdown)

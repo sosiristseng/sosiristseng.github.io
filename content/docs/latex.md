@@ -4,6 +4,7 @@ toc: true
 type: docs
 tags:
 - latex
+- document
 - bookmarks
 ---
 
