@@ -7,6 +7,8 @@ tags:
 
 [Zotero](https://www.zotero.org/) is an open source reference manager.
 
+- [Zotero Chinese community](https://zotero-chinese.com/)
+
 <!--more-->
 
 ## Install
