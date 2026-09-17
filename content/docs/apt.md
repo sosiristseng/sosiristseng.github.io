@@ -7,8 +7,6 @@ tags:
 
 The [APT package manager](https://en.wikipedia.org/wiki/APT_(software)) in Debian, Ubuntu, and derived distributions.
 
-- [It's FOSS: apt commands](https://itsfoss.com/apt-command-guide/)
-
 <!--more-->
 
 ## `apt` vs `apt-get`
@@ -46,7 +44,7 @@ sudo nala upgrade
 
 ## apt-fast: apt in parallel
 
-https://github.com/ilikenwf/apt-fast is shell script wrapper for `apt-get` and `aptitude` that can drastically improve `apt` download times by downloading packages in parallel, with multiple connections per package.
+[apt-fast](https://github.com/ilikenwf/apt-fast) is shell script wrapper for `apt-get` and `aptitude` that can drastically improve `apt` download times by downloading packages in parallel, with multiple connections per package.
 
 One can use `apt-fast` commands just like `apt` e.g., `sudo apt-fast update`, `sudo apt-fast dist-upgrade`.
 
