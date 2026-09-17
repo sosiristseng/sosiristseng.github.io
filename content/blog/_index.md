@@ -2,4 +2,4 @@
 title: Blog
 ---
 
-Tips and tricks.
+Tips and tricks written in blogs.
