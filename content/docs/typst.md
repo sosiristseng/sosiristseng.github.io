@@ -13,6 +13,8 @@ tags:
 
 ## Install Typst
 
+- [Typst](https://typst.app/) provides a web Typst editor with a generous free tier.
+
 [Binary releases from GitHub](https://github.com/typst/typst/releases/)
 
 Via winget (Windows):
