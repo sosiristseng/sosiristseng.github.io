@@ -9,7 +9,7 @@ Setup [ffmpeg](https://ffmpeg.org). See also [Arch Wiki: ffmpeg](https://wiki.ar
 
 <!--more-->
 
-## Install
+## Install ffmpeg
 
 **Ubuntu**
 
@@ -29,7 +29,9 @@ Or
 winget install Gyan.FFmpeg
 ```
 
-## Usage
+## Using ffmpeg
+
+- [ffmpeg docs](https://ffmpeg.org/ffmpeg.html)
 
 ### Simple stream copy
 
@@ -52,6 +54,8 @@ Options explained:
 
 - `-vn` : no video output.
 - `-an` : no audio output.
+- `-c:a`: copy audio stream
+- `-c:v`: opy video stream
 - `-{a,v}codec copy`: copy without re-encoding.
 
 ### Cutting videos
