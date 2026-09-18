@@ -25,11 +25,13 @@ tags:
 
 - [mdBook](https://github.com/rust-lang/mdBook) : Create book from markdown files. Like Gitbook but written in `Rust`. See also [GitHub actions for mdbook](https://github.com/peaceiris/actions-mdbook).
 - [zola](https://github.com/getzola/zola) : A fast static site generator in a single Rust binary with everything built-in. See also the [GitHub actions for Zola](https://github.com/TonySpegel/zola-build-action).
+- [zensical](https://zensical.org/) : Zensical builds scalable Open Source tools for technical writing, built by Material for MkDocs.
 
 ## Python-based
 
 - [Jupyter book](https://jupyterbook.org/) : Building beautiful, publication-quality books and documents from jupyter notebooks.
 - [Nikola](https://getnikola.com/) : Static Site Generator written in Python.
+- [Sphinx](https://www.sphinx-doc.org/) : Creating Python documentation websites.
 
 ## Julia-based
 
@@ -37,6 +39,7 @@ tags:
 - [PkgPage.jl](https://github.com/JuliaDocs/PkgPage.jl) : Creating (package) front-pages, powered by `Franklin.jl`.
 - [StaticWebPages.jl](https://github.com/Azzaare/StaticWebPages.jl) : Create academics and personal CV web-pages.
 - [PlutoStaticHTML.jl](https://github.com/rikhuijzer/PlutoStaticHTML.jl) : Convert Pluto notebooks to pure HTML files
+- [DocumenterVitepress.jl](https://github.com/LuxDL/DocumenterVitepress.jl) : Documentation with `Documenter.jl` and VitePress.
 
 ## JS-based
 
