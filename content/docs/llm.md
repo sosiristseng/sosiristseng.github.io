@@ -13,20 +13,21 @@ Large language models (LLMs), APIs, agents, and harnesses.
 - [Hugging face](https://huggingface.co/)
 - [Unsloth](https://unsloth.ai/docs)
 - [Club 3090](https://github.com/noonghunna/club-3090) : recipes for 3090/4090/5090 owners.
+- [MiaAI-Lab](https://github.com/MiaAI-Lab) : various recipes for popular models.
 
 ### Qwen3.8-27B
 
 - [Unsloth](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
-- [GSQ-RCO](https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF) : small quants
-- [Dirk](https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF) : concise reasoning with an updated chat template
-- [MiaAI-Lab](https://github.com/MiaAI-Lab/Qwen3.8-27B-SGLang-DGX-Spark) on one DGX Spark.
-- [MiaAI-Lab](https://github.com/MiaAI-Lab/Qwen3.8-27B-16gb-NVIDIA-GPUs-one-click-install) for one 16-24 GB GPU.
+- [ISTA: GSQ-RCO](https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF) : small quants
+- [Dirk](https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF) : concise reasoning with an updated chat template.
+- [MiaAI-Lab (SPARK)](https://github.com/MiaAI-Lab/Qwen3.8-27B-SGLang-DGX-Spark) on one DGX Spark.
+- [MiaAI-Lab (16GB)](https://github.com/MiaAI-Lab/Qwen3.8-27B-16gb-NVIDIA-GPUs-one-click-install) for one 16-24 GB GPU.
+- [Swift-Qwen3.8-27b](https://huggingface.co/ukisai/Swift-Qwen3.8-27b) : UkisAI's reasoning-efficient derivative of Qwen3.8-27B.
 
 ### Qwen3.8-Flash-Next
 
-- [Unsloth: Qwen3.8-Flash-Next](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF)
-- [qwen38-flash-next-spark](https://github.com/0xBakeer/qwen38-flash-next-spark) on one DGX Spark.
-- [MiaAI-Lab](https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark) on one DGX Spark.
+- [Unsloth](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF)
+- [MiaAI-Lab (SPARK)](https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark) on one DGX Spark. (NVFP4 quant)
 
 ### Gemma4
 
@@ -55,21 +56,20 @@ Large language models (LLMs), APIs, agents, and harnesses.
 
 ### llama.cpp
 
-- [llama.cpp GitHub repo](https://github.com/ggml-org/llama.cpp)
+- [llama.cpp](https://github.com/ggml-org/llama.cpp) GitHub repo
 - [beellama.cpp](https://github.com/Anbeeld/beellama.cpp) : `llama.cpp` fork supporting KVarN KV cache format.
 - [ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp) : `llama.cpp` fork with new quants and improved performance for MoE models.
 
 ### vLLM
 
-- [vllm GitHub repo](https://github.com/vllm-project/vllm)
+- [vllm](https://github.com/vllm-project/vllm) GitHub repo
 - [vllm-radiance](https://hub.docker.com/r/stilldeadcode/vllm-radiance) docker image for 2 R9700's.
 - [spark-vllm-docker](https://github.com/eugr/spark-vllm-docker) : vLLM docker images for DGX sparks.
 
 ### SGLang
 
-- [SGLang GitHub repo](https://github.com/sgl-project/sglang)
+- [SGLang](https://github.com/sgl-project/sglang) GitHub repo
 - [SGLang Cookbook](https://docs.sglang.io/cookbook/intro)
-- [MiaAI-Lab recipes](https://github.com/MiaAI-Lab?tab=repositories&type=source)
 
 ## MCP servers
 
@@ -81,7 +81,8 @@ Large language models (LLMs), APIs, agents, and harnesses.
 ## Agents and harnesses
 
 - [Codewhale](https://github.com/Hmbown/Codewhale)
-- [Deepseek harness](https://www.deepseek.com/harness/en/)
+- [Deepseek harness (DSH)](https://www.deepseek.com/harness/)
+- [deepseek reasonix](https://github.com/esengine/deepseek-reasonix) : cache-friendly
+- [Hermes agent](https://hermes-agent.nousresearch.com/)
 - [OpenCode](https://opencode.ai/)
 - [pi coding agent](https://pi.dev/)
-- [Qwen code](https://qwen.ai/qwencode)
