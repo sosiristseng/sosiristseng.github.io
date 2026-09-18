@@ -5,7 +5,7 @@ tags:
   - linux
 ---
 
-## Windows
+## Windows Environment variables
 
 [Environment variables in Powershell](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.3)
 
@@ -24,7 +24,7 @@ $Env:FOO
 + Powershell: `[Environment]::SetEnvironmentVariable('KEY', 'VAL', 'Machine')`
 + Cmd: `SETX KEY VAL`
 
-## Linux
+## Linux Environment variables
 
 [Arch Wiki: environment variables](https://wiki.archlinux.org/index.php/environment_variables)
 
