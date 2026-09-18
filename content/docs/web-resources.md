@@ -75,3 +75,10 @@ Generate CSS styles for your websites.
 - [Unreal Images](https://unrealimages.com/): Free curated AI arts
 - [Unsplash](https://unsplash.com/)
 - [Wikipedia commons](https://commons.wikimedia.org/wiki/Main_Page)
+
+## Web hosting
+
+- [Cloudflare pages](https://pages.cloudflare.com)
+- [GitHub pages](https://docs.github.com/en/pages)
+- [GitLab pages](https://docs.gitlab.com/ee/user/project/pages/)
+- [Netlify](https://www.netlify.com/)
