@@ -1,5 +1,5 @@
 ---
-title: Copy files in CLI
+title: Copy files
 tags:
   - ssh
   - linux
@@ -11,9 +11,9 @@ How to copy files with command-line tools.
 
 <!--more-->
 
-## Windows robocopy
+## Windows-specific
 
-See [robocopy](../docs/robocopy.md)
+See [robocopy](robocopy.md)
 
 ## tar
 
@@ -74,7 +74,7 @@ rsync -avh --progress sourcefolder /destinationfolder --exclude thefoldertoexclu
 
 How to copy files through the secure shell (SSH).
 
-### `tar`, pipe, and ssh commands
+### `tar`
 
 ```sh
 tar cvf - $localdir | ssh someone@somemachine '(cd destdir && tar xBf -)'
