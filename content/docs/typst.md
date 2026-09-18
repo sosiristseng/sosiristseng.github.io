@@ -13,12 +13,13 @@ tags:
 
 ## Install Typst
 
-[Binary releases](https://github.com/typst/typst/releases/)
+[Binary releases from GitHub](https://github.com/typst/typst/releases/)
 
-Via Winget (Windows):
+Via winget (Windows):
 
 ```sh
 winget install --id Typst.Typst
 ```
 
 - [VSCode extension](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
+- [Typstify](https://typstify.com/) is a cross-platform desktop editor for Typst.
