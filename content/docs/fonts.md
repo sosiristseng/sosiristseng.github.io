@@ -1,5 +1,7 @@
 ---
 title: Fonts
+tags:
+  - bookmarks
 ---
 
 - [Cascadia code](https://github.com/microsoft/cascadia-code) : a fun, new monospaced font developed for Windows Terminal (and friends).
