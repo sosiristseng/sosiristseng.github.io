@@ -76,13 +76,15 @@ Large language models (LLMs), APIs, agents, and harnesses.
 > Model Context Protocol (MCP)
 
 - [DuckDuckGo](https://github.com/nickclyde/duckduckgo-mcp-server)
-- [Julia](https://github.com/aplavin/julia-mcp)
+- [Julia](https://github.com/aplavin/julia-mcp) mcp
+- [Kaimon.jl](https://github.com/kahliburke/Kaimon.jl) : MCP server giving AI agents full access to Julia's runtime via a live Gate.
 
 ## Agents and harnesses
 
-- [Codewhale](https://github.com/Hmbown/Codewhale)
+- [Codewhale](https://codewhale.net/)
 - [Deepseek harness (DSH)](https://www.deepseek.com/harness/)
-- [deepseek reasonix](https://github.com/esengine/deepseek-reasonix) : cache-friendly
+- [deepseek reasonix](https://reasonix.io/) : cache-friendly harness for DeepSeek.
 - [Hermes agent](https://hermes-agent.nousresearch.com/)
+- [Minimax code](https://agent.minimaxi.com/docs/code/welcome)
 - [OpenCode](https://opencode.ai/)
 - [pi coding agent](https://pi.dev/)
