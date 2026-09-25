@@ -19,10 +19,10 @@ Large language models (LLMs), APIs, agents, and harnesses.
 
 - [Unsloth](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
 - [ISTA: GSQ-RCO](https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF) : small quants
-- [Dirk](https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF) : concise reasoning with an updated chat template.
 - [MiaAI-Lab (SPARK)](https://github.com/MiaAI-Lab/Qwen3.8-27B-SGLang-DGX-Spark) on one DGX Spark.
 - [MiaAI-Lab (16GB)](https://github.com/MiaAI-Lab/Qwen3.8-27B-16gb-NVIDIA-GPUs-one-click-install) for one 16-24 GB GPU.
-- [Swift-Qwen3.8-27b](https://huggingface.co/ukisai/Swift-Qwen3.8-27b) : UkisAI's reasoning-efficient derivative of Qwen3.8-27B.
+- [OrcaSAQ-2-27B](https://huggingface.co/orcarouter/OrcaSAQ-2-27B) : High-fidelity 3-bit Qwen3.8 for long-horizon agents.
+- [Swift-1.5-Qwen3.8-27b](https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF) : UkisAI's reasoning-efficient derivative of Qwen3.8-27B.
 
 ### Qwen3.8-Flash-Next
 
@@ -56,28 +56,20 @@ Large language models (LLMs), APIs, agents, and harnesses.
 
 ### llama.cpp
 
-- [llama.cpp](https://github.com/ggml-org/llama.cpp) GitHub repo
+- [llama.cpp](https://github.com/ggml-org/llama.cpp) GitHub repo.
 - [beellama.cpp](https://github.com/Anbeeld/beellama.cpp) : `llama.cpp` fork supporting KVarN KV cache format.
 - [ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp) : `llama.cpp` fork with new quants and improved performance for MoE models.
 
 ### vLLM
 
-- [vllm](https://github.com/vllm-project/vllm) GitHub repo
-- [vllm-radiance](https://hub.docker.com/r/stilldeadcode/vllm-radiance) docker image for 2 R9700's.
+- [vllm](https://github.com/vllm-project/vllm) GitHub repo.
+- [vllm-radiance](https://hub.docker.com/r/stilldeadcode/vllm-radiance) docker image for dual AMD R9700's.
 - [spark-vllm-docker](https://github.com/eugr/spark-vllm-docker) : vLLM docker images for DGX sparks.
 
 ### SGLang
 
-- [SGLang](https://github.com/sgl-project/sglang) GitHub repo
+- [SGLang](https://github.com/sgl-project/sglang) GitHub repo.
 - [SGLang Cookbook](https://docs.sglang.io/cookbook/intro)
-
-## MCP servers
-
-> Model Context Protocol (MCP)
-
-- [DuckDuckGo](https://github.com/nickclyde/duckduckgo-mcp-server)
-- [Julia](https://github.com/aplavin/julia-mcp) mcp
-- [Kaimon.jl](https://github.com/kahliburke/Kaimon.jl) : MCP server giving AI agents full access to Julia's runtime via a live Gate.
 
 ## Agents and harnesses
 
@@ -88,3 +80,11 @@ Large language models (LLMs), APIs, agents, and harnesses.
 - [Minimax code](https://agent.minimaxi.com/docs/code/welcome)
 - [OpenCode](https://opencode.ai/)
 - [pi coding agent](https://pi.dev/)
+
+### MCP servers
+
+> Model Context Protocol (MCP)
+
+- [DuckDuckGo](https://github.com/nickclyde/duckduckgo-mcp-server)
+- [Julia](https://github.com/aplavin/julia-mcp) mcp
+- [Kaimon.jl](https://github.com/kahliburke/Kaimon.jl) : MCP server giving AI agents full access to Julia's runtime via a live Gate.
