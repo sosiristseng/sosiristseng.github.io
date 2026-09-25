@@ -14,6 +14,7 @@ Large language models (LLMs), APIs, agents, and harnesses.
 - [Unsloth](https://unsloth.ai/docs)
 - [Club 3090](https://github.com/noonghunna/club-3090) : recipes for 3090/4090/5090 owners.
 - [MiaAI-Lab](https://github.com/MiaAI-Lab) : various recipes for popular models.
+- [exllamav3](https://github.com/turboderp-org/exllamav3) : ExLlamaV3 is an inference library for running local LLMs on modern consumer GPUs.
 
 ### Qwen3.8-27B
 
