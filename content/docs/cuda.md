@@ -13,6 +13,8 @@ Setup CUDA for NVIDIA GPUs.
 
 ### From the Ubuntu repository
 
+> Recommended for Ubuntu 26.04 and newer.
+
 ```sh
 sudo ubuntu-drivers install
 ```
@@ -24,7 +26,7 @@ Install nvidia CUDA runtime and compatible GPU driver from NVIDIA: https://devel
 Clean previous installations
 
 ```bash
-sudo apt autopurge 'cuda*' 'nvidia*'
+sudo apt remove --purge '*cuda*' '*nvidia*'
 ```
 
 Install drivers
@@ -32,7 +34,7 @@ Install drivers
 ```sh
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
 sudo dpkg -i cuda-keyring_1.1-1_all.deb
-sudo apt update && sudo apt -y install cuda-toolkit-13-0
+sudo apt update && sudo apt -y install cuda-toolkit-13-1
 ```
 
 Add the CUDA compiler (`nvcc`) to the system `PATH`:
@@ -54,16 +56,18 @@ wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/
 ### Power limit
 
 To monitor GPU power draw:
+
 ```bash
 nvidia-smi -q -d POWER -l 1 | grep "Power Draw"
 ```
 
-To limit power draw to 300W, the setting will reset after reboot.
+To limit power draw to 300W, this setting will be lost after reboot.
+
 ```bash
 sudo nvidia-smi -pl 300
 ```
 
-To apply power draw settings at boot, make a systemd service.
+To apply your power draw setting at boot, make it a systemd service.
 
 ```txt {filename="/etc/systemd/system/nvidia-tdp.timer"}
 [Unit]
@@ -91,23 +95,13 @@ And enable `nvidia-tdp.timer`.
 sudo systemctl enable nvidia-tdp.timer
 ```
 
-### Preserve video memory after suspend
-
-Fixes GUI corruptions after suspend and resume.
-
-And the following file to preserve video memory after suspend.
-
-```txt {filename="/etc/modprobe.d/nvidia.conf"}
-NVreg_PreserveVideoMemoryAllocations=1
-NVreg_TemporaryFilePath=/var/tmp
-```
-
-## Monitor GPU activities
+### Monitor GPU activities
 
 - `nvidia-smi`
-- `nvtop`: See [nvtop](nvtop.md)
+- `nvtop`: See [nvtop](nvtop.md).
+- `nvitop`: See [nvitop](nvitop.md)
 
-## Reload nvidia GPU driver
+### Reload nvidia GPU driver
 
 How to reload nvidia GPU driver to fix "NVML: Driver/library version mismatch" error after installing new nvidia driver. No rebooting required. [^1]
 
