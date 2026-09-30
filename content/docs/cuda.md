@@ -17,6 +17,7 @@ Setup CUDA for NVIDIA GPUs.
 
 ```sh
 sudo ubuntu-drivers install
+sudo apt install cuda-toolkit
 ```
 
 ### From nvidia
