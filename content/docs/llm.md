@@ -14,7 +14,7 @@ Large language models (LLMs), APIs, agents, and harnesses.
 - [Unsloth](https://unsloth.ai/docs)
 - [Club 3090](https://github.com/noonghunna/club-3090) : recipes for 3090/4090/5090 owners.
 - [MiaAI-Lab](https://github.com/MiaAI-Lab) : various recipes for popular models.
-- [exllamav3](https://github.com/turboderp-org/exllamav3) : ExLlamaV3 is an inference library for running local LLMs on modern consumer GPUs.
+- [exllamav3](https://github.com/turboderp-org/exllamav3) : ExLlamaV3 is an inference library for the EXL3 quantization format (smaller bit per weight).
 
 ### Qwen3.8-27B
 
@@ -28,7 +28,8 @@ Large language models (LLMs), APIs, agents, and harnesses.
 ### Qwen3.8-Flash-Next
 
 - [Unsloth](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF)
-- [MiaAI-Lab (SPARK)](https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark) on one DGX Spark. (NVFP4 quant)
+- [MiaAI-Lab](https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark-TensorFold) on one DGX Spark using TensorFold.
+- [Strata](https://github.com/Niko1221/Strata) : Qwen3.8-Flash-Next on any consumer hardware.
 
 ### Gemma4
 
