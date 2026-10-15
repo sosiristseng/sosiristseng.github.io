@@ -9,14 +9,15 @@ Setup CUDA for NVIDIA GPUs.
 
 <!--more-->
 
-## Install drivers
+## Install CUDA drivers
 
 ### From the Ubuntu repository
 
 > Recommended for Ubuntu 26.04 and newer.
 
 ```sh
-sudo ubuntu-drivers install
+sudo ubuntu-drivers list
+sudo ubuntu-drivers install  # Install the recommended driver
 sudo apt install cuda-toolkit
 ```
 
@@ -24,13 +25,13 @@ sudo apt install cuda-toolkit
 
 Install nvidia CUDA runtime and compatible GPU driver from NVIDIA: https://developer.nvidia.com/cuda-toolkit (*For Ubuntu 24.04*)
 
-Clean previous installations
+First clean previous CUDA installations.
 
 ```bash
 sudo apt remove --purge '*cuda*' '*nvidia*'
 ```
 
-Install drivers
+Then install drivers
 
 ```sh
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
@@ -49,6 +50,8 @@ For WSL2, install Windows NVIDIA GPU driver first; then install the CUDA toolkit
 ```sh
 wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pinsudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600wget https://developer.download.nvidia.com/compute/cuda/13.0.2/local_installers/cuda-repo-wsl-ubuntu-13-0-local_13.0.2-1_amd64.debsudo dpkg -i cuda-repo-wsl-ubuntu-13-0-local_13.0.2-1_amd64.debsudo cp /var/cuda-repo-wsl-ubuntu-13-0-local/cuda-*-keyring.gpg /usr/share/keyrings/sudo apt-get updatesudo apt-get -y install cuda-toolkit-13-0
 ```
+
+See [docker](docker.md) for how to setup docker containers running CUDA.
 
 ## Tweaks
 
@@ -95,6 +98,16 @@ And enable `nvidia-tdp.timer`.
 ```sh
 sudo systemctl enable nvidia-tdp.timer
 ```
+
+### Lock GPU frequency
+
+To lock the GPU frequency from 0 to 2200 MHz, run the following command
+
+```sh
+sudo nvidia-smi -lgc 0,2200
+```
+
+To make to change persistent over reboots, one can use the similar method above or use [Spark Limiter](https://github.com/MiaAI-Lab/sparkLimiter) to re-apply the setting at boot.
 
 ### Monitor GPU activities
 
