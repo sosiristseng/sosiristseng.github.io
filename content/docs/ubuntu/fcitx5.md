@@ -5,7 +5,7 @@ tags:
   - linux
 ---
 
-[Fcitx](https://wiki.archlinux.org/index.php/Fcitx) is a lightweight input method framework that provides environment-independent language support for Linux. The development energy mainly focuses on the release of the new [version 5](https://wiki.archlinux.org/index.php/Fcitx5).
+[Fcitx](https://wiki.archlinux.org/title/Fcitx5) is a lightweight input method framework that provides environment-independent language support for Linux.
 
 ## Install Fcitx5
 

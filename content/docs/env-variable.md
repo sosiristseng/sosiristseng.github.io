@@ -26,7 +26,7 @@ $Env:FOO
 
 ## Linux Environment variables
 
-[Arch Wiki: environment variables](https://wiki.archlinux.org/index.php/environment_variables)
+[Arch Wiki: environment variables](https://wiki.archlinux.org/title/Environment_variables)
 
 ### System-wide
 
