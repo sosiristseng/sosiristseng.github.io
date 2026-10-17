@@ -1,19 +1,14 @@
 ---
-title: Ubuntu
+title: Ubuntu postinstall
 tags:
 - linux
-- postinstall
 ---
 
 Things to do after installing Ubuntu
 
-- [Ubuntu](https://ubuntu.com/download) desktop and server
-- [Kubuntu](https://kubuntu.org/)
-- [WSL2](https://docs.microsoft.com/zh-tw/windows/wsl/install)
-
 <!--more-->
 
-## Make software repo point to NCHC for faster network speed
+## Change software repository source (optional)
 
 You can replace `archive.ubuntu.com` with a closer mirror, e.g., `tw.archive.ubuntu.com` or `free.nchc.org.tw` in `/etc/apt/sources.list.d/ubuntu.sources`. After you are done, run:
 
@@ -23,17 +18,15 @@ sudo apt clean && sudo apt update && sudo apt full-upgrade -y
 
 ## Install 3rd party apps
 
-First, install required package
-
 ```bash
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-- [docker](docker.md)
-- [firefox](firefox.md)
-- [vscode](vscode.md)
-- [cuda](cuda.md)
-- [git](./dev/git/_index.md)
+- [docker](../docker.md)
+- [firefox](../web/firefox.md)
+- [vscode](../vscode.md)
+- [cuda](../cuda.md)
+- [git](../git/_index.md)
 
 ### Brave browser
 
@@ -136,10 +129,11 @@ sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gno
 
 ## System tweaks
 
-- Input methods
-  - [fcitx](linux/fcitx5.md)
-  - [ibus](linux/ibus.md)
-- [Themes](linux/themes-linux.md)
+Input methods
+  - [fcitx](fcitx5.md)
+  - [ibus](ibus.md)
+
+[Linux Themes](./themes.md)
 
 ### Fix locales
 
@@ -151,7 +145,7 @@ sudo locale-gen
 
 Finally, install the Traditional Chinese locale in `Language Support` and then set locale to `Taiwan`.
 
-### (Optional) Remove snap
+### Remove snap (optional)
 
 List snap packages
 
@@ -171,20 +165,6 @@ Stop the snapd service and uninstall it
 sudo systemctl stop snapd
 sudo apt remove --autoremove --purge snapd
 sudo apt-mark hold snapd
-```
-
-### Terminal
-
-- [Nerd fonts](https://www.nerdfonts.com/)
-- https://github.com/denysdovhan/one-gnome-terminal : One Dark color theme for gnome-terminal
-
-### Temporary files in RAM disk
-
-Setting `tmpfs` (RAM disk) for the `/tmp` folder:
-
-```bash
-sudo cp -v /usr/share/systemd/tmp.mount /etc/systemd/system/
-sudo systemctl enable tmp.mount
 ```
 
 ### Disable Extended Security Maintenance (ESM)
@@ -249,5 +229,4 @@ sudo update-grub
 ## Misc.
 
 - [FreeFileSync](https://freefilesync.org/)
-- [Pandoc](https://github.com/jgm/pandoc/releases/)
 - [Virtualbox](https://www.virtualbox.org/)

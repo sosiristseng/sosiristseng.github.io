@@ -112,8 +112,8 @@ To make to change persistent over reboots, one can use the similar method above 
 ### Monitor GPU activities
 
 - `nvidia-smi`
-- `nvtop`: See [nvtop](nvtop.md).
-- `nvitop`: See [nvitop](nvitop.md)
+- `nvtop`: See [nvtop](cli-tui/nvtop.md).
+- `nvitop`: See [nvitop](cli-tui/nvitop.md)
 
 ### Reload nvidia GPU driver
 

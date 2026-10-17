@@ -10,7 +10,7 @@ tags:
 
 **Install and run**
 
-Needs uv the Python package manager.
+The simplest way to run glances is via the `uv` Python package manager.
 
 ```sh
 ## Update every 1 second

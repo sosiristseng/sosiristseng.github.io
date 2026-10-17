@@ -61,7 +61,7 @@ git config --global rebase.autoStash true
 
 ### Login to GitHub and GitLab via SSH keys
 
-See [this post](../blog/git-ssh-login.md).
+See [this post](../../blog/git-ssh-login.md).
 
 ## Usage
 
@@ -210,7 +210,7 @@ From a [stackOverflow post](https://stackoverflow.com/questions/5828324/update-g
 git submodule update --remote --merge
 ```
 
-For automated updates by bots, see [automatic dependency update](../../../blog/github/gha-auto-deps-update.md).
+For automated updates by bots, see [automatic dependency update](../../../../blog/github/gha-auto-deps-update.md).
 
 #### Remove a submodule
 

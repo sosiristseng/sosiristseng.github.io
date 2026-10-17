@@ -1,7 +1,5 @@
 ---
 title: Markdown
-toc: true
-type: docs
 tags:
 - markdown
 - bookmarks

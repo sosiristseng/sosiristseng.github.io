@@ -1,3 +1,3 @@
 ---
-title: Course notes
+title: School course notes
 ---
