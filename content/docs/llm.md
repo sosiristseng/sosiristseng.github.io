@@ -93,12 +93,12 @@ Large language models (LLMs), APIs, agents, and harnesses.
 
 - [Deepseek harness (DSH)](https://www.deepseek.com/harness/)
   - [Deepseek plugins](https://deepseekplugin.com/)
-- [deepseek reasonix](https://reasonix.io/) : cache-friendly harness for DeepSeek.
+- [Deepseek reasonix](https://reasonix.io/) : cache-friendly harness for DeepSeek.
 
 ### MCP servers
 
 > Model Context Protocol (MCP)
 
 - [DuckDuckGo](https://github.com/nickclyde/duckduckgo-mcp-server)
-- [Julia](https://github.com/aplavin/julia-mcp) mcp
+- [Julia](https://github.com/aplavin/julia-mcp) : MCP server for persistent Julia sessions
 - [Kaimon.jl](https://github.com/kahliburke/Kaimon.jl) : MCP server giving AI agents full access to Julia's runtime via a live Gate.
