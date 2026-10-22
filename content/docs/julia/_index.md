@@ -3,14 +3,19 @@ title: Julia
 tags:
   - julia
   - development
+  - bookmarks
 ---
 
-Topics specific to the [Julia](https://docs.julialang.org/en/v1/) programming language.
+Topics of the [Julia](https://docs.julialang.org/) programming language.
 
-- [Gens Julia](https://gensjulia.pages.dev/), my Julia resource list adapted from `Julia.jl`.
+- [Gens Julia](https://gensjulia.pages.dev/), my Julia resource list adapted from `Julia.jl`. See also [my Julia stack](julia-stack.md).
 - [Julia Package Setup Tutorial](https://bjack205.github.io/tutorial/2021/07/16/julia_package_setup.html)
 - [Julia packages (JuliaHub)](https://juliahub.com/ui/Packages)
 - [Julia discourse forum](https://discourse.julialang.org/)
-- [Solving PDEs in parallel on GPUs with Julia](https://pde-on-gpu.vaw.ethz.ch/) : a Julia course
+- [Solving PDEs in parallel on GPUs with Julia](https://pde-on-gpu.vaw.ethz.ch/)
 - [Parallel Computing and Scientific Machine Learning (SciML): Methods and Applications](https://book.sciml.ai/)
 - [Modern Julia Workflows](https://modernjuliaworkflows.github.io/)
+
+## Setup Julia
+
+See [Julia setup](julia-setup.md).

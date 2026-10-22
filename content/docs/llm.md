@@ -23,6 +23,7 @@ Large language models (LLMs), APIs, agents, and harnesses.
 - [Swift-1.5-Qwen3.8-27b](https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF) : UkisAI's reasoning-efficient derivative of Qwen3.8-27B.
 - [MiaAI-Lab](https://github.com/MiaAI-Lab/Qwen3.8-27B-16gb-NVIDIA-GPUs-one-click-install) for one 16-24 GB GPU.
 - [ninfer-4090](https://github.com/sergiuszm/ninfer-4090) : Qwen3.8-27B on one RTX 4090.
+- [ninfer](https://github.com/Neroued/ninfer) : C++/CUDA inference engine for explicitly registered Qwen checkpoints on a single NVIDIA GeForce RTX 5090.
 
 ### Qwen3.8-Flash-Next
 
@@ -33,6 +34,10 @@ Large language models (LLMs), APIs, agents, and harnesses.
 ### GLM-5.3-Flash
 
 - [Project Maya](https://github.com/mw00/project-maya) : run GLM-5.3-Flash (321B MoE) privately on your own GPU(s).
+
+### Deepseek 4.1 flash
+
+- [Project Maya](https://github.com/mw00/project-maya) : run Deepseek 4.1 flash privately on your own GPU(s).
 
 ### Gemma4
 
@@ -51,18 +56,16 @@ Large language models (LLMs), APIs, agents, and harnesses.
 
 - [evo2](https://github.com/ArcInstitute/evo2)
 
-## Inference engine
+## Inference engine and front ends
 
 - [exllamav3](https://github.com/turboderp-org/exllamav3) : ExLlamaV3 is an inference library for the EXL3 quantization format (smaller bit per weight).
 - [FreeToken](https://github.com/FlashML-org/FreeToken) : Optimized for MoE models.
 - [Lemonade](https://lemonade-server.ai/) for AMD GPUs.
 - [Lucebox](https://github.com/Luce-Org/lucebox)
-- [ninfer](https://github.com/Neroued/ninfer) : C++/CUDA inference engine for explicitly registered Qwen checkpoints on a single NVIDIA GeForce RTX 5090.
-- [ninfer-4090](https://github.com/sergiuszm/ninfer-4090) : Qwen3.8-27B on one RTX 4090.
 - [Project Maya](https://github.com/mw00/project-maya) : run GLM-5.3-Flash (321B MoE) and DS4.1f privately on your own GPU(s).
-- [Strata](https://github.com/Niko1221/Strata) : run Qwen3.8-Flash-Next from 12GB+ VRAM with smart expert caching.
 - [TensorFold](https://github.com/ashhart/TensorFold) : LLM Inference Engine for Metal and CUDA.
 - [Unsloth desktop](https://unsloth.ai/docs/desktop)
+- [open-webui](https://github.com/open-webui/open-webui) : User-friendly AI Interface supporting multiple backends.
 
 ### llama.cpp
 
