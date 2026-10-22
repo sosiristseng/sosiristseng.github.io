@@ -14,7 +14,6 @@ Large language models (LLMs), APIs, agents, and harnesses.
 - [Unsloth](https://unsloth.ai/docs)
 - [Club 3090](https://github.com/noonghunna/club-3090) : recipes for 3090/4090/5090 owners.
 - [MiaAI-Lab](https://github.com/MiaAI-Lab) : various recipes for popular models.
-- [exllamav3](https://github.com/turboderp-org/exllamav3) : ExLlamaV3 is an inference library for the EXL3 quantization format (smaller bit per weight).
 - [llmspeed](https://llmspeed.dev/) : Feel how fast a local LLM runs before you buy the hardware
 
 ### Qwen3.8-27B
@@ -22,9 +21,8 @@ Large language models (LLMs), APIs, agents, and harnesses.
 - [Unsloth](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
 - [ISTA: GSQ-RCO](https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF) : small quants
 - [Swift-1.5-Qwen3.8-27b](https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF) : UkisAI's reasoning-efficient derivative of Qwen3.8-27B.
-- [MiaAI-Lab (SPARK)](https://github.com/MiaAI-Lab/Qwen3.8-27B-SGLang-DGX-Spark) on one DGX Spark.
-- [MiaAI-Lab (16GB)](https://github.com/MiaAI-Lab/Qwen3.8-27B-16gb-NVIDIA-GPUs-one-click-install) for one 16-24 GB GPU.
-- [OrcaSAQ-2-27B](https://huggingface.co/orcarouter/OrcaSAQ-2-27B) : High-fidelity 3-bit Qwen3.8 for long-horizon agents.
+- [MiaAI-Lab](https://github.com/MiaAI-Lab/Qwen3.8-27B-16gb-NVIDIA-GPUs-one-click-install) for one 16-24 GB GPU.
+- [ninfer-4090](https://github.com/sergiuszm/ninfer-4090) : Qwen3.8-27B on one RTX 4090.
 
 ### Qwen3.8-Flash-Next
 
@@ -55,13 +53,16 @@ Large language models (LLMs), APIs, agents, and harnesses.
 
 ## Inference engine
 
-- [Unsloth desktop](https://unsloth.ai/docs/desktop)
+- [exllamav3](https://github.com/turboderp-org/exllamav3) : ExLlamaV3 is an inference library for the EXL3 quantization format (smaller bit per weight).
 - [FreeToken](https://github.com/FlashML-org/FreeToken) : Optimized for MoE models.
 - [Lemonade](https://lemonade-server.ai/) for AMD GPUs.
 - [Lucebox](https://github.com/Luce-Org/lucebox)
 - [ninfer](https://github.com/Neroued/ninfer) : C++/CUDA inference engine for explicitly registered Qwen checkpoints on a single NVIDIA GeForce RTX 5090.
+- [ninfer-4090](https://github.com/sergiuszm/ninfer-4090) : Qwen3.8-27B on one RTX 4090.
+- [Project Maya](https://github.com/mw00/project-maya) : run GLM-5.3-Flash (321B MoE) and DS4.1f privately on your own GPU(s).
 - [Strata](https://github.com/Niko1221/Strata) : run Qwen3.8-Flash-Next from 12GB+ VRAM with smart expert caching.
-- [Project Maya](https://github.com/mw00/project-maya) : run GLM-5.3-Flash (321B MoE) privately on your own GPU(s).
+- [TensorFold](https://github.com/ashhart/TensorFold) : LLM Inference Engine for Metal and CUDA.
+- [Unsloth desktop](https://unsloth.ai/docs/desktop)
 
 ### llama.cpp
 
