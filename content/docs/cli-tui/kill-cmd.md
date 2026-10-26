@@ -1,5 +1,5 @@
 ---
-title: Kill processes in Linux
+title: Kill command
 date: 2024-04-21
 tags:
   - linux

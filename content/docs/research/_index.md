@@ -5,6 +5,7 @@ tags:
 ---
 
 > Tools for academic research
+> See also the [Document processing](../doc-proc/_index.md) section
 
 - [awesome-research](https://github.com/emptymalei/awesome-research)
 - [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/) : A web based tool to extract data from plots, images, and maps

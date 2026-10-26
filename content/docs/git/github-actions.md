@@ -416,5 +416,5 @@ In the repository settings => Pages => Build and deployment => Select `Deploy fr
 
 ## See also
 
-- [Status check for a multi-stage workflow](../../blog/gha-status-check-job.md)
+- [Status check for a multi-stage workflow](./gha-status-check-job.md)
 - [Docker in GitHub actions](../ubuntu/docker.md#docker-in-github-actions)

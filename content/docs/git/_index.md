@@ -61,7 +61,7 @@ git config --global rebase.autoStash true
 
 ### Login to GitHub and GitLab via SSH keys
 
-See [this post](../../blog/git-ssh-login.md).
+See [this post](./git-ssh-login.md).
 
 ## Usage
 

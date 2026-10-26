@@ -1,5 +1,5 @@
 ---
-title: Check battery status in Windows
+title: Check battery status
 date: 2024-03-28
 tags:
   - windows

@@ -10,7 +10,7 @@ If you run a multi-stage workflow with [status checks](https://docs.github.com/e
 
 <!--more-->
 
-We could instead list all A, B, and C jobs as required jobs, but this is tedious and could not be done in [dynamic matrix](gha-dynamic-parallel-gha.md). But there is a workaround. We could add an additional job that is always executed and bails out when the required job is not successful. The branch protection rules can depend on this job to determine whether this workflow is successful or not.
+We could instead list all A, B, and C jobs as required jobs, but this is tedious and could not be done in [dynamic matrix](../../blog/gha-dynamic-parallel-gha.md). But there is a workaround. We could add an additional job that is always executed and bails out when the required job is not successful. The branch protection rules can depend on this job to determine whether this workflow is successful or not.
 
 ```yaml
 jobs:
