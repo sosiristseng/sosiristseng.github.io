@@ -1,7 +1,5 @@
 ---
 title: LLMs
-toc: true
-type: docs
 tags:
 - bookmarks
 ---
