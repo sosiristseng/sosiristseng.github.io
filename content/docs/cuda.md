@@ -51,7 +51,7 @@ For WSL2, install Windows NVIDIA GPU driver first; then install the CUDA toolkit
 wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pinsudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600wget https://developer.download.nvidia.com/compute/cuda/13.0.2/local_installers/cuda-repo-wsl-ubuntu-13-0-local_13.0.2-1_amd64.debsudo dpkg -i cuda-repo-wsl-ubuntu-13-0-local_13.0.2-1_amd64.debsudo cp /var/cuda-repo-wsl-ubuntu-13-0-local/cuda-*-keyring.gpg /usr/share/keyrings/sudo apt-get updatesudo apt-get -y install cuda-toolkit-13-0
 ```
 
-See [docker](docker.md) for how to setup docker containers running CUDA.
+See [docker](ubuntu/docker.md) for how to setup docker containers running CUDA.
 
 ## Tweaks
 

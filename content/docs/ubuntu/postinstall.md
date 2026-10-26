@@ -22,7 +22,7 @@ sudo apt clean && sudo apt update && sudo apt full-upgrade -y
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common
 ```
 
-- [docker](../docker.md)
+- [docker](./docker.md)
 - [firefox](../web/firefox.md)
 - [vscode](../vscode.md)
 - [cuda](../cuda.md)

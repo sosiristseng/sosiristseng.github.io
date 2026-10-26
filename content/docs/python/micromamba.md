@@ -4,7 +4,7 @@ tags:
   - python
 ---
 
-[`micromamba`](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) is a fully statically-linked, self-contained, package manager for [Python](python.md).
+[`micromamba`](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) is a fully statically-linked, self-contained, package manager for [Python](_index.md).
 
 ## Installation
 
