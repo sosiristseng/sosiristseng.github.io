@@ -10,6 +10,12 @@ Setup [Firefox browser](https://www.mozilla.org/firefox)
 
 ## Install firefox
 
+**Windows**
+
+```powershell
+winget install -e --id Mozilla.Firefox
+```
+
 **Ubuntu (deb)**
 
 Install Firefox from Mozilla's repo
@@ -36,20 +42,6 @@ Pin-Priority: 1000
 
 # Update your package list and install the Firefox .deb package:
 sudo apt update && sudo apt install -y firefox firefox-l10n-zh-tw
-```
-
-**Windows**
-
-chocolatey:
-
-```powershell
-choco install firefox
-```
-
-winget:
-
-```powershell
-winget install Mozilla.Firefox
 ```
 
 ## Advanced settings

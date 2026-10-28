@@ -31,3 +31,4 @@ The following tools make installation USB keys from ISO files.
 ## See also
 
 - [Awesome Linux software](https://github.com/luong-komorebi/Awesome-Linux-Software)
+- [Things to do after Ubuntu install](postinstall.md)
