@@ -1,5 +1,5 @@
 ---
-title: firefox
+title: Firefox
 tags:
   - web
 ---
@@ -55,6 +55,8 @@ winget install Mozilla.Firefox
 ## Advanced settings
 
 Enter `about:config` in the location bar.
+
+Or you can place a custom `user.js` file at the root directory of your profile (via `about:profiles`)
 
 - My custom `user.js` file is on [my dotfiles repo](https://github.com/sosiristseng/dotfiles/blob/main/firefox/user.js).
 - [Betterfox](https://github.com/yokoffing/Betterfox), the Firefox `user.js` for speed, privacy, and security.
