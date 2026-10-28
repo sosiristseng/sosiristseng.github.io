@@ -28,10 +28,12 @@ See also [Oh my tmux](https://github.com/gpakosz/.tmux), a versatile tmux config
 
 ## SSH + tmux
 
-To connect a remote tmux session via SSH,
+To connect a remote tmux session via SSH:
 
 ```bash
 ssh -t user@host tmux new -A -s ssh_tmux
 ```
 
 Or log in and then run `tmux`.
+
+See also [SSH](ssh.md)
