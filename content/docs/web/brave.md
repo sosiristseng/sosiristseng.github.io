@@ -14,6 +14,8 @@ winget install --id Brave.Brave -e
 
 **Linux**
 
+Install Brave origin
+
 ```sh
 curl -fsS https://dl.brave.com/install.sh | FLAVOR=origin sh
 ```
