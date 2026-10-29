@@ -25,7 +25,7 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 - [docker](./docker.md)
 - [firefox](../web/firefox.md)
 - [vscode](../vscode.md)
-- [cuda](../cuda.md)
+- [cuda](./cuda.md)
 - [git](../git/_index.md)
 - [brave](../web/brave.md)
 

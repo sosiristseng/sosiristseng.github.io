@@ -25,7 +25,7 @@ sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io doc
 
 ## NVIDIA GPU support
 
-1. Setup nvidia driver. See [cuda](../cuda.md).
+1. Setup nvidia driver. See [cuda](./cuda.md).
 2. Install [the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation)
 
 ```sh
