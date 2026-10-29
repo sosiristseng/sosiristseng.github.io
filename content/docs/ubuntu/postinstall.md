@@ -100,22 +100,22 @@ Where `$VERSION` is the Ubuntu version.
 sudo apt update && sudo apt full-upgrade -y
 ```
 
-Ubuntu server:
-
-```sh
-sudo apt install -y git git-lfs cifs-utils ssh parallel ncdu ppa-purge zsh
-```
-
 Ubuntu:
 
 ```sh
-sudo apt install -y git git-lfs cifs-utils ssh gnome-shell-extension-manager parallel baobab ncdu synaptic apt-xapian-index ppa-purge ubuntu-restricted-extras ffmpeg vlc mcomix fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer zsh
+sudo apt install -y git git-lfs cifs-utils ssh parallel nala ncdu ppa-purge zsh fail2ban btrfs-compsize
+```
+
+Ubuntu (gnome desktop)
+
+```sh
+sudo apt install -y gnome-shell-extension-manager baobab synaptic apt-xapian-index ubuntu-restricted-extras ffmpeg vlc mcomix fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer
 ```
 
 Kubuntu:
 
 ```sh
-sudo apt install -y git git-lfs cifs-utils ssh nala parallel ncdu kio-extras gnome-keyring ppa-purge kubuntu-restricted-extras ffmpeg vlc fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer zsh btrfs-compsize synaptic apt-xapian-index
+sudo apt install -y kio-extras gnome-keyring ppa-purge kubuntu-restricted-extras ffmpeg vlc fonts-wqy-microhei fonts-wqy-zenhei fonts-open-sans ttf-mscorefonts-installer synaptic apt-xapian-index
 ```
 
 ## System tweaks
