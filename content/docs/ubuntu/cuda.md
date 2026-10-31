@@ -9,11 +9,11 @@ Setup CUDA for NVIDIA GPUs.
 
 <!--more-->
 
-## Install CUDA drivers
+## Setup CUDA
 
 ### From the Ubuntu repository
 
-> Recommended for Ubuntu 26.04 and newer.
+> Recommended for Ubuntu 26.04 and later.
 
 ```sh
 sudo ubuntu-drivers list
@@ -23,9 +23,9 @@ sudo apt install cuda-toolkit
 
 ### From nvidia
 
-Install nvidia CUDA runtime and compatible GPU driver from NVIDIA: https://developer.nvidia.com/cuda-toolkit (*For Ubuntu 24.04*)
+Install nvidia CUDA runtime and compatible GPU driver from NVIDIA: https://developer.nvidia.com/cuda-toolkit (*For Ubuntu 26.04*)
 
-First clean previous CUDA installations.
+First clear previous nvidia drivers and CUDA installations.
 
 ```bash
 sudo apt remove --purge '*cuda*' '*nvidia*'
@@ -34,21 +34,16 @@ sudo apt remove --purge '*cuda*' '*nvidia*'
 Then install drivers
 
 ```sh
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2604/x86_64/cuda-keyring_1.1-1_all.deb
 sudo dpkg -i cuda-keyring_1.1-1_all.deb
-sudo apt update && sudo apt -y install cuda-toolkit-13-1
+sudo apt-get update && sudo apt-get -y install cuda-toolkit-13-4
 ```
 
-Add the CUDA compiler (`nvcc`) to the system `PATH`:
+Add the CUDA compiler (`nvcc`) and its libraries to your `PATH`:
 
 ```sh {filename="~/.profile"}
-export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
-```
-
-For WSL2, install Windows NVIDIA GPU driver first; then install the CUDA toolkit in the WSL.
-
-```sh
-wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pinsudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600wget https://developer.download.nvidia.com/compute/cuda/13.0.2/local_installers/cuda-repo-wsl-ubuntu-13-0-local_13.0.2-1_amd64.debsudo dpkg -i cuda-repo-wsl-ubuntu-13-0-local_13.0.2-1_amd64.debsudo cp /var/cuda-repo-wsl-ubuntu-13-0-local/cuda-*-keyring.gpg /usr/share/keyrings/sudo apt-get updatesudo apt-get -y install cuda-toolkit-13-0
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 ```
 
 See [docker](docker.md) for how to setup docker containers running CUDA.
