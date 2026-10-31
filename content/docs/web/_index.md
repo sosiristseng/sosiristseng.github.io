@@ -5,6 +5,8 @@ tags:
   - bookmarks
 ---
 
+> Web and networking-related stuff
+
 ## CSS
 
 Generate CSS styles for your websites.

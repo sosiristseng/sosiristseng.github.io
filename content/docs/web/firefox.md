@@ -20,7 +20,7 @@ winget install -e --id Mozilla.Firefox
 
 Install Firefox from Mozilla's repo
 
-```bash
+```sh
 # Create a directory to store APT repository keys if it doesn't exist:
 sudo install -d -m 0755 /etc/apt/keyrings
 

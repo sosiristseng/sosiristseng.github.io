@@ -30,7 +30,7 @@ curl -fsS https://dl.brave.com/install.sh | FLAVOR=origin sh
 
 > Make sure the target path R:\BraveUserData exists and that the User Data folder doesn't already exist (move/back it up first, since Brave must be closed).
 
-```
+```powershell
 mklink /D "%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\" "R:\BraveUserData"
 ```
 
