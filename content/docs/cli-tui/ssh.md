@@ -36,6 +36,7 @@ Get-NetFirewallRule -Name *ssh*
 ```
 
 If the rule is missing, create it manually
+
 ```powershell
 New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
 ```
@@ -89,7 +90,6 @@ Add the following content to set the *private key* as the `IdentityFile`.
 ```txt {filename="~/.ssh/config"}
 Host *
     ServerAliveInterval 60    # Send a keep-alive packet every 60 seconds to prevent disconnection
-    AddKeysToAgent yes        # Automatically add keys to the ssh-agent
 
 # Define a host alias named "myserver"
 Host myserver
@@ -115,9 +115,93 @@ type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh user@your-server-ip "mkdir -p ~/
 ssh-copy-id -i ~/.ssh/id_ed25519.pub user@your-server-ip
 ```
 
+### Harden your SSH server
+
+Once you have established key-based (password-less) sudoer login. Consider disable login via a password to enhance security, especially when your PC is exposed to the internet. (directly or via port-forwarding)
+
+Add a custom sshd config file
+
+```sh
+sudo nano /etc/ssh/sshd_config.d/10-custom.conf
+```
+
+with the content similar to this. [sshd config options](https://man7.org/linux/man-pages/man5/sshd_config.5.html).
+
+```txt {filename="/etc/ssh/sshd_config.d/10-custom.conf"}
+# /etc/ssh/sshd_config.d/10-custom.conf
+# Custom sshd config by Wen-Wei Tseng (sosiristseng)
+PasswordAuthentication no
+PermitRootLogin no
+# AllowUsers sosiristseng
+X11Forwarding no
+AllowAgentForwarding no
+ClientAliveInterval 300
+ClientAliveCountMax 2
+```
+
+After saving the file, test your configuration,
+
+```sh
+sudo sshd -t
+```
+
+Normally this should not print any output. If everything is right, restart the SSH service.
+
+```sh
+sudo systemctl restart ssh
+```
+
+### Key-based login for a new user
+
+Adapted from [casper network docs](https://docs.casper.network/operators/setup/non-root-user).
+
+1. Generate an SSH key pair in the user's computer
+
+```sh
+ssh-keygen -t ed25519 -C "newuser@myPC"
+```
+
+The new user should keep the private key in safety and give the admin the public key (`~/.ssh/id_ed25519.pub`).
+
+2. Create the user on the server
+
+Assuming the admin already logging in the server, create an account for the user.
+
+```sh
+sudo adduser <username>
+```
+
+3. Switch to that user and set up ssh access
+
+```sh
+sudo su - <username>
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+touch ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+```
+
+4. Paste the content of the public key `id_ed25519.pub` into `.ssh/authorized_keys`.
+
+```sh
+echo "ssh-ed25519 AAAAC3Nza... newuser@myPC" | tee -a ~/.ssh/authorized_keys
+```
+
+5. Exit the current session, and verify the new connection.
+
+```sh
+ssh -i ~/.ssh/id_ed25519 <username>@server_ip
+```
+
 ### Accessing GitHub repositories via SSH
 
-Edit `~/.ssh/config`
+Add `~/.ssh/config`
+
+```sh
+nano ~/.ssh/config
+```
+
+with the following content
 
 ```txt {filename="~/.ssh/config"}
 Host GitHub
