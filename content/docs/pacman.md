@@ -40,7 +40,7 @@ pacman -S --needed - < pkgs.txt
 
 The [Arch User Repository (AUR)](https://aur.archlinux.org) hosts community-contributed `PKGBUILD`s, instructions to download and build a packages.
 
-While you could clone the `PKGBUILD` files and run `makepkg -si ` manually, [AUR helpers](https://wiki.archlinux.org/index.php/AUR_helpers) automate these process, giving a similar experience for installing regular packages in `pacman`.
+While you could clone the `PKGBUILD` files and run `makepkg -si ` manually, [AUR helpers](https://wiki.archlinux.org/title/AUR_helpers) automate these process, giving a similar experience for installing regular packages in `pacman`.
 
 ### pikaur
 
@@ -121,7 +121,7 @@ To customize compilation options, a good starting point is to copy from the syst
 cp /etc/makepkg.conf ~/.makepkg.conf
 ```
 
-to you own `~/.makepkg.conf` [makepkg@ArchWiki](https://wiki.archlinux.org/index.php/Makepkg). However, `PKGBUILD` settings in the  packages still have higher priorities and can override your settings.
+to you own `~/.makepkg.conf` [makepkg@ArchWiki](https://wiki.archlinux.org/title/Makepkg). However, `PKGBUILD` settings in the  packages still have higher priorities and can override your settings.
 
 #### CPU target for building optimized binaries
 
