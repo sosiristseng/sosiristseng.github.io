@@ -70,7 +70,7 @@ Use them with `llama.cpp`.
 ## Document processing
 
 - [docling](https://github.com/docling-project/docling)
-- [mINERu](https://github.com/opendatalab/mineru)
+- [MinerU](https://github.com/opendatalab/mineru)
 
 ## Biology
 
