@@ -13,13 +13,6 @@ See also [The Ultimate Windows Development Environment Guide](https://unicorn-ut
 - [starship](https://starship.rs/) : a cross-shell prompt.
 - [Oh My Posh](https://ohmyposh.dev/) : a cross-shell prompt.
 
-### List of winget packages
-
-[winget](https://learn.microsoft.com/zh-tw/windows/package-manager/winget/) is a command-line package manager for Windows.
-
-- [winget.run](https://winget.run/)
-- [winstall](https://winstall.app/)
-
 ## Compression
 
 - [NanaZip](https://github.com/M2Team/NanaZip) : The 7-Zip derivative with Win 11 menu integration. It also has support for Zstandard format. It can be installed via [MS store](https://apps.microsoft.com/detail/9n8g7tscl18r).
