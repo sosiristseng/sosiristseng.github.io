@@ -1,12 +1,12 @@
 ---
-title: Ubuntu Linux
+title: Linux
 tags:
 - linux
 ---
 
-> Things about the Ubuntu Linux distribution
+> Things about the Linux distribution, focused on Ubuntu
 
-## Ubuntu flavors
+## Download Ubuntu Linux
 
 - [Ubuntu](https://ubuntu.com/download)
 - [Kubuntu](https://kubuntu.org/download/)
