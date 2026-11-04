@@ -50,7 +50,8 @@ winget install -e --id Bandisoft.Bandizip
 winget install -e --id Bandisoft.Honeyview
 winget install -e --id M2Team.NanaZip
 winget install -e --id yt-dlp.yt-dlp --source winget
-winget install -e --id Gyan.FFmpeg
+winget install -e --id JohnMacFarlane.Pandoc --source winget
+winget install -e --id OpenJS.NodeJS
 winget install -e --id Nevcairiel.LAVFilters
 winget install -e --id CrystalDewWorld.CrystalDiskInfo
 winget install -e --id CrystalDewWorld.CrystalDiskMark
@@ -60,6 +61,7 @@ winget install -e --id GitHub.GitHubDesktop
 winget install -e --id DigitalScholar.Zotero
 winget install -e --id HandBrake.HandBrake
 winget install -e --id=CPUID.CPU-Z
+winget install -e --id TechPowerUp.GPU-Z
 winget install -e --id VideoLAN.VLC
 winget install -e --id Microsoft.Coreutils
 winget install --id=marlocarlo.pstop
