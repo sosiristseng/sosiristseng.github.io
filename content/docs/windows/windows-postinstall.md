@@ -38,13 +38,14 @@ Install packages via `winget` (with admin rights)
 
 ```powershell
 winget install -e --id Microsoft.PowerShell --source winget  ## New open-source Powershell
-winget install -e --id Daum.PotPlayer --source winget  ## Potplayer
-winget install -e --id Git.Git -e --source winget ## Git
-winget install -e --id Microsoft.PowerToys ## Power Toys
+winget install -e --id Daum.PotPlayer --source winget
+winget install -e --id Git.Git -e --source winget
+winget install -e --id Microsoft.PowerToy
 winget install -e --id Microsoft.VisualStudioCode --override '/SILENT /mergetasks="!runcode,addcontextmenufolders"'
 winget install -e --id qBittorrent.qBittorrent
 winget install -e --id Mozilla.Firefox
 winget install -e --id Brave.Brave
+winget install -e --id XPFCC4CD725961 --name Line
 winget install -e --id Telegram.TelegramDesktop
 winget install -e --id Bandisoft.Bandizip
 winget install -e --id Bandisoft.Honeyview
