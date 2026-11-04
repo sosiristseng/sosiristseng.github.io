@@ -57,7 +57,7 @@ winget install -e --id CrystalDewWorld.CrystalDiskMark
 winget install -e --id Microsoft.DirectX
 winget install -e --id Obsidian.Obsidian
 winget install -e --id GitHub.GitHubDesktop
-winget install -e --id bDigitalScholar.Zotero
+winget install -e --id DigitalScholar.Zotero
 winget install -e --id HandBrake.HandBrake
 winget install -e --id=CPUID.CPU-Z
 winget install -e --id VideoLAN.VLC
