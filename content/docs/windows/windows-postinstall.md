@@ -65,6 +65,7 @@ winget install -e --id=CPUID.CPU-Z
 winget install -e --id TechPowerUp.GPU-Z
 winget install -e --id VideoLAN.VLC
 winget install -e --id Microsoft.Coreutils
+winget install -e --id Hugo.Hugo.Extended
 winget install --id=marlocarlo.pstop
 winget install -e --id=astral-sh.uv
 winget install -e --id 9NJNWW8PVKMN -s msstore --name Julia
