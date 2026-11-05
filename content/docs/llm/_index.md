@@ -27,9 +27,8 @@ See [models](models.md)
 
 - [OpenCode](https://opencode.ai/) and [OpenChamber](https://openchamber.dev/)
 - [Minimax code](https://github.com/MiniMax-AI/minimax-code) by Minimax
-- [Qoder](https://qoder.com/) by Qwen
+- [Qwen code](https://github.com/qwenLM/qwen-code) by Qwen
 - [pi coding agent](https://pi.dev/): a minimalist agent. See also [oh-my-pi](https://github.com/can1357/oh-my-pi) for a preconfigured pi agent.
-
 
 **Deepseek**
 
