@@ -39,7 +39,7 @@ See [models](models.md)
 
 ## MCP servers
 
-> Model Context Protocol (MCP)
+> The [Model Context Protocol](https://en.wikipedia.org/wiki/Model_Context_Protocol) (MCP) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way artificial intelligence (AI) systems like large language models (LLMs) integrate and share data with external tools, systems, and data sources.
 
 - [DuckDuckGo](https://github.com/nickclyde/duckduckgo-mcp-server)
 - [Julia](https://github.com/aplavin/julia-mcp) : MCP server for persistent Julia sessions
@@ -47,4 +47,11 @@ See [models](models.md)
 
 ## Skills
 
-- [JuliaDaemon.jl](https://github.com/KristofferC/JuliaDaemon.jl): installs a `jld` skill for AI agents to run Julia code with a persistent Julia session (with `Revise`).
+> [Agent skills](https://agentskills.io/) are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows.
+
+### Julia
+
+Running Julia code in with persistent Julia session(s) (with `Revise.jl`) to save package loading and JIT compilation time.
+
+- [JuliaDaemon.jl](https://github.com/KristofferC/JuliaDaemon.jl): installs a `jld` skill for AI agents.
+- [repld](https://github.com/Beforerr/repld) : stateful and persistent REPL-like kernel for fast incremental iteration.
