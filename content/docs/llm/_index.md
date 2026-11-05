@@ -20,8 +20,9 @@ See [models](models.md)
 - [Hermes agent](https://hermes-agent.nousresearch.com/)
 - [Lemonade](https://lemonade-server.ai/)
 - [Lucebox](https://github.com/Luce-Org/lucebox)
-- [open-webui](https://github.com/open-webui/open-webui) : User-friendly AI Interface supporting multiple backends.
+- [OpenWebUI](https://github.com/open-webui/open-webui) : User-friendly AI Interface supporting multiple backends.
 - [Unsloth desktop](https://unsloth.ai/docs/desktop)
+- [TinyWebUI](https://github.com/TinySuiteHQ/TinyWebUI)
 
 ### Coding agents
 
@@ -33,9 +34,8 @@ See [models](models.md)
 **Deepseek**
 
 - [Codewhale](https://codewhale.net/): previously called `deepseek-tui
-- [Deepseek harness (DSH)](https://www.deepseek.com/harness/)
-  - [Deepseek plugins](https://deepseekplugin.com/)
-- [Deepseek reasonix](https://reasonix.io/) : cache-friendly harness for DeepSeek.
+- [Deepseek harness (DSH)](https://www.deepseek.com/harness/) see also [Deepseek plugins](https://deepseekplugin.com/).
+- [Reasonix](https://reasonix.io/) : cache-friendly harness for DeepSeek.
 
 ## MCP servers
 
