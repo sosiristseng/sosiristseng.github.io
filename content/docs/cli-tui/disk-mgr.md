@@ -35,30 +35,3 @@ To see the drive health:
 # change 0 to the drive number
 sudo nvme smart-log /dev/nvme0 -H
 ```
-
-## Forcing disk check on reboot
-
-
-For ext4 filesystems:
-
-```sh
-sudo tune2fs -c 1 /dev/sdXN
-```
-
-You can use the following command to list the disk you want to check.
-
-```sh
-lsblk
-```
-
-and reboot
-
-```sh
-sudo reboot
-```
-
-After reboot, revert the option
-
-```sh
-sudo tune2fs -c -1 /dev/sdXN
-```
