@@ -161,6 +161,9 @@ Adapted from [casper network docs](https://docs.casper.network/operators/setup/n
 ssh-keygen -t ed25519 -C "newuser@myPC"
 ```
 
+- Use `-t ed25519` for a newer, shorter, more secure key. See [EdDSA](https://en.wikipedia.org/wiki/EdDSA)
+- `-C comment` can be any comment you like.
+
 The new user should keep the private key in safety and give the admin the public key (`~/.ssh/id_ed25519.pub`).
 
 2. Create the user on the server
