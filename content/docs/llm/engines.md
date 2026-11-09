@@ -26,9 +26,11 @@ Inference engines powering LLMs.
 
 [vllm](https://github.com/vllm-project/vllm) : A high-throughput and memory-efficient inference and serving engine for LLMs.
 
+- [DeepInfer](https://github.com/deepseek-ai/deepinfer) : High-performance, large-scale inference framework for *DeepSeek* models.
 - [Intel vllm](https://hub.docker.com/r/intel/vllm) a vLLM  docker image for *Intel* GPUs.
 - [spark-vllm-docker](https://github.com/eugr/spark-vllm-docker) : a vLLM docker image for *DGX sparks*.
 - [vllm-radiance](https://github.com/magiccodingman/vllm-radiance) : A vLLM inference-server image for the *AMD Radeon AI PRO R9700*.
+
 
 ## Mixture of Experts (MoE)
 
