@@ -10,15 +10,15 @@ tags:
 ## Install
 
 ```sh
-command -v apt && sudo apt install ibus ibus-chewing
+command -v apt && sudo apt update && sudo apt install ibus ibus-chewing
 command -v pacman && sudo pacman -S ibus ibus-chewing
 ```
 
 ## Setup
 
-If `ibus` does not start on boot, add these lines to `~/.profile` or `~/.profile`.
+If `ibus` does not start on boot, add these lines to `~/.profile`.
 
-```sh title=".profile"
+```sh {filename="~/.profile"}
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=\@im=ibus
