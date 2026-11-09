@@ -11,10 +11,9 @@ How to copy files with command-line tools.
 
 <!--more-->
 
-## Windows-specific
+## Windows-specific tools
 
-See [robocopy](../robocopy.md)
-
+- [robocopy](../windows/robocopy.md)
 ## tar
 
 `tar` and pipes can copy file system trees directly, preserving permissions.
@@ -72,4 +71,4 @@ rsync -avh --progress sourcefolder /destinationfolder --exclude thefoldertoexclu
 
 ## Copy files over SSH
 
-See [SSH](ssh.md)
+See [SSH](./ssh.md)

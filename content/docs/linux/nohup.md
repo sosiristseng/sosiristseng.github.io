@@ -5,7 +5,7 @@ tags:
   - command-line
 ---
 
-[nohup](https://cht.sh/nohup) runs background processes uninterruptedly even the remote SSH session goes offline. See also [tmux](../linux/tmux.md) for a similar workflow.
+[nohup](https://cht.sh/nohup) runs background processes uninterruptedly even the remote SSH session goes offline. See also [tmux](./tmux.md) for a similar workflow.
 
 <!--more-->
 
