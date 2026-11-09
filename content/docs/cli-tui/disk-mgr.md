@@ -7,7 +7,21 @@ tags:
 
 > Disk management in Linux
 
-## udisks
+## lsblk
+
+List drives and mount points
+
+```sh
+lsblk
+```
+
+List drives, mount points, and file systems
+
+```sh
+lsblk -f
+```
+
+## udisks: the drive model
 
 [udisks](https://wiki.archlinux.org/title/Udisks) provides a daemon `udisksd`, that implements D-Bus interfaces used to query and manipulate storage devices, and a command-line tool [udisksctl](https://manpages.ubuntu.com/manpages/noble/man1/udisksctl.1.html), used to query and use the daemon.
 
@@ -17,7 +31,7 @@ To see the drive model:
 udisksctl status
 ```
 
-## nvme-cli
+## nvme-cli: NVMe commands
 
 [nvme-cli](https://github.com/linux-nvme/nvme-cli) is a NVMe management command line interface.
 
