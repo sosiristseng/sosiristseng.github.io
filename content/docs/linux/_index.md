@@ -28,6 +28,14 @@ The following tools make installation USB keys from ISO files.
 - [Ask ubuntu](https://askubuntu.com/)
 - [Ubuntu wiki](https://wiki.ubuntu.com/)
 
+## Shell scripting
+
+- [awesome-shell](https://github.com/alebcay/awesome-shell)
+- [Shell check](https://www.shellcheck.net/)
+- [Explain shell](https://explainshell.com/)
+- [Learn Bash in Y minutes](https://learnxinyminutes.com/docs/bash/)
+- [Ryan's Tutorial](https://ryanstutorials.net/)
+
 ## See also
 
 - [Awesome Linux software](https://github.com/luong-komorebi/Awesome-Linux-Software)
