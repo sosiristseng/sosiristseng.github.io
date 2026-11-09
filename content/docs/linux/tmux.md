@@ -36,4 +36,4 @@ ssh -t user@host tmux new -A -s ssh_tmux
 
 Or log in and then run `tmux`.
 
-See also [SSH](ssh.md)
+See also [SSH](../cli-tui/ssh.md)
