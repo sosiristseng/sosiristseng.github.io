@@ -46,3 +46,6 @@ Tiered data access: hot experts on the GPU (VRAM), cold ones in the RAM, even da
 
 - [TabbyAPI](https://github.com/theroyallab/tabbyAPI/) the official API server for [exllamav3](https://github.com/turboderp-org/exllamav3) backend, an inference library for the EXL3 quantization format (smaller bit per weight).
 - [ninfer](https://github.com/Neroued/ninfer), a C++/CUDA inference engine for explicitly registered Qwen checkpoints on a *single NVIDIA GeForce RTX 5090*.
+- [ninfer-3090](https://github.com/Don-Chad/ninfer-3090) : an `ninfer` fork for RTX 3090.
+- [ninfer-4090](https://github.com/sergiuszm/ninfer-4090) : an `ninfer-3090` fork for RTX 4090.
+- [MegaCapybara](https://github.com/perkel666/MegaCapybara) : a fast inference engine for *Qwen3.8-27B* on the *NVIDIA RTX 5090*.
