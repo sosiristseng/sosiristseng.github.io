@@ -9,9 +9,10 @@ Inference engines powering LLMs.
 
 ## Generic
 
+- [Lucebox](https://github.com/Luce-Org/lucebox) : LLM speculative inference server for heterogeneous hardware & consumer GPUs (esp. AMD GPUs).
 - [SGLang](https://github.com/sgl-project/sglang) a high-performance serving framework. See also [SGLang Cookbook](https://docs.sglang.io/cookbook/intro)
 - [TensorFold](https://github.com/ashhart/TensorFold) : LLM Inference Engine for *Metal* and *CUDA*.
-- [Lucebox](https://github.com/Luce-Org/lucebox) : LLM speculative inference server for heterogeneous hardware & consumer GPUs (esp. AMD GPUs).
+- [Tensorsharp](https://github.com/zhongkaifu/TensorSharp) : a native .NET LLM inference engine and agent runtime for GGUF models.
 
 ### llama.cpp
 
