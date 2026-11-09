@@ -23,6 +23,6 @@ tags:
 - Calibri: Carlito
 - Cambria: Caladea
 
-## Install fonts in Linux
+## HOW TO: install fonts in Linux
 
 Copy the fonts tp `~/.local/share/fonts` then run `fc-cache -fv`.
