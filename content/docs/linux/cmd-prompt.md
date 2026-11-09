@@ -74,3 +74,7 @@ zmodule lukechilds/zsh-nvm
 ```sh {filename="~/.zshrc"}
 export NVM_LAZY_LOAD=true
 ```
+
+## Oh my posh
+
+[Oh my posh](https://ohmyposh.dev/) is a customizable and fast prompt engine for any shell and any major OS (Windows, Mac OS, Linux).
