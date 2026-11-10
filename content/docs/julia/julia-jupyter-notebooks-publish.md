@@ -55,7 +55,7 @@ RUN julia --project="" --color=yes -e 'import Pkg; Pkg.add("IJulia"); import IJu
 
 Usually, Julia projects use [`julia`](https://hub.docker.com/_/julia) as the base image; however, we need a python's `nbconvert` to render Jupyter notebooks. Therefore, we use the [`python`](https://hub.docker.com/_/python) image, which includes `pip` to install `nbconvert` and other required Python packages.
 
-```dockerfile title=".github/Dockerfile"
+```dockerfile {filename=".github/Dockerfile"}
 FROM python:3.11.5-slim as base
 ```
 

@@ -21,7 +21,7 @@ Test and build in parallel with matrix build in Gitlab CI/CD.
 
 For example,
 
-```yaml title=".gitlab-ci.yml"
+```yaml {filename=".gitlab-ci.yml"}
 test:
   image: $IMAGE
   script:
@@ -48,7 +48,7 @@ This will create 4 jobs with a combination of a custom message and a specific Py
 
 ### only run if this is a scheduled pipeline
 
-```yaml title=".gitlab-ci.yml"
+```yaml {filename=".gitlab-ci.yml"}
 scheduled-update:
   # only run if this is a scheduled pipeline
   rules:
@@ -57,7 +57,7 @@ scheduled-update:
 
 ### Run upon push
 
-```yaml title=".gitlab-ci.yml"
+```yaml {filename=".gitlab-ci.yml"}
 push-job:
   rules:
     - if: $CI_PIPELINE_SOURCE == "push"
@@ -65,7 +65,7 @@ push-job:
 
 ### Run upon merge request
 
-```yaml title=".gitlab-ci.yml"
+```yaml {filename=".gitlab-ci.yml"}
 merge-request:
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
@@ -73,7 +73,7 @@ merge-request:
 
 ### Run only for the commits in the default branch
 
-```yaml title=".gitlab-ci.yml"
+```yaml {filename=".gitlab-ci.yml"}
 # GitLab pages job
 pages:
   rules:
@@ -82,7 +82,7 @@ pages:
 
 ### Run only for tags
 
-```yaml title=".gitlab-ci.yml"
+```yaml {filename=".gitlab-ci.yml"}
 pages:
   rules:
     - if: $CI_COMMIT_TAG
@@ -92,7 +92,7 @@ pages:
 
 Use `tags` to tun jobs in a specific runner e.g., your self-hosted GitLab runner in the workstation.
 
-```yaml title=".gitlab-ci.yml"
+```yaml {filename=".gitlab-ci.yml"}
 run-custom:
   tags:
     - myWS
@@ -104,7 +104,7 @@ run-custom:
 
 [Create a release with GitLab CI/CD pipelines](https://docs.gitlab.com/ee/user/project/releases/#create-a-release) with the `release-cli` docker image:
 
-```yaml title=".gitlab-ci.yml"
+```yaml {filename=".gitlab-ci.yml"}
 release_job:
   stage: release
   image: registry.gitlab.com/gitlab-org/release-cli:latest
@@ -124,7 +124,7 @@ We can cache conda packages by setting `CONDA_PKGS_DIRS` environment variable in
 - [GitLab CICD: caching](https://docs.gitlab.com/ee/ci/caching/)
 - [conda: managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
-```yaml title=".gitlab-ci.yml"
+```yaml {filename=".gitlab-ci.yml"}
 image: condaforge/miniforge3:latest
 
 variables:

@@ -50,7 +50,7 @@ sudo cpufreq-set -u 4Ghz
 
 Edit the file `/etc/default/cpufrequtils`
 
-```txt title="/etc/default/cpufrequtils"
+```txt {filename="/etc/default/cpufrequtils"}
 GOVERNOR="performance"
 ```
 

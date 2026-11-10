@@ -46,7 +46,7 @@ https://www.zotero.org/support/plugins
 - [Better Notes](https://github.com/windingwind/zotero-better-notes): note taking, annotating, exporting, and synchronization. (Optional, as I use Obsidian to take notes)
 - [ZotMoov](https://github.com/wileyyugioh/zotmoov): a simple plugin for managing attachments in Zotero 7. It provides workaround for space limitations (300MB) of online attachment.
 
-## Syncing attachments
+## Synchronize attachments across devices
 
 In the Zotero free plan, the storage space for attachments is [limited to **300MB**](https://www.zotero.org/storage).
 
@@ -104,7 +104,7 @@ Source: [Mariana Montes' post](https://www.marianamontes.me/post/obsidian-and-zo
 - Install [Zotero integration](https://github.com/mgmeyers/obsidian-zotero-integration) plugin
 - Setup a Obsidian template for literature notes. I save the following text to `_templates/Zotero integration template.md`.
 
-```markdown title="Zotero integration template.md"
+```markdown {filename="Zotero integration template.md"}
 ---
 year: '{{date | format("YYYY")}}'
 tags:

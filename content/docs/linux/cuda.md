@@ -79,7 +79,7 @@ OnBootSec=5
 WantedBy=timers.target
 ```
 
-```txt {filename="title=/etc/systemd/system/nvidia-tdp.service"}
+```txt {filename="/etc/systemd/system/nvidia-tdp.service"}
 [Unit]
 Description=Set NVIDIA power limit
 
