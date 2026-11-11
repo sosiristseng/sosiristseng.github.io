@@ -85,7 +85,8 @@ Edit `/etc/containerd/config.toml` for the following options
 
 ```toml {filename="/etc/containerd/config.toml"}
 version = 2
-root = "/home/containerd-data"
+root = "/home/containerd"
+disabled_plugins = ["io.containerd.grpc.v1.cri"]
 ```
 
 Then run the following command to apply new docker daemon settings.
