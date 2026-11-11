@@ -12,6 +12,7 @@ tags:
 - [OpenWebUI](https://github.com/open-webui/open-webui) : User-friendly AI Interface supporting multiple backends.
 - [Unsloth desktop](https://unsloth.ai/docs/desktop)
 - [TinyWebUI](https://github.com/TinySuiteHQ/TinyWebUI)
+- [oikb](https://github.com/open-webui/oikb) : Keep your Open WebUI Knowledge Bases in sync.
 
 ## Coding agents
 
@@ -23,16 +24,24 @@ tags:
 **Deepseek**
 
 - [Codewhale](https://codewhale.net/): previously called `deepseek-tui
-- [Deepseek harness (DSH)](https://www.deepseek.com/harness/) see also [Deepseek plugins](https://deepseekplugin.com/).
 - [Reasonix](https://reasonix.io/) : cache-friendly harness for DeepSeek.
+
+### Deepseek harness
+
+[Deepseek harness (DSH)](https://www.deepseek.com/harness/) is the official harness for Deepseek and supports other backends.
+
+
+- [Deepseek plugins](https://deepseekplugin.com/)
+- [Open Plugin Market](https://dshopen.org/)
 
 ## MCP servers
 
 > The [Model Context Protocol](https://en.wikipedia.org/wiki/Model_Context_Protocol) (MCP) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way artificial intelligence (AI) systems like large language models (LLMs) integrate and share data with external tools, systems, and data sources.
 
 - [DuckDuckGo](https://github.com/nickclyde/duckduckgo-mcp-server)
-- [Julia](https://github.com/aplavin/julia-mcp) : MCP server for persistent Julia sessions
+- [Julia mcp](https://github.com/aplavin/julia-mcp) : MCP server for persistent Julia sessions
 - [Kaimon.jl](https://github.com/kahliburke/Kaimon.jl) : MCP server giving AI agents full access to Julia's runtime via a live Gate.
+- [xerj](https://github.com/xerj-org/xerj) : AI search engine and MCP server for bots and agents.
 
 ## Skills
 

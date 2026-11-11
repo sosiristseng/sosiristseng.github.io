@@ -9,6 +9,7 @@ Inference engines powering LLMs.
 
 ## Generic
 
+- [Hyperflare](https://github.com/NVIDIA/hyperflare-inference) : a local inference server for NVIDIA SM120/SM121 GPUs.
 - [Lucebox](https://github.com/Luce-Org/lucebox) : LLM speculative inference server for heterogeneous hardware & consumer GPUs (esp. AMD GPUs).
 - [SGLang](https://github.com/sgl-project/sglang) a high-performance serving framework. See also [SGLang Cookbook](https://docs.sglang.io/cookbook/intro)
 - [TensorFold](https://github.com/ashhart/TensorFold) : LLM Inference Engine for *Metal* and *CUDA*.
@@ -22,15 +23,19 @@ Inference engines powering LLMs.
 - [ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp) : `llama.cpp` fork with new quants and improved performance for MoE models.
 - [KoboldCpp](https://github.com/lostruins/koboldcpp) : `llama.cpp` fork with text, image, speech, music, and video generation.
 
+---
+
+- [llama-optimize](https://github.com/bigattichouse/llama-optimize) : Find good llama.cpp command-line parameters for a given GGUF model on your machine, automatically, using statistically-designed experiments.
+
 ### vLLM
 
-[vllm](https://github.com/vllm-project/vllm) : A high-throughput and memory-efficient inference and serving engine for LLMs.
+[vllm](https://github.com/vllm-project/vllm) : a high-throughput and memory-efficient inference and serving engine for LLMs.
 
 - [DeepInfer](https://github.com/deepseek-ai/deepinfer) : High-performance, large-scale inference framework for *DeepSeek* models.
 - [Intel vllm](https://hub.docker.com/r/intel/vllm) a vLLM  docker image for *Intel* GPUs.
+- [Paiton](https://github.com/Eliovp-BV/paiton-vllm-plugin) : optimized for *AMD Radeon AI PRO R9700*.
 - [spark-vllm-docker](https://github.com/eugr/spark-vllm-docker) : a vLLM docker image for *DGX sparks*.
-- [vllm-radiance](https://github.com/magiccodingman/vllm-radiance) : A vLLM inference-server image for the *AMD Radeon AI PRO R9700*.
-
+- [vllm-radiance](https://github.com/magiccodingman/vllm-radiance) : a vLLM inference-server image for the *AMD Radeon AI PRO R9700*.
 
 ## Mixture of Experts (MoE)
 
