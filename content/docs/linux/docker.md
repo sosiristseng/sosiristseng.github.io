@@ -81,6 +81,11 @@ Edit `/etc/docker/daemon.json` for the following options
 }
 ```
 
+```toml {filename="/etc/containerd/config.toml"}
+version = 2
+root = "/home/containerd-data"
+```
+
 Then run the following command to apply new docker daemon settings.
 
 ```bash
