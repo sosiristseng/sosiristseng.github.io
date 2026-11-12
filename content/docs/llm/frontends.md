@@ -10,9 +10,9 @@ tags:
 - [Hermes agent](https://hermes-agent.nousresearch.com/)
 - [Lemonade](https://lemonade-server.ai/)
 - [OpenWebUI](https://github.com/open-webui/open-webui) : User-friendly AI Interface supporting multiple backends.
+  - [oikb](https://github.com/open-webui/oikb) : Keep your Open WebUI Knowledge Bases in sync.
 - [Unsloth desktop](https://unsloth.ai/docs/desktop)
 - [TinyWebUI](https://github.com/TinySuiteHQ/TinyWebUI)
-- [oikb](https://github.com/open-webui/oikb) : Keep your Open WebUI Knowledge Bases in sync.
 
 ## Coding agents
 
@@ -34,6 +34,14 @@ tags:
 - [Deepseek plugins](https://deepseekplugin.com/)
 - [Open Plugin Market](https://dshopen.org/)
 
+---
+
+- [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) : DSH's officially top-recommended TUI plugin
+- [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) : Desktop companion
+- [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) : Whale-chan theme
+- [dsh-context](https://github.com/bowenliang123/dsh-context) : context insight and management
+
+
 ## MCP servers
 
 > The [Model Context Protocol](https://en.wikipedia.org/wiki/Model_Context_Protocol) (MCP) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way artificial intelligence (AI) systems like large language models (LLMs) integrate and share data with external tools, systems, and data sources.
@@ -46,6 +54,8 @@ tags:
 ## Skills
 
 > [Agent skills](https://agentskills.io/) are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows.
+
+- [figures4papers](https://github.com/ChenLiu-1996/figures4papers) : Agent skills with Python scripts to make high-quality figures for publications
 
 ### Julia
 
