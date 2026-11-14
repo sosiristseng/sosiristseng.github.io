@@ -41,15 +41,16 @@ tags:
 - [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) : Whale-chan theme
 - [dsh-context](https://github.com/bowenliang123/dsh-context) : context insight and management
 
-
 ## MCP servers
 
 > The [Model Context Protocol](https://en.wikipedia.org/wiki/Model_Context_Protocol) (MCP) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way artificial intelligence (AI) systems like large language models (LLMs) integrate and share data with external tools, systems, and data sources.
 
-- [DuckDuckGo](https://github.com/nickclyde/duckduckgo-mcp-server)
+- [Awesome MCP Servers](https://mcpservers.org/)
+- [DuckDuckGo MCP server](https://github.com/nickclyde/duckduckgo-mcp-server)
 - [Julia mcp](https://github.com/aplavin/julia-mcp) : MCP server for persistent Julia sessions
 - [Kaimon.jl](https://github.com/kahliburke/Kaimon.jl) : MCP server giving AI agents full access to Julia's runtime via a live Gate.
 - [xerj](https://github.com/xerj-org/xerj) : AI search engine and MCP server for bots and agents.
+
 
 ## Skills
 
