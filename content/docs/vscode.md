@@ -83,6 +83,8 @@ Link validation + Automatic link updates
 
 ## VSCode extensions
 
+[VSCode extensions marketplace](https://marketplace.visualstudio.com/vscode)
+
 - [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack): Develop in WSL, remote SSH, etc.
 
 ### Themes
