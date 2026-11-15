@@ -1,3 +1,3 @@
 # My blog
 
-Using [Hugo Hextra](https://github.com/sosiristseng/template-hugo-hextra).
+Built with [Hugo Hextra](https://github.com/sosiristseng/template-hugo-hextra).
