@@ -28,16 +28,8 @@ sudo snap install code --classic
 
 **Windows**
 
-chocolatey:
-
 ```powershell
-choco install vscode
-```
-
-winget:
-
-```powershell
-winget install Microsoft.VisualStudioCode
+winget install -e --id Microsoft.VisualStudioCode -s winget
 ```
 
 ## VSCode Settings
@@ -91,10 +83,6 @@ Link validation + Automatic link updates
 
 ## VSCode extensions
 
-- [Foam](https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode): Foam is a note-taking tool that lives within VS Code, similar to [Obsidian](https://obsidian.md/).
-- [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-- [Luna paint](https://marketplace.visualstudio.com/items?itemName=Tyriar.luna-paint): A raster image editor extension for VSCode.
 - [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack): Develop in WSL, remote SSH, etc.
 
 ### Themes
@@ -119,6 +107,8 @@ Link validation + Automatic link updates
 ### Documents
 
 - [Draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) : This unofficial extension integrates Draw.io diagrams into VS Code.
+- [Luna paint](https://marketplace.visualstudio.com/items?itemName=Tyriar.luna-paint): A raster image editor extension for VSCode.
+- [Foam](https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode): Foam is a note-taking tool that lives within VS Code, similar to [Obsidian](https://obsidian.md/).
 
 Markdown:
 
@@ -144,3 +134,8 @@ Typst:
 - [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf): PDF (`.pdf`) documents.
 - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) : YAML `.yml` files.
 - [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) : TOML `.toml` files.
+
+### AI agents
+
+- [Copilot](https://visualstudio.microsoft.com/github-copilot/) : the official coding agent for VSCode.
+- [Openchamber](https://marketplace.visualstudio.com/items?itemName=FedaykinDev.openchamber) : OpenCode AI coding agent, right inside your editor. It needs [opencode](https://opencode.ai/) CLI to be installed.
