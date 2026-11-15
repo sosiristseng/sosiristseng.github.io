@@ -57,6 +57,7 @@ tags:
 > [Agent skills](https://agentskills.io/) are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows.
 
 - [figures4papers](https://github.com/ChenLiu-1996/figures4papers) : Agent skills with Python scripts to make high-quality figures for publications
+- [obsidian-skills](https://github.com/obsidianmd/obsidian-skills) : Agent skills for Obsidian. Teach your agent to use Obsidian CLI.
 
 ### Julia
 
