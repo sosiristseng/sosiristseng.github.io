@@ -15,7 +15,6 @@ Information I collected, sorted by name.
 
 - [Desmos graphing calculator](https://www.desmos.com/calculator)
 - [Geogebra](https://www.geogebra.org/)
-- [Detexify](https://detexify.kirelabs.org/classify.html)
 
 ## Regex
 

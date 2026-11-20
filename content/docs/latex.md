@@ -1,7 +1,6 @@
 ---
 title: LaTeX
 tags:
-- latex
 - document
 - bookmarks
 ---
@@ -39,7 +38,7 @@ tags:
 
 MathJax symbols can also used in markdown and web pages.
 
-- [Detexify](http://detexify.kirelabs.org/classify.html) : recognition of handwriting to Latex symbols.
+- [Detexify](https://detexify.kirelabs.org/) : recognition of handwriting to Latex symbols.
 - [LaTeX live (在线LaTeX公式编辑器)](https://www.latexlive.com/) : LaTeX equations to SVG using MathJax.
 
 ## CI/CD for building LaTeX documents

@@ -7,7 +7,7 @@ tags:
 
 The documentation about Julia code loading: https://docs.julialang.org/en/v1/manual/code-loading/
 
-See also [Julia package management](julia-pkg-management.md)
+See also [Julia package management](./julia-pkg-management.md)
 
 <!--more-->
 

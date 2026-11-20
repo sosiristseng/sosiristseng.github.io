@@ -16,6 +16,9 @@ Topics of the [Julia](https://docs.julialang.org/) programming language.
 - [Parallel Computing and Scientific Machine Learning (SciML): Methods and Applications](https://book.sciml.ai/)
 - [Modern Julia Workflows](https://modernjuliaworkflows.github.io/)
 
-## Setup Julia
+---
 
-See [Julia setup](julia-setup.md).
+- [Julia topics in this site](/tags/julia)
+- How to [setup Julia](julia-setup.md)
+- My [Julia stack](julia-stack.md)
+- Use [Julia in GitHub actions](julia-gha.md)

@@ -1,7 +1,6 @@
 ---
 title: Markdown
 tags:
-- markdown
 - bookmarks
 - document
 ---
@@ -22,9 +21,12 @@ tags:
 
 ## Local Markdown Editors
 
-VSCode's [in-built markdown editing](https://code.visualstudio.com/docs/languages/markdown).
-
+VSCode's
+- [in-built markdown editing](https://code.visualstudio.com/docs/languages/markdown).
 - [Markdown preview enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/) VSCode plugin
+
+---
+
 - [Foam](https://foambubble.github.io/foam/) VSCode plugin
 - [Zettlr](https://www.zettlr.com/) : A Markdown Editor and organizer
 - [Obsidian](https://obsidian.md/) : A markdown note writing APP

@@ -1,5 +1,5 @@
 ---
-title: Powerpoint
+title: Convert powerpoint slides to TIFF images
 tags:
   - windows
   - powerpoint
@@ -7,13 +7,11 @@ tags:
   - tiff
 ---
 
-## Convert powerpoint slides to TIFF images
-
-### Advanced save options
+## Advanced save options
 
 File -> Save a copy -> More options -> Save as type: TIFF -> Tools -> compress pictures -> choose the DPI you want -> save.
 
-### Change default export settings
+## Change default export settings
 
 The export resolution is 96 dpi by default. You can edit the Windows registry to change it.
 
