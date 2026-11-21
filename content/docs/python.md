@@ -7,6 +7,17 @@ tags:
 
 - [Awesome Python](https://github.com/vinta/awesome-python): a curated list of Python stuff.
 
+## Package Manager for Python
+
+- [uv](https://docs.astral.sh/uv/): `uv` is a drop-in replacement for `pip`, an extremely fast Python package and project manager written in Rust.
+- [pixi](https://pixi.prefix.dev/latest/): `pixi` supports both conda `environment.yml` and pip `requirements.txt` files.
+- [Anaconda Python](https://www.anaconda.com/products/individual): a full set of scientific Python packages with the `conda` package manager.
+  - [miniforge](https://github.com/conda-forge/miniforge) : minimal installation with `conda` and `mamba` package managers and the [`conda-forge`](https://conda-forge.org/) [community packages](https://anaconda.org/conda-forge/repo).
+  - [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html): `micromamba` is a standalone version of the `mamba` package manager. See also the [micromamba](micromamba.md) page.
+- [pipenv](https://pipenv.pypa.io/en/latest/): the official dependency management tool for Python packages.
+- [Poetry](https://python-poetry.org/): Python packaging and dependency management.
+- [pdm](https://pdm-project.org/): A modern Python package manager with [PEP 582](https://www.python.org/dev/peps/pep-0582) support.
+
 ## Python IDEs
 
 - [VSCode](https://code.visualstudio.com/) + [Python extension](https://code.visualstudio.com/docs/languages/python).
@@ -18,17 +29,6 @@ tags:
 
 - [Google Colab](https://colab.research.google.com/): an online jupyter notebook platform for machine learning.
 - [Binder](https://mybinder.org/): make online (e.g., GitHub repo) notebooks executable.
-
-## Package Manager for Python
-
-- [uv](https://docs.astral.sh/uv/): `uv` is a drop-in replacement for `pip`, an extremely fast Python package and project manager written in Rust.
-- [pixi](https://pixi.prefix.dev/latest/): `pixi` supports both conda `environment.yml` and pip `requirements.txt` files.
-- [Anaconda Python](https://www.anaconda.com/products/individual): a full set of scientific Python packages with the `conda` package manager.
-  - [miniforge](https://github.com/conda-forge/miniforge) : minimal installation with `conda` and `mamba` package managers and the [`conda-forge`](https://conda-forge.org/) [community packages](https://anaconda.org/conda-forge/repo).
-  - [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html): `micromamba` is a standalone version of the `mamba` package manager.
-- [pipenv](https://pipenv.pypa.io/en/latest/): the official dependency management tool for Python packages.
-- [Poetry](https://python-poetry.org/): Python packaging and dependency management.
-- [pdm](https://pdm-project.org/): A modern Python package manager with [PEP 582](https://www.python.org/dev/peps/pep-0582) support.
 
 ## Python tutorials
 
