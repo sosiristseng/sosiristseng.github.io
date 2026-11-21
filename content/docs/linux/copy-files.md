@@ -13,7 +13,7 @@ How to copy files with command-line tools.
 
 ## Windows-specific tools
 
-- [robocopy](../windows/robocopy.md)
+- [robocopy](../robocopy.md)
 ## tar
 
 `tar` and pipes can copy file system trees directly, preserving permissions.
