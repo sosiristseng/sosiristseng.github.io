@@ -24,7 +24,7 @@ tags:
 
 **Deepseek**
 
-- [Codewhale](https://codewhale.net/): previously called `deepseek-tui
+- [Codewhale](https://codewhale.net/): previously called `deepseek-tui`.
 - [Reasonix](https://reasonix.io/) : cache-friendly harness for DeepSeek.
 
 ### Deepseek harness
