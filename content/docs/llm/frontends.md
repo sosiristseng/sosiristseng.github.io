@@ -9,10 +9,11 @@ tags:
 
 - [Hermes agent](https://hermes-agent.nousresearch.com/)
 - [Lemonade](https://lemonade-server.ai/)
+- [Linger](https://github.com/simplexai-labs/linger)
 - [OpenWebUI](https://github.com/open-webui/open-webui) : User-friendly AI Interface supporting multiple backends.
   - [oikb](https://github.com/open-webui/oikb) : Keep your Open WebUI Knowledge Bases in sync.
-- [Unsloth desktop](https://unsloth.ai/docs/desktop)
 - [TinyWebUI](https://github.com/TinySuiteHQ/TinyWebUI)
+- [Unsloth desktop](https://unsloth.ai/docs/desktop)
 
 ## Coding agents
 
