@@ -20,6 +20,7 @@ tags:
 - [MiaAI's recipe](https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark-TensorFold) on one DGX Spark with TensorFold.
 - [blazux's recipe](https://github.com/blazux/qwen3.8-Flash-DGX) on a single DGX Spark with vLLM.
 - [myllmbox's recipe](https://github.com/myllmbox/qwen38-flash-next-recipe) on a single DGX Spark with vLLM.
+- [salient data's recipe](https://github.com/salient-data/qwen38-next-dgx-recipe)
 
 ## Others
 
