@@ -37,10 +37,11 @@ tags:
 
 ---
 
-- [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) : DSH's officially top-recommended TUI plugin
-- [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) : Desktop companion
-- [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) : Whale-chan theme
 - [dsh-context](https://github.com/bowenliang123/dsh-context) : context insight and management
+- [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) : Whale-chan theme
+- [dsh-market](https://github.com/dsh-market/dsh-market) : Plugin market inside DeepSeek Harness
+- [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) : Desktop companion
+- [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) : DSH's officially top-recommended TUI plugin
 
 ## MCP servers
 
