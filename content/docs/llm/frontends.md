@@ -60,6 +60,7 @@ tags:
 
 - [figures4papers](https://github.com/ChenLiu-1996/figures4papers) : Agent skills with Python scripts to make high-quality figures for publications
 - [obsidian-skills](https://github.com/obsidianmd/obsidian-skills) : Agent skills for Obsidian. Teach your agent to use Obsidian CLI.
+- [inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill) : Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization.
 
 ### Julia
 
