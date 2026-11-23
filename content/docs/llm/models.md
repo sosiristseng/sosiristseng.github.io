@@ -19,7 +19,7 @@ tags:
 
 - [Qwen 3.8 27B](qw38-27.md)
 - [Qwen 3.8 flash next](qw38fn.md)
-
+- [Inkling 2 mini](Inkling-2-mini.md)
 
 ### Deepseek v4.1 Flash
 
