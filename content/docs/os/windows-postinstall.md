@@ -158,4 +158,4 @@ Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR"
 
 ## See also
 
-- Install [WSL](wsl2.md)
+- Install [WSL](./wsl2.md)

@@ -1,30 +1,73 @@
 ---
-title: Windows
+title: Operating systems
 tags:
+  - bookmarks
+  - linux
   - windows
 ---
 
+## Linux
+
+> Things about the Linux distribution, focused on Ubuntu
+
+### Download Ubuntu Linux
+
+- [Ubuntu](https://ubuntu.com/download)
+- [Kubuntu](https://kubuntu.org/download/)
+- [Xubuntu](https://xubuntu.org/download/)
+
+### USB burning tools
+
+The following tools make installation USB keys from ISO files.
+
+- [Ventoy](https://www.ventoy.net/) : an open source tool to create a bootable USB drive loading ISO files in the partition.
+- [Rufus](https://rufus.ie/) : flashing Linux/Windows ISOs in Windows.
+- [Etcher](https://www.balena.io/etcher/) : flashing Linux ISOs in Linux/Windows.
+- [Gnome disks](https://en.wikipedia.org/wiki/GNOME_Disks)
+
+### Linux Wikis and forums
+
+- [Unix stack exchange](https://unix.stackexchange.com/)
+- [Arch Wiki](https://wiki.archlinux.org/)
+- [Ask ubuntu](https://askubuntu.com/)
+- [Ubuntu wiki](https://wiki.ubuntu.com/)
+
+### Shell scripting
+
+- [awesome-shell](https://github.com/alebcay/awesome-shell)
+- [Shell check](https://www.shellcheck.net/)
+- [Explain shell](https://explainshell.com/)
+- [Learn Bash in Y minutes](https://learnxinyminutes.com/docs/bash/)
+- [Ryan's Tutorial](https://ryanstutorials.net/)
+
+### See also
+
+- [Awesome Linux software](https://github.com/luong-komorebi/Awesome-Linux-Software)
+- [Things to do after Ubuntu install](ubuntu-postinstall.md)
+
+## Windows
+
 See also [The Ultimate Windows Development Environment Guide](https://unicorn-utterances.com/posts/ultimate-windows-development-environment-guide)
 
-## Command line
+### Command line
 
 - [PowerShell Core](https://github.com/PowerShell/PowerShell) can be installed via [MS store](https://apps.microsoft.com/detail/9mz1snwt0n5d).
 - [Windows terminal](https://github.com/microsoft/terminal) can be installed via [MS store](https://apps.microsoft.com/detail/9n0dx20hk701).
 - [starship](https://starship.rs/) : a cross-shell prompt.
 - [Oh My Posh](https://ohmyposh.dev/) : a cross-shell prompt.
 
-## Compression
+### Compression
 
 - [NanaZip](https://github.com/M2Team/NanaZip) : The 7-Zip derivative with Win 11 menu integration. It also has support for Zstandard format. It can be installed via [MS store](https://apps.microsoft.com/detail/9n8g7tscl18r).
 - [Peazip](https://github.com/peazip/PeaZip) : Cross-platform file and archive manager.
 - [Bandizip](https://en.bandisoft.com/bandizip/): Bandizip is a powerful archiver which provides an ultrafast processing speed and convenient features. It can be installed via [MS store](https://apps.microsoft.com/detail/9p2w3w81sppb).
 
-## Development
+### Development
 
 - [GitHub Desktop](https://desktop.github.com/): an open source [Electron](https://www.electronjs.org/)-based GitHub app.
-- [Visual Studio Code](https://code.visualstudio.com): a lightweight but powerful source code editor available for Linux, macOS and Windows.
+- [Visual Studio Code](../vscode.md)
 
-## Internet
+### Internet
 
 - [Brave browser](https://brave.com)
 - [Firefox browser](https://www.mozilla.org/firefox)
@@ -32,11 +75,11 @@ See also [The Ultimate Windows Development Environment Guide](https://unicorn-ut
 - [qBittorrent](https://www.qbittorrent.org)
 - [Telegram messenger](https://telegram.org)
 
-## Remote desktop
+### Remote desktop
 
 - [Rustdesk](https://rustdesk.com/)
 
-## System tweaks
+### System tweaks
 
 - [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)
 - [Dism++](https://github.com/Chuyu-Team/Dism-Multi-language) : Dism Windows image (wim) manipulator and system cleaner.
@@ -48,24 +91,24 @@ See also [The Ultimate Windows Development Environment Guide](https://unicorn-ut
 - [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) : Classic Shell and startup menu for Windows 10/11.
 - [WinSetView](https://lesferch.github.io/WinSetView/) : an easy way to set Windows File Explorer default folder views and disabling annoying groups.
 
-## System information
+### System information
 
 - [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
 - [GPU-Z](https://www.techpowerup.com/gpuz/)
 - [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)
 - [pstop](https://github.com/psmux/pstop)
 
-## Benchmark
+### Benchmark
 
 - [CrystalDiskMark](https://crystalmark.info/en/software/crystaldiskmark/) for HDDs/SSDs.
 - [Furmark](https://geeks3d.com/furmark/) for GPUs.
 
-## Package manager
+### Package manager
 
 - [chocolatey](https://chocolatey.org/) : A Windows package manager.
 - [winget](https://github.com/microsoft/winget-cli) : Windows Package Manager CLI (aka winget). The [package repo](https://github.com/microsoft/winget-pkgs). Install it via [MS Store](https://apps.microsoft.com/detail/9nblggh4nns1).
 
-## USB flash drive
+### USB flash drive
 
 - [Rufus](https://rufus.ie/) : Create a bootable USB drive.
 - [Ventoy](https://www.ventoy.net/) : Create a bootable USB drive by loading ISO files in the partition.

@@ -23,11 +23,11 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 ```
 
 - [docker](./docker.md)
-- [firefox](../os/web/firefox.md)
-- [vscode](../os/vscode.md)
+- [firefox](web/firefox.md)
+- [vscode](vscode.md)
 - [cuda](./cuda.md)
-- [git](../os/git/_index.md)
-- [brave](../os/web/brave.md)
+- [git](git/_index.md)
+- [brave](web/brave.md)
 
 ### qBittorrent
 
