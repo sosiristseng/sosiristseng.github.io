@@ -11,7 +11,8 @@ tags:
 
 ## On discrete GPU with a large system RAM
 
-- [Basalt](https://github.com/jesdga95/basalt) : Local inference engine for Qwen3.8-Flash-Next on *NVIDIA Blackwell*.
+- [adamant](https://github.com/nixcat-dev/adamant) : Qwen3.8-Flash-Next on *4090/3090*.
+- [Basalt](https://github.com/jesdga95/basalt) : Qwen3.8-Flash-Next on *5090*.
 - [PolyStrata](https://github.com/VecSzn/PolyStrata) : supports various MoE models.
 - [Strata](https://github.com/Niko1221/Strata) : runs Qwen3.8-Flash-Next and DeepSeekV4.1-Flash-1017 from 12GB+ VRAM with smart expert caching.
 
