@@ -29,7 +29,7 @@ VSCode's
 
 - [Foam](https://foambubble.github.io/foam/) VSCode plugin
 - [Zettlr](https://www.zettlr.com/) : A Markdown Editor and organizer
-- [Obsidian](https://obsidian.md/) : A markdown note writing APP
+- [Obsidian](https://obsidian.md/) : A markdown note writing APP. See [obsidian page](obsidian.md).
 - [memos](https://usememos.com/) : A privacy-first, lightweight note-taking service
 
 ## Online Markdown Editors
